@@ -1,5 +1,5 @@
 
-# COMS E6998.002  Interactive Data Exploration Systems
+## COMS E6998.002  Interactive Data Exploration Systems
 
 
 <div>
