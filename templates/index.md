@@ -1,6 +1,38 @@
 
 # Overview
 
+
+  <div class="container">
+    <div class="page-header">
+    <h2>COMS E6998.002  Interactive Data Exploration Systems</h2>
+    </div>
+
+    <!--<div class="row">
+      <div class="col-md-2"><b>Units:</b></div>
+      <div class="col-md-8"><p>3</p></div>
+    </div>-->
+    
+    <div class="row">
+      <div class="col-md-2"><a id="staff" name="staff"></a><b>Instructor:</b></div>
+      <div class="col-md-8">
+        <p><a href="http://www.eugenewu.net/">Eugene Wu</a>  Office Hours: Weds after class in MUDD 421</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"><b>Staff / Office Hours</b> </div>
+      <div class="col-md-8">
+        <p>TBA</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"><b>Meetings:</b></div>
+      <div class="col-md-8"><p>TBA</p></div>
+    </div>
+  </div>
+
+
+## Description
+
 When confronted with a new dataset, analysts rely on visual interactive systems to explore and understand the data. This course surveys the landscape interactive data exploration systems along several axes. 
 
 1. What interaction modalities do modern systems provide? 
