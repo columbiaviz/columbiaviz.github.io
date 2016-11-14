@@ -37,9 +37,10 @@ When confronted with a new dataset, analysts rely on visual interactive systems 
 
 Students will read foundational as well as cutting-edge papers, present and lead a paper discussion at least once, and complete a semester-long research or implementation project. 
 
-### Prereqs
+**What This Class is NOT:**  Our goal is *not* to learn how to make pretty visualizations.  
+Our goal is to understand how modern systems are engineered, and explore the research opportunities in visual data exploration.
 
-Students should be comfortable reading and coding data processing systems.   Familiarity with database query execution, machine learning, and algorithms is expected.    
+**Prerequisites:** Students should be comfortable reading and coding data processing systems.   Familiarity with database query execution, machine learning, and algorithms is expected.    
 
 # Syllabus
 
