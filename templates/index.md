@@ -110,6 +110,9 @@ Systems and Performance
 
 
 
-
 # Assignments
+
+Each group of papers will be coupled with programming and experimentation assignments to have hand-on experience with with the systems or techniques.
+
+1. TBA
 
