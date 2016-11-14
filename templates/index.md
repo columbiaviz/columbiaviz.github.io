@@ -1,12 +1,8 @@
 
-# Overview
+# COMS E6998.002  Interactive Data Exploration Systems
 
 
 <div class="container">
-  <div class="page-header">
-  <h2>COMS E6998.002  Interactive Data Exploration Systems</h2>
-  </div>
-
   <!--<div class="row">
     <div class="col-md-2"><b>Units:</b></div>
     <div class="col-md-8"><p>3</p></div>
@@ -31,7 +27,7 @@
 </div>
 
 
-## Description
+### Description
 
 When confronted with a new dataset, analysts rely on visual interactive systems to explore and understand the data. This course surveys the landscape interactive data exploration systems along several axes. 
 
