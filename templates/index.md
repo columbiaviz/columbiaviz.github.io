@@ -2,7 +2,7 @@
 # COMS E6998.002  Interactive Data Exploration Systems
 
 
-<div class="container">
+<div>
   <!--<div class="row">
     <div class="col-md-2"><b>Units:</b></div>
     <div class="col-md-8"><p>3</p></div>
