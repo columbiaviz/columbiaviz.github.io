@@ -61,6 +61,7 @@ What is it?
 
 * Making Database Systems Usable  
 * Associating the visual representation of user interfaces with their internal structures and metadata.
+* [Overview of Data Exploration Techniques](http://stratos.seas.harvard.edu/files/stratos/files/exploration-tutorial.pdf)
 
 Languages and Modalities
 
