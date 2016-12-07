@@ -32,7 +32,7 @@
   </div>
   <div class="row">
     <div class="col-md-2"><b>Description:</b></div>
-    <div class="col-md-8">
+    <div class="col-md-10">
       <p>
         Human beings rely on summarizing and visualizing data to make informed decisions.  The number and volume of data continues to increase at exponential rates, and new user-facing systems and modalities are needed to handle the scale and heterogeneity of future data.
         This course surveys the landscape interactive data exploration systems along several axes. 
