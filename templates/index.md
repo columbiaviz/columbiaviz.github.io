@@ -107,7 +107,7 @@
 * Questions
   * question 1
   * question 2
-* **Project Proposals Due [submit here](./)**  [proposal info](./proposal.html)
+* **Project Proposals Due [submit here](./)**  [proposal info](./proposals.html)
 
 
 # Unordered Topics and Readings
