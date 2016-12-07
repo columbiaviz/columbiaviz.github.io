@@ -21,7 +21,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-2"><b>Meetings:</b></div>
+    <div class="col-md-2"><b>Time and Location:</b></div>
     <div class="col-md-8"><p>TBA</p></div>
   </div>
   <div class="row">
@@ -30,18 +30,22 @@
     <p>TBA</p>
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-2"><b>Description:</b></div>
+    <div class="col-md-8">
+      <p>
+        Human beings rely on summarizing and visualizing data to make informed decisions.  The number and volume of data continues to increase at exponential rates, and new user-facing systems and modalities are needed to handle the scale and heterogeneity of future data.
+        This course surveys the landscape interactive data exploration systems along several axes. 
+      </p>
+      <ol>
+        <li> What interaction modalities do modern systems provide? 
+        <li> How are such systems developed and optimized to ensure interactivity? 
+        <li> What novel functionality can drastically enhance the user's understanding of the dataset? 
+      </ul>
+    </div>
+  </div>
+
 </div>
-
-
-## Description
-
-Human beings rely on summarizing and visualizing data to make informed decisions.  The number and volume of data continues to increase at exponential rates, and new user-facing systems and modalities are needed to handle the scale and heterogeneity of future data.
-This course surveys the landscape interactive data exploration systems along several axes. 
-
-1. What interaction modalities do modern systems provide? 
-2. How are such systems developed and optimized to ensure interactivity? 
-3. What novel functionality can drastically enhance the user's understanding of the dataset? 
-
 
 ## Course Expectations
 
