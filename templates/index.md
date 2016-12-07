@@ -33,29 +33,32 @@
 </div>
 
 
-### Description
+## Description
 
-When confronted with a new dataset, analysts rely on visual interactive systems to explore and understand the data. This course surveys the landscape interactive data exploration systems along several axes. 
+Human beings rely on summarizing and visualizing data to make informed decisions.  The number and volume of data continues to increase at exponential rates, and new user-facing systems and modalities are needed to handle the scale and heterogeneity of future data.
+This course surveys the landscape interactive data exploration systems along several axes. 
 
 1. What interaction modalities do modern systems provide? 
 2. How are such systems developed and optimized to ensure interactivity? 
 3. What novel functionality can drastically enhance the user's understanding of the dataset? 
 
-Students in this class will be expected to
 
-* Read and comment on foundational as well as cutting-edge papers
-* Present and lead a paper discussion at least once
-* Complete a semester-long research or implementation project
-* Actively participate in discussions
+## Course Expectations
 
-**What This Class is NOT:**  Our goal is *not* to learn how to make pretty visualizations.  
-Our goal is to understand how modern systems are engineered, and explore the research opportunities in visual data exploration.
+**What This Class is NOT**  
 
-**Prerequisites:** Students should be comfortable reading and coding data processing systems.   Familiarity with database query execution, machine learning, and algorithms is expected.    
+* Our goal is *not* to learn how to make pretty visualizations.  Our goal is to understand how modern systems are engineered, and explore the research opportunities in visual data exploration.
+
+**Prerequisites**
+
+* Students should be comfortable reading research papers; you will read, answer questions, and comment on the readings before class.
+* Students should be comfortable coding data processing systems;  familiarity with database query execution, some machine learning, and algorithms is expected.    
+* Students are expected to active participate in discussion in class; participation is a large part of the grade.
+* Students should be comfortable conducting a research project and writing up the results in a research paper format.
 
 # Syllabus
 
-The following is a tentative list of papers, in no particular order, that the course may cover.
+The following is a tentative list of papers and topics, in no particular order, that the course may cover.
 
 What is it?
 
