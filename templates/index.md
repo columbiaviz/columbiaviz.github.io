@@ -62,6 +62,55 @@
 
 # Syllabus
 
+(date) Topic
+
+* Readings
+  * a
+  * b
+* Questions
+  * question 1
+  * question 2
+
+(date) Topic
+
+* Readings
+  * a
+  * b
+* Questions
+  * question 1
+  * question 2
+
+(date) Topic
+
+* Readings
+  * a
+  * b
+* Questions
+  * question 1
+  * question 2
+
+(date) Topic
+
+* Readings
+  * a
+  * b
+* Questions
+  * question 1
+  * question 2
+
+(date) Topic
+
+* Readings
+  * a
+  * b
+* Questions
+  * question 1
+  * question 2
+* **Project Proposals Due [submit here](./)**  [proposal info](./proposal.html)
+
+
+# Unordered Topics and Readings
+
 The following is a tentative list of papers and topics, in no particular order, that the course may cover.
 
 What is it?
