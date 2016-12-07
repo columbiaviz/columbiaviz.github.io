@@ -41,6 +41,7 @@
         <li> What interaction modalities do modern systems provide? 
         <li> How are such systems developed and optimized to ensure interactivity? 
         <li> What novel functionality can drastically enhance the user's understanding of the dataset? 
+        <li> Can we take advantage of domain-specific data and needs?
       </ul>
     </div>
   </div>
