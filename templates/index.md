@@ -52,7 +52,7 @@
 
 **What This Class is NOT**  
 
-* Our goal is *not* to learn how to make pretty visualizations.  Our goal is to understand how modern systems are engineered, and explore the research opportunities in visual data exploration.
+* Our goal is *not* to learn how to design effective or beautiful visualizations.  Our goal is to understand how modern systems are engineered, and explore the research opportunities in visual data exploration.
 
 **Prerequisites**
 
