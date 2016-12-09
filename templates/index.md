@@ -72,32 +72,6 @@
   * question 1
   * question 2
 
-(date) Topic
-
-* Readings
-  * a
-  * b
-* Questions
-  * question 1
-  * question 2
-
-(date) Topic
-
-* Readings
-  * a
-  * b
-* Questions
-  * question 1
-  * question 2
-
-(date) Topic
-
-* Readings
-  * a
-  * b
-* Questions
-  * question 1
-  * question 2
 
 (date) Topic
 
