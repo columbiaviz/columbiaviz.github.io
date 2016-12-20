@@ -8,7 +8,7 @@ how you plan to complete the project and metrics to decide _if it worked_.
 You will submit the proposal in the format of a prospectus.
 
 * [Click here for an example prospectus](./files/prospectus/prospectus.pdf)
-* [Click here for the tex file](./files/prospectus/prospectus.tex)
+* [Click here for the source files](https://github.com/columbiaviz/columbiaviz.github.io/tree/master/files/prospectus)
 
 If you want to discuss your project ideas, come chat during office hours.
 
