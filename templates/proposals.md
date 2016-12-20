@@ -7,8 +7,8 @@ how you plan to complete the project and metrics to decide _if it worked_.
 
 You will submit the proposal in the format of a prospectus.
 
-* [Click here for an example prospectus]()
-* [Click here for the tex file]()
+* [Click here for an example prospectus](./files/prospectus/prospectus.pdf)
+* [Click here for the tex file](./files/prospectus/prospectus.tex)
 
 If you want to discuss your project ideas, come chat during office hours.
 
