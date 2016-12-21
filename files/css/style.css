@@ -58,6 +58,15 @@ h3{
   text-transform: uppercase;
 }
 
+h4{
+	font-size: 1em;
+	font-weight: 600;
+  color: rgb(100, 100, 100)  ;
+  text-transform: uppercase;
+}
+
+
+
 table.grading {
   width: 500px;
   margin-left: 2em;

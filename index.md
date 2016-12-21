@@ -47,24 +47,43 @@ layout: page
 
 ## Course Expectations
 
-**What This Class is NOT**  
+#### What This Class is NOT
 
 * Our goal is *not* to learn how to design effective or beautiful visualizations.  Our goal is to understand how modern systems are engineered, and explore the research opportunities in visual data exploration.
 
-**Prerequisites**
+#### Prerequisites
 
 * Students should be comfortable reading research papers; you will read, answer questions, and comment on the readings before class.
 * Students should be comfortable coding data processing systems;  familiarity with database query execution, some machine learning, and algorithms is expected.    
 * Students are expected to active participate in discussion in class; participation is a large part of the grade.
 * Students should be comfortable conducting a research project and writing up the results in a research paper format.
 
+#### Project
+
+The [research project](proposal) is a significant part of the course grade.  The project proceeds in three stages:
+
+1. (Week 3) Project prospectus due + peer feedback
+2. (Week 5) Midpoint Review + peer feedback
+3. (Last Week) Poster Session
+4. (Last Week) Project reports due
+
+#### Grading
+
+{: .grading .table .table-striped :}
+| Questions | 10% |
+| Participation | 15% |
+| Assignments | 15% |
+| Project |  60% |
+
+
 # Syllabus
 
-(date) Topic
+(date) Overview
 
 * Readings
-  * a
-  * b
+  * Making Database Systems Usable  
+  * Associating the visual representation of user interfaces with their internal structures and metadata.
+  * [Overview of Data Exploration Techniques](http://stratos.seas.harvard.edu/files/stratos/files/exploration-tutorial.pdf)
 * Questions
   * question 1
   * question 2
@@ -79,19 +98,15 @@ layout: page
   * question 1
   * question 2
 * **Project Proposals Due **  
-  * [submit here](./)
   * [proposal info](./proposals.html)
 
 
-# Unordered Topics and Readings
+## Unordered Topics and Readings
 
 The following is a tentative list of papers and topics, in no particular order, that the course may cover.
 
 What is it?
 
-* Making Database Systems Usable  
-* Associating the visual representation of user interfaces with their internal structures and metadata.
-* [Overview of Data Exploration Techniques](http://stratos.seas.harvard.edu/files/stratos/files/exploration-tutorial.pdf)
 
 Languages and Modalities
 
