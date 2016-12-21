@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 #
-title: COMS E6998.002 Interactive Data Exploration Systems
+title: 6998.002 Interactive Data Exploration Systems
 email: ewu@cs.columbia.edu
 description: > # this means to ignore newlines until "baseurl:"
   Graduate seminar to study research in interactive data exploration systems. 
