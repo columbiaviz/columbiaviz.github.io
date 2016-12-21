@@ -19,8 +19,7 @@
   <div class="col-md-1"></div>
   <div class="col-md-10 nav">
     <a href="./">{{site.title}}</a>
-    <a href="./syllabus" >Syllabus</a>
-    <a href="https://github.com/w4111/scribenotes/wiki/" >Scribe Notes</a>
+    <a href="./proposals" >Proposals</a>
   </div>
 </div>
 
@@ -32,10 +31,14 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="col-md-12 footer">
-    <p>{{ site.description | escape }}</p>
+<div class="row footer">
+  <div class="col-md-3"></div>
+  <div class="col-md-3"> <p>{{ site.description | escape }}</p></div>
+  <div class="col-md-3">
+    {{site.email}}<br/>
+    <a href="http://www.github.com/{{site.github_username}}">GitHub</a>
   </div>
+  <div class="col-md-3"></div>
 </div>
 
 </body>

@@ -90,7 +90,8 @@ table.grading {
 }
 
 .footer {
-	margin-top: 20px;
+	margin-top: 5em;
+	margin-bottom: 5em;
   padding-top: 20px;
 	font-size: 9pt;
 	color: rgb(53, 49, 49);
