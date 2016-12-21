@@ -96,8 +96,6 @@ table.grading {
 	color: rgb(53, 49, 49);
 	text-align: center;
 	padding: 3px;
-	position: relative;
-	clear: both;
 	background: white;
 }
 
