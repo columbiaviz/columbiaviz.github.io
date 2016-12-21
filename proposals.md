@@ -14,8 +14,10 @@ How:
 
 ## The Prospectus
 
-Your reserach proposal will contain an overview of the research problem, first pass at related work, and a description of 
-how you plan to complete the project and metrics to decide _if it worked_.
+Your reserach proposal will contain an overview of the research problem, _your hypothesis<sup>1</sup>_, 
+first pass at related work, 
+a description of how you plan to complete the project, and
+metrics to decide _if it worked_.
 
 You will submit the proposal in the format of a prospectus.
 
@@ -25,7 +27,11 @@ You will submit the proposal in the format of a prospectus.
 If you want to discuss your project ideas, come chat during office hours.
 
 
+<sup>1</sup>This is science after all.
+
 ## Project Suggestions
+
+The following are examples of possible projects -- they are by no means a complete list and you are free to select your own projects.
 
 #### Modalities
 
@@ -35,6 +41,10 @@ Make it talk
 * NLP + DB + Chat
 * DNN + NLP --> Queries
 * Presenting query results via analogy
+
+Seeing is beleiving
+
+* Data + VR/AR
 
 #### Recommendations
 
@@ -55,3 +65,7 @@ Make it scale
 
 * Take an existing large-scale data visualization and design a system that 1) increases its scale by 10x while preserving the same 
   interactivity, 2) reduces the latency by 10x while preserving the same scale, 3) or for bonus points does (1) and (2).
+
+
+
+
