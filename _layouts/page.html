@@ -1,0 +1,39 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" href="{{ "/files/css/bootstrap.min.css" | relative_url }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "/files/css/style.css" | relative_url }}" />
+    <script src="{{ "/files/js/jquery.js" | relative_url }}"></script>
+    <script src="{{ "/files/js/handlebars.js" | relative_url }}"></script>
+    <script src="{{ "/files/js/underscore.js" | relative_url }}"></script>
+    <script src="{{ "/files/js/bootstrap.min.js" | relative_url }}"></script>
+  </head>
+<body>
+
+
+{{header}}
+
+<div class="row navbar">
+  <div class="col-md-1"></div>
+  <div class="col-md-10 nav">
+    <a href="./">{{site.title}}</a>
+    <a href="./syllabus" >Syllabus</a>
+    <a href="https://github.com/w4111/scribenotes/wiki/" >Scribe Notes</a>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+    {{ content}}
+  </div>
+</div>
+
+<div class="footer">
+  <p>{{ site.description | escape }}</p>
+</div>
+
+</body>

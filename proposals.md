@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # E6998.003 Research Proposal
 
 ### The Prospectus
