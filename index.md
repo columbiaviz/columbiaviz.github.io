@@ -2,48 +2,32 @@
 layout: page
 ---
 
-## COMS E6998.002  Interactive Data Exploration Systems
+# Overview
+
+Human beings rely on summarizing and visualizing data to make informed decisions.  The number and volume of data continues to increase at exponential rates, and new user-facing systems and modalities are needed to handle the scale and heterogeneity of future data.
+This course surveys the landscape interactive data exploration systems along several axes. 
+
+* What interaction modalities do modern systems provide? 
+* How are such systems developed and optimized to ensure interactivity? 
+* What novel functionality can drastically enhance the user's understanding of the dataset? 
+* Can we take advantage of domain-specific data and needs?
+
+<br/> 
 
 
-<div>
-  <div class="row">
-    <div class="col-md-2"><a id="staff" name="staff"></a><b>Instructor:</b></div>
-    <div class="col-md-8">
-      <p><a href="http://www.eugenewu.net/">Eugene Wu</a>  Office Hours: Weds after class in MUDD 421</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-2"><b>Staff / Office Hours</b> </div>
-    <div class="col-md-8">
-      <p>TBA</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-2"><b>Time and Location:</b></div>
-    <div class="col-md-8"><p>TBA</p></div>
-  </div>
-  <div class="row">
-    <div class="col-md-2"><b>Grading:</b></div>
-    <div class="col-md-8">
-    <p>TBA</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-2"><b>Description:</b></div>
-    <div class="col-md-10">
-      <p>
-        Human beings rely on summarizing and visualizing data to make informed decisions.  The number and volume of data continues to increase at exponential rates, and new user-facing systems and modalities are needed to handle the scale and heterogeneity of future data.
-        This course surveys the landscape interactive data exploration systems along several axes. 
-      </p>
-      <ol>
-        <li> What interaction modalities do modern systems provide? </li>
-        <li> How are such systems developed and optimized to ensure interactivity? </li>
-        <li> What novel functionality can drastically enhance the user's understanding of the dataset? </li>
-        <li> Can we take advantage of domain-specific data and needs?</li>
-      </ol>
-    </div>
-  </div>
-</div>
+{: .overview .table .table-striped :}
+| Staff+OH |  [Eugene Wu](http://www.eugenewu.net) (Instructor) | xxx |
+|          |  TA   | TBA |
+| Meetings  | time loc | |
+| Units     | tba | |
+| Grading   | Questions | 10% |
+|           | Participation | 15% |
+|           | Assignments | 15% |
+|           | Project |  60% |
+|           | If publishable quality | >10-20% extra credit |
+|Communication | [Piazza](https://piazza.com/) | Aside from personal questions, use Piazza instead of email. |
+|              | [Course Github](https://github.com/columbiaviz/) | |
+
 
 ## Course Expectations
 
@@ -51,7 +35,7 @@ layout: page
 
 * Our goal is *not* to learn how to design effective or beautiful visualizations.  Our goal is to understand how modern systems are engineered, and explore the research opportunities in visual data exploration.
 
-#### Prerequisites
+#### What I expect from You
 
 * Students should be comfortable reading research papers; you will read, answer questions, and comment on the readings before class.
 * Students should be comfortable coding data processing systems;  familiarity with database query execution, some machine learning, and algorithms is expected.    
@@ -62,32 +46,32 @@ layout: page
 
 The [research project](proposal) is a significant part of the course grade.  The project proceeds in three stages:
 
-1. (Week 3) Project prospectus due + peer feedback
-2. (Week 5) Midpoint Review + peer feedback
-3. (Last Week) Poster Session
-4. (Last Week) Project reports due
-
-#### Grading
-
-{: .grading .table .table-striped :}
-| Questions | 10% |
-| Participation | 15% |
-| Assignments | 15% |
-| Project |  60% |
+1. **Week 3** Project prospectus due + peer feedback
+2. **Week 5** Midpoint Review + peer feedback
+3. **Last Week** Poster Session
+4. **Last Week** Project reports due
 
 
 # Syllabus
 
-(date) Overview
+L0: Preparation/Expectations
+
+* You should be comfortable with
+  * [Relational algebra](https://en.m.wikipedia.org/wiki/Relational_algebra) and [SQL](https://www.postgresql.org/docs/9.5/static/sql-select.html)
+  * [Cost-based optimization](http://web.stanford.edu/class/cs345d-01/rl/chaudhuri98.pdf)
+
+L1: Overview
 
 * Readings
   * Making Database Systems Usable  
-  * Associating the visual representation of user interfaces with their internal structures and metadata.
   * [Overview of Data Exploration Techniques](http://stratos.seas.harvard.edu/files/stratos/files/exploration-tutorial.pdf)
+  * Optional: Associating the visual representation of user interfaces with their internal structures and metadata.
 * Questions
   * question 1
   * question 2
 
+
+L2: 
 
 (date) Topic
 
@@ -97,8 +81,8 @@ The [research project](proposal) is a significant part of the course grade.  The
 * Questions
   * question 1
   * question 2
-* **Project Proposals Due **  
-  * [proposal info](./proposals.html)
+* **Due**  
+  * [Project Proposals Due](./proposals.html)
 
 
 ## Unordered Topics and Readings

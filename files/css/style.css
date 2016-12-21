@@ -72,6 +72,13 @@ table.grading {
   margin-left: 2em;
 }
 
+.descr tr td:first-child, 
+.overview tr td:first-child {
+  width: 15%;
+}
+.overview tr td:nth-child(2) {
+  width: 25%;
+}
 
 
 
