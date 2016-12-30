@@ -29,55 +29,65 @@ This course surveys the landscape interactive data exploration systems along sev
 |              | [Course Github](https://github.com/columbiaviz/) | |
 
 
-## Course Expectations
+#### Course Expectations
 
-#### What This Class is NOT
+What This Class is **NOT**
 
 * Our goal is *not* to learn how to design effective or beautiful visualizations.  Our goal is to understand how modern systems are engineered, and explore the research opportunities in visual data exploration.
 
-#### What I expect from You
+What I expect from You
 
 * Students should be comfortable reading research papers; you will read, answer questions, and comment on the readings before class.
 * Students should be comfortable coding data processing systems;  familiarity with database query execution, some machine learning, and algorithms is expected.    
 * Students are expected to active participate in discussion in class; participation is a large part of the grade.
 * Students should be comfortable conducting a research project and writing up the results in a research paper format.
 
-#### Project
+### Assignments
 
-The [research project](proposal) is a significant part of the course grade.  The project proceeds in three stages:
+#### Project (semester long)
 
-1. **Week 3** Project prospectus due + peer feedback
+You will pursue a semester long research project related to this course.  
+The project is a significant part of the course grade, and has the following milestones:
+
+1. **Week 3** Submit [project prospectus](./proposals) + peer feedback
 2. **Week 5** Midpoint Review + peer feedback
 3. **Last Week** Poster Session
 4. **Last Week** Project reports due
 
-#### How to Submit Answers
+#### Paper Presentations (one class)
 
-[Click here to submit your answers to the lecture questons]()
+You are expected to present as a single or two person team on a paper of your choice (within reason).  The papers you provide can be from the list given below.  You are also free to list a paper of your choice, but it must match the themes of the class. 
+**This list must be submitted by midnight Feb 1.**
 
+
+{: .btn :}
+[Submit your top 5 papers to present](https://goo.gl/forms/4ymov5u7dFo2k7Ft1)
+
+
+
+#### Paper Questions (every class)
+
+You are expected to answer the short questions associated with the readings every course.  
 The class reviews must be submitted by **midnight the day before class**.
 
-#### How to Submit List of Papers to Present
+{: .btn :}
+[Submit your answers to the lecture questons]()
 
-[Click here to submit your top 5 papers to present](https://goo.gl/forms/4ymov5u7dFo2k7Ft1)
-
-The papers you provide can be from the list given below. 
-You are also free to list a paper of your choice, but it must match the themes of the class. 
-**This list must be submitted by midnight Feb 1.**
 
 
 # Schedule
 
-{: .schedule .table .table-striped :}
+{: .schedule .table  :}
 |  Day | Presenter | Papers                                                                      |
 |------|-----------|-----------------------------------------------------------------------------|
 | 1/18 | Eugene    | Introduction                                                                | 
-| 1/25 |           |                                                                             | 
-| 2/01 |           |                                                                             | 
-| 2/08 |           |                                                                             | 
+| 1/25 | Eugene    |                                                                             | 
+| 2/01 | Eugene    |                                                                             | 
+|      |           | [Submit top 5 papers to present](https://goo.gl/forms/4ymov5u7dFo2k7Ft1)    | 
+| 2/08 |           | [Project Prospectus Due](./proposals)                                        | 
 | 2/15 |           |                                                                             | 
 | 2/22 |           |                                                                             | 
-| 3/01 |           |                                                                             | 
+| 3/01 |           | [Midpoint Review](./midpoint)                                               | 
 | 3/08 |           |                                                                             | 
 | 3/15 |           |                                                                             | 
 | 3/22 |           |                                                                             | 
@@ -86,7 +96,7 @@ You are also free to list a paper of your choice, but it must match the themes o
 | 4/12 |           |                                                                             | 
 | 4/19 |           | NO CLASS [ICDE](http://icde2017.sdsc.edu/)                                  | 
 | 4/26 |           |                                                                             | 
-| 5/03 |           |                                                                             | 
+| 5/03 |           | Poster Presentation + [submit writeups]                                     |  
 
 
 # Topics

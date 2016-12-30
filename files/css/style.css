@@ -183,12 +183,10 @@ img {
 }
 
  .btn {
-  width: 80%;
-  background: steelblue;
+  background: #308dec;
   border-radius: 4px;
   text-align: center;
-  padding: 1em;
-  margin-top: 1em;
+  padding: .5em;
   cursor: pointer;
 }
  .btn a {
@@ -196,6 +194,7 @@ img {
 }
  .btn:hover {
   background: rgb(40, 103, 156);
+  cursor: pointer;
 }
 
  .important {
@@ -222,13 +221,7 @@ img {
   color: white;
 }
 
-
-.pills {
-  margin-top: 1em;
-}
-
-
-.pills a {
+.pill {
   font-weight: bold;
   color: rgb(201, 27, 77);
   background: white;
@@ -246,7 +239,7 @@ img {
   background: white;
 }
 
-.pills a:hover {
+.pill:hover {
   background: rgb(201, 27, 77);
   color: white;
 }
