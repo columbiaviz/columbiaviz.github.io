@@ -3,6 +3,8 @@ layout: page
 title: E6998.003 Research Project
 ---
 
+# This page is in progress
+
 ## Important Dates and What to Hand In
 
 <style>
@@ -75,38 +77,43 @@ The following are examples of possible projects -- they are by no means a comple
 
 #### Modalities
 
-Make it talk
+Talk to me
 
-* Chat + Knowledge bases
+* Read the [InnoChat abstract](https://www.dropbox.com/s/yeojaciedsktp77/cidr17abstract.pdf?dl=0), study existing information extraction/caching approaches and build a prototype.
+* I suspect that analysts don't want to perform NLP/voice-only data analysis, but would rather use voice to _augment_ their programming-based analysis?   For example, if the analyst asks "what's that?" then it probably has to do with the part of the visualization that the cursor is pointing to.  Survey existing human computer interaction literature on multi-modal approaches to data analysis (or run an informal user study) and build a prototype using Alex/NLP that _augments_ a data scientist's job.  Some ideas of what to augment:
+  * While a user explores an interactive visualization, automatically zoom in, highlight data, generate new views, etc based on the user's comments.
+  * Data science analysis session
+* Presenting query results via analogy: given a knowledge base, facts that the user has accessed (assumed), and a database query, recontextualize it relative to facts the user understands.
 * NLP + DB + Chat
 * DNN + NLP --> Queries
-* Presenting query results via analogy
+
 
 Seeing is beleiving
 
 * Data + VR/AR
 
-#### Recommendations
 
 
-#### Explanation
+#### Explanation and Cleaning
 
-* Identify a context during data exploration (either in a visualization system, or via any other modality) where the user will natually ask "why?" and expect an explanation.
-  Formalize the context, the problem and develop a prototype solution.
-  * related: scorpion, dialectic
-
-#### Cleaning
-
-* Boostclean for streaming
-* 
+* **But, Why?** Identify a context during data exploration (either in a visualization system, or via any other modality) where the user will natually ask "why?" and expect an explanation.
+  Formalize the context, formalize the problem and develop a prototype solution.
+  * Related: Scorpion, QFix, Dialectic
+* **Cleaning and Extraction Pushdown:** Data collected from the web (e.g., from a form) is typically used by downstream applications for a variety of purposes such as training data for models, or to analyze using queries.  However if the data is not collected and validated appropriately, then the analyst needs to perform expensive data cleaning to fix errors, or extract structured information from free-form text.  Is there a way, given the downstream applications or the existing data cleaning steps, to augment the input form so that the submitted data is already clean and in the appropriate form?  
+* **Will it Clean?** Even automatic error _detection_ is notoriously difficult due to the ambiguounotion of what "clean" means.  However in data science applications, the test data for the prediction model provides a crisp notion of "clean" and has been used in BoostClean to perform automatic error detection and cleaning.  BoostClean simply worked for simple static datasets: extend its ideas to streaming datasets where the errors may change over time.
+* **Guess My Schema:** Given a random binary or text data file, it's a huge amount of work to identify a scehma and extract structured data from it.  But there are _plenty_ of binary and text data files to learn from!  Train a deep learning model over a large variety of data files/formats and use the trained model to "parse" a new data file.
 
 #### Core Data Processing for Viz
 
+Extend the DVMS system in different ways
+
+* **:** why compute what cannot be seen?  Our prior perceptual studies have found interesting trade-offs between different approximation techniques.  Build on our findings and prototype a system that intelligently picks between different approximation and optimization options.
+
+#### Recommendations
+
 #### Pragmatics
 
-Make it scale
-
-* Take an existing large-scale data visualization and design a system that 1) increases its scale by 10x while preserving the same 
+* **Make it scale:** Take an existing large-scale data visualization and design a system that 1) increases its scale by 10x while preserving the same 
   interactivity, 2) reduces the latency by 10x while preserving the same scale, 3) or for bonus points does (1) and (2).
 
 

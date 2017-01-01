@@ -49,8 +49,9 @@ What I expect from You
 You will pursue a semester long research project related to this course.  
 The project is a significant part of the course grade, and has the following milestones:
 
+1. **Week 2** Submit [project prospectus](./proposals) + peer feedback
 1. **Week 3** Submit [project prospectus](./proposals) + peer feedback
-2. **Week 5** Midpoint Review + peer feedback
+2. **Week 5** Peer feedback
 3. **Last Week** Poster Session
 4. **Last Week** Project reports due
 
