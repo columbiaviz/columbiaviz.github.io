@@ -107,6 +107,10 @@ Background you should be comfortable with
 * [Relational algebra](https://en.m.wikipedia.org/wiki/Relational_algebra) and [SQL](https://www.postgresql.org/docs/9.5/static/sql-select.html)
 * [Cost-based optimization](http://web.stanford.edu/class/cs345d-01/rl/chaudhuri98.pdf)
 
+Classics
+
+* [Tukey, John W. Exploratory Data Analysis. 1979](https://scholar.google.com/scholar?hl=en&q=2.+Tukey%2C+John+W.+Exploratory+Data+Analysis.+1979)
+
 Surveys 
 
 * [Making Database Systems Usable](https://scholar.google.com/scholar?q=Making+Database+Systems+Usable)
