@@ -89,9 +89,9 @@ The class reviews must be submitted by **midnight the day before class**.
 | 2/15 |           |                                                                             | 
 | 2/22 |           |                                                                             | 
 | 3/01 |           | [Midpoint Review](./midpoint)                                               | 
-| 3/08 |           |                                                                             | 
-| 3/15 |           |                                                                             | 
-| 3/22 |           |                                                                             | 
+| 3/08 | Thibault  | Modalities                                                                  | 
+| 3/15 | Thibault  | Recommendation                                                              | 
+| 3/22 | Thibault  | Autocomplete/refinement                                                     | 
 | 3/29 |           |                                                                             | 
 | 4/05 |           |                                                                             | 
 | 4/12 |           |                                                                             | 
