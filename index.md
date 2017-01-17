@@ -85,14 +85,14 @@ The class reviews must be submitted by **midnight the day before class**.
 | 1/25 | Eugene    |                                                                             | 
 | 2/01 | Eugene    |                                                                             | 
 |      |           | [Submit top 5 papers to present](https://goo.gl/forms/4ymov5u7dFo2k7Ft1)    | 
-| 2/08 |           | [Project Prospectus Due](./proposals)                                        | 
+| 2/08 |           | [Project Prospectus Due](./proposals)                                       | 
 | 2/15 |           |                                                                             | 
 | 2/22 |           |                                                                             | 
 | 3/01 |           | [Midpoint Review](./midpoint)                                               | 
 | 3/08 | Thibault  | Modalities                                                                  | 
-| 3/15 | Thibault  | Recommendation                                                              | 
-| 3/22 | Thibault  | Autocomplete/refinement                                                     | 
-| 3/29 |           |                                                                             | 
+| 3/15 |           | NO CLASS.  Spring Break!                                                    | 
+| 3/22 | Thibault  | Recommendations                                                             | 
+| 3/29 | Thibault  | Autocomplete/refinement                                                     | 
 | 4/05 |           |                                                                             | 
 | 4/12 |           |                                                                             | 
 | 4/19 |           | NO CLASS [ICDE](http://icde2017.sdsc.edu/)                                  | 
