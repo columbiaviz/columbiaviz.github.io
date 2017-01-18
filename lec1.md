@@ -4,34 +4,140 @@ layout: page
 
 # Lecture 1: Intro
 
+## Self Introduction
+
+Typically have slides, we'll try using the blackboard
+
+Who
+
+* Eugene
+* Thibault
+* Guest lectures
+
+My work 
+
+* Data cleaning
+* Data explanation
+* DVMS
+* In service of making it easier to build and enhance interactive data exploration systems
+
+Class structure
+
+* 20-40 minutes: Presentation of readings
+* 20-30 minutes: Discussion of readings, how they relate to curent technology, brainstorming
+* 20-30 minutes: overview of next class
+
+
+## Context for this class
+
 Situate within the rest of the classes at columbia
 
-* big data classes
 * database classes (intro, ken, luis)
-* ML
+* ML: identifying patterns -- but how depends on the actual data!
+* HCI -- interaction design and understanding humans
 * typical viz classes
+* big data classes
+* All talks about the same thing -- building apps using data
+  * Ultimately, all of these techniques are interface questions about how to achieve some goal
+    * How does a user best interact with an interface (eye tracking, skin input [harrison], 3d tracking, apple watch, etc)?  
+    * How does a programmer interact with 1000 machines?
+    * How does a user interact with a large pile of data?
+  * But they take different perspective of the problem
+  * Our class takes the perspective of building end-to-end interactive systems and the research problems in such a setting
 
-However the pace of data volues and diversity of data is outpacing the tools that are available.  Anywhere you look, the tools to explore, interact with, and make sense of data are completely impoverished
+Our class is a blend of all of these areas with the overarching hypotheses:
 
-* requires substantial programming skills
-* can't scale (to volume, heterogeneity, variety of users, etc)
+        "how we interact and explore data will certainly change, 
+        but data management techniques will underlie technologies to support this transition"
+
+  * They may not be "build an RDBMS problems", but taking a data management perspective has benefits
+    * What are the key benefits that databases provide?
+      * declarative interface
+      * data independence
+      * cost-based optimization + cost models
+
+This is important
+
+* However the pace of data volumes and diversity of data is outpacing the tools that are available.  
+  * light bulbs, server logs, CCTV, live streaming, chat, gittr, supply chain data, etc
+  * almost guarantee that tools that exist, if they can technically get things done, suck
+
+Two things out of this class
+
+* how to build and enhance visual data exploration systems
+* what data exploration means for future applications and domains
+
+
+## Short history lesson:
+
+* Pre DB: 
+
+        user -- application that does data management, optimization, _and_ app
+
+* DB: 
+
+                    rel alg
+        user -- app ------ dbms that does optimization
+
+  * mention OLAP.  turns out it's a very useful subset of SQL
+    * GROUP BY Year
+    * GROUP BY Month
+    * FILTER BY prod = coffee GROUP BY MONTH
+  * Direct map to Tableau (no one wants ot write and rewrite OLAP queries)
+
+* MapReduce/Hadoop:
+
+               java programs
+        user ---------------- too much data for one machine
+
+  * Benefits: job scheduling, cluster management, resource allocation
+  * Problems: imperative programming, dog slow
+* Spark
+  
+            scala/python
+              RDDs
+        user -------- too much data but in memory
+
+* Hadoop systems have all transitioned back to DB on Hadoop architectures
+* For all of these
+  * just low level mechanisms to "run queries".  That's not the set of interactions the actual users want to deal with
+  * dashboarding and visual interfaces are the dominant applications that users interact with.  Why?
+  * have been relational data (what's that?).  Do you think that's still the case?
+
+        user --------- IoT data streams 
+             --------- Video streams
+             --------- Chat logs
+             --------- Human beings
+             --------- SCientific data
+             --------- the web
+             
+
+        monitoring
+        prediction
+        outlier detection
+        urban planning
+        find the best (infer)
+        ellicit comments from a crowd
+        
+Step back
+
+* relational systems were successful because it found a really useful DSL, but it's not perfect
+* Interactive data exploration will change based on the domain, the user, the types of questions
+
+Any domain you look, the classic, the tools to explore, interact with, and make sense of data are completely impoverished
+
+* nothing actually works the way it should, or requires substantial programming skills
+* can't scale (CV algs to huge volumes, heterogeneity, variety of users, etc)
 * isn't the best interface
 * isn't the best interaction
 * isn't fast
-
-Overarching Hypothesis
-
-* "how we interact and explore data will certainly change, but data management techniques will underlie the technology to support this transition"
-* Database/data management angle
-
 
 This class will be about data exploration.  
 
 * It will be hands-on.  There will be labs/assignments so that you can come in and tell us what you thought.  
 * The purpose of the class time is to discuss the papers, what you think, and share views on technology.  
 * Point is not to have lecturers lecturing.
-
-
+* The focus will largely center around visual data exploration systems, and branch out from there
 
 ## Simple Model
 
@@ -50,16 +156,14 @@ What are the parameters for which we may vary things?
         autocomplete
             recs
 
-
-
 * Basics
 	* User
-  * Exploration goals (there is always a goal)
-    * build report
-    * validate expected patters
-    * "find" patterns
+    * Exploration goals (there is always a goal)
+      * build report
+      * validate expected patters
+      * "find" patterns
   * What is the data/data source?
-    * relational data
+    * relational data (10 years of logs)
     * streaming data (live CCTV feeds, twitch, chat)
     * a human (chat, data science, expert help)
     * the internet (websites)
@@ -74,15 +178,20 @@ What are the parameters for which we may vary things?
     * ggplot2
     * dvms
   * What is the architecture?
+    * what's the problem with using multiple technologies?  
+      * analysis/optimization decisions limited within tech boundaries
   * What optimization techniques are used to make things fast?
 
-Making it fast is important (easy to measure)
+Making it fast is the easiest thing to do
 
 * faster DB
 * do only one thing (end-to-end)
-* optimized relational operators
-* perception pushdown
-* single data/compute model
+* change the larguage so all operators are optimized  
+* use user models as part of execution: perception pushdown
+* single data/compute model instead of using 5 different technologies (why?)
+* But
+  * If lacks data indep, then making it fast changes the architecture.  
+  * design changes require architecture changes.
 
 Primer on data optimization
 
@@ -96,12 +205,12 @@ Primer on data optimization
 ### Let's take look at MapD
 
 * Data: tweets turned into relational tables
-* Goal: render everything
+* Goal: render num tweets in a region and time period by loc, time, and hashtag
 * Analyses: Agg of counts, Normalization (else NYC always lights up)
 * Presentation: heatmap, wordcloud, facets/filters to drill down (zoom, click on hashtag)
 * Modality: point, click, drag
 * Architecture
-  * Browser client
+  * Browser client, generates API calls
   * Application middleware for REST calls (open inspector)
   * GPU does everything, sends images/datasets to browser
 
@@ -128,26 +237,17 @@ Anatomy of a query
 
 But what assumptions does it need in order to work?
 
+* Only real bottleneck is GPU 
+  * (separate logic for client and backend is OK)
+  * makes sense: easier to hire a UX expert to solely work on frontend
 * Data is in relational form
 * Network is fast, browser is fast
 * Only want counts and normalizations
 * (When are these assumptions true?)
 
 
-
 ## Syllabus
 
-Who
-
-* Eugene
-* Thibault
-* Guest lectures
-
-Class structure
-
-* 20-40 minutes: Presentation of readings
-* 20-30 minutes: Discussion of readings
-* 20-30 minutes: overview of next class
 
 Assignments
 

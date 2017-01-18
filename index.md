@@ -16,8 +16,8 @@ This course surveys the landscape interactive data exploration systems along sev
 
 
 {: .overview .table .table-striped :}
-| Staff+OH     |  [Eugene Wu](http://www.eugenewu.net) (Instructor) | Weds 4-5PM |
-|              |  TA           | TBA            |
+| Staff+OH     |  [Eugene Wu](http://www.eugenewu.net) (Instructor)   | Weds 4-5PM |
+|              |  [Thibault Sellam](http://homepages.cwi.nl/~sellam/) | By Appt    |
 | Meetings     | Weds 2-4PM 503 Hamilton Hall |        First 1.5 hours paper discussion<br/>Last 30 minutes open discussion.        |
 | Units        | 3             |                |
 | Grading      | Questions     | 10% |

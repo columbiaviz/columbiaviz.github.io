@@ -52,6 +52,7 @@ It is _highly recommended_ that you come to office hours to discuss project idea
 
 
 <a name="midpoint"></a>
+
 #### Midpoint Review
 
 The midpoint review will be an in-class exercise where teams will present and receive feedback/suggestions in a "speed-dating" style session.  Details will be released closer to the session.
