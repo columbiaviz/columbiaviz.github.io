@@ -26,7 +26,7 @@ This course surveys the landscape interactive data exploration systems along sev
 |              | Project       | 60% |
 |              | Presentation  | 0-10% extra credit |
 |              | If publishable quality | >10-20% extra credit |
-|Communication | [Piazza](https://piazza.com/) | Aside from personal questions, use Piazza instead of email. |
+|Communication | [Piazza](https://piazza.com/class/ivpqa35byxu4o) | Aside from personal questions, use Piazza instead of email. |
 |              | [Course Github](https://github.com/columbiaviz/) | |
 
 
