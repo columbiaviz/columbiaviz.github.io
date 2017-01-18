@@ -105,7 +105,7 @@ Two things out of this class
   * ways to improve the interactiov for developers
   * just low level mechanisms to "run queries".  That's not the set of interactions the actual users want to deal with
   * dashboarding and visual interfaces are the dominant applications that users interact with.  Why?
-  * have been relational data (what's that?).  Do you think that's still the case?
+  * have been relational data (what's that?).  Do you think that's still the case?  What are limitations to the relational model?
 
         user --------- IoT data streams 
              --------- industrial sensor data 
@@ -149,17 +149,18 @@ What's a simple model for data exploration?
 What are the parameters for which we may vary things?
 
 
-             modality
-   wants    interaction     how to build?     queries
-   clean      QBE
-   outliers  "Why?"                                       data clean/reliable?
-   patterns
-
-    User <--------------> Exploration System <----------> Processing Sys/data
-
-          response                          results
-        autocomplete
-            recs
+     .
+               modality
+     wants    interaction     how to build?     queries
+     clean      QBE
+     outliers  "Why?"                                       data clean/reliable?
+     patterns
+  
+      User <--------------> Exploration System <----------> Processing Sys/data
+  
+            response                          results
+          autocomplete
+              recs
 
 * Basics
 	* User
@@ -254,13 +255,9 @@ But what assumptions does it need in order to work?
 ## Syllabus
 
 
-Assignments
+3-4 Assignments
 
 * Purpose: play with/practice/implement ideas from the readings
-
-Reading questions
-
-* Due 6PM Tuesday before class
 
 Presentations
 
@@ -278,6 +275,11 @@ Project/Proposals
     * "Disrupt" something: build something that wins along a dimension
     * Collect data, implement a state of the art algorithm, find that it doesn't work, make it work.
     * build interface/modality that's new
+
+Reading questions
+
+* Due 6PM Tuesday before class
+
 
 Class is large -- typically ~10-15
 

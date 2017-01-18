@@ -81,9 +81,9 @@ You will be asked to complete three milestones for the presentation. Their purpo
 |  Day | Presenter | Papers                                                                      |
 |------|-----------|-----------------------------------------------------------------------------|
 | 1/18 | Eugene    | Introduction                                                                | 
-| 1/25 | Eugene    |                                                                             | 
-| 2/01 | Eugene    |                                                                             | 
-|      |           | [Submit top 5 papers to present](https://goo.gl/forms/4ymov5u7dFo2k7Ft1)    | 
+| 1/25 | Eugene    | Specification(?)                                                            | 
+| 2/01 | Eugene    | Explanation                                                                 | 
+|      |           | [Submit presentation requests](https://goo.gl/forms/4ymov5u7dFo2k7Ft1)      | 
 | 2/08 |           | [Project Prospectus Due](./proposals)                                       | 
 | 2/15 |           |                                                                             | 
 | 2/22 |           |                                                                             | 
