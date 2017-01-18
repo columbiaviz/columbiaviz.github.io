@@ -6,7 +6,7 @@ layout: page
 
 ## Self Introduction
 
-Typically have slides, we'll try using the blackboard
+Typically have inspirational slides, we'll try using the blackboard
 
 Who
 
@@ -73,6 +73,7 @@ Two things out of this class
 * Pre DB: 
 
         user -- application that does data management, optimization, _and_ app
+                   for loops over binary csv files (basically)
 
 * DB: 
 
@@ -92,6 +93,7 @@ Two things out of this class
 
   * Benefits: job scheduling, cluster management, resource allocation
   * Problems: imperative programming, dog slow
+
 * Spark
   
             scala/python
@@ -100,19 +102,21 @@ Two things out of this class
 
 * Hadoop systems have all transitioned back to DB on Hadoop architectures
 * For all of these
+  * ways to improve the interactiov for developers
   * just low level mechanisms to "run queries".  That's not the set of interactions the actual users want to deal with
   * dashboarding and visual interfaces are the dominant applications that users interact with.  Why?
   * have been relational data (what's that?).  Do you think that's still the case?
 
         user --------- IoT data streams 
+             --------- industrial sensor data 
              --------- Video streams
              --------- Chat logs
              --------- Human beings
-             --------- SCientific data
+             --------- Scientific data
              --------- the web
              
 
-        monitoring
+        monitoring  (has anything gone wrong?)
         prediction
         outlier detection
         urban planning
@@ -124,7 +128,7 @@ Step back
 * relational systems were successful because it found a really useful DSL, but it's not perfect
 * Interactive data exploration will change based on the domain, the user, the types of questions
 
-Any domain you look, the classic, the tools to explore, interact with, and make sense of data are completely impoverished
+Any domain you look, the classic tools to explore, interact with, and make sense of data are completely impoverished
 
 * nothing actually works the way it should, or requires substantial programming skills
 * can't scale (CV algs to huge volumes, heterogeneity, variety of users, etc)
@@ -150,6 +154,7 @@ What are the parameters for which we may vary things?
    clean      QBE
    outliers  "Why?"                                       data clean/reliable?
    patterns
+
     User <--------------> Exploration System <----------> Processing Sys/data
 
           response                          results
@@ -270,10 +275,9 @@ Project/Proposals
 * Project
 	* Many options
     * Research project
-    * build something that "wins" along a dimension
+    * "Disrupt" something: build something that wins along a dimension
     * Collect data, implement a state of the art algorithm, find that it doesn't work, make it work.
     * build interface/modality that's new
-	* Many many ideas (see staff)
 
 Class is large -- typically ~10-15
 
@@ -281,14 +285,10 @@ Class is large -- typically ~10-15
   * N ideas + N^2 interactions is a rich source of knowledge
 * large == more difficult to have discussions
   * If this becomes a problem, will need to reduce the size
+* I am willing to accomodate anyone that active participates in lecture, your grade will suffer tremendously otherwise
 * put in an extra effort to prep and talk in class (why participation is very high)
 	* assignment is basically to read and think about the papers
 	* discussion is encouraged, but write the answers on your own
-
-
-
-
-
 
 ### Relational model
 
