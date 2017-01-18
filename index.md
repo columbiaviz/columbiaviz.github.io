@@ -24,6 +24,7 @@ This course surveys the landscape interactive data exploration systems along sev
 |              | Participation | 15% |
 |              | Assignments   | 15% |
 |              | Project       | 60% |
+|              | Presentation  | 0-10% extra credit |
 |              | If publishable quality | >10-20% extra credit |
 |Communication | [Piazza](https://piazza.com/) | Aside from personal questions, use Piazza instead of email. |
 |              | [Course Github](https://github.com/columbiaviz/) | |
@@ -46,34 +47,32 @@ What I expect from You
 
 #### Project (semester long)
 
-You will pursue a semester long research project related to this course.  
-The project is a significant part of the course grade, and has the following milestones:
-
-1. **Week 2** Submit [project prospectus](./proposals) + peer feedback
-1. **Week 3** Submit [project prospectus](./proposals) + peer feedback
-2. **Week 5** Peer feedback
-3. **Last Week** Poster Session
-4. **Last Week** Project reports due
-
-#### Paper Presentations (one class)
-
-You are expected to present as a single or two person team on a paper of your choice (within reason).  The papers you provide can be from the list given below.  You are also free to list a paper of your choice, but it must match the themes of the class. 
-**This list must be submitted by midnight Feb 1.**
-
-
-{: .btn :}
-[Submit your top 5 papers to present](https://goo.gl/forms/4ymov5u7dFo2k7Ft1)
-
+You will pursue a [semester long research project](./proposals) related to this course.  
+The project is a significant part of the course grade.
 
 
 #### Paper Questions (every class)
 
 You are expected to answer the short questions associated with the readings every course.  
-The class reviews must be submitted by **midnight the day before class**.
+The class reviews must be submitted by **6PM the day before class**.
 
 {: .btn :}
-[Submit your answers to the lecture questons]()
+[Submit your answers to the lecture questions]()
 
+
+#### Paper Presentations 
+
+You have the _option_ to present as a group (1-2 people) for one lecture on a topic/paper of your choice (within reason).  The paper(s) you select can be from the list given below.  You are also free to list a paper of your choice as long as it matches the themes of the class.
+**This list must be submitted by midnight Feb 1.**
+
+You will be asked to complete three milestones for the presentation. Their purpose is to ensure high presentation quality---it is also a good excuse to practice your presentation skills and get feedback:
+
+1. **2 weeks before your presentation**: present to Professor Wu
+2. **1 week before your presentation**: present to two or more classmates and get feedback.  The classmates should send me their notes from the presentation.
+3. **Day of class**: give awesome presentation
+
+{: .btn :}
+[Submit the teammates and papers to present](https://goo.gl/forms/4ymov5u7dFo2k7Ft1)
 
 
 # Schedule
@@ -88,7 +87,7 @@ The class reviews must be submitted by **midnight the day before class**.
 | 2/08 |           | [Project Prospectus Due](./proposals)                                       | 
 | 2/15 |           |                                                                             | 
 | 2/22 |           |                                                                             | 
-| 3/01 |           | [Midpoint Review](./midpoint)                                               | 
+| 3/01 |           | [Midpoint Review](./proposals#midpoint)                                               | 
 | 3/08 | Thibault  | Modalities                                                                  | 
 | 3/15 |           | NO CLASS.  Spring Break!                                                    | 
 | 3/22 | Thibault  | Recommendations                                                             | 
@@ -219,4 +218,6 @@ Network
 -->
 
 
+Neat applications
 
+* https://www.remix.com/
