@@ -92,7 +92,7 @@ You will be asked to complete three milestones for the presentation. Their purpo
 | 3/15 |           | NO CLASS.  Spring Break!                                                    | 
 | 3/22 | Thibault  | Recommendations                                                             | 
 | 3/29 | Thibault  | Autocomplete/refinement                                                     | 
-| 4/05 |           |                                                                             | 
+| 4/05 | [Patrick Shafto](http://shaftolab.com/) (guest lecture) | TBA                           | 
 | 4/12 |           |                                                                             | 
 | 4/19 |           | NO CLASS [ICDE](http://icde2017.sdsc.edu/)                                  | 
 | 4/26 |           |                                                                             | 
