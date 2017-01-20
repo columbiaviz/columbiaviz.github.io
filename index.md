@@ -78,10 +78,10 @@ You will be asked to complete three milestones for the presentation. Their purpo
 # Schedule
 
 {: .schedule .table  :}
-|  Day | Presenter | Papers                                                                      |
-|------|-----------|-----------------------------------------------------------------------------|
-| 1/18 | Eugene    | Introduction                                                                | 
-| 1/25 | Eugene    | Specification(?)                                                            | 
+|  Day | Presenter | Papers                                                                      | Qs |
+|------|-----------|-----------------------------------------------------------------------------|--|
+| 1/18 | Eugene    | Introduction                                                                |  |
+| 1/25 | Eugene    | Specification. <br/>  Readings:    [D³](https://scholar.google.com/scholar?q=D%C2%B3+Data-Driven+Documents), [Vega-Lite](https://idl.cs.washington.edu/files/2017-VegaLite-InfoVis.pdf).  <br/> Skim: [DVMS position paper](http://sirrice.github.io/files/papers/ermac-vldb14.pdf) |  All languages have trade-offs in terms of what they can express and how easy it is to do so.  In each of the papers, how do they model (interactive) visualizations and describe their trade-offs.  |
 | 2/01 | Eugene    | Explanation                                                                 | 
 |      |           | [Submit presentation requests](https://goo.gl/forms/4ymov5u7dFo2k7Ft1)      | 
 | 2/08 |           | [Project Prospectus Due](./proposals)                                       | 

@@ -7,7 +7,7 @@ font-family: open sans, georgia, helvetica, arial;
 body{
 	min-width: 850px;
   width: 90%;
-  max-width: 1200px;
+  max-width: 1500px;
 	margin: 10px;
 	margin-left: auto;
 	margin-right: auto;
@@ -89,7 +89,7 @@ table.grading {
   width: 15%;
 }
 .schedule tr td:nth-child(3) {
-  width: 80%;
+  width: 40%;
 }
 
 
