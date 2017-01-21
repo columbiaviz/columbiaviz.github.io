@@ -43,7 +43,10 @@ What I expect from You
 * Students are expected to active participate in discussion in class; participation is a large part of the grade.
 * Students should be comfortable conducting a research project and writing up the results in a research paper format.
 
-### Assignments
+#### Assignments
+
+* [Homework 1](./hw1)
+
 
 #### Project (semester long)
 
@@ -80,7 +83,7 @@ You will be asked to complete three milestones for the presentation. Their purpo
 {: .schedule .table  :}
 |  Day | Presenter | Papers                                                                      | Qs |
 |------|-----------|-----------------------------------------------------------------------------|--|
-| 1/18 | Eugene    | Introduction                                                                |  |
+| 1/18 | Eugene    | Introduction  [hw1 released](./hw1)                                                              |  |
 | 1/25 | Eugene    | Specification. <br/>  Readings:    [D³](https://scholar.google.com/scholar?q=D%C2%B3+Data-Driven+Documents), [Vega-Lite](https://idl.cs.washington.edu/files/2017-VegaLite-InfoVis.pdf).  <br/> Skim: [DVMS position paper](http://sirrice.github.io/files/papers/ermac-vldb14.pdf) |  All languages have trade-offs in terms of what they can express and how easy it is to do so.  In each of the papers, how do they model (interactive) visualizations and describe their trade-offs.  |
 | 2/01 | Eugene    | Explanation                                                                 | 
 |      |           | [Submit presentation requests](https://goo.gl/forms/4ymov5u7dFo2k7Ft1)      | 
