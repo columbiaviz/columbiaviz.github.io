@@ -60,7 +60,7 @@ You are expected to answer the short questions associated with the readings ever
 The class reviews must be submitted by **6PM the day before class**.
 
 {: .btn :}
-[Submit your answers to the lecture questions]()
+[Add your answers to the appropriate lecture's wiki page](https://github.com/columbiaviz/columbiaviz.github.io/wiki)
 
 
 #### Paper Presentations 
