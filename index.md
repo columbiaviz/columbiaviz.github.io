@@ -180,6 +180,7 @@ Data Cleaning
 * Wrangler: interactive visual specification of data transformation scripts
 * Profiler: Integrated Statistical Analysis and Visualization for Data Quality Assessment
 * BoostClean: Automated Error Detection and Repair forMachine Learning
+* [Data Quality: Experiences and Lessons from Operationalizing Big Data](http://yanpeichen.com/professional/IEEE_Big_Data_2016_Data_Quality.pdf)
 
 #### Scaling Visual Exploration Systems
 
