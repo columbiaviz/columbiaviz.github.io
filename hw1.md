@@ -92,7 +92,7 @@ Please make sure that the logging works before you start engaging in the explora
 
 ## Submit
 
-Create a text document named `youruni.txt` anywhere in your instabase repository with the following information:
+Create your report as a text document named `<youruni>.txt` 
 
 1. List your name and UNI at the top of the document
 1. For each approach, list the insights that you identified from your analysis.  One insight per line:
@@ -108,9 +108,9 @@ Create a text document named `youruni.txt` anywhere in your instabase repository
 
       
 2. For each approach, reflect on its pros and cons.
-3. Please provide your Tableau logs, as described in the "Method 3" section of this document.
+3. Please provide your Tableau logs in a document called `<youruni>_tableau.txt`.   "Method 3" section of this document describes how to get the logs.
 
-Submit these documents using [this submission link](https://www.instabase.com/apps/file-submission/cmd/submit/0be40120-53de-4718-a18d-3e773da8c7b5)
+Submit the *report and tableau logs*  using [this submission link](https://www.instabase.com/apps/file-submission/cmd/submit/0be40120-53de-4718-a18d-3e773da8c7b5)
 
 ### What now?
 
