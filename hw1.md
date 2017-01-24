@@ -78,7 +78,7 @@ To do so, create a new Tableau workbook based on the following server:
     * Database: db_fea10998_f88d_4b6e_8f90_a6cd73bac65c
     * You should use the table called "Ontime".
 
-3. Explore the dataset using Tableau.  Come up with 3 visualizations that show new insights.  Copy-paste them in your report.
+3. Explore the dataset using Tableau.  Come up with 3 visualizations that show new insights.  Upload their screenshots into your HW1 directory.
 
 4. **IMPORTANT:** Copy of your Tableau log file and send them with your results. The log file we are interested in is called "tabprotosrv.txt". 
 
@@ -92,26 +92,27 @@ Please make sure that the logging works before you start engaging in the explora
 
 ## Submit
 
-Create your report as a text document named `<youruni>.txt` 
+You will submit your `HW1/` directory
 
-1. List your name and UNI at the top of the document
-1. For each approach, list the insights that you identified from your analysis.  One insight per line:
+1. Create your report as a text document named `<youruni>.txt`  in your `HW1/` directory
+  1. List your name and UNI at the top of the document
+  1. For each approach, list the insights that you identified from your analysis.  One insight per line:
 
-        SQL: insight 1
-        SQL: insight 2
-        ...
-        Python: insight 1
-        Python: insight 2
-        ...
-        Tableau: insight 1
-        ...
+          SQL: insight 1
+          SQL: insight 2
+          ...
+          Python: insight 1
+          Python: insight 2
+          ...
+          Tableau: insight 1
+          ...
 
-      
-2. For each approach, reflect on its pros and cons in the report document.
+        
+  2. For each approach, reflect on its pros and cons in the report document.
 3. Upload your Tableau logs into your `HW1` directory.  Rename it to `<youruni>_tableau.txt`.   "Method 3" section of this document describes how to get the logs.
 4. Upload your screenshots into your `HW1` directory.
 
-Submit the *report, tableau logs, and screenshots*  using [this submission link](https://www.instabase.com/apps/file-submission/cmd/submit/0be40120-53de-4718-a18d-3e773da8c7b5)
+Submit your `HW1` directory using [this submission link](https://www.instabase.com/apps/file-submission/cmd/submit/0be40120-53de-4718-a18d-3e773da8c7b5)
 
 ### What now?
 
