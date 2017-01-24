@@ -107,10 +107,11 @@ Create your report as a text document named `<youruni>.txt`
         ...
 
       
-2. For each approach, reflect on its pros and cons.
-3. Please provide your Tableau logs in a document called `<youruni>_tableau.txt`.   "Method 3" section of this document describes how to get the logs.
+2. For each approach, reflect on its pros and cons in the report document.
+3. Upload your Tableau logs into your `HW1` directory.  Rename it to `<youruni>_tableau.txt`.   "Method 3" section of this document describes how to get the logs.
+4. Upload your screenshots into your `HW1` directory.
 
-Submit the *report and tableau logs*  using [this submission link](https://www.instabase.com/apps/file-submission/cmd/submit/0be40120-53de-4718-a18d-3e773da8c7b5)
+Submit the *report, tableau logs, and screenshots*  using [this submission link](https://www.instabase.com/apps/file-submission/cmd/submit/0be40120-53de-4718-a18d-3e773da8c7b5)
 
 ### What now?
 
