@@ -95,20 +95,20 @@ Please make sure that the logging works before you start engaging in the explora
 You will submit your `HW1/` directory
 
 1. Create your report as a text document named `<youruni>.txt`  in your `HW1/` directory
-  1. List your name and UNI at the top of the document
-  1. For each approach, list the insights that you identified from your analysis.  One insight per line:
+    1. List your name and UNI at the top of the document
+    1. For each approach, list the insights that you identified from your analysis.  One insight per line:
 
-          SQL: insight 1
-          SQL: insight 2
-          ...
-          Python: insight 1
-          Python: insight 2
-          ...
-          Tableau: insight 1
-          ...
+            SQL: insight 1
+            SQL: insight 2
+            ...
+            Python: insight 1
+            Python: insight 2
+            ...
+            Tableau: insight 1
+            ...
 
-        
-  2. For each approach, reflect on its pros and cons in the report document.
+          
+    2. For each approach, reflect on its pros and cons in the report document.
 3. Upload your Tableau logs into your `HW1` directory.  Rename it to `<youruni>_tableau.txt`.   "Method 3" section of this document describes how to get the logs.
 4. Upload your screenshots into your `HW1` directory.
 
