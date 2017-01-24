@@ -46,6 +46,15 @@ What I expect from You
 #### Assignments
 
 * [Homework 1](./hw1)
+* Homework 2
+* Homework 3
+* Homework 4
+* Homework 5
+
+
+
+For assignments, you allowed 5 penalty free late days to use throughout the semester. One late day equals one 24 hour period after the due date of the assignment. Once you have used your late days, there will be a 20% penalty for each day an assignment is late. You do not need to explictly declare the use of late days; we will assign them to you in a way that is optimal for your grade when different assignments are worth different numbers of points. Late days may not be used for the final project.
+
 
 
 #### Project (semester long)
