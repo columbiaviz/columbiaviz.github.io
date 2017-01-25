@@ -155,6 +155,7 @@ Recommendation
 * [Towards A General-Purpose Query Language for Visualization Recommendation](https://idl.cs.washington.edu/files/2016-CompassQL-HILDA.pdf)
 * [Effortless Data Exploration with zenvisage: An Expressive and Interactive Visual Analytics System](http://web.engr.illinois.edu/~adityagp/zenvisage.pdf)
 * [SeeDB: efficient data-driven visualization recommendations to support visual analysis.](/files/papers/seedb.pdf)
+* [Data Polygamy: The Many-Many Relationships among Urban Spatio-Temporal Data Sets](https://arxiv.org/pdf/1610.06978.pdf)
 * Optional: Characterizing provenance in visualization and data analysis: an organizational framework of provenance types and purposes.
 * Optional: Adaptive recommendation-based modeling support for data analysis workflows.
 

@@ -4,6 +4,13 @@ layout: page
 
 # Lecture 2: Specification
 
+Assignment
+
+* What were the tradeoffs between SQL, Pyth,n Tableau?
+  * expressiveness?  
+  * ease of use (what does that mean?)?  
+  * applicability to task?  (what task?)
+
 High level thoughts
 
 * Abstraction
@@ -33,6 +40,16 @@ Two arguments
 
 * Accessibility
   * Custom representation different than web standards means more to learn
+
+          // width, height, bottom are primitives of protovis, not any web standard
+          // (schemas matter)
+          vis.add(pv.Bar)
+            .data([1, 1.2, 1.7, 1.5, .7, .3])
+            .width(20)
+            .height(function(d) d * 80)
+            .bottom(0)
+            .left(function() this.index * 25);
+
   * (why? look for an answer) Sys with intermediate scene graph abstractions and 
     delayed property eval can be difficult to debug
 * Expressiveness
@@ -312,6 +329,43 @@ DeVIL
              group by loc  // group by syntax is stupid
              
 
-# DeVIL/Relational
+# Example
+
+D3:
+
+        xs = scales.linear().domain(...).range(...)
+        ys = scales.linear().domain(...).range(...)
+        circles = svg.selectAll("circle")
+        circles.data(rows)
+          .enter().append("circle")
+            .attr("cx", xs)
+            .attr("cy", ys)
+        circles
+          .on("mousedown", ...)
+          .on("mousemove", ...)
+          .on("mouseup", ...)
+
+Vega-lite
+
+* what's a transform, what's allowed?
+
+        data:
+        mark: circrle
+        encoding
+          cx: 
+            field: 
+          cy:
+            field:
+          color: [
+            { if region, use Origin:nominal field }
+            { else grey }
+          ]
+
+        select:
+          region: // the name
+            on: [down, up] > move
+            target: 
+              type: interval
+              name: region
 
 
