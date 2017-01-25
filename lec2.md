@@ -26,20 +26,23 @@ What is Tableau's model of a visualization?
 * Tied to the browser, betting on web standards. not a bad bed fellow
 * Many arguments are of the pragmatic nature
 
-"Rather than empowering direct manipulation of the existing model (DOM), such toolkits supplant it with custom scene graph abstractions"
+"Rather than empowering direct manipulation of the existing model (DOM), 
+such toolkits supplant it with custom scene graph abstractions"
 
 Two arguments
 
 * Accessibility
   * Custom representation different than web standards means more to learn
-  * (why? look for an answer) Sysetms with intermediate scene graph abstractions and delayed property eval can be difficult to debug
+  * (why? look for an answer) Sys with intermediate scene graph abstractions and 
+    delayed property eval can be difficult to debug
 * Expressiveness
   * Implementation supported by underlying system (in this case browser) 
 
 Objectives
 
 * Compatibility: web ecosystem has tools.  adopt them rather than reimplement them
-* Debugging: tools already exist for browser.  Toolkits have crazy internal representations impossible to understand/debug
+* Debugging: tools already exist for browser.  
+  Toolkits have crazy internal representations impossible to understand/debug
 * Performance: hard to make "high level abstractions (languages)" fast 
   * do you believe this?
   * similar to argument for writing assembly
@@ -142,7 +145,9 @@ Multi-view
 * Encoding is
 
         encoding = (channel, field, datatype, val, functions, scale, guide)
-        channel: x, y, color, shape, size, text, order (for stacking/layering order), path (for  sequences of points in a line)
+        channel: x, y, color, shape, size, text, 
+                 order (for stacking/layering order), 
+                 path (for  sequences of points in a line)
         functions is weird: bin, aggregate, count
 
         encoding: (x, 'month', 'int', 'linear scale')
@@ -177,6 +182,98 @@ Interaction
     * changed
     * shown directly
     * replace things
+
+
+
+
+* selections backed by values or predicates
+
+        type: point    -- copy the selected record explicitly
+        type: list     -- predicate over the dataset using (IN) operator
+        type: interval -- range predicate over dataset
+
+        select: 
+          id: 
+            type: "point"
+        ...
+        color: 
+          -- use the value in record.Origin if in the selection as defined by id
+          { if: id, field: Origin, Type: N } 
+          -- default gray
+          { value: 'grey' }                  
+
+* `toggle` config means interacting with a mark toggles 
+   its value instead of explicitly selecting ONLY that value
+
+        -- clicking (default event) toggles selection for that mark and adds to list
+        id: { type: list, toggle: true }               
+        id: { type: list, on: click, toggle: true }   
+
+        -- unclear its semantics
+        id: { type: point, toggle:true }               
+
+        -- select via hovering over
+        id: { type: list, on: mouseover, toggle: true} 
+
+* "Transforms" can apply on top of predicate results to further transform selected data
+
+        project(fields, channels) -- database projection
+        toggle(event)             -- modifies content of a list type
+        translate(events, by)     -- offset backed recs via by func (details unclear)
+        zoom(event, factor):      -- event (e.g., mouse wheel) or factor func
+        nearest()                 -- voronoi decomposition and find nearest mark
+
+* Selection Ambiguities
+  * multiple subplots, with selections defined in each subplot individually
+
+        repeat
+          row: displacement, mpg    -- rows in splom
+          col: horsepower, mpg      -- columns in splom
+        spec: ...
+          select:
+            region:                 -- specific to a single subplot
+              type: interval,
+              ...
+              on: [mousedown[shift], mouseup] > mousemove
+              resolve: single
+
+        resolve: single      -- only one subplot can be selected at any time, rest cleared
+        resolve: indep       -- sels can happen in multiple subplots, but independent
+        resolve: union       -- sels across subplots are unioned (OR operator)
+        resolve: intersect   -- sels across subplots intersected (AND)
+        (pretty convenient)
+
+Comment on "Evaluation"
+
+* Taxonomy of interaction methods, show examples for each
+  1. select
+  1. explore (change data)
+  1. connect (brushing)
+  1. abstract/elaborate (level of detail)
+  1. reconfigure (normalize data)
+  1. filter
+  1. encode
+
+Confusing points
+
+* Specification Conflicts Manually handled
+
+        select: {
+          ...
+          on: [mousedown[event.shiftKey], mouseup] > mousemove
+        grid: 
+          type: interval, ...
+          translate: [mousedown[!event.shiftKey], mouseup] > mousemove
+
+        -- shiftKey stmts carefully designed to avoid ambiguity with non-shiftkey facts
+        -- done by partitioning the input space
+        
+
+* Focus is on selections   
+  * is pointing to data the hard part?  
+  * What about stuff you want to do with the selections?
+
+        
 
 
 ### Example
@@ -216,3 +313,5 @@ DeVIL
              
 
 # DeVIL/Relational
+
+
