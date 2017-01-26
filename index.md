@@ -94,7 +94,7 @@ You will be asked to complete three milestones for the presentation. Their purpo
 |------|-----------|-----------------------------------------------------------------------------|--|
 | 1/18 | Eugene    | Introduction                                           |  |
 | 1/25 | Eugene    | Specification.                                                              | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/Visualization-Specifications) <br/> [HW 1](./hw1) | 
-| 2/01 | Eugene    | Explanation                                                                 | [Submit presentation requests](https://goo.gl/forms/4ymov5u7dFo2k7Ft1) <br/> Turn in project teams in class!     | 
+| 2/01 | Eugene    | Performance 1                                                               | [Submit presentation requests](https://goo.gl/forms/4ymov5u7dFo2k7Ft1) <br/> Turn in project teams in class!     | 
 | 2/08 |           |                                                                             | [Project Prospectus Due](./proposals)                                       | 
 | 2/15 |           |                                                                             | 
 | 2/22 |           |                                                                             | 
@@ -196,7 +196,7 @@ End-to-end fast data visualization systems
 Data Processing Systems
 
 * [MacroBase: Analytic Monitoring for the Internet of Things](/files/papers/macrobase.pdf)
-* Dremel: Interactive Analysis Of Web-Scale Datasets; Column Stores basics  Alexander Zahdeh  
+* [Dremel: Interactive Analysis Of Web-Scale Datasets](/files/papers/dremel.pdf)
 * [Spark SQL: Relational Data Processing in Spark](https://amplab.cs.berkeley.edu/wp-content/uploads/2015/03/SparkSQLSigmod2015.pdf)
 * [BlinkDB: Queries with Bounded Errors and Bounded Response Times on Very Large Data](/files/papers/blinkdb.pdf)
 * [Data cube: A relational aggregation operator generalizing group-by, cross-tab, and sub-totals.](/files/papers/olap.pdf)
