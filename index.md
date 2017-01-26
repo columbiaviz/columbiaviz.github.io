@@ -94,7 +94,7 @@ You will be asked to complete three milestones for the presentation. Their purpo
 |------|-----------|-----------------------------------------------------------------------------|--|
 | 1/18 | Eugene    | Introduction                                           |  |
 | 1/25 | Eugene    | Specification.                                                              | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/Visualization-Specifications) <br/> [HW 1](./hw1) | 
-| 2/01 | Eugene    | Performance 1                                                               | [Submit presentation requests](https://goo.gl/forms/4ymov5u7dFo2k7Ft1) <br/> Turn in project teams in class!     | 
+| 2/01 | Eugene    | Performance 1                                                               | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/end-to-end-vis) <br/> [Submit presentation requests](https://goo.gl/forms/4ymov5u7dFo2k7Ft1) <br/> Turn in project teams in class!     | 
 | 2/08 |           |                                                                             | [Project Prospectus Due](./proposals)                                       | 
 | 2/15 |           |                                                                             | 
 | 2/22 |           |                                                                             | 
@@ -190,7 +190,7 @@ End-to-end fast data visualization systems
 * [Polaris: A system for query, analysis, and visualization of multidimensional relational databases](/files/papers/polaris.pdf)
 * [imMens: real-time visual querying of big data](/files/papers/immens.pdf)
 * [Superconductor: a language for big data visualization.](/files/papers/superconductor.pdf)
-* Profiler: Integrated Statistical Analysis and Visualization for Data Quality Assessment ; Mid-term review for projects  
+* [Profiler: Integrated Statistical Analysis and Visualization for Data Quality Assessment]()
 * [Combining Design and Performance in aData Visualization Management System](/files/papers/dvmscidr.pdf)
 
 Data Processing Systems
