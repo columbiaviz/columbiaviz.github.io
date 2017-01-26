@@ -94,7 +94,7 @@ You will be asked to complete three milestones for the presentation. Their purpo
 |------|-----------|-----------------------------------------------------------------------------|--|
 | 1/18 | Eugene    | Introduction                                           |  |
 | 1/25 | Eugene    | Specification.                                                              | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/Visualization-Specifications) <br/> [HW 1](./hw1) | 
-| 2/01 | Eugene    | Explanation                                                                 | [Submit presentation requests](https://goo.gl/forms/4ymov5u7dFo2k7Ft1)      | 
+| 2/01 | Eugene    | Explanation                                                                 | [Submit presentation requests](https://goo.gl/forms/4ymov5u7dFo2k7Ft1) <br/> Turn in project teams in class!     | 
 | 2/08 |           |                                                                             | [Project Prospectus Due](./proposals)                                       | 
 | 2/15 |           |                                                                             | 
 | 2/22 |           |                                                                             | 
