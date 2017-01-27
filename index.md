@@ -94,8 +94,8 @@ You will be asked to complete three milestones for the presentation. Their purpo
 |------|-----------|-----------------------------------------------------------------------------|--|
 | 1/18 | Eugene    | Introduction                                           |  |
 | 1/25 | Eugene    | Specification.                                                              | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/Visualization-Specifications) <br/> [HW 1](./hw1) | 
-| 2/01 | Eugene    | Performance 1                                                               | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/end-to-end-vis) <br/> [Submit presentation requests](https://goo.gl/forms/4ymov5u7dFo2k7Ft1) <br/> Turn in project teams in class!     | 
-| 2/08 |           |                                                                             | [Project Prospectus Due](./proposals)                                       | 
+| 2/01 | Eugene    | Performance 1: Overview, end-to-end systems                                 | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/End-to-End-Visualization-Systems) <br/> [Submit presentation requests](https://goo.gl/forms/4ymov5u7dFo2k7Ft1) <br/> Turn in project teams in class!     | 
+| 2/08 | Eugene    | Performance 2:                                                              | [Project Prospectus Due](./proposals)                                       | 
 | 2/15 |           |                                                                             | 
 | 2/22 |           |                                                                             | 
 | 3/01 |           | [Midpoint Review](./proposals#midpoint)                                               | 
@@ -142,7 +142,7 @@ Interaction Modalities
 
 * [Gestural Query Specification](https://scholar.google.com/scholar?q=gestural+query+specification)
 * [Expressive Query Construction through Direct Manipulation of Nested Relational Results](https://scholar.google.com/scholar?q=Expressive+Query+Construction+through+Direct+Manipulation+of+Nested+Relational+Results)
-* dbTouch: Analytics at your Fingertips Yishuo  
+* [Constructing an Interactive Natural Language Interface for Relational Databases](/files/papers/nlpdb.pdf)
 * [Visualization-by-Sketching: An Artist’s Interface for Creating Multivariate Time-Varying Data Visualizations](http://www.cs.tufts.edu/comp/250VIS/papers/Visualization-by-Sketching.pdf)
 * [(s/q)ueries: Visual Regular Expressions for Querying and Exploring Event Sequences](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/chi2015-squeries.pdf)
 * Characterizing provenance in visualization and data analysis: an organizational framework of provenance types and purposes.
