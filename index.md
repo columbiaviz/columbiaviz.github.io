@@ -96,17 +96,17 @@ You will be asked to complete three milestones for the presentation. Their purpo
 | 1/25 | Eugene    | Specification.                                                              | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/Visualization-Specifications) <br/> [HW 1](./hw1) | 
 | 2/01 | Eugene    | Performance 1: Overview, end-to-end systems                                 | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/End-to-End-Visualization-Systems) <br/> [Submit presentation requests](https://goo.gl/forms/4ymov5u7dFo2k7Ft1) <br/> Turn in project teams in class!     | 
 | 2/08 | Eugene    | Performance 2:                                                              | [Project Prospectus Due](./proposals)                                       | 
-| 2/15 |           |                                                                             | 
-| 2/22 |           |                                                                             | 
-| 3/01 |           | [Midpoint Review](./proposals#midpoint)                                               | 
-| 3/08 | Thibault  | Modalities                                                                  | 
+| 2/15 | Eugene    | Performance 3:                                                              | 
+| 2/22 | Gabriel/Daniel | Specialized Systems: Macrobase (and BlinkDB?)                          | 
+| 3/01 | Alireza/Luren | Performance 4: Dremel                                                   | 
+| 3/08 | Eugene    | Explanation + [Midpoint Review](./proposals#midpoint)                       | 
 | 3/15 |           | NO CLASS.  Spring Break!                                                    | 
-| 3/22 | Thibault  | Recommendations                                                             | 
-| 3/29 | Thibault  | Autocomplete/refinement                                                     | 
+| 3/22 | Thibault  | Modalities                                                                  | 
+| 3/29 | Brennan   | Recommendation                                                              | 
 | 4/05 | [Patrick Shafto](http://shaftolab.com/) (guest lecture) | TBA                           | 
-| 4/12 |           |                                                                             | 
-| 4/19 |           | NO CLASS [ICDE](http://icde2017.sdsc.edu/)                                  | 
-| 4/26 |           |                                                                             | 
+| 4/12 | Drashko   | Summarization                                                               | 
+| 4/19 | Thibault  | Autocomplete/refinement.  Wu will be away at [ICDE](http://icde2017.sdsc.edu/) | 
+| 4/26 | Eugene    | ---                                                                         | 
 | 5/03 |           | Poster Presentation + [submit writeups]                                     |  
 
 

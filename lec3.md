@@ -2,6 +2,33 @@
 layout: page
 ---
 
+Presentations
+
+* (topic?) Dremel/Visual discovery and model driven explantion
+* (recs) Voyager and SeeDB.  Maybe data polygamy
+* (summarization?) ConVis/Wikum
+
+HW Questions
+
+* What does performance even mean?
+  * latency for the viz to update
+  * ability for users to quickly express certain layouts/interactions
+    * direct manipulation to shelves vs writing SQL
+    * mention db approaches to this (queryviz.com, gesturedb, etc)
+  * perceptual ability to decode visual information (immens color mapping)
+* polaris: 
+  * major: OLAP -- the algebraic layouts.  
+  * minor: allowable marks, labels, etc
+  * is that why aggrgates and transforms are tricky?
+* immens
+  * major: low dimensional linked bin-plots
+* What is relationship with SQL?
+  * polaris: direct mapping to SQL for the heavy lifting
+    * we saw SQL not enough to do the partitioning (nestedSQL ok)
+  * immens: charts and linkings all turn into SQL queries
+  * hard to optimize unless you restrict the operations (indexes only good for certain operations. same for cubes, etc)
+  * discuss second order?
+
 # Lecture 3: Intro to Performance
 
 ## Polaris
@@ -111,6 +138,8 @@ How to make it faster?
 * make individual interactions/components faster
   * network faster: M4
   * brushed linking and indexes (immens)
+* spend $$
+  * more powerful client
 * wackier ideas?
   * tell the user what to do (excel is extreme example)
 
