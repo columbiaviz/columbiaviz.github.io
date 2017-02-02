@@ -102,9 +102,9 @@ You will be asked to complete three milestones for the presentation. Their purpo
 | 3/08 | Eugene    | Explanation + [Midpoint Review](./proposals#midpoint)                       | 
 | 3/15 |           | NO CLASS.  Spring Break!                                                    | 
 | 3/22 | Thibault  | Modalities                                                                  | 
-| 3/29 | Brennan   | Recommendation                                                              | 
+| 3/29 | Brennan/Drashko   | Recommendation + Summarization                                                              | 
 | 4/05 | [Patrick Shafto](http://shaftolab.com/) (guest lecture) | TBA                           | 
-| 4/12 | Drashko   | Summarization                                                               | 
+| 4/12 |           |                                                                             | 
 | 4/19 | Thibault  | Autocomplete/refinement.  Wu will be away at [ICDE](http://icde2017.sdsc.edu/) | 
 | 4/26 | Eugene    | ---                                                                         | 
 | 5/03 |           | Poster Presentation + [submit writeups]                                     |  
