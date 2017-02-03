@@ -140,13 +140,17 @@ Declarative Visualization Languages
 
 Interaction Modalities
 
-* [Gestural Query Specification](https://scholar.google.com/scholar?q=gestural+query+specification)
-* [Expressive Query Construction through Direct Manipulation of Nested Relational Results](https://scholar.google.com/scholar?q=Expressive+Query+Construction+through+Direct+Manipulation+of+Nested+Relational+Results)
-* [Constructing an Interactive Natural Language Interface for Relational Databases](/files/papers/nlpdb.pdf)
-* [Visualization-by-Sketching: An Artist’s Interface for Creating Multivariate Time-Varying Data Visualizations](http://www.cs.tufts.edu/comp/250VIS/papers/Visualization-by-Sketching.pdf)
-* [(s/q)ueries: Visual Regular Expressions for Querying and Exploring Event Sequences](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/chi2015-squeries.pdf)
-* Characterizing provenance in visualization and data analysis: an organizational framework of provenance types and purposes.
-* [Analyza: Exploring Data with Conversation](https://static.googleusercontent.com/media/research.google.com/fr//pubs/archive/45791.pdf)
+* Touch
+  * [Gestural Query Specification](https://scholar.google.com/scholar?q=gestural+query+specification)
+* NLP
+  * [Constructing an Interactive Natural Language Interface for Relational Databases](/files/papers/nlpdb.pdf)
+  * [Analyza: Exploring Data with Conversation](https://static.googleusercontent.com/media/research.google.com/fr//pubs/archive/45791.pdf)
+* Spreadsheets
+  * [Expressive Query Construction through Direct Manipulation of Nested Relational Results](https://scholar.google.com/scholar?q=Expressive+Query+Construction+through+Direct+Manipulation+of+Nested+Relational+Results)
+* Other
+  * [Visualization-by-Sketching: An Artist’s Interface for Creating Multivariate Time-Varying Data Visualizations](http://www.cs.tufts.edu/comp/250VIS/papers/Visualization-by-Sketching.pdf)
+  * [(s/q)ueries: Visual Regular Expressions for Querying and Exploring Event Sequences](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/chi2015-squeries.pdf)
+  * Characterizing provenance in visualization and data analysis: an organizational framework of provenance types and purposes.
 
 #### Augmenting User Exploration
 
