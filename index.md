@@ -95,7 +95,7 @@ You will be asked to complete three milestones for the presentation. Their purpo
 | 1/18 | Eugene    | Introduction                                           |  |
 | 1/25 | Eugene    | Specification.                                                              | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/Visualization-Specifications) <br/> [HW 1](./hw1) | 
 | 2/01 | Eugene    | Performance 1: Overview, end-to-end systems                                 | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/End-to-End-Visualization-Systems) <br/> [Submit presentation requests](https://goo.gl/forms/4ymov5u7dFo2k7Ft1) <br/> Turn in project teams in class!     | 
-| 2/08 | Eugene    | Performance 2: Sampling                                                     | [Project Prospectus Due](./proposals)                                       | 
+| 2/08 | Eugene    | Performance 2: Sampling                                                     | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/Sampling)<br/>[Project Prospectus Due](./proposals)                                       | 
 | 2/15 | Eugene    | Performance 3: Prefetching/Network                                          | 
 | 2/22 | Gabriel/Daniel | Specialized Systems: Macrobase (and BlinkDB?)                          | 
 | 3/01 | Alireza/Luren | Performance 4: Dremel                                                   | 
