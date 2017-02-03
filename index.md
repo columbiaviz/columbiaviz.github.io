@@ -5,14 +5,14 @@ layout: page
 # Overview
 
 Human beings rely on summarizing and visualizing data to make informed decisions.  The number and volume of data continues to increase at exponential rates, and new user-facing systems and modalities are needed to handle the scale and heterogeneity of future data.
-This course surveys the landscape interactive data exploration systems along several axes. 
+This course surveys the landscape interactive data exploration systems along several axes.
 
-* What interaction modalities do modern systems provide? 
-* How are such systems developed and optimized to ensure interactivity? 
-* What novel functionality can drastically enhance the user's understanding of the dataset? 
+* What interaction modalities do modern systems provide?
+* How are such systems developed and optimized to ensure interactivity?
+* What novel functionality can drastically enhance the user's understanding of the dataset?
 * Can we take advantage of domain-specific data and needs?
 
-<br/> 
+<br/>
 
 
 {: .overview .table .table-striped :}
@@ -39,7 +39,7 @@ What This Class is **NOT**
 What I expect from You
 
 * Students should be comfortable reading research papers; you will read, answer questions, and comment on the readings before class.
-* Students should be comfortable coding data processing systems;  familiarity with database query execution, some machine learning, and algorithms is expected.    
+* Students should be comfortable coding data processing systems;  familiarity with database query execution, some machine learning, and algorithms is expected.
 * Students are expected to active participate in discussion in class; participation is a large part of the grade.
 * Students should be comfortable conducting a research project and writing up the results in a research paper format.
 
@@ -59,20 +59,20 @@ For assignments, you allowed 5 penalty free late days to use throughout the seme
 
 #### Project (semester long)
 
-You will pursue a [semester long research project](./proposals) related to this course.  
+You will pursue a [semester long research project](./proposals) related to this course.
 The project is a significant part of the course grade.
 
 
 #### Paper Questions (every class)
 
-You are expected to answer the short questions associated with the readings every course.  
+You are expected to answer the short questions associated with the readings every course.
 The class reviews must be submitted by **6PM the day before class**.
 
 {: .btn :}
 [Add your answers to the appropriate lecture's wiki page](https://github.com/columbiaviz/columbiaviz.github.io/wiki)
 
 
-#### Paper Presentations 
+#### Paper Presentations
 
 You have the _option_ to present as a group (1-2 people) for one lecture on a topic/paper of your choice (within reason).  The paper(s) you select can be from the list given below.  You are also free to list a paper of your choice as long as it matches the themes of the class.
 **This list must be submitted by midnight Feb 1.**
@@ -93,21 +93,21 @@ You will be asked to complete three milestones for the presentation. Their purpo
 |  Day | Presenter | Papers                                                                      | Notes/Due |
 |------|-----------|-----------------------------------------------------------------------------|--|
 | 1/18 | Eugene    | Introduction                                           |  |
-| 1/25 | Eugene    | Specification.                                                              | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/Visualization-Specifications) <br/> [HW 1](./hw1) | 
-| 2/01 | Eugene    | Performance 1: Overview, end-to-end systems                                 | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/End-to-End-Visualization-Systems) <br/> [Submit presentation requests](https://goo.gl/forms/4ymov5u7dFo2k7Ft1) <br/> Turn in project teams in class!     | 
+| 1/25 | Eugene    | Specification.                                                              | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/Visualization-Specifications) <br/> [HW 1](./hw1) |
+| 2/01 | Eugene    | Performance 1: Overview, end-to-end systems                                 | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/End-to-End-Visualization-Systems) <br/> [Submit presentation requests](https://goo.gl/forms/4ymov5u7dFo2k7Ft1) <br/> Turn in project teams in class!     |
 | 2/08 | Eugene    | Performance 2: Sampling                                                     | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/Sampling)<br/>[Project Prospectus Due](./proposals)                                       | 
-| 2/15 | Eugene    | Performance 3: Prefetching/Network                                          | 
-| 2/22 | Gabriel/Daniel | Specialized Systems: Macrobase (and BlinkDB?)                          | 
-| 3/01 | Alireza/Luren | Performance 4: Dremel                                                   | 
-| 3/08 | Eugene    | Explanation + [Midpoint Review](./proposals#midpoint)                       | 
-| 3/15 |           | NO CLASS.  Spring Break!                                                    | 
-| 3/22 | Thibault  | Modalities                                                                  | 
-| 3/29 | Brennan/Drashko   | Recommendation + Summarization                                                              | 
-| 4/05 | [Patrick Shafto](http://shaftolab.com/) (guest lecture) | TBA                           | 
-| 4/12 |           |                                                                             | 
-| 4/19 | Thibault  | Autocomplete/refinement.  Wu will be away at [ICDE](http://icde2017.sdsc.edu/) | 
-| 4/26 | Eugene/Thibault    | Cleaning?                                                                   | 
-| 5/03 |           | Poster Presentation + [submit writeups](./proposals)                                     |  
+| 2/15 | Eugene    | Performance 3: Prefetching/Network                                          |
+| 2/22 | Gabriel/Daniel | Specialized Systems: Macrobase (and BlinkDB?)                          |
+| 3/01 | Alireza/Luren | Performance 4: Dremel                                                   |
+| 3/08 | Eugene    | Explanation + [Midpoint Review](./proposals#midpoint)                       |
+| 3/15 |           | NO CLASS.  Spring Break!                                                    |
+| 3/22 | Thibault  | Modalities                                                                  |
+| 3/29 | Brennan/Drashko   | Recommendation + Summarization                                                              |
+| 4/05 | [Patrick Shafto](http://shaftolab.com/) (guest lecture) | TBA                           |
+| 4/12 |           |                                                                             |
+| 4/19 | Thibault  | Autocomplete/refinement.  Wu will be away at [ICDE](http://icde2017.sdsc.edu/) |
+| 4/26 | Eugene/Thibault    | Cleaning?                                                                   |
+| 5/03 |           | Poster Presentation + [submit writeups](./proposals)                                     |
 
 
 # Topics
@@ -121,7 +121,7 @@ Classics
 
 * [Tukey, John W. Exploratory Data Analysis. 1979](https://scholar.google.com/scholar?hl=en&q=2.+Tukey%2C+John+W.+Exploratory+Data+Analysis.+1979)
 
-Surveys 
+Surveys
 
 * [Making Database Systems Usable](https://scholar.google.com/scholar?q=Making+Database+Systems+Usable)
 * [Overview of Data Exploration Techniques](http://stratos.seas.harvard.edu/files/stratos/files/exploration-tutorial.pdf)
@@ -146,6 +146,7 @@ Interaction Modalities
 * [Visualization-by-Sketching: An Artist’s Interface for Creating Multivariate Time-Varying Data Visualizations](http://www.cs.tufts.edu/comp/250VIS/papers/Visualization-by-Sketching.pdf)
 * [(s/q)ueries: Visual Regular Expressions for Querying and Exploring Event Sequences](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/chi2015-squeries.pdf)
 * Characterizing provenance in visualization and data analysis: an organizational framework of provenance types and purposes.
+* [Analyza: Exploring Data with Conversation](https://static.googleusercontent.com/media/research.google.com/fr//pubs/archive/45791.pdf)
 
 #### Augmenting User Exploration
 
