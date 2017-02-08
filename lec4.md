@@ -23,25 +23,25 @@ Simple example with one result value
 * [Horvitz-Thompson Estimator](https://onlinecourses.science.psu.edu/stat506/node/16)
   * Unbiased estimator for any design (bias), with or without replacement
 
-          n samples
-          N total records
-          sum  =      sum(prob_i^-1 * y_i for i in [1, n])
-          mean =      1/N * sum
-          var(mean) = depends!
+	          n samples
+	          N total records
+	          sum  =      sum(prob_i^-1 * y_i for i in [1, n])
+	          mean =      1/N * sum
+	          var(mean) = depends!
 
 * Estimating the value is easy, estimating the err bound is hard!
   * Hoeffding, Chernoff, Bernstein, etc
 
-          est = 1/n * sum_i val_i
-          P{ |est - truemean| <= err } >= 1 - 2*e^{foo} = p
-          foo = -2nerr^2 / (b-a)^2
-          a, b  are the min max values of the attribute val in the database
-          n:    number of samples drawn
-          p:    probability threshold p
-
-          err_n = (b-a) * 1/(2n) * ln(2/(1-p)) ^ 0.5
-
-          can get away without knows a and b for large samples.
+	          est = 1/n * sum_i val_i
+	          P{ |est - truemean| <= err } >= 1 - 2*e^{foo} = p
+	          foo = -2nerr^2 / (b-a)^2
+	          a, b  are the min max values of the attribute val in the database
+	          n:    number of samples drawn
+	          p:    probability threshold p
+	
+	          err_n = (b-a) * 1/(2n) * ln(2/(1-p)) ^ 0.5
+	
+	          can get away without knows a and b for large samples.
 
 Goals
   * can construct an unbiased error estimator
@@ -98,15 +98,15 @@ What are other challenges?
     * index: if on index key, then index is useless
     * reading sequentially from a heap file
 
-          insert order:  1111119999
-          read order:    9999111111
-          sample:        9999
-          estimate:      36 / 4 * 10
+	          insert order:  1111119999
+	          read order:    9999111111
+	          sample:        9999
+	          estimate:      36 / 4 * 10
 
     * Disk random access: 
 
-          5ms * 5000 tuples = 25s
-          200 rand access/s * 128k pages ~ 20mb/s of pages (assuming all tuples useful)
+	          5ms * 5000 tuples = 25s
+	          200 rand access/s * 128k pages ~ 20mb/s of pages (assuming all tuples useful)
 
     * blinkDB will discuss how to deal with this
 
@@ -133,14 +133,17 @@ Go through Example
 
 Contributions
 
-* L2 error ditance
+* L2 error distance
   * Normalize and model group-by results as a distribution
   * Guarantee L2 distance to true answer is < epsilon
   * Guarantees that error for _each group_ is also < epsilon
 * Separate solutions for big and small COUNT and SUM qureies for table of size n
-  * big == selectivity >= 1/sqrt(n)
-  * big COUNT query: O(sqrt(n)/epsilon^2) uniform sample 
-  * big SUM(a) query: O(sqrt(n)/epsilon^2) sample stratefied on measure a's value
+  * Need 1/epsilon^2 samples to make guarantee
+  * big == (selectivity >= 1/sqrt(n))
+  * big qureies
+    * COUNT: O(sqrt(n)/epsilon^2) uniform sample 
+    * SUM(a): O(sqrt(n)/epsilon^2) sample stratefied on measure a's value
+    * Why enough?  selectivity > 1/sqrt(n), so expect that 1/epsilon^2 samples to match.  Win
   * small query: 
     * measure augmented inverted index. 
       * For each categorical dim value, map to list of row ids with that value 
@@ -151,6 +154,9 @@ Contributions
     * low-freq group index
       * for each infrequent val in categorical dimension (e.g., # rows < sqrt(n))
       * just store the rows sequentiall on disk.
+* What is stored where?
+  * big samples in memory
+  * small query indexes on disk
 * What do you need to know ahead of time to build these data structures??
 * Stratefied sampling based on [Horvitz-Thompson estimator](https://en.m.wikipedia.org/wiki/Horvitz%E2%80%93Thompson_estimator)
 
@@ -175,42 +181,24 @@ Main algorithm
         if low-req group index is usable
           x' = process with low freq index
         else
-          x' = process with 
+          x' = process with measure augmented index
 
         process(sample):
+          " linearly scan the sample "
           for t in sample
             if matches predicate P
               x[i] += 1 for group i
               sup  += 1
 
-Mesaure-augmented inverted index:
+How many samples for COUNT AND SUM?
 
-* map each categorical dimension value to list of rows
-
-        (dim, val) -> [row ids]
-
-  * fast to do intersection/union ops on row id list
-  * along with row id, store approximations of the row's measure values
-
-          let t.m be a measure value (e.g., tuple.sale)
-          store apx(t.m) as a 2-approximation s.t.
-          apx(t.m) <= t.m <= 2*apx(t.m)
-
-          only need log(log(domainOfMeasure)) + 1 bits
-
-* Size: for each dimension and each row, store the row id and the measures
-
-          O(N rows * D dims * (log(NRows) + SUM_{measure attribute Mi} log(log(domain of Mi)))) bits
-
-
-  * uniform sampling woul require O(domain^3/epsilon^2) sample rows.  Domain is the domain of the measure in F(m)
-  * Would like to use biased sampling based on t.m -- but # bits for each t.m is large.  Use apx(t.m) instead
-  * Use biased sampling with probability proportional to apx(t.m)
-  * only need O(1/epsilon^2) samples 
+* count: O(sqrt(n) / err^2) uniform sample
+* sum: O(sqrt(n) / err^2) measure biased sample
+  * measure biased == prob = 1/value
 
 Low Frequency Index
 
-* Meant to be a fast pass for obviously small queries, worst case, can still use measure aug index
+* Meant to be a fast pass for obviously small queries, worst case, just use measure aug index
 * If # rows that match a condition (a single attr op val) is < 1/sqrt(n) then just store them directly
   because can't be handled by the samples
 
@@ -222,6 +210,41 @@ Low Frequency Index
 * if any d1 = v1 is in this index, then can use
 
 
+Mesaure-augmented inverted index:
+
+* map each categorical dimension value to list of rows
+
+        (dim, val) -> [row ids]
+
+  * fast to do intersection/union ops on row id list
+  * along with row id, store approximations of the row's measure values
+
+	          let t.m be a measure value (e.g., tuple.sale)
+	          store apx(t.m) as a 2-approximation s.t.
+	          apx(t.m) <= t.m <= 2*apx(t.m)
+	
+	          only need log(log(domainOfMeasure)) + 1 bits
+
+* Size: for each dimension and each row, store the row id and the measures
+
+	          O(N rows * D dims * 
+	          (log(NRows) + SUM_{measure attribute Mi} log(log(domain of Mi)))) bits
+
+
+  * uniform sampling woul require O(domain^3/epsilon^2) sample rows.  Domain is the domain of the measure in F(m)
+  * Would like to use biased sampling based on t.m -- but # bits for each t.m is large.  Use apx(t.m) instead
+  * Use biased sampling with probability proportional to apx(t.m)
+  * only need O(1/epsilon^2) samples 
+
+Other things?
+
+* What about negative numbers?
+* Workload?
+* Storage requirements at 2.5% err
+  * Samples: ~10% of base table
+  * LF idx:  5-50%
+  * MA idx:  30-60%
+* Several OOM faster than stratefied sampling (blinkDB)
 
 
 # PFunk
@@ -235,8 +258,9 @@ Solutions
 
 * Why perceptual limitation?  resolutions are increasing too much
 * Perceptual studies
-  * cleveland mcgill
-  * JND, staircase method
+  * Two main ways -- directly measure estimation error, and JND
+    * cleveland mcgill
+    * JND, staircase method
   * Common properties: error relative to data (weber's law)
 * fixing a universal error bound is incorrect and inefficient
   * WHat about sample-seek's measure?
