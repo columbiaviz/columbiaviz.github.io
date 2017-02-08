@@ -66,7 +66,7 @@ The project is a significant part of the course grade.
 #### Paper Questions (every class)
 
 You are expected to answer the short questions associated with the readings every course.
-The class reviews must be submitted by **6PM the day before class**.
+The class reviews must be submitted by **9PM the day before class**.
 
 {: .btn :}
 [Add your answers to the appropriate lecture's wiki page](https://github.com/columbiaviz/columbiaviz.github.io/wiki)
