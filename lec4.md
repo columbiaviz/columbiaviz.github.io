@@ -307,3 +307,141 @@ Topics next time
 
 * Prefetching
 * Optimiizing for the network
+
+
+
+
+
+
+# (Bonus) Wanderjoin
+
+Background
+
+* Onlineaggregation draws random samples from a table and scale it up to get an unbiased estimator for the agg()
+* Ripple join:
+  
+      draw t1 from R1
+      compare with all tuples drawn from R2
+      draw t2 from R2
+      compare with all tuples drawn from R1 (including t1)
+      repeat
+
+* If there is an index, use index ripple join
+  * only sample t from one of the tables (R1)
+  * for t, fully compute t ⨝ R2 ⨝ ... ⨝ Rk
+* Problem: uniform samples, but NOT independent!  makes computing CIs complicated
+
+Wander join: nonuniform, independent samples
+
+* R1 ⨝ R2 ... ⨝ Rk
+* Assuming join key indexes on R2 ... Rk
+* Model as a graph of tuples, and edges are valid joins
+* Randomly sample from R1, then randomly walk the graph until reach Rk, or can't go any further -- that's a path
+* Problem: each path (t1,...tk) has a different sampling probability (non uniform samples)
+  * Horvitz-thompson estimator deals with this
+  
+      agg(path) / prob(path)  = unbiased estimator of SUM_paths v(path)
+      prob(path)              = 1/|R1| * 1/d2(t1) * 1/d3(t2) * ...
+      dn(tn-1)                = # tuples in Rn that join with tn-1
+      agg(stuck path)         = 0
+
+  * Take multiple random walks, average all of the unbiased estimates
+
+Some details
+
+* For a join query, need to pick a join order such that
+  * index on every step
+  * if cyclic join query, then 
+    * pick a spanning tree as join order 
+    * for a given sampled un-stuck path, test the rest of the join conditions manually
+* Probability and General estimator
+
+        prob(pi) = 1 / |R1| * 1/d2(t1) * ... * 1/dk(tk-1)
+
+        n paths p1,... pn
+        u(i) = 1 / prob(pi) if pi was successful walk
+             = 0            otherwise (e.g., stuck, or fail predicates)
+
+        Estimator is for any u and v
+        1 / n SUM u(i) agg(i)
+
+* Predicates and group bys
+  * if index on selection predicate over R1, then directly sample a satisfying tuples using Olken's method
+    * replace `1/|R1|` in `prob(pi)` with `1/|tuples satisifying condition in R1|` computed from an index scan
+  * if group by G, put each path into appropriate bucket and compute estimates for each bucket independently
+* Comparing with ripple join in terms of:
+  * sampling efficiency
+
+        k tables, N tuples per table, each tuple ti joins with d tuples in Ri+1
+        let ripple join sample n from each table
+            wander join made n random walks
+
+        Ripple join
+
+          p = (t1,... tk), each ti is sampled from Ri
+          prob(p) = (d/N)^{k-1}     // of p being successful join tuple
+          E[card] = n^k * prob(p)   // # expcted join results from ripple join's samples
+          
+          if d = 1, N=10^6, k=3
+          n = 10,000 before first join result!
+
+          Dependent on k and N
+
+        Wander join
+
+          let F be the fraction of tuples in Ri with a joining tuple in Ri+1
+          prob(p) = F^{k-1}         // each step has F chance of getting another successful join
+          E[card] = n * prob(p)
+
+          argue that F would not be too small because normal join would then be cheap
+
+          Indep of N!
+
+  * Compute costs
+
+          Ripple: O(kn^k)
+          Wander: O(kn)   if hash indexes are O(1)
+
+  * Ripple join converges to "full join" exactly.  Wander join does not -- could do sampling w/out replacement, but complicated.
+
+Optimizer 
+
+* High levels
+  * Find connected components in table graph.  Wander join within each component, ripple join across components
+  * enumerate all join orders
+  * try them all independently one plan has 100 successful walks, pick one with best Var[agg()]E[running time]
+  * can reuse all walks found towards final result (effort not wasted)
+* performance: variance of final estimator after t seconds
+
+        t     total seconds run
+        Xi    estimator from ith walk
+              e.g., u(i)agg(i) if successful
+                    0          otherwise
+        T     running time of 1 walk
+        W     random walks in t
+
+        final estimator:
+
+          eq = 1/W SUM Xi   for all walks X0 to XW
+
+        want to minimize its variance:
+
+          Var[eq] = 
+          E[Var[ eq | W ]] + Var[E[eq | W ]] = 
+          E[Var[X1]/W] + Var[E[X1]] =
+          E[Var[X1]/W] + 0 =
+          E[Var[X1]]/E[W]  =
+          Var[X1] * E[1/W] = 
+          Var[X1] * E[T/t] = 
+          Var[X1] * E[T]/t      // variance of estimator * cost per walk
+
+  * So do random walks to estimate `Var[X1]` and `E[T]` 
+
+Weirds
+
+* Justify the index assumption
+* Join graph optimization algs are all exhaustive -- hopes to have <= 8 tables in a join query
+
+
+
+

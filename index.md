@@ -208,7 +208,7 @@ Data Processing Systems
 
 Prefetching
 
-* Dynamic prefetching of data tiles for interactive visualization.
+* [Dynamic prefetching of data tiles for interactive visualization.](/files/papers/forecache.pdf)
 * [Query Steering for Interactive Data Exploration](/files/papers/steering.pdf)
 
 Sampling
