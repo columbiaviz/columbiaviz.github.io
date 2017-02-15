@@ -47,7 +47,7 @@ What I expect from You
 
 * [Homework 1](./hw1)
 * [Homework 2](https://github.com/cudbg/stream/blob/master/src/prototype/README.md)
-* Homework 3
+* [Homework 3](https://github.com/cudbg/stream/blob/master/src/chrome/README.md)
 * Homework 4
 * Homework 5
 
@@ -96,7 +96,7 @@ You will be asked to complete three milestones for the presentation. Their purpo
 | 1/25 | Eugene    | Specification.                                                              | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/Visualization-Specifications) <br/> [HW 1](./hw1) |
 | 2/01 | Eugene    | Performance overview, end-to-end systems                                 | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/End-to-End-Visualization-Systems) <br/> [Submit presentation requests](https://goo.gl/forms/4ymov5u7dFo2k7Ft1) <br/> Turn in project teams in class!     |
 | 2/08 | Eugene    | Sampling                                                     | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/Sampling)<br/>[Project Prospectus Due](./proposals) <br/>[Stream HW 1 released](https://github.com/cudbg/stream/blob/master/src/prototype/README.md)      | 
-| 2/15 | Eugene    | Prefetching/Network                                          | [Readings + Qs](https://piazza.com/class/ivpqa35byxu4o?cid=25)<br/>[Stream HW1 due](https://github.com/cudbg/stream/blob/master/src/prototype/README.md) <br/>
+| 2/15 | Eugene    | Prefetching/Network                                          | [Readings + Qs](https://piazza.com/class/ivpqa35byxu4o?cid=25)<br/>[Stream HW1 due](https://github.com/cudbg/stream/blob/master/src/prototype/README.md) <br/>[Stream HW 2 released](https://github.com/cudbg/stream/blob/master/src/chrome/README.md) |
 | 2/22 | Gabriel/Daniel | Specialized Systems: Macrobase (and BlinkDB?)                          |
 | 3/01 | Alireza/Luren | Dremel                                                    |
 | 3/08 | Eugene    | Explanation + [Midpoint Review](./proposals#midpoint)                       |
