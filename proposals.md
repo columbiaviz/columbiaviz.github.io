@@ -57,6 +57,10 @@ It is _highly recommended_ that you come to office hours to discuss project idea
 
 The midpoint review will be an in-class exercise where teams will present and receive feedback/suggestions in a "speed-dating" style session.  Details will be released closer to the session.
 
+Meet with your counterpart for 20 minutes - 10 minutes per team.  One team will describe the goal of their project and the current status and challenges, and the other team will listen and provide comments.
+
+As the listening team, 
+
 #### Poster Session
 Your team will prepare and present a project poster at the end-of-course poster session.   This gives you an opportunity to present a short demo of your work and show what you have accomplished in the class!
 
