@@ -4,6 +4,7 @@ layout: page
 
 
 Exercise: what prediction accuracy do you need for good perceived latency??
+(This analysis _must_ exist in the caching literature!)
 
         t ms             # when we will make the request
         l_net = N(u, s)  # latency
@@ -35,6 +36,11 @@ Exercise: what prediction accuracy do you need for good perceived latency??
         stat_function(fun=function(x) (100 - x) / (10 - (0.80 * x)), color="darkred") + 
         scale_y_continuous(lim=c(0, 1))
 
+        lperc = (10 + max(0, l_net - t)) * (1 - A) + l_net * A
+              = (10 + max(0, l_net - t)) - (10 + max(0, l_net - t) - l_net) * A
+        lperc - (10 + max(0, l_net - t)) = - (10 + max(0, l_net - t) - l_net) * A
+        (lperc - 10 - max(0, l_net + t)) / (l_net - 10 - max(0, l_net - t)) = A = (1 - a)^N
+        a = 1-((lperc - 10 - max(0, l_net + t)) / (l_net - 10 - max(0, l_net - t)))^(1/N) 
 
         # N concurrent requests
         l_perc = 10 * (1 - (1-a)^N) + l_net * (1 - a)^N

@@ -98,7 +98,7 @@ You will be asked to complete three milestones for the presentation. Their purpo
 | 2/08 | Eugene    | Sampling                                                     | [Readings + Qs](https://github.com/columbiaviz/columbiaviz.github.io/wiki/Sampling)<br/>[Project Prospectus Due](./proposals) <br/>[Stream HW 1 released](https://github.com/cudbg/stream/blob/master/src/prototype/README.md)      | 
 | 2/15 | Eugene    | Prefetching/Network                                          | [Readings + Qs](https://piazza.com/class/ivpqa35byxu4o?cid=25)<br/>[Stream HW1 due](https://github.com/cudbg/stream/blob/master/src/prototype/README.md) <br/>[Stream HW 2 released](https://github.com/cudbg/stream/blob/master/src/chrome/README.md) |
 | 2/22 | Gabriel/Daniel | Specialized Systems: Macrobase (and BlinkDB?)            | [Readings + Qs](https://piazza.com/class/ivpqa35byxu4o?cid=36) <br/> Evaluation functions for Stream HW2 due. |
-| 3/01 | Alireza/Luren | Dremel                                                    |
+| 3/01 | Alireza/Luren | Dremel                                                    | [Readings + Qs](https://piazza.com/class/ivpqa35byxu4o?cid=47) <br/> Prediction functions for Stream HW2 due. |
 | 3/08 | Eugene    | Explanation + [Midpoint Review](./proposals#midpoint)                       |
 | 3/15 |           | NO CLASS.  Spring Break!                                                    |
 | 3/22 | Thibault  | Modalities                                                                  |
