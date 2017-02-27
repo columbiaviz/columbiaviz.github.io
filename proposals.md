@@ -59,7 +59,13 @@ The midpoint review will be an in-class exercise where teams will present and re
 
 Meet with your counterpart for 20 minutes - 10 minutes per team.  One team will describe the goal of their project and the current status and challenges, and the other team will listen and provide comments.
 
-As the listening team, 
+For the listening team, ask and provide answers to the following questions:
+
+1. What opportunities/changes that make this work useful and timely? 
+2. Why existing approaches fail to make use of these opportunities? 
+3. What is the hypothesis?
+4. What are the concrete steps to validate the hypothesis?
+5. What suggestions did you, as the listener, provide?
 
 #### Poster Session
 Your team will prepare and present a project poster at the end-of-course poster session.   This gives you an opportunity to present a short demo of your work and show what you have accomplished in the class!
