@@ -48,7 +48,7 @@ What I expect from You
 * [Homework 1](./hw1)
 * [Homework 2](https://github.com/cudbg/stream/blob/master/src/prototype/README.md)
 * [Homework 3](https://github.com/cudbg/stream/blob/master/src/chrome/README.md)
-* Homework 4
+* [Homework 4](https://github.com/cudbg/stream/tree/master/src/prototype#assignment-3)
 * Homework 5
 
 
@@ -99,7 +99,7 @@ You will be asked to complete three milestones for the presentation. Their purpo
 | 2/15 | Eugene    | Prefetching/Network                                          | [Readings + Qs](https://piazza.com/class/ivpqa35byxu4o?cid=25)<br/>[Stream HW1 due](https://github.com/cudbg/stream/blob/master/src/prototype/README.md) <br/>[Stream HW 2 released](https://github.com/cudbg/stream/blob/master/src/chrome/README.md) |
 | 2/22 | Gabriel/Daniel | Specialized Systems: Macrobase (and BlinkDB?)            | [Readings + Qs](https://piazza.com/class/ivpqa35byxu4o?cid=36) <br/> Evaluation functions for Stream HW2 due. |
 | 3/01 | Alireza/Luren | Dremel                                                    | [Readings + Qs](https://piazza.com/class/ivpqa35byxu4o?cid=50) <br/> Prediction functions for Stream HW2 due 3/5. |
-| 3/08 | Eugene    | Explanation + [Midpoint Review](./proposals#midpoint)         | [Readings + Qs](https://piazza.com/class/ivpqa35byxu4o?cid=52) |
+| 3/08 | Eugene    | Explanation + [Midpoint Review](./proposals#midpoint)         | [Readings + Qs](https://piazza.com/class/ivpqa35byxu4o?cid=52)<br/>[HW 4 is out](https://github.com/cudbg/stream/tree/master/src/prototype#assignment-3) |
 | 3/15 |           | NO CLASS.  Spring Break!                                                    |
 | 3/22 | Thibault  | Modalities                                                                  |
 | 3/29 | Brennan/Drashko   | Recommendation + Summarization                                                              |
