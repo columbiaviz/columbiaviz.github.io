@@ -49,7 +49,7 @@ What I expect from You
 * [Homework 2](https://github.com/cudbg/stream/blob/master/src/prototype/README.md)
 * [Homework 3](https://github.com/cudbg/stream/blob/master/src/chrome/README.md)
 * [Homework 4](https://github.com/cudbg/stream/tree/master/src/prototype#assignment-4)
-* Homework 5
+* [Homework 5](https://github.com/cudbg/stream/tree/master/src/prototype#assignment-5-final-assignment)
 
 
 
