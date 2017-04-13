@@ -105,7 +105,7 @@ You will be asked to complete three milestones for the presentation. Their purpo
 | 3/29 | Brennan/Drashko   | Recommendation + Summarization                                                              |
 | 4/05 | [Patrick Shafto](http://shaftolab.com/) (guest lecture) | TBA                           |
 | 4/12 | Eugene    | Work on projects in class.  Thibault+Wu will help.                          |
-| 4/19 | Thibault  | Autocomplete/refinement.  Wu will be away at [ICDE](http://icde2017.sdsc.edu/) |
+| 4/19 | Thibault  | Web Tables.  Wu (may) be away at [ICDE](http://icde2017.sdsc.edu/) | [Readings + Qs](https://piazza.com/class/ivpqa35byxu4o?cid=79)<br/>[HW 5 is out](https://github.com/cudbg/stream/tree/master/src/prototype#assignment-5-final-assignment) |
 | 4/26 | Eugene/Thibault    | Cleaning?                                                                   |
 | 5/03 |           | Poster Presentation + [submit writeups by 5/5](./proposals)                                     |
 
