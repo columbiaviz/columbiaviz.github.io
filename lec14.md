@@ -188,3 +188,19 @@ High level alg
               note that it could instead repair t1.r and t1.y instead, but t1.d is "minimal"
 
 
+### Algorithm
+
+              loop
+                mvc = compute_ordered_mvc()
+                while |mvc|
+                  c = cell from mvc
+                  rc = new repair context
+                  for edge in c's hyperedges
+                    rc += expand frontier using edge
+                  assignments = solve(c, rc)
+                  database.update(assignments)
+
+                rebuild graph
+                if no graph: break
+                if cells in graph not yet touched, continue
+
