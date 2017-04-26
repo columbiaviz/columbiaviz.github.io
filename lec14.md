@@ -107,7 +107,7 @@ Redundancy
 Are values consistent?
 
 * What are possible metrics?
-  * # values
+  * \# values
   * entropy: higher entropy --> higher inconsistency
   * dominant value D: val found in most sources
   * deviation from dominant value (std, but use dominant instead of mean. why?)
