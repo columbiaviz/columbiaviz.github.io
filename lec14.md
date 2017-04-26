@@ -204,3 +204,149 @@ High level alg
                 if no graph: break
                 if cells in graph not yet touched, continue
 
+Violation detection dominates the cost
+
+* O(Ncells^|atoms|)
+* atoms == # tables in the denial constraint
+
+solve()
+
+* pick strings from other tuples
+* use QP for numbers, maybe take the number of undetermined variables into account in an outer loop
+
+### Evaluation
+
+Not great
+
+* default e?  not stated
+* report best of 6 runs
+* What are the constraints?
+* What are the attribute types?
+* "scalability" test increases the number of simple conditional FDs
+* Does MVC matter?  A bit.
+
+Errors
+
+* each cell has e% chance to be changed
+* str: change a character to "X"
+* num: pick a random numerical value
+
+# Statistical
+
+Limitation for constraint approaches is that 
+
+* who comes up with constraints?  what if they are incomplete?
+* does resolving constraints improve the application?
+* How about we directly use the application as a quality measure for deciding what to clean?
+
+High level optimization framework
+
+        Quality measure(dataset)
+                |
+                |
+                | synthesize sequence/set of cleaning operations
+                |
+                |
+        Cleaning Operators
+
+* Examples
+  * Constraints:
+    * data: database
+    * quality: # violations
+    * cleaning operators: value assignment
+    * optimization: heuristics
+  * wrangler
+    * data: input string(s)
+    * quality: # output string(s)
+    * cleaning operators: fold/unfold/extract/regex/etc
+    * optimization: A\* in most recent paper (foofah)
+  * Activeclean
+    * data: table
+    * quality: convex model
+    * cleaning operators: reassign tuple(s) values via oracle
+    * optimization: pick best set of tuples
+  * Boostclean
+    * data: table
+    * quality: ML model
+    * cleaning operators: simple, parameterized python functions
+    * optimization: boosting
+  * Visualization (scorpion)
+    * data: table + aggregation query
+    * quality: user complaints
+    * cleaning operators: delete predicate
+    * optimization: greedy search
+  * Add your own flavor
+    * optimization: backprop?  why not?
+
+## ActiveClean 
+
+Models are natural quality measures
+
+Why is incremental cleaning for models hard?
+
+* simpsons paradox -- mixing distributions leads to weird results
+* cleaning more may make model worse.  Seems counter-productive
+
+Problems to tackle
+
+* If I clean a sample S, how to update the model correctly?
+* What sample should I pick to improve the model the most?  
+* Is this the same as active learning?
+
+### Updates
+
+            T is the model params
+            loss: convex parameter curve
+            T_new = T_d - gamma * gradient(loss(T_d))
+
+Ideally, go through each point in the dataset, compute its gradient wrt T, take the average.
+This is gradient descent
+
+            g*(T) = gradient(loss(T)) = 1/N SUM_i gradient(loss(x_i, y_i, T))
+
+But this relies on `x_i` and `y_i` all being clean.  Need to estimate `g*(T)` from things we have already cleaned along with a dirty sample that we will clean.
+
+            g_c:   gradient over already cleaned data
+            g_s:   gradient over sample
+            alpha: |# clean|/|dataset|
+            g(T) = alpha * g_c(T) + (1-alpha) * g_S(T)
+
+            # this is normal gradient descent over subset of cleaned data R_clean
+            g_c(T) = 1/|#clean| * SUM_{i in R_clean} gradient(loss(x_i, y_i, T))
+
+            # s is the sample
+            # p(i) is probability of sampling x_i.  allows for importance sampling
+            # each sample is cleaned
+            g_s(T) = 1/|s| SUM_{i in s} 1/p(i) * gradient(loss(x_i_cleaned, y_i_cleaned, T))
+
+            T_{t+1} = T_{t} - gamma * g(T)
+
+### Other stuff
+
+
+How do we set `p(i)`?  Uniform sampling may work, but some records may be more important than others.
+Ideally want proportional to the magnitude of a clean record's gradient.
+
+            p(i) ~ |gradient(loss(x_i_clean, y_i_clean, T))|
+
+But clearly we don't know that.  One way is to just estimate using the dirty data:
+
+            p(i) ~ |gradient(loss(x_i, y_i, T))|
+
+
+What are candidate dirty records?
+
+* What if we already knew what's dirty?  Then initialize R_clean and start from there.
+* Otherwise, use the cleaned records to learn a classifier that learns what type of error a record exhibits
+
+Evaluation
+
+* Solid work
+* Does cleaning matter?  Yes, better for systematic errors.  5% systematic erro --> 10% lower acc
+  * compare full cleaning, no cleaning, delete dirty data, robust model, and AC
+  * mixing dirty and clean also is a bad idea.
+* Does AC work if we know the dirty records up front?
+  * compare active learning, sample clean, AC+oracle
+  * 2x more accurate than active learning after 500 samples/ere
+* If we don't know what's dirty, it's less good, still better than activelearning/sample clean
+  * adaptive detection better with systematic errors, no benefit over no detection if random errors.
