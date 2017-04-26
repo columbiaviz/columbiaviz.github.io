@@ -36,6 +36,209 @@ How to decompose cleaning?
   
 
 
+# Data Source Integration
+
+Truth finding on the deep web
+
+What do we know?
+
+* aggregating data from sources on the web is nice but hard.  But _how hard_?  Unclear in terms of quantifying before this paper
+* What is the "deep web"?
+  * HTML is not written by hand anymore, generated from data.
+  * DBMS -> webapp -> HTML string -> browser
+  * a webpage is a "view" over a database.
+  * We see the browser, but deepweb is the dbms
+* Luna looks at 2 domains that you would think would be clean: flights and stocks
+  * search on google/yahoo for keywords (e.g., flights, stocks)
+  * pikcs top pages, extracts their sources via crawling
+    * federal aviation administration, AA website
+
+The setup
+
+* data model
+  * object: a flight, a stock
+  * attr/data item: takeoff time, duration, departure gate, etc
+  * for given object's attr, single true value (debatable!  but fair assumption)
+* Sources provide subset of objects and attributes
+* sources can differ in three ways
+  * schema: structure/attrs differ
+  * instance: objects identified (pkeys) using different attrs (id vs name+company)
+  * value: true values, diff value, diff format, wrong, missing, etc
+* too  many issues! paper fixes schema and instance, only focus on value
+
+### The Sources
+
+Stock
+
+* 55 sources
+  * search "stock price quotes", "AAPL quotes" and find deep-web sources of top 200 results
+  * 89 sources total, 76 use GET methods, 55 crawlable (others use JS/reject crawling)
+  * 1000 stocks: 30 from dow, 100 from nasdaq, 873 random from russel 3000
+  * crawl once a day during July after market close
+  * object: stock on day X
+* attrs
+  * 3-71 attrs per source; 333 total (local attrs); 153 after manual matching (global attrs)
+  * distribution follows zipf's law
+  * (21) 13% provided by 1/3 of source; picked 16 of them to study.
+* Performed data cleaning e.g., 6.7M = 6700000 = 6,700,000
+* picked 5 popular sources, voted to pick gold standard values for 200 symbols
+
+Flight dataset
+
+* 38 sources, 1200 flights from AA, UA, Continental hub airports
+* crawl every day in Dec
+* object: flight on day X
+* 43 local, 15 global, 4-15 attrs per source
+* 6 (40%) attrs in 50% of sources; used those
+* 3 airline websites on 100 flights as gold
+
+### The Data
+
+Redundancy
+
+* Stocks have high coverage
+  * all sources provide 90% of stocks
+  *  50% sources have all stocks 
+* Flights
+  * 36% sources cover 90% flights; 50% flights in 60% sources
+  * 28% sources provide 50% attrs; 29% attrs in 50% sources
+* small # extremely common/rare attrs, most are found in small number of sources (fat tail)
+
+Are values consistent?
+
+* What are possible metrics?
+  * # values
+  * entropy: higher entropy --> higher inconsistency
+  * dominant value D: val found in most sources
+  * deviation from dominant value (std, but use dominant instead of mean. why?)
+  * how dominant: % sources with dominant val D
+  * are dominant values == gold?
+* fundamentally what are these metrics measuring?
+  * disagreement!  variety and spread of values
+  * f(distribution of values)
+* stocks
+  * 3.7 vals/attr
+  * 17% attrs have 1 value (37% if exclude a bad data source); 30% have 2 values.
+  * valuues seem to be similar
+    * low deviation and entropy.  
+    * Suggests data is pretty similar. (one would hope so for stocks!)
+  * realtime values have less inconsistency than statistics -- more semantic ambiguity with statistics (see below)
+* flights
+  * 1.45 vals/attr
+  * 61% attrs have 1 val; 93% have <= 2 vals
+  * large deviation in some attrs such as departure times (~15minutes off)
+
+Why the inconsistency?
+
+* Semantics (46% cases): dividend computed for year or quarter?  Market cap? Yield?
+* Instance ambiguity (6%): stock symbol interpreted incorrectly (stock was terminated)
+* Out of date (34%) stale data
+* Data units (1 error): 76"B" instead of 76"M"  (billion instead of million!)
+* Wrong data (11%)
+* Stock data saw all types of inconsistency, flights saw semantic, out of date, and pure errors (56% cases)
+
+### Does dominance work?  Can I take majority vote and call it a day?
+
+Stock
+
+* 42% attrs of dominant vals supported by >90% sources 
+* dominance factor seems correlated with precision: 90% if in 50% sources
+* 90% overall
+
+Flight
+
+* lower inconsistency (higher dominance factor), lower precision
+* 80% prec at 60% dominance factor.  Big dip at 50% due to copying
+* 85% overall
+
+Very high dominance is usually correct.  Precision quickly drops when dominance decreases
+
+Are sources accurate?  (% of its values are gold) (Figure 7)
+
+* stocks: 
+  * 86% average
+  * 35% have 90% acc.
+  * authoratative sources: 83-90%
+* flight
+  * 80% avg
+  * 40% sources > 90% acc
+  * authoratative sources: 71-90%
+
+Data copying
+
+* why is this bad?  skews voting scheme. ballot stuffing 
+* copynig everywhere:
+  * partnerships
+  * redirect queries to third party
+  * iframes
+  * objects/attrs almost identical
+* accuracy of copied source varies!
+  * stock 75-92% 
+  * flight 50-90%
+* copying from bad sources?  why?
+* removing copied sources helps dominant values (majority vote) a lot!
+
+
+### Data Fusion
+
+Compare 15 approaches from research to majority vote scheme. Categories
+
+* Web-link based: page rank on source 
+  * (node = source, edge if share a value)
+* Information retrieval: similarity measures
+  * each value is 1,0,-1 vector.  one val for each source
+  * 1 if source provides the value, -1 if it provides different value, 0 otherwise
+  * seed with set of true values
+* Bayesian
+  * accuXXX methods.  fancy
+* copy-aware: discount copying
+
+All variations of voting basically
+
+* iterative algorithms
+  * source quality proportional to agreement with others
+  * weigh in majority vote is the quality
+  * iterate between source quality and majority vote until converge
+* taking into account
+  * trustworthiness (bootstrap by labeling some sources with quality)
+  * difficulty of attributes
+  * similarity and formatting of values (recall values were preprocessed for this paper)
+  * copying (identified manually)
+
+High level results
+
+* majority vote < best source < best fusion
+  * having best sources important (50% flight errors due to trustworthiness)
+  * picking fusion method matters [not a promising result :( ]
+* table 9:
+  * stock:  vote: 92%;  accuformatter: 94%;  accucopy: 88%
+  * flight: vote: 88%;  accuformatter: 95%;  accucopy: 98%
+  * accucopy bad for stock, best for flight
+* trustworthiness: learning a bayesian prior on which source is best is helpful 
+* bias: learning which sources copy from one another is helpful 
+* most accurate methods are slowest by factor of 1000x (fig 12)
+* no one fusion method that wins 
+* fusing small number of good sources >> fusing all sources
+
+Takeaways
+
+* unique slowflake: every ource has its own attriutes of interest.  has its own values for those attributes
+* learning the best source matters
+  * why nielson/bloomberg/reuters make money
+* combining sources, even simple majority vote, helps
+* trade off improved accuracy for algorithmic efficiency
+* no best algorithm (recall the data cleaning challenges from beginning of lecture?)
+* small number of good sources usually good enough! (positive result)
+
+
+
+
+
+
+
+
+
+
 # Constraints
 
 ## The Chase
