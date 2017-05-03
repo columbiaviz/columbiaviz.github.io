@@ -23,7 +23,7 @@ title: E6998.003 Research Project
 | Prospectus    |   2/8 |  15% |
 | Midpoint Review |  3/01 | 5%  |
 | Poster Session |  5/3 |  15% |
-| Report         | 5/5 |   65% |
+| Report         | 5/5 (edited: 5/10 midnight) |   65% |
 
 #### Project Teams
 Teams should consist of 1-3 people. In addition, if you have a project in mind, please indicate briefly (1--2 sentences) what you are thinking. We have included a list of possible projects at the end of this document although you are not required to choose from these. 
