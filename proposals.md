@@ -88,6 +88,7 @@ Because this report is the primary deliverable upon which you will be graded, **
 
 Good class projects can vary dramatically in complexity, scope, and topic. The only requirement is that they be related to something we have studied in this class and that they contain some element of research -- e.g., that you do more than simply engineer a piece of software that someone else has described or architected. To help you determine if your idea is of reasonable scope, we will arrange to meet with each group several times throughout the semester.
 
+<!--
 
 # Project Suggestions
 
@@ -183,3 +184,4 @@ Recommendations and Predictions
 https://www.gwern.net/Black-market%20archives
 WHere will you send your agents? 
 
+-->
