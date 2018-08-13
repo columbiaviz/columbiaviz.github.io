@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_2017
 ---
 
 # HW 1: Three Ways to Discover a Dataset

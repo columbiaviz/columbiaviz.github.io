@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_2017
 title: E6998.003 Research Project
 ---
 

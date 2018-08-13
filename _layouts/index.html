@@ -15,16 +15,17 @@
 {% include header.html %}
 
 
-
-<div class="row" style="margin-top: 2em;">
-  <div class="col-md-8 col-md-offset-2">
+<div class="row content" style="margin-top: 2em;">
+  <div class="col-md-2 col-md-offset-1">
+		{% capture index_left %}{% include index_left.md %}{% endcapture %}
+		{{ index_left | markdownify }}
+	</div>
+  <div class="col-md-8">
 		{{ content }}
   </div>
   <div class="joiner"></div>
 </div>
 
 {% include footer.html %}
-
-
 
 </body>
