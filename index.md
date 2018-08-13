@@ -9,5 +9,5 @@ layout: root
 
 ## Past courses
 
-[Spring 2017 E6998 Interactive Data Exploration Systems ](./2017s_e6998) - Eugene Wu
+[Spring 2017 Interactive Data Exploration Systems ](./2017s_e6998) - Eugene Wu
 
