@@ -16,19 +16,7 @@ _Time:_ Tues 6:10-8pm <br>
 
 This course is a hands-on introduction to design principles, theory, and software techniques for visualizing data. Classes will be a combination of lecture, design studio, and lab. Through readings, design critique and code assignments, students will learn how visual representations can help in the understanding of complex data, and how to design and evaluate visualizations for the purpose of analysis or communication. Students will develop skills in processing data, and building interactive visualizations using D3. Topics include visual perception, exploratory data analysis, task analysis, graphic design, narrative, etc.
 
-Students should have programming experience as well as experience working with databases, and you should be comfortable picking up new programming tools on your own. Experience in JavaScript and web development, as well as Python for data processing is helpful but not required.
-
-## Course Objectives
-
-Students will learn to
-
-* Apply a structured design process to create effective visualizations
-* Conceptualize ideas and interaction techniques using sketching and prototyping
-* Apply principles of color, typography, and layout as well as principles of human perception and cognition in visual design
-* Process and analyze a variety of data types: quantitative, text, geospatial, qualitative
-* Create web-based interactive visualizations using D3 and Observable
-* Critically evaluate visualizations and suggest improvements and refinements
-* Work constructively as a member of a team to carry out a complex project
+Students should have experience in JavaScript programming and web development, as well as familiarity with databases and data formats. You should be comfortable picking up new programming tools on your own. Experience in Python or R for data processing is helpful but not required.
 
 ## Schedule
 
