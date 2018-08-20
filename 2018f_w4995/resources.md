@@ -48,6 +48,9 @@ A variety of useful toolkits have been designed to help support information visu
 - [MIT Senseable City Lab](http://senseable.mit.edu/)
 - [Periscopic](http://periscopic.com/)
 
+## Visualization Podcasts
+
+- [Data Stories](http://datastori.es/)
 
 ## Visualization Blogs and Publishers
 
