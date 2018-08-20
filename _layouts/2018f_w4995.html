@@ -1,0 +1,83 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>{{site.2018f_title}}</title>
+    <link rel="stylesheet" type="text/css" href="{{ "../files/css/bootstrap.min.css" | relative_url }}" />
+    <link rel="stylesheet" type="text/css" href="{{
+																								 "../files/css/style_2018f.css" | relative_url }}" />
+		<script
+			src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous"></script>
+    <script src="{{ "../files/js/bootstrap.min.js" | relative_url }}"></script>
+  </head>
+<body>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="10">
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">{{ site.2018f_title }}</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="syllabus.html">Syllabus</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Assignments <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="a0.html">A0: Sparks Presentation</a></li>
+              <li><a href="a1.html">A1: Visualization Design</a></li>
+              <li><a href="a2.html">A2: Exploratory Data Analysis</a></li>
+              <li><a href="a3.html">A3: Interactive Visualization</a></li>
+              <li><a href="a4.html">A4: Final Project</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Demos <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://beta.observablehq.com/@agness/introdv-f18-demo-1-data-select-scale">
+									10/2: Data, Select, Scale</a></li>
+              <li><a href="https://beta.observablehq.com/@agness/tk">
+									10/9: Axes, Shapes, Color, Transform</a></li>
+              <li><a href="https://beta.observablehq.com/@agness/tk">
+									10/23: Events, Brush, Drag, Dispatch</a></li>
+              <li><a href="https://beta.observablehq.com/@agness/tk">
+									11/13: Geographies, Polygon</a></li>
+              <li><a href="https://beta.observablehq.com/@agness/tk">
+									11/20: Hierarchy, Chord, Forces</a></li>
+            </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+    <div class="container">
+
+			{{ content }}
+
+		</div>
+
+		<footer class="page-footer font-small">
+			<div class="footer-copyright text-center py-3">
+				W4995.004 Columbia University Computer Science<br>
+				🙌 <a href="http://agneschang.net/">Agnes Chang</a>, with thanks to
+				<a href="http://people.ischool.berkeley.edu/~hearst/">Marti</a> +
+				UW <a href="https://courses.cs.washington.edu/courses/cse512/18sp/">CSE512</a>.
+			</div>
+		</footer>
+
+</body>

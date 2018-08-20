@@ -17,10 +17,12 @@
 title: 6998.002 Interactive Data Exploration Systems
 email: ewu@cs.columbia.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Graduate seminar to study research in interactive data exploration systems. 
+  Graduate seminar to study research in interactive data exploration systems.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  columbiaviz
+2018f_title: Intro to Data Vis 2018 fall
+
 
 # Build settings
 markdown: kramdown
