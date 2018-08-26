@@ -2,6 +2,8 @@
 layout: 2018f_w4995
 ---
 
+<svg id="d3banner"></svg>
+
 # Introduction to Data Visualization
 
 <br>
