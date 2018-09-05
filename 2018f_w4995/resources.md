@@ -35,6 +35,7 @@ A variety of useful toolkits have been designed to help support information visu
 - [Moritz Stefaner](http://truth-and-beauty.net/)
 - [Wattenberg and Viégas / Flowing Media](http://flowingmedia.com/)
 - [Accurat Studio](https://www.accurat.it/)
+- [Manuel Lima](http://www.mslima.com)
 - [UW Interactive Data Lab](http://idl.cs.washington.edu/)
 - [Lev Manovich / Software Studies Lab](http://lab.softwarestudies.com/p/research_14.html)
 - [Stamen Studio](https://stamen.com/)
