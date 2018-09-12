@@ -1,4 +1,4 @@
-### Data Vis Practitioners/Teams
+### Visualization Practitioners/Teams
 
 - [Office of Creative Research](https://ocr.nyc/)
 - [Fathom Information Design](https://fathom.info/)
