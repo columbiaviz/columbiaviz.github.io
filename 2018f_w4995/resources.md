@@ -6,7 +6,7 @@ layout: 2018f_w4995
 
 <br>
 
-## Visualization Toolkits
+### Visualization Toolkits
 
 A variety of useful toolkits have been designed to help support information visualization applications. Some include support for the full visualization pipeline from data to interactive graphics, while others focus only on a subset, typically graphics and interaction.
 
@@ -20,7 +20,7 @@ A variety of useful toolkits have been designed to help support information visu
 -   [Plotly](https://plot.ly/) - built on top of D3, offers abstractions that enable building interactive visualizations very quickly with well-known charts.
 -   [Bokeh](https://bokeh.pydata.org/en/latest/) - designed for high-performance interactivity over very large or streaming datasets in web browsers. By Anaconda team.
 
-## Exploratory Visualization Tools
+### Exploratory Visualization Tools
 
 -   [Tableau for Students](http://www.tableausoftware.com/student/) - get a free Tableau license as a student
 -   [Tableau Public](http://www.tableausoftware.com/public/) - a free version of Tableau which publishes to the web
@@ -28,32 +28,13 @@ A variety of useful toolkits have been designed to help support information visu
 -   [Voyager](http://vega.github.io/voyager2) -- web-based data exploration tools from UW's Interactive Data Lab
 -   [GGobi](http://www.ggobi.org/) - classic system for visualizations of multivariate data
 
-## Visualization Practitioners
+{% include 2018f_datapractitioners.md %}
 
-- [Office of Creative Research](https://ocr.nyc/)
-- [Fathom Information Design](https://fathom.info/)
-- [Moritz Stefaner](http://truth-and-beauty.net/)
-- [Wattenberg and Viégas / Flowing Media](http://flowingmedia.com/)
-- [Accurat Studio](https://www.accurat.it/)
-- [Manuel Lima](http://www.mslima.com)
-- [UW Interactive Data Lab](http://idl.cs.washington.edu/)
-- [Lev Manovich / Software Studies Lab](http://lab.softwarestudies.com/p/research_14.html)
-- [Stamen Studio](https://stamen.com/)
-- [Pitch Interactive](https://pitchinteractive.com/)
-- [FiveThiryEight](https://fivethirtyeight.com/)
-- [Google Arts & Culture team](https://experiments.withgoogle.com/collection/arts-culture)
-- [Google Big Picture group](https://research.google.com/bigpicture/)
-- [Amanda Cox / NYTimes Upshot](https://www.nytimes.com/section/upshot)
-- [R2D3](http://www.r2d3.us/)
-- [The Pudding ](https://pudding.cool/)
-- [MIT Senseable City Lab](http://senseable.mit.edu/)
-- [Periscopic](http://periscopic.com/)
-
-## Visualization Podcasts
+### Visualization Podcasts
 
 - [Data Stories](http://datastori.es/)
 
-## Visualization Blogs and Publishers
+### Visualization Blogs and Publishers
 
 -   [Flowing Data](http://flowingdata.com/)
 -   [Information Aesthetics](http://infosthetics.com/)
@@ -80,7 +61,7 @@ A variety of useful toolkits have been designed to help support information visu
 -   [Visual Business Intelligence by Stephen Few](http://www.perceptualedge.com/blog/)
 -   [Statistical Modeling, Causal Inference, and Social Science](http://andrewgelman.com/) by Andrew Gelman
 
-## Online Color Tools
+### Online Color Tools
 
 -   [0to255](http://www.0to255.com/) - get lighter or darker shade of any color
 -   [ColorHexa](http://www.colorhexa.com/) - color conversion and detailed description
