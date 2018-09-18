@@ -24,7 +24,7 @@ Students will learn to
 3.  **Interactive Visualization (20%)**: build a visualization that enables interactive exploration along at least three dimensions using a dataset of your own choosing and publish it on the web.
 4.  **Midterm Exam (10%):** individual closed book exam, for 1 hour during class session. Comprises multiple-choice and written essay questions.
 5.  **Final Project (30%)**: build a web-based interactive visualization that allows you to answer questions about a topic of your own choosing. You will acquire the data, design your visualization, implement it using D3, and evaluate the results.
-6.  **Class Participation and Quizzes (15%)**: attend all classes prepared to discuss readings and actively engage in critique and analysis. Expect a reading quiz in most classes (1 point per quiz question accumulated over semester, as 60% of total participation.)
+6.  **Class Participation and Quizzes (15%)**: actively engages in class and online (Slack) in critique, analysis, and assisting peers. Expect a reading quiz most weeks (1 point per quiz question accumulated over semester, for 60% of total participation grade.)
 
 ## Expectations
 
