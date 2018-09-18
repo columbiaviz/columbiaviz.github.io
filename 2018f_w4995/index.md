@@ -9,7 +9,7 @@ layout: 2018f_w4995
 <br>
 _COMS W 4995 004 (3 pts)_ <br>
 _Instructor:_ Agnes Chang (ac3882), office hours by appt. <br>
-_IAs:_ Conder Shou (cs3544; Thurs 10:20a-12:20p), Jeevan Farias (jtf2126; Mon 2-4pm)<br>
+_IAs:_ Conder Shou (cs3544; Thurs 10a-12p), Jeevan Farias (jtf2126; Mon 2-4pm)<br>
 _Class Time:_ Tues 6:10-8pm <br>
 _Room:_ 415 Schapiro <br>
 [Class Slack](https://columbiavis-fa18.slack.com/messages/CC7B6321K) <br>
