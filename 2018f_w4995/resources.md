@@ -28,6 +28,10 @@ A variety of useful toolkits have been designed to help support information visu
 -   [Voyager](http://vega.github.io/voyager2) -- web-based data exploration tools from UW's Interactive Data Lab
 -   [GGobi](http://www.ggobi.org/) - classic system for visualizations of multivariate data
 
+{% include 2018f_tableauresources.md %}
+
+{% include 2018f_d3resources.md %}
+
 {% include 2018f_datapractitioners.md %}
 
 ### Visualization Podcasts
