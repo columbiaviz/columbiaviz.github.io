@@ -7,7 +7,7 @@ layout: 2018f_w4995
 
 The purpose of extra credit (EC) is to reflect understanding of the course material more in-depth or from a different perspective. Viewed in another way, these are assignments that were not assigned this semester due to our limited class time, but are still lots of fun and worth your time.
 
-Each EC assignment earns you up to 5% added to your final grade after any class curve. The amount you earn will depend on how in-depth you choose to go. *Before* you start working on one of the following, email me your proposal (what is your topic? how in depth do you plan to go?) and I'll respond with my point expectation given your proposed scope.
+Each EC assignment earns you up to 5% added to your final grade after any class curve. The amount you earn will depend on how in-depth you choose to go. *Before* you start working on one of the following, email me your proposal (what is your topic? how in depth do you plan to go?) and I'll respond with my point expectation and rubric given your proposed scope.
 
 When complete, [submit](https://goo.gl/forms/2GKkP5AnN4afmbRL2) via same Assignment Submission form (choose "Extra Credit" in the dropdown) by latest *Monday 11/26, 11:59pm.* (We will grade and award EC on rolling submission.)
 
