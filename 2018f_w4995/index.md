@@ -21,6 +21,19 @@ This course is a hands-on introduction to design principles, theory, and softwar
 
 Students should have experience in JavaScript programming and web development, as well as familiarity with databases and data formats. You should be comfortable picking up new programming tools on your own. Experience in Python or R for data processing is helpful but not required.
 
+## Final Projects
+
+- [A Historical Perspective on Gender Parity at the MoMA](https://beta.observablehq.com/@ataylorg/untitled/2)
+- [Human vs. Nature - What is Driving Our Electricity Use?](https://project.alan-zhufengxu.com/new-york-electricity-story)
+- [School (De/Re)segregation](https://datashizteam.github.io/A4_test/)
+- [What Makes A Popular Game On Steam?](https://owlviz.jczhang.com/)
+- [Cultural Trends in Popular Music ](https://beta.observablehq.com/@vizbiz/search-sentiment-analysis-of-billboard-top-100-songs-2000-2?fbclid=IwAR0DwHIG5GSFzvf5yLxhk2IYjm0QcKN8d-ZaHP_01h9Sx7vYRsGklax4XVw)
+- [Facebook Sentimentality and Stock Price](https://beta.observablehq.com/@wanlinxie/untitled/5)
+- [Freddie Mercury's Voice Visualized](https://julialedur.github.io/freddie-mercurys-voice/)
+- [NYC LIFE](https://beta.observablehq.com/@janewukk/final-xploration1)
+- [GradAnalytics](http://gradanalytics.ddns.net/)
+- [Analyzing Russian Troll Tweets](https://beta.observablehq.com/@mogryzko/for-chris/2)
+
 ## Schedule
 
 {: .overview .table .table-striped :}
