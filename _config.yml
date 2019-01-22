@@ -22,7 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  columbiaviz
 2018f_title: Intro to Data Vis 2018 fall
-
+2019s_title: Intro to Data Vis 2019 Spring
 
 # Build settings
 markdown: kramdown
