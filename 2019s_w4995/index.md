@@ -47,4 +47,4 @@ Students should have experience in JavaScript programming and web development, a
 
 - [Fall 2018](https://columbiaviz.github.io/2018f_w4995)
 
-{% include 2018f_d3banner.html %}
+{% include 2019s_d3banner.html %}
