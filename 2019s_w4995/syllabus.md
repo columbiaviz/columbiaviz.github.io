@@ -10,7 +10,7 @@ Students will learn to
 
 * Apply a structured design process to create effective and ethical visualizations
 * Conceptualize ideas and interaction techniques using sketching and prototyping
-* Apply principles of color, typography, and layout as well as principles of human perception and cognition in visual design
+* Apply principles of color, typography, and layout as well as principles of human perception and cognition in visual design; avoid misrepresentation
 * Process and analyze a variety of data types: quantitative, text, geospatial, qualitative
 * Create web-based interactive visualizations using D3 and Observable
 * Critically evaluate visualizations and suggest improvements and refinements
@@ -46,6 +46,10 @@ Students will learn to
 -   I will provide grading guidelines for assignments beforehand, but **we will not publish exact scoring criteria** and I do not expect rubrics to cover the entire space of possible submissions. I intend to keep the definition of  "A+: Exceed expectations" meaningful. I also reserve the right to curve final course grades. My expectation for the class is a normal distribution centered on B.
 -   I encourage you to **focus on feedback**: solicit reactions from your classmates, ask me and your IAs, solicit from friends and your other instructors. If any feedback is unclear, ask. Your grades won't make much difference in your career after this class, but my reaction and the reactions of your classmates to what you made, will. Your manner, attitude, and participation in these activities, online or in class, counts towards your grade, so be proactive.
 - **This is newish class**. Last semester was the alpha version and this semester is the beta version. Our main coding platform [Observable](https://beta.observablehq.com/) itself is in beta. Feedback for last semester was generally good and we're making improvements but nonetheless expect some kinks, expect hotfixes, and expect that you'll be asked for your feedback repeatedly, but know also that your input will be shaping this class for future iterations.
+
+## Auditors
+
+Auditors are welcome in class, and encouraged to form their own homework groups; the teaching team simply won't be able to provide grading or feedback due to time constraints.
 
 ## Optional Textbooks
 
