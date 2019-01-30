@@ -12,7 +12,7 @@ _Instructor:_ Agnes Chang (ac3882), office hours by appt. <br>
 _IAs:_ Conder Shou (cs3544; TBD), Jeevan Farias (jtf2126; TBD)<br>
 _Class Time:_ Tues 6:10-8pm <br>
 _Room:_ 963 EXT Schermerhorn <br>
-[Class Slack](https://columbiavis-sp18.slack.com/messages/CFKBQ9HNE) <br>
+[Class Slack](https://columbiavis-sp19.slack.com/) <br>
 [Course Feedback Form](https://goo.gl/forms/UG6Lq2kqFjYqP6bf1)
 
 ## Overview
