@@ -57,6 +57,6 @@ Auditors are welcome in class, and encouraged to form their own homework groups;
 -   [Envisioning Information](https://www.edwardtufte.com/tufte/books_ei), Edward Tufte  (1990)
 -   [Visualization Analysis and Design](https://clio.columbia.edu/catalog/11255731), Tamara Munzner  (2014)
 -   [Now You See It](https://dl.acm.org/citation.cfm?id=1611401), Stephen Few  (2009)
--   [D3: Interactive Data Visualization for the Web](https://clio.columbia.edu/catalog/13137514) 2nd ed., Scott Murray, O'Reilly  (2017)
+-   [D3: Interactive Data Visualization for the Web](https://clio.columbia.edu/catalog/13626017) 2nd ed., Scott Murray, O'Reilly  (2017)
 -   [The Truthful Art](https://proquest-safaribooksonline-com.ezproxy.cul.columbia.edu/9780133440492), Alberto Cairo  (2016)
 -   [Visual Thinking for Design](https://www.sciencedirect.com/science/book/9780123708960), Colin Ware, Morgan Kaufman  (2008)
