@@ -9,7 +9,7 @@ layout: 2019s_w4995
 <br>
 _COMS W 4995 006 (3 pts)_ <br>
 _Instructor:_ Agnes Chang (ac3882), office hours by appt. <br>
-_IAs:_ Conder Shou (cs3544; [Mon. 3-5p](https://calendar.google.com/calendar/selfsched?sstoken=UURoSXBJb1BmUkFJfGRlZmF1bHR8ZmYwZjJhZGExNzZlZDY2YjdkMWI4MWYwNDhkZjJmOWI)), Jeevan Farias (jtf2126; [Thurs. 10:30-12:30](https://calendar.google.com/calendar/selfsched?sstoken=UUFSTERjTm5kRFZUfGRlZmF1bHR8MmM2OTBmZDk3NjMzNWUwODUzZGFjMWIyMDAxNzgxY2U))<br>
+_IAs:_ Conder Shou (cs3544; [Mon. 3-5p](https://calendar.google.com/calendar/selfsched?sstoken=UURoSXBJb1BmUkFJfGRlZmF1bHR8ZmYwZjJhZGExNzZlZDY2YjdkMWI4MWYwNDhkZjJmOWI)), Jeevan Farias (jtf2126; [Wed. 10:30-12:30](https://calendar.google.com/calendar/selfsched?sstoken=UUFSTERjTm5kRFZUfGRlZmF1bHR8MmM2OTBmZDk3NjMzNWUwODUzZGFjMWIyMDAxNzgxY2U))<br>
 _Class Time:_ Tues. 6:10-8pm <br>
 _Room:_ 963 EXT Schermerhorn <br>
 [Class Slack](https://columbiavis-sp19.slack.com/) <br>
