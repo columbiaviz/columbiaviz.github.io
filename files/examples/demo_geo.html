@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Scrollama Demo: Basic</title>
+	<meta name="description" content="Scrollama Demo: Basic">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		/* default / demo page */
+
+		* {
+			box-sizing: border-box;
+		}
+
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		}
+
+		body {
+			min-height: 1280px;
+			font-weight: 300;
+			color: #2a2a2a;
+		}
+
+		p,
+		h1,
+		h2,
+		h3,
+		h4,
+		a {
+			margin: 0;
+			font-weight: 300;
+		}
+
+		a,
+		a:visited,
+		a:hover {
+			color: #f30;
+			text-decoration: none;
+			border-bottom: 1px solid currentColor;
+		}
+
+		#intro {
+			max-width: 40rem;
+			margin: 1rem auto;
+			text-align: center;
+		}
+
+		.intro__overline {
+			font-size: 1.4rem;
+		}
+
+		.intro__hed {
+			font-size: 1.4rem;
+			margin: 1.5rem auto;
+			text-transform: uppercase;
+			font-weight: 900;
+			letter-spacing: 0.05em;
+		}
+
+		.intro__dek {
+			font-size: 1.4rem;
+		}
+
+		/* demo */
+
+		#intro {
+			margin-bottom: 300px;
+		}
+
+		#outro {
+			height: 4400px;
+		}
+
+		/* scrollama */
+
+		#scroll {
+			position: relative;
+		}
+
+		.scroll__text {
+			position: relative;
+			padding: 0 1rem;
+			margin: 0 auto;
+			width: 33%;
+		}
+
+		.step {
+			background-color: rgba(255,255,255,0.7);
+			margin: 2rem auto 4rem auto;
+			border: 1px solid #333;
+		}
+
+		.step.is-active {
+			background-color: lightgoldenrodyellow;
+		}
+
+		.step p {
+			text-align: center;
+			padding: 1rem;
+			font-size: 1.5rem;
+		}
+
+		nav {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			z-index: 1000;
+			background: white;
+			padding: 1rem;
+		}
+
+		main#container {
+			position: relative;
+		}
+		#sticky {
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+		}
+	</style>
+
+</head>
+
+<body>
+	<nav>
+		<a href='https://github.com/columbiaviz/columbiaviz.github.io/tree/master/files/examples/demo_geo.html'>SOURCE CODE</a>
+		<a href='#anchor-1'>Jump to titles</a>
+		<a href='#anchor-3'>Jump to step 3</a>
+	</nav>
+
+	<main id='container'>
+
+		<div id='sticky'>
+			<svg viewBox="0 0 960 600" style="width:100%;height:auto;">
+			  <g id='usa' fill="none" stroke="#000" stroke-linejoin="round" stroke-linecap="round"></g>
+			</svg>
+		</div>
+
+		<div id='scrolly'>
+			<div id='anchor-1'></div>
+
+			<section id='intro'>
+				<p class='intro__overline'>
+					<a href='https://github.com/russellgoldenberg/scrollama'>scrollama.js</a>
+				</p>
+				<h1 class='intro__hed'>Demo: Basic</h1>
+				<p class='intro__dek'>
+					Start scrolling to see how it works.
+				</p>
+			</section>
+
+			<div id='anchor-2'></div>
+			<section id='scroll'>
+				<div class='scroll__text'>
+					<div class='step' data-step='1'>
+						<p>STEP 1</p>
+					</div>
+					<div class='step' data-step='2'>
+						<p>STEP 2</p>
+					</div>
+
+					<div class='step' data-step='3'>
+
+						<p>STEP 3</p>
+						<div id='anchor-3'></div>
+					</div>
+
+				</div>
+			</section>
+			<div id='anchor-4'></div>
+			<section id='outro'></section>
+			<div id='anchor-5'></div>
+		</div>
+
+	</main>
+
+	<script src='https://unpkg.com/intersection-observer@0.5.0/intersection-observer.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/2.0.0/scrollama.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+	<script>
+		// see Observable US Map https://observablehq.com/@d3/u-s-map
+		var path = d3.geoPath();
+		// var projection = d3.geoAlbersUsa().scale(1280).translate([480, 300]); // use this if you have lon,lat
+		var map = d3.select('#usa');
+		var color = d3.scaleOrdinal(d3.schemeSet3);
+		var us;
+		d3.json("https://cdn.jsdelivr.net/npm/us-atlas@2/us/10m.json")
+			.then(function(data) {
+				us = data;
+				map.append('path').attr('id', 'step-all')
+					.attr('vector-effect', 'non-scaling-stroke')
+					.attr('d', path(topojson.feature(us, us.objects.nation)));
+				var states_filter = function(a, b){return (a !== b);}
+				map.append('path').attr('id', 'step-0').attr('opacity', 0)
+					.attr('stroke-width', 0.5).attr('vector-effect','non-scaling-stroke')
+					.attr('d', path(topojson.mesh(us, us.objects.states, states_filter)));
+					// for `topojson.mesh` see also https://github.com/topojson/topojson-client/blob/master/README.md#mesh
+				var counties_filter = function(a, b) { return (a !== b && (a.id / 1000 | 0) === (b.id / 1000 | 0)); };
+				map.append('path').attr('id', 'step-1')
+					.attr('stroke', '#aaa').attr('opacity', 0)
+					.attr('stroke-width', 0.5).attr('vector-effect','non-scaling-stroke')
+					.attr('d', path(topojson.mesh(us, us.objects.counties, counties_filter)));
+				// see also https://observablehq.com/@d3/choropleth
+				map.append("g").attr('id', 'step-2').attr('opacity', 0)
+			    .selectAll("path")
+			    .data(topojson.feature(us, us.objects.counties).features)
+			    .join("path")
+			      .attr("fill", function(d,i){return color(i);})
+			      .attr("d", path);
+			});
+
+		// scrollama basic
+		var container = document.querySelector('#scroll');
+		var text = container.querySelector('.scroll__text');
+		var steps = text.querySelectorAll('.step');
+
+		// initialize the scrollama
+		var scroller = scrollama();
+
+		// scrollama event handlers
+		function handleStepEnter(response) {
+			// response = { element, direction, index }
+			console.log(response.index, '-------- enter');
+			// add to color to current step
+			response.element.classList.add('is-active');
+			// show corresponding map step if scrolling down
+			if (response.direction == 'down') map.select('#step-'+response.index).attr('opacity', 1);
+		}
+
+		function handleStepExit(response) {
+			// response = { element, direction, index }
+			console.log(response.index, '-------- exit');
+			// remove color from current step
+			response.element.classList.remove('is-active');
+			// hide corresponding map step if scrolling up
+			if (response.direction == 'up') map.select('#step-'+response.index).attr('opacity', 0);
+		}
+
+		function handleStepProgress(response) {
+			// response = { element, progress, index }
+			console.log(response.index, '-------- progress -', response.progress);
+		}
+
+		function init() {
+			// set random padding for different step heights (not required)
+			steps.forEach(function (step) {
+				var v = 100 + Math.floor(Math.random() * window.innerHeight / 4);
+				// step.style.padding = v + 'px 0px';
+				step.style.height = '300px';
+			});
+
+			// 1. setup the scroller with the bare-bones options
+			// this will also initialize trigger observations
+			// 3. bind scrollama event handlers (this can be chained like below)
+			scroller.setup({
+				step: '.scroll__text .step',
+				debug: true,
+				offset: 0.2,
+				// progress: true,
+			})
+				.onStepEnter(handleStepEnter)
+				.onStepExit(handleStepExit)
+				// .onStepProgress(handleStepProgress)
+
+			// setup resize event
+			window.addEventListener('resize', scroller.resize);
+		}
+
+		// kick things off
+		init();
+	</script>
+</body>
+
+</html>
