@@ -21,6 +21,17 @@ This course is a hands-on introduction to design principles, theory, and softwar
 
 Students should have experience in JavaScript programming and web development, as well as familiarity with databases and data formats. You should be comfortable picking up new programming tools on your own. Experience in Python or R for data processing is helpful but not required.
 
+## Final Projects
+
+- [The Effects of 911](https://caz2114.github.io/)
+- [Evolution of Terrorism](https://medium.com/@bhsgsh/data-visualization-final-documentation-spring-2019-2b2cc2517142)
+- [How New York City Moves When it Is Cold (and Hot) Out](https://medium.com/@ns3305/how-new-york-city-moves-when-it-is-cold-and-hot-out-2f048dfcbdb3)
+- [How bad is climate change? Much worse than you think.](https://ottoshih.github.io/A5/)
+- [Understanding the United States Opioid Crisis](https://amal994.github.io/a5/)
+- [Does College Provide All Students with the Same Economic Opportunities?](https://shpach.github.io/Data-Visualization-A5/)
+- [Designing the Perfect Board Game](https://tigerlily.pythonanywhere.com/)
+- [Diversity in NYC’s Specialized High Schools](https://observablehq.com/@janilllema/improving-specialized-high-schools-diversity)
+
 ## Schedule
 
 {: .overview .table .table-striped :}
