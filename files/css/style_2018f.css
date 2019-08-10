@@ -11,7 +11,9 @@ footer {
 	font-size: 14px;
   padding-top: 30px;
 }
-
+table.overview {
+	overflow-x: auto;
+}
 /***** Navbar ******/
 .navbar-inverse {
   background-color: #fff;

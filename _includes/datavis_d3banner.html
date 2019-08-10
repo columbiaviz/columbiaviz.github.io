@@ -2,12 +2,13 @@
 <script>
   // ported from https://bl.ocks.org/mbostock/3231298
 
-  var width = document.getElementsByClassName("container")[0].offsetWidth;
+  var width = document.getElementsByTagName("body")[0].offsetWidth;
   var height = width > 500 ? 300 : 180;
+  var strength = width > 500 ? 0.05 : 0.15;
 
   var nodes = d3.range(200).map(() => ({radius: Math.random() * 10 + 4})),
       root = nodes[0],
-      color = d3.scaleOrdinal(d3.schemeBuGn[6]);
+      color = d3.scaleOrdinal(d3.scheme{{ include.d3colorscheme }}[6]);
 
   root.radius = 0;
   root.fixed = true;
@@ -15,21 +16,21 @@
   const svg = d3.select("#d3banner")
       .attr("width", width)
       .attr("height", height);
-    
+
   const simulation = d3.forceSimulation(nodes)
       .force('charge', d3.forceManyBody().strength((d, i) => i ? 0 : -2000))
-      .force('x', d3.forceX(width / 2).strength(0.05))
-      .force('y', d3.forceY(height / 2).strength(0.05))
+      .force('x', d3.forceX(width / 2).strength(strength))
+      .force('y', d3.forceY(height / 2).strength(strength))
       .force('collision', d3.forceCollide().radius(d => d.radius))
       .on('tick', ticked);
-  
+
   svg.selectAll("circle")
       .data(nodes.slice(1))
       .enter().append("circle")
       .attr("r", d => d.radius)
       .attr("opacity", 0.7)
       .style("fill", (d, i) => color(i % 4));
-   
+
   svg.on("mousemove", function() {
       var p1 = d3.mouse(this);
       root.fx = p1[0];
@@ -38,11 +39,11 @@
           .alphaTarget(0.3)
           .restart();
     });
-  
+
   function ticked() {
       svg.selectAll("circle")
           .attr("cx", d => d.x)
           .attr("cy", d => d.y);
-  }  
+  }
 
 </script>

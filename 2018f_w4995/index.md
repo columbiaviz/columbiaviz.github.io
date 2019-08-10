@@ -55,4 +55,4 @@ Students should have experience in JavaScript programming and web development, a
 | 12/4 | _Final Project Showcase.<br>@ Brown Center Pulitzer Hall_<br>([slides](https://docs.google.com/presentation/d/1nYcUYv7CBc9zRPrQmzM72gTwgi1lvHsfLGdhzeDp4SQ/edit?usp=sharing)) ||| [A4.3 Project + Showcase](a4.html) DUE |
 | 12/10 | ||| [A4 Final Documentation](a4.html) DUE |
 
-{% include 2018f_d3banner.html %}
+{% include datavis_d3banner.html d3colorscheme="BuGn" %}

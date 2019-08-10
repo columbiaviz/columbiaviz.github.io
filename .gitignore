@@ -1,3 +1,11 @@
+# Jekyll
+.DS_Store
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+Gemfile.lock
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
