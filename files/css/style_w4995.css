@@ -12,7 +12,8 @@ footer {
   padding-top: 30px;
 }
 table.overview {
-	overflow-x: auto;
+  display: block;
+  overflow: scroll;
 }
 /***** Navbar ******/
 .navbar-inverse {

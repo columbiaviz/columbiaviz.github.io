@@ -1,6 +1,7 @@
 ---
 layout: 2019s_w4995
 ---
+{% include w4995_outdatednotice.html %}
 
 <svg id="d3banner"></svg>
 
