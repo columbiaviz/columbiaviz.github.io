@@ -5,9 +5,6 @@ layout: 2019f_w4995
 # Extra Credit Opportunities
 <br>
 
-_To be announced after mid-terms._
-
-{% comment %}
 The purpose of extra credit (EC) is to reflect understanding of the course material more in-depth or from a different perspective. Viewed in another way, these are assignments that were not assigned this semester due to our limited class time, but are still lots of fun and worth your time.
 
 Each EC earns you up to 5% added to your final grade after any class curve. The amount you earn will depend on how in-depth you choose to go. *Before* you start working on one of the following, email me your proposal (what is your topic? how in depth do you plan to go?) and I'll respond with my point expectation and rubric given your proposed scope. EC assignments are to be completed individually.
@@ -32,4 +29,3 @@ Examples:
 - Visualizing large datasets (hitting performance limits)
 - Visualizing real-time data
 - Your idea here!
-{% endcomment %}
