@@ -5,11 +5,9 @@ layout: 2020s_w6998
 
 #### Overview
 
-Human Data Interaction studies the interface between humans and data. What types of interfaces are suitable for different data tasks? Further, creating human data interfaces is extremely challenging because the responsiveness of the interface directly depends on the system architecture as well as the interface design.  What systews innovations are needed to simplify how effective human data interfaces can be created and used?
+Human Data Interaction studies the interface between humans and data. What types of interfaces are suitable for different data tasks? Further, creating human data interfaces is extremely challenging because the responsiveness of the interface directly depends on the system architecture as well as the interface design.  What system innovations are needed to simplify how effective human data interfaces can be created and used?
 
-Human Data Interaction is a nascent field, and this seminar course will focus on answering the above questions.  The course will involve reading, reviewing, and discussing research papers in the fields of data visualization, human computer interaction, and data systems. 
-
-Each session will consist of a round table discussion of the week's readings to understand the context, the technical details, and to brain storm follow up research questions.  Students will work in small teams on a semester-long research project that is within the scope of the course topic.  
+Human Data Interaction is a nascent field, and we will study modern research in data visualization, HCI, data analysis, and data management systems.  This seminar course will center around reading, reviewing, and discussing research papers.  Each session will consist of a round table discussion of the week's readings to understand the context, the technical details, and to brain storm follow up research questions.  Students will work in small teams on a semester-long research project that is within the scope of the course topic.  
 
 <small style="color: grey">Course capped at 15.</small>
 
