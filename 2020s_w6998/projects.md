@@ -69,19 +69,22 @@ Because this report is the primary deliverable upon which you will be graded, **
 * [CMT website](#) by 5/10 11:59PM EST
 
 
-<!--
+
 <a name="suggestions"></a>
 ## Project Suggestions
 
 The following are examples of possible projects -- they are by no means a complete list and **you are free to select your own projects**.  In fact, a common source of ideas is to take your experience from another domain, and combine it with databases/data management.  Projects often come in several flavors:
 
-0. Make DataBass better: extend DataBass in a significant way, and evaluate it against other systems.  For instance, support DSM/PAX, distributed execution, LLVM compilation, lineage, etc.  Code quality matters for this option.
-1. Research project: model an unsolved problem, propose algorithmic solution, evaluate and report findings.
+1. Research project: model an unsolved problem, propose or extend an algorithmic solution, evaluate and report findings.
+2. Design: identify an underserved data problem for which a sound, composable interface doesn't exist, propose an interface and interaction design, build and evaluate it.
+3. Fill a gap:  think about something useful that _should_ be easily doable, but is painful or impossible with current state of the art.  Fill that gap.
+
+
+<!--
+
 2. Win: pick an existing useful application and a well-recognized metric (latency, prediction, etc) and win against the state of the art.
 3. Break and fix: implement a state of the art algorithm on real data, show that it doesn't actually work (results are poor, it's slow, etc), make it work.
 4. Evaluate: there are many options out there, it's not clear which ones are actually best, and under what conditions.  Run a bake-off and evaluate.
-5. Fill a gap:  think about something useful that _should_ be easily doable, but is painful or impossible with current state of the art.  Fill that gap.
-
 
 #### Precision Interfaces
 
