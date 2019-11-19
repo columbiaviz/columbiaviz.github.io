@@ -2,9 +2,15 @@
 layout: page_2020
 ---
 
-# Resources (thanks to Agnes Chang)
+# Resources 
 
 <br>
+
+### Related Workshops and Conferences
+
+* [Human in the loop data analysis at SIGMOD](https://hilda.io)
+* [Data Systems for Interactive Analysis at VIS](https://www.interactive-analysis.org/)
+* [Interactive Data Exploration and Analytics at KDD](http://poloclub.gatech.edu/idea2018/)
 
 ### Visualization Toolkits
 
@@ -71,3 +77,8 @@ A variety of useful toolkits have been designed to help support information visu
 -   [Canva Color palette generator](https://www.canva.com/color-palette/) - returns color palette of any photo you upload
 
 {% include 2018f_datasources.md %}
+
+
+
+
+(thanks to Agnes Chang for the bulk of these resources)
