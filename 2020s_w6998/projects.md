@@ -69,6 +69,7 @@ Because this report is the primary deliverable upon which you will be graded, **
 * [CMT website](#) by 5/10 11:59PM EST
 
 
+<!--
 <a name="suggestions"></a>
 ## Project Suggestions
 
@@ -122,6 +123,8 @@ Graphs are fundamentally high dimensional, and generating good graph visualizati
 #### What We Talk About When We Talk About Data
 
 How are data and analyses referred to and described in scientific work?  When data is presented as figures or tables, how is it referred to?  What are the verbs and nouns?  Is there a universal set of ways that figures are described (e.g., in terms of comparisons? in relative terms? ).  This can serve as the evidence for a new data analysis language.  Analyze [Viziometrics](http://viziometrics.org/api/) and ArXiV for their figures and captions and surrounding text (ArXiV provides LateX files)
+
+-->
 
 <!--
 #### Bake-off

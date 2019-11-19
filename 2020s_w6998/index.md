@@ -26,10 +26,10 @@ Human Data Interaction is a nascent field, and we will study modern research in 
   <thead>
   <tr>
     <!--<th class="idx" style="width: 3em; max-width:3em;"></th>-->
-    <th class="date" style="width: 4em; max-width: 4em;"> <p> <span>Date </span> </p> </th>
-    <th style="min-width: 15%;"> <p> <span>Topic </span> </p> </th>
-    <th style="width: 20%"> <p> <span>Notes </span> </p> </th>
-    <th style="width: 10%"> <p> <span>Readings </span> </p> </th>
+    <th class="date" style="width: 7em; max-width: 7em;"> <p> <span>Date </span> </p> </th>
+    <th style="min-width: 25%;"> <p> <span>Topic </span> </p> </th>
+    <th style="width: 30%"> <p> <span>Notes </span> </p> </th>
+    <th style="width: 20%"> <p> <span>Readings </span> </p> </th>
     <!--<th style="width: 15%;"> <p> <span>Assigned</span> </p> </th>-->
     <th style="width: 15%;"> <p> <span>Due</span> </p> </th>
   </tr>
@@ -43,19 +43,20 @@ Human Data Interaction is a nascent field, and we will study modern research in 
     <td class="date">L{{idx}}: {{r.date}}</td>
     <td class="slug">
       <b>{{r.slug}}</b>
-      {% if r.presenter %}
+      {% if r.leader %}
         <br/>
-        <span class='presenter'>Presenter: {{r.presenter}}</span>
+        <span class='presenter'>Leader: {{r.leader}}</span>
       {% endif %}
 
       </td>
     <td class="notes">
+      {% if r.notes %}{{r.notes}}{% endif %}
       {% if r.link %}
         <a href="{{r.link}}">Notes</a>
       {% endif %}
     </td>
     <td class="readings">
-      {{r.readings}}
+      {{r.readings | safe}}
     </td>
     <!--<td>{{r.assigned | safe}}</td>-->
     <td>{{r.due | safe}}</td>
