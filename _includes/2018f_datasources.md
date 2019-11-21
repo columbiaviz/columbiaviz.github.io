@@ -2,6 +2,8 @@
 
 * [NYC Open Data](https://opendata.cityofnewyork.us/): data on NYC trees, taxis, subway, citibike, 311 calls, land lot use, etc.
 * [data.gov](https://www.data.gov/): everything from hourly precipitation, fruit & vegetable prices, crime reports, to electricity usage.
+* [Stanford Open Policing Dataset](https://openpolicing.stanford.edu/data/)
+* [Civil Rights Data Collection](https://ocrdata.ed.gov/)
 * [Yelp Open Dataset](https://www.yelp.com/dataset)
 * [U.S. Census Bureau](https://www.census.gov/data.html): use their Discovery Tool
 * [US Health Data](https://data.cdc.gov/): central searchable repository of US health data (Center for Disease Control and National Center for Health Statistics), e.g. surveys on pregnancy, cause of death, health care access, obesity, etc.
@@ -18,4 +20,4 @@
 * [Socrata Open Data](https://opendata.socrata.com/)
 * [17 places to find datasets for data science projects](https://www.dataquest.io/blog/free-datasets-for-projects/)
 * [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets) (github): topic-centric list of high-quality open datasets in public domains
-* [Sanford Open Policing Dataset](https://openpolicing.stanford.edu/data/)
+
