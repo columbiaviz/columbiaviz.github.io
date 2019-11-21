@@ -3,6 +3,7 @@
 * [NYC Open Data](https://opendata.cityofnewyork.us/): data on NYC trees, taxis, subway, citibike, 311 calls, land lot use, etc.
 * [data.gov](https://www.data.gov/): everything from hourly precipitation, fruit & vegetable prices, crime reports, to electricity usage.
 * [Stanford Open Policing Dataset](https://openpolicing.stanford.edu/data/)
+* [Physician Medicare Data](https://data.medicare.gov/data/archives/physician-compare)
 * [Civil Rights Data Collection](https://ocrdata.ed.gov/)
 * [Yelp Open Dataset](https://www.yelp.com/dataset)
 * [U.S. Census Bureau](https://www.census.gov/data.html): use their Discovery Tool
