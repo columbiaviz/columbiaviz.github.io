@@ -19,6 +19,12 @@ Surveys
 * [Overview of Data Exploration Techniques](http://stratos.seas.harvard.edu/files/stratos/files/exploration-tutorial.pdf)
 * Optional: Associating the visual representation of user interfaces with their internal structures and metadata.
 
+
+Related topics
+
+* Intelligent agents and conversational agents
+* sensemaking
+
 #### Specifying Visualizations and Exploration
 
 Declarative Visualization Languages
