@@ -3,16 +3,16 @@ layout: root
 
 ---
 
-## Future Courses
+## Current Courses
 
 [Spring 2020 Systems for Human Data interaction](./2020s_w6998)  - Eugene Wu
 
 
-## Current Courses
 
-[Fall 2019 Introduction to Data Visualization](./2019f_w4995)  - Agnes Chang
 
 ## Past courses
+
+[Fall 2019 Introduction to Data Visualization](./2019f_w4995)  - Agnes Chang
 
 [Spring 2019 Introduction to Data Visualization](./2019s_w4995)  - Agnes Chang
 

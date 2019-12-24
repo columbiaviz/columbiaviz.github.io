@@ -36,7 +36,7 @@ Human Data Interaction is a nascent field, and we will study modern research in 
   </thead>
 {% assign idx = 0 %}
 
-{% for r in site.data.2020s_w6998_sched %}
+{% for r in site.data.sched_2020s_w6998 %}
   {% assign idx = idx | plus: 1  %}
   <tr>
     <!--<td class="idx">L{{idx}}</td>-->
