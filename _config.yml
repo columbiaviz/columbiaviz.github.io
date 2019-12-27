@@ -21,9 +21,6 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  columbiaviz
-title_2018f: Intro to Data Vis 2018 Fall
-title_2019s: Intro to Data Vis 2019 Spring
-title_2019f: Intro to Data Vis 2019 Fall
 
 # Build settings
 markdown: kramdown

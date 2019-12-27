@@ -56,7 +56,7 @@ Students should have experience in JavaScript programming and web development, a
 
 ## Past semesters
 
-- [Spring 2019](https://columbiaviz.github.io/2019s_w4995)
-- [Fall 2018](https://columbiaviz.github.io/2018f_w4995)
+- [Spring 2019](/2019s_w4995)
+- [Fall 2018](/2018f_w4995)
 
 {% include datavis_d3banner.html d3colorscheme="BuPu" %}
