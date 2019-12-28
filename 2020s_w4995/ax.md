@@ -9,7 +9,7 @@ The purpose of extra credit (EC) is to reflect understanding of the course mater
 
 Each EC earns you up to 5% added to your final grade after any class curve. The amount you earn will depend on how in-depth you choose to go. *Before* you start working on one of the following, email me your proposal (what is your topic? how in depth do you plan to go?) and I'll respond with my point expectation and rubric given your proposed scope. EC assignments are to be completed individually.
 
-When complete, [submit](https://forms.gle/dRdgXgFfKX32Pc3x9) via same Assignment Submission form (choose "Extra Credit" in the dropdown) by latest **Monday 12/2, 11:59pm.**
+When complete, [submit](({{ layout.submissionform }})) via same Assignment Submission form (choose "Extra Credit" in the dropdown) by latest **Monday 4/13, 11:59pm.**
 
 ### Misrepresentation
 Must specifically misrepresent two opposing/conflicting messages by utilizing one or more perceptive principles. You're encouraged to treat this as a data art assignment; however, it must be based on real data (however simple) and it must illustrate at least one perceptive principle. Take for inspiration [Josef Albers](https://acpress.amherst.edu/books/intersectingcolors/chapter/josef-albers-and-the-science-of-seeing/), [MC Escher](https://www.youtube.com/watch?v=Ty1twivydVA), [optical illusions](https://en.wikipedia.org/wiki/Optical_illusion), etc. Submit as slides or PDF with your images and a paragraph caption.
