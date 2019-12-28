@@ -13,8 +13,8 @@ _IAs:_ _TBD_ <!-- Vasudha Rengarajan (vr2375; [Wed. 2:30-4:30p](https://calendar
 Amal Alabdulkarim (aa4235; [Thu. 11a-1p](https://calendar.google.com/calendar/selfsched?sstoken=UUo4T0xWODh5bjZPfGRlZmF1bHR8MmM2ZTViZjU2YzE5N2E1NTYyMzMwZTQxNTE1OTVmNjM) @ TA room) --> <br>
 _Class Time:_ Tues. 6:10-8pm <br>
 _Room:_ _TBD_ <!-- 963 EXT Schermerhorn --><br>
-[Class Slack](https://columbiavis-fa19.slack.com/) <br>
-[Course Feedback Form](https://forms.gle/9fRdksoPAFdyNqgq5)
+[Class Slack](https://columbiaviz-sp20.slack.com) <br>
+[Course Feedback Form](https://forms.gle/sJne6fxphDzFBJN38)
 
 ## Overview
 
