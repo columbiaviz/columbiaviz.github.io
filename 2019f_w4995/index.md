@@ -16,6 +16,16 @@ _Room:_ 963 EXT Schermerhorn <br>
 [Class Slack](https://columbiavis-fa19.slack.com/) <br>
 [Course Feedback Form](https://forms.gle/9fRdksoPAFdyNqgq5)
 
+## Fall 2019 Final Projects
+
+- [Intra-Metropolitan Migration in the United States](https://erickawu.github.io/scroll_narrative/)
+- [LEGO: Toy or Collector's Item?](https://observablehq.com/@williamshamma/untitled)
+- [Old Taylor vs. New Taylor](https://observablehq.com/@jasminflack/rough-taylor-swift-viz)
+- [Flames of Amazonia: Mapping fire impact on indigenous lands of the Amazon](https://medium.com/@al3750/e3ccf0b04a3b)
+- [Missing Migrants](https://observablehq.com/@mattlawhon/missing-migrants/2)
+- [SkyData: Choose your ideal airline and date to fly](https://teamalpha-skydata.github.io/)
+- [World Happiness Report](https://oliviawyq.github.io/World-Happiness-Report/)
+
 ## Overview
 
 This course is a hands-on introduction to design principles, theory, and software techniques for visualizing data. Classes will be a combination of lecture, design studio, and lab. Through readings, design critique and code assignments, students will learn how visual representations can help in the understanding of complex data, and how to design and evaluate visualizations for the purpose of analysis or communication. Students will develop skills in processing data, and building interactive visualizations using D3. Topics include visual perception, exploratory data analysis, task analysis, graphic design, narrative, etc.
@@ -46,7 +56,7 @@ Students should have experience in JavaScript programming and web development, a
 
 ## Past semesters
 
-- [Spring 2019](https://columbiaviz.github.io/2019s_w4995)
-- [Fall 2018](https://columbiaviz.github.io/2018f_w4995)
+- [Spring 2019](/2019s_w4995)
+- [Fall 2018](/2018f_w4995)
 
 {% include datavis_d3banner.html d3colorscheme="BuPu" %}

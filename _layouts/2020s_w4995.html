@@ -1,6 +1,10 @@
 ---
-title: Data Vis 2019 Spring
-courseno: W4995.006
+title: Data Vis 2020 Spring
+courseno: W4995.010
+submissionform: https://forms.gle/NEqkDH5cbnFhzWMx9
+peerassessform: https://forms.gle/Bw74fCt9eDfgZRgt9
+applyenrollform: https://forms.gle/eztN4rRJtRVWjHiz9
+canvasfiles: https://courseworks2.columbia.edu/courses/99589/files/
 ---
 
 <html>
@@ -25,7 +29,6 @@ courseno: W4995.006
   <!-- Fixed navbar -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-      {% include w4995_outdatednotice.html %}
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
@@ -43,12 +46,13 @@ courseno: W4995.006
 							 role="button" aria-haspopup="true" aria-expanded="false">
 							Assignments <span class="caret"></span></a>
             <ul class="dropdown-menu">
+              <li><a href="a0.html">A0: Apply To Enroll</a></li>
               <li><a href="a1.html">A1: Sparks Presentation</a></li>
               <li><a href="a2.html">A2: Visualization Design</a></li>
               <li><a href="a3.html">A3: Exploratory Data Analysis</a></li>
               <li><a href="a4.html">A4: Interactive Visualization</a></li>
               <li><a href="a5.html">A5: Final Project</a></li>
-              <li><a href="ax.html">EC: Extra Credit Opportunities</a></li>
+              <!-- <li><a href="ax.html">EC: Extra Credit Opportunities</a></li> -->
             </ul>
           </li>
           <li class="dropdown">
@@ -57,15 +61,15 @@ courseno: W4995.006
 							Demos <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="https://beta.observablehq.com/@agness/introdv-f18-demo-1-data-select-scale">
-									2/19: Data, Select, Scale</a></li>
+									10/1: Data, Select, Scale</a></li>
               <li><a href="https://beta.observablehq.com/@agness/introdv-f18-demo-2-interactivity">
-									2/26: Update, Events, Brush, Drag</a></li>
+									10/8: Update, Events, Brush, Drag</a></li>
               <!-- <li><a href="https://beta.observablehq.com/@agness/tk">
-									3/26: Multiples, Transition, Transform, Zoom</a></li> -->
+									10/29: Multiples, Transition, Transform, Zoom</a></li> -->
               <li><a href="../files/examples/demo_geo.html">
-									4/2: Path, Polygon, Geography</a></li>
+									11/12: Path, Polygon, Geography</a></li>
               <li><a href="https://beta.observablehq.com/@agness/tk">
-									4/16: Hierarchy, Chord, Forces</a></li>
+									11/26: Hierarchy, Chord, Forces</a></li>
             </ul>
           </li>
           <li><a href="resources.html">Resources</a></li>
@@ -74,7 +78,7 @@ courseno: W4995.006
     </div>
   </nav>
 
-    <div class="container outdated">
+    <div class="container">
 
 			{{ content }}
 
@@ -82,7 +86,7 @@ courseno: W4995.006
 
 		<footer class="page-footer font-small">
 			<div class="footer-copyright text-center py-3">
-				W4995.006 Columbia University Computer Science<br>
+				{{ layout.courseno }} Columbia University Computer Science<br>
 				🙌 <a href="http://agneschang.net/">Agnes Chang</a>, with thanks to
 				<a href="http://people.ischool.berkeley.edu/~hearst/">Marti</a> +
 				UW <a href="https://courses.cs.washington.edu/courses/cse512/18sp/">CSE512</a>.

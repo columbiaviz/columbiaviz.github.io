@@ -1,7 +1,6 @@
 ---
 layout: 2019s_w4995
 ---
-{% include w4995_outdatednotice.html %}
 
 <svg id="d3banner"></svg>
 
@@ -16,13 +15,7 @@ _Room:_ 963 EXT Schermerhorn <br>
 [Class Slack](https://columbiavis-sp19.slack.com/) <br>
 [Course Feedback Form](https://goo.gl/forms/UG6Lq2kqFjYqP6bf1)
 
-## Overview
-
-This course is a hands-on introduction to design principles, theory, and software techniques for visualizing data. Classes will be a combination of lecture, design studio, and lab. Through readings, design critique and code assignments, students will learn how visual representations can help in the understanding of complex data, and how to design and evaluate visualizations for the purpose of analysis or communication. Students will develop skills in processing data, and building interactive visualizations using D3. Topics include visual perception, exploratory data analysis, task analysis, graphic design, narrative, etc.
-
-Students should have experience in JavaScript programming and web development, as well as familiarity with databases and data formats. You should be comfortable picking up new programming tools on your own. Experience in Python or R for data processing is helpful but not required.
-
-## Final Projects
+## Spring 2019 Final Projects
 
 - [The Effects of 911](https://caz2114.github.io/)
 - [Evolution of Terrorism](https://medium.com/@bhsgsh/data-visualization-final-documentation-spring-2019-2b2cc2517142)
@@ -32,6 +25,12 @@ Students should have experience in JavaScript programming and web development, a
 - [Does College Provide All Students with the Same Economic Opportunities?](https://shpach.github.io/Data-Visualization-A5/)
 - [Designing the Perfect Board Game](https://tigerlily.pythonanywhere.com/)
 - [Diversity in NYC’s Specialized High Schools](https://observablehq.com/@janilllema/improving-specialized-high-schools-diversity)
+
+## Overview
+
+This course is a hands-on introduction to design principles, theory, and software techniques for visualizing data. Classes will be a combination of lecture, design studio, and lab. Through readings, design critique and code assignments, students will learn how visual representations can help in the understanding of complex data, and how to design and evaluate visualizations for the purpose of analysis or communication. Students will develop skills in processing data, and building interactive visualizations using D3. Topics include visual perception, exploratory data analysis, task analysis, graphic design, narrative, etc.
+
+Students should have experience in JavaScript programming and web development, as well as familiarity with databases and data formats. You should be comfortable picking up new programming tools on your own. Experience in Python or R for data processing is helpful but not required.
 
 ## Schedule
 
@@ -57,6 +56,6 @@ Students should have experience in JavaScript programming and web development, a
 
 ## Past semesters
 
-- [Fall 2018](https://columbiaviz.github.io/2018f_w4995)
+- [Fall 2018](/2018f_w4995)
 
 {% include datavis_d3banner.html d3colorscheme="OrRd" %}

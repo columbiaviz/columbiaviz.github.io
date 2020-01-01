@@ -1,7 +1,6 @@
 ---
 layout: 2018f_w4995
 ---
-{% include w4995_outdatednotice.html %}
 
 <svg id="d3banner"></svg>
 
@@ -16,13 +15,7 @@ _Room:_ 415 Schapiro <br>
 [Class Slack](https://columbiavis-fa18.slack.com/messages/CC7B6321K) <br>
 [Course Feedback Form](https://goo.gl/forms/UG6Lq2kqFjYqP6bf1)
 
-## Overview
-
-This course is a hands-on introduction to design principles, theory, and software techniques for visualizing data. Classes will be a combination of lecture, design studio, and lab. Through readings, design critique and code assignments, students will learn how visual representations can help in the understanding of complex data, and how to design and evaluate visualizations for the purpose of analysis or communication. Students will develop skills in processing data, and building interactive visualizations using D3. Topics include visual perception, exploratory data analysis, task analysis, graphic design, narrative, etc.
-
-Students should have experience in JavaScript programming and web development, as well as familiarity with databases and data formats. You should be comfortable picking up new programming tools on your own. Experience in Python or R for data processing is helpful but not required.
-
-## Final Projects
+## Fall 2018 Final Projects
 
 - [A Historical Perspective on Gender Parity at the MoMA](https://beta.observablehq.com/@ataylorg/untitled/2)
 - [Human vs. Nature - What is Driving Our Electricity Use?](https://project.alan-zhufengxu.com/new-york-electricity-story)
@@ -34,6 +27,12 @@ Students should have experience in JavaScript programming and web development, a
 - [NYC LIFE](https://beta.observablehq.com/@janewukk/final-xploration1)
 - [GradAnalytics](http://gradanalytics.ddns.net/)
 - [Analyzing Russian Troll Tweets](https://beta.observablehq.com/@mogryzko/for-chris/2)
+
+## Overview
+
+This course is a hands-on introduction to design principles, theory, and software techniques for visualizing data. Classes will be a combination of lecture, design studio, and lab. Through readings, design critique and code assignments, students will learn how visual representations can help in the understanding of complex data, and how to design and evaluate visualizations for the purpose of analysis or communication. Students will develop skills in processing data, and building interactive visualizations using D3. Topics include visual perception, exploratory data analysis, task analysis, graphic design, narrative, etc.
+
+Students should have experience in JavaScript programming and web development, as well as familiarity with databases and data formats. You should be comfortable picking up new programming tools on your own. Experience in Python or R for data processing is helpful but not required.
 
 ## Schedule
 

@@ -55,3 +55,10 @@ table.overview {
   color: #000;
   background-color: #f5f5f5;
 }
+/* outdated notice */
+.navbar .container .alert-warning {
+	margin-bottom: 0;
+}
+.container.outdated {
+	margin-top: 5.5em;
+}
