@@ -1,10 +1,10 @@
 color,date,slug,notes,link,leader,readings,optional,,due
 #e4f6ff,22-Jan,Intro,,,,,,,
 white,29-Jan,Usability,,,,,,,
-#e4f6ff,5-Feb,Visualization,,,,,,,
-white,12-Feb,Interfaces,,,,,,,Proposal
+#e4f6ff,5-Feb,TBA,,,,,,,
+white,12-Feb,Visualization,,,,,,,Proposal
 #e4f6ff,19-Feb,Interfaces,,,,,,,
-white,26-Feb,Human-in-the-loop,,,,,,,
+white,26-Feb,Interfaces,,,,,,,
 #e4f6ff,5-Mar,Data Cleaning,,,,"ER,Outliers,Schemas",,,
 #e4f6ff,12-Mar,Data Cleaning,,,,Prep,,,Project Check-in
 white,22-Mar,Performance,,,,,,,
