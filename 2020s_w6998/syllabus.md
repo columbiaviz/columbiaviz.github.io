@@ -5,7 +5,7 @@ layout: page_2020
 <center>(This page is in flux)</center>
 
 
-#### Course Expectations
+# Course Expectations
 
 What I expect from You
 
@@ -15,7 +15,7 @@ What I expect from You
 * Students should be comfortable conducting a research project and writing up the results in a research paper format.
 
 <a name="participation"></a>
-#### Participation
+# Participation
 
 Participation is **mandatory**.  
 Since the course is small, it is expected that students will help contribute to the in person and online discussions.  This includes:
@@ -24,11 +24,8 @@ Since the course is small, it is expected that students will help contribute to 
 * Making observations about the lecture's relationship with products or society 
 * Asking and answering questions on piazza
 
-**Students that do not actively participate should not take this course**.
 
-
-
-#### Paper Reviews
+## Paper Reviews
 
 You are expected to write and submit a paper review of the readings before each class, and answer some questions about the readings.  The review should be akin to a conference paper review.  The purpose of the readings is to provide an illustrative example of the research area.  You are encouraged but not required to read the supplemental readings to better understand the materials.  
 
@@ -38,7 +35,7 @@ We may select a random review to read and discuss in class.  This serves to high
 
  
 
-##### Reading Tips
+## Reading Tips
 
 Ask the following questions while readings
 
@@ -56,36 +53,15 @@ Ask the following questions while readings
 
 
 
-
-
-<!--
-<a name="reading"></a>
-#### Paper Reviews (every class)
-
-See [./reviews](./reviews) for a description and expectations for paper reviews.
--->
-
-#### Project (semester long)
+# Project (semester long)
 
 You will pursue a [semester long research project](./projects) related to this course.
 The project is a significant part of the course grade.
 
 
-<!--
-<a name="midterm"></a>
-#### Midterm Exam
-
-There will be an in-class written exam on 3/21 (after spring break).
-The exam will be long-from questions based on the mandatory readings and topics discussed in class.
-It will be closed notes.
-
-A corallory is that your conduct is respectful and encouraging to your fellow students.
--->
-
-
 ## Collaboration/Copying Policy
 
-You are encouraged to discuss the readings with other in the class.  However, any writing that you do must be written by yourself.  Plagiarism of any kind will receive a zero in the course and reported to the school.  
+You are encouraged to discuss the readings with other in the class.  However, any writing that you do must be written by yourself (or by your group for group work).  Plagiarism of any kind will receive a zero in the course and reported to the school.  
 
 Refer to [Columbia's academic honesty policy](http://www.cs.columbia.edu/education/honesty/) if you are at all unsure.
 

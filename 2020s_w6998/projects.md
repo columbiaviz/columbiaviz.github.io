@@ -10,18 +10,18 @@ layout: page_2020
 }
 </style>
 
-### Important Dates 
+## Important Dates 
 
 Percentages are of your total class grade.
 
-* Prospectul      2/12     (10%)
+* Prospectus      2/12     (10%)
 * Check-in        3/12     (0%)
 * Project Showcase  4/30    (10%)
-* Report          5/10     (40%)
+* Report          5/10     (30%)
 
 
 
-### Overview
+## Overview
 
 The major portion of your grade is based on the research project.  It should take about 3-4 weeks to complete.  
 
@@ -31,34 +31,50 @@ Good class projects can vary dramatically in complexity, scope, and topic. The o
 
 
 
-### Prospectus 
+## Prospectus 
 
 Your research prospectus will contain an overview of the research problem, _your hypothesis_, first pass at related work, a description of how you plan to complete the project, and metrics to decide _if it worked_.   
 
 Your prospectus should follow the example:
 
-* [Click here for an example prospectus](./files/prospectus/prospectus.pdf)
+* [Click here for an example prospectus](/files/prospectus/prospectus.pdf)
 * [Click here for the tex files](https://github.com/w6113/w6113.github.io/tree/master/files/prospectus)
 
 **Submission**
 
-1. Rename the filename of your prospectus to the following format, last names should be in **alphabetical order**. `prospectus_<UNI>_.._<UNIn>.pdf`
+1. Rename the filename of your prospectus to the following format, UNIs should be in **alphabetical order**. `prospectus_<UNI>_.._<UNIn>.pdf`
 2. [**Click here to upload the file by 2/12 11:59PM EST**](#)
 
 
+## Check in
+
+Your group will schedule 20 minutes to meet with Professor Wu to go over the project's progress and receive feedback.  Prepare a short 5 minute presentation with 4 slides (roughly 1 minute per slide):
+
+1. Problem and motivation
+2. Related work and challenges
+3. Progress so far
+4. Plan for rest of the project
+
+*Submission*
+
+* [Click here to sign up for an appointment](https://calendar.google.com/calendar/selfsched?sstoken=UUlmUlc5VDIwWDJwfGRlZmF1bHR8MTUwY2E3NDBiMDNhMTU4ZDIyODhlMjFlZTAzZGMyZTU)
 
 
-### Final Project Showcase 
+
+
+## Project Showcase 
 
 Your team will prepare and present a project poster at the end-of-course poster session.   This gives you an opportunity to present a short demo of your work and show what you have accomplished in the class!
 
 **Submission**
 
-* Simply attend and present at the poster session.
+* Attend and present at the poster session.
+* Give a short 3 minute talk about your project
+  * 9 slides x 20 sec per slide
 
 
 
-### Report 
+## Report 
 
 You will prepare a conference-style report on your project with **maximum length** of 12 pages (10 pt font or larger, one or two columns, 1 inch margins, single or double spaced -- more is not better.) Your report should expand upon your prospectus and introduce and motivate the problem your project addresses, describe related work in the area, discuss the elements of your solution, and present results that measure the behavior, performance, or functionality of your system (with comparisons to other related systems as appropriate.)
 
