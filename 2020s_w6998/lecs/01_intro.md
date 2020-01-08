@@ -15,10 +15,10 @@ Eugene Wu
 Administrative
 
 * TA: Yiru Chen (yiru.chen@columbia.edu)
-  * OH: TBA
+  * OH: Thurs 4-5PM
 * Slack, nb.csail.mit.edu
 * Weds 2-4.  Break in the middle
-* Google credits
+* $300 Google credits
 * Cap: 15
 
 Prereqs
