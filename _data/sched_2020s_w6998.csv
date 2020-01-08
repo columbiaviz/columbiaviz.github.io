@@ -1,17 +1,17 @@
 color,date,slug,notes,link,leader,readings,optional,,due
-#e4f6ff,22-Jan,Intro,,,,,,,
-white,29-Jan,Usability,,,,,,,
-#e4f6ff,5-Feb,TBA,,,,,,,
-white,12-Feb,Visualization,,,,,,,Proposal
+#e4f6ff,22-Jan,Intro,What is HDI?  Syllabus,,,Tamara Ch1,,,
+white,29-Jan,Visualization,Visualization Primer.   ,,,,,,
+#e4f6ff,5-Feb,No Class,,,,,,,
+white,12-Feb,Visualization,Design and Recommendation,,,,,,Proposal
 #e4f6ff,19-Feb,Interfaces,,,,,,,
 white,26-Feb,Interfaces,,,,,,,
-#e4f6ff,5-Mar,Data Cleaning,,,,"ER,Outliers,Schemas",,,
-#e4f6ff,12-Mar,Data Cleaning,,,,Prep,,,Project Check-in
-white,22-Mar,Performance,,,,,,,
-#e4f6ff,28-Mar,Performance,,,,,,,
-white,2-Apr,Interaction,,,,,,,
+#e4f6ff,5-Mar,Performance,,,,,,,
+#e4f6ff,12-Mar,Performance,,,,,,,Project Check-in
+white,22-Mar,Data Prep/Wrangling,,,,,,,
+#e4f6ff,28-Mar,Data Cleaning,,,,"ER,Outliers,Schemas",,,
+white,2-Apr,Interaction,Talk by Eirik Bakke followed by discussion,,,,,,
 #e4f6ff,9-Apr,Interaction,,,,,,,
 white,16-Apr,Explanation and Interpretation,,,,"SQL explanation, Explainers, Counterfactuals",,,
 #e4f6ff,23-Apr,Explanation and Interpretation,,,,"ML explanation, Workflows",,,
 white,30-Apr,Final Project Showcase,,,,,,,Poster/Demo
-#e4f6ff,10-May,TBA,,,,,,,Report
+#e4f6ff,10-May,---,,,,,,,Report

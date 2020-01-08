@@ -82,38 +82,40 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   color: #113;
   padding: 0 0 0.1em 0;
-  font-size: 64px;
+  font-size: 30px;
 }
 
 h2 {
   padding: 28px 0 0.12px 0;
-  margin-top: 0.8em;
-  font-size: 40px;
+  margin-top: 0.5em;
+  font-size: 22px;
   font-weight: bold;
-  color: #065;
-  color: #6a7f00;
 }
 
 h3 {
   padding: 0.3em 0 0.15em 0;
-  margin-top: 0.7em;
-  font-size: 30px;
+  margin-top: 0.2em;
+  font-size: 22px;
   font-weight: bold;
   color: #825;
   color: #6a7f00;
+  color: grey;
 }
 
 h4 {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	padding: 0.1em;
-	margin-top: 0.8em;
-	font-size: 25px;
+	margin-top: 1.25em;
+	font-size: 12pt;
 	font-weight: bold;
+    text-transform: uppercase;
+    color: #444;
+
 }
 
 
 ol, ul {
   padding-left: 1.5em;
+  margin-bottom: 1em;
 }
 
 .schedule th.date, .schedule td.date {
@@ -161,7 +163,14 @@ div.joiner {
 }
 
 
-@media only screen and (max-width: 989px) { 
+@media only screen and (max-width: 750px) { 
+  . {
+    font-size: larger;
+  }
+  h1, h2, h3, h4, h5 {
+    align: center;
+  }
+
   body, p {
     font-size: 18pt;
   }

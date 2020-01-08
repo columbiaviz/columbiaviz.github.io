@@ -83,6 +83,7 @@ Tasks
 
 * Ben Shneiderman [The Eyes Have It](https://www.cs.umd.edu/~ben/papers/Shneiderman1996eyes.pdf)
 * Michael Gleicher [Considerations for Visualizing Comparison](https://graphics.cs.wisc.edu/Papers/2018/Gle18/viscomp.pdf)
+* Matthew Brehmer, Tamara Munzner [A Multi-Level Typology of Abstract Visualization Tasks](https://www.cs.ubc.ca/labs/imager/tr/2013/MultiLevelTaskTypology/brehmer_infovis13.pdf)
 
 Grammars 
 
@@ -200,10 +201,4 @@ Effects of poor performance
 
 
 
-# Acknowledgements 
 
-Readings borrowed from
-
-* [Azza Abouzied](http://azza.azurewebsites.net/)'s [Capstone course](https://github.com/huda-lab/huda-lab.github.io/blob/master/syllabi/Capstone-InteractiveSystems-SyllabusSpring2019.pdf)
-* [Leilani Battle](http://www.cs.umd.edu/~leilani/)'s [CMSC828D](https://umd.instructure.com/courses/1265679/assignments/syllabus)
-* [Agnes Chang](http://agneschang.net/)'s [COMS 4995 Intro to Data Vis](https://columbiaviz.github.io/2020s_w4995/)
