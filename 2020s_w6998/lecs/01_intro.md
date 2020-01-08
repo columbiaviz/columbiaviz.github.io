@@ -14,6 +14,8 @@ Eugene Wu
 
 Administrative
 
+* TA: Yiru Chen (yiru.chen@columbia.edu)
+  * OH: TBA
 * Slack, nb.csail.mit.edu
 * Weds 2-4.  Break in the middle
 * Google credits
@@ -21,7 +23,7 @@ Administrative
 
 Prereqs
 
-* Helpful to know 
+* Useful
   * 4111: intro to DB
   * 4995: intro to data vis
   * 4170: user interface design
@@ -285,15 +287,14 @@ Interfaces present the results of data analyses to users.  However, what if they
 
 # Resources
 
-Reading papers
+Advice on how to read papers
 
-* [S Keshav](http://blizzard.cs.uwaterloo.ca/keshav/home/Papers/data/07/paper-reading.pdf)
-* [M Mitzenmacher](http://www.eecs.harvard.edu/~michaelm/postscripts/ReadPaper.pdf)
-* [A Fedorova](http://www.cs.sfu.ca/~fedorova/Teaching/CMPT886/Spring2007/howtoreadpapers.html)
+* S Keshav [How to Read a Paper](http://blizzard.cs.uwaterloo.ca/keshav/home/Papers/data/07/paper-reading.pdf)
+* M Mitzenmacher [How to read a research paper.](http://www.eecs.harvard.edu/~michaelm/postscripts/ReadPaper.pdf)
 
-Research
+Thoughts on approaching research
 
-* [You and Your Research](http://www.cs.virginia.edu/~robins/YouAndYourResearch.html): there are big problems and small problems
-* [Research as Optimization](https://researchsetup.github.io/researchmodel)
+* Richard Hamming [You and Your Research](http://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
+* Eugene Wu [Research as Optimization](https://researchsetup.github.io/researchmodel)
 
 
