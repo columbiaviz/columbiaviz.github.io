@@ -2,7 +2,8 @@
 /* Page structure */
 html {
   width: 99%;
-  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0px;
 }
 body {
@@ -11,7 +12,7 @@ body {
   width: 100%;
   color: black;
   background-color: white;
-  font: normal normal 17px/24px Roboto, Arial, sans-serif;
+  font: Arial, sans-serif;
 }
 .container {
 }
@@ -163,16 +164,32 @@ div.joiner {
 }
 
 
-@media only screen and (max-width: 750px) { 
+@media (max-width: 768px) { 
   . {
     font-size: larger;
   }
   h1, h2, h3, h4, h5 {
     align: center;
   }
+  h1 {
+    font-size: 22pt;
+  }
+
+  h2 {
+    font-size: 20pt;
+  }
+
+  h3 {
+    font-size: 18pt;
+  }
+
+  h4 {
+      font-size: 15pt;
+  }
+
 
   body, p {
-    font-size: 18pt;
+    font-size: 16pt;
   }
   .container {
     width: 60%;

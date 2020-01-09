@@ -251,8 +251,8 @@ We will focus the first portion of the class using Interactive Visualizations as
 
 ### Vis as an HDI application
 
-* Tasks, Users, Goals
 * Grammar, expressiveness
+* Tasks, Users, Goals
 * Design
 * Scalability and Responsiveness
 

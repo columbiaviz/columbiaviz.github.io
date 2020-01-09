@@ -48,13 +48,4 @@ HDI combines many different research areas.  The following are venues most relat
 * **etc**: [CSCW](http://cscw.acm.org)
 
 
-## Acknowledgements 
-
-Readings borrowed from
-
-* [Azza Abouzied](http://azza.azurewebsites.net/): [Capstone course](https://github.com/huda-lab/huda-lab.github.io/blob/master/syllabi/Capstone-InteractiveSystems-SyllabusSpring2019.pdf)
-* [Leilani Battle](http://www.cs.umd.edu/~leilani/): [CMSC828D](https://umd.instructure.com/courses/1265679/assignments/syllabus)
-* [Agnes Chang](http://agneschang.net/): [COMS 4995 Intro to Data Vis](https://columbiaviz.github.io/2020s_w4995/)
-* [Aditya P.](http://people.ischool.berkeley.edu/~adityagp/): [CS598](https://cs598.github.io/index.html#papers)
-
 
