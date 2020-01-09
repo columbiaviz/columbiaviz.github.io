@@ -198,6 +198,8 @@ Effects of poor performance
 * Kuang Chen, Harr Chen, et al. [Usher: Improving Data Quality with Dynamic Forms](http://dx.doi.org/10.1109/TKDE.2011.31)
 * Yuze Lou et al. [Knowledge Graph Programming with a Human-in-the-Loop: Preliminary Results](https://hilda.io/2019/proceedings/HILDA2019_paper_9.pdf)
 * Leo Meyerovich et al. [Empirical Analysis of Programming Language Adoption](https://lmeyerov.github.io/projects/socioplt/papers/oopsla2013.pdf)
+* Christian Bors et al. [A Provenance Task Abstraction Framework](http://www.cs.umd.edu/~leilani/static/papers/bors2019provenance.pdf)
+* Eric Ragan et al. [Characterizing Provenance in Visualization and Data Analysis: An Organizational Framework of Provenance Types and Purposes](https://www.cc.gatech.edu/~aendert3/resources/ragan-vast-2015.pdf)
 
 
 
