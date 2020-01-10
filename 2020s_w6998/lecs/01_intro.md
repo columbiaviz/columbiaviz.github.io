@@ -157,6 +157,14 @@ The most important aspect of research: clear hypothesis
 * Answered correctly? Based on methodology 
 
 
+# Review
+
+Submit paper reviews for required papers in class 2.  In addition:
+
+* what you would LIKE this class to teach
+* go through paper list (skim titles/abstracts) and pick topic areas and papers that are of interest to you.
+
+
 # Course Overview
 
 
@@ -166,6 +174,7 @@ Why HDI?
 * Why not computer science?
   * Automation, abstraction, computability
 * Why not databases?
+  * Great HDI innovation wrt declarativity and optimization but...
   * user and their goals matter
   * DBs hard to use.  
   * Many _don't_ use databases! (scripts, excel, etc)
@@ -187,14 +196,45 @@ Why HDI?
     * scale the system
     * manage the data
     * implement features
-  * licklider
   * Bottom line: gap between design and building the actual system
 
-Architecture for HDI systems
+Licklider
 
-* User(s): functionalities, tasks, limitations
-* interface: interactions/interactivity, expressiveness, 
-* data analysis/logic: queries, execution, management
+* Most important figure in CS and computing history
+  * "computing's Johnny Appleseed"
+  * ideas and political/funding effort 
+* At the time, [computers were batch processing](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ffactmag-images.s3.amazonaws.com%2Fwp-content%2Fuploads%2F2015%2F06%2F60scomputer-616x440.jpg&f=1&nofb=1). 
+  * you write a program, wait for it to be scheduled, it provides a printout that doesn't answer the actual problem
+  * 10 yrs before personal computers
+  * 30 yrs before internet
+* Head of ARPA
+  * Engelbart's work
+    * UI/UX interactive computing
+  * ARPANet: networking, internet
+  * Project MAC for time sharing
+* Man-Computer Symbiosis
+  * AI as part of symbiosis
+  * spring + summer of 1957, track how he spent his working time
+    * 85% spent geting into a position to think/make a decision/learn what's needed
+      * more time finding info than digesting
+      * hours plotting and munging and translating data (from one unit to another)
+    * analogous to "85%" time on data cleaning/wrangling during analysis
+  * computing machines can do readily, well, and rapidly 
+    many things that are difficult or impossible for man, 
+    and men can do readily and well, though not rapidly, 
+    many things that are difficult or impossible for computers.
+* Human will 
+  * set goals, 
+  * provide fallible but leading contributions,
+  * define criteria and serve as evaluators.
+  * Handle very-low-prob situations -- sum of low prob events is 
+    too large to ignore
+* Machine will
+  * convet hypotheses into testable models
+  * test models against data
+  * interpolate, extrapolate, transform
+  * convert static/logical statements into dynamic models to explore
+
 
 Other examples of Systems for HDI (progression in complexity)
 
@@ -207,42 +247,49 @@ Other examples of Systems for HDI (progression in complexity)
   * data extraction, cleaning
   * exploration
   * visual analysis
-  * search
+  * query/search
   * understanding/explanation
-  * code/program/data debugging
-
+  * programing/data debugging
 
 Architecture of a new user-facing application (case study)
 
 * Three parts: user (task), interface, execution engine
-  * Think UID: JS, HTML, DB, Flask
+  * Think UID: JS+HTML, Flask, DB
 * Existing tools
   * Design: powerpoint, figma, photoshop, etc
   * Interaction: JS, Widget toolkits
   * Processing: PL
   * Data management: RDBMS, noSQL engine etc
 * Challenging when combining them end-to-end
-  * Changes in design may be isolated (if no new information)
+  * Changes in design may be isolated to pixel-level prototype (if no new information)
   * Changes in interaction require changes in processing/DB
   * Changes in processing require changes in DB, interface between UI and backend
   * Changes in DB require changes everywhere
   * Performance affects everything
 
+Architecture for HDI systems
+
+* User(s): functionalities, tasks, perceptual/cognitive limitations
+* Interface: expressiveness of language/API, interactions+UI _to_ express
+* Data analysis/logic: programs/queries, execution, management
+
+
 Themes of this course
 
-* How interface affects systems and vice versa
+* Interplay between interface and system
+  * How task/interface affects system design
+  * How system designs affect interface
 * Examine examples throughout the HDI "stack"
-  * Applications e.g.,
-    * data visualizations 
-    * data extraction/cleaning
-    * data science
-  * Interface and interaction design
-  * Systems optimizations informed by interfaces
+  * Lot of time on data visualization as exemplar domain
+  * Different data types
+  * Different modalities 
+  * Functionality and features
 
 We do NOT focus on
 
 * Core database topics
   * xacts, distributed db, cloud
+  * in-depth query optimization 
 * Deep HCI concerns
 
 # Overview of the themes
@@ -265,13 +312,17 @@ Data types
 * Text 
 * Image
 * Video
-* Relational Records
+* Relational Records: 
 
 Interaction Modalities
 
 * Direct Manipulation
+  * GestureQuery + touch
 * Programmatic/language design
+  * Modin/Spreadsheets/Spark
+  * KBP
 * Example-driven
+  * Wrangler/DataPlay/PBE
 
 ### Performance and Systems
 

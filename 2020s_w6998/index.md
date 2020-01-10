@@ -27,9 +27,9 @@ Human Data Interaction is a nascent field, and we will study modern research in 
   <tr>
     <!--<th class="idx" style="width: 3em; max-width:3em;"></th>-->
     <th class="date" style="width: 7em; max-width: 7em;"> <p> <span>Date </span> </p> </th>
-    <th style="min-width: 25%;"> <p> <span>Topic </span> </p> </th>
-    <th style="width: 30%"> <p> <span>Notes </span> </p> </th>
-    <th style="width: 20%"> <p> <span>Readings </span> </p> </th>
+    <th style="min-width: 30%;"> <p> <span>Topic </span> </p> </th>
+    <!--<th style="width: 30%"> <p> <span>Notes </span> </p> </th>-->
+    <th style="width: 30%"> <p> <span>Readings </span> </p> </th>
     <!--<th style="width: 15%;"> <p> <span>Assigned</span> </p> </th>-->
     <th style="width: 15%;"> <p> <span>Due</span> </p> </th>
   </tr>
@@ -47,16 +47,21 @@ Human Data Interaction is a nascent field, and we will study modern research in 
         <br/>
         <span class='presenter'>Leader: {{r.leader}}</span>
       {% endif %}
-
-      </td>
-    <td class="notes">
-      {% if r.notes %}{{r.notes}}{% endif %}
       {% if r.link %}
         <a href="{{r.link}}">Notes</a>
       {% endif %}
-    </td>
+
+      </td>
+    <!--<td class="notes">
+      {% if r.notes %}{{r.notes}}{% endif %}
+    </td>-->
     <td class="readings">
       {{r.readings | safe}}
+
+      {% if r.optional %}
+        <b style="padding-top:1em;">Optional</b><br/>
+        {{r.optional | safe}}
+      {% endif %}
     </td>
     <!--<td>{{r.assigned | safe}}</td>-->
     <td>{{r.due | safe}}</td>
@@ -79,30 +84,12 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 
 #### <a name="vis"/>Visualization
 
-Tasks
-
-* Ben Shneiderman [The Eyes Have It](https://www.cs.umd.edu/~ben/papers/Shneiderman1996eyes.pdf)
-* Michael Gleicher [Considerations for Visualizing Comparison](https://graphics.cs.wisc.edu/Papers/2018/Gle18/viscomp.pdf)
-* Matthew Brehmer, Tamara Munzner [A Multi-Level Typology of Abstract Visualization Tasks](https://www.cs.ubc.ca/labs/imager/tr/2013/MultiLevelTaskTypology/brehmer_infovis13.pdf)
-
 Grammars 
 
-* Chris Stolte et al. [Polaris](http://graphics.stanford.edu/papers/polaris_extended/polaris.pdf)
+*  Chris Stolte et al. [Polaris](http://graphics.stanford.edu/papers/polaris_extended/polaris.pdf)
   * Details of the VizQL algebra are in [Chapter 4 of Stolte's thesis](http://graphics.stanford.edu/papers/cstolte_thesis/thesis.pdf)
-* Arvind Satyanarayan et al. [Declarative Interaction Design for Data Visualization](http://idl.cs.washington.edu/papers/reactive-vega)
 * Arvind Satyanarayan et al. [Vega-Lite: A Grammar of Interactive Graphics](http://idl.cs.washington.edu/papers/vega-lite)
-
-Perception
-
-* Zhicheng Liu and Jeffrey Heer. [The Effects of Interactive Latency on Exploratory Visual Analysis](http://idl.cs.washington.edu/papers/latency)
-* Jeff Heer et al.  [Crowdsourcing graphical perception: using mechanical turk to assess visualization design](http://vis.stanford.edu/files/2010-MTurk-CHI.pdf)
-* Gordon Kindlmann et al.  [An Algebraic Process for Visualization Design](http://algebraicvis.net/assets/paper.pdf)
-
-Recommendation
-
-* Kanit Wongsuphasawat et al. [Voyager: Exploratory analysis via faceted browsing of visualization recommendations](http://www.cs.tufts.edu/comp/250VIS/papers/2015-Voyager-InfoVis.pdf)
-* Manasi Vartak et al. [SeeDB: efficient data-driven visualization recommendations to support visual analysis.](http://www.vldb.org/pvldb/vol8/p2182-vartak.pdf)
-* Jock D. Mackinlay et al. [Show Me: Automatic Presentation for Visual Analysis](https://research.tableau.com/sites/default/files/200711-infovis-showme.pdf)
+* Arvind Satyanarayan et al. [Declarative Interaction Design for Data Visualization](http://idl.cs.washington.edu/papers/reactive-vega)
 
 Design
 
@@ -110,6 +97,32 @@ Design
 * Bahador Saket et al. [Beyond Heuristics: Learning Visualization Design](https://arxiv.org/pdf/1807.06641.pdf)
 * Chenglong Wang et al. [Visualization By Example](https://arxiv.org/abs/1911.09668)
 
+Recommendation
+
+* Kanit Wongsuphasawat et al. [Voyager: Exploratory analysis via faceted browsing of visualization recommendations](http://www.cs.tufts.edu/comp/250VIS/papers/2015-Voyager-InfoVis.pdf)
+* Manasi Vartak et al. [SeeDB: efficient data-driven visualization recommendations to support visual analysis.](http://www.vldb.org/pvldb/vol8/p2182-vartak.pdf)
+* Jock D. Mackinlay et al. [Show Me: Automatic Presentation for Visual Analysis](https://research.tableau.com/sites/default/files/200711-infovis-showme.pdf)
+
+Tasks
+
+* Ben Shneiderman [The Eyes Have It](https://www.cs.umd.edu/~ben/papers/Shneiderman1996eyes.pdf)
+* Michael Gleicher [Considerations for Visualizing Comparison](https://graphics.cs.wisc.edu/Papers/2018/Gle18/viscomp.pdf)
+* Matthew Brehmer, Tamara Munzner [A Multi-Level Typology of Abstract Visualization Tasks](https://www.cs.ubc.ca/labs/imager/tr/2013/MultiLevelTaskTypology/brehmer_infovis13.pdf)
+
+Perception
+
+* Zhicheng Liu and Jeffrey Heer. [The Effects of Interactive Latency on Exploratory Visual Analysis](http://idl.cs.washington.edu/papers/latency)
+* Jeff Heer et al.  [Crowdsourcing graphical perception: using mechanical turk to assess visualization design](http://vis.stanford.edu/files/2010-MTurk-CHI.pdf)
+* Gordon Kindlmann et al.  [An Algebraic Process for Visualization Design](http://algebraicvis.net/assets/paper.pdf)
+
+
+
+#### Novel Modalities
+
+* Arnab Nandi, Lilong Liang, Michael Mandel [Gestural Query Specification](https://scholar.google.com/scholar?q=gestural+query+specification)
+* Emanuel Zgraggen et al. [(s/q)ueries: Visual Regular Expressions for Querying and Exploring Event Sequences](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/chi2015-squeries.pdf)
+* Vraj Shah et al. [SpeakQL: Towards Speech-driven Multimodal Querying of Structured Data](https://adalabucsd.github.io/papers/TR_2019_SpeakQL_v2.pdf)
+* Christopher Baik et al.  [Bridging the Semantic Gap with SQL Query Logs in Natural Language Interfaces to Databases](https://arxiv.org/pdf/1902.00031.pdf)
 
 
 #### Interaction
@@ -127,12 +140,6 @@ Interaction Design
   * [Liger demo video](https://vimeo.com/327476247)
 * Ali Sarvghad et al. [Embedded Merge & Split: Visual Adjustment of Data Grouping](https://bahadorsaket.com/publication/EMS.pdf)
 * Miro Mannino and Azza Abouzied. [Expressive Time Series Querying with Hand-Drawn Scale-Free Sketches](http://doi.acm.org/10.1145/3173574.3173962)
-
-Modalities
-
-* Arnab Nandi, Lilong Liang, Michael Mandel [Gestural Query Specification](https://scholar.google.com/scholar?q=gestural+query+specification)
-* Emanuel Zgraggen et al. [(s/q)ueries: Visual Regular Expressions for Querying and Exploring Event Sequences](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/chi2015-squeries.pdf)
-* Vraj Shah et al. [SpeakQL: Towards Speech-driven Multimodal Querying of Structured Data](https://adalabucsd.github.io/papers/TR_2019_SpeakQL_v2.pdf)
 
 #### Interfaces
 
