@@ -5,7 +5,7 @@
 * Class: W 2:10pm-4:00pm  
   Location: CSB 488
 * [Syllabus](./syllabus)
-* [Slack](#)
+* [Slack](hdisystems.slack.com)
 * [Project](./projects)
 * [Papers](./reviews)
 * [Resources](./resources)
