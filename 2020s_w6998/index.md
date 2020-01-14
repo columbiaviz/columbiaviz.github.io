@@ -59,7 +59,7 @@ Human Data Interaction is a nascent field, and we will study modern research in 
       {{r.readings | safe}}
 
       {% if r.optional %}
-        <b style="padding-top:1em;">Optional</b><br/>
+        <b style="padding:0px;  padding-top:.75em; display:block;">Optional</b>
         {{r.optional | safe}}
       {% endif %}
     </td>
