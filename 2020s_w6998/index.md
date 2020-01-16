@@ -26,7 +26,8 @@ Human Data Interaction is a nascent field, and we will study modern research in 
   <thead>
   <tr>
     <!--<th class="idx" style="width: 3em; max-width:3em;"></th>-->
-    <th class="date" style="width: 7em; max-width: 7em;"> <p> <span>Date </span> </p> </th>
+    <th class="lecid" style="width: 3em; max-width: 3em;"> <span> </span> </th>
+    <th class="date" style="width: 6em; max-width: 6em;"> <p> <span>Date </span> </p> </th>
     <th style="min-width: 30%;"> <p> <span>Topic </span> </p> </th>
     <!--<th style="width: 30%"> <p> <span>Notes </span> </p> </th>-->
     <th style="width: 30%"> <p> <span>Readings </span> </p> </th>
@@ -40,7 +41,8 @@ Human Data Interaction is a nascent field, and we will study modern research in 
   {% assign idx = idx | plus: 1  %}
   <tr>
     <!--<td class="idx">L{{idx}}</td>-->
-    <td class="date">L{{idx}}: {{r.date}}</td>
+    <td class="lecid">L{{idx}}</td>
+    <td class="date">{{r.date}}</td>
     <td class="slug">
       <b>{{r.slug}}</b>
       {% if r.leader %}
