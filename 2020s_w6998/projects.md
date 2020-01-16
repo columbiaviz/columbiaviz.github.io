@@ -15,9 +15,9 @@ layout: page_2020
 Percentages are of your total class grade.
 
 * Initial Prospectus      2/12     (5%)
-* Related Works  3/5      (5%)
-* Prototype Check-in      3/22     (5%)
-* Project Showcase  4/30    (10%)
+* Related Works  3/4      (5%)
+* Prototype Check-in      3/25     (5%)
+* Project Showcase  4/29    (10%)
 * Report          5/10     (25%)
 
 
@@ -41,7 +41,7 @@ You should meet with Professor Wu prior to deciding your project.
 Your prospectus should follow the example:
 
 * [Click here for an example prospectus](/files/prospectus/prospectus.pdf)
-* [Click here for the tex files](https://github.com/w6113/w6113.github.io/tree/master/files/prospectus)
+* [Click here for the tex files](https://github.com/columbiaviz/columbiaviz.github.io/tree/master/files/prospectus)
 
 **Submission**
 
@@ -55,7 +55,7 @@ You will submit an updated version of your prospectus that contains a revised in
 **Submission**
 
 1. Rename the filename of your updated prospectus to the following format, UNIs should be in **alphabetical order**. `prospectus_<UNI>_.._<UNIn>.pdf`
-2. [**Click here to upload the file by 3/1 11:59PM EST**](#)
+2. [**Click here to upload the file by 3/4 11:59PM EST**](#)
 
 
 
@@ -70,7 +70,7 @@ Your group will schedule 20 minutes to meet with Professor Wu to go over the pro
 
 *Submission*
 
-* [Click here to sign up for an appointment](https://calendar.google.com/calendar/selfsched?sstoken=UUlmUlc5VDIwWDJwfGRlZmF1bHR8MTUwY2E3NDBiMDNhMTU4ZDIyODhlMjFlZTAzZGMyZTU)
+* [Click here to sign up for an appointment during week of 3/23 to 3/27](https://calendar.google.com/calendar/selfsched?sstoken=UUlmUlc5VDIwWDJwfGRlZmF1bHR8MTUwY2E3NDBiMDNhMTU4ZDIyODhlMjFlZTAzZGMyZTU)
 
 
 

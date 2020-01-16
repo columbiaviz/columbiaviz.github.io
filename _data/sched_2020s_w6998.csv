@@ -1,17 +1,17 @@
 color,date,slug,notes,link,leader,readings,optional,,due
 #e4f6ff,22-Jan,Intro,,,,Licklider<br/>Agency,Data Enthusiast,,
 white,29-Jan,"Vis: primer, grammars",,,,Polaris<br/>Vega-lite<br/>ggplot,,,A1
-#e4f6ff,5-Feb,No Class,,,,,,,
-white,12-Feb,Vis: design & recommendation,,,,Draco<br/>Voyager,Show Me,,Proposal
+#e4f6ff,5-Feb,No Class,,,,,,,A2
+white,12-Feb,Vis: design & recommendation,,,,Draco<br/>Voyager,Show Me,,Prospectus
 #e4f6ff,19-Feb,"Vis: tasks, users, goals",,,,Tamara Ch1<br/>Comparison,Predictive Interaction,,
 white,26-Feb,Vis: performance,,,,Immens<br/>Kyrix,M4,,
-#e4f6ff,5-Mar,Vis: approximation,,,,Trust but Verify<br/>Sample + Seek,P-funk,,Related Works
-#e4f6ff,12-Mar,Modalities: touch & voice,,,,GestureQuery<br/>SpeakQL,Semantic Gap,,
-white,22-Mar,HDI Applications: text & docs,,,,Wrangler<br/>Texture,Predictive Interaction,,Project Check-in
-#e4f6ff,28-Mar,HDI Applications: images & video,,,,,,,
-white,2-Apr,HDI Application: guest lecture Eirik Bakke,,,,SIEUFERD + Video,,,
-#e4f6ff,9-Apr,,,,,,,,
-white,16-Apr,Debugging: ML interpretation,,,,Olah<br/>Rudin<br/>(optional) TFX,,,
-#e4f6ff,23-Apr,Debugging: data analysis explanation,,,,Scorpion<br/>DIFF<br/>(optional) Rain,,,
-white,30-Apr,Final Project Showcase,,,,,,,Poster/Demo
-#e4f6ff,10-May,---,,,,,,,Report
+#e4f6ff,4-Mar,Vis: approximation,,,,Trust but Verify<br/>Sample + Seek,P-funk,,Related Works
+#e4f6ff,11-Mar,Modalities: touch & voice,,,,GestureQuery<br/>SpeakQL,Semantic Gap,,
+white,18-Mar,Spring Break,,,,,,,
+#e4f6ff,25-Mar,Applications: text & docs,,,,Wrangler<br/>Texture,Predictive Interaction,,A3<br/>Project Check-in
+white,1-Apr,Applications: guest lecture Eirik Bakke,,,,SIEUFERD + Video,,,A4
+#e4f6ff,8-Apr,Applications: images & video,,,,,,,
+white,15-Apr,Debugging: ML interpretation,,,,Olah<br/>Rudin<br/>(optional) TFX,,,
+#e4f6ff,22-Apr,Debugging: data analysis explanation,,,,Scorpion<br/>DIFF<br/>(optional) Rain,,,
+white,29-Apr,Final Project Showcase,,,,,,,Poster/Demo
+white,10-May,---,,,,,,,Report due
