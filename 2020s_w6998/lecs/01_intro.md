@@ -9,7 +9,7 @@ Eugene Wu
 * PhD MIT, 2015
 * Systems for Human Data Interaction
   * Database systems, data cleaning, explanation, visualization
-* OH: 421 Mudd, TBA
+* OH: 421 Mudd
 * ewu@cs.columbia.edu
 
 Administrative
