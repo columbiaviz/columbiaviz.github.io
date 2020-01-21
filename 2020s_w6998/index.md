@@ -88,9 +88,12 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 
 Grammars 
 
-*  Chris Stolte et al. [Polaris](http://graphics.stanford.edu/papers/polaris_extended/polaris.pdf)
-  * Details of the VizQL algebra are in [Chapter 4 of Stolte's thesis](http://graphics.stanford.edu/papers/cstolte_thesis/thesis.pdf)
+* Chris Stolte et al. [Polaris](http://graphics.stanford.edu/papers/polaris_extended/polaris.pdf)
+  * More details of the VizQL algebra are in [Chapter 4 of Stolte's thesis](http://graphics.stanford.edu/papers/cstolte_thesis/thesis.pdf)
 * Arvind Satyanarayan et al. [Vega-Lite: A Grammar of Interactive Graphics](http://idl.cs.washington.edu/papers/vega-lite)
+* Hadley Wickham [A Layered Grammar of Graphics](http://vita.had.co.nz/papers/layered-grammar.pdf) Sections 1-3
+  * [ggplot2 documentation](https://ggplot2.tidyverse.org/)
+  * [ggplot2 book](https://ggplot2-book.org/)
 * Arvind Satyanarayan et al. [Declarative Interaction Design for Data Visualization](http://idl.cs.washington.edu/papers/reactive-vega)
 
 Design
