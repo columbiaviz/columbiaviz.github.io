@@ -76,7 +76,7 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 
 ##  Readings (superset)
 
-#### General
+#### <a name="general"/>Intro
 
 * JCR Licklider [Man-Computer Symbiosis](http://worrydream.com/refs/Licklider%20-%20Man-Computer%20Symbiosis.pdf)
 * Tamara Munzner [(Textbook) Visualization Analysis and Design](https://www-taylorfrancis-com.ezproxy.cul.columbia.edu/books/9780429088902)
@@ -86,6 +86,7 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 
 #### <a name="vis"/>Visualization
 
+<a name="grammars"/>
 Grammars 
 
 * Chris Stolte et al. [Polaris](http://graphics.stanford.edu/papers/polaris_extended/polaris.pdf)
@@ -96,6 +97,7 @@ Grammars
   * [ggplot2 book](https://ggplot2-book.org/)
 * Arvind Satyanarayan et al. [Declarative Interaction Design for Data Visualization](http://idl.cs.washington.edu/papers/reactive-vega)
 
+<a name="design"/>
 Design and Recommendation
 
 * Dominik Moritz et al. [Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco](https://idl.cs.washington.edu/files/2019-Draco-InfoVis.pdf)
@@ -105,12 +107,15 @@ Design and Recommendation
 * Chenglong Wang et al. [Visualization By Example](https://arxiv.org/abs/1911.09668)
 * Manasi Vartak et al. [SeeDB: efficient data-driven visualization recommendations to support visual analysis.](http://www.vldb.org/pvldb/vol8/p2182-vartak.pdf)
 
+
+<a name="tasks"/>
 Tasks
 
 * Ben Shneiderman [The Eyes Have It](https://www.cs.umd.edu/~ben/papers/Shneiderman1996eyes.pdf)
 * Michael Gleicher [Considerations for Visualizing Comparison](https://graphics.cs.wisc.edu/Papers/2018/Gle18/viscomp.pdf)
 * Matthew Brehmer, Tamara Munzner [A Multi-Level Typology of Abstract Visualization Tasks](https://www.cs.ubc.ca/labs/imager/tr/2013/MultiLevelTaskTypology/brehmer_infovis13.pdf)
 
+<a name="perception"/>
 Perception
 
 * Zhicheng Liu and Jeffrey Heer. [The Effects of Interactive Latency on Exploratory Visual Analysis](http://idl.cs.washington.edu/papers/latency)
@@ -119,6 +124,7 @@ Perception
 
 
 
+<a name="modalities"/>
 #### Novel Modalities
 
 * Arnab Nandi, Lilong Liang, Michael Mandel [Gestural Query Specification](https://scholar.google.com/scholar?q=gestural+query+specification)
