@@ -16,7 +16,7 @@ _Room:_ 963 EXT Schermerhorn <br>
 [Class Slack](https://columbiavis-fa19.slack.com/) <br>
 [Course Feedback Form](https://forms.gle/9fRdksoPAFdyNqgq5)
 
-## Spring 2019 Final Projects
+## Fall 2019 Final Projects
 
 - [Intra-Metropolitan Migration in the United States](https://erickawu.github.io/scroll_narrative/)
 - [LEGO: Toy or Collector's Item?](https://observablehq.com/@williamshamma/untitled)

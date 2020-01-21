@@ -15,6 +15,8 @@ Topics
   * Smoke
   * Noria?
 
+
+
 Other courses/resources
 
 * https://sfu-db.github.io/dbsystems/

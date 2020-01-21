@@ -1,17 +1,17 @@
-color,date,slug,notes,link,leader,readings,optional,,due
-#e4f6ff,22-Jan,Intro,,,,,,,
-white,29-Jan,Usability,,,,,,,
-#e4f6ff,5-Feb,Visualization,,,,,,,
-white,12-Feb,Interfaces,,,,,,,Proposal
-#e4f6ff,19-Feb,Interfaces,,,,,,,
-white,26-Feb,Human-in-the-loop,,,,,,,
-#e4f6ff,5-Mar,Data Cleaning,,,,"ER,Outliers,Schemas",,,
-#e4f6ff,12-Mar,Data Cleaning,,,,Prep,,,Project Check-in
-white,22-Mar,Performance,,,,,,,
-#e4f6ff,28-Mar,Performance,,,,,,,
-white,2-Apr,Interaction,,,,,,,
-#e4f6ff,9-Apr,Interaction,,,,,,,
-white,16-Apr,Explanation and Interpretation,,,,"SQL explanation, Explainers, Counterfactuals",,,
-#e4f6ff,23-Apr,Explanation and Interpretation,,,,"ML explanation, Workflows",,,
-white,30-Apr,Final Project Showcase,,,,,,,Poster/Demo
-#e4f6ff,10-May,TBA,,,,,,,Report
+date,slug,notes,link,leader,readings,optional,,due
+22-Jan,Intro,,,,Licklider<br/>Agency,Data Enthusiast,,
+29-Jan,"Vis: primer, grammars",,,,Polaris<br/>Vega-lite<br/>ggplot,,,A1
+5-Feb,No Class,,,,,,,A2
+12-Feb,Vis: design & recommendation,,,,Draco<br/>Voyager,Show Me,,Prospectus
+19-Feb,"Vis: tasks, users, goals",,,,Tamara Ch1<br/>Comparison,Predictive Interaction,,
+26-Feb,Vis: performance,,,,Immens<br/>Kyrix,M4,,
+4-Mar,Vis: approximation,,,,Trust but Verify<br/>Sample + Seek,P-funk,,Related Works
+11-Mar,Modalities: touch & voice,,,,GestureQuery<br/>SpeakQL,Semantic Gap,,
+18-Mar,Spring Break,,,,,,,
+25-Mar,Applications: text & docs,,,,Wrangler<br/>Texture,Predictive Interaction,,A3<br/>Project Check-in
+1-Apr,Applications: guest lecture Eirik Bakke,,,,SIEUFERD + Video,,,A4
+8-Apr,Applications: images & video,,,,,,,
+15-Apr,Debugging: ML interpretation,,,,Olah<br/>Rudin<br/>(optional) TFX,,,
+22-Apr,Debugging: data analysis explanation,,,,Scorpion<br/>DIFF<br/>(optional) Rain,,,
+29-Apr,Final Project Showcase,,,,,,,Poster/Demo
+10-May,---,,,,,,,Report due
