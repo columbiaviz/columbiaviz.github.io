@@ -15,7 +15,7 @@ Eugene Wu
 Administrative
 
 * TA: Yiru Chen (yiru.chen@columbia.edu)
-  * OH: Tues 4-5 PM, 406 Mudd
+  * OH: Tues 6-7 PM, 406 Mudd
 * Slack, nb.csail.mit.edu
 * Weds 2-4.  Break in the middle
 * $300 Google credits

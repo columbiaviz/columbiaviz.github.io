@@ -1,11 +1,14 @@
 ## Information 
 
 * [Eugene Wu](http://www.eugenewu.net) (Instructor)     
-  <small>OH: TBA in 421 Mudd</small>   
+  <small>OH: Tues 4-5PM 421 Mudd</small>   
+* [Yiru Chen]() (TA)    
+  <small>OH: Tues 6-7PM 406 Mudd</small>
 * Class: W 2:10pm-4:00pm  
-  Location: CSB 488
+  Location: 488 CSB
 * [Syllabus](./syllabus)
 * [Slack](http://hdisystems.slack.com)
+* [nb](nb.csail.mit.edu)
 * [Project](./projects)
 * [Resources](./resources)
 
