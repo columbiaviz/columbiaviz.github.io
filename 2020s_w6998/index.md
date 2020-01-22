@@ -16,6 +16,7 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 ## Recent Announcements
 
 * [Register an account on nb.mit.edu](http://nb.mit.edu/subscribe?key=Ky57vnKHys8WXkwqSJIZvkdJaqLLVLm6JDCPA0ueYwKLKrqlb6)
+* Every student should sign up to lead at least one paper discussion and scribe at least once [here](https://docs.google.com/spreadsheets/d/1vEw-1mgOO0lPy08rc-0338G-r4b4ksCyqBxGJshXN3I/edit?usp=sharing).
 
 ## Schedule (In Flux)
 
