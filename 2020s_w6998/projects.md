@@ -14,11 +14,11 @@ layout: page_2020
 
 Percentages are of your total class grade.
 
-* Initial Prospectus      2/12     (5%)
-* Related Works  3/4      (5%)
-* Prototype Check-in      3/25     (5%)
-* Project Showcase  4/29    (10%)
-* Report          5/10     (25%)
+* [Initial Prospectus](#prospectus)      2/12     (5%)
+* [Related Works](#related)  3/4      (5%)
+* [Prototype Check-in](#prototype)      3/25     (5%)
+* [Project Showcase](#showcase)  4/29    (10%)
+* [Report](#report)          5/10     (25%)
 
 
 
@@ -32,7 +32,7 @@ Good class projects can vary dramatically in complexity, scope, and topic. The o
 
 
 
-## Initial Prospectus 
+## <a name="prospectus"/>Initial Prospectus 
 
 Your ultimate research paper will describe the research problem, importance, hypothesis, related works, technical details and evaluation.  The prospectus is a sketch to get you to think about these aspects.   You will focusn on describing a research problem, and _your hypothesis_.  You will also provide a first pass at related work, a short 2 paragraph description of how you plan to complete the project, and metrics to decide _if it worked_.   
 
@@ -48,7 +48,7 @@ Your prospectus should follow the example:
 1. Rename the filename of your prospectus to the following format, UNIs should be in **alphabetical order**. `prospectus_<UNI>_.._<UNIn>.pdf`
 2. [**Click here to upload the file by 2/12 11:59PM EST**](https://www.dropbox.com/request/eT1Jf0dGlrH3ce8eweAp)
 
-## Related Works
+## <a name="related"/>Related Works
 
 You will submit an updated version of your prospectus that contains a revised introduction (problem statement, hypothesis), and a substantially fleshed out related work section.  It should clearly articulate the novelty of the problem with respect to state-of-the-art.  You will need to find and review related literature, and look for software tools that may be related to your problem.  
 
@@ -59,7 +59,7 @@ You will submit an updated version of your prospectus that contains a revised in
 
 
 
-## Prototype Check in
+## <a name="prototype"/>Prototype Check in
 
 Your group will schedule 20 minutes to meet with Professor Wu to go over the project's progress and receive feedback.  Prepare a short 5 minute presentation with 4 slides (roughly 1 minute per slide):
 
@@ -75,7 +75,7 @@ Your group will schedule 20 minutes to meet with Professor Wu to go over the pro
 
 
 
-## Project Showcase 
+## <a name="showcase"/>Project Showcase 
 
 Your team will prepare and present a project poster at the end-of-course poster session.   This gives you an opportunity to present a short demo of your work and show what you have accomplished in the class!
 
@@ -87,7 +87,7 @@ Your team will prepare and present a project poster at the end-of-course poster 
 
 
 
-## Report 
+## <a name="report"/>Report 
 
 You will prepare a conference-style report on your project with **maximum length** of 12 pages (10 pt font or larger, one or two columns, 1 inch margins, single or double spaced -- more is not better.) Your report should expand upon your prospectus and introduce and motivate the problem your project addresses, describe related work in the area, discuss the elements of your solution, and present results that measure the behavior, performance, or functionality of your system (with comparisons to other related systems as appropriate.)
 
