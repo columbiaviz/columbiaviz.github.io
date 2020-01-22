@@ -193,6 +193,7 @@ Approximation
 
 * Dominik Moritz, et al. [Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data](http://doi.acm.org/10.1145/3025453.3025456)
 * Bolin Ding et al. [Sample + Seek: Approximating Aggregates with Distribution Precision Guarantee](http://doi.acm.org/10.1145/2882903.2915249)
+* Alabi, Daniel and Eugene Wu. [PFunk-H: approximate query processing using perceptual models](http://sirrice.github.io/files/papers/pfunk-hilda16.pdf)
 
 Data Structures
 

@@ -1,9 +1,9 @@
 date,slug,notes,link,leader,readings,optional,,due
-22-Jan,"<a href=""#general"">Intro</a>",,,,Licklider<br/>Agency plus Automation,Support the Data Enthusiast,,
-29-Jan,"<a href=""#grammars"">Vis: primer, grammars</a>",,,,Polaris<br/>Vega-lite,Layered Grammar of Graphics S1-3,,"<a href=""https://forms.gle/4Fgcrbudp5zPFiHw9"">Reviews</a> (mon 11:59PM)<br/><br/><a href=""./a1"">A1</a> (tues 11:59PM)"
+22-Jan,"<a href=""#general"">Intro</a>",,,,<a href="http://nb.mit.edu/f/57151">Licklider</a><br/><a href="http://nb.mit.edu/f/57152">Agency plus Automation</a> ,<a href="http://nb.mit.edu/f/57153">Support the Data Enthusiast</a>,,
+29-Jan,"<a href=""#grammars"">Vis: primer, grammars</a>",,,,<a href="http://nb.mit.edu/f/57155">Polaris</a><br/><a href="http://nb.mit.edu/f/57154">Vega-lite</a>,<a href="http://nb.mit.edu/f/57156">Layered Grammar of Graphics S1-3</a>,,"<a href=""https://forms.gle/4Fgcrbudp5zPFiHw9"">Reviews</a> (mon 11:59PM)<br/><br/><a href=""./a1"">A1</a> (tues 11:59PM)"
 5-Feb,No Class,,,,,,,A2
-12-Feb,"<a href=""#design"">Vis: design & recommendation</a>",,,,Formalizing Visualization Design Knowledge in Draco<br/>Voyager,Show Me,,Prospectus
-19-Feb,"<a href=""#tasks"">Vis: tasks, users, goals</a>",,,,Tamara Ch1<br/>Comparison,Predictive Interaction,,
+12-Feb,"<a href=""#design"">Vis: design & recommendation</a>",,,,<a href="http://nb.mit.edu/f/57157">Formalizing Visualization Design Knowledge in Draco</a><br/><a href="http://nb.mit.edu/f/57158">Voyager</a>,<a href="http://nb.mit.edu/f/57159">Show Me</a>,,Prospectus
+19-Feb,"<a href=""#tasks"">Vis: tasks, users, goals</a>",,,,<a href="http://nb.mit.edu/f/57160">Tamara Ch1</a><br/><a href="http://nb.mit.edu/f/57161">Comparison</a>,<a href="http://nb.mit.edu/f/57162">Predictive Interaction</a>,,
 26-Feb,"<a href=""#perf"">Vis: performance</a>",,,,Immens<br/>Kyrix,M4,,
 4-Mar,"<a href=""#perf"">Vis: approximation</a>",,,,Trust but Verify<br/>Sample + Seek,P-funk,,Related Works
 11-Mar,"<a href=""#modalities"">Modalities: touch & voice</a>",,,,GestureQuery<br/>SpeakQL,Semantic Gap,,
