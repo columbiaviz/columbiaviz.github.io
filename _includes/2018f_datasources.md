@@ -21,4 +21,4 @@
 * [Socrata Open Data](https://opendata.socrata.com/)
 * [17 places to find datasets for data science projects](https://www.dataquest.io/blog/free-datasets-for-projects/)
 * [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets) (github): topic-centric list of high-quality open datasets in public domains
-
+* [Open Syllabus](https://opensyllabus.org/): 6,059,459 syllabi

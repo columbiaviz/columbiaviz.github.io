@@ -27,15 +27,14 @@ Since the course is small, it is expected that students will help contribute to 
 
 ## Paper Reviews
 
-You are expected to write and submit a paper review of the readings before each class, and answer some questions about the readings.  The review should be akin to a conference paper review.  The purpose of the readings is to provide an illustrative example of the research area.  You are encouraged but not required to read the supplemental readings to better understand the materials.  
+You are expected to write and submit a paper review of the readings before each class, and answer some questions about the readings.  The purpose of the readings is to provide an illustrative example of the research area.  You are encouraged but not required to read the optional and supplemental readings to better understand the materials.  
 
-You can discuss questions and ask for clarifications with your colleagues and/or on piazza.  You are expected to formulate your own opinion of the reading(s) and write the review yourself.  See for a description of what we expect in paper reviews.  
+We have uploaded and linked to the readings onto [nb.mit.edu](http://nb.mit.edu), which lets you collaboratively read, ask questions, and discuss portions of the paper with your colleagues in the class.   You can also discuss the papers on the class's [slack workspace](https://hidsystems.slack.com/).  
 
-We may select a random review to read and discuss in class.  This serves to highlight important characteristics of reading papers and writing good reviews.
+Reviews will be shared with the rest of the class, to assist the presenters and seed the class discussion.
 
- 
 
-## Reading Tips
+### Reading Tips
 
 Ask the following questions while readings
 

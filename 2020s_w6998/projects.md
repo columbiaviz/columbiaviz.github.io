@@ -46,7 +46,7 @@ Your prospectus should follow the example:
 **Submission**
 
 1. Rename the filename of your prospectus to the following format, UNIs should be in **alphabetical order**. `prospectus_<UNI>_.._<UNIn>.pdf`
-2. [**Click here to upload the file by 2/12 11:59PM EST**](#)
+2. [**Click here to upload the file by 2/12 11:59PM EST**](https://www.dropbox.com/request/eT1Jf0dGlrH3ce8eweAp)
 
 ## Related Works
 
@@ -54,8 +54,8 @@ You will submit an updated version of your prospectus that contains a revised in
 
 **Submission**
 
-1. Rename the filename of your updated prospectus to the following format, UNIs should be in **alphabetical order**. `prospectus_<UNI>_.._<UNIn>.pdf`
-2. [**Click here to upload the file by 3/4 11:59PM EST**](#)
+1. Rename the filename to the following format, UNIs should be in **alphabetical order**. `related_<UNI>_.._<UNIn>.pdf`
+2. [**Click here to upload the file by 3/4 11:59PM EST**](https://www.dropbox.com/request/eT1Jf0dGlrH3ce8eweAp)
 
 
 
@@ -95,7 +95,8 @@ Because this report is the primary deliverable upon which you will be graded, **
 
 **Submission**
 
-* [CMT website](#) by 5/10 11:59PM EST
+1. Rename the filename to the following format, UNIs should be in **alphabetical order**. `final_<UNI1>_.._<UNIn>.pdf`
+2. [Click here to upload file](https://www.dropbox.com/request/eT1Jf0dGlrH3ce8eweAp) by 5/10 11:59PM EST
 
 
 

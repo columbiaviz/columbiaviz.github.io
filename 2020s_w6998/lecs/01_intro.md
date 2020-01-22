@@ -203,18 +203,31 @@ Licklider
 * Most important figure in CS and computing history
   * "computing's Johnny Appleseed"
   * ideas and political/funding effort 
-* At the time, [computers were batch processing](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ffactmag-images.s3.amazonaws.com%2Fwp-content%2Fuploads%2F2015%2F06%2F60scomputer-616x440.jpg&f=1&nofb=1). 
-  * you write a program, wait for it to be scheduled, it provides a printout that doesn't answer the actual problem
+* At the time, computers were batch processing
+  * you write a program, wait for it to be scheduled,
+    it provides a printout that doesn't answer the actual problem
   * 10 yrs before personal computers
   * 30 yrs before internet
-* Head of ARPA
+* Head of ARPA.  Funded...
   * Engelbart's work
     * UI/UX interactive computing
   * ARPANet: networking, internet
   * Project MAC for time sharing
+* Many alternative models
+  * Machine as tool
+    * user supplies the goal and the how 
+      (initiative, directon, integration, criterion)
+    * machine simply performs the task
+    * user is the only organism
+  * semi-automatic systems
+    * systems that tried to be automatic, but failed.  
+    * human operators responsible for functions that are infeasible to automate
+    * mturk
 * Man-Computer Symbiosis
   * AI as part of symbiosis
-  * spring + summer of 1957, track how he spent his working time
+    * dissimilar organisms cooperative living together
+  * spring + summer of 1957, a "user study" to track how he spent his working time
+    * from his psychoacoustics background
     * 85% spent geting into a position to think/make a decision/learn what's needed
       * more time finding info than digesting
       * hours plotting and munging and translating data (from one unit to another)
@@ -230,7 +243,7 @@ Licklider
   * Handle very-low-prob situations -- sum of low prob events is 
     too large to ignore
 * Machine will
-  * convet hypotheses into testable models
+  * convert hypotheses into testable models
   * test models against data
   * interpolate, extrapolate, transform
   * convert static/logical statements into dynamic models to explore
@@ -265,14 +278,14 @@ Architecture of a new user-facing application (case study)
   * Changes in interaction require changes in processing/DB
   * Changes in processing require changes in DB, interface between UI and backend
   * Changes in DB require changes everywhere
-  * Performance affects everything
+  * Changes in data types require changes everywhere
+  * Performance + functionality affects everything
 
 Architecture for HDI systems
 
 * User(s): functionalities, tasks, perceptual/cognitive limitations
-* Interface: expressiveness of language/API, interactions+UI _to_ express
+* Interface: expressiveness of language/API, DSL, interactions+UI _to_ express
 * Data analysis/logic: programs/queries, execution, management
-
 
 Themes of this course
 
@@ -334,6 +347,115 @@ Performance and responsiveness is a crucial aspect to maintaining interactivity.
 ### Explanation and interpretation
 
 Interfaces present the results of data analyses to users.  However, what if they are incorrect or suspicious?  We will survey work in interpreting analysis results and explaining anomalies in those results.
+
+
+# Agency + Automation: Designing AI into interactive systems
+
+Jeff Heer
+
+Intro
+
+* AI focuses on full automation.
+  * can mislead due to inappropriate assumptions/iased training
+  * optimize fixed but wrong/outdated objectives
+  * users may be overly reliant on faulty systems
+* famous AI researchers call for "well-thought-out interactions of humans and computers".  
+* HCI has exactly studied this.  many ways to combine user + AI
+  * direct manipulation vs interface agents (Clippy)
+  * consensus: increased automation to amplify user productivy and capabilities
+    for their tasks, while preserving sense of control and responsibility
+* Big question: how best to combine user-facing interfaces and automation?
+  * argument: shared representations of possible actions (DSL)
+  * user review, selects, edits, ignores automated suggestions
+
+Classic example: spelling checker, search autocompletion
+
+Illustrates core principles
+
+1. positive value.  promotes efficiency, correctness, alternatives
+2. low overhead: augment, not replace, user interaction
+3. doesn't decrease value: useful for TASK even if imperfect 
+4. user and AI learns over time via user-ai interactions
+
+
+#### Examples of shared representations
+
+       user
+     ---DSL--- 
+      system
+
+Data Wrangler
+
+* go from unstructured lines of text to records, via extraction functions
+* wrangler DSL
+* user selects what they want, synthesize program in DSL
+* predictive interaction methodology
+
+        interactions --> (many options) --> choose option
+             ^                                   |
+             |                                   v
+        code/DSL  --- can write code too --->  new code
+
+
+Data Vis (Voyager)
+
+* vega-lite DSL
+* given current chart, suggest next chart one "action" away
+* changes user behaviors (good or bad?  not totally clear)
+
+        w/out related views, users had more 'depth-first" search patterns.
+        with voyager, biased users to "increased consideration of alternative
+        charts and additional data field combos"
+
+* can remove agency!  "..but also spoiling that I start thinking less..."
+
+
+#### Comments
+
+Why the need?
+
+* many data tasks are ill-formed and user iteratively identifies what the task is
+  * data-science
+  * data cleaning
+  * exploration and analysis
+  * creative tasks
+* big design+action space
+* AI imperfect
+  * worse -- not sure HOW and when it's imperfect
+    * ideally, perfect in known subspace, and 0 everywhere else
+  * user needs to judge (note: takes effort)
+* task space big and unknown
+* using AI is NOT user's goal.  the task is!
+  * is task always clear?  maybe not...
+
+AI + USER (HDI) means
+
+* AI augments
+* gets out of the way
+* things that it does are correct
+
+
+Can we model if it's worth it?
+
+      P(c):  probability of correct rec
+      P(f):  probability of identifying incorrect rec
+      U(c):  utility if task correctly done
+      U(e):  utility if task incorrectly done
+      W(ai): work if AI correct
+      W(v):  work to verify rec correctness
+      W(u):  work for user to do task
+
+      Original Utility and Work:
+        U(c)
+        W(u)
+
+      Utility:
+        P(c)U(c) + 
+        (1-P(c)) (P(f)U(c) - (1-P(f))U(e))
+
+      Work:
+        W(v) + P(c)W(ai) + (1-P(c)) W(u)
+
 
 
 # Resources
