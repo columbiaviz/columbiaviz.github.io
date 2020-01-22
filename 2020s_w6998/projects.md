@@ -103,7 +103,7 @@ Because this report is the primary deliverable upon which you will be graded, **
 <a name="suggestions"></a>
 ## Project Suggestions
 
-The following are examples of possible projects -- they are by no means a complete list and **you are free to select your own projects**.  In fact, a common source of ideas is to take your experience from another domain, and combine it with databases/data management.  Projects often come in several flavors:
+The following are examples of possible projects -- they are by no means a complete list and **you are free to select your own projects**.  In fact, a common source of ideas is to take your experience from another domain, and combine it with ideas from human data interaction.  Another approach is to take concepts from the papers we read, and apply them to another domain.  Projects often come in several flavors:
 
 1. Research project: model an unsolved problem, propose or extend an algorithmic solution, evaluate and report findings.
 2. Design: identify an underserved data problem for which a sound, composable interface doesn't exist, propose an interface and interaction design, build and evaluate it.
