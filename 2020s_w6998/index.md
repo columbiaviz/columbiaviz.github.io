@@ -16,7 +16,9 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 ## Recent Announcements
 
 * [Register an account on nb.mit.edu](http://nb.mit.edu/subscribe?key=Ky57vnKHys8WXkwqSJIZvkdJaqLLVLm6JDCPA0ueYwKLKrqlb6)
-* Every student should sign up to lead at least one paper discussion and scribe at least once [here](https://docs.google.com/spreadsheets/d/1vEw-1mgOO0lPy08rc-0338G-r4b4ksCyqBxGJshXN3I/edit?usp=sharing).
+<!--
+* Every student should [sign up to lead at least one paper discussion and scribe at least once](https://docs.google.com/spreadsheets/d/1vEw-1mgOO0lPy08rc-0338G-r4b4ksCyqBxGJshXN3I/edit?usp=sharing).
+-->
 
 ## Schedule (In Flux)
 
@@ -142,7 +144,7 @@ Expressiveness
 
 * Eirik Bakke et al. [Expressive Query Construction through Direct Manipulation of Nested Relational Results](https://people.csail.mit.edu/ebakke/research/sieuferd_sigmod2016.pdf)   <small>([demo video](https://vimeo.com/17372637://vimeo.com/173726371))</small>
 * Fotis Psallidas et al. [Provenance for Interactive Visualizations](https://www.dropbox.com/s/fkp5hk1gp4lrg9h/smoke-hilda18.pdf?dl=0)
-* Maeda Hanafi et al. [A Collaborative Framework for Structure Identification over Print Documents](https://hilda.io/2019/proceedings/HILDA2019_paper_8.pdf)
+* Maeda Hanafi et al. [Texture: A Collaborative Framework for Structure Identification over Print Documents](https://hilda.io/2019/proceedings/HILDA2019_paper_8.pdf)
 
 Interaction Design
 
