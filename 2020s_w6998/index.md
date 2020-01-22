@@ -15,6 +15,8 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 
 ## Recent Announcements
 
+* [Register an account on nb.mit.edu](http://nb.mit.edu/subscribe?key=Ky57vnKHys8WXkwqSJIZvkdJaqLLVLm6JDCPA0ueYwKLKrqlb6)
+
 ## Schedule (In Flux)
 
 
@@ -80,7 +82,7 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 
 * JCR Licklider [Man-Computer Symbiosis](http://worrydream.com/refs/Licklider%20-%20Man-Computer%20Symbiosis.pdf)
 * Tamara Munzner [(Textbook) Visualization Analysis and Design](https://www-taylorfrancis-com.ezproxy.cul.columbia.edu/books/9780429088902)
-* Jeffrey Heer [Agency plus automation: Designing artificial intelligence into interactive systems](https://www.pnas.org/content/116/6/1844)
+* Jeffrey Heer [Agency plus automation: Designing artificial intelligence into interactive systems](https://www.pnas.org/content/pnas/116/6/1844.full.pdf)
 * Kristi Morton et al. [Support the Data Enthusiast: Challenges for Next-generation Data-analysis Systems](http://www.vldb.org/pvldb/vol7/p453-morton.pdf)
 
 
