@@ -7,7 +7,7 @@
 * Class: W 2:10pm-4:00pm  
   Location: 488 CSB
 * [Syllabus](./syllabus)
-* [Slack](http://hdisystems.slack.com)
+* [Slack](https://join.slack.com/t/hdisystems/signup)
 * [nb](nb.csail.mit.edu)
 * [Project](./projects)
 * [Resources](./resources)
