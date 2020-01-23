@@ -110,6 +110,8 @@ The following are examples of possible projects -- they are by no means a comple
 3. Fill a gap:  think about something useful that _should_ be easily doable, but is painful or impossible with current state of the art.  Fill that gap.
 
 
+#### Sample Projects TBA
+
 <!--
 
 2. Win: pick an existing useful application and a well-recognized metric (latency, prediction, etc) and win against the state of the art.
@@ -123,21 +125,7 @@ The following are examples of possible projects -- they are by no means a comple
 * Precision interfaces is currently language agnostic and does not take into account the database nor the database contents.   Adapting the system to make weak but general assumptions about the nature of query plans, data, and query results can potentially improve the usability and usefulness of the generated interfaces.  
 * Embed design heuristics into the interface generation process.  The system currently has a very simple model of "interface complexity" --- make it more real by taking existing HCI research into UI complexity and design into account.
 
-#### Deep Neural Inspection
-
-[DeepBase](https://medium.com/thewulab/deep-neural-inspection-with-deepbase-de3653257643) is a system to perform deep neural inspection: it extracts hidden unit activations (or other types of behaviors) and computes the statistical relationships with user-specified hypotheses.    
-
-* Idea 1: Use ideas from class to make the system scalable across a cluster of machines.  
-* Idea 2: Hypotheses are currently represented as independent vectors/matrices and processed one at a time (essentially).    Since most hypotheses are binary or have a restricted value range, there may be opportunity for bit-level packing and shared processing.  
-
-
-#### Lineage 
-
-[Smoke](https://www.dropbox.com/s/6xvg5qkdret60jk/smoke-vldb18-revision.pdf?dl=0) is the fastest lineage-enabled database engine.  It captures the relationships between output and input records as efficient lineage indexes.  It turns out, this can be used to express and speed up interactive applications such as visualizations.  Extend or use it in interesting ways 
-
-* There are a number of compression techniques that are possible to reduce the storage costs, but they have trade-offs in terms of storage reduction vs write overhead vs lineage query lookup costs.  Explore ways to generate compressed representations that do not increase, or even reduce the overhead of lineage capture.
-* [Smoke](https://arxiv.org/abs/1801.07237) is a query compiler instrumented to generate lineage.  It is written in C++, and emits C++.  If the goal is to compile queries into C++ (or C), a high level language like Python may be easier to program in.  Report on the benefits (or weaknesses) of using a high-level dynamic language to write a query compiler.  Python interoperates well with C -- are there opportunities to dynamically compile queries into C and link it into the same Python process?
-* The [Smoke HILDA paper](https://www.dropbox.com/s/fkp5hk1gp4lrg9h/smoke-hilda18.pdf?dl=0) envisioned a world where any interactive applications built on top of a lineage-supporting data store can inter-operate with any other application.  No longer are applications siloed!  Data selected, analyzed, and annotated in any application should be connected to any other application!  This requires connecting the core functionality in Smoke with application level lineage support and tracking.  Is there a simple app toolkit/library, with a small set of primitives, that could make it easy to build applications that enable this vision?  Is something like react or elm a good fit?
+#### Data Processing
 
 
 #### New Querying Interfaces
@@ -157,19 +145,6 @@ Graphs are fundamentally high dimensional, and generating good graph visualizati
 
 How are data and analyses referred to and described in scientific work?  When data is presented as figures or tables, how is it referred to?  What are the verbs and nouns?  Is there a universal set of ways that figures are described (e.g., in terms of comparisons? in relative terms? ).  This can serve as the evidence for a new data analysis language.  Analyze [Viziometrics](http://viziometrics.org/api/) and ArXiV for their figures and captions and surrounding text (ArXiV provides LateX files)
 
--->
-
-<!--
-#### Bake-off
-
-There are more and more database implementations popping up from big companies: [uber](https://eng.uber.com/aresdb/),   
-
--->
-
-
-
-<!--
-
 
 #### Data Cleaning
 
@@ -181,9 +156,5 @@ Arachnid is a new explanation engine that automatically generates cleaning progr
 * Implement a fast version of Arachnid in the browser
 
 
-
 -->
-
-
-
 
