@@ -18,6 +18,7 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 * TODOs for first class
   * [Submit reviews](https://forms.gle/4Fgcrbudp5zPFiHw9)
   * [Submit assignment 1](./a1)
+  * Sign up the [slack](https://join.slack.com/t/hdisystems/signup) channel.
 
 
 <!--
