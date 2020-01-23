@@ -8,7 +8,7 @@
   Location: 488 CSB
 * [Syllabus](./syllabus)
 * [Slack](https://join.slack.com/t/hdisystems/signup)
-* [nb](nb.csail.mit.edu)
+<!--* [nb](nb.csail.mit.edu) -->
 * [Project](./projects)
 * [Resources](./resources)
 
