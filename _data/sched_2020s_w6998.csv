@@ -1,4 +1,4 @@
-fg,slug,notes,link,leader,readings,optional,,due
+date,slug,notes,link,leader,readings,optional,,due
 22-Jan,"<a href=""#general"">Intro</a>",,,,"<a href=""http://nb.mit.edu/f/57226"">Licklider</a><br/><a href=""http://nb.mit.edu/f/57225"">Agency plus Automation</a>","<a href=""http://nb.mit.edu/f/57227"">Support the Data Enthusiast</a>",,
 29-Jan,"<a href=""#grammars"">Vis: primer, grammars</a>",,,,"<a href=""http://nb.mit.edu/f/57228"">Polaris</a><br/><a href=""http://nb.mit.edu/f/57229"">Vega-lite</a>","<a href=""http://nb.mit.edu/f/57230"">Layered Grammar of Graphics S1-3</a>",,"<a href=""https://forms.gle/4Fgcrbudp5zPFiHw9"">Reviews</a> (mon 11:59PM)<br/><br/><a href=""./a1"">A1</a> (tues 11:59PM)"
 5-Feb,No Class,,,,,,,"<a href=""./a2"">A2</a>"
