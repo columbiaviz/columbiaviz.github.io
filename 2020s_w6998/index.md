@@ -15,6 +15,7 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 
 ## Recent Announcements
 
+* Please note, the full list of all papers (and more) are below the schedule
 * TODOs for first class
   * [Submit reviews](https://forms.gle/NpGxPBCeMFvKsr4W9)
   * [Submit assignment 1](./a1)
