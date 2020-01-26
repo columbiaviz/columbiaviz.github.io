@@ -16,7 +16,7 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 ## Recent Announcements
 
 * TODOs for first class
-  * [Submit reviews](https://forms.gle/4Fgcrbudp5zPFiHw9)
+  * [Submit reviews](https://forms.gle/NpGxPBCeMFvKsr4W9)
   * [Submit assignment 1](./a1)
   * [Sign up for the class' slack workspace](https://join.slack.com/t/hdisystems/signup).
   * [Register an account on nb.mit.edu](http://nb.mit.edu/subscribe?key=Ky57vnKHys8WXkwqSJIZvkdJaqLLVLm6JDCPA0ueYwKLKrqlb6)
