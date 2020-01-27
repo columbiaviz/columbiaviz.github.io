@@ -134,6 +134,9 @@ Perception
 
 * Zhicheng Liu and Jeffrey Heer. [The Effects of Interactive Latency on Exploratory Visual Analysis](http://idl.cs.washington.edu/papers/latency)
 * Jeff Heer et al.  [Crowdsourcing graphical perception: using mechanical turk to assess visualization design](http://vis.stanford.edu/files/2010-MTurk-CHI.pdf)
+* Ryan et al. [At a glance: pixel approximate entropy as a measure of line chart complexity](http://www.cs.tufts.edu/~remco/publications/2018/InfoVis2018-Entropy.pdf) 
+* Moritz et al. [Trust, but Verify: Optimistic Vis of Approx Queries in Exploring Big Data](https://www.domoritz.de/papers/2017-TrustButVerify-CHI.pdf)
+* Kale et al. [Hypothetical Outcome Plots Help Untrained Observers Judge Trends in Ambiguous Data](http://users.eecs.northwestern.edu/~jhullman/hops_jobs_pfs.pdf)
 * Gordon Kindlmann et al.  [An Algebraic Process for Visualization Design](http://algebraicvis.net/assets/paper.pdf)
 
 
