@@ -1,0 +1,309 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+	<div class="container">
+		<div class="deco">COLUMBIA UNIVERSITY COMS W4111.002</div>
+    <div class="title"><a href="/" style="color:black;">INTRODUCTION TO DATABASES</a></div>
+	</div>
+</div>
+
+
+
+
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-8 col-md-offset-2">
+		<style>
+p.review {
+  border-left: 2px solid grey;
+}
+
+div.block {
+  margin-bottom: 1em;
+}
+</style>
+
+<h2 id="polaris">Polaris</h2>
+
+<h3>1/27/20 7:57 Yin Zhao</h3>
+<p class="block">The paper is about introducing a system for multidimensional relational database visualization with additional features on top of the Pivot Table interface, that facilitates analysis, query, manipulation and more illustrative presentation of data. It mainly talks about the features of the Polaris system, including visual specification, visually querying and transforming data (filtering, sorting and transformations), and statistical analysis. The explanation of how to use the Polaris system is very detailed in section 4, 5 and 6, and almost looks like a user manual for the system. <br />
+The importance of this system is that it provides users the ability to view data from multiple tables and combine them to give a tabled view containing graphic elements, which are illustrative and enables understanding of overall trends and causal relationships. It is flexible in that users can specify data via SQL queries, types of graphics as well as make changes to what is displayed already. I agree that this is a very useful feature compared to the plain tabled display of the database. Technical strength of this work beyond the prior work is that it uses relational algebra and interpret the data transformations in SQL, to better support multidimensional relational database visualization, and easy to implement because it uses existing database systems. The paper does not talk much about technical details of the system, however. I would be interested in details like architectures underlying the system.<br />
+The exploratory and flexible features seem to be very nice to use. The underlying implementation must involve manipulation of multiple tables or maybe databases, and integrate with graphic tools, to perform such transformation of data and visualization. Thus through reading the paper I was wondering whether the performance an issue in practice. In the future works section, the performance is mentioned, and looks like it is indeed not efficient enough to perform real time display and analysis of the data. Although it mentions that "the most relevant constraint on performance is server-side query time and not client-side drawing or data manipulation", how to make sure server-side time does not go up a lot? I think performance is an important concern for any system especially the ones involving (and are intended for) very huge data volume. As the paper says, it could be improved by adopting caching and prefetching. For some additional thought, maybe we could explore some effective and reliable indexing system to support it underlying, so the server-side time would be improved. </p>
+
+<h3>1/28/20 1:31 Xupeng Li</h3>
+<p class="block">This paper demonstrates a complete design of an interactive data visualization system, Polaris, over relational databases. Analysts can interact with Polaris to discover and find trends from data. Polaris provides expressive and flexible ways to visualize data. When plotting data, analysts can choose how to organize datas attributes to XYZ-axes, sort/filter/aggregate data, and choose the proper types of graphics manually or automatically. <br />
+<br />
+Compared with prior work, Polaris largely utilizes the power of relational database by translating all the data processing into SQL queries, which makestheir system easy to implement. Authors also design a new table algebra that provides different functionalities from prior work. I agree that fully using SQL is a simple way to obtain good performance and simplify implementation. But whether Polaris provides better functionality is hard to compare.<br />
+<br />
+I like the way of expressing all data transformation as SQL queries. I think it is a potentially good design which can be extended for more functionalities.<br />
+<br />
+One limitation is that Polaris has to generate a SQL query for each table pane, which may involve redundant computation. Another limitation is about the complexity of visualization tasks. One may want to backup the current result of visulation or data transformation for future analysis. But such operations are not able to express in Polaris.<br />
+<br />
+<br />
+</p>
+
+<h3>1/27/20 23:59 Jake Fisher</h3>
+<p class="block">This paper is presenting a visualization based on the Pivot Table interface, and they center the entire grammar around this idea.  I did find the related work section lacking in that the authors did not go into much depth on the shortcomings of analogous visualization systems in section 2.3, and for that reason, the significance of the innovation they present in their paper seems to be less clear, or diminished.  However, I think it was at least done well enough that I certainly understand what their addition to the existing work was, and I did like how nearly every aspect of and choice made for Polaris seemed to be directly informed by the Pivot Table interface, which comes out particularly well in section 4.3.    The presentation, likewise, was very strong, particularly in section 7, where I thought the use of Figure 6 to clearly map out how Polaris works in specific situations made its mechanisms and motivation clear and convincing.</p>
+
+<h3>1/27/20 23:48 Maximilian Kiefer</h3>
+<p class="block">The Polaris paper is a great paper with a highly detailed discussion on creating and refining large databases for pivot table interfaces. It includes very advanced discussion on table based displays, database exploration tools, tuple relational databases, data-dense displays, multiple display types, exploratory interfaces, and visual specifications. This is very important to follow since its applications are highly useful in improving database management in firms including technology firms like IBM or banks which rely heavily on database organization. In addition, I agree that the paper discusses with importance the dense graphical representations as a way to be more effective than graphs or charts. <br />
+<br />
+The technical strengths beyond the past work and data collected include the diagram on explaining the main point of the argument such as filtering data by group, then sorting and aggregating. Finally, we must compose layers based on these. <br />
+<br />
+The limitations of the paper include how related works tie into the paper's main argument. For instance, although formal graphical specifications, table-based data displays, and database exploration tools are vital they are not connected to how these can be useful for large databases combining with pivot table interfaces. <br />
+<br />
+The extensions based on the discussion can be based on the performance of Polaris, Wilkonson's discussions on developing a grammar for statistical graphics, and the visual specification of database queries. Also certain motivations can be included such as why are records being partitioned into panes (pg.10) or why does Polaris truly support the exploratory process from its visual interface. </p>
+
+<h3>1/27/20 23:45 Teresa Tseng</h3>
+<p class="block">Polaris is an interface that allows users to shift from viewing data in n-dimensional data cubes (Pivot tables) to viewing data in a more richly layered interface.  This enables users to 1) analyse relationships between different metrics and 2) better visualise the data at hand with multiple display layers.  Building on work done by Bertin (Retinal properties for displaying qualitative variations) and others who developed database-style processing of visual queries, Stolte et. al. developed a new set of relational operators and retinal property guidelines to better illustrate multidimensional data. Polaris, this new table-based display interface, supports different graphic formats: ordinal-ordinal, ordinal-quantitative, and quantitative-quantitative, and supports a layered view to illustrate different sets of relationships between data.  Stolte, et. al. note that as opposed to Wilkinson, one of their predecessors, Polaris supports a relational data model.  The strengths of this interface according to the authors are that this interface is simple yet robust enough to display complex queries and relationships, and that the interface is sufficient enough to be interactive as an exploratory interface.<br />
+I enjoyed the examples provided to illustrate the wide-ranging capabilities of Polaris but would have liked to see comparison metrics versus pivot tables to display the same data in order to fully illustrate the interfaces new solutions.<br />
+</p>
+
+<h3>1/27/20 23:29 Deka Auliya Akbar</h3>
+<p class="block">The paper describes Polaris, a system for querying, analysing and visualizing multidimensional relational databases. Polaris enables rapid data analyses and explorations by constructing visual specifications in table-based graphical displays and automatically generate relational queries from the specification. Polaris improves upon prior works of interface of multidimensional table such as Pivot Tables by using visual projections of data cubes, and existing visual interface for multidimensional data such as Visual Insights by providing more flexibility in terms of visual marks and supported data types.<br />
+<br />
+Polaris is significant in the HDI research because it enables the exploration of large multi-dimensional data displays intuitively and provides visual feedback rapidly. It allows for automatic graphic generation based on selected data sources, fields, and graphic type. Polaris categorizes family of graphics based on field types, it will allow for flexibility to choose the graphical types and visual markers that are most suitable to the data. <br />
+<br />
+I really like Polaris as it points out and addresses two important issues in data exploration: rapidly changing the visual configurations and data manipulation. The first issue is solved by Polaris by formalizing graphics, table-based displays with table + layers, table algebra and visual mappings; while the latter is enabled by support for data manipulation involving additional fields, data sorting, filter, transformation, groupings, selections, and undo/redo actions combined with relational algebra which can be translated into SQL queries to OLAP servers.<br />
+<br />
+As Polaris values succinctness over expressiveness, the displays for Polaris is rather fixed and does not support for a more customized visualizations dashboard that goes beyond tabular views. Another limitation of Polaris is its limited interactivity of the displays and performance issues due to the exploratory nature of rapid visual changes.<br />
+<br />
+I am also curious about why arithmetic operations over data fields are not supported, because there might be inherent relationships in the feature / data distribution which can be explored further (eg: loglog distributions, nonlinear relations, etc). I also wonder about support for changing data such as realtime or streaming data in Polaris.</p>
+
+<h3>1/27/20 21:40 Haneen</h3>
+<p class="block">This paper presents an interface that enables the visual exploration of multidimensional databases using an incremental and rapid approach to generating table-based displays.<br />
+The system divides a window into a set of rows and columns (table) that summarise a collection of records stored in relational databases through a graphic display. The interface presented plays as an input for the visual specifications for constructing table-based graphics displays.   The paper introduces table algebra that is used to specify table configurations. The set of building blocks enables users to explore the data by incrementally building different visual outputs.  The ability to generate queries from the visual specifications enables the direct interoperability between the visual output and the backend database, giving rise to many future optimizations that can be taken advantage of. </p>
+
+<h3>1/27/20 20:13 Carmine Elvezio</h3>
+<p class="block">This paper presents Polaris, an interface for (and the underlying system supporting) the exploration of large multidimensional databases using Visual Queries which are conducted using the Polaris UI. This is done to support the analysis of data in ways going beyond the traditional pivot table (and taking advantage of the benefits graphical representations can provide to data analysis), using an algebraic formalism of the databases fields (broken down into ordinal and quantitative data, and layers) allowing for the generation of relational queries used to construct the table. The primary interaction in the system being a drag and drop of fields generated from the databases schema, onto shelves surrounding the primary view, where the configuration is defined as a visual specification. The authors claim that the simplicity and expressiveness of the interface comes from this underlying formalism. An important note, the state of the graphical representations comes directly from the results of database queries executed using the formalism. Considering the related work, Polaris does actually provide a number of advantages and contributions beyond existing (at the time) systems and literature, so I agree with the authors claims of significance. While the system builds on the notion of visual metaphors for pivot tables, there are a number of systems from the literature to which this compares and builds. Mackinley developed a system that used graphical specification to display (in 2D) relational data. Improving on that, this work generalizes the concept to support the organization of multiple dimensions of data across different layers. Further, I like that the system supports a UI critical feature (from a UI acceleration perspective) of customizable panels, which previous work does not highlight (from a database interaction perspective, especially when tied to the formalism). However, the work does not draw a clear distinction to Mackinlay and Livnys work, and could be improved by delving into the differences on a feature-by-feature (or contribution-based) level. Further, the evaluation is limited due to a number of reasons. While it does provide good example use cases for using Polaris, it does not delve into detail on why Polaris features made it easier to perform a specific task or set of tasks, using examples from current systems and/or not having used Polaris at all. Third, there is an issue as the authors discuss (in the discussion section) how there are points where interactions with Polaris are not real-time (and can potentially take tens of seconds). However, this is swept under the rug and not really explored. Is it the case that more complicated queries in the examples provided in the results section were not running in real-time? I wish the authors better delved into the performance of the system, as I believe that real-time interactivity (or an understanding of the latency present) are critical to the understanding and assessment of any real time system. Additionally, showing previews of how changing an axis might impact the views would also be a great addition to the system (which is something appearing in web-design today).</p>
+
+<h3>1/27/20 18:11 Olinah Hassan</h3>
+<p class="block">The paper discusses Polaris, a tool that focuses on multidimensional relational databases that can help with exploratory statistics of large databases by working off of Wilkinson and the Pivot Table. The most significant part of Polaris is that rather than following Wilkinsons data model that is not relational, Polaris created a system that is mostly based off of relational algebra. I do not necessarily agree with its significance because the creators themselves mention within the Discussion section that it is difficult to judge completely whether or not Polaris is better than Wilkinsons. I do like the multiple user friendly interfaces Polaris has, especially with it comes to filtering, binning and partitioning. I noticed that however a limitation with Polaris and using the CUBE operator. In addition, the run time of the tool is not optimal. Extending off of the paper, I was wondering what would happen if there were filters that enabled Polaris to still be able to use CUBE without overlapping partitions. <br />
+</p>
+
+<h3>1/27/20 12:30 Celia Arsen</h3>
+<p class="block">This article attempts to solve a problem for analysts, who work with increasingly large and complex databases. Analysts need visual representations of data that will change rapidly as they cycle between hypotheses and experimentation. Obviously, there are many existing systems and interfaces that attempt to solve this problem. The hypothesis in this article is that the Polaris system interface can provide a superior interface for exploring and analyzing large multidimensional databases. I would argue that there are two main novel features of the Polaris interface. The first is the development and use of an intuitive table algebra for defining table configurations. The second is its flexibility in providing constant visual feedback of interim results. The authors provide two use cases in the results section to show the reader how the Polaris system can address issues of data exploration and analysis in practice. I found both the example of the Commercial Database Analysis and Computer System Analysis illustrative. <br />
+	I saw two main shortcomings in the interface and its use. First, the current implementation of Polaris treats all ordinal fields as dimensions and all quantitative and interval fields as measures. I dont know if this is a typical implementation choice, but it seems that there are many situations where the user might want to treat an ordinal field as a dependent variable or a quantitative field as an independent variable. For example, a Likert scale is usually considered ordinal, but would often make sense as a measurement. Likewise, an analyst may want to treat a quantitative field, like income, for example, as an independent variable in some analyses and as a dependent variable in others. It seems like a major drawback of the system if it cannot account for this. The second shortcoming I noticed is that the tables and figures produced by Polaris appear useful for data exploration and analysis, but not for presentation. While the authors clearly state that the Polaris interface was designed for rapid querying and visualization, it would be annoying as an analyst to have to move to an entirely different system just to design produce publishable, or even presentable, tables and figures. </p>
+
+<h3>1/27/20 2:15 Yiru Chen</h3>
+<p class="block">The paper is about an interactive data visualization system, Polaris. The motivation is that data exploration is unpredictable, thus the  analysts need to be able to rapidly change both what data they are viewing and how they are viewing that data.  This paper formalizes the  graph construction and data transformation. It generates a set of sql queries  for the visual specification and renders it as a table displayed graphics. <br />
+<br />
+The main contribution is the overall system design. It also proposes the formalization for constructing graphs and building data transformations. The principles that translating the visual specification into sql queries are succinct and effective.Maybe because it is an old paper, it doesnt look very impressive now. <br />
+<br />
+Technical strength:  The overall procedure is select tuples, partition, generate queries.  The system enables more features like brushing, multi view update.<br />
+<br />
+Limitation: it doesnt seem to have supported aggregate over the aggregate values. The performance is not clearly stated in the paper. Also a limitation stated in the paper is that it generates one query for each pane which could be redundant. </p>
+
+<h3>1/26/20 21:20 Adam Kravitz</h3>
+<p class="block">The paper was about Polaris and interactive program that allows a use to drag and drop columns and row information to make graphs without querying and data. Significant prior work came a lot from Wilkinsons efforts to develop a grammar for statistical graphics. The paper presents that a lot of work extends and comes from his work, however the paper does state that there is a divergence between Polaris and Wilkinsons work through Polaris uses of relational algebra. I think the significance of this program is exploration that it allows while still generating logical graphic without explicitly being told every piece of data.<br />
+Technically, I really liked how without writing sql code a user can interact and call for data while the sql code is running in the background. The power of exploration it gives a user is immense (as well as the speed of productivity would increase immensely). Some limitations of Polaris seems to be not being able use of the CUBE operators, since it would limit aggregations as will as having problems partitioning panes (which is why CUBE operators would be useful). Besides that I wish the paper could have discussed more about the expressiveness of the program vs. coding graphs. From what I see there seems to be a balance between how quickly you can use a program vs. how much you can say with it. Since Polaris is drag and drop and seems easy to use, I am curious to see if there is limitations in expressiveness. Also I wish there wasnt a limit from using relational algebra. The paper touches on that topic a little, and a discussion on a Polaris that uses Wilkinsons algebra vs. a Polaris that uses relational algebra would be interesting to see what trade off Polaris would have. I would like to know Polaris versus with implemented CUBE operators and to see the power it adds or takes away, as well as not using relational algebra and using Wilkinsons algebra. Also what if Polaris allowed lower level coding to be more expressive or to have more power of what we are trying to express.</p>
+
+<h3>1/26/20 20:13 Qianrui(Owen) Zhang</h3>
+<p class="block">## main idea<br />
+This paper presents Polaris, an interface for exploring and analysing multidimensional databases. As an extension to Pivot Table interface, Polaris can construct visual specifications of table-based graphical displays and generate relational queries from those specifications, thus it can be a useful tool for interactively exploring databases.<br />
+<br />
+## significance <br />
+Polaris meets current business trend perfectly and will be of great significance in both academic and industrial settings. As exploring multidimensional databases to gain business insight is gaining more significance, systems like Polaris, which can provide visualizations for databases, will also be more popular among less-tech or non-tech users. Therefore, the idea of Polaris can be profound and will have a huge impact on future visualization studies.<br />
+<br />
+(And we also know its significance from the success of Tableau.)<br />
+<br />
+## strength<br />
+1. The features Polaris provides are practicle and will be of great importance in real use cases. This strength has been elaborated in significance part.<br />
+<br />
+2. The technical part is detailed and easy to follow. Section 4-6 introduces the functions of Polaris and how they are implemented. Those sections are well-organized and easy for readers to understand. For instance in section 6, the author explains the procedure of generating database queries step by step with a flow chart provided. Those methods make it easier to understand the whole procedure.<br />
+<br />
+## limitations<br />
+1. The performance of Polaris seems not to be great enough for exploring large databases. In section 8, the author states that 'our experience has been that the query response time does not need to be a real-time... several tens of seconds', which doesn't make sense. Firstly, there is no evidence, like user study, that supports that statement. And intuitively, since exploration tasks always involve a bunch of trials and errors, a waiting time of tens of seconds can be annoying and discouraging. Also, with regard to the experiments with mobile network dataset and SDSS, more detailed experiment data is needed instead of simply saying 'reasonably responsive performance'.<br />
+<br />
+## extensions<br />
+1. Simplifying the generated interfaces while still satisfying each user's need can be an interesting direction to explore. Based on the paper, Polaris already has a lot of functions and will grow to have more, which means it will generate more and more complicated interactive interfaces. While those interfaces can fullfill users' needs, the cost of learning will also go up. Therefore, it will be great if there exists methods to simplify those interfaces while keeping them still effective to use. Or in other words, it will be pretty cool to 'customize' tableau for each user.<br />
+</p>
+
+<h2 id="vega-lite">Vega-lite</h2>
+
+<h3>1/27/20 7:57 Yin Zhao</h3>
+<p class="block">his paper is to introduce a high-level grammar for interactive data visualizations, which is built on top of the existing lower-level Vega language. Vega-lite is compiled to Vega with an underlying compiler, and provides most useful capabilities of the language, but much easier to use because of its conciseness in specification. <br />
+The improvement of the system over prior works that it is influenced by (Polaris, Tableau) is that it supports multiple view displays (composite views) via layer, concat, facet and repeat operators, and that it combines a grammar of graphics with a novel grammar of interaction (selection). Those are very useful features because of the flexibility.<br />
+As the paper suggests, Vega-lite has some limitations in terms of expressiveness because of its conciseness. Conciseness is indeed very important because it's much easier to use, and users avoid specifying lots of details (instead, these are provided as default by Vega-lite). But it cannot express specialized techniques as the full Vega does. In such cases, can it support inserting specification of full Vega whenever the users want?</p>
+
+<h3>1/28/20 1:31 Xupeng Li</h3>
+<p class="block"><br />
+Vegalite is a concise, high-level specification of interactive data visualization based on vega. The main contribution could be the grammar of graphics and grammar of interaction. The vega lite defines a concise yet expressive grammar. The vega specification will be compiled to vega and execute. <br />
+<br />
+Compared to the prior work, the grammar is a contribution. It decomposes visual encodings, interaction into a parametric space. This makes the visual recommendation, visual enumeration work possible. <br />
+<br />
+I like the grammar design. The unit specification is a four-tuple, which is very concise. The overall format is json.<br />
+<br />
+The limitation could be from the compiler itself. Since it is a compiler, we can not access the intermediate value. And The model is very concise which also limits the expressiveness. <br />
+<br />
+</p>
+
+<h3>1/27/20 23:59 Jake Fisher</h3>
+<p class="block">I thought the prior work section especially made it clear what limitation (the lack of support for interactivity in other visualization systems) it was addressing, and that central problem seemed to me to be very valid.  However, I felt that this motivation wasnt always present in parts of the paper, such as section 3.  While that section seemed necessarily as to provide the non-interactive visual grammar that the interactive portion of the project builds on, it wasnt necessarily clear how Vegas approach to a visualization grammar is more conducive to the interaction grammar they propose in the following section than existing work, and I wish that it discussed more how the visual grammar related to the larger goal of the paper, if it does. However, the rest of the paper certainly was consistently, demonstrably motivated by the problem introduced in the first two sections.  The presentation of the paper was clear; it often used examples, and when such examples were confusing in text, the paper often provided visuals, such as in Fig. 4.</p>
+
+<h3>1/27/20 23:48 Maximilian Kiefer</h3>
+<p class="block">This paper includes a major argument on the high level grammar for rapid interactive data visualizations which is included for data flow and event handling logic. In other words, it includes high level grammar such as ggplot2 and Tableau applications. The operators include layers, concatenate (addition), facet, and repeat. <br />
+This is significant since the Vega-Lite contains the capacity to allow for visual encoding for multiple view display to other high level grammars. I agree with key factors in Vega Lite such as unit specification, encoding, faceted charts, repeated charts.<br />
+<br />
+This had major technical strengths such as the discussion of selection transforms. These include project (fields, channels), toggle (event), translate (events, by), zoom (event, factor), nearest (), etc. <br />
+<br />
+Limitations to the paper were its applications to major industries that could incorporate these techniques. In addition, throughout the paper's discussion of Filtering why was only filterWith used and not other techniques in the investigation of the materializing the selection as input datasets compared to secondary views. Also a rank as the order of importance for each selection that Vega-Lite discusses would also be helpful for the paper to be better understood. <br />
+<br />
+Lastly, the extensions of this paper could include more data and relevant works for the Index chart. More data and experimental results could be provided for the single-point layered cross filtering vs. multi-point layered cross filtering. Also, greater discussion could be on why the specification of Vega-Lite takes place in an interpreter rather than a compiler function. </p>
+
+<h3>1/27/20 23:45 Teresa Tseng</h3>
+<p class="block">Vega-lite is a grammar that allows for rapid prototyping and is good for explanatory purposes (deep dive thanks to fine-grained control) rather than exploratory. The authors aimed to extend Vega-lite to make it better suited for concise and quick creation of high-data visualisations.  According to the authors, Vega-lite tends to sacrifice expressiveness and exploration in favor of the ability to finely tune specifications.  Using a view composition algebra instead of a table algebra, Satyanarayan et. al. introduce the layer, concat, facet, and repeat operators to construct composite views with layered plots or multi-layer displays. These operators can be combined to create more complex data views in a dashboard.  The addition of these specifications, along with a set of selections, enables Vega-lite interactions to be much faster than those of its predecessor. <br />
+I liked the step-by-step illustrations of the different operators; this helped me get a better idea of how the new methods would translate to a better user experience.  Since this is a grammar that prioritizes conciseness and speed, I feel that their outlined limitations of use are reasonable and are well-explained (to an unfamiliar user).<br />
+</p>
+
+<h3>1/27/20 23:29 Deka Auliya Akbar</h3>
+<p class="block">This paper discusses a high-level grammar called Vega-lite which allows for rapid specification of interactive data visualizations. Vega-lite combines grammar of graphics and grammar of interactions. I believe the strength of Vega-Lite in providing multi-view grammar for interactive graphics lies in the formalism of interactivity using selection-driven visual encodings, reusable and composable of visual and interactive components. First, the unit construct for specifying both graphics and interaction design are defined. Then, a more complex interactive graphical construct can be built upon the unit constructs by using compositional visual algebra (for composite views) and/or composing selection transformations (for complex interactions).<br />
+<br />
+The major contributions of this high-level grammar is that it facilitates the rapid development of expressive specification of interactive visualizations for exploratory data analysis (EDA) compared to the prior technologies, as the prior works are either impeding the EDA task due to its low-level nature (eg: D3, Vega), or has static plots / limited configurations for interactivity (eg: matplotlib, ggplot2, Tableau). I think Vega-lite has a major contribution towards HDI because developing and managing interactive data visualizations can be quite complex (due to event trigger, handling, and mapping to visualizations). Aside from having a formalism for graphics, the idea of formalizing interactive design with selections and transforms, creating abstractions over different interactions for visualizations and combines them with visual encodings can greatly simplify the task of building interactive graphics for both explanatory or exploratory works.<br />
+<br />
+Since Vega-Lite is a declarative language for interactive graphics, the learning curve might not be as easy as point and click data visualization tools (eg: Tableau, Data Studio), so it is more suitable for data-users experts (eg: Analysts, Scientists, etc). Understanding of Vega-Lite grammar and requisite knowledge of data visualization, what types of data visualization is suitable for certain data types, etc is required to visualize interactive graphics effectively.<br />
+<br />
+As Vega-Lite is compiler-based, components are declared at compile-time, hence it does not support drastic dynamic changes on the visual components. Maybe allowing specifications for alternate data visualization options + predicate function for different state of data selection.</p>
+
+<h3>1/27/20 21:40 Haneen</h3>
+<p class="block">This paper presents Vega-Lite, which is a high-level grammar language that enables the construction of interactive data visualizations to support data exploration tasks. It achieves that by augmenting the traditional grammar of graphics with a new grammar of interaction, thats concise compared to its predecessor while retaining its expressive power. The authors introduce view algebra, which describes how to combine multiple views.<br />
+By reducing the search space, Vega-Lite not only would make it easier to construct an interactive visualization but also enable the search and inference over the space of visualizations. Moreover, by breaking interactions into a set of primitives, it enables users to introduce different interactive methods to their applications.<br />
+Although the authors claim the easy of use of their system, they didnt quantify that in their evaluation. Although the mean to specify a visual output might be more concise than prior work, in my opinion it still needs further work to make it more intuitive and reduce the entry barrier for users.</p>
+
+<h3>1/27/20 20:13 Carmine Elvezio</h3>
+<p class="block">This paper presents an extension to Vega-Lite to support specification of interactive data visualizations (through an algebra comprised of layer, concatenate, facet, and repeat operations), and a high-level interaction grammar for specifying, selections, which are user-chosen visual elements and data points (which can occur as single, list, or interval selections) and the transformations possible on those selections: projection, toggling, translation, zoom, and nearest. Further, the paper delves into how the Vega-Lite compiler generates output to Vega specification in 4 stages: parsing, building, merging, and assembling. The major contribution in this work comes from the description of a concise way to allow for operations such as selection (and the transformations on the selected items) and the generation of the view composition, in a single grammar. Based on what I have read, and the authors claim with regards to the benefits of higher-level grammar for exploratory visualization, I do agree that it is significant in the combination of how it utilizes a simplified, concise language (avoiding the overt verboseness of the more expressive lower-languages), to provide for the ability to actually interact with the data in a meaningful way. The alternatives, including Vega, do indeed seem to be too cumbersome to really allow for efficient and quick exploration of different designs of the presentation of data. When considering selection-based interaction, Satyanarayan does provide a system that allows for this capability, but it is still based on Vega, so the conciseness is lost. And compared to Polaris table algebra, which requires a different system to support things such as multi-view dashboard construction, the extension to Vega-Lite here allows for special operators to achieve this in the same grammar supporting interaction on these items, with the utilization of predicate functions to map selections to declarative queries. However, it should be noted that other systems do support a richer set of interactions beyond selection. The authors discuss that there is a trade-off here, with advantages for the sake of exploration, but do not delve into how the other systems explore a richer set of interactions. An example of this is in the specification of layers. With something like Polaris, layers are controllable through the interface itself. Here, that isnt something explored by the authors, which I view as a fairly major limitation (when compared to the alternatives). So while it is fairly interactive, insomuch as it applies to selection interactions, aspects like the fields of axes cant be adjusted at run-time, which ultimately limits exploration (which the authors want to encourage). However, it is true that the visual encoding with Vega-Lite does allow for a certain amount of improved exploration through modification of selected items representations. I think it would be great if the authors expanded the Vega-Lite grammar of graphics to include mutability of things like axis or layer, in a similar fashion to Polaris. Ideally, the conciseness of the language would still allow for powerful exploration capabilities, while keeping the grammar itself approachable.</p>
+
+<h3>1/27/20 18:11 Olinah Hassan</h3>
+<p class="block">The paper discusses Vega-Lite, which is a high-level grammar for graphics that is similar to Polaris/Tableau. Vega-Lite combines graphics grammar with a new type of interaction by using composition algebra through layer, concatenation, facet, and repeat operators. I agree that this is the most significant part of the paper because rather than prior interactions remain low-level and verbose, Vega-Lite enables conciseness. One of the attributes of Vega-Lite that I liked was the layer operator that allows you to by default generate a single scale by overlaying data. There are some limitations of course. Vega-Lite can not enforce in the layer operator if something is semantically meaningful. In addition,  the model itself prefer conciseness over expressivity. For example, querying time-series data via relaxed selections cannot be expressed by default. Further going off on their discussion, I would be interested to see how they would be able to visually link marks across views instead of just the interactive linking of marks. </p>
+
+<h3>1/27/20 12:30 Celia Arsen</h3>
+<p class="block">The problem this article identifies is that high-level languages for concise, exploratory data analysis and visualization, like ggplot2, Tableau, and Vega-Lite, provide limited support for interactivity. While it is often possible to leverage APIs to develop custom methods in these interfaces, the authors argue that this forces developers learn low-level execution details for conceptually simple tasks. This process is inefficient and error prone. I think the authors clearly define this gap in the existing tools and sufficiently justify why it is a problem. Their goal in this article is to extend Vega-Lite to enable high-level specification of interactive data visualizations. <br />
+Their first contribution is a new algebra, which they call view algebra that allows users to combine single-view Vega-Lite specifications into multi-view displays. Their second contribution is a high-level interaction grammar. In this, the authors are attempting to strike an ideal balance between expressiveness and conciseness. As a reader who has not used Vega before, the examples in Section 6 very clearly illustrate the differences between Vega and Vega-Lite. I think that the authors very effectively convey the improvements that Vega-Lite makes. They show exactly how Vega-Lite makes the language much more concise by introducing sensible defaults and keeps its expressive powers by allowing users to override or modify those defaults. </p>
+
+<h3>1/27/20 2:15 Yiru Chen</h3>
+<p class="block">The paper demonstrates the Vega-lite, which enables concise, high-level specification of interactive data visualization. The paper defines a high level interaction grammar and add a lot of operators to do the transformation. The system is compiled to Vega. Vega-lite is able to decompose interaction into a parametric design space which could make visual recommendation or visual ideation possible. <br />
+<br />
+The contribution is the grammar. It contributes a concise design of views, interactions. Not sure what it is like in Vega, but the grammar described in Vega-Lite Is complete, concise and expressive. <br />
+<br />
+Technically, it defines a grammar,  writes a compiler, compiles the code to Vega specification and render the visualization.<br />
+<br />
+LImitation:<br />
+1. I dont know why. The writing itself is very hard to understand. What writing style is it? <br />
+2. The limitation could be from the compiler aspect. It is compiler, so most of the intermediate variables are not manipulatable. <br />
+3. Vega lite can not deal with large database, <br />
+4. Vega lite is concise which makes it have limited expressiveness.<br />
+</p>
+
+<h3>1/26/20 21:20 Adam Kravitz</h3>
+<p class="block">The paper disccused methods to make Vega-lite concise, enable high level interactive visualization, and enable expressive interaction. Vega-Lites most useful aspect, that I got out of the paper, is the combinations of graphs and how the graphs are displayed. May it be concatenating the graphs, or by recognizing a graph has the same (x,y) field and ranges that it allows something to be 2 graphs to be 1 graph intuitively. Also Vega-lite seems to have more expressiveness than something like tableau. Vega-lite argues it is a more expressive tool than something like tableau as the user is less limited on what they can do compared to tableau, as well as being more concise than lower levels of Vega. I like how it shows a simple way to show multiple graphs where in other programs may be less obvious how to do. I understand that with increase expressivity we have to use code like languages, but I think that is the limitation with Vega-lite it is still code and to playing around with it is less intuitive as well as only having a rectangle boxing tool to look at data points is very big limitation. When looking at data customization of what you are looking at and filter is very important and a tool like a lasso marker would be really useful. What if Vega-lite allows more ways to interact with the graphics beside just the a rectangular boxing tool, for example pop up tables of bar charts that describes the data used in the bars in bar charts for example. Or what if to have less coding, have sections of common aggregation tools syntax or on recommend x and y fields.<br />
+</p>
+
+<h3>1/26/20 20:13 Qianrui(Owen) Zhang</h3>
+<p class="block">## main idea<br />
+This paper presents Vega-Lite, a high-level grammar that enables interactive data visualizations. The grammar is based on Vega and will be compiled into low-level Reactive Vega specification. It combines a grammar of graphics and a grammar of interaction, and the core part for adding interactivity is called selection. While using, users can specify selections to parameterize visual encodings to make them interactive. The author also shows some examples to prove the expressiveness of Vega-Lite in this paper.<br />
+<br />
+## significance <br />
+Privious grammars in the field of visualization can be categorized into two types: high-level grammers and low-level grammers. High-level grammars are concise but lack interactivity, while low-level grammars are more expressive but verbose. Vega-Lite combines those two types and makes a both expressive and interactive grammar, which is a meaningful trade-off. The experiment in section 6 also shows that Vega-Lite is capable of generating interactive visualizations that are important in practicle use.<br />
+<br />
+## strength<br />
+1. The idea of using transforms and selections to implement interactive logics is interesting. As the core technique in Vega-Lite, the presence of selection greatly improves the conciseness of the grammar.<br />
+<br />
+2. There are a lot of real examples of using Vega-Lite, and those examples are extremely helpful for understanding the concepts and the grammar.<br />
+<br />
+## limitations<br />
+1. The trade-off between Vega and Vega-Lite is not stated clearly enough. Since Vega-Lite is a high-level grammar based on Vega and is more concise, it is natural that Vega-Lite will sacrifice some expressiveness compared to Vega. However, the only part related to that is section 7 where the author mentions that some 'highlly specialized techniques... cannot be expressed by default', which is not informative enough. What exactly are the cases that Vega can express but Vega-Lite cannot? And why are those cases not essential? A throughout comparison between those two grammars is needed to help readers fully understand those questions and the true merit of Vega-Lite.<br />
+<br />
+2. (In writing) In technical part(section 3 and section 4), the specifications of concepts are scattered and that impedes understanding. For instance, when the author introduces selection in section 4.1, she provides the defination of selection and then explains the components. However, it is hard to understand what a 'backing point' or a 'datum' are in the explanation because those concepts don't seem to be defined before. It's only by reading the practicle examples afterwards do I start to understand what a selection is. And I think adding a summary of notations can help with that.<br />
+<br />
+## extensions<br />
+1. Inspired by the paper, it would be interesting to see more about the trade-offs between expressiveness and conciseness in visualization grammars. While Vega-Lite is less verbose than Vega, it still requests a fair amount of specifications to create interactive visualizations. Is it possible to make Vega-Lite more concise without losing too much expressiveness? That should be an amazing direction to explore.<br />
+<br />
+2. Vega-Lite is more concise than Vega with regard to the lines of code while performing the same job. However, how should we measure how easy those grammars are for users? Pherhaps a user study is needed.</p>
+
+<h2 id="ggplot2">GGPlot2</h2>
+
+<h3>1/27/20 7:57 Yin Zhao</h3>
+<p class="block"></p>
+
+<h3>1/28/20 1:31 Xupeng Li</h3>
+<p class="block"></p>
+
+<h3>1/27/20 23:59 Jake Fisher</h3>
+<p class="block"></p>
+
+<h3>1/27/20 23:48 Maximilian Kiefer</h3>
+<p class="block"></p>
+
+<h3>1/27/20 23:45 Teresa Tseng</h3>
+<p class="block"></p>
+
+<h3>1/27/20 23:29 Deka Auliya Akbar</h3>
+<p class="block"></p>
+
+<h3>1/27/20 21:40 Haneen</h3>
+<p class="block"></p>
+
+<h3>1/27/20 20:13 Carmine Elvezio</h3>
+<p class="block"></p>
+
+<h3>1/27/20 18:11 Olinah Hassan</h3>
+<p class="block"></p>
+
+<h3>1/27/20 12:30 Celia Arsen</h3>
+<p class="block"></p>
+
+<h3>1/27/20 2:15 Yiru Chen</h3>
+<p class="block"></p>
+
+<h3>1/26/20 21:20 Adam Kravitz</h3>
+<p class="block"></p>
+
+<h3>1/26/20 20:13 Qianrui(Owen) Zhang</h3>
+<p class="block"></p>
+
+<!--
+## Reviews
+
+-->
+
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>
