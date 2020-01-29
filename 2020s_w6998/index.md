@@ -15,6 +15,8 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 
 ## Recent Announcements
 
+* Week 2:
+  * [class' reviews](./reviews/week2.html)
 * Please note, the full list of all papers and their direct PDF links are below the schedule.  The schedule will link to the papers on nb.mit.edu, which is a nice platform for the class to collaboratively discuss the readings.  You can subscribe using our class' [registration link](http://nb.mit.edu/subscribe?key=Ky57vnKHys8WXkwqSJIZvkdJaqLLVLm6JDCPA0ueYwKLKrqlb6) 
 * TODOs for first class
   * [Submit reviews](https://forms.gle/NpGxPBCeMFvKsr4W9)
