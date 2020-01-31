@@ -149,6 +149,7 @@ Perception
 #### Novel Modalities
 
 * Arnab Nandi, Lilong Liang, Michael Mandel [Gestural Query Specification](https://scholar.google.com/scholar?q=gestural+query+specification)
+* Codi Burley et al. [ARQuery: Hallucinating Analytics over Real-World Data using Augmented Reality](http://cidrdb.org/cidr2019/papers/p93-burley-cidr19.pdf)
 * Emanuel Zgraggen et al. [(s/q)ueries: Visual Regular Expressions for Querying and Exploring Event Sequences](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/chi2015-squeries.pdf)
 * Vraj Shah et al. [SpeakQL: Towards Speech-driven Multimodal Querying of Structured Data](https://adalabucsd.github.io/papers/TR_2019_SpeakQL_v2.pdf)
 * Christopher Baik et al.  [Bridging the Semantic Gap with SQL Query Logs in Natural Language Interfaces to Databases](https://arxiv.org/pdf/1902.00031.pdf)
@@ -185,6 +186,7 @@ For Cleaning
 
 * Sean Kandel et al. [Profiler: Integrated Statistical Analysis and Visualization for Data Quality Assessment](http://vis.stanford.edu/files/2012-Profiler-AVI.pdf)
 * Sanjay Krishnan et al. [ActiveClean: Interactive Data Cleaning For Statistical Modeling](http://www.vldb.org/pvldb/vol9/p948-krishnan.pdf)
+* Jie Song et al. [GeoFlux: Hands-Off  Data IntegrationLeveraging Join Key Knowledge](https://dl.acm.org/doi/pdf/10.1145/3183713.3193546)
 
 <!--* Archana Ganapathi, Yanpei Chen [Data Quality: Experiences and Lessons from Operationalizing Big Data](http://yanpeichen.com/professional/IEEE_Big_Data_2016_Data_Quality.pdf)-->
 
