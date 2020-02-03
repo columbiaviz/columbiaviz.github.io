@@ -3,7 +3,7 @@
 * [Eugene Wu](http://www.eugenewu.net) (Instructor)     
   <small>OH: Tues 4-5PM 421 Mudd</small>   
 * [Yiru Chen]() (TA)    
-  <small>OH: Tues 6-7PM 406 Mudd</small>
+  <small>OH: Thurs 3:30-4:30pm 406 Mudd</small>
 * Class: W 2:10pm-4:00pm  
   Location: 488 CSB
 * [Syllabus](./syllabus)
