@@ -110,7 +110,48 @@ The following are examples of possible projects -- they are by no means a comple
 3. Fill a gap:  think about something useful that _should_ be easily doable, but is painful or impossible with current state of the art.  Fill that gap.
 
 
-#### Sample Projects TBA
+
+
+
+#### New Querying Interfaces
+
+[Scalable](https://www.microsoft.com/en-us/research/uploads/prod/2019/01/Wu-drucker-QueryingVideos.pdf),
+[Image](http://cidrdb.org/cidr2019/papers/p141-kang-cidr19.pdf),
+[Databases](http://cidrdb.org/cidr2019/papers/p40-krishnan-cidr19.pdf) are on the horizon.  However, a major limitation is that the query interface is incredibly impoverished.  How do you specify that you want to find red cars that move along a trajectory?  Or to look for relationships between two objects over time?  Certainly not by writing SQL-like text queries.   The challenge is that video is fundamentally 3D, but query interfaces are 1D.  
+
+* Idea 1: the core abstraction in relational algebra is Joins.  In video, it is likely also joins, but for the same image across video frames, or the relationship between objects across video frames.  The nature of trajectories, positioning, and timing are all core aspects to relating concepts in video.  Propose and implement a prototype to help users express video joins.
+* Idea 2: VR can render videos as 3D objects.  What does a query language look like if designed for VR?  What types of joins, or filtering, make sense?  You should have VR experience.   
+
+
+#### What We Talk About When We Talk About Data
+
+How are data and analyses referred to and described in scientific work?  When data is presented as figures or tables, how is it referred to?  What are the verbs and nouns?  Is there a universal set of ways that figures are described (e.g., in terms of comparisons? in relative terms? ).  This can serve as the evidence for a new data analysis language.  
+Analyze papers in ArXiV or [Viziometrics](http://viziometrics.org/api/) for their figures and captions and surrounding text (ArXiV provides LateX files)
+
+
+#### A Task-oriented Language
+
+Vsualization tools and languages such as Polaris, Vega-lite, and others focul on helping users specify the layout, visual encodings, and implicitly, the grouping and aggregations, of their data.  However, choosing the approriate aggregations, layouts, and visual encodings to answer a specific analysis task as quite challenging.  For instance, suppose a dataset contains attributes A and B.  If the task is "compare A and B", then at first glance, a scatter plot makes sense.  However, what if B only contains the two values "1990" and "2000"?  Then, it makes more sense to compare the distributions of A for the years 1990 and 2000.  Design a language that makes it easy for users to specify the _task_, and a compiler that generates the best visual presentation of the data for the task.
+
+
+
+#### Precision Interfaces
+
+[Precision interfaces](https://www.dropbox.com/s/09ri46n9zcv7jxh/precisioninterface-ipa20-submitted.pdf?dl=0) analyzes query logs and generates custom interaction components from the logs.  The goal is to scalably generate dozens or hundreds of custom interactive analysis interfaces for any analysis found in a log.    
+
+* Precision interfaces is currently language agnostic and does not take into account the database nor the database contents.   Adapting the system to make weak but general assumptions about the nature of query plans, data, and query results can potentially improve the usability and usefulness of the generated interfaces.  
+* Visualization design algorithms such as Draco propose ways to measure the "appropriateness" and "effectiveness" of a visualization.  HCI research has studied UI complexity for software interfaces based on ideas such as GOMS and Fitt's law.    Given a candidate interactive visualization interface (views and interactions) as well as a "workload" of queries users want to express, devise an "interactive interface appropriateness" measure.
+
+<!-- 
+* Visualization clients, including Precision Interfaces, generate SQL strings that are executed on a backend database.   This incurs the overhead of parsing and optimization on every interaction.  Precision Interfaces already models the interface as transformations of abstract syntax trees---propose a way to use query compilation 
+-->
+
+
+#### Miscellaneous Ideas
+
+* Pick a class of visual analyses, and get it to scale to 10M+ points in the browser.  
+* Pick a data type (document, records, images, music, etc), and design an analysis language/grammar for a useful but underserved class of tasks.
+* Design an interface and set of interactions to help users visually perform causal inference on a big dataset
 
 <!--
 
@@ -125,25 +166,13 @@ The following are examples of possible projects -- they are by no means a comple
 * Precision interfaces is currently language agnostic and does not take into account the database nor the database contents.   Adapting the system to make weak but general assumptions about the nature of query plans, data, and query results can potentially improve the usability and usefulness of the generated interfaces.  
 * Embed design heuristics into the interface generation process.  The system currently has a very simple model of "interface complexity" --- make it more real by taking existing HCI research into UI complexity and design into account.
 
+
 #### Data Processing
 
-
-#### New Querying Interfaces
-
-[Scalable](https://www.microsoft.com/en-us/research/uploads/prod/2019/01/Wu-drucker-QueryingVideos.pdf),
-[Image](http://cidrdb.org/cidr2019/papers/p141-kang-cidr19.pdf),
-[Databases](http://cidrdb.org/cidr2019/papers/p40-krishnan-cidr19.pdf) are on the horizon.  However, a major limitation is that the query interface is incredibly impoverished.  How do you specify that you want to find red cars that move along a trajectory?  Or to look for relationships between two objects over time?  Certainly not by writing SQL-like text queries.   The challenge is that video is fundamentally 3D, but query interfaces are 1D.  
-
-* Idea 1: the core abstraction in relational algebra is Joins.  In video, it is likely also joins, but for the same image across video frames, or the relationship between objects across video frames.  The nature of trajectories, positioning, and timing are all core aspects to relating concepts in video.  Propose and implement a prototype to help users express video joins.
-* Idea 2: VR can render videos as 3D objects.  What does a query language look like if designed for VR?  What types of joins, or filtering, make sense?  You should have VR experience.   
 
 #### Query-based Graph Visualization
 
 Graphs are fundamentally high dimensional, and generating good graph visualizations is still an unsolved problem.  There are plenty of ways to visualize a graph---as a matrix, as a node-link layout (with many mayn layout algorithms), as histograms, and so on.  Suppose you know what analysis _queries_ (e.g., recursive SQL queries, or a query workload) have been run on the graph.  Can those queries be analyzed to recommend the appropriate visualization?
-
-#### What We Talk About When We Talk About Data
-
-How are data and analyses referred to and described in scientific work?  When data is presented as figures or tables, how is it referred to?  What are the verbs and nouns?  Is there a universal set of ways that figures are described (e.g., in terms of comparisons? in relative terms? ).  This can serve as the evidence for a new data analysis language.  Analyze [Viziometrics](http://viziometrics.org/api/) and ArXiV for their figures and captions and surrounding text (ArXiV provides LateX files)
 
 
 #### Data Cleaning
