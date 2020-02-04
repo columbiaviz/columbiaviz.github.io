@@ -17,7 +17,7 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 
 * Feb 3
   * A2: We have updated the [submission link](https://forms.gle/gEjJZxo7GRsyNnda8) so students without lionmail can still submit.
-  * Submit [reviews using this link](https://forms.gle/jzBnRWAPvCEamRNP8)
+  * Submit [reviews using this link from now on](https://forms.gle/jzBnRWAPvCEamRNP8)
 * Week 2:
   * [class' reviews](./reviews/week2.html)
   * [Presentation and Scribe assignments](https://docs.google.com/spreadsheets/d/1HGmsObHfsZFcDUW2y2DqOhPjvyMANohHFTtPTyuKwQ8/edit?usp=sharing)
