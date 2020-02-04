@@ -149,9 +149,70 @@ Vsualization tools and languages such as Polaris, Vega-lite, and others focul on
 
 #### Miscellaneous Ideas
 
-* Pick a class of visual analyses, and get it to scale to 10M+ points in the browser.  
-* Pick a data type (document, records, images, music, etc), and design an analysis language/grammar for a useful but underserved class of tasks.
-* Design an interface and set of interactions to help users visually perform causal inference on a big dataset
+Core Data Processing for Viz
+
+* **Perceptual push-down:** why compute what cannot be seen?  Our prior perceptual studies have found interesting trade-offs between different approximation techniques.  Build on our findings and prototype a system that intelligently picks between different approximation and optimization options.
+* **Request Probabilities:** instead of the typical request-response model of interaction, what if the client constantly sens probability distributions of what the user might do?  What if the server constantly sends data to the client at maximum bandwidth?
+  * How does a data processing system execute a probability distribution of queries?
+  * What data should the server send to the client?
+* **Run studies:** What are humans able to perceive anyways?  Run perception studies to build user perception models that could be used for perceptual push-down. 
+  * Related: [pfunk](http://sirrice.github.io/files/papers/pfunk-hilda16.pdf), [Section 3.2 of CIDR paper](https://www.dropbox.com/s/0rdjsv7m7wbhmlk/cidr17-camera.pdf?dl=1)
+* Pick a class of visual analyses, and get it to scale to 10M+ points in the browser using [technologies such as Arrow.js](https://observablehq.com/@lmeyerov/rich-data-types-in-apache-arrow-js-efficient-data-tables-wit).  
+
+
+PDFs + tables
+
+* Public datasets (UCI ML data, government datasets) are often accompanied by description files that describe the attributes and the contents.  Automatically identify the segments in the description files that relate to attributes in the dataset, and create a tool for users to make use of these metadata files to assist them as they learn about a new dataset.    Make it work for some simple domains (datasets)
+
+
+Query The Web
+
+*  Web pages are simply views over an underlying dataset (e.g., Amazon is a product database that renders product information) combined with query interactions (e.g., filter by clicking on a product category).  However the interactions are fixed by the developer.   Identify the schema of a website's data, let users write SQl queries over the schema, and make it work.
+
+Which Optimization Makes Sense?
+
+* It's currently unclear whether  sampling or data cubes or other optimizations are the most appropriate for any given visualization + interaction.  Run studies to better understand the trade-offs.
+* Bonus: use trade-offs to recommend optimizations for new interactive visualizations.
+
+Run some perceptual studies:
+
+*  What are humans able to perceive anyways?  Run perception studies to build user perception models that could be used for perceptual push-down. 
+  * Related: [pfunk](http://sirrice.github.io/files/papers/pfunk-hilda16.pdf), [Section 3.2 of CIDR paper](https://www.dropbox.com/s/0rdjsv7m7wbhmlk/cidr17-camera.pdf?dl=1)
+
+Data file formats
+
+* Given a random binary or text data file, it's a huge amount of work to identify a scehma and extract structured data from it.  But there are _plenty_ of binary and text data files to learn from!  Train a deep learning/parsing model over a large variety of data files/formats and use the trained model to "parse" a new data file.
+
+
+Modalities
+
+* **Augment, not Replace:** I suspect that analysts don't want to perform NLP/voice-only data analysis, but would rather use voice to _augment_ their programming-based analysis?   For example, if the analyst asks "what's that?" then it probably has to do with the part of the visualization that the cursor is pointing to.  Survey existing human computer interaction literature on multi-modal approaches to data analysis (or run an informal user study) and build a prototype using Alex/NLP that _augments_ a data scientist's job.  Some ideas of what to augment:
+  * While a user explores an interactive visualization, automatically zoom in, highlight data, generate new views, etc based on the user's comments.
+  * Data science analysis session
+* **Checklist Manifesto:** Customer service representatives (and most chat bots) follow a fill-in-the-blank rubric when communicating with users/customers.  The purpose is to extract the most information to solve your problem in the least amount of time.  Given a collection of chat logs, can you infer an optimized rubric?
+* **Google Time:** With Google Maps, people can browse the world in their laptop. The aim of Google Times is to do the same thing, but for time instead of space. The project is made of two parts: 1. Extract as many dates as possible from public data sets, to obtain a huge database of dates, 2. Create a browsing system to explore this timeline in real time.
+* **Audification:** While data visualization is well understood, its small cousin audification is still in its infancy [https://en.wikipedia.org/wiki/Audification] The aim of this project is to answer the question: what is the grammar of audification? What would the "Tableau of audio" look (sound) like? 
+
+Explanation and Cleaning
+
+* **But, Why?** Identify a context during data exploration (either in a visualization system, or via any other modality) where the user will natually ask "why?" and expect an explanation.  Formalize the context, formalize the problem and develop a prototype solution.
+  * Prior examples: [Scorpion](http://sirrice.github.io/files/papers/scorpion-vldb13.pdf), [QFix](http://eugenewu.net/files/papers/qfix-sigmod17.pdf), [Dialectic](https://www.dropbox.com/s/9lgkbku2aa80fui/dialectic-icwsm17.pdf?dl=0)
+* **Cleaning and Extraction Pushdown:** Data collected from the web (e.g., from a form) is typically used by downstream applications for a variety of purposes such as training data for models, or to analyze using queries.  However if the data is not collected and validated appropriately, then the analyst needs to perform expensive data cleaning to fix errors, or extract structured information from free-form text.  Is there a way, given the downstream applications or the existing data cleaning steps, to augment the input form so that the submitted data is already clean and in the appropriate form?    
+  * Related to [Dialectic](https://www.dropbox.com/s/9lgkbku2aa80fui/dialectic-icwsm17.pdf?dl=0).
+* **Will it Clean?** Even automatic error _detection_ is notoriously difficult due to the ambiguounotion of what "clean" means.  However in data science applications, the test data for the prediction model provides a crisp notion of "clean" and has been used in BoostClean to perform automatic error detection and cleaning.  BoostClean simply worked for simple static datasets: extend its ideas to streaming datasets where the errors may change over time.
+* **Excel Sucks:** Many many very important datasets are shared as a big collection of excel files.  For example, the [Equality of Opportunity Project](http://www.equality-of-opportunity.org/data/) shares their data as 6 - 15 excel files for each category, and you end up needing to figure out how to download all of them, identify the schema, and join them together to even _start_ exploration.  Your project is to fix this.  Let me point to a website with links, get the excel files, automatically infer the joins (they may be at different granularities such as county and state!) to produce a single set of database tables to query.
+  * data: [OECD](https://data.oecd.org/searchresults/?r=+f/type/datasets), [Equality](http://www.equality-of-opportunity.org/data/), [data.gov](http://www.data.gov)
+
+
+Recommendations and Predictions
+
+* **Causality and viz:** Recently, the ML community has made great progress in the field of causality detection, i.e., understand what variable causes another variable in a data set [see this paper](https://arxiv.org/abs/1412.3773). Can these methods help recommend interesting visualization views? 
+  * Related: [Zenvisage](http://data-people.cs.illinois.edu/papers/zenvisage-vldb.pdf), [Voyager](https://idl.cs.washington.edu/papers/voyager), [Voyager2](https://idl.cs.washington.edu/papers/voyager2/)
+* **Text and viz:** In many cases, datasets come with a text description of what they contain. For instance, UCI repo data often include a file that describes the columns. How can you mine this information to recommend interesting new visualizations? Can you make it better with external knowledge, e.g., a knowledge base or a Web crawl?  
+* **Predicting crime:** You work for the FBI, you lead a team of 30 agents, and you just discovered this dump of dark web marketplaces:
+https://www.gwern.net/Black-market%20archives
+Where will you send your agents? 
+
 
 <!--
 
