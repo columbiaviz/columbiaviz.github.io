@@ -9,8 +9,7 @@ layout: 2020s_w4995
 <br>
 _COMS W {{ layout.courseno }} (3 pts)_ <br>
 _Instructor:_ Agnes Chang (ac3882), office hours by appt. <br>
-_IAs:_ Emma Lu (ell2140), Irene Koo (hk2919) <!-- Vasudha Rengarajan (vr2375; [Wed. 2:30-4:30p](https://calendar.google.com/calendar/selfsched?sstoken=UUxPX05HdExjeUR1fGRlZmF1bHR8Yzg4ZjdjN2QwOTdiNWFjMmZlNTc3MmZhMTZjMDRhOWU) @ TA room),
-Amal Alabdulkarim (aa4235; [Thu. 11a-1p](https://calendar.google.com/calendar/selfsched?sstoken=UUo4T0xWODh5bjZPfGRlZmF1bHR8MmM2ZTViZjU2YzE5N2E1NTYyMzMwZTQxNTE1OTVmNjM) @ TA room) --> <br>
+_IAs:_ Emma Lu (ell2140; [Mon 3-5p](https://calendar.google.com/calendar/selfsched?sstoken=UUlMMTVhN1dWRS12fGRlZmF1bHR8NmJlNTBlZjJlMmEwYWNjYWQ5YWUzN2FkMmU5MTY2ZTg)), Irene Koo (hk2919; [Wed 2-4p](http://bit.ly/irene_OH)) <br>
 _Class Time:_ Tues. 6:10-8pm <br>
 _Room:_ 301M Fayerweather
 [Class Slack](https://columbiaviz-sp20.slack.com) <br>
