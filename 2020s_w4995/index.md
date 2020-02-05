@@ -11,7 +11,7 @@ _COMS W {{ layout.courseno }} (3 pts)_ <br>
 _Instructor:_ Agnes Chang (ac3882), office hours by appt. <br>
 _IAs:_ Emma Lu (ell2140; [Mon 3-5p](https://calendar.google.com/calendar/selfsched?sstoken=UUlMMTVhN1dWRS12fGRlZmF1bHR8NmJlNTBlZjJlMmEwYWNjYWQ5YWUzN2FkMmU5MTY2ZTg)), Irene Koo (hk2919; [Wed 2-4p](http://bit.ly/irene_OH)) <br>
 _Class Time:_ Tues. 6:10-8pm <br>
-_Room:_ 301M Fayerweather
+_Room:_ 301M Fayerweather<br>
 [Class Slack](https://columbiaviz-sp20.slack.com) <br>
 [Course Feedback Form](https://forms.gle/sJne6fxphDzFBJN38)
 
