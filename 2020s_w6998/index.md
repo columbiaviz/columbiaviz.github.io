@@ -12,6 +12,12 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 <small style="color: grey">Course capped at 15.</small>
 
 
+<!--
+## Quick Links
+
+<a class="btn btn-default" href="https://forms.gle/jzBnRWAPvCEamRNP8">Submit Reviews</a>
+-->
+
 
 ## Recent Announcements
 
