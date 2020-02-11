@@ -1,0 +1,218 @@
+
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+	<div class="container">
+		<div class="deco">COLUMBIA UNIVERSITY COMS W4111.002</div>
+    <div class="title"><a href="/" style="color:black;">INTRODUCTION TO DATABASES</a></div>
+	</div>
+</div>
+
+
+
+
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-8 col-md-offset-2">
+		<style>
+p.review {
+  border-left: 2px solid grey;
+}
+
+div.block {
+  margin-bottom: 1em;
+}
+</style>
+
+<h2 id="paper-1">Paper 1</h2>
+
+<h3>2/11/20 2:33 Yiru Chen</h3>
+<p class="block">Draco is a framework that uses a set of constraints to represents visualization design guidelines. The goal of Draco is to apply the design guidelines to automatically visualization tools. <br />
+<br />
+Significant points: it uses ASP --- the independent constraint programming language to describe constraints. This is beautiful. The problem of finding appropriate encodings becomes the problem of finding optimal answer sets. This can have efficient methods to solve which makes it practical.  I like this part. Also, they use different notations to distinguish between soft constraints and hard constraints. I think this is part is novel and useful. What's more, this formalization could help find conflict and act as a checker. <br />
+Another point is they use the rankSVM model to learn the weights, which is not common in a visualization paper. But it makes the weight more accurate.<br />
+<br />
+Another part I like from the writing aspect is how they explain the word optimal at the beginning of section 4. I usually dare not use "optimal". In this paper, they clearly state the conditions and use "optimal" under such conditions which makes the reasoning sound rigorous.<br />
+<br />
+limitation:<br />
+limited transformations(binning, aggregation) and can hardly think of how to extend to sort in this grammar?<br />
+<br />
+</p>
+
+<h3>2/10/20 23:57 Deka Auliya Akbar</h3>
+<p class="block">The paper discusses Draco, an automated constraint-based visualization design system that formalizes Visualization Design Knowledge as Constraints. The problem with visualization is that design knowledge and principles of effective visual encoding is continuously evolving and vary over different tasks. Unfortunately prior works usually have idiosyncratic representation that is specific to the system and use imperative implementations which are hard to maintain and inefficient. Draco solves these limitations by modelling and representing design knowledge as sets of logical facts and extensible constraints that are solvable using modern ASP and incorporates both hard and soft constraints to prune non-expressive visualizations, ill-formed specifications, ineffective visual designs and undesirable visualizations based on user preference. <br />
+<br />
+I really like how draco uses ASP to solve visualization constraints effectively and the smart use of soft constraints to encode user preferences and using them to compute violations and MLN to rank visualizations. The ability to rank visualization and learning preference model is essential especially in automated visualization or visual recommendation systems as it needs to select the most relevant and effective graphic over all the possible choices. Some limitations with current Draco implementations might be that it requires expert knowledge in design to fully utilize Draco, for example when encoding the user preferences or weights for the soft constraints. Moreover, excluding the visualizations based on the constraints might prevent users from exploring other possibilities, so maybe recommending visualizations can also be done instead of directly excluding irrelevant visualizations. Another extension for Draco might be to encode user interaction as ASP (eg: valid selections / pan-zoom actions).<br />
+<br />
+Overall, I believe the author has done great work in terms of elaborating his ideas and contributions in the paper. The paper provides important figures, examples, illustrations, and code excerpts that allows us to better understand how Draco works.</p>
+
+<h3>2/10/20 23:56 Celia Arsen</h3>
+<p class="block">The authors of Draco note that many existing studies address how people understand and interpret visual data. The unsolved problem is that current data visualization tools do not quickly incorporate these new findings, and Draco aims to make this possible. Their hypothesis is that Draco is an improvement over other automated design tools like APT and CompassQL, particularly because Draco can deal with several contradictory criteria and effectively prioritize the best option. <br />
+They seek to validate their hypothesis by walking through three applications of Draco. One is an implementation of APTs prefence rules, one is a reimplementation of CompassQL, and one shows Dracos ability to learn to model competing preferences from data. For the first example, I did not understand exactly how the re-implementation was novel. It was an improvement in the sense that it was more concise. For their second example, the reimplementation of CompassQL, they clearly state how the code becomes much more concise and how performance improves. In the third example, they do show that Draco-Learn outperforms Draco-CQL.<br />
+I really like the writing style the authors use. They clearly introduce each topic at the beginning of the paragraph and then clearly explain their point with details and examples, not presuming the reader has in-depth knowledge of the surrounding literature or context. This writing style makes me, as a reader, feel more inclined to take their arguments more seriously. When playing with Draco for Assignment 2, I found that the actual tool was more difficult for me to understand than their writing was. <br />
+</p>
+
+<h3>2/10/20 22:45 Haneen Mohammed</h3>
+<p class="block">This paper introduces Draco, a formal framework for representing design knowledge. Draco models visualizations as a set of logical facts and represent design guidelines as a collection of hard and soft constraints over these facts, thus provides a means by which to encode theoretical design knowledge as a set of constraints and a tool to enable visualization synthesizing from partial specifications.  <br />
+As proof of the framework expressiveness, the authors re-implemented two prior visualization recommendation systems using their new approach. They show not only it can be modeled using Draco, but also Draco has better performance than the other systems. The authors show as well Dracos ability to learn weights for soft constraints from data.<br />
+The framework presented seems like an important building block that could enable multitudes of applications</p>
+
+<h3>2/10/20 18:16 Perrin Anto</h3>
+<p class="block">This paper explores a new formal model, Draco: an automated approach to creating visualizations with design knowledge represented across hard and soft constraints. Draco pushes forward beyond prior work by dealing with multiple (and sometimes competing) criteria for the visualization. By using Answer Set Programming, Draco can resolve conflicts and follow multiple heuristics across millions of variables. By leveraging domain knowledge from experts as soft constraints, the model is more expressive and extensible. I like how Figure 3 summarizes the design space in Draco, and how the Draco search space is narrowed down by ill-formed specifications (hard constraints) and non-expressive visualizations (soft constraints) to find the most preferred specifications. The demonstrations of Draco section also gives clear examples of applications for the readers, solidifying the expressivity, extensibility, and usability of the model. I wish the paper talked more about the dissemination of visualization research results through Draco. I found the point of Human designers should focus on the design of<br />
+the visualization design space and preferences rather than the design<br />
+of search algorithms profound, and I want to see more how Draco pushes the boundaries towards this future. </p>
+
+<h3>2/10/20 13:29 Yin Zhao</h3>
+<p class="block">Draco is an automated design tool based on Answer Set Programming to recommend visualization designs. The improvement of Draco over existing systems is that it provides users the ability to add new constraints concerning data. Draco provides concrete design guidelines by logical rules, using Vega-Lite underlying, users can describe what visualizations they want concisely. Secondly, with Draco, users can provide constraints over logical facets. With the constraints, Draco is able to use constraint solvers to produce valid visualization designs. This is a nice improvement over existing systems because to specify visualization design rules precisely greatly helps with developers to keep things in order and version control, leaves with no surprise.</p>
+
+<h3>2/10/20 11:44 Carmine Elvezio</h3>
+<p class="block">This paper presents Draco.a model (and grammar) for data visualization (or knowledge representation). Draco models visualization design through a set of constraints, representing logical facts and design guidelines (through hard and soft constraints - where hard rules are fixed, but soft rules can be broken, at a penalty, representing trade-offs in the design principles applied). Draco builds its grammar off of Vega-Lite and utilizes a domain independent constraint programming language. This is tied with a system to utilize and learn weights from experimental data to allow for automated configuration, in an attempt to allow for the integration of information learned from other research systems, such as CompassQL, into the design of Draco. Over previous work, Draco presents a system that can deal with competing criteria (over APT), with the ability to represent summary tasks, and is not implemented over a imperative language like CompassQL, which can result in significantly more complex code and become much longer and harder to write (however, like CompassQL it also uses a logical representation of Vega-Lite). As the authors note, Draco is limited to the design space of single views and faceted views. Competing systems, like Polaris and Voyager, can go beyond this. But understanding the nature of this work, the limited scope is potentially reasonable. Further Draco builds on Answer Set Programming (ASP) which can aid designers in not needing to mix the solving of the constraints with the logical framework in which they are placed. Lastly is the utilizes a learn to rank model to take advantage of domain-specific expert knowledge. In the combination of the above, I do agree that the implementation of these constraints in a logical declarative language, using expert knowledge encoded in weights that are learned from other systems, is indeed a significant contribution as the logical representation allows for a particular expressiveness (and greater possibility set) that can be very difficult to achieve with previous systems. However, I do not agree with the authors on the notion of ease-of-use, which I will address below. In terms of technical strengths that I like, I do think it is really impressive that the system can infer, from the logical declaration, how to build charts and graphs from a set of constraints - the ability for a small set of lines of code to allow for a learned design to be created is indeed very impressive, when weve needed to more manually represent these design principles when considering previous work. I also find it impressive that the system can take advantage of SVMs to encode expert knowledge and blend it with, while still remaining separated from the core logic. However, the major limitation of this work I think comes in the design, or simply the explanation of, of the logical grammar of ASP itself. While it appears to be quite expressive and powerful, if the user simply wants to create a set of charts based on different data sets, along different design principles, there are easier ways to achieve this. The paper doesnt do a wonderful job of explaining the language itself either. It instead spreads the explanation of the syntax and semantics across different unrelated sections of the paper. Even after multiple readings, I did not feel as though I truly understood the language. I wish the authors had reorganized the entire explanation of the language into something more concise, with simple examples scaffolded to larger descriptions of test systems. As it stands, there are some tokens in the grammar that are never really explained (like the underscores). Further, as a logical declarative language, it is trying to encode a lot of information in a way that can become very difficult to parse and understand. Considering improvements here, what if the paper had shown examples of how something might be implemented using an imperative language, and then did a line-by-line breakdown of how it might be implemented with Draco? Another limitation is in the fact that this generates fairly straightforward single views- a potential improvement for the system itself would be in the extension of the grammar to support the creation of multi-view charts (in a way not-unlike Voyager).</p>
+
+<h3>2/9/20 23:47 Zachary Huang</h3>
+<p class="block">This paper talks a way to formalizing visualization through answering set programming. I love the way they use programming to quantify both objective and subjective goals. Specifying visualization could be an abstract and tedious work. Automation of visualization is a promising area. The limitation is that it is still a bit hard to declare demands. For example, how would you assign weights to your soft requirement? Extension could be support interaction since it's very powerful for data exploration.</p>
+
+<h3>2/8/20 0:55 Xupeng Li</h3>
+<p class="block">This paper presents Draco, a formal framework that encodes visualization design knowledges as a collection of constraints, which is flexible and extensible. Draco aims to close the gap between visualization design guidelines and their applications by formalizing design knowledges and make them a shared resource for the visualization community. <br />
+<br />
+The significant of this paper is that Draco formalizes visualization knowledge base as constraints, implemented using Answer Set Programming. Such design make the constraints well-defined, easy to efficiently solve, and easy to extend. I like the choice of ASP in Draco's design because it is expressive (able to encode logic) and has efficient solver to make it practical. <br />
+<br />
+In spite of the limitations discussed in section 7 (Draco does not support filtering, sorting, layered view etc.), I also wonder how to encode aesthetic knowledges, e.g. readability, into logic-based constraints. Those knowledges also play an important role in visualization designs.</p>
+
+<h3>2/7/20 12:34 Adam Kravitz</h3>
+<p class="block">Draco is constraint based system based on answer set programming (using formal visual design knowledge). It formally models visualizations as logical facts and represents guidelines as hard and soft restraints so that it can find the best visualization to show/use.<br />
+<br />
+Dracos significance is that it finds the best visualization though a learning process to rank constraints (soft constraints) to make recommendation that would be better for different tasks. The recommendation system as well as learning to recommend visualization for tasks are also recommending visualizations that work for everyone. I do think this is significant since personalizing tools for the user allows quicker and easier understanding and less time and energy wasted.<br />
+<br />
+What I like about Draco is the fact that they are using learning models to predict best model visualization (which has the potential to make it personal for an industry or a person) to use as well as to infer schema when not given, like fields, types, properties.  In addition that makes Draco very scalable and fast.<br />
+<br />
+Some limitations, which the paper talked about briefly was the question of whether the recommendation system could be globally consistent with visualization design guidelines where different places have different best and common practices.<br />
+<br />
+What if they extend the learning to personal learning per analyst, or making different learning models that are useful for different fields that can be an option for an analyst to pick which field they are working in to get the right learning model.<br />
+</p>
+
+<h3>2/7/20 9:51 Qianrui Zhang</h3>
+<p class="block">This paper presents Draco, a constraint-based system based on Answer Set Programming to solve the problem of visualization design. The system represents visualizations as sets of logical facts and design guidelines as a collection of hard or soft constraints over these facts. By solving those constraints, it can complete a set of Vega-Lite specifications and then generate proper visualizations. Besides, the authors also come up with a learning model to enhance parameter-tuning of the system.<br />
+<br />
+I think using constraints to represent design knowledge is a great direction to explore. Since design knowledge is evolving all the time, it may be hard and time-consuming for oridinary people to design visualizations. By utilizing systems like Draco, people can convert their ideas to visualizations easily without the need of systematical learning. However, currently Draco program is still not trivial or intuitive enough for ordinary people (people without programming background) to write. And I believe there could be an easier way for people to utilize design knowledge.<br />
+<br />
+Another strength of this paper is most of the technical parts (section 3 and 4) are pretty clear. By reading through figures and examples, there is almost no difficulty in understanding how the system works. However, section 5 seems a bit confusing to me and I don't exactly know what happends even after reading the appendix. Maybe providing some examples or figures in section 5 will help.<br />
+<br />
+It would also be great if Draco can add a user study like the Voyager paper. Since Draco is a tool for users to generate visualizations, it is important to explore its own strength and weakness and collect users' feedback.</p>
+
+<h2 id="paper-2">Paper 2</h2>
+
+<h3>2/11/20 2:33 Yiru Chen</h3>
+<p class="block">Voyager is a visualization recommendation system.In every facet, you can specify what you exactly want and voyager would come up with some recommendations chosen according to statistical and perceptual measures.Voyager could introduce  the new data variables and explore unseen data. <br />
+<br />
+The significant part is the system design and the idea. It uses compass to do the recommendation and visualize based on  vegalite.  The idea is novel that is favours exploration and could bring increased data coverage instead of answering the question. <br />
+<br />
+I like one point that it considers interactively steering to drive recommendation. I think this is really important with regards to data exploration. <br />
+<br />
+limitation: the ranking algorithm is based on some perceptual effectiveness metric which is not personalized. if there are more interactions, it  could be bettter.<br />
+<br />
+</p>
+
+<h3>2/10/20 23:57 Deka Auliya Akbar</h3>
+<p class="block">The paper presents Voyager, an interactive browser which provides an interactive gallery of automatically-generated visualizations. Exploratory data analysis is usually open-ended and non-trivial. Moreover, most of the available tools require a manual and tedious visual specification process which impedes exploration and targeted question answering. Voyager solves this problem by generating visualizations automatically and provides a faceted visualization recommendations and interactive steering of these recommendations for further exploration and thus allow for a more rapid data exploration. <br />
+<br />
+The major contribution of Voyager, is that it enables users to perform a breadth-oriented exploration and thus have more coverage over the unseen data. It is an excellent tool for early stages of data exploration as it allows for an exploration of a broader search space and its interactive steering, user selections and data transformation features allows for an easy and rapid navigation towards an interesting space areas deeper. I really appreciate the 6 design decisions and principles that Voyager chose (data variations over visual encoding variations, interactive steering, expressive and effective visual encodings, multiple charts, fine tuning over exhaustive enumeration, revisitation and follow up analysis) as it really helps users to explore data, understand data patterns and discover relationships between variables in a systematic manner.<br />
+<br />
+One limitation with Voyager is that it is an automated system. Visualizations are automatically generated and the whole process is black boxed, so it could be hard to customize certain things, for example to change the ordering of the results based on users preference instead of some effectiveness measure or changing the weights and scores of the visual features (they mentioned in the paper that it is manually tuned). One possible extension for Vega is to enable a data story feature where multiple pages of facets can be used for visualizations of different variables or level of details, and allowing users to change views of different pages easily, and improve the revisitation feature by allowing to save a page or data story pages instead of just bookmarking individual visuals. </p>
+
+<h3>2/10/20 23:56 Celia Arsen</h3>
+<p class="block">The authors of Voyager identify a gap in tools that can effectively help analyst conduct breadth-oriented exploration of new datasets. Like Tableau, Voyager employs a graphical interface for exploring databases, but unlike Tableau, Voyager generates views automatically for the user to choose from, including variables that the user has not included in the selected view. PoleStar, similarly, is a view specification tool, but the authors argue that Voyager has better performance for initial data exploration and PoleStar is better for targeting specific research questions. To me, the sample size for the user studies seemed small for a study that relied heavily on qualitative data. Besides that, I found the article well-written and compelling. While using Voyager, it was clear that it privileges data variation over design variation.</p>
+
+<h3>2/10/20 22:45 Haneen Mohammed</h3>
+<p class="block">The paper presents Voyager, an interface that assists users during the data exploration phase. The interface provides a gallery of recommended visualizations based on the underlying dataset to enable breadth-oriented exploration. The interface also provides a mechanism that allows the user to specify variables to explore, thus steering the set of recommended visualization accordingly. The recommender engine behind Voyager takes into account data properties and perceptual principles to rank visualizations. <br />
+<br />
+The work builds on extensive research in visualization recommendation systems, though more targeted towards the data exploration phase. It enables users to get acquainted with a dataset by presenting visual summaries of the schema and different statistical properties of the data.<br />
+<br />
+To demonstrate and understand the systems ability to assist users in data exploration tasks, the authors conducted a detailed system evaluation that compared Voyagers interface with a visualization tool modeled after Tableau, which supports depth-first exploration.</p>
+
+<h3>2/10/20 18:16 Perrin Anto</h3>
+<p class="block">This paper explores the design of data analysis tools that are breadth-oriented for exploration. Most previous work has focused on depth-first exploration, but data analysts dont always have precise goals or familiarity with the data set. Their proposed tool, Voyager, offers iterative exploratory search with visualization recommendations. The interface mimics Tableau in many ways, but the significance lies in these visualization recommendations and their push for serendipitous discovery of data insights. I liked their focus on data variation over design variation; this design decision connects well to their breadth-oriented exploration goals. Figure 8 &amp; 9 were well placed in the paper to explain Voyagers system architecture and the technical strengths / originality beyond previous work. In the study results half of users agreed that The recommendations made by Voyager need improvement. I wish a follow up question was asked here to better understand future work needed. Also, what if they included a third tool in the study - a mix between Voyager and PoleStar? I question why we need two distinct tools for two types of exploration, and getting more insight to this could have added to the paper. </p>
+
+<h3>2/10/20 13:29 Yin Zhao</h3>
+<p class="block">Voyager provides a very nice UI for data exploration and analysis. It makes making it easy for analysts to explore unfamiliar data and provides breath-oriented exploration. While automated design tools are available and successful, this browser based UI facilitates easy exploration of specific aspects of data. Looking at the architecture of the voyager system, it is simple yet effectively provides the functionalities that the existing components lack., It uses existing systems including Compass as the recommendation engine and Vega-Lite as the compiler to understand specifications, Voyager system does not have to implement and refine complex systems. <br />
+The whole product is encapsulated under the UI. Sometimes users may want to manually provide specifications (via Vega-lite for example), so it might be nice to also provide such options.</p>
+
+<h3>2/10/20 11:44 Carmine Elvezio</h3>
+<p class="block">This paper presents Voyager  - a system that aims to facilitate the exploration of data sets by recommending charts to users along particular statistical and visual (perceptual) measures. This is in stark contrast to the many systems that have come before that have focused on manual construction of graphs - Polaris being a prime example. Voyager, like Draco, actually builds on Vega-Lite to generate its charts. Users have the ability to generate, but more importantly, explore different kinds of charts, through the Compass recommendation engine. The major contributions in this work come from Voyagers preference and focus on data variation over design variation, in addition to its powerful recommendation engine. In addition, the authors present a comparison of Voyager to one of its major predecessors and competitors: Polaris (reimagined here as PoleStar). Compared to previous systems, Voyager reduces the requirement to understand or be familiar with a particular data set a priori (like Polaris) - by leaning on its recommendation engine. And while it does prioritize data variation, it does still allow for design variation, which is an improvement over previous systems like VizDeck which also present galleries of related charts. I agree with the authors claims of significance on those points as a result. I really like the notion of the visualization gallery, with the ability to jump to new visualizations and more recommended charts. This system, builds on the authors design considerations which when implemented in Compass, with particular focuses on ranking and clustering to aid in meeting those goals. I agree that this, with respect to achieving the data variation, but in a user-readable way, is a major contribution and I like it a lot. The system does have a number of limitations however. For one, there is limited expressiveness in the design of the charts. This comes from the automated generation of the charts through the admittedly limited customization in the UI. For example, there doesnt seem to be a way of scaling the charts when it skews to one end, or is too dense, for example. In an attempt to mitigate these issues, I think it would be great if Voyager had the ability to specify things like scale (in a similar, but orthogonal way to how Draco or Polaris does it). And even better would be if it could allow for user interaction on the charts (selection, transformation, etc) to have impacts on the other charts. Ultimately, the authors acknowledge this too.<br />
+</p>
+
+<h3>2/9/20 23:47 Zachary Huang</h3>
+<p class="block">This paper talks about a system to explore data step by step. This significant part is that it supports  breadth-oriented exploration, which privileges data variation (different variable selections and transformations) over design variation (different visual encodings of the same data). I wish the system could allow users to specify what they want to explore. Currently, it just allow users to add variables. It's hard to specify a certain demand. Future extension should be interaction.</p>
+
+<h3>2/8/20 0:55 Xupeng Li</h3>
+<p class="block">This paper presents a recommendation-powered visualization browser, Voyager. With Voyager, users can interactively discover a database with recommendations rather than manually specifying views in advance. Voyager can help user explore previously unseen data. <br />
+<br />
+The significant of Voyager is its recommendation engine. Voyager privileges data variation over design variation so its recommendation engine encourages increasing data variable coverage. Besides, for better experience of interaction, Voyager optimizes the performance and tries its best to rank, cluster, and visualize the results.<br />
+<br />
+However, Voyager is still preliminary because it is only data variable driven. More complex recommendations are difficult to make, like involving a filter and visualizing "temperature over date (where city='new york')".</p>
+
+<h3>2/7/20 12:34 Adam Kravitz</h3>
+<p class="block">Voyager is a mix-initiative system that support faceted browsing, with a highly interactive interface. Voyager is a visualization tool that exchanges specifications for the use of browsing  visualization. It uses Vega-lite for visual representations (like tableau's VizQL) and motivated design principles, interface design, and system architecture. Voyager tries to allow the analyst to have more coverage of the data<br />
+<br />
+The significance with voyager is that allows more exploration and more data coverage, which I do think is significant. Exploration allows new discovers and implies ease of use which are both useful traits especially in business. Voyager is like tableau for exploration, but voyager automatically generates a gallery of recommended view charts. As well as generating multiple chart voyager also contributes methods for recommending different new variables and transformation, and enabling interactive browsing of multiple recommendations. These recommendations to recommend multiple graphs and new variables allows for a more adaptive tool for exploration. <br />
+<br />
+Another significant tool and a technical strength that I like is that voyager makes it easier to browse and explore by placing the recommended graphs in a location where the other graphs are similar in one way or another. This is important since it allows quicker and easier understanding of the graphs the analyst is looking at.<br />
+<br />
+Voyager purposely was made with a modest recommender system since it was making a proof of concept. But since the recommender affects the pruning and ranking of different charts, a modest system leads to a steep drop in effectiveness.<br />
+<br />
+Voyager should extend its research by continuing the recommendation system and making it more robust. The effectiveness of the tool could drastically increase. Another extension I thought would be interesting would be a ranking system where analysts can make rankings for themselves. Analysts can choose to see their preferred graphs first, if they already know what they like with certain combinations of data. Other than that, the generic recommendation system can take over and can display the best graphs for the analysts to look at.<br />
+</p>
+
+<h3>2/7/20 9:51 Qianrui Zhang</h3>
+<p class="block">This paper contributes Voyager, a mixed-initiative system to generate and recommend visualizations for breadth-oriented explorations. The system consists a recommendation engine and a visualization browser, and will genereate Vega-Lite specifications to create visualizations. Experiments show that the system can cover most of the tasks that a user will perform during initial exploration of a dataset.<br />
+<br />
+The contribution of the paper is pretty clear: to design a visualization recommendation system that can help users with dataset exploration. And I think that it is of great significance. Since when we first encounter a dataset, it is highly likely that we will need some methods to perform initial analyzing. Having a tool like Voyager will greatly reduce the time we need in this procedure.<br />
+<br />
+Strengths:<br />
+1. The comparison between Voyager and PoleStar is convincing. By running a user study with those two systems, the role Voyager can play is clearly shown to readers.<br />
+<br />
+2. The design considerations of Voyager is easy to understand and makes pretty much sense. The whole paper is centered on providing tools for breadth-first explorations and the those design considerations reflect the goal perfectly.<br />
+<br />
+Limitations:<br />
+1. As is stated in the paper, currently the function of Voyager is limited and it can only perform exploration tasks rather than deeper analysis. Although the authors mention that future work will enhance Voyager with more functions other than variable addition, it is doubted whether other functions could be added with current user input (selection of fields). </p>
+
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>
