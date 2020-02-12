@@ -5,10 +5,13 @@ Intro
 * Challenge: perceptual studies and design knowledge keep changing
   * how to continuously incorporate into vis design tools?
   * current systems are adhoc rules + search
-* Want a common representation of the knowledge (a "knowledge base") + system that can use it
-  * The knowledge is ASP statements.  System to use it is the clingo solver.  
+* Want a common representation of the knowledge 
+  (a "knowledge base") + system that can use it
+  * The knowledge is ASP statements.  
+  * System to use it is the clingo solver.  
 * seek to make formal models of design knowledge a shared resources
-  * implies that design knowledge is a matter of running comparison experiments between vega-lite statements
+  * implies that design knowledge is a matter of 
+    running comparison experiments between vega-lite statements
   * studies == partial rankings
 * Borrows a lot from APT's formalisms, extended to 
   * use a constraint solver
