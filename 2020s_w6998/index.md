@@ -75,10 +75,11 @@ Every student should [sign up to lead at least one paper discussion and scribe a
     <td class="date">{{r.date}}</td>
     <td class="slug">
       <b>{{r.slug}}</b>
-      {% if r.leader %}
-        <br/>
-        <span class='presenter'>Leader: {{r.leader}}</span>
-      {% endif %}
+      <div>
+        {% if r.reviews %} <span style='margin-right: 2em;'><a href="{{r.reviews}}">Reviews</a></span>{% endif %}
+        {% if r.slides %} <span><a href="{{r.slides}}">Slides</a></span>{% endif %}
+      </div>
+
       {% if r.notes %}
         <div>{{ r.notes | safe }}</div>
       {% endif %}
@@ -88,7 +89,15 @@ Every student should [sign up to lead at least one paper discussion and scribe a
       {% if r.notes %}{{r.notes}}{% endif %}
     </td>-->
     <td class="readings">
-      {{r.readings | safe}}
+      {% if r.paper1 %}
+        {{r.paper1 | safe}}
+        {% if r.presenter1 %}<span class='presenter'>({{r.presenter1}})</span>{% endif %}
+      {% endif %}
+      {% if r.paper2 %}
+        <br/>
+        {{r.paper2 | safe}}
+        {% if r.presenter2 %}<span class='presenter'>({{r.presenter2}})</span>{% endif %}
+      {% endif %}
 
       {% if r.optional %}
         <b style="padding:0px;  padding-top:.75em; display:block;">Optional</b>
