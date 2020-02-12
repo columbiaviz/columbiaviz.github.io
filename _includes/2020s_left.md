@@ -9,6 +9,7 @@
 * [Syllabus](./syllabus)
 * [Slack](https://join.slack.com/t/hdisystems/signup)
 * [nb](nb.csail.mit.edu) 
+* [Submit Reviews](https://forms.gle/jzBnRWAPvCEamRNP8)
 * [Project](./projects)
 * [Resources](./resources)
 

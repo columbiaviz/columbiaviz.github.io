@@ -1,17 +1,17 @@
-date,slug,notes,link,leader,readings,optional,,due
-22-Jan,"<a href=""#general"">Intro</a>",,,,"<a href=""http://nb.mit.edu/f/57226"">Licklider</a><br/><a href=""http://nb.mit.edu/f/57225"">Agency plus Automation</a>","<a href=""http://nb.mit.edu/f/57227"">Support the Data Enthusiast</a>",,
-29-Jan,"<a href=""#grammars"">Vis: primer, grammars</a>","<a href=""./reviews/week2.html"">Reviews</a><br/><a href=""./lecs/02_grammars.pptx"">Slides</a>",,,"<a href=""http://nb.mit.edu/f/57228"">Polaris</a><br/><a href=""http://nb.mit.edu/f/57229"">Vega-lite</a>","<a href=""http://nb.mit.edu/f/57230"">Layered Grammar of Graphics S1-3</a>",,"<a href=""https://forms.gle/NpGxPBCeMFvKsr4W9"">Reviews</a> (mon 11:59PM)<br/><br/><a href=""./a1"">A1</a> (tues 11:59PM)"
-5-Feb,No Class,,,,,,,"<a href=""./a2"">A2</a>(Feb 10 11:59PM)"
-12-Feb,"<a href=""#design"">Vis: design & recommendation</a>",,,,"<a href=""http://nb.mit.edu/f/57231"">Formalizing Visualization Design Knowledge in Draco</a><br/><a href=""http://nb.mit.edu/f/57232"">Voyager</a>","<a href=""http://nb.mit.edu/f/57233"">Show Me</a>",,"<a href=""./projects#prospectus"">Prospectus</a>"
-19-Feb,"<a href=""#tasks"">Vis: tasks, users, goals</a>",,,,"<a href=""https://www.taylorfrancis.com/books/9780429088902"">Tamara Ch1</a><br/><a href=""http://nb.mit.edu/f/57235"">Comparison</a>","<a href=""http://nb.mit.edu/f/57236"">Predictive Interaction</a>",,
-26-Feb,"<a href=""#perf"">Vis: performance</a>",,,,Immens<br/>Kyrix,M4,,
-4-Mar,"<a href=""#perf"">Vis: approximation</a>",,,,Trust but Verify<br/>Sample + Seek,P-funk,,"<a href=""./projects#related"">Related Works</a>"
-11-Mar,"<a href=""#modalities"">Modalities: touch & voice</a>",,,,GestureQuery<br/>SpeakQL,Semantic Gap,,
-18-Mar,Spring Break,,,,,,,
-25-Mar,Applications: text & docs,,,,Wrangler<br/>Texture,Predictive Interaction,,"A3<br/><a href=""./projects#prototype"">Project Check-in</a>"
-1-Apr,Applications: guest lecture Eirik Bakke,,,,SIEUFERD + Video,,,A4
-8-Apr,Applications: images & video,,,,,,,
-15-Apr,Debugging: ML interpretation,,,,Olah<br/>Rudin<br/>(optional) TFX,,,
-22-Apr,Debugging: data analysis explanation,,,,Scorpion<br/>DIFF<br/>(optional) Rain,,,
-29-Apr,Final Project Showcase,,,,,,,"<a href=""./projects#showcase"">Showcase</a>"
-10-May,---,,,,,,,"<a href=""./projects#report"">Report due</a>"
+date,slug,reviews,slides,notes,link,paper1,presenter1,paper2,presenter2,optional,,due
+22-Jan,"<a href=""#general"">Intro</a>",,./lecs/01_intro.pptx,,,"<a href=""http://nb.mit.edu/f/57226"">Licklider</a>",Wu,"<a href=""http://nb.mit.edu/f/57225"">Agency plus Automation</a>",Wu,"<a href=""http://nb.mit.edu/f/57227"">Support the Data Enthusiast</a>",,
+29-Jan,"<a href=""#grammars"">Vis: primer, grammars</a>",./reviews/week2.html,./lecs/02_grammars.pptx,,,"<a href=""http://nb.mit.edu/f/57228"">Polaris</a>",Wu,"<a href=""http://nb.mit.edu/f/57229"">Vega-lite</a>",Wu,"<a href=""http://nb.mit.edu/f/57230"">Layered Grammar of Graphics S1-3</a>",,"<a href=""https://forms.gle/NpGxPBCeMFvKsr4W9"">Reviews</a> (mon 11:59PM)<br/><br/><a href=""./a1"">A1</a> (tues 11:59PM)"
+5-Feb,No Class,,,,,,,,,,,"<a href=""./a2"">A2</a>"
+12-Feb,"<a href=""#design"">Vis: design & recommendation</a>",./reviews/week4.html,./lecs/04_rec.pptx,,,"<a href=""http://nb.mit.edu/f/57231"">Draco</a>",Wu,"<a href=""http://nb.mit.edu/f/57232"">Voyager</a>",Adam Kravitz,"<a href=""http://nb.mit.edu/f/57233"">Show Me</a>",,"<a href=""./projects#prospectus"">Prospectus</a>"
+19-Feb,"<a href=""#tasks"">Vis: tasks, users, goals</a>",,,,,"<a href=""https://www.taylorfrancis.com/books/9780429088902"">Tamara Ch1</a>",Teresa Tseng,"<a href=""http://nb.mit.edu/f/57235"">Comparison</a>",Celia Arsen,"<a href=""http://nb.mit.edu/f/57236"">Predictive Interaction</a>",,
+26-Feb,"<a href=""#perf"">Vis: performance</a>",,,,,Immens,,Kyrix,,M4,,
+4-Mar,"<a href=""#perf"">Vis: approximation</a>",,,,,Trust but Verify,,Sample + Seek,,P-funk,,"<a href=""./projects#related"">Related Works</a>"
+11-Mar,"<a href=""#modalities"">Modalities: touch & voice</a>",,,,,GestureQuery,,SpeakQL,,Semantic Gap,,
+18-Mar,Spring Break,,,,,,,,,,,
+25-Mar,Applications: text & docs,,,,,Wrangler,,Texture,,Predictive Interaction,,"A3<br/><a href=""./projects#prototype"">Project Check-in</a>"
+1-Apr,Applications: guest lecture Eirik Bakke,,,,,SIEUFERD + Video,,,,,,A4
+8-Apr,Applications: images & video,,,,,tbd,,tbd,,,,
+15-Apr,Debugging: ML interpretation,,,,,Olah,,Rudin,,TFX,,
+22-Apr,Debugging: data analysis explanation,,,,,Scorpion,,DIFF,,Rain,,
+29-Apr,Final Project Showcase,,,,,,,,,,,"<a href=""./projects#showcase"">Showcase</a>"
+10-May,---,,,,,,,,,,,"<a href=""./projects#report"">Report due</a>"
