@@ -83,20 +83,18 @@ Every student should [sign up to lead at least one paper discussion and scribe a
       {% if r.notes %}
         <div>{{ r.notes | safe }}</div>
       {% endif %}
-
-      </td>
-    <!--<td class="notes">
-      {% if r.notes %}{{r.notes}}{% endif %}
-    </td>-->
+    </td>
     <td class="readings">
       {% if r.paper1 %}
         {{r.paper1 | safe}}
-        {% if r.presenter1 %}<span class='presenter'>({{r.presenter1}})</span>{% endif %}
+        {% if r.presenter1 %}<div class='presenter'>Presenter: {{r.presenter1}}</div>{% endif %}
+        {% if r.scribe1 %}<div class='presenter'>Scribe: {{r.scribe1}}</div>{% endif %}
       {% endif %}
       {% if r.paper2 %}
         <br/>
         {{r.paper2 | safe}}
-        {% if r.presenter2 %}<span class='presenter'>({{r.presenter2}})</span>{% endif %}
+        {% if r.presenter2 %}<div class='presenter'>Presenter: {{r.presenter2}}</div>{% endif %}
+        {% if r.scribe2 %}<div class='presenter'>Scribe: {{r.scribe2}}</div>{% endif %}
       {% endif %}
 
       {% if r.optional %}

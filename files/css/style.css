@@ -70,6 +70,11 @@ body.coursenotes .container {
   padding: 5px 10px;
 }
 
+.presenter {
+  font-size: small;
+  color: gray;
+  margin-right: 1em;
+}
 
 
 /* Headings */
