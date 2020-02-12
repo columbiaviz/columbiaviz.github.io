@@ -23,6 +23,7 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 
 * Week 4:
   * [class' reviews](./reviews/week4.html)
+  * Extended project proposal deadline by one week to Weds 2/19 midnight.
 * Feb 3
   * A2: We have updated the submission link so students without lionmail can still submit.
   * Submit [reviews using this link from now on](https://forms.gle/jzBnRWAPvCEamRNP8)

@@ -14,13 +14,16 @@ layout: page_2020
 
 Percentages are of your total class grade.
 
-* [Initial Prospectus](#prospectus)      2/12     (5%)
+* [Initial Prospectus](#prospectus)      2/19     (5%)
 * [Related Works](#related)  3/4      (5%)
 * [Prototype Check-in](#prototype)      3/23-25     (5%)
 * [Project Showcase](#showcase)  4/29    (10%)
 * [Report](#report)          5/10     (25%)
 
 
+Updates
+
+* 2/12: extended initial prospectus deadline by one week to 2/19
 
 ## Overview
 
@@ -46,7 +49,7 @@ Your prospectus should follow the example:
 **Submission**
 
 1. Rename the filename of your prospectus to the following format, UNIs should be in **alphabetical order**. `prospectus_<UNI>_.._<UNIn>.pdf`
-2. [**Click here to upload the file by 2/12 11:59PM EST**](https://www.dropbox.com/request/eT1Jf0dGlrH3ce8eweAp)
+2. [**Click here to upload the file by 2/19 11:59PM EST**](https://www.dropbox.com/request/eT1Jf0dGlrH3ce8eweAp)
 
 ## <a name="related"/>Related Works
 
