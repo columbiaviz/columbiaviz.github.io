@@ -55,6 +55,21 @@ Your prospectus should follow the example:
 
 You will submit an updated version of your prospectus that contains a revised introduction (problem statement, hypothesis), and a substantially fleshed out related work section.  It should clearly articulate the novelty of the problem with respect to state-of-the-art.  You will need to find and review related literature, and look for software tools that may be related to your problem.  
 
+Some helpful tips:
+
+* Few papers directly solve you problem, so you will need to be creative in finding related papers
+* Papers can be relevant in many ways.  They may
+    * help motivate your problem
+    * provide ideas that help you approach your problem
+    * directly solve your problem, but you have a better approach
+    * solve a similar technical problem, even though the application and use case are different
+    * solve a different problem, but their technique may be useful for your problem
+* Resources
+    * semanticscholar.org  for a given paper, it lists papers that cite it
+    * google scholar
+    * other papers' related works sections
+
+
 **Submission**
 
 1. Rename the filename to the following format, UNIs should be in **alphabetical order**. `related_<UNI>_.._<UNIn>.pdf`
