@@ -79,11 +79,8 @@ Every student should [sign up to lead at least one paper discussion and scribe a
       <div>
         {% if r.reviews %} <span style='margin-right: 2em;'><a href="{{r.reviews}}">Reviews</a></span>{% endif %}
         {% if r.slides %} <span><a href="{{r.slides}}">Slides</a></span>{% endif %}
+        {% if r.notes %} <span><a href="{{r.notes}}">Notes</a></span>{% endif %}
       </div>
-
-      {% if r.notes %}
-        <div>{{ r.notes | safe }}</div>
-      {% endif %}
     </td>
     <td class="readings">
       {% if r.paper1 %}
