@@ -226,6 +226,7 @@ SQL Query Explanation
 
 * Eugene Wu, Sam Maden [Scorpion: Explaining Away Outliers in Aggregate Queries](http://www.vldb.org/pvldb/vol6/p553-wu.pdf)
 * Firas Abuzaid et al. [DIFF: A Relational Interface for Large-Scale Data Explanation](http://www.vldb.org/pvldb/vol12/p419-abuzaid.pdf)
+* Tableau [Explain Data demo video](https://www.youtube.com/watch?v=0z3wQCXY8OE&feature=youtu.be&t=3224)
 
 
 #### Performance
