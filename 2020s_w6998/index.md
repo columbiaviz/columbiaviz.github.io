@@ -235,9 +235,14 @@ Approximation
 * Dominik Moritz, et al. [Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data](http://doi.acm.org/10.1145/3025453.3025456)
 * Bolin Ding et al. [Sample + Seek: Approximating Aggregates with Distribution Precision Guarantee](http://doi.acm.org/10.1145/2882903.2915249)
 * Alabi, Daniel and Eugene Wu. [PFunk-H: approximate query processing using perceptual models](http://sirrice.github.io/files/papers/pfunk-hilda16.pdf)
+* Feifei Li et al. [Wander Join: Online Aggregation via Random Walks](https://www.cse.ust.hk/~yike/sigmod16.pdf)
+* Edward Gan et al. [Moment-based Quantile Sketches for Efficient High Cardinality Aggregation Queries](http://www.vldb.org/pvldb/vol11/p1647-gan.pdf)
+
+
 
 Data Structures
 
+* Niranjan Kamat et al. [Distributed and interactive cube exploration](https://arnab.org/files/dice.nandi_.pdf)
 * Zhicheng Liu et al. [imMens: real-time visual querying of big data](http://vis.stanford.edu/files/2013-imMens-EuroVis.pdf)
 * Wenbo Tao et al. [Kyrix: Interactive Pan/Zoom Visualizations at Scale](http://hci.stanford.edu/~cagatay/projects/kyrix/Kyrix-EuroVis19.pdf)
 * Fotis Psallidas et al. [Smoke: Fine-grained Lineage at Interactive Speed](https://arxiv.org/abs/1801.07237)
