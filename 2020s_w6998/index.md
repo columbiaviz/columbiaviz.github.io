@@ -229,20 +229,33 @@ SQL Query Explanation
 * Tableau [Explain Data demo video](https://www.youtube.com/watch?v=0z3wQCXY8OE&feature=youtu.be&t=3224)
 
 
-#### Performance
+#### <a name="perf"/>Performance
 
-Approximation 
+<a name="approx"/>Approximation 
 
 * Dominik Moritz, et al. [Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data](http://doi.acm.org/10.1145/3025453.3025456)
 * Bolin Ding et al. [Sample + Seek: Approximating Aggregates with Distribution Precision Guarantee](http://doi.acm.org/10.1145/2882903.2915249)
 * Alabi, Daniel and Eugene Wu. [PFunk-H: approximate query processing using perceptual models](http://sirrice.github.io/files/papers/pfunk-hilda16.pdf)
+* Feifei Li et al. [Wander Join: Online Aggregation via Random Walks](https://www.cse.ust.hk/~yike/sigmod16.pdf)
+* Edward Gan et al. [Moment-based Quantile Sketches for Efficient High Cardinality Aggregation Queries](http://www.vldb.org/pvldb/vol11/p1647-gan.pdf)
 
-Data Structures
 
+
+<a name="datastruct"/>Data Structures
+
+* Niranjan Kamat et al. [Distributed and interactive cube exploration](https://arnab.org/files/dice.nandi_.pdf)
 * Zhicheng Liu et al. [imMens: real-time visual querying of big data](http://vis.stanford.edu/files/2013-imMens-EuroVis.pdf)
 * Wenbo Tao et al. [Kyrix: Interactive Pan/Zoom Visualizations at Scale](http://hci.stanford.edu/~cagatay/projects/kyrix/Kyrix-EuroVis19.pdf)
 * Fotis Psallidas et al. [Smoke: Fine-grained Lineage at Interactive Speed](https://arxiv.org/abs/1801.07237)
 * Jugel, Uwe et al. [M4: A Visualization-Oriented Time Series Data Aggregation](http://www.vldb.org/pvldb/vol7/p797-jugel.pdf)
+
+<a name="miscperf"/>Additional Techniques
+
+* Georgios Giannikis et al. [Shared Workload Optimization](http://www.vldb.org/pvldb/vol7/p429-giannikis.pdf)
+* Marcin Zukowski et al. [Cooperative Scans: Dynamic Bandwidth Sharing in a DBMS](http://www.vldb.org/conf/2007/papers/research/p723-zukowski.pdf)
+* Roee Ebenstein, et al. [FluxQuery: An Execution Framework for Highly Interactive Query Workloads](https://dl.acm.org/citation.cfm?id=2882945)
+* Richard Wesley et al.  [Leveraging Compression in the Tableau Data Engine](https://research.tableau.com/paper/leveraging-compression-tableau-data-engine)
+
 
 Effects of poor performance
 
