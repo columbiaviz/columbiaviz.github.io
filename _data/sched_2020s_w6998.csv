@@ -12,6 +12,6 @@ date,slug,reviews,slides,notes,link,paper1,presenter1,scribe1,paper2,presenter2,
 1-Apr,Applications: guest lecture Eirik Bakke,,,,,SIEUFERD + Video,,,,,,,,A4
 8-Apr,Applications: images & video,,,,,tbd,,,tbd,,,,,
 15-Apr,Debugging: ML interpretation,,,,,"<a href=""https://distill.pub/2018/building-blocks/"">Olah</a>",Deka Auliya Akbar,Yin Zhao,"<a href=""http://nb.mit.edu/f/57745"">Rudin</a>",Yin Zhao,Deka Auliya Akbar,TFX,,
-22-Apr,Debugging: data analysis explanation,,,,,"<a href=""http://nb.mit.edu/f/57746"">Scorpion</a>",Richard Zhang,Carmine Elvezio,"<a href=""http://nb.mit.edu/f/57747"">DIFF</a>",TBD,Alex Price,Rain,,
+22-Apr,Debugging: data analysis explanation,,,,,"<a href=""http://nb.mit.edu/f/57746"">Scorpion</a>",Richard Zhang,Carmine Elvezio,"<a href=""http://nb.mit.edu/f/57747"">DIFF</a>",TBD,Alex Price,Rain<br/>Tableau Explain Data Video,,
 29-Apr,Final Project Showcase,,,,,,,,,,,,,"<a href=""./projects#showcase"">Showcase</a>"
 10-May,---,,,,,,,,,,,,,"<a href=""./projects#report"">Report due</a>"
