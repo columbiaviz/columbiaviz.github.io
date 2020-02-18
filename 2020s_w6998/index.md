@@ -21,6 +21,8 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 
 ## Recent Announcements
 
+* Week 5:
+  * [class' reviews](./reviews/week5.html)
 * Week 4:
   * [class' reviews](./reviews/week4.html)
   * Extended project proposal deadline by one week to Weds 2/19 midnight.
