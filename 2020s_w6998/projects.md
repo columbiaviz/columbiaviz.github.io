@@ -23,6 +23,7 @@ Percentages are of your total class grade.
 
 Updates
 
+* 2/22: updated assessment for related works part of the proposal.
 * 2/12: extended initial prospectus deadline by one week to 2/19
 
 ## Overview
@@ -54,6 +55,16 @@ Your prospectus should follow the example:
 ## <a name="related"/>Related Works
 
 You will submit an updated version of your prospectus that contains a revised introduction (problem statement, hypothesis), and a substantially fleshed out related work section.  It should clearly articulate the novelty of the problem with respect to state-of-the-art.  You will need to find and review related literature, and look for software tools that may be related to your problem.  
+
+Keep in mind, that Professor Wu will assess this part of the project based on how well it answers the broad question "is there a well-motivated technical challenge and a clear hypothesis of how the problem will be solved?". This corresponds with Munzner's threats to validity in her nested models framework.  It can be broken down into:
+
+* Is the context of the problem clear?  
+* Is it clear what the specific problem is, why it is important, why state of the art fails to address it, and what the insight the project will bring to close the gap?
+* For most projects, are the tasks that the project is designed for clear?
+* Is the path towards solving the problem clear?
+* Is there a clear hypothesis of the form: "For (problem domain), (your insight/contribution) will improve over (state of the art baselines) along (metrics)"?
+
+
 
 Some helpful tips:
 
