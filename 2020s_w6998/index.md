@@ -22,6 +22,7 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 ## Recent Announcements
 
 * Week 6:
+  * [class' reviews](./reviews/week6.html)
   * Updated [projects page](./projects) with more clarify on how related works phase of project will be assessed.
 * Week 5:
   * [class' reviews](./reviews/week5.html)
