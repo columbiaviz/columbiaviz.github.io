@@ -83,7 +83,7 @@ Some helpful tips:
 
 **Submission**
 
-1. Rename the filename to the following format, UNIs should be in **alphabetical order**. `related_<UNI>_.._<UNIn>.pdf`
+1. Rename the filename to the following format, UNIs should be in **alphabetical order**.  DO NOT SUBMIT THE SAME NAME AS YOUR PROSPECTUS!!   `related_<UNI>_.._<UNIn>.pdf`
 2. [**Click here to upload the file by 3/4 11:59PM EST**](https://www.dropbox.com/request/eT1Jf0dGlrH3ce8eweAp)
 
 
