@@ -9,7 +9,7 @@ date,slug,reviews,slides,notes,link,paper1,presenter1,scribe1,paper2,presenter2,
 11-Mar,"<a href=""#modalities"">Modalities: touch & voice</a>",,,,,"<a href=""http://nb.mit.edu/f/57741"">GestureQuery</a>",Carmine Elvezio,Richard Zhang,"<a href=""http://nb.mit.edu/f/57740"">SpeakQL</a>",Perrin Anto,Alex Price,"<a href=""http://nb.mit.edu/f/57739"">Semantic Gap</a>",,
 18-Mar,Spring Break,,,,,,,,,,,,,
 25-Mar,Applications: text & docs,,,,,"<a href=""http://nb.mit.edu/f/57743"">Wrangler</a>","Jake Fisher	",Qianrui(Owen) Zhang,"<a href=""http://nb.mit.edu/f/57750"">Texture</a>",Qianrui(Owen) Zhang,Jake Fisher,"<a href=""http://nb.mit.edu/f/57744"">Predictive Interaction</a>",,"A3<br/><a href=""./projects#prototype"">Project Check-in</a>"
-1-Apr,Applications: guest lecture Eirik Bakke,,,,,SIEUFERD + Video,,,,,,,,A4
+1-Apr,Applications: guest lecture Eirik Bakke,,,,,SIEUFERD + Video,,,,,,"<a href=""https://sdg.csail.mit.edu/projects/espalier/"">Object Spreadsheets (Espalier)</a>",,A4
 8-Apr,Applications: images & video,,,,,tbd,,,tbd,,,,,
 15-Apr,Debugging: ML interpretation,,,,,"<a href=""https://distill.pub/2018/building-blocks/"">Olah</a>",Deka Auliya Akbar,Yin Zhao,"<a href=""http://nb.mit.edu/f/57745"">Rudin</a>",Yin Zhao,Deka Auliya Akbar,TFX,,
 22-Apr,Debugging: data analysis explanation,,,,,"<a href=""http://nb.mit.edu/f/57746"">Scorpion</a>",Richard Zhang,Perrin Anto,"<a href=""http://nb.mit.edu/f/57747"">DIFF</a>",TBD,Alex Price,Rain<br/>Tableau Explain Data Video,,
