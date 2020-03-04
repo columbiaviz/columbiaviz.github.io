@@ -15,7 +15,7 @@ layout: page_2020
 Percentages are of your total class grade.
 
 * [Initial Prospectus](#prospectus)      2/19     (5%)
-* [Related Works](#related)  3/4      (5%)
+* [Related Works](#related)  3/6      (5%)
 * [Prototype Check-in](#prototype)      3/23-25     (5%)
 * [Project Showcase](#showcase)  4/29    (10%)
 * [Report](#report)          5/10     (25%)
