@@ -23,6 +23,7 @@ Percentages are of your total class grade.
 
 Updates
 
+* 3/4: extended related work deadline by Mar 6 Midnight
 * 2/22: updated assessment for related works part of the proposal.
 * 2/12: extended initial prospectus deadline by one week to 2/19
 
@@ -84,7 +85,7 @@ Some helpful tips:
 **Submission**
 
 1. Rename the filename to the following format, UNIs should be in **alphabetical order**.  DO NOT SUBMIT THE SAME NAME AS YOUR PROSPECTUS!!   `related_<UNI>_.._<UNIn>.pdf`
-2. [**Click here to upload the file by 3/4 11:59PM EST**](https://www.dropbox.com/request/eT1Jf0dGlrH3ce8eweAp)
+2. [**Click here to upload the file by 3/6 11:59PM EST**](https://www.dropbox.com/request/eT1Jf0dGlrH3ce8eweAp)
 
 
 
