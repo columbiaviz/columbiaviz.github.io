@@ -24,7 +24,8 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 
 * Week 8:
   * [class' reviews](./reviews/week8.html)
- * Week 7:
+  * Mar 13: A3 is out!
+* Week 7:
   * [class' reviews](./reviews/week7.html)
   * Extended related work deadline by 3/6 midnight.
 * Week 6:
