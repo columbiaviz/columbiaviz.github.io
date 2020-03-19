@@ -21,7 +21,8 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 
 ## Recent Announcements
 
-
+* Spring Break
+  * A3's due is extended 1 week. Now it is due Apr 1.
 * Week 8:
   * [class' reviews](./reviews/week8.html)
   * Mar 13: A3 is out!
