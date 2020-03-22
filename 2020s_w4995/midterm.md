@@ -4,7 +4,8 @@ layout: 2020s_w4995
 
 # Online Midterm
 <br>
-You dataviz midterm has been converted to a **take-home online exam** that will be open for 24 hours on Courseworks as a “Timed Quiz” starting **Monday 3/30 at noon till Tuesday 3/31 at noon.** (Note that your [A4](a4.html) is due Monday 3/30 at 11:59pm EDT.)
+
+You dataviz midterm has been converted to a **take-home online exam** that will be open for 24 hours on [Courseworks](https://courseworks2.columbia.edu/courses/99589) as a “Timed Quiz” starting **Monday 3/30 at noon till Tuesday 3/31 at noon.** (Note that your [A4](a4.html) is due Monday 3/30 at 11:59pm EDT.)
 
 Your exam remains a closed book, closed note exam. As with all of your work in this course, you are expected to honor your pledge to the University’s academic Code of Honor.
 
