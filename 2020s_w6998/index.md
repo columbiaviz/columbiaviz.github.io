@@ -192,7 +192,7 @@ Perception
 
 Expressiveness
 
-* Eirik Bakke et al. [Expressive Query Construction through Direct Manipulation of Nested Relational Results](https://people.csail.mit.edu/ebakke/research/sieuferd_sigmod2016.pdf)   <small>([demo video](https://vimeo.com/17372637://vimeo.com/173726371))</small>
+* Eirik Bakke et al. [Expressive Query Construction through Direct Manipulation of Nested Relational Results](https://people.csail.mit.edu/ebakke/research/sieuferd_sigmod2016.pdf) 
 * Fotis Psallidas et al. [Provenance for Interactive Visualizations](https://www.dropbox.com/s/fkp5hk1gp4lrg9h/smoke-hilda18.pdf?dl=0)
 * Maeda Hanafi et al. [Texture: A Collaborative Framework for Structure Identification over Print Documents](https://hilda.io/2019/proceedings/HILDA2019_paper_8.pdf)
 
