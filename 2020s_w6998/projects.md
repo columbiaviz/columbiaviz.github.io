@@ -91,7 +91,9 @@ Some helpful tips:
 
 ## <a name="prototype"/>Prototype Check in
 
-Your group will schedule 20 minutes to meet with Professor Wu to go over the project's progress and receive feedback.  Prepare a short 5 minute presentation with 4 slides (roughly 1 minute per slide):
+Your group will schedule 20 minutes to meet with Professor Wu to go over the project's progress and receive feedback.    The first 5 minutes will consist of a short 5 minute presentation with 4 slides (roughly 1 minute per slide).  The rest of the time will be an open discussion and fielding questions.
+
+Slides should cover:
 
 1. Problem and motivation
 2. Related work and challenges
