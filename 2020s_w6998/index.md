@@ -21,6 +21,8 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 
 ## Recent Announcements
 
+* Week 11:
+  * [class' reviews](./reviews/week11.html)
 * Spring Break
   * [A3's](./a3) due date is extended 1 week. Now it is due Apr 1.
   * Lecture on Mar 25 is cancelled. Remaining Applications classes are pushed back one week.
