@@ -190,7 +190,7 @@ Perception
 * Christopher Baik et al.  [Bridging the Semantic Gap with SQL Query Logs in Natural Language Interfaces to Databases](https://arxiv.org/pdf/1902.00031.pdf)
 
 
-#### Interaction
+#### <a name="interaction"/>Interaction
 
 Expressiveness
 
@@ -206,7 +206,7 @@ Interaction Design
 * Ali Sarvghad et al. [Embedded Merge & Split: Visual Adjustment of Data Grouping](https://bahadorsaket.com/publication/EMS.pdf)
 * Miro Mannino and Azza Abouzied. [Expressive Time Series Querying with Hand-Drawn Scale-Free Sketches](http://doi.acm.org/10.1145/3173574.3173962)
 
-#### Interfaces
+#### <a name="text"/>Interfaces
 
 Example-driven Interfaces for Extraction
 
