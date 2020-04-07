@@ -1,0 +1,189 @@
+
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+    <div class="deco">COLUMBIA UNIVERSITY COMS W6998</div>
+    <div class="title"><a href="/2020s_w6998" style="color:black;">SYSTEMS FOR HUMAN DATA INTERACTION</a></div>
+</div>
+
+
+
+
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-6 col-md-offset-3">
+    <style>
+p.review {
+  border-left: 2px solid grey;
+}
+
+div.block {
+  margin-bottom: 1em;
+}
+</style>
+
+<h2 id="discussion-points">Discussion Points</h2>
+
+<p class="block">Sieufred is definitely a really interesting system and the grammar is expressive as well. But I am struggling to find examples of queries that it cant do and would hope to see a discussion in class on this.</p>
+
+<h2 id="paper-1">Paper 1</h2>
+
+<h3>4/7/20 3:04 Yin Zhao</h3>
+<p class="block">This paper talks about a system that allows users to specify a set of relationally complete query operations, that would otherwise require multiple SQL like queries. The interface is much like excel, which is familiar to people with various expertise. It has a much richer feature set than excel though, which facilitates relational database queries. The query model is reasonably usable and useful. I like the various user studies in particular.</p>
+
+<h3>4/7/20 0:34 Deka Auliya</h3>
+<p class="block">The paper presents a visual query system through direct manipulations of results and traversing one to many or many to many relationships. The system allows a responsive and incremental query building while still providing the SQL-like expressiveness. Moreover, the ability to view and modify queries immediately allows for rapid feedback compared to traditional query processing. <br />
+<br />
+I think Ultorg is excellent for users who wanted to present some data in form or report format, and know already what this report looks like, but want to skip the nitty-gritty details of having to perform complex queries to achieve a task by just using direct manipulations on the data. Some level of data analysis can be fulfilled but due to the form, tabular and report interface of the results, it is very difficult to get a sense of overall data patterns or analysis compared to data in graphical form. <br />
+<br />
+I think a well-designed relational database is a prerequisite for Ultorg to work well assuming that autojoins and nested joins rely heavily on the foreign key relationships between tables.<br />
+<br />
+Data provenance is visible in Ultorg via the nested relational data model/table layout and field selector. However, I think it would also be useful to have a feature that can generate the SQL queries or some data manipulation scripts of the current state of data results to promote reproducibility or a customized/fine-grained queries.</p>
+
+<h3>4/7/20 0:21 Haneen</h3>
+<p class="block">This paper presents an EXCEL like interface that allows users to construct queries through the direct manipulation of the tables headers and views results in the same table. The paper first explains the query model and how SQL queries are generated and how the results are displayed. It then walks through an example on how to incrementally construct a query. Then it talks about the backend and the rules it has to deliver a responsive interface. Finally, the authors assess the proposed interface through a user study where they explore mainly two dimensions: learnability and usability of the system. Given how ubiquitous the use of Excel is and the technical knowledge needed to construct complex queries, I found the proposed interface extremely beneficial.</p>
+
+<h3>4/6/20 23:00 Xupeng Li</h3>
+<p class="block">This paper presents a new visual query system, SIEUFERD, supporting (1) construct query through direct manipulation of results; (2) view and modify query through direct manipulation interface; (3) full SQL query ability. This system is the first one supporting all three requirements in a single design. Direct manipulation of results means that one can directly work with data, instead of thinking about how to write query, to complete a query. This is more like working with a spreadsheet, e.g. Excel. The most significance of SIEUFERD is that it supports both direct manipulation and SQL expressiveness. To achieve this, SIEUFERD proposes an annotated query model and presents results using nested relational schema. Users can express their jobs like sorting, filtering, join and aggregation by clicking on the nested spreadsheet. User study shows SIEUFERD gains significantly higher scores than Microsoft Access. SIEUFERD is a good tool for querying results. It could be better if it also supports convenient ways of modifying data.</p>
+
+<h3>4/6/20 19:44 Carmine Elvezio</h3>
+<p class="block">This paper presents Sieuferd, a Visual Query system facilitating interaction with relational databases, as a visual alternative to SQL. The authors posit 3 considerations and the system is designed with those in mind: Query specification through direct manipulation of results (which are presented to the user in a central panel showing the current perspective, generated from the state of queries already run), the capability to view and modify queries within the same interface (conducted by interacting with the current perspective and modifying column/filter/formula/etc selections, and utilizing already familiar modalities such as aggregation, joins, and sorting - and further allowing for the modification of past queries without invalidating the current query), and an expressiveness in the same scope as SQL from within the interface (supporting the minimum query operators needed to model SQL). In addition to this, the paper presents the Query model of the underlying system (and how it is presented at the UI layer), which includes features such as table instantiation, nesting (which is critical), joins, sorting, formulas, and filters. This is presented with the details on the system architecture. Further, the authors present a very detailed step by step of using the system. Lastly, the authors present both a formative study and separate user study (comparing Microsoft Access to Sieuferd), showing that Sieuferd is both faster, preferred, and quantitatively better (as shown in a SUS rating). <br />
+<br />
+Compared to previous systems, this system focuses on the integration (and facilitation of) the three considerations discussed above. Specifically, in discussing direction manipulation, there are a number of systems that allow for proxies of this idea (diagram based) but in representing the abstracted schema, do not really present the data in an interactable way, instead forcing users to operate at a higher level and needing to constantly flip back and forth between the operational interface and the actual data. Other systems use an algebraic representation of queries in creating novel interfaces for interaction, but are limited in their capabilities to modify queries that have been created (easily, from within the view of the data and results generated). And other systems, which do support a form of direct manipulation, are limited in the expressiveness of the queries (as in Tabulator, which cannot do calculation or aggregation). Another feature of distinction is in how Sieuferd presents its data using the Nested Table model, which can more naturally present the results of joins and aggregation. Some previous systems based on the Pivot Table model (like Tableau) supported a light form of this, there is a limit to the expressiveness of that support. With the consideration of all of the above, I do believe this work does present a significant contribution of the literature and previous work.<br />
+<br />
+One of the best elements of this system, and what really pushes it beyond the prior work, is in how the interface can be used to easily and naturally achieve complex compound queries. It is clear from the walkthrough and the description (and having used the system) that after a small learning period, it is most definitely more intuitive than SQL. And compared to previous systems, many of which have a similar ease of use, but focusing on graph generation, or limited query capability, this system is actually highly usable as a replacement for SQL. Further, the nested model allows for a much simpler visual representation (compared to a straight tabular format). The combination of the above make for an effective UI. <br />
+<br />
+One of the limitations here was in trying to understand what fields/tables could be auto-joined. It almost creates another system state representation that can only be seen from within contextual menus (where the joins and filter options are present). The explicit join capability is definitely helpful, but it isnt clear when exactly users would need to invoke that. There is a certain amount of trial and error possible there I suppose. However, there it is most likely the case (as shown in the study) that even given that, the system is still more usable. But there is room for improvement here that could be explored in future work. Additionally, the nested layout is most certainly useful from the information visualization perspective but, there are most likely additional ways to visualize the data, and it would be valuable to explore what other approaches make sense there. <br />
+</p>
+
+<h3>4/6/20 19:44 Qianrui Zhang</h3>
+<p class="block"># Review<br />
+This paper presents SIEUFERD, a visual query system that achieves SQL-like expressiveness from a pure direct manipulation interface. It integrates the query and its result into a single interactive visualization and uses spreadsheet concepts to expose the state of current query.<br />
+<br />
+Generally, I thnk the idea of SIEUFERD is very novel and useful in the real world. To my understanding, it's easier to use than SQL and provides more functions than interactive interfaces. And the spreadsheet like interface is also friendly for users to operate.<br />
+<br />
+As for the paper, I like the feature that there are lots of screenshots in the paper and these make it easier to understand the system.<br />
+<br />
+I'm kind of confused about the controlled user study though. I don't really understand the importance of that section because I think section 4 already proves the fact that 'users like SIEUFERD'. And I feel like seeing more experiments proving how SIEUFERD fulfills the requirements mentioned in section 1.</p>
+
+<h3>4/6/20 18:16 Celia Arsen</h3>
+<p class="block">The goal of this paper is to provide an alternative to the typical relational database interaction that is comprised of SQL queries and an interface specifically designed for the task. The authors present SIEUFERD, a tool that incorporates three key elements they find important: First, query specification through direct manipulation of data, second, ability to view and modify queries without leaving the direct manipulation interface, and third, SQL-like expressiveness. One of their goals in this project is clearly to make complex interaction with databases more accessible to less technical users. The authors believe that a direct manipulation interface has several benefits when tackling this challenge, both because the user can see the object of interest, and because the user directly manipulates the object of interest. After defining the problem and reviewing relevant literature, they explain their query model and query-building process by walking through examples. Then they explain their architectural choices and evaluate the tool through two user studies. <br />
+<br />
+There are a lot of things I like about the paper. I like that they are not only presenting a tool, but a new way of thinking about database interaction: that the object of interest should be the data, not the query. The writing is clear, and the examples are very helpful. The nested query model is not necessarily intuitive, and they explain it in a way that seems natural. I also appreciated that they went into detail on the problems users had in the study, because it helped me understand what I might be doing wrong in the assignment. <br />
+<br />
+The authors strongly assert that a spreadsheet-like direct manipulation interface is the answer to a successful visual query language. Is this a scalable approach to database interaction?</p>
+
+<h3>4/6/20 17:37 Zachary Huang</h3>
+<p class="block">This paper talks about a system to support visual query systems that support direct manipulation to specify the query.<br />
+<br />
+The significant part of this paper the design of mapping between direction manipulation and expressive algebra, which, according to their experiments, improve users' task efficiency significantly with better user experience.<br />
+<br />
+The technical strengths is the expressiveness of the query. Compared to the state of art like tableau, SIEUFERD supports more queries like nested<br />
+results, which is a popular query used in different areas. <br />
+<br />
+However, direct manipulation over multiple tables with a large number of columns could be confusing. At least, according to my own experience, for the school tables, there are so many choices to navigate. In the demo, the average meeting time was wrong because the courses include all the semester. However, without enough knowledge about the whole schema, how can users efficiently find this error?<br />
+<br />
+Some cool extension would be how to integrate SQL queries with direct manipulation? Sometimes SQL query works better. Sometimes direct manipulation works better. I hope there is something in between. Also how to integrate with better visualizations is interesting.</p>
+
+<h3>4/6/20 17:19 Adam Kravitz</h3>
+<p class="block">A visual query system that is an alternative to the standard wat of using SQL and tailored form interfaces. The paper thinks a successful alternative has 3 requirement. One, direct manipulation of query specification, two, to be able to view and modify the query without leaving the interface, and lastly 3 being as expressive as SQL. This paper proposes a tool, Sieufred that captures all 3 of these elements.<br />
+<br />
+The significance of Sieufred is that the alternative is either coding in SQL which is only really good/useful for technical users, while non-technical users would have to use restricted interfaces that trades simplicity for expressiveness which is not ideal and not wanted. Sieufred allows an interface for non-technical users with the full expressiveness that SQL gives, allowing more accurate and robust tool to use for all users. The paper talks about how a key insight is that given a suitable data model for results, the complete structure of a query can be encoded in the schema of the querys own result, that means that the query and results can be shown on the same visualization and can be manipulated to change any part of the query. I would say just increasing the expressiveness alone for non-technical users is significant, let alone the rest of the contributions.<br />
+<br />
+I like how Sieufred, layout helps declutter and helps focus on the aspects of querying that matters. A good layout, that is organized and simple can make the difference in a user using a product and not using a product. This layout not only helps beginners to begin but also always experts to dive deeper into the program. I also like how system allows large classes of queries that can be expressed, and how it tries to avoid expensive and error prone queries.<br />
+<br />
+I wish that the paper talks about a suggestion text system or a documentation since it seems that its hard to know what formulas to put in to do things such as aggregation, especially if not using the common model of how excel does things on their spreadsheets. Also a common complaint was that no one wanted to use manual joins or that manual joins were too complex.<br />
+<br />
+An extension I would like to see added to the paper would be how to incorporate editing of data, and is there graphing or easy way to graph. That seems like a natural extension to this tool.<br />
+</p>
+
+<h3>4/5/20 5:06 Yiru</h3>
+<p class="block">This paper aims to build an interface for database which is very cool. <br />
+<br />
+This main is to demonstrate the data as a spreadsheet when users manipulate the data. The author believes that the object of interest is not the query, but the data. Based on this idea, the author builds this interface. It opens the base table as spreadsheet and manipulates the data through the interface. It supports a set of query operators , calculation, aggregation, outer joins, sorting, and nesting. <br />
+<br />
+I like that the paper uses a lot of pictures to show the query model, and after that it explains a complete example which very comprehensive. <br />
+<br />
+In terms of the system architecture, it defers all query processing to a relational database backend and retriever a new result every time the users modify the query model. They give up on the complicated incremental evaluation logic, instead they leverage the user perception limitation. Their optimization is more about how to reduce the work if user does not focus some part. for example, they limited query result number if user can not see it. And it gives up updating the result if the user moves on. There is no wonder that the authors are HCI folks. <br />
+</p>
+
+<h2 id="paper-2">Paper 2</h2>
+
+<h3>4/7/20 3:04 Yin Zhao</h3>
+<p class="block"></p>
+
+<h3>4/7/20 0:34 Deka Auliya</h3>
+<p class="block"></p>
+
+<h3>4/7/20 0:21 Haneen</h3>
+<p class="block"></p>
+
+<h3>4/6/20 23:00 Xupeng Li</h3>
+<p class="block"></p>
+
+<h3>4/6/20 19:44 Carmine Elvezio</h3>
+<p class="block"></p>
+
+<h3>4/6/20 19:44 Qianrui Zhang</h3>
+<p class="block"></p>
+
+<h3>4/6/20 18:16 Celia Arsen</h3>
+<p class="block"></p>
+
+<h3>4/6/20 17:37 Zachary Huang</h3>
+<p class="block"></p>
+
+<h3>4/6/20 17:19 Adam Kravitz</h3>
+<p class="block"></p>
+
+<h3>4/5/20 5:06 Yiru</h3>
+<p class="block">No paper this week</p>
+
+<h2 id="paper-3">Paper 3</h2>
+
+<!--
+## Reviews
+
+-->
+
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>
