@@ -34,6 +34,10 @@ A variety of useful toolkits have been designed to help support information visu
 
 {% include 2018f_datapractitioners.md %}
 
+### Visualization Newsletters
+
+- [Data Is Plural](https://tinyletter.com/data-is-plural/) weekly round up of interesting projects on the internet by BuzzFeed Data Editor-in-Chief
+
 ### Visualization Podcasts
 
 - [Data Stories](http://datastori.es/)
