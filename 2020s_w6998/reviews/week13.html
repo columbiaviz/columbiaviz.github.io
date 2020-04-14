@@ -37,13 +37,37 @@ div.block {
 
 <h2 id="discussion-points">Discussion Points</h2>
 
+<p class="block">Not really the topic of this class, but I keep noticing that the computer scientists I see talking about the social and political impact of ML models are women. Maybe this is just what I have been exposed to so far. Olah's paper recognizes that explaining models is important because they're making high-stakes decisions, but doesn't radically challenge that idea like Rudin does. Olah et. al is a team of 7 people, with just one woman. Where are the male computer scientists researching ML who care about the social impact of their work??</p>
+
 <p class="block">I think it would be great to have a discussion on the first papers interface itself. Theres a lot I dont understand about it and I would like to have a view of how a user is meant to use this end to end to comprehend and then possibly improve a model.</p>
 
 <h2 id="paper-1">Paper 1</h2>
 
+<h3>4/14/20 10:43 Deka Auliya</h3>
+<p class="block">The paper discussed an abstraction to interpret a model. The main questions about model interpretability would be what the model recognizes, how it develops its understanding and making the interpretation on a human scale. Each question posed an interface, which is the union of elements, including atoms (the units of the model), interpretability content, and presentation. For example, in a neural network, we used activations and feature visualization to understand what the model recognizes; use attributions and saliency maps to understand how the concepts are assembled, and grouping of atoms to avoid information overload and scale to human.<br />
+<br />
+Saliency: interface for attribution, which shows how a feature or lower concepts affect the output / higher-level abstractions<br />
+Attribution: how each feature/lower-level construct impacts the output label or higher-level abstractions<br />
+Interpretation: understanding how elements of the model (concepts, atoms) can be used by humans to interpret what the model sees and how the model makes decisions<br />
+<br />
+Grammar is composed of interpretability interfaces that provide a way to represent model contents and transformations related to how the content affects how the model works. The content is composed of substrates which are composed of model parameters, atoms, and the datasets<br />
+<br />
+Example of Interpretability Visualization: LIME, shapley values, PDP, feature coefficients, etc.<br />
+<br />
+Resources: <br />
+- LIME: https://arxiv.org/pdf/1602.04938.pdf, https://github.com/marcotcr/lime<br />
+- Shapley Values: https://christophm.github.io/interpretable-ml-book/shapley.html<br />
+- PDP: https://christophm.github.io/interpretable-ml-book/pdp.html<br />
+- Interpretable Models: https://christophm.github.io/interpretable-ml-book/</p>
+
+<h3>4/14/20 0:06 Celia</h3>
+<p class="block">In this paper they are trying to find an effective way to visualize the decisions of neural networks. Humans not only need to understand what decisions a model arrives at, but how and why those decisions were made. In this paper they use existing interpretability methods to form a grammar, or some building blocks, for creating human-understandable interfaces to tackle this problem. By interpretability, they mean the ability to understand how or why a neural network makes the decisions it does. They say attribution is a set of techniques for answering those questions, by explaining the relationships between neurons. Saliency means understanding which inputs were most important in determining the output classification. The authors critique classic methods of spatial attribution with saliency maps for two reasons. One, they think a pixel is not an appropriate unit for explaining the attribution of high-level concepts like the output class. Two, saliency maps limit users to an interface that only displays the attribution for a single class at a time. They suggest that it is better to ask if a high level idea detected at a given position was important to the classification than to ask about the color of a pixel, for example. Next, they talk about channel attribution, how much did each detector contribute to the final output? The authors argue that when spatial attribution and channel attribution are used together, they can reveal powerful information about a model. However, this still can be way more information-dense that a human can understand, while also losing a lot of information. To finish, they provide a grammar, composed of layers, atoms, content and presentation, for interpretability interfaces. The example they use throughout the article is understanding how and why a neural network decides between two labels for an image. <br />
+<br />
+I liked that the interactive visualizations were integrated into the article so we could see and work with the examples theyre talking about. I wish they had been a little more specific about who they think will use visualizations like these. Making a visualization human-scale may mean something different depending on the audience.<br />
+</p>
+
 <h3>4/13/20 23:59 Richard</h3>
 <p class="block">This paper is about improvements in interfaces for ML interpretability by breaking down interpretability into different "building blocks". It is significant for its ability to let the user visualize multiple combinations of what it calls layers and atoms, with layers consisting of input, hidden, and output layers, and atoms consisting of groups, spatial location, challen, and neurons. It can be better formalized as the following, which they write in the footnotes:<br />
-<code>
 Id = Int<br />
 Atom = Neuron | Spatial | Channel | Group | Whole<br />
 Layer = Input | Hidden Int | Out<br />
@@ -56,7 +80,6 @@ Content = Substrate<br />
 | Transform Content Content?<br />
 Element = InfoVis Content | FeatureVis Content<br />
 Interface = [ Element ][_]<br />
-</code>
 It provides all the technology for all their interpretability techniques. They use some specific terms, such as "saliency," "attribution," and "interpretation." By saliency, they seem to point to saliency maps where pixels that contribute to the classification are highlighted. Attribution is a level above, where it answers the question of "what is causing this classification?" and can be explained or interpreted in many ways, which the paper presents. Overall, "interpretation" can be understood as an improved understanding, to perhaps give "reasoning" to the model. Given their grammar, a visual that I think is useful that they do not discuss is looking at hidden layers that produce incorrect results that produce a lot of falsities for a certain class. A limitation is that I wonder if this paper actually improves interpretability. What metrics are there to prove this? <br />
 </p>
 
@@ -70,20 +93,6 @@ Interpretation: <br />
 methods to describe what the model detects and the process it led to that.<br />
 <br />
 Grammar: The grammar uses building blocks (atoms and layers) and introduces the rule on how they can be combined through substrate and the allowed transformations (filter, project) as well as methods to display the combined sentence (feature visualization/information visualization).</p>
-
-<h3>4/13/20 23:56 Deka Auliya</h3>
-<p class="block">Examples of Sentences: Activation maps, Gradient Maps<br />
-<br />
-Saliency: the activation of the model<br />
-Attribution: how each feature impacts the output label<br />
-Interpretation: how the feature activations and attributions can be used by humans to interpret what the model sees and how the model</p>
-
-<h3>4/13/20 23:55 Deka Auliya</h3>
-<p class="block">Examples of Sentences: Activation maps, Gradient Maps<br />
-<br />
-Saliency: the activation of the model<br />
-Attribution: how each feature impacts the output label<br />
-Interpretation: how the feature activations and attributions can be used by humans to interpret what the model sees and how the model</p>
 
 <h3>4/13/20 23:46 Xupeng Li</h3>
 <p class="block">"attribution" is a set of techniques that answers such questions by explaining the relationships between neurons. "saliency" map is a method to visualize spatial attribution. A saliency map is a heatmap for an input image highlighting the pixels that most caused the output. "interpretation" in this paper mainly concerns about what a neural network detected and why they made a decision, as well as considering human-scale readability. The grammar they propose combines building blocks such as feature visualization and attribution in a structural way. The grammar associates a "presentation" to each displayed "content", where a "content" can be activations or attribution and "presentation" can be feature visualization or traditional information visualization. The content can further stratifies into layers and atoms of a layer (group, spatial, channel, neural) which represents different granularities of neural groups. I think maybe there's a way to visualize which part of the input image most disturbs the network's output, i.e. decrease result's confidence. This may help debug a neural network.</p>
@@ -163,6 +172,27 @@ Overall, I like the interaction design and website design. It is very clean and 
 
 <h2 id="paper-2">Paper 2</h2>
 
+<h3>4/14/20 10:43 Deka Auliya</h3>
+<p class="block">Rudin tends to discourage using black-box models for high-stakes decisions and rather use interpretable models instead. I agree with the author's stance to the level that we should be careful about using black-box models as they lack transparency and accountability. Moreover, added with biases in the data or model assumptions, issues and problems might be difficult to detect when using black-box models and there is a huge risk if they're being used to drive high-stake decisions without a human understanding of what the model detects and how the model works. I appreciate how the author mentioned that the uninterpretable models can still be used in the KDD process but not the decision-making process.<br />
+<br />
+I disagree with author's statement that interpretability vs accuracy is a myth. Some black box models remained unexplained because these models can automatically generate and learn the latent representation of the data, without being constructed manually by-hand. The latent representation is more often have a better performance than interpretable models as they can capture the complex relationships between the features such as in the tasks of Computer Vision (CV) or Natural Language Processing (NLP). Automatic feature learning can be useful, as it can very difficult to derive hand-crafted features that represent data really well for complex tasks, as they require rigorous analyses, and do not scale well. <br />
+<br />
+I also disagree with the author's point that model explanations do not make sense or do not provide enough detail. For example, knowing what the model looks helped us understand what features are deemed important (eg: ears, nose, shapes, colors, edges, etc.)<br />
+<br />
+I think there are lots of ways of incorporating humans' judgments to adjusting the black box models. For example, rule-based and Bayesian techniques can encode prior beliefs so maybe incorporating this technique and making an ensemble of models can help us to adjust the model.</p>
+
+<h3>4/14/20 0:06 Celia</h3>
+<p class="block">The authors argument is that ML should not continue to move in the direction of black-box models, with further models to explain the results, post-hoc. Instead, scientists and engineers should develop ML models that are human-interpretable to begin with, especially when they are used for high-stakes decisions like criminal justice, healthcare, and personal loans. First, she lays out some of the key issues in explainable ML. First, she argues that the trade-off between accuracy and interpretability is unfounded. Second, she points out that explainable ML methods are necessarily an imprecise abstraction of the original models behavior. Third, she notes that explanations are not specific enough to understand black box models, or dont make sense altogether, criticizing saliency maps in particular. Fourth, black box models make it difficult to factor in domain-specific information from outside the database that needs to be combined for risk assessment. Fifth, explainable models that rely on data with encoded human error are even more difficult to troubleshoot.<br />
+<br />
+She identifies a couple problems with interpretable ML. Most notably, corporations can profit off of the IP of a black box model, even if they are not responsible for the quality of individual predictions, even in high-stake situations. Furthermore, designing interpretable models can take a lot of computational work and domain expertise. Lastly, the author proposes ideas for ML governance, and discusses some of the technical challenges of developing interpretable ML models. <br />
+<br />
+I think this is an amazing paper, and I completely agree with her proposals for ML governance. I would actually combine the two. For high-stakes decisions, no black box should be deployed when there exists an interpretable model with the same level of performance. If no interpretable model currently exists, a company must prove that an interpretable model cannot match the performance of their black box model. That way companies are not motivated to actively discourage the development of interpretable models in their own field. I think it is totally inappropriate (and undemocratic, for that matter) for companies to profit off of models that make huge life decisions for people without being held personally or financially responsible. The results are often disastrous. For example, in 2013, the state of Michigan replaced its 30-year-old mainframe system running COBOL and its entire unemployment fraud detection IT team with an automated system called MiDAS. From 2013 to 2015, MiDAS wrongfully accused over 34,000 people of unemployment fraud. Of course, the Michigan Unemployment Insurance Agency benefited greatly from this miscalculation, while thousands of Michiganders had their credit ruined, their homes foreclosed, and filed for bankruptcy. The state stood by MiDAS for years, despite public outcry, which never would have been possible if the MiDAS was a transparent and interpretable model. <br />
+<br />
+Although I agree with a lot of the things this author has to say, there are a few points I disagree with her on. On page 7, she also argues that if models, like product rating systems, are transparent, it will have a uniformly positive impact. I agree that it is good to have transparent models, but we should not assume that just because the model is transparent, it will adjust to feedback to improve to model. Cathy ONeil absolutely destroys this argument in her book, Weapons of Math Destruction. She talks about how U.S News has a somewhat transparent model for ranking colleges. Colleges in turn, have totally transformed their administrative priorities, in an effort to improve their U.S. News ranking. However, little change has been made to the model over time, even though the ranking is not an accurate measure of the quality of academics and student life at collegiate institutions.<br />
+<br />
+She also says that the ProPublica analysis wrongly accused the COMPAS recidivism model of being racially biased. However, even if race was not an explicit feature in this model, it doesnt mean the model isnt racist. She says it herself: age and criminal history are correlated with race in all of our datasets. The point that so many debates about machine learning bias miss is that our training data comes from a biased society. It is not random that age and criminal history are correlated with race in these datasets. Those data come from a country with centuries of institutionalized racism, and the COMPAS model, like many others, perpetuates that.<br />
+</p>
+
 <h3>4/13/20 23:59 Richard</h3>
 <p class="block">This paper argues for interpretable ML models and what problems black box ML models pose, as well as the challenges that exist to create interpretable ML models. It covers three sections: the keys issues with "explainable" ML, the key issues with "interpretable" ML, encouraging responsible ML governance, and algorithmic challenges in interpretable ML, each broadly surveying the topic and arguing for different courses of actions. I certainly agree with the point that corporations can make property from intellectual property afforded to a black box. The paper states "the companies that profit from these models are not necessarily responsible for the quality of individual predictions," and thus there are not really incentives to be "careful in its design, performance, and ease of use." In a similar vein, it seems that people involved in all ends of the process, from venture capital firms to users, don't require accountability on these measures. Rather, it seems the ethics regarding AI and algorithms in industry is left unaccounted for, and allows for companies to continue profiteering off of poor algorithm. I think it also gives good reason for why ML governance is needed, like the paper states.</p>
 
@@ -171,12 +201,6 @@ Overall, I like the interaction design and website design. It is very clean and 
 They categorize black box ML models into two: incomprehensible functions for human, and proprietary models. They then try to expand for each of the problems they have and why it is crucial to building interpretable models for high-stakes applications.<br />
 For example, they show problems with the business model for ML, which affects the models developed and doesn't motivate the companies to build transparent models.<br />
 I agree with the need for open-sourced models for high-stakes applications since their outcome has a direct effect on individuals.</p>
-
-<h3>4/13/20 23:56 Deka Auliya</h3>
-<p class="block">Rudin tends to discourage using black box models and rather use interpretable models than using black box model. I disagree with this statement. I think we should consider the task at hand and decide one method over the other than disregarding one approach entirely. A black box model such as Neural Network model for example, is known to have a superior performance on tasks such Computer Vision and Natural Language Processing than its interpretable counterparts due to its ability to capture complex information that otherwise remains hidden if simpler models were to be used.</p>
-
-<h3>4/13/20 23:55 Deka Auliya</h3>
-<p class="block">Rudin tends to discourage using black box models and rather use interpretable models than using black box model. I disagree with this statement. I think we should consider the task at hand and decide one method over the other than disregarding one approach entirely. A black box model such as Neural Network model for example, is known to have a superior performance on tasks such Computer Vision and Natural Language Processing than its interpretable counterparts due to its ability to capture complex information that otherwise remains hidden if simpler models were to be used.</p>
 
 <h3>4/13/20 23:46 Xupeng Li</h3>
 <p class="block">This paper advocates that instead of studying how to explain a black-box neural network (explainable ML), a better way is to design models that are inherently interpretable (interpretable ML). The paper first discussed a list of issues of explainable ML, including the trade-off between accuracy and interpretability, the fidelity of an explanation, and the complexity of an explanation. Then it discussed the issues and challenges of interpretable ML. 1) I agree that an interpretable model is important because explanations are usually not reliable. Explanations are commonly obtained from another "simpler" black-box model which is very likely to be wrong. An interpretable model can generate faithful explanation from its own computation. 2) I highly doubt about the trade-off between accuracy and interpretability. The more complicated (so more accurate) model is not necessarily harder to be interpreted than a simpler one. An explainable model may capture the correct features from inputs so have better generalization and be more accurate.</p>
@@ -242,19 +266,17 @@ I think this paper already arose many attention. As I know, many important decis
 
 <h2 id="paper-3">Paper 3</h2>
 
+<h3>4/14/20 10:43 Deka Auliya</h3>
+<p class="block">Yes and no. Rudin's ideas are essentially about using interpretable models to make decisions and avoid using models that aren't interpretable. She also mentioned that model explainability != interpretability, although I wonder about what it meant for a model to be explainable vs interpretable. Olah's ideas attempt to provide abstractions on how to interpret a complex model by explaining what the model sees and how the model makes decisions using a building block of interpretability, in which interpretability of the models depends on the interfaces to the concepts and substrates of the model.</p>
+
+<h3>4/14/20 0:06 Celia</h3>
+<p class="block">I don't think they are incompatible. Rudin talks about interpretable models for computer vision. You could use the same interfaces that Olah proposes, except that they wouldn't be explaining a model, they would be the model.</p>
+
 <h3>4/13/20 23:59 Richard</h3>
 <p class="block">It seems like Olah paper is getting there, but not exactly where Rudin wants it to be. It's not accountable in the sense that its interpretations actually mean anything for the people that do not work on the algorithms.</p>
 
 <h3>4/13/20 23:57 Haneen</h3>
 <p class="block">-</p>
-
-<h3>4/13/20 23:56 Deka Auliya</h3>
-<p class="block">Some parts are compatible, some isn't.<br />
-In Olah's paper, it attempts to interpret a black box model while Rudin's favor interpretable models than using a black box model.</p>
-
-<h3>4/13/20 23:55 Deka Auliya</h3>
-<p class="block">Some parts are compatible, some isn't.<br />
-In Olah's paper, it attempts to interpret a black box model while Rudin's favor interpretable models than using a black box model.</p>
 
 <h3>4/13/20 23:46 Xupeng Li</h3>
 <p class="block">I don't think the ideas of these two paper compatible with each other. Olah describe a systematical way to explain a model, which is argued to be error-prone and low-fidelity by Rudin's paper.</p>
@@ -307,3 +329,4 @@ In Olah's paper, it attempts to interpret a black box model while Rudin's favor 
 
 
 </body>
+
