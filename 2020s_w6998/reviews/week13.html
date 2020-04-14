@@ -43,6 +43,7 @@ div.block {
 
 <h3>4/13/20 23:59 Richard</h3>
 <p class="block">This paper is about improvements in interfaces for ML interpretability by breaking down interpretability into different "building blocks". It is significant for its ability to let the user visualize multiple combinations of what it calls layers and atoms, with layers consisting of input, hidden, and output layers, and atoms consisting of groups, spatial location, challen, and neurons. It can be better formalized as the following, which they write in the footnotes:<br />
+<code>
 Id = Int<br />
 Atom = Neuron | Spatial | Channel | Group | Whole<br />
 Layer = Input | Hidden Int | Out<br />
@@ -55,6 +56,7 @@ Content = Substrate<br />
 | Transform Content Content?<br />
 Element = InfoVis Content | FeatureVis Content<br />
 Interface = [ Element ][_]<br />
+</code>
 It provides all the technology for all their interpretability techniques. They use some specific terms, such as "saliency," "attribution," and "interpretation." By saliency, they seem to point to saliency maps where pixels that contribute to the classification are highlighted. Attribution is a level above, where it answers the question of "what is causing this classification?" and can be explained or interpreted in many ways, which the paper presents. Overall, "interpretation" can be understood as an improved understanding, to perhaps give "reasoning" to the model. Given their grammar, a visual that I think is useful that they do not discuss is looking at hidden layers that produce incorrect results that produce a lot of falsities for a certain class. A limitation is that I wonder if this paper actually improves interpretability. What metrics are there to prove this? <br />
 </p>
 
