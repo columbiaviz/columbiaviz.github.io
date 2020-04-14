@@ -1,0 +1,307 @@
+
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+    <div class="deco">COLUMBIA UNIVERSITY COMS W6998</div>
+    <div class="title"><a href="/2020s_w6998" style="color:black;">SYSTEMS FOR HUMAN DATA INTERACTION</a></div>
+</div>
+
+
+
+
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-6 col-md-offset-3">
+    <style>
+p.review {
+  border-left: 2px solid grey;
+}
+
+div.block {
+  margin-bottom: 1em;
+}
+</style>
+
+<h2 id="discussion-points">Discussion Points</h2>
+
+<p class="block">I think it would be great to have a discussion on the first papers interface itself. Theres a lot I dont understand about it and I would like to have a view of how a user is meant to use this end to end to comprehend and then possibly improve a model.</p>
+
+<h2 id="paper-1">Paper 1</h2>
+
+<h3>4/13/20 23:59 Richard</h3>
+<p class="block">This paper is about improvements in interfaces for ML interpretability by breaking down interpretability into different "building blocks". It is significant for its ability to let the user visualize multiple combinations of what it calls layers and atoms, with layers consisting of input, hidden, and output layers, and atoms consisting of groups, spatial location, challen, and neurons. It can be better formalized as the following, which they write in the footnotes:<br />
+Id = Int<br />
+Atom = Neuron | Spatial | Channel | Group | Whole<br />
+Layer = Input | Hidden Int | Out<br />
+Substrate = Network Id Atom Layer<br />
+| Dataset Id<br />
+| Parameters Id<br />
+Content = Substrate<br />
+| Activation Substrate<br />
+| Attribution Substrate Substrate<br />
+| Transform Content Content?<br />
+Element = InfoVis Content | FeatureVis Content<br />
+Interface = [ Element ][_]<br />
+It provides all the technology for all their interpretability techniques. They use some specific terms, such as "saliency," "attribution," and "interpretation." By saliency, they seem to point to saliency maps where pixels that contribute to the classification are highlighted. Attribution is a level above, where it answers the question of "what is causing this classification?" and can be explained or interpreted in many ways, which the paper presents. Overall, "interpretation" can be understood as an improved understanding, to perhaps give "reasoning" to the model. Given their grammar, a visual that I think is useful that they do not discuss is looking at hidden layers that produce incorrect results that produce a lot of falsities for a certain class. A limitation is that I wonder if this paper actually improves interpretability. What metrics are there to prove this? <br />
+</p>
+
+<h3>4/13/20 23:57 Haneen</h3>
+<p class="block">Saliency:<br />
+Saliency is used in the paper to describe Saliency Map a visualization method to show what the networks detect using a heatmap that highlights pixels of the input image that most caused the output classification.<br />
+Attribution: <br />
+Set of techniques that aim to explain and reason about the relationships between neurons in neural networks. <br />
+<br />
+Interpretation: <br />
+methods to describe what the model detects and the process it led to that.<br />
+<br />
+Grammar: The grammar uses building blocks (atoms and layers) and introduces the rule on how they can be combined through substrate and the allowed transformations (filter, project) as well as methods to display the combined sentence (feature visualization/information visualization).</p>
+
+<h3>4/13/20 23:56 Deka Auliya</h3>
+<p class="block">Examples of Sentences: Activation maps, Gradient Maps<br />
+<br />
+Saliency: the activation of the model<br />
+Attribution: how each feature impacts the output label<br />
+Interpretation: how the feature activations and attributions can be used by humans to interpret what the model sees and how the model</p>
+
+<h3>4/13/20 23:55 Deka Auliya</h3>
+<p class="block">Examples of Sentences: Activation maps, Gradient Maps<br />
+<br />
+Saliency: the activation of the model<br />
+Attribution: how each feature impacts the output label<br />
+Interpretation: how the feature activations and attributions can be used by humans to interpret what the model sees and how the model</p>
+
+<h3>4/13/20 23:46 Xupeng Li</h3>
+<p class="block">"attribution" is a set of techniques that answers such questions by explaining the relationships between neurons. "saliency" map is a method to visualize spatial attribution. A saliency map is a heatmap for an input image highlighting the pixels that most caused the output. "interpretation" in this paper mainly concerns about what a neural network detected and why they made a decision, as well as considering human-scale readability. The grammar they propose combines building blocks such as feature visualization and attribution in a structural way. The grammar associates a "presentation" to each displayed "content", where a "content" can be activations or attribution and "presentation" can be feature visualization or traditional information visualization. The content can further stratifies into layers and atoms of a layer (group, spatial, channel, neural) which represents different granularities of neural groups. I think maybe there's a way to visualize which part of the input image most disturbs the network's output, i.e. decrease result's confidence. This may help debug a neural network.</p>
+
+<h3>4/13/20 23:06 Carmine Elvezio</h3>
+<p class="block">This paper presents an interaction and visualization approach towards interpretability of machine learning systems. The authors propose this as a combination of techniques (i.e., building blocks) by using current interpretability methods as part of a grammar then can be composed together in order to facilitate the creation of rich user interfaces. The authors utilize semantic dictionaries in order to allow for greater readability of the neuron activations than abstract vectors, allowing for a fine grained look at what a neuron detects. The authors bring attention to making sense of the hidden layers of neural networks. This is achieved through visualizations along particular channels (instead of only spatial). This also includes showing the magnitude of the activations in the same visualization. In addition to this, the authors also look at how the network builds up to arrive at later decisions and the reasons those decisions were made. To that effect, the paper considers attribution as another interface building block. Further, the authors propose using matrix factorization to create neuron groups to help visualize behavior of the network on a particular image. A grammar is presented to help in the definition of how these building blocks can be combined together.<br />
+<br />
+Compared to previous systems, which take a number of different approaches to attribution, this paper uses a linear approximation method. The authors move away from simpler saliency maps (as heatmaps) alone and use it as a part of the building blocks of the interpretability user interface. Compared to Class Activation Mapping methods, the authors do not simply interpret the results back to the output image, but instead overlap it with the hidden layers as well (through hover overlays). Combined with the presentation of a grammar build on top of the components, I do believe this system to be significantly novel in comparison to previous work. It might not be the case that the individual building blocks, outside of the context of the UI perspective are novel, but the authors explicitly present it as part of the UI system.<br />
+<br />
+I think that the identification of the different components as fundamental building blocks to an interface is intriguing. Especially when the authors are presenting this as a way to fundamentally change interpretability of ml systems. In comparison to previous systems which principally treated these components as separate elements, this work definitely presents a novel improvement. Further, the grammar is intriguing and combined with the visual space representation of how these interfaces can be composed, definitely makes this an easier future system to picture.<br />
+<br />
+One of the limitations here is that there is a lot of ground covered, but the trustworthiness was still unclear after several readings. How is the trustworthiness integrated with the system? In addition, it is unclear what the generality of this is. For example, is an interface built through the grammar really able to be applied between images? <br />
+<br />
+I think in future work, it would be interesting to see how the users could iterate through different layers. Since there might be many, there might be a number of considerations and optimizations that could allow for easier to use experience. And now, it actually could be difficult to understand what is in a particular cell when the grid is very dense. I think additional work in tying output classification to the various input stages (with the ability to more easily juxtapose decisions) would be very helpful for future systems.<br />
+<br />
+In this paper "saliency" means the pixels that most contributed to the outputs classification. "Attribution" is the set of techniques helping to answer how the network assembles individual pieces to arrive at a later decision, looking at the relationships between neurons, in this paper they linearly approximate the relationship. "Interpretation means the attempt to understand how models are making their decisions, including things such as feature visualization, attribution, and dimensionality reduction.<br />
+<br />
+The grammar can be described as elements showing content, using a presentational style. The grammar is presented visually in the paper as a grid. Where atoms (including group, spatial, channel, and neuron) are charted against layers (input, hidden, and output). The identification of something like Feature Visualization appears as the crossing of the channels atom and the hidden layer.<br />
+<br />
+One potential visualization that might be useful (that isnt described) is showing how output classification could be attributed to which groups of the hidden layers had the greatest impact on the decision making of the neural net. (using the visual language of the paper, wed have t in output-neuron, connecting to t in group-hidden. With a I-&gt;C link in the hidden group cell. Please see here: https://docs.google.com/drawings/d/15AOJFkoESthYgXafyoTGfulE0C_y3zEP0GeKcXB30XQ/edit?usp=sharing).</p>
+
+<h3>4/13/20 22:02 Yin Zhao</h3>
+<p class="block">This is a cool interactive visualization of the neural network models, explaining what each hidden layer has and means, and gives users an idea of how to interpret the complex neural network and models. I like that it provides visualization of the rich behavior of the hidden layers, which is very useful for debugging and feature engineering.</p>
+
+<h3>4/13/20 21:22 Zachary Huang</h3>
+<p class="block">This paper talks about state-of-art neural network interpretation. As far as I know, this paper summarizes of what people have done to interpret neural networks and analyzes their pros and cons, but doesn't propose new technique to interpret neural network. Therefore, this paper doesn't propose things beyond prior works. I wish there could be user studies to understand these techniques. Because interpretable machine learning is human-centric, it will be interesting to understand how different people respond to these techniques, and how efficient these techniques would be compared to the others.<br />
+<br />
+Saliency is how much single regions contributes to the final result of machine learning. Attribution in the neural network is a mapping between abstract neurons and understandable attributes. Interpretation is a high-level understanding of the why neural network predict certain results. <br />
+<br />
+The grammar is:<br />
+Id = Int, Atom = Neuron | Spatial | Channel | Group | Whole, Layer = Input | Hidden Int | Out<br />
+Substrate = Network Id Atom Layer| Dataset Id| Parameters Id, Content = Substrate| Activation Substrate| Attribution Substrate Substrate| Transform Content Content?, Element = InfoVis Content | FeatureVis Content, Interface = [ Element ]<br />
+This grammar represents the path to build Interpretability Interfaces. For example, in the paper, it describes a path from the output attribution to the channel feature visualization, and further understand the activations of spatial atoms. Different interfaces could follow different paths using this grammar. It captures the common structure among all these visualization interface.<br />
+<br />
+Zoomable treemap could be a useful visualization. For example, when visualizing saliency maps, we can focus more details for those regions with stronger saliency, instead of zooming in/out for all regions.<br />
+</p>
+
+<h3>4/13/20 16:12 Qianrui Zhang</h3>
+<p class="block"># Review<br />
+This paper combines existing interpretability methods as building blocks for rich user interfaces in order to interpret machine learning models. And as they are using a website to introduce their work, there exist a lot of interactive examples.<br />
+<br />
+I think the work they are doing is significant. As is stated in this paper and Rubin, there are more and more actual needs for the interpretation/explanation of machine learning models. And what this paper proposes can act as a promising direction to meet those needs.<br />
+<br />
+The interactive parts of this paper is amazing. And I think it would be great if other conference papers can have some interactive/demo contents. (if it's possible) Since the paper itself is about interpritivity, those interactions strongly supports their point.<br />
+<br />
+One thing that confuses me: does the methods proposed in this paper always work? Since in this paper, the authors basically go through some successful examples for image classification using some models, it is natural to question whether those methods can be used in other models (or models with different types of inputs, like video) What will be different if the models are complexed. And how general can those methods be? I'm still confused about those questions even after reading.<br />
+<br />
+And I don't know if it's the influence of the format but I feel sometimes it makes me feel difficult to focus on the content and reflect on what I have read. And some figures are not easy to understand with abstract names (e.g. MIXED3B, MIXED4A etc.)<br />
+<br />
+# Addition<br />
+Saliency: the extent one pixel(some pixels) affect the result.<br />
+Attribution: reasoning how features affect output.<br />
+Interpretation: the whole procudure of interpreting. <br />
+<br />
+I think it would be helpful to see how hyperparameters work in a model via visualizations. (Though I'm not sure how to depict them)</p>
+
+<h3>4/13/20 0:33 Adam Kravitz</h3>
+<p class="block">This paper is about an interface to interact with machine learning algorithms since the success of neural networks are increasing, but people still treat the algorithm like a black box without a way to see and interact with the algorithm. Olah combines different techniques into a unified grammar, which allows the user to explore interpretable interface, giving a way to evaluate if a goal was met. In other words, Olah presents interfaces that show what the network detects and it explains how the network develops its understanding.<br />
+The significance is that the abstractions that paper presents can be applied for other domains besides just to neural networks. By using a semantic dictionary, they pair neuron activation with visualizations and then sort the neurons by how activated they are. So these semantic dictionaries can express a neural networks learned abstractions with examples. Next another significance is not just pairing neural networks to the learned abstractions but also using the visualizations to show the magnitude of the activations. I think being able to show any information about what was once a black box to many is very significant, especially in a growing field where the number of black boxes are growing.<br />
+I like that Olah allows the user to pick a different groups to optimize for, using the techniques that Olah allows by flattening a data cube into a matrix of spatial locations and channels. Hopeful being able to pick which grouping to optimize for allows for better tradeoffs than natural groupings.<br />
+I wish that the feature visualization could show how the network builds all the connections to end up with the decisions, and I wish it could explain why certain decision in the network building process was made. The paper talks about a set of techniques called attributions which could potential explain the relationship between neurons but the common interface for attributions has 2 problems. The first problem is what the primary units should be and the second problem is not being able to display attributions from multiple different classes. The last limitation is that the models can be fooled.<br />
+An extension I want on this paper is that why it picked the approaches it did, the paper explains that there are many alternative techniques, and I just wished it explained more why they picked the approaches they did. I also would like to see the other techniques and have a section where they actually compare the different techniques quantitatively in someway.<br />
+What they mean by saliency, is a common interface for attribution that highlights input that are like to cause a certain output value. (not pixel to pixel but by abstract higher level ideas like seeing an ear).The paper talks about a set of techniques called attributions which could potential explain the relationship between neurons. What they mean by interpretability is understanding how a neural network evolves and being able to clearly see how the machine is thinking. The grammar the paper uses is basically trying to find higher level forms of attribution and trying to use matrix factorization allowing optimization for different groupings. Thus constructing groups that prioritize activations by factoring the activations with matrix factorization, and match factorization for each layer. I think a slider visualization would be useful in this case it would change different inputs to see a corresponding output the computer expects to see from the learning it is doing, maybe each layer can also be adjusted with a slider to see how the images change.<br />
+</p>
+
+<h3>4/11/20 6:22 Yiru Chen</h3>
+<p class="block">The paper proposes an interface for existing interpretability methods of machine learning models.<br />
+<br />
+There are already many methods to discover interpretability such as semantics dictionary, attribution like saliency map, group units, etc. Semantics dictionary answers what the neural networks detect. And saliency map and grouping answers how. <br />
+<br />
+It proposes a framework to combine them together. It divides the atoms into four categories, group, channel, neuron, spatial. And it offers user choice on what user what to explore. <br />
+<br />
+Later on, it discusses trustworthy issues. Model behavior is extremely complex, and they show only specic aspects of it. I think as it mentions in the second paper of this week. Such explainable Ml results are mostly vague and do not specify how the black box works. <br />
+It is hard to say how trustworthy it is. <br />
+<br />
+Overall, I like the interaction design and website design. It is very clean and easy to use for these works.</p>
+
+<h2 id="paper-2">Paper 2</h2>
+
+<h3>4/13/20 23:59 Richard</h3>
+<p class="block">This paper argues for interpretable ML models and what problems black box ML models pose, as well as the challenges that exist to create interpretable ML models. It covers three sections: the keys issues with "explainable" ML, the key issues with "interpretable" ML, encouraging responsible ML governance, and algorithmic challenges in interpretable ML, each broadly surveying the topic and arguing for different courses of actions. I certainly agree with the point that corporations can make property from intellectual property afforded to a black box. The paper states "the companies that profit from these models are not necessarily responsible for the quality of individual predictions," and thus there are not really incentives to be "careful in its design, performance, and ease of use." In a similar vein, it seems that people involved in all ends of the process, from venture capital firms to users, don't require accountability on these measures. Rather, it seems the ethics regarding AI and algorithms in industry is left unaccounted for, and allows for companies to continue profiteering off of poor algorithm. I think it also gives good reason for why ML governance is needed, like the paper states.</p>
+
+<h3>4/13/20 23:57 Haneen</h3>
+<p class="block">The paper argues that adding a layer on top of black-box ML models that aim to explain them is problematic, and they advocate to build interpretable models instead of attempting to interpret the outcome of a model as an afterthought.<br />
+They categorize black box ML models into two: incomprehensible functions for human, and proprietary models. They then try to expand for each of the problems they have and why it is crucial to building interpretable models for high-stakes applications.<br />
+For example, they show problems with the business model for ML, which affects the models developed and doesn't motivate the companies to build transparent models.<br />
+I agree with the need for open-sourced models for high-stakes applications since their outcome has a direct effect on individuals.</p>
+
+<h3>4/13/20 23:56 Deka Auliya</h3>
+<p class="block">Rudin tends to discourage using black box models and rather use interpretable models than using black box model. I disagree with this statement. I think we should consider the task at hand and decide one method over the other than disregarding one approach entirely. A black box model such as Neural Network model for example, is known to have a superior performance on tasks such Computer Vision and Natural Language Processing than its interpretable counterparts due to its ability to capture complex information that otherwise remains hidden if simpler models were to be used.</p>
+
+<h3>4/13/20 23:55 Deka Auliya</h3>
+<p class="block">Rudin tends to discourage using black box models and rather use interpretable models than using black box model. I disagree with this statement. I think we should consider the task at hand and decide one method over the other than disregarding one approach entirely. A black box model such as Neural Network model for example, is known to have a superior performance on tasks such Computer Vision and Natural Language Processing than its interpretable counterparts due to its ability to capture complex information that otherwise remains hidden if simpler models were to be used.</p>
+
+<h3>4/13/20 23:46 Xupeng Li</h3>
+<p class="block">This paper advocates that instead of studying how to explain a black-box neural network (explainable ML), a better way is to design models that are inherently interpretable (interpretable ML). The paper first discussed a list of issues of explainable ML, including the trade-off between accuracy and interpretability, the fidelity of an explanation, and the complexity of an explanation. Then it discussed the issues and challenges of interpretable ML. 1) I agree that an interpretable model is important because explanations are usually not reliable. Explanations are commonly obtained from another "simpler" black-box model which is very likely to be wrong. An interpretable model can generate faithful explanation from its own computation. 2) I highly doubt about the trade-off between accuracy and interpretability. The more complicated (so more accurate) model is not necessarily harder to be interpreted than a simpler one. An explainable model may capture the correct features from inputs so have better generalization and be more accurate.</p>
+
+<h3>4/13/20 23:06 Carmine Elvezio</h3>
+<p class="block">This paper presents a thorough argument in favor of interpretable machine learning models over black box ml models (with the explainable models as well). The authors believe that the usage and newfound reliance on black box models in many fields where the accuracy and comprehensibility of the models is critical, is problematic as the models can make mistakes, not be transparent, or not be able to be integrated with decisions made externally to the models. In the scenario of using explainable ml models, there is a second model that is created with the original, which attempts to explain. The authors expose several issues with this: there is not necessarily a trade off between accuracy and interpretability, the explanations may not be faithful to the original models (10% error means 10% of cases are fails), the explanations may not make sense in human languages (saliency does not show anything other than where the network is focused), the black box models dont necessarily allow for the inclusion of external judgement or considerations, the models may be complicated and propagate errors. From there, the authors also look at issues with Interpretable ML, namely, the there are potential profit advantages to keeping the black box solutions opaque, that interpretable models can take significant effort to construct (do companies have people that can work on them), and lastly, that there may be an advantage to the hidden patterns discovered by black boxes (which isnt necessarily a phenomenon exclusive to black box models). From there the authors consider how to apply governance to the development and release of models in order to encourage greater transparency. And lastly, the authors also look at what methods can be used to deal with challenges in the creation of Interpretable ML models. <br />
+<br />
+Over previous work has looked at considerations of Interpretability in its domain-specific requirements, or the advantages or sparse data presentation (in links between entities). And there has been work in explainability of ML models. But the authors point out issues with these models, as being not necessarily practical (applying to real world problems) or created without a necessary foundation in actual data (as in the DARPA example). Over the previous work, the authors attempt to paint a picture of why black box models are problematic, from a domain-application perspective as well as attempt to explain the limitations in explainable ml systems. The explanations are fairly convincing and while I do see a certain amount of bias here, it does appear as though the complaints are valid. However, separate from those considerations, and the fact that interpretability has indeed been somewhat limited in the exploration of the current space, a survey styled paper like this is actually quite significant. However, I do believe that it is important to be mindful of the bias clearly present.<br />
+<br />
+I really like the 5 point breakdown of issues with explainable and black-box ML. I think the authors do a great job highlighting the core issues there, including some of the arguments proponents of black-box systems might make. Further, the explanation of why interpretable-ML has been less widely accepted, and somewhat more difficult, was illuminating. I think over previous work which didnt necessarily provide as wide-ranging a view, this helps to create an easily digested set of points. I also really like the algorithmic explanations, as I found them clear and concise (and dont dwell heavily on algorithms that are not presented in the paper as a core contribution, but simply use them as examples to highlight how an interpretable-ML system might be able to provide weighted improvements).<br />
+<br />
+However, one of the limitations here is in a set of examples that would show side-by-side comparisons, in more detail, to help indicate to the user why the authors claims as to the parity in classification should be believed. Black box systems are still the industry standard, and I think the authors need to do more to highlight how interpretable-ML systems can go toe-to-toe. Additionally, I think the authors should have done a better domain exploration (with examples) of how interpretable-ML systems could be used in various domains. They did this for Black box systems in order to underscore the limitations present, but they dont do a similar dive for interpretable-ML. <br />
+<br />
+I think in the future, I think another survey going into further details of how interpretable-ML has already been used in some domains would be very helpful. The author already alludes to a number of instances in which it has been applied, but it would be great to see papers doing more case-study style breakdowns of the differences.<br />
+<br />
+In defense of one point in the paper: I completely agree with issues with COMPAS. It is very clear that there is some very problematic prejudice being applied in a model (in an attempt to explain what the model might be doing). One of the claims of systems like COMPAS is often that it is too complex for a human to understand, but that the model is correct in-and-of itself, The largest issue with this is that when deploying systems like this, you are dealing with peoples lives. It is incredibly irresponsible to basically implicitly trust a system like this without the capability to truly understand what is going on. Even a .1% error can mean that thousands of Americans might be wrongfully imprisoned, or that tens of thousands of people do not get diagnosed properly. The authors claims as to responsibility with these issues is incredibly on point and I think that that alone rules out Black box ML systems from considerations in those domains. Even if the internal model isnt doing this, for an explanation to get it wrong and then be used to try to understand the system is almost equally problematic.<br />
+<br />
+In argument against one point in the paper: While Im in favor of greater transparency overall, Im not sure that the claim that allowing for gaming a system would align with overall improvement, is correct. It needs to take into consideration who is making that determination. From the companys perspective, gaming a system might include reverse engineering the algorithms in order to create a competing product. While the notions of greater competition fostering better products does hold, it is not always the case that achieving that through IP theft allows for a better overall result. For example, lets say that a company is using a transparent model for creating products. It is possible that the company is nearly complete when the model is taken by a competitor who finishes it as well and then delivers under cost (none of the original development expenses are borne by the second company, thus they can afford to sell for cheaper). Sooner or later, the other company might not be able to compete any more, leaving the market. If this occurs, then the amount of competition overall decreases. Thus, there is some room for black box models to protect IP. However, it is also possible to create an open, auditable, but still IP protected model, and try to achieve a middle ground. The authors do not seem to consider this possibility, even though it would technically favor their ground.<br />
+</p>
+
+<h3>4/13/20 22:02 Yin Zhao</h3>
+<p class="block">This work talks about issues with black box and explainable ML in high-stake decision making. The author holds a strong opinion against using the black box models blindly, and believes that interpretable models have the same accuracy as more complext models, but without the issues of them. I do agree with the author's opinion and have doubts about how the complex black box models would work, since they don't have knowledge of the expertise, and are so complicated for any human to comprehend. I would like to see more concrete examples and proof that the interpretable models have similar accuracy as complex models, not only the claims by the author.</p>
+
+<h3>4/13/20 21:22 Zachary Huang</h3>
+<p class="block">This paper argues why explaining black-box machine learning in high-stakes decisions. The most significant part of this paper is the points it makes to argue that explaining black-box machine learning is misleading. This paper summarizes previous methods of explaining black-box machine learning and errors they have made and argues that current explanations of machine learning are biased and too complicated for humans to make sense, which causes trouble in decision making. Meanwhile, it's not sure whether black-box machine learning performs better than interpretable models. I wish the paper could further analyze what it lacks to make machine learning interpretable. For example, for the section "Explanations often do not make sense, or do not provide enough detail to understand what the black box is doing", it is true that saliency itself doesn't explain anything. But is it possible for us to build a connection between saliency and high-level logical entity to help understand this saliency?<br />
+<br />
+One point that I agree with the author is that current techniques provide explanations that are hard to understand.Technique like saliency map doesn't answer the question "why does neural network output this result?" directly. It seems like people have different definitions of interpretation. Some techniques focus on understanding "what neural network is doing". While they think to understand the behavior of the neural networks is a way of interpretation, what people want is to understand "why do they choose to behave in such a way". Because human logics are hard to model, it's usually challenging to interpret the neural network, in the same way, human think.<br />
+<br />
+The point that I disagree most is that "Black box models are often not compatible with situations where information outside the database needs to be combined with a risk assessment." I agree that currently, certain machine learning models have their bottlenecks, and can't perform well in all cases. However, these complex situations could be solved by machine learning, and I believe it will be solved with better performance than letting humans manually check each piece of documents. For example, meta-learning is a subfield of machine learning that, instead of learning a specific task, learns to learn under different situations with different information. Maybe this subfield could be developed to combine external information together.</p>
+
+<h3>4/13/20 16:12 Qianrui Zhang</h3>
+<p class="block"># Review<br />
+As the title shows, this paper argues that people should stop trying to explain black box machine learning models for high stakes decisions. Instead, people should design models that are inherently interpretable. To prove the point, the author lists key issues with both explainable ML and interpretable ML and shows the challenges in interpretable ML.<br />
+<br />
+I think the reasoning in this paper is very clear and structured, which makes it easy to understand the points. While I cannot fully agree with the title, I still think the author does a very good job in writing and reasoning. And one interesting thing is, while the title of the paper is 'sharp' and straightforward, the content is actually a relatively objective discussion.<br />
+<br />
+One thing that I want to know further is: what is the line between 'high stakes decisions' (where using a black box machine learning model is not encouraged) and 'not high stakes decisions'? And why 'high stakes ' is stressed here?<br />
+<br />
+# Addition<br />
+I agree with section 3(iii): black box models seem to uncover "hidden patterns". I'm not an expert of machine learning, but I think one of the reasons why it is so popular is 'it works'. Take object rekognition as an example, for many tasks, what people do is only adjusting parameters and waiting for results, and all the reasons are concealed in those hidden layers. It will be difficult to identify what those features actually are.<br />
+<br />
+I disagree with section 2(ii): explainable ML methods provide explanations that are not faithful to what the origin model computes. Admittedly the explaination models will not be exactly the same as the origin models, but that doesn't mean 'not faithful' or 'wrong'. The model doesn't have to be perfect and correct at every case. For instance, current state-of-the-art deep learning methods in face recognition are also not able to recognize every face correctly. As long as the error rate is within a threshold, the models will be useful in real world.</p>
+
+<h3>4/13/20 0:33 Adam Kravitz</h3>
+<p class="block">The paper is talks about the differences between black boxes and inherently interpretable models, and tries to explain why black boxes should be avoided. The paper does this by explain that black box machine learning models are currently being used for high stakes tasks, which further down the line and even now can and will cause problems in certain fields, like the healthcare field or like a field like criminal justice. The premise of this idea is simple, not knowing how the code works leads to bad practice which can continue to cause more harm.<br />
+The significance of this paper is that the paper tries to break the norm and a belief that the more complex a model is, the more accurate the model. Black box machine algorithms are very complex, complex enough that the creator doesnt even know the connections the model made, and that property is what the paper is trying to make machine learning programmers to avoid. The paper wants to show that there is not a significant difference in performance between more complex much simpler classifiers after preprocessing, as well as showing that there doesnt have to be a trade off between accuracy and interpretability. I do think that the papers point is important and I think it allows a platform to discuss the trade off of interpretability versus the success of the black box model.<br />
+I like how the paper calls out statistical explanations which are not really explanations to explain the black box model. Statistical explanations are actually just calculations to show trends in the data and show trends how the features relate to predictions. I think this argument makes it seem that any explanations of black box models we have are not really explanations and thus the black box model is not safe enough to use since there are no explanations of whats happening.<br />
+A limitation to the paper is that it says that the black box model can not be used since we cannot explain it but even with a low fidelity explanation model where it could be wrong 10% of the time. But some predictions as read in previous papers can be good enough and the papers argument makes it seem that any error is bad. I wish it talked about more what accuracy of an explanation would be good enough. A limitation to creating an interpretable model is that there is a computation hurdle in designing the model. There is also a limitation to the black box model since it could do miscalculations which could lead to more problems down the road. I wish the paper had more explanations to what computation hurdles in design have to be overcome for interpretable models and I wished it clarified that the black box model can be good for other use cases besides big decision making processes that affect a persons life.<br />
+What if the paper extended on Deep Learning interpretation on pairing with features to see how the model changes. Explain how, what we see still may not be what the computer is thinking when we are changing a feature. Some features the computer defines will never be the exactly the way we think or even interpret, so is a guess at interpreting the black box of ML good enough?<br />
+The papers man points is that it is a slippery slope to allow computers to be a black box not knowing how they think when we start using computers for very important decision. It seems he doesnt want the computer to ever be right in its output but for the wrong reason, and also it wants it to be wrong as little as possible. I agree in some extent that understanding how a machine works is important, but I dont agree that all the progress that has been done should just stop. ML machines still do an amazing job with out us understanding what they are thinking, but I do think the change is important since us understanding will allow us better understanding in the future, (maybe to build future models) as well stop any oversights we currently dont understand a machine is making right now.<br />
+</p>
+
+<h3>4/11/20 6:22 Yiru Chen</h3>
+<p class="block">This paper is challenging a idea in the ML community that the black box is necessary for accuracy. And it advocates for designing models that are inherently interpretable. <br />
+<br />
+First, it distinguishes explaining black boxes from using inherently interpretable models. The authors thinks that now the explosion of work of explaining the black box is very problemetic. I agree with that. The author also clarifies that an interpretable machine<br />
+learning model is constrained in model form so that it is either useful to someone, or obeys structural knowledge of the domain. This is very different from the black boxs. <br />
+<br />
+Then , the paper discuss the issues of both the explainable ml and interpretable model. <br />
+I like her point that for now most of the explanation does not make sense and do not provide enough detail about what the black box is doing now. People are finding some correlations but it is very vague and very hard to say this decides or implies what. But the interpretable model also has drawbacks which are very worrying. The interpretable model only models what people know. But for the hidden logic, it is hard to include in the model. However the black box may include that info. And also some outside reasons that the business may sell the black box model for profit which is inevitale for now.<br />
+<br />
+I think this paper already arose many attention. As I know, many important decisions are made from interpretable models instead of black boxs.</p>
+
+<h2 id="paper-3">Paper 3</h2>
+
+<h3>4/13/20 23:59 Richard</h3>
+<p class="block">It seems like Olah paper is getting there, but not exactly where Rudin wants it to be. It's not accountable in the sense that its interpretations actually mean anything for the people that do not work on the algorithms.</p>
+
+<h3>4/13/20 23:57 Haneen</h3>
+<p class="block">-</p>
+
+<h3>4/13/20 23:56 Deka Auliya</h3>
+<p class="block">Some parts are compatible, some isn't.<br />
+In Olah's paper, it attempts to interpret a black box model while Rudin's favor interpretable models than using a black box model.</p>
+
+<h3>4/13/20 23:55 Deka Auliya</h3>
+<p class="block">Some parts are compatible, some isn't.<br />
+In Olah's paper, it attempts to interpret a black box model while Rudin's favor interpretable models than using a black box model.</p>
+
+<h3>4/13/20 23:46 Xupeng Li</h3>
+<p class="block">I don't think the ideas of these two paper compatible with each other. Olah describe a systematical way to explain a model, which is argued to be error-prone and low-fidelity by Rudin's paper.</p>
+
+<h3>4/13/20 23:06 Carmine Elvezio</h3>
+<p class="block">I think the ideas in both papers are compatible, if somewhat orthogonal. Olahs work is focusing on interaction for models based on Interpretive-ML, where Rudin is focusing on the differences between explainable-ML and interpretable-ML, but also looking at the advantages of interpretive-ML in general. I dont see that the two are necessarily competing. There are some claims as to explainable-ML in Olah, but that is in the context of defining these interpretive-ML building blocks. Rudin doesnt seem to place any preferences in the nature of the interpretive-ML. Id argue that Olah actually does a better job of explaining what the requirements of interpretive-ML need to be. Where Rudin focuses on why pick interpretive-ML, Olah explains how you might be able to do it. The ideas in Olah (attribution, feature viz, etc), and the concerns in Rudin (constructing optimal logical models, constructing sparse scoring systems, etc) are not mutually exclusive. In fact, as Olah is principally concerned with the interaction and visualization portion of interpretive-ness, it could even use approaches taken in Rudin to power its grammar.</p>
+
+<h3>4/13/20 22:02 Yin Zhao</h3>
+<p class="block">They are compatible with each other in some sense, because both of them treat the interpretability very importantly, and would not ignore the real meaning of what the features and models do. However, Rudin clearly does not like very complex models, while Olah is trying to interpret the complex models.</p>
+
+<h3>4/13/20 21:22 Zachary Huang</h3>
+<p class="block">I think the ideas in Olah and Rudin are compatible with each other. The points that Rudin made are that the current interpretation of black-box machine learning cant be applied directly in high-stakes decisions because of their limitations, which may cause huge loss. The points that Olah made are different techniques that people have applied to better understand why black-box machine learning makes certain predictions. However, Olah didnt assert that these techniques are sound. These techniques are still at experimental stages, and there is a lot to explore in these areas. Because of the limitations in current black-box machine learning interpretations, it is safer for people to choose interpretable models in high-stakes decisions. However, that doesnt mean, in the future, we should still stick with interpretable models. It just takes time for the machine learning community to develop techniques that are both intuitive and reliable for people to apply them in high-stakes decisions.</p>
+
+<h3>4/13/20 16:12 Qianrui Zhang</h3>
+<p class="block">I don't really know what is the 'compatible' here. Since I feel the ideas in Olah is combining existing interpretability techniques to interfaces and the concerns in Rudin are about those techniques themselves. And in this sense, it's hard to say whether or not they 'compatible' with each other.</p>
+
+<h3>4/13/20 0:33 Adam Kravitz</h3>
+<p class="block">Olah and Rudin are working towards the same goal, Olah ideas seems to be more on how to understand the models better to build better models while Rudin think understanding ML models is ethical more sound when import decisions need to be made. Even though the papers approach are different, and what the papers care about are different, they are compatible since they both lead and are talking about achieving the same goal of understanding ML models.</p>
+
+<!--
+## Reviews
+
+-->
+
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>

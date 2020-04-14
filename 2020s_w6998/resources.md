@@ -26,6 +26,10 @@ A variety of useful toolkits have been designed to help support information visu
 -   [Plotly](https://plot.ly/) - built on top of D3, offers abstractions that enable building interactive visualizations very quickly with well-known charts.
 -   [Bokeh](https://bokeh.pydata.org/en/latest/) - designed for high-performance interactivity over very large or streaming datasets in web browsers. By Anaconda team.
 
+### Visualization How-Tos
+
+* [BBC Style Guide](https://bbc.github.io/rcookbook/#make_a_multiple_line_chart)
+
 ### Exploratory Visualization Tools
 
 -   [Tableau for Students](http://www.tableausoftware.com/student/) – get a free Tableau license as a student
