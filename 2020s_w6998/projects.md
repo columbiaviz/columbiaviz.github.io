@@ -23,6 +23,7 @@ Percentages are of your total class grade.
 
 Updates
 
+* 4/15: updated details of showcase
 * 3/4: extended related work deadline by Mar 6 Midnight
 * 2/22: updated assessment for related works part of the proposal.
 * 2/12: extended initial prospectus deadline by one week to 2/19
@@ -109,14 +110,32 @@ Slides should cover:
 
 ## <a name="showcase"/>Project Showcase 
 
-Your team will prepare and present a project poster at the end-of-course poster session.   This gives you an opportunity to present a short demo of your work and show what you have accomplished in the class!
+Your team will prepare and present a project poster at the end-of-course showcase session.   This gives you an opportunity to present a short presentation demo of your work and show what you have accomplished in the class!  
+
+Your presentation should be polished.  Since there is still time until the final report, you are encouraged to also discuss ideas or challenges you are still considering.  Since you are presenting to your peers as well, make sure you give your colleagues enough context to understand your ideas.
+
+Overall logitics
+
+* 2 person teams: 6 min presentation, 5 min feedback
+* 1 person teams: 5 min presentation, 4 min feedback
+* Timing is strict since we have many groups.  *Practice ahead of time so your presentation is smooth!  Only takes 5/6 minutes per practice :)*
+* Each team member should speak
+* Make sure all demos are embedded as GIFs or videos in your slides.
+* Staff will host and share their screen; we will change slides on your behalf
+
+Your presentation should cover (in content, not necessarily one slide for each point)
+
+* Motivation and *scientific hypotheses*
+* Technical challenge and contribution
+* Related work and how they are related
+* Simple example to illustrate idea
+* Technical insights/experimental findings so far
+* GIF/video of demos/screenshots (if applicable)
+* Feedback: 1-3 questions you’d like feedback on
 
 **Submission**
 
-* Attend and present at the poster session.
-* Give a short 3 minute talk about your project
-  * 9 slides x 20 sec per slide
-
+* Submit URL to your group's [PDF file or google slides](https://forms.gle/o5vmVj5Awfk3f3Lw7)
 
 
 ## <a name="report"/>Report 
