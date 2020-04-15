@@ -112,7 +112,9 @@ Slides should cover:
 
 Your team will prepare and present a project poster at the end-of-course showcase session.   This gives you an opportunity to present a short presentation demo of your work and show what you have accomplished in the class!  
 
-Your presentation should be polished.  Since there is still time until the final report, you are encouraged to also discuss ideas or challenges you are still considering.  Since you are presenting to your peers as well, make sure you give your colleagues enough context to understand your ideas.
+Your presentation should be polished.  Since there is still time until the final report, you are encouraged to also discuss ideas or challenges you are still considering.  
+
+**Since you are presenting to your peers as well, make sure you give your colleagues enough context to understand your ideas.  It's better to make sure the audience learns a few specific ideas than try to say everything.**  Come to office hours or contact the staff if you would like feedback.
 
 Overall logitics
 
