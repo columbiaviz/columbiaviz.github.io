@@ -10,8 +10,8 @@ date,slug,reviews,slides,notes,link,paper1,presenter1,scribe1,paper2,presenter2,
 18-Mar,Spring Break,,,,,,,,,,,,,
 25-Mar,Cancelled,,,,,,,,,,,,,
 1-Apr,Applications: text & docs,./reviews/week11.html,./lecs/11_text.pptx,./lecs/11_scribe.pdf,,"<a href=""http://nb.mit.edu/f/57743"">Wrangler</a>","Jake Fisher	",Qianrui(Owen) Zhang,"<a href=""http://nb.mit.edu/f/57750"">Texture</a>",Qianrui(Owen) Zhang,Jake Fisher,"<a href=""http://nb.mit.edu/f/57744"">Predictive Interaction</a>",,"<a href=""./a3"">A3</a> (Extended to Apr 1 11:59PM)<br/><a href=""./projects#prototype"">Project Check-in</a>"
-8-Apr,Applications: guest lecture Eirik Bakke,./reviews/week12.html,,,,"<a href=""http://nb.mit.edu/f/58693"">Ultorg/SIEUFERD + Video</a>",,,,,,"<a href=""https://sdg.csail.mit.edu/projects/espalier/"">Object Spreadsheets (Espalier)</a>",,"<a href=""./a4.html"">A4</a> (Due Apr 6 11:59PM EST )"
-15-Apr,Debugging: ML interpretation,,,,,"<a href=""https://distill.pub/2018/building-blocks/"">Olah</a>",Deka Auliya Akbar,Yin Zhao,"<a href=""http://nb.mit.edu/f/57745"">Rudin</a>",Yin Zhao,Deka Auliya Akbar,TFX,,
+8-Apr,Applications: guest lecture Eirik Bakke,./reviews/week12.html,./lecs/12_spreadsheets.pptx,,,"<a href=""http://nb.mit.edu/f/58693"">Ultorg/SIEUFERD + Video</a>",,,,,,"<a href=""https://sdg.csail.mit.edu/projects/espalier/"">Object Spreadsheets (Espalier)</a>",,"<a href=""./a4.html"">A4</a> (Due Apr 6 11:59PM EST )"
+15-Apr,Debugging: ML interpretation,./reviews/week13.html,./lecs/13_interpretableml.pptx,,,"<a href=""https://distill.pub/2018/building-blocks/"">Olah</a>",Deka Auliya Akbar,Yin Zhao,"<a href=""http://nb.mit.edu/f/57745"">Rudin</a>",Yin Zhao,Deka Auliya Akbar,TFX,,
 22-Apr,Debugging: data analysis explanation,,,,,"<a href=""http://nb.mit.edu/f/57746"">Scorpion</a>",Richard Zhang,Zachary Huang,"<a href=""http://nb.mit.edu/f/57747"">DIFF</a>",Zachary Huang,Richard Zhang,Rain<br/>Tableau Explain Data Video,,
 29-Apr,Final Project Showcase,,,,,,,,,,,,,"<a href=""./projects#showcase"">Showcase</a>"
 10-May,---,,,,,,,,,,,,,"<a href=""./projects#report"">Report due</a>"
