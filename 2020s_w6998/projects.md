@@ -114,7 +114,7 @@ Your team will prepare and present a project poster at the end-of-course showcas
 
 Your presentation should be polished.  Since there is still time until the final report, you are encouraged to also discuss ideas or challenges you are still considering.  
 
-**Since you are presenting to your peers as well, make sure you give your colleagues enough context to understand your ideas.  It's better to make sure the audience learns a few specific ideas than try to say everything.**  Come to office hours or contact the staff if you would like feedback.
+**Since you are presenting to your peers as well, make sure you give your colleagues enough context to understand your ideas.  In addition to _what_ you did, help your colleagues understand _why_ you made your specific choices, and provide examples.  It's better to make sure the audience learns a few specific ideas than try to say everything.**  Come to office hours or contact the staff if you would like feedback.
 
 Overall logitics
 
