@@ -29,6 +29,7 @@ A variety of useful toolkits have been designed to help support information visu
 ### Visualization How-Tos
 
 * [BBC Style Guide](https://bbc.github.io/rcookbook/#make_a_multiple_line_chart)
+* [The ggplot flipbook](https://evamaerey.github.io/flipbooks/about)
 
 ### Exploratory Visualization Tools
 
