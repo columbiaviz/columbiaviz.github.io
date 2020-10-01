@@ -1,5 +1,5 @@
 ---
-layout: root
+layout: ROOT
 
 ---
 
