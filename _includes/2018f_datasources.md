@@ -6,6 +6,7 @@
 * [Stanford Open Policing Dataset](https://openpolicing.stanford.edu/data/)
 * [Physician Medicare Data](https://data.medicare.gov/data/archives/physician-compare)
 * [Civil Rights Data Collection](https://ocrdata.ed.gov/)
+* [Data Is Plural newsletter's Structured Archive](https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0): spreadsheet of  public datasets ranging from curious to wide-reaching, e.g. "How often do Wikipedia editors edit?", "Four years of rejected vanity license plate requests"
 * [Yelp Open Dataset](https://www.yelp.com/dataset)
 * [U.S. Census Bureau](https://www.census.gov/data.html): use their Discovery Tool
 * [US Health Data](https://data.cdc.gov/): central searchable repository of US health data (Center for Disease Control and National Center for Health Statistics), e.g. surveys on pregnancy, cause of death, health care access, obesity, etc.
