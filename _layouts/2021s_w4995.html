@@ -1,10 +1,11 @@
 ---
-title: Data Vis 2020 Spring
-courseno: W4995.010
-submissionform: https://forms.gle/NEqkDH5cbnFhzWMx9
-peerassessform: https://forms.gle/Bw74fCt9eDfgZRgt9
-applyenrollform: https://forms.gle/eztN4rRJtRVWjHiz9
-canvasfiles: https://courseworks2.columbia.edu/courses/99589/files/
+title: Data Vis 2021 Spring
+courseno: W4995.009
+submissionform: https://forms.gle/VHTnZoXvZBp2oqyZA
+peerassessform: https://forms.gle/tYVmuJFTSsip2sAaA
+applyenrollform: https://forms.gle/CFdkiivttRVCQSLj8
+courseworks: https://courseworks2.columbia.edu/courses/127391
+canvasfiles: https://courseworks2.columbia.edu/courses/127391/files/
 ---
 
 <html>
@@ -13,7 +14,8 @@ canvasfiles: https://courseworks2.columbia.edu/courses/99589/files/
     <meta content="utf-8" http-equiv="encoding">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ layout.title }}</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ "../files/css/bootstrap.min.css" | relative_url }}" />
     <link rel="stylesheet" type="text/css" href="{{
 																								 "../files/css/style_w4995.css" | relative_url }}" />
@@ -29,7 +31,6 @@ canvasfiles: https://courseworks2.columbia.edu/courses/99589/files/
   <!-- Fixed navbar -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-      {% include w4995_outdatednotice.html %}
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
@@ -50,11 +51,14 @@ canvasfiles: https://courseworks2.columbia.edu/courses/99589/files/
               <li><a href="a0.html">A0: Apply To Enroll</a></li>
               <li><a href="a1.html">A1: Sparks Presentation</a></li>
               <li><a href="a2.html">A2: Visualization Design</a></li>
+              <li><a href="labs.html#lab-1-shapes-and-styles">- L1: Shapes and Styles</a></li>
               <li><a href="a3.html">A3: Exploratory Data Analysis</a></li>
+              <li><a href="labs.html#lab-2-data-binding">- L2: Data Binding</a></li>
               <li><a href="a4.html">A4: Interactive Visualization</a></li>
+              <li><a href="labs.html#lab-3-interactivity">- L3: Interactivity</a></li>
               <li><a href="midterm.html">Online Midterm</a></li>
               <li><a href="a5.html">A5: Final Project</a></li>
-              <li><a href="ax.html">EC: Extra Credit Opportunities</a></li>
+              <!-- <li><a href="ax.html">EC: Extra Credit Opportunities</a></li> -->
             </ul>
           </li>
           <li class="dropdown">
@@ -63,15 +67,15 @@ canvasfiles: https://courseworks2.columbia.edu/courses/99589/files/
 							Demos <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="https://observablehq.com/@agness/introdv-f18-demo-1-data-select-scale">
-									2/18: Data, Select, Scale</a></li>
+									2/9: Data, Select, Scale</a></li>
               <li><a href="https://observablehq.com/@agness/introdv-f18-demo-2-interactivity">
-									2/25: Update, Events, Brush, Drag</a></li>
+									2/16: Update, Events, Brush, Drag</a></li>
               <li><a href="https://observablehq.com/@agness/demo-mutable-variables-and-multi-input-cells">
-									3/3: Mutables, Multiple Inputs</a></li>
+									2/23: Mutables, Multiple Inputs</a></li>
 	      <!-- <li><a href="https://beta.observablehq.com/@agness/tk">
 									3/3: Transition, Zoom</a></li> -->
               <li><a href="../files/examples/demo_geo.html">
-									3/31: Scrolly, Path, Polygon, Geography</a></li>
+									3/16: Scrolly, Path, Polygon, Geography</a></li>
 	      <!-- <li><a href="https://beta.observablehq.com/@agness/tk">
 									3/31: Bootstrap, Vega</a></li> -->
               <!-- <li><a href="https://beta.observablehq.com/@agness/tk">
