@@ -39,6 +39,14 @@ Students will learn to
 - **Lateness**: Assignments: -25% missing writeup/submission, -20% incomplete submission/late submission (including missing submission resubmitted), -15% incomplete submission resubmitted, 0% after 7 days late. Each student is allowed *1 late pass for a 48-hour extension* per assignment per due date (i.e. you may only use it on one assignment section if multiple assignments are due on the same day.) No exceptions unless you have a medical note. Quizzes can be made up for full credit if we receive prior notice with good reason or subsequent medical note. Email instructor to submit a medical note/reason, email IAs to request use of your late pass. All other absences cannot be made up.
 - **Extra Credit**: There will be extra credit opportunities during the semester as a way for students to demonstrate their mastery of course material in ways beyond the assignments and exams. Extra credit is added after the final curve if there is one (so it does not affect other students' final grades, and strictly benefits the student doing the extra work.)
 
+## Caveat Emptor
+
+-   This class will emphasize **the practice of design**: significant class time will be spent on design activities, presentations, discussion, giving and receiving feedback to your peers.
+-   **Design evaluation is subjective.** Assignments and test questions that have one correct answer will be very rare. I and your TAs will grade; our goal in grading is to reward quality and real effort, and punish laziness and insincerity.
+-   I will provide grading guidelines for assignments beforehand, but **we will not publish exact scoring criteria** and I do not expect rubrics to cover the entire space of possible submissions. I intend to keep the definition of  "A+: Exceed expectations" meaningful. I also reserve the right to curve final course grades. My expectation for the class is a normal distribution centered on B.
+-   I encourage you to **focus on feedback**: solicit reactions from your classmates, ask me and your IAs, solicit from friends and your other instructors. If any feedback is unclear, ask. Your grades won't make much difference in your career after this class, but my reaction and the reactions of your classmates to what you made, will. Your manner, attitude, and participation in these activities, online or in class, counts towards your grade, so be proactive.
+- **This class is always being updated and improved**. We're constantly adapting our tools/platforms and making improvements, so expect that you'll be asked for your feedback repeatedly. Your input will be shaping this class for future iterations.
+
 ## Online Code of Conduct
 
 This course will be taught entirely online in spring semester of 2021. All members and guests of this community are expected to commit to the following standards and obligations, aimed to make our class an inclusive and welcoming environment.
@@ -47,14 +55,6 @@ This course will be taught entirely online in spring semester of 2021. All membe
 -   All members will **attend class with video on, audio muted, and with a static background** (background creativity is encouraged but as with in-person attire, you are expected to be respectful and non-distracting.) Your audio should be muted at all times except when you are actively speaking.
 -   If you have trouble accessing a reasonable internet speed for sharing your video, as a courtesy similar to being tardy or absent for classes in person, you are expected to let the instructor and your IAs know in advance. Your participation grade will be affected if and only if this becomes a pattern.
 -   **No one shall photograph or record anyone else**, whether video or audio or chat, without receiving permission first, irrespective of whether it is for your own personal note-taking or for sharing. If you desire to post online, upload to social media, or tag someone, or their work or project, you will first seek permission by informing the person of what/where/when you will be posting, and why. Only publicly available URLs and references may be shared without permission, if shared without reference to the original source (person.)
-
-## Caveat Emptor
-
--   This class will emphasize **the practice of design**: significant class time will be spent on design activities, presentations, discussion, giving and receiving feedback to your peers.
--   **Design evaluation is subjective.** Assignments and test questions that have one correct answer will be very rare. I and your TAs will grade; our goal in grading is to reward quality and real effort, and punish laziness and insincerity.
--   I will provide grading guidelines for assignments beforehand, but **we will not publish exact scoring criteria** and I do not expect rubrics to cover the entire space of possible submissions. I intend to keep the definition of  "A+: Exceed expectations" meaningful. I also reserve the right to curve final course grades. My expectation for the class is a normal distribution centered on B.
--   I encourage you to **focus on feedback**: solicit reactions from your classmates, ask me and your IAs, solicit from friends and your other instructors. If any feedback is unclear, ask. Your grades won't make much difference in your career after this class, but my reaction and the reactions of your classmates to what you made, will. Your manner, attitude, and participation in these activities, online or in class, counts towards your grade, so be proactive.
-- **This class is always being updated and improved**. We're constantly adapting our tools/platforms and making improvements, so expect that you'll be asked for your feedback repeatedly. Your input will be shaping this class for future iterations.
 
 ## Auditors
 
