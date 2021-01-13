@@ -15,6 +15,22 @@ _Room:_ 301M Fayerweather<br>
 [Class Slack](https://columbiaviz-sp20.slack.com) <br>
 [Course Feedback Form](https://forms.gle/sJne6fxphDzFBJN38)
 
+## Spring 2021 Final Projects
+
+- [What’s Shakespeare About Anyways? “As You Like It” through introductory text analysis](https://observablehq.com/@span728/a5-w-tfidf)
+- [Visualizing COVID Testing Policies](https://sahovic.me/covid-testing-viz/)
+- [Is Netflix Actually Chill? Exploring popularity of Netflix vs. non-Netflix produced shows](https://observablehq.com/@tw2686/is-netflix-actually-chill)
+- [Injuries on Japan's Railway System](http://japantrainincidents.github.io/)
+- [GBBO: Managing Risk in Your Competitive Baking Flavor Portfolio](http://bit.ly/gbbo-viz)
+- [Heartbeat of a City: Economic inequality and neighborhood transportation in a time of COVID](http://heartbeatofa.city/)
+- [How Diverse is Museum Mile?](https://observablehq.com/@oh/how-diverse-is-museum-mile)
+- [NBA Exploratory Viz Tool](http://nba.yuxuan.site)
+- [Music Moods & COVID-19](https://observablehq.com/@rjs97/music-moods-covid-19)
+- [NYC Transit Trends](https://observablehq.com/@ja3143/nyc-transit-historical-trends)
+- [MTA + COVID-19](https://observablehq.com/@rcawkwell/mta-covid)
+- [Flight Delays](http://dataviza5.herokuapp.com/)
+- [Economical effects of COVID-19 crisis](https://leonardogavaudan.github.io/)
+
 ## Overview
 
 This course is a hands-on introduction to design principles, theory, and software techniques for visualizing data. Classes will be a combination of lecture, design studio, and lab. Through readings, design critique and code assignments, students will learn how visual representations can help in the understanding of complex data, and how to design and evaluate visualizations for the purpose of analysis or communication. Students will develop skills in processing data, and building interactive visualizations using D3. Topics include visual perception, exploratory data analysis, task analysis, graphic design, narrative, etc.
