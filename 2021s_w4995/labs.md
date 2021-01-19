@@ -9,13 +9,13 @@ We will be working in the Observable platform, which is like a web-hosted JavaSc
 
 All lab assignments are done individually. You are expected to adhere to the [CS Department Honesty Policy](http://www.cs.columbia.edu/education/honesty) and submit your own work. You may not share your work for these assignments with your classmates. It is otherwise acceptable to google and lookup how to write commands.
 
-To start your lab homework, fork the assigned notebook under your personal Observable account (*not* as our team [@columbiaviz-s21](https://observablehq.com/@columbiaviz-s21) account.)
+To start your lab homework, fork the assigned notebook under your personal Observable account (*not* as our team [@columbiaviz-s21](https://observablehq.com/@columbiaviz-s21) account.) Make sure you do not "Publish" your lab notebook at any time – your notebook should only be visible to someone with the link.
 
-To submit, enable link sharing on your notebook (make sure to reshare if you've made changes after you first enabled link sharing), and submit your [Observable notebook url]({{ layout.submissionform }}) by **Monday 11:59pm ET** the day before class.
+To submit, enable link sharing on your notebook (make sure to reshare if you've made changes after you first enabled link sharing), and submit your private [Observable notebook url]({{ layout.submissionform }}) by **Monday 11:59pm ET** on the due date.
 
 ### Lab 1: Shapes and Styles
 
-TBA
+[Lab 1 template](https://observablehq.com/@columbiaviz-s21/lab-1-shapes-and-styles)
 
 Submit your [Observable notebook url]({{ layout.submissionform }}) by **Monday 1/25, 11:59pm ET**.
 
