@@ -10,7 +10,7 @@ layout: 2021s_w4995
 _COMS W {{ layout.courseno }} (3 pts)_ <br>
 _Instructor:_ Agnes Chang (ac3882), office hours by appt. <br>
 _IAs:_
-Rounak Bera (rnb2128; OH TBD<!--[Mon 3-5p](https://calendar.google.com/calendar/selfsched?sstoken=UUlMMTVhN1dWRS12fGRlZmF1bHR8NmJlNTBlZjJlMmEwYWNjYWQ5YWUzN2FkMmU5MTY2ZTg)-->), Aviva Weinbaum (aw3156; OH TBD<!--[Wed 2-4p](http://bit.ly/irene_OH)-->) <br>
+Rounak Bera (rnb2128; OH TBD<!--[Mon 3-5p](https://calendar.google.com/calendar/selfsched?sstoken=UUlMMTVhN1dWRS12fGRlZmF1bHR8NmJlNTBlZjJlMmEwYWNjYWQ5YWUzN2FkMmU5MTY2ZTg)-->), Aviva Weinbaum (aw3156; [Mon 12:30-2:30p](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UVBQVEgzaVU4Q2hyfGRlZmF1bHR8NjgyMGU2MzlkMGEyMGU5NTEwMDJlYWFmYTM4YWQ4YTI)) <br>
 _Class Time:_ Tues. 6:10-8pm <br>
 [Courseworks (and Zoom Info)]({{ layout.courseworks }}) <br>
 [Class Slack](https://columbiaviz-sp21.slack.com) <br>
