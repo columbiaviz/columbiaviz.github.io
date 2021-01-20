@@ -29,7 +29,7 @@ Submit your [Observable notebook url]({{ layout.submissionform }}) by **Monday 2
 
 TBA
 
-Submit your [Observable notebook url]({{ layout.submissionform }}) by **Monday 2/8, 11:59pm ET**.
+Submit your [Observable notebook url]({{ layout.submissionform }}) by **Monday 2/15, 11:59pm ET**.
 
 ### Grading Criteria
 
