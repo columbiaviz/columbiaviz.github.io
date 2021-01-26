@@ -15,13 +15,13 @@ To submit, enable link sharing on your notebook (make sure to reshare if you've 
 
 ### Lab 1: Shapes and Styles
 
-[Lab 1 template](https://observablehq.com/@columbiaviz-s21/lab-1-shapes-and-styles)
+[Lab 1 template](https://observablehq.com/@columbiaviz-s21/lab-1-shapes-and-styles).
 
 Submit your [Observable notebook url]({{ layout.submissionform }}) by **Monday 1/25, 11:59pm ET**.
 
 ### Lab 2: Data Binding
 
-TBA
+Fork from [Lab 2 template](https://observablehq.com/@columbiaviz-s21/lab-2-data-binding-scales-and-axes).
 
 Submit your [Observable notebook url]({{ layout.submissionform }}) by **Monday 2/1, 11:59pm ET**.
 
