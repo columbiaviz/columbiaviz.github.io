@@ -27,7 +27,7 @@ Submit your [Observable notebook url]({{ layout.submissionform }}) by **Monday 2
 
 ### Lab 3: Interactivity
 
-TBA
+Fork from [Lab 3 template](https://observablehq.com/@columbiaviz-s21/lab-3-interactivity).
 
 Submit your [Observable notebook url]({{ layout.submissionform }}) by **Monday 2/15, 11:59pm ET**.
 
