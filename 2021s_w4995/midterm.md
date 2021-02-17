@@ -5,7 +5,7 @@ layout: 2021s_w4995
 # Midterm Exam
 <br>
 
-The exam for Spring 2021 is an **take-home online exam** that will be open for 24 hours on [Courseworks]({{ layout.courseworks }}) as a “Timed Quiz” starting **Friday 2/26 0:00 till 11:59pm ET.**
+The exam for Spring 2021 is an **take-home online exam** that will be open for 24 hours on [Courseworks]({{ layout.courseworks }}) as a “Timed Quiz” starting **Thursday 2/25 22:00 till Friday 2/26 22:00, Eastern Time.**
 
 Your exam remains a closed book, closed note exam. As with all of your work in this course, you are expected to honor your pledge to the University’s academic Code of Honor.
 
