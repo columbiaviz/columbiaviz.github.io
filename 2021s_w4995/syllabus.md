@@ -23,7 +23,7 @@ Students will learn to
 2. **Visualization Design (8%)**: design 10 divergent representations for the US Census data set and provide a rigorous rationale for your design choices. Present for design critique in class.
 3.  **Exploratory Data Analysis (10%)**: identify a dataset of interest and perform an exploratory analysis to understand the shape & structure of the data, investigate initial questions, and develop preliminary insights & hypotheses. Present a report on your findings.
 4.  **Interactive Visualization (20%)**: build a visualization that enables interactive exploration along at least three dimensions using a dataset of your own choosing and publish it on the web.
-5.  **Midterm Exam (8%):** individual closed book exam, for 90 min. during class session. Comprises multiple-choice and written essay questions.
+5.  **Midterm Exam (8%):** individual closed book exam, for 75 min. taken online via Canvas this semester. Comprises multiple-choice and written essay questions.
 6.  **Final Project (30%)**: build a web-based interactive visualization that allows you to answer questions about a topic of your own choosing. You will acquire the data, design your visualization, implement it using D3, and evaluate the results.
 7.  **Labs (3%)**: fork the assigned Observable notebook and complete individually, graded pass/fail.
 8.  **Reading Quizzes (8%)**: expect a quiz at beginning of class most weeks; 2~4 multiple-choice questions, each covering one of the central concepts in a required reading.
