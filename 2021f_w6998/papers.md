@@ -1,8 +1,8 @@
 ---
-layout: page_2020
+layout: page_2021
 ---
 
-# Paper Reviews
+# Readings
 
 You are expected to write and submit a paper review of the readings before each class, and answer some questions about the readings.  The review should be akin to a conference paper review.  The purpose of the readings is to provide an illustrative example of the research area.  You are encouraged but not required to read the supplemental readings to better understand the materials.  
 

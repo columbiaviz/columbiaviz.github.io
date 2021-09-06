@@ -1,7 +1,6 @@
 /* Page structure */
 /* Page structure */
 html {
-  width: 99%;
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
@@ -25,6 +24,8 @@ body {
   background-color: #fdffe4;
   color: black;
   padding: 1em 1em 0.25em 1em;
+  margin-left: auto;
+  margin-right: auto;
   border-bottom: 3px solid #efea4e;
 }
 
