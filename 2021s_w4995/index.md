@@ -16,6 +16,19 @@ _Class Time:_ Tues. 6:10-8pm <br>
 [Class Slack](https://columbiaviz-sp21.slack.com) <br>
 [Course Feedback Form](https://forms.gle/ycRhfBn6CCXhhjxv6)
 
+## Spring 2021 Final Projects
+- [Decolonize Contemporary Civilization: The canon from a computational perspective](https://shallotly.github.io/decolonize_CC/)
+- [Foreign Ministers: World Diplomacy in 200 Years](https://kokedison.github.io/Data-Vis-A5/)
+- [Rap Over Time: A Textual Data Analysis](https://observablehq.com/@columbiaviz-s21/rap-over-time-april-12)
+- [Paid to Play: A Breakdown of the Top 100 Twitch Streamers](https://paidtoplay.fun/)
+- [Tik Tok on the $pot](https://observablehq.com/d/bb382d50701a2bf4)
+- [Diversity and Representation in Disney Animated Movies](https://observablehq.com/d/a35295a48e9f8147)
+- [UFO Sightings in the United States](https://observablehq.com/d/b3373a6bfee613e8)
+- [Set in Stone? Lack of Progress in Removing Confederate Monuments](https://observablehq.com/d/e14301344f4d3ef0)
+- [The Nuttiest Question: Squirrels in Central Park](https://rupalg.github.io/central-park-squirrels/index2.html)
+- [Who Eats the Food We Grow?](https://owlpudding.github.io/GrowThatFood/index.html)
+- [The Environmental Impact of Bitcoin](https://carbon-implication.uc.r.appspot.com/)
+
 ## Overview
 
 This course is a hands-on introduction to design principles, theory, and software techniques for visualizing data. Classes will be a combination of lecture, design studio, and lab. Through readings, design critique and code assignments, students will learn how visual representations can help in the understanding of complex data, and how to design and evaluate visualizations for the purpose of analysis or communication. Students will develop skills in processing data, and building interactive visualizations using D3. Topics include visual perception, exploratory data analysis, task analysis, graphic design, narrative, etc.
