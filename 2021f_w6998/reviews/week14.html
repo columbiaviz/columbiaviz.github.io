@@ -1,0 +1,237 @@
+
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+    <div class="deco">COLUMBIA UNIVERSITY COMS W6998</div>
+    <div class="title"><a href="/2020s_w6998" style="color:black;">SYSTEMS FOR HUMAN DATA INTERACTION</a></div>
+</div>
+
+
+
+
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-6 col-md-offset-3">
+    <style>
+p.review {
+  border-left: 2px solid grey;
+}
+
+div.block {
+  margin-bottom: 1em;
+}
+</style>
+
+<h2 id="discussion-points">Discussion Points</h2>
+
+<p class="block">I think it would be great to discuss the differences between Scorpions and DIFFs aggregation forms. I think the nuances there are probably pretty intriguing.</p>
+
+<h2 id="paper-1">Paper 1</h2>
+
+<h3>4/21/20 0:01 Yiru</h3>
+<p class="block">Scorpion is a system trying to explain the outliers in an aggregate query result. The explaination in scorpion is to find a predicate that when applied to the input data would cause the outliers to disappear. Scorpion proposes the definition of influence and propose the definition of IP problem to search for maximum influence predicates over the input data. <br />
+<br />
+Typically, the explanation is usually to look fo single value or data provenence. Scoprion is trying to find the responsible subset of input data that cause the outlier, The main idea is based on sensitivity analysis--- when changing the input, how would the output be. In this paper, the author considers that a given ourlier aggregate may depend on arbitrary number and combination of input data tuples. Thus the paper propose to solve them by finding the predidates and propose predicate influence. Predicate influence defines how the agg result would be when deleting delta(g). This makes the problem hard. Because the predicate can be different and influence over different subset is different according to the definition. I like the consideration of explanation here. Technically, the paper gives naive solutions and button up , decision tree optimization.</p>
+
+<h3>4/20/20 23:59 Xupeng Li</h3>
+<p class="block">This paper raises a problem of how to find explanations for outlier results and proposes a system Scorpion to solve it. After specifying outliers by users, Scorpion can compute a series of predicate over unaggregated input data so that with these predicates the outliers can disappear. The author defines a notion of influence to evaluate the predicates it finds and designs a series of efficient algorithms to find the predicates with highest influence. <br />
+<br />
+In Scorpion system, an explanation is a set of predicates that filtered by these predicates, the input data will not generate outlier results with the same computation. A metric influence can be used to evaluate the quality of an explanation. Intuitively, the predicates should only rule out outliers but keep the normal results unchanged. Besides, being able to remove severer outliers makes an explanation better. Finding such explanation is challenging because the search space is exponential and the computation for evaluating a single explanation is huge due to the large size of input data.</p>
+
+<h3>4/21/20 8:15 Deka Auliya Akbar</h3>
+<p class="block">The paper Scorpion attempts to address the task of why-analysis of outliers in exploratory data analysis. The main contribution of the paper is to create a system that takes user-specified outlier points from aggregate query results and find predicates that explain the outliers from the properties of the input tuples. Scorpion utilizes the concept of "influence" to score predicates and attempted to partition and search the input space to find or merge a set of predicates that maximize the influence. Another extension that I could think of is to perform automatic outlier detection (or even forecast outliers) instead of requiring the users to give the outliers and held-out points manually. While enabling user inputs to allow rooms for flexibility, figuring out the outlier points and non-outliers can sometimes be tedious. This feature is especially useful in real-time applications where knowing outliers early can be important to prevent disastrous results.<br />
+<br />
+Explanation in the context of the paper refers to understanding why the outliers occur in aggregate queries. Good explanation will depend on how informative the "diagnosis" is, in which the paper use influence to give a score to the predicate information. It should also identify outliers from non-outliers and penalize the non-outliers s.t. it does not have high influence compared to the outliers' influence.<br />
+<br />
+There are three main considerations that made the problem challenging:<br />
+- Backward Provenance: determining arbitrary subsets of inputs from aggregate points -&gt; returns input groups from groupby queries, considered as straightforward as it has been solved with relational provenance techniques<br />
+- Responsible Subset: finding which subset of inputs are relevant and cause the outlier. Need partitioner to return most influential predicates out of attributes using either top down (DT) for independent operators or a bottom up partitioner for independent and anti monotonic aggregates<br />
+- Predicate Generation: construct predicate over input attributes that filter out points while not removing too much -&gt; Use merger to merge predicates as long as the influence does not decrease, merger can exploit the incrementally removable properties of certain aggregate operators to speed up influence score computation</p>
+
+<h3>4/20/20 22:59 Haneen</h3>
+<p class="block">This paper presents Scorpion, an end-to-end system that, given a result of a group by query it allows the user to ask for an explanation on why a set of output points are outliers. Scorpion aims to find a predicate over an input dataset that most influences the selected outliers. The influence notion is defined as how much the output changes if a subset of the input is removed. The paper argues that its not sufficient to return a set of tuples that correlate with the collection of outliers. Instead, a better explanation defined as a set of predicates that most explains the presence of outliers. This particular problem is challenging because the influence of tuples is not independent, and the naive approach would enumerate over all possible inputs. The paper takes advantage of properties exposed by common aggregate functions to introduce efficient algorithms to compute the maximum influence.</p>
+
+<h3>4/20/20 22:53 Carmine Elvezio</h3>
+<p class="block">This paper presents Scorpion, a system facilitating the explanation of outliers in aggregate query results (by computing and showing predicates that when applied to the input data removes said outliers). This coming from the desire to help analysts and users exploring data, in understanding why outliers might have occured, to to help why they may have occurred, through understanding of the attributes of the input tuples of a particular aggregation query that might have contributed to the outliers. The authors focus on predicate influence as a determination of what inputs may have contributed to outliers, and defining, through clauses, what attributes of the input data might have been responsible for said outliers (formalized through the influential predicates problem). The paper also discusses the architecture of the system, and the several approaches used to explain predicates: a Naive partitioner, a decision tree partitioner (DT) and bottom-up partitioner (MC). Further, the system contains an optimization capability to the merger facilities utilized by the system in building the predicate output. In addition, a critical parameter (c) which is user controlled, allows the user to specify how aggressively Scorpion reduces the results of an input space. Lastly, the authors present the results of a user study showing that DT and MC perform comparably to Naive (effectively the control), or faster in some tests, as in the analysis of the runtime as the dimensionality increases. In addition, the study shows the importance of the c parameter across the board (as it affects all of the conditions). And the authors also looked at how the optimizations performed (showing the advantages of the caching used with merging), presented in terms of cost.<br />
+In comparison to previous work, this paper really focuses on explanation through the predicates. Some previous work has looked at how input tuples can affect output (tuples), using boolean expressions on the input tuples (and looking at the effect on output tuples). While some of the previous work does allow for determination of how particular tuples might impact an output result, they do not always really attempt to explain. Other systems do attempt to explain, as in Sunitas system, the differences in sub-cubes of data, using summary tuples. But compared to those systems, Scorpion generates predicates to explain the influences of input tuples indirectly. And the combination of the predicates for explanation (through influencing predicates) and the optimizations most definitely seems novel over the previous work.<br />
+In particular, I really like the methodology used to actually define the predicates. I think providing it in this way, allows the users to more easily see and understand and manipulate the outliers in a way that breaks from the dependency on the tuples themselves. Considering the importance of the c parameter, it is clear that being able to change out the offending tuples and output is important to an efficient facilitation of the creation of the explanations, thus depending on the tuples themselves for the representation of it is not ideal, considering the output changes as the c changes, thus potentially affecting the input tuples as well. Further, I think the optimizations, and the details presented for the different modalities in which they can be applied (both across DT and MC), including caching, help to show the needed improvements necessary to help attain parity in performance with Naive. And in addition, the optimizations coming from the incrementally removable component of the system allow for further simplification (computationally) of predicates.<br />
+The system is definitely very advanced. One of the limitations I think is in understanding the predicates themselves. It was a little difficult to understand the way the predicates are visualized to the user. For example, does the user have any way to inspect the output predicates? <br />
+I think moving forward it would be really cool if there were a way to iterate through the levels of generated predicates visually (like scrolling through different planes of a 3D visualization) with dynamic updates on the field of input and output tuples. This would help to solidify the predicates for a lot of people who may not be as technically saavy. I also wonder what occurs with this type of visualization if applied to projections of data (that arent necessarily aggregations).<br />
+<br />
+The explanations in this paper are of the form of predicates that explain what is influencing certain output tuples. This is both for hold-overs (should remain) vs. outliers. A good explanation is one where the user is able to understand how the outliers are being created. If just returning tuples, it might not be clear as to why this particular tuple mightve been considered an outlier. If data is being projected in a way in which the exact reason a tuple is considered an outlier is not clear from the visualization (or even if it is), then the predicate form can help the user more easily understand why tuples would be considered outliers. A bad explanation would just be the set of tuples (listed as outliers) or highlighted as outliers in the data visualization, without the context of why they were tuples, since that doesnt provide the user with enough information to understand why a tuple got listed that way. Some of the challenges here are in how to convey the different attributes and the impacts that input tuples have on each other. With the predicates, it is easier to see more easily how that might occur from a formulaic perspective. Another challenge is in allowing the user to specify what they consider should be important in the calculation of outliers. Both allowing the users decision to impact the predicate formation and visualization is important.<br />
+</p>
+
+<h3>4/20/20 22:28 Celia</h3>
+<p class="block">The goal of this paper is to develop an algorithm for explaining outliers in aggregate datasets. Their goal is to use sensitivity analysis to identify what subset of the input data had the most influence on the outlier aggregate outputs. The problem is that a nave approach requires iterating through all possible inputs, so they use aggregate operator properties to develop algorithms that are close in quality, but much faster. The authors first define predicate influence, the sensitivity of a model to its inputs. Then they explain the architecture of their system, which they divide into Provenance, the Partitioner, and the Scorer. The Partitioner chooses the appropriate partitioning algorithm and generates a ranked list of predicates. This could be a nave partitioner, a decision tree partitioner, or a bottom-up partitioner. The Merger scans its list of predicates and merges subsets of the predicates. They also explain how they optimize this Merger. Then they conduct experiments using real-world datasets and their algorithm. I really like that the problem is well-defined and that the evaluation uses real-world datasets. These not only show that the algorithm is effective, but help the reader understand the intended use cases. <br />
+<br />
+While there are existing tools for identifying outliers, this paper is definitely concerned with explaining those phenomena. I think a good explanation is one that is comprehensive, that is, it captures the main features that impacted the results, while still being simple enough for humans to understand, if that is the intent. <br />
+</p>
+
+<h3>4/20/20 17:44 Zachary Huang</h3>
+<p class="block">This paper talks about a new way to define the explanation of outlier outputs. The significant part of the paper is how it defines the predicate and influence based on the sensitivity test. Unlike previous research, which mainly traces the provenance of an outlier, this paper proposes a framework to further investigate which subset of the database contributes to the outlier. This framework makes the abstract explanation concrete. The technical strength of this paper is how it optimizes the search of the possible predicate space by exploiting the interesting properties of aggregation methods and sampling. For user-defined aggregation method, it may be hard for users to specify the properties these aggregation methods have. It will be helpful to design a system and automatically exploit these properties. Personally speaking, "explanation" could be very abstract, or domain-related. Different areas have different problems towards data, and explaining based on these cases are challenging. One property of a good explanation is whether this type of explanation captures the common pattern of many errors. The other property is whether the explanation is intuitive. Because it is human who inspects these explanations, abstract, complex explanations won't help them make decisions. The challenge is that real-world problems are usually miscellaneous, and find the common pattern for all problems is not possible. We need to make strong assumptions before explain data.<br />
+</p>
+
+<h3>4/19/20 19:03 Adam Kravitz</h3>
+<p class="block">This paper is about Scorpion, a system that takes in user-specified outlier points from an aggregate query result, and it tries to find predicates that explain the outliers in terms of properties from the input given. The reason this was create was because at the time there were no systems to be able to work backward and recognize properties in the data that would cause outliers.<br />
+The significance of this work is to have a system that describes data that might make the outliers in the result. There are a lot of challenges to be able to make a system that can do that since the outliers depend on an arbitrary number and combination of input data. Other challenges are solving backwards provenance, responsible sunset, and predicate generation. Scorpion are able to identify which part of the input data causes the outliers of the aggregation by using sensitivity analysis to find which points are the most influential and effect the output the most. I think being able to identify input that can cause outliers is useful for data analysis, and does promote more research into data gathering and data processing is significant.<br />
+I like how Scorpion tries to find predicates that might cause an outlier in the output. It simple explains that predicates can be used to be abstracted for multiple input groups instead of the case when you would just find tuples that explain the outliers where you can only use it for a single input. The paper also talks about some problems with Scorpion, such that in the worse case Scorpion has to evaluate all possible predicates, but the paper offers optimizations to implement as well as tell any exploits that Scorpion does to become more efficient.<br />
+A limitation with Scorpions are the way to score the quality of the results. The paper talks about how F-score can be artificially low depending on the value of c, and that although NAIVE converges quickly when c is very low, it is still slow at high c values.<br />
+For an extension for the paper I am curious if scorpion returning the tuples would a be more power explanation for that 1 input of data. Is there a place just to return the tuples instead of the predicates?<br />
+What is being explained is what input points most likely influence the output points, specifically the outliers. So what input points are most tied to influence an outlier to appear. A good explanation is a predicate that has a high influence in the data, such that the explanation identifies predicates that when used in the data can cause the outliers to disappear. A bad explanation would obviously be the opposite of a good explanation where there is low influence and the predicate does not explain the outlier. What makes this problem challenging is that Scorpion needs to consider how combinations of input tuples affect the outputs outliers, which in turn depends on properties from the aggregate functions. The problem is that in the worst case, Scorpion cant predict how combinations of input tuples interact with each other, which means that Scorpion needs to evaluate all possible predicates. Another challenge is that since Scorpion returns predicates, instead of individual tuples, that means that Scorpion must find tuples within bounding boxes defined by the predicates.<br />
+</p>
+
+<h3>4/18/20 15:53 Qianrui Zhang</h3>
+<p class="block"># Review<br />
+This paper presents Scorpion, a system that takes some outlier points in an aggregate query as input and finds predicates that explain the outliers. (Predicates that if applied to input data can cause outliers to disappear) It also shows that the algorithm is much faster than naive searching algorithms.<br />
+<br />
+I think this 'explanation' work is important in real world cases since outliers are prevailing, as section 2 suggests. The technical part of the paper is solid and the experiments are also strong to prove the authors' points.<br />
+<br />
+One thing that I feel can be better is the way of explaining problems and algorithms. For instance while reading, I feel the Problem Statement section (section 3) pretty hard to understand and kind of lost in those notations. And I also feel this section is less connected with the following sections.<br />
+<br />
+# Addition<br />
+In this paper, 'explaining' is the procedure of finding the reason of user-specified outliers in aggregate results. Criteria includes the time cost, precision and recall of the finding.<br />
+<br />
+One of the challenging parts is a given outlier may be related to an arbitrary number and combination of input data tuples. It also requires solving several problems as section 1 lists.<br />
+</p>
+
+<h2 id="paper-2">Paper 2</h2>
+
+<h3>4/21/20 0:01 Yiru</h3>
+<p class="block">Diff integrates different explanation research and propose a DIFF operator --a declarative interface for explanation queries, Diff paper also provide logical physical optmization for a broad set of production uses cases in the industry. I like the sql language the paper defines which makes it simple to issue an explanation request. But the metrics may be difficult for the users to pick.<br />
+<br />
+The difference between scorpion and diff is that scorpion gives a list of predicates that explains the outliers, while diff gives a list of individual tuples. But DIFF integrates more metrics from different explanation methods--RSEexplain, dataxray etc, which is what scorpion can not do. <br />
+</p>
+
+<h3>4/20/20 23:59 Xupeng Li</h3>
+<p class="block">This paper extends relational query engines with DIFF operator, so that analysts can integrate explanation searching into a large query processing pipeline. The definition of an explanation is similar with prior works including Scorpion. DIFF uses difference metrics to filter candidate explanations based on some measure of severity, prevalence, or relevance. This paper shows the generality of DIFF definition by reducing many prior methods to DIFF operation. It also discussed some optimizations to make DIFF computation scalable. <br />
+<br />
+Compared with Scorpion, DIFF only shows a list of tuples that can explain a query, while Scorpion goes further that its explanation is a set of predicates which is more readable. However, DIFF is flexible because it can customize metrics.</p>
+
+<h3>4/21/20 8:15 Deka Auliya Akbar</h3>
+<p class="block">DIFF attempts to tackle the task of data explanation by proposing the DIFF operator, a declarative relational aggregation operator or feature selection, grouping, and highlighting commonalities/differences among data points. This proposal is driven by the two main challenges in explanation systems: interoperability with the larger data workflow/pipeline, and scalability with growing data volumes while still providing interactivity. To address these issues, they use summarization and difference metrics; and performed logical and physical layer optimizations. The logical optimization exploits upon schemas, joins, and functional dependencies to prune tuples; and in the physical optimization, they exploit the Anti-monotonic properties of the metrics; Frequent Itemsets Mining techniques; compressions and data structure techniques.<br />
+<br />
+Scorpion outputs predicates/clauses over attributes that maximize the influence over the outlier while Diff outputs a combination of attribute-value pairs in which the test and control group differs. This allows Scorpion to support a set of values for a single attribute and support more flexible aggregation queries. DIFF is more expressive in terms of defining the influence metric than Scorpion, moreover by making the DIFF as an operator, user does not need to change their workflow by embedding the explanation workflow with user query.</p>
+
+<h3>4/20/20 22:59 Haneen</h3>
+<p class="block">This paper proposes DIFF, a new operator for relational query processing that supports common explanation engine functionalities to address the interoperability of these engines with existing workflows and their scalability as they operate on increasingly larger data volume. DIFF operator capture semantics of most explanation engines by recognizing that most explanation queries summarize differences between two sets with respect to some difference metrics. To address scalability challenges, the authors introduce logical and physical optimizations enabled by the relational model. The authors then provide extensive benchmarking that tests the scalability and generalizability of the DIFF operator compared to standalone engines. <br />
+<br />
+One of the differences with Scorpion is that instead of listing individual tuples that explain the outliers, Scorpions give a list of predicates that best explains the presence of outliers.</p>
+
+<h3>4/20/20 22:53 Carmine Elvezio</h3>
+<p class="block">This paper presents DIFF, an operator (usable in SQL) that attempts to capture the capabilities of explanation engines, specifically feature selection, grouping and finding commonalities between data points, and integrate it with relational databases. The authors present the motivations behind this operator; historically explanations have been removed from the traditional analyst pipeline, and due to the onerous nature of exporting, cleaning, and preparing data for these systems, it is highly desirable to allow the data to be explored in place. The authors then discuss the types of workloads and the considerations contained therein, and the DIFF operator itself (both in terms of the syntax and the formulaic representation), in addition to considerations to its generality, as compared to the capabilities of previous systems, including MacroBase, Data XRay, RSExplain and Scorpion. Since the computations can be intense, the authors discuss the two types of optimizations they created in order to allow for expedient execution of queries: logical and physical. The logical optimizations include a DIFF-JOIN optimization where the authors do not perform the JOIN before the DIFF, as the naive implementation would assume, but instead attempt to JOIN first, and leveraging functional dependencies to optimize DIFF queries. Three physical optimizations are presented, usage of the Apriori itemset mining algorithm, frequency maps per column (and ordering them, with integer packing), and bitmap indices. A distributed version of the system is discussed, built over MB SQL in Spark. A system evaluation is presented, showing the performance improvements of DIFF (running in MB SQL) over query implementations in MacroBase, Postgres, RSExplain, Apriori, SPMF FPGrowth. However, DataXRay was shown to perform similarly. Considerations are also discussed on when to switch from DIFF-JOIN to the NAIVE implementation. <br />
+Some systems perform difference operations between cells in OLAP cubes rather than relations (which can again take the user out of a traditional pipeline). Others have proposed systems allowing for explanations over proposed data models in multi-structural databases, which becomes an NP complete problem. There have been several systems capable of performing a form of explanation in the past, including MacroBase, Data XRay, RSExplain and Scorpion (over DIFF however, Scorpion can specify ranges of values over a specific column). However, compared to these systems, DIFF is meant to be integrated into the relational interface itself (SQL). This allows for a significantly more streamlined interaction with the data, and due to the optimizations explored in the paper, allows it to perform quite well, versus some of the previous work. Combining this with the correlation-based feature selection generality, and the utilization of Apriori over relational data (allowing for taking advantage of column cardinality), I believe that this work is definitely significant over previous work.<br />
+One of the things I like the most is the integration with relational data, specifically in the fact that its expressed as a simple SQL operator. I think that since SQL is still a major part of how data processing is done today, integration with the language is a huge boon to this and introduces an huge feature (in comparison modeling) to standard relational interactions. The entire process of having to export and clean data is onerous and frustrating (as Ive experienced myself in the past) and I think that mitigating the need to do that is a huge advantage. Additionally, the physical optimizations are really quite interesting, especially the bitmaps (which have shown significant speed ups for indexing in a number of fields). <br />
+One limitation I think is in how there seems to be some limitations as to the amount of user control that can occur. It doesnt seem as though users can specify the level of pruning they want to occur. Although it does allow the user to set the minimum threshold. Additionally, it is interesting that they limit the attribute count to 3. In future work, I think it would be interesting to see how interaction with the system changes based on the ability to have more customizability.<br />
+In addition, in future work, it would be great if there was a way for the user to use this to also perform similar explanations over a greater set of SQL functions, possibly aggregations (for the comparisons).<br />
+<br />
+In comparison to Scorpion, DIFF is really going for feature selection based on comparisons that are being specified in SQL. So if a user is trying to extract which version of the app version most likely had an impact on a phone crashing, this would be useful for this by using the comparison metric in the DIFF syntax. However, Scorpion goes for something different, it is trying to create explanations through predicates that can show how input tuples affect the output. If a user is trying to determine which price points most heavily created outliers, in a range, Scorpion allows for that. So DIFF would do better with a query similar in the paper where you are trying to determine which factors most heavily caused variation from the control dataset. Whereas Scorpion is better at explaining outliers in the same dataset. However, DIFF can also show influence, but takes it a step further through its risk and support ratio and helps to visualize the differences between datasets through a pointed, statistical representation. However, while it can do this, it would be helpful it could handle this visually in the same way the Scorpion highlights.<br />
+</p>
+
+<h3>4/20/20 22:28 Celia</h3>
+<p class="block">This paper presents an operator called DIFF that accomplishes the tasks of a data explanation engine. They recognize that explanation is usually part of a larger ETL pipeline, so the explaining part of data analysis should not be in a standalone tool, but part of an interoperable workflow. For that reason, they present a DIFF operator that can be incorporated into the relational model and used with familiar SQL semantics. Using a relational model also allows them to have an explanation engine that is scalable and interactive. I really like this paper because they present a novel concept in a way that seems so natural to our existing workflow as data analysts. A lot of the papers we have read present standalone tools for a specific task, and I really appreciate that they have found a way to address this issue with an operator that uses the same semantics as SQL. I want to be able to use their DIFF operator for my own work, now! One thing that is different (from my understanding) between Scorpion and DIFF is that DIFF also comes with an ANTI-DIFF operator, so analysts can see which data points are not covered by explanations.</p>
+
+<h3>4/20/20 17:44 Zachary Huang</h3>
+<p class="block">This paper talks about a framework to combine previous explanation systems together. The significant part is the problem definition: the way they define explanations, and how to generate an intermediate data structure that captures the key information among explanations to rebuild the metrics defined by previous research papers. The technical strengths are their optimization, both logically and physically. I wish DIFF could also propose a solution to automatically find the best metric given in some scenarios. It may be confusing and challenging to let users go through these metrics, understand the difference, and choose the optimal one. Scorpion can solve the problem whether, for the categorical attributes, the predicate is searching for a set of values, while DIFF is searching for a single value. This contributes to why Scorpion is hard: we can search for a single value by comparing the score of each value. However, searching for an optimal set of values is NP-hard. DIFF goes beyond Scorpion by extending the metrics. Scorpion assumes influence to be what if we remove the subset of data. Scorpion supports other influences like how the subset of data covers the erroneous set.</p>
+
+<h3>4/19/20 19:03 Adam Kravitz</h3>
+<p class="block">This paper is about explanation engines and how most engines do not interoperate with SQL-based analytics workflow, and how that limits the use of those engines. The paper proposes the Diff operator, a relational aggregation operator that unifies the functionality of the engines with declarative relational querying.<br />
+The significance of DIFF is first of all that it is scalable, as well as Diff allowing the same semantics as current existing explanation engines while also being able to express a set of production use cases that appear in industry. DIFF also allows user to concisely express explanation queries that work with existing analytic workflows, as well as allowing query engines can optimize DIFF across other relation operators. Lastly DIFF can be used to implement and to make previous explanatory engines faster. With all these benefits to DIFF I do think that this work is significant, it seems to only have benefits.<br />
+I like how the DIFF operator, seems easy to implement, can improve old explanatory engines, can increase the speed of querying compared to other methods. This DIFF paper not only presents a way to evaluate the DIFF operator to be 2 times faster than normal but it also presents a optimized physical implementation of DIFF which improved performance 17-fold. A huge difference in speed to the used existing explanatory engines.<br />
+A Limitation to the paper is that DIFF is affected by the support and ratio operators, when the support is decreasing the runtime increases. Another limitation is that with higher ratios, that means that few itemsets get pruned, thus more itemsets must be looked at. Lastly a concern the paper talked about was that because DIFF can produce many explanations, it could be vulnerable to false positives.<br />
+Would Diff still be better than previous explanatory engines even it its accuracy wasnt as good as the previous examples. Since it can generate answers and responses so fast, it could be used as an estimator. Is there value in that?<br />
+Scorpion can specify sets of values for a specific dimension column, and can support more flexible GROUP BY aggregations, when compared to DIFF. DIFF even though it is still powerful cannot specify column dimensions and variations of complex GROUPBY aggregation. DIFF goes beyond Scorpion in that it is scalable, and can be used to even improve in older explanatory engines to make them even faster, by not only increasing software speed but also optimize the physical implementations of DIFF.<br />
+</p>
+
+<h3>4/18/20 15:53 Qianrui Zhang</h3>
+<p class="block"># Review<br />
+This paper presents the DIFF operator, a declarative relational operator that unifies the core functionality of several explanation engines with traditional relational analytics queries. They also use some logical and physical optimizations to improve the performance of DIFF.<br />
+<br />
+Based on the industrial cases they provide, the operator DIFF can provide a lot of benefits in real workflows. And the runtime is also promising. What's more, I think the experiments in this paper prove the points effectively.<br />
+<br />
+There is a small point that I feel confused: in section 3.5, what's the use of ANTI-DIFF and why the authors mention it here if they don't want to elaborate on it.<br />
+<br />
+<br />
+# Addition<br />
+I think compared with Scorpion, which focuses on explaining the outliers in aggregated queries, DIFF focuses more on helping with a scalable general explanation engine. So it may be hard to solve some situations where there exist some extreme values. For instance, to find one or two abnormal values that cause the aggregate result abnormal.<br />
+<br />
+I think DIFF goes beyond Scorpion in the metric of scalability.</p>
+
+<h2 id="query-explanations-vs-ml-interpretationexplanations">Query Explanations vs ML Interpretation/Explanations</h2>
+
+<h3>4/21/20 0:01 Yiru</h3>
+<p class="block">The week's paper is more about given outliers, what the tuples/predicates in the dataset causes. This is useful because this gives a direct sence of what causes the mistake and may find wrong data points in the input data. Last week's paper is about explain machine learning model, which does not assume there is mistakes in the dataset. Instead, it tries to udnerstand the model. This is different. But the main idea still shares common part--sensitivity analysis.</p>
+
+<h3>4/20/20 23:59 Xupeng Li</h3>
+<p class="block">The explanations defined by the two paper are actually a relationship between results and input data, i.e. which subset of input data causes a subset of the query result. It may help analysts find the reason of some events or results. However, such relationship may lead to wrong conclusion because it only shows correlation but now necessarily causation.</p>
+
+<h3>4/21/20 8:15 Deka Auliya Akbar</h3>
+<p class="block">In the end, the one who consumes data is human. We're limited in our capacity to understand what happens with the huge volume of data, or complexities in the models. Moreover, some data analysis techniques can be very laborious and repetitive. Thus, there is always a need to do comparisons and why-analysis using data. Having a framework, formulation, and even an automated system that can help us to understand data is extremely important to bridge the gap between human and data understanding in an easy and scalable manner.<br />
+<br />
+Olah's paper discussed about the building blocks-- the components for interpreting black box models, while the current week's paper dives into the solution / methodology for interpreting a black box queries or data analyses. So Olah's paper is rather more abstract, and we can always replace the methodology for interpreting something while the components (atoms, substrate) can still remain the same.</p>
+
+<h3>4/20/20 22:59 Haneen</h3>
+<p class="block">This week's papers introduce techniques that aim to provide explanations for subsets of the output query that exhibit unexpected patterns. They are important to understand the results in relation to the input data. One of the differences between this week's explanation and last week is that in last week's problem, the building blocks of a model are not explicit on how it functions. Hence, the explanation model aims to expose how the model works through different output modalities. Both formulations are similar in that they both aim to select the subset of input data that most contributed to an output of the model.</p>
+
+<h3>4/20/20 22:53 Carmine Elvezio</h3>
+<p class="block">There are often situations where analysts (and general users) look at data to start to understand and extract information from the data itself or systems. However, often, the information the user is looking for is not necessarily going to be simply visible in the data, but rather in a transformation of it, or in looking at the steps used to generating the data. Generation of explanations for data, can help to present the data set in a digestible and novel way, opening up the possibility for new knowledge acquisition. In the case of Scorpion, that is in handling outliers. With DIFF, that is in trying to find differences between datasets. Both of these systems make it possible to better understand the data and possibly re-approach for next steps in analysis. In comparison to Olah (which formulates explanations through an attempted interpretation of black box ML systems) and Rudhins (which argues in favor or interpretable ML systems) papers, this weeks papers for on explanations of and from the data itself, where Olah and Rudhin focus on the ML systems themselves, though present data generated through them. This weeks papers used predicates or SQL to formulate the explanations, whereas the previous weeks papers show the explanations through several ways, Olah with a grammar representing composition of building blocks for interpretable ML (and allowing for visualization of the hidden elements of the CNN), and Rudin with a simpler break down of the logical steps that a network might create.</p>
+
+<h3>4/20/20 22:28 Celia</h3>
+<p class="block">In most cases, data exploration is only one part of data analysis. Analysts want to be able to explain their findings as well. The papers this week focus on a database-driven approach to explaining data analysis results. This was different from last week, where the papers were focused on explaining the results of machine learning models. In this weeks papers, their explanations come from attributing outcomes to attributes in a pre-defined schema. In last weeks papers, part of the challenge was just understanding what the input features even were, if they were generated by a black-box model. When feature generation is complicated, the challenge of explaining has to deal more with making the input features understandable to humans.</p>
+
+<h3>4/20/20 17:44 Zachary Huang</h3>
+<p class="block">Explanation for data analysis is useful because it helps users navigate different views to further understand the data. If we only view the data through tables, we can't gain insights. So techniques are to use aggregation to focus on small parts of interesting data. OLAP has techniques to understand a large data cube. However, that's also not enough. People want to goes from aggregation back to the provenance and understand how the original data causes the aggregation error. That's because these errors are introduced at records level. And to fully understand the cause of errors, we need to go back to trace each tuples. Explanation of Machine Learning is similar in the sense that, it goes from the aggregation result (like feature visualization). However, goes back to the matrices of activation is not so helpful. While each tuple of database intuitive, activation is not. Therefore, we need to further goes back to understand why we have learned such an activation. This is a non-trivial question and demands research.</p>
+
+<h3>4/19/20 19:03 Adam Kravitz</h3>
+<p class="block">These explanatory engines I think are useful, since understanding your datas input to output relation helps to figure out the formula that your input data could be govern by. Understanding the problems with a users output can help the user find the input data that may allow the user to then process the input data further to see what a more normally distributed result would look like for the output. Further patterns could then be found and more research questions can be asked, experimented with, and solved. Last weeks explanation engines, the explanation engines seem to be more about how to explain the equations that governs the input to output relationship, while this weeks engines seem to try to explain more of the input data and the output data without really caring too much about the algorithm in-between that connects the two.</p>
+
+<h3>4/18/20 15:53 Qianrui Zhang</h3>
+<p class="block">I think the importance and usefulness of formulation are they provide a way of thinking of the problem for both the authors and future researchers. It identifies the things to research from real world problems.<br />
+I'm not sure which formulation of explanations from last week we are discussing here, but in general I think the formulations this week seem to be more math-related and more vigorous. It may because this week's topic is more clearly defined and last week's topic still has a lot to discuss. (for instance, what is actually an explanation for the models)</p>
+
+<!--
+## Reviews
+
+-->
+
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>
+

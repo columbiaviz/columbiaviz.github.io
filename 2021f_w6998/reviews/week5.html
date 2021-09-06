@@ -1,0 +1,260 @@
+
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+		<div class="deco">COLUMBIA UNIVERSITY COMS W6998</div>
+    <div class="title"><a href="/2020s_w6998" style="color:black;">SYSTEMS FOR HUMAN DATA INTERACTION</a></div>
+</div>
+
+
+
+
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-6 col-md-offset-3">
+		<style>
+p.review {
+  border-left: 2px solid grey;
+}
+
+div.block {
+  margin-bottom: 1em;
+}
+</style>
+
+<h2 id="discussion-points">Discussion Points</h2>
+
+<p class="block">What is the difference between comparative strategies and comparative designs? Is the comparative framework described comprehensive?</p>
+
+<p class="block">I think it would be great to discuss how the comparison papers considerations have impacted (or can impact) how the design of visualizations in general. It seems like a really cool idea to apply a logical framework like this to design of visualization of datasets in general. Its not really the topic of that paper, as it focuses on scalability, but I think the possibility for expansion is there and that it might be really cool.</p>
+
+<p class="block">how to read related work. Related work is very boring since it doesn't say too much in the paragraph and it is impossible to go through every citation. But it looks important because it lays a landscape of the topic. So how should I read related work? For example, how careful should I be when I read?</p>
+
+<p class="block">I'm interested in discussing the significance of methodology papers like paper 1, especially the 'practical use' of them. e.g. Can they be utilized by people from industrial world? / Will people in industry really care about those papers?</p>
+
+<h2 id="paper-1">Paper 1</h2>
+
+<h3>2/18/20 0:11 Xupeng Li</h3>
+<p class="block">This paper gives an overview on the research field of visualization. It raises a number of fundamental questions and gives high level ideas and thoughts for each question. I will take Voyager system as an example to go through some of the questions. First, Voyager is a good system that having a human as well as a computer in the loop. Voyager is precisely designed for people to analyze data when they don't know exactly what questions they need to ask in advance. It allows users to discover data with recommendations. It also takes advantage of computing resources to analyze and present informative visualizations as good as possible, and presents data in detail when touching a specific element of a visualization by mouse's curser. Besides, Voyager also refines its recommendations via user's interaction and tries to optimize the performance of its recommendation system. From this paper's perspective, I think Voyager has a good and successful design.</p>
+
+<h3>2/17/20 23:51 Deka Auliya Akbar</h3>
+<p class="block">The first chapter of the book mainly discusses Data Visualization at high-level. From the first chapter, the author manages to explain clearly the important aspects of data visualization to augment human capabilities, the visualization design considerations, the rationale for visualization, challenges, and limitations, etc. which she composes into question sections and answers. The chapter is really easy to read and the author provides lots of important examples and figures which help illuminate concepts being discussed. I think the writing and formatting of the chapter, in general, are superb.<br />
+<br />
+The book provides lots of insights on analyzing data visualization. I agree with the motivation and importance of data visualization that the author discusses, especially with regards to tradeoffs and the effectiveness of visual designs that it is important to satisfy rather than optimize. This is closely related to balancing between breadth and depth exploration, where we want to systematically consider many alternatives rather than excluding possible solutions early. In terms of effectiveness, the author mentioned correctness, accuracy, and truth, but I wonder if we should consider visual design readability or decipherability as a measure of effectiveness too. I concur with the resource limitations and issues that the author mentioned in terms of computational, human perceptual and cognitive, and display capacity. Taking into account these limitations, effective visual designs, change blindness and Information Density; and balancing the trade-offs between navigation &amp; exploration and visual clutter affects design choices for visualizations and the considerations for designing effective datavis tools. Information The author discusses the important visualization analysis framework with What-Why-How, which can the basis for designing a visual encoding of data, selecting datavis tools or even for building datavis tools for visualization.<br />
+<br />
+I have a question in mind when reading the paper, is visualization truly the only way to know about the intrinsic structure of the data? The book only compares with statistical characteristics of the data using Ancombes Quartet or statistical measures, but I wonder if this is only because they are not representative of the data. What if we have a model that can predict accurately but very difficult to visualize (eg: Neural Network models). This should mean that the model is able to capture the structure of the data well right? Although some models can be black-boxed and difficult for humans to understand if these models are difficult to visualize. I think the balance between visualization and data modeling would be an interesting and important approach to augment human capabilities in data understanding.<br />
+</p>
+
+<h3>2/17/20 20:54 Celia Arsen</h3>
+<p class="block">This chapter is an introduction to a general book on data visualization design. I think the authors goal is to produce a comprehensive guide that is accessible to readers from a wide background. In this introductory chapter they step through different aspects of data visualization on a general level and give some context as to why they are important. The ideas are not presented as hypotheses, or tests, but rather as given information. The author does not attempt to explicitly validate the claims made in the chapter because it is presumed that they are true. <br />
+For the most part, I agree with what the author has to say. The only point I questioned was when they said that the data vis designer does not typically have artistic license. This may be the typical case, but I do think that data vis purely for the sake of art is rapidly becoming much more popular. I wonder if systems for human data interaction will take this use into account more in the future. Are there currently systems for HDI that are explicitly designed for producing art?<br />
+</p>
+
+<h3>2/17/20 19:46 Carmine Elvezio</h3>
+<p class="block">This chapter is an introduction to a book on dataset visualizations. The chapter starts off with a definition of visualization, which is in the presentation of datasets to aid humans in completing some set of tasks. The author delves into a discussion about how, why and when to keep humans (and in contrast computers) in the loop with regards to the analysis of data. This is set to a spectrum of considerations of when to include a human (indefinitely vs as a transitory measure vs never, and for end users of more advanced users, etc), when to include a computer (tackling the infeasibility of creating large scale visualizations by hand). The authors then consider how humans process visualization and the benefits to presenting data in a form in which allows humans to take advantage of external representation (which can advantages in how people internalize the understanding and processing data) - with a particular focus on the human visual system (as non visual senses do not provide similar parallel processing capabilities or have not been explored in renderable depth. This chapter also explores the benefit of visualization of the data in addition to just presenting summarization considerations (like mean, and variance), the benefits of interacting with the data (and the connecting association with the design idioms powering the interaction and visualization modalities). Focusing on the particulars of tasks also allows for the appropriate fittings of the right visualization tools to it, in addition to ensuring that the proper metrics for effectiveness can be utilized. Another consideration is in the partitioning of the space of possible solutions into known/considered/proposed/and selected spaces, which is helpful in making taxonomies of these possible solutions. Ultimately, as a book and not a paper, the significance comes from the contribution this makes to a general understanding of the field. Of course, as were only observing the first chapter of a larger work, it is difficult to fully assess the weight of the contribution here but it is reasonable to interpret a scaled version of the contribution by looking at this chapter. And it appears to attempt to explore the space of the definition and framing of visualization of data sets. This is significant as it allows readers (who might have limited understanding of the space) to attempt to enter it (in anticipation of taking on related, harder material, with the knowledge of how to parse the literature, that much of the literature itself assumes a reader will have. I dont really find myself seeing technical limitations here as there is not a technical contribution thus far. However, I do wish the author would explore more examples of what data viz implementation might mean (in the context of programming and design). However, it is reasonable to consider that this might be discussed later on in the book. Further, the validation section hints at much larger questions that are not addressed in this chapter. To improve this, I think some code or software snippet with a small explanation would greatly help to provide better context to explain whats ahead. When considering a paper such as Polaris, it is interesting to see how these considerations could help to guide how Polaris could choose to execute the particulars of a chart generation decision, and of course, the same could be said of Voyager later. (Noting that Draco handles this later by trying to use machine learning to apply weights to the choices made in how a chart will be generated. However, the learning comes from the result of user studies principally.) But what the visualization decisions are in each system (Polaris and Voyager) are also dependent on the particulars of a domain, as is discussed in section 1.9. Ultimately, the effectiveness of the visualizations could have been improved by applying this level of refinement to the search space when iterating through possible design choices (as explored in 1.11).</p>
+
+<h3>2/17/20 18:43 Haneen</h3>
+<p class="block">Voyager and Polaris is an example of a tool that involves human-in-the-loop. Both systems built to support data exploration guided by humans to steer (Voyager) or construct (Polaris) set of visualization that would help them gain insights and better understand the analyzed data. Both systems dont consider the case when data is constantly changing. Thus it is acceptable to expect a user to be involved indefinitely - during the exploration period. On the other hand, for stream-based applications where the underlying data is constantly changing, this assumption isnt realistic, and an auto-monitoring system that alerts users of different patterns would be desirable.</p>
+
+<h3>2/17/20 12:06 Zachary Huang</h3>
+<p class="block">This chapter is a general introduction of visualization. It talks about the significance of visualization in the process of data analysis, how interactivity helps human better perceive data, how to choose the best visualizations given the task.... For example, the idea of perceptual effectiveness has been embedded in draco.</p>
+
+<h3>2/17/20 2:32 Yiru</h3>
+<p class="block"><br />
+This paper is focused on visualization comparison. It first defines what is the comparison by dictionary and proposes four considerations for visualizing comparison. According to the paper definition, the comparison is a set of items and an action that is being performed on the relationship among them. <br />
+<br />
+The four considerations are 1, identify the elements, 2. identify the challenge 3. find the strategy 4. find the visual design. <br />
+<br />
+This paper reads like a carefully- sorted survey. For every aspect, it refers to a lot of literature to clarify the point. The significant part could be that it summarizes the current study like a survey yet in the meantime it proposes its main idea and serves as a guidebook for visual design. <br />
+<br />
+I like its way to narrow down the scope to the comparison. In this way, it could make the four points very clear. It can also be very easy for readers to extend to other kinds of visualization. <br />
+<br />
+In terms of the four considerations, when I read it, it really bored me. But combined with the case studies, it sounds very reasonable. The visual design part implies the voyager system. In Voyager, it would recommend different styles of visualization which do consider juxtaposition or superposition or etc. <br />
+<br />
+</p>
+
+<h3>2/16/20 23:18 Yin Zhao</h3>
+<p class="block">This chapter introduces data visualization in a very high level, for people with no background knowledge about it. I like the why questions which explain all aspects of vis in a brief and concise manner. The visualization design problem exists because visualization is the most straight-forward for human perception, and that most of times the questions that people want to ask are not well-defined. Vis makes it possible for people to explore what the data could tell and show the concerning data interactively to solve problems. As a high level introduction chapter, I think it covers everything necessary to help basic understanding of the subject.</p>
+
+<h3>2/16/20 12:00 Adam Kravitz</h3>
+<p class="block">This paper is about aspects of visual design and what visual design can do for analyzing data. As well as limitations that visual aspects have as well as possible work around to any problems. The paper state that the power of visualizations, it allows people to analyze data when they dont know what questions to ask. paper also states that visuals for dataset help make understanding and using the data more efficient.<br />
+The significance of the paper is to show how visual designs can increase the efficiency in finding patterns in data as well as efficiency in displaying visualizations. Visualizations are stated to be useful to answer tons of questions, especially when there is a person in the loop. Visualizations can increase and change a persons mental capacity, helping them to surpass their internal cognition and memory, as well as helping them keep there attention on the task (since a limitation on visualizations tasks is keeping the attention of the user). Visual Design is very significant since on top of being able to make people more effective and go beyond their limits, visualizations also have the ability to even replace people from doing tedious tasks. <br />
+Some strengths I like about computation visual design are the facts that with computer help solve (or partially) solve a lot of problems with non- computation visual designs. For example, helping with attention span issues, computers dont have attention spans so the amount of tedious repetitive work it can do is exponential on top of saying time, computer in some visual designs can also show estimations more quickly to keep the users attentions. With computers being so fast, we can explore larger and larger data sets and what how visualizations can change over time since computers can do all the processing so quickly. I also like that with the increase speed and the increase with interactivity using the design, a person can more process more queries to complex datasets, since the visual designs help support exploration and investigation.<br />
+Some limitations are limited by computers, human attention spans, and displays. Displays specifically are limited by their size and pixel density literally, some data might not be graphable on the since of certain screens. When dealing with data that is a big deal, especially with bigger, and bigger datasets. Another limitation to visual design (but maybe its a strength in disguise), are that not all designs are good designs especially not all designs are good for all tasks. Since not all tools are best for the job it also makes it hard to find the right tools to solve some problem, but if someone can find the best tool for the job it will increase effectiveness, correctness, accuracy, etc.<br />
+The paper warns about change blindness of visualizations, where the user doesnt notice a change. But cant that be solved with notifications of differences between one visualizations to another. This could be done by ranking categories of possible changes more highly than others, so that notifications can be listed in order of importance.<br />
+</p>
+
+<h3>2/15/20 10:29 Qianrui Zhang</h3>
+<p class="block">## review<br />
+<br />
+This paper provides a way to understand a comparison task in visualization. It presents a framework that abstracts comparison tasks and the approaches that support them. The framework comprises a series of four considerations: elements, challenges, strategies, design, and can aid users with their tasks. After introducing the framework, the authors also present two use cases that have comparison tasks.<br />
+<br />
+This type of paper is kind of new to me. Instead of introducing a system, it is more about methodology in the field of visualization. While I think the systems introduced in section 7, which utilize the methodology, are impressive, I still don't fully understand the significance of this paper. In other words, I prefer to see a system and then the design insight behind it rather than directly read a lot of theory.<br />
+<br />
+One good thing about this paper is the structure is super clear and it is not difficult to follow the authors' idea. By showing four questions and answer them in section 3-6, the paper clearly introduces everything about visualizing comparison. It's still a little abstract though.<br />
+<br />
+And when it comes to weak points, the greatest one is I don't understand the motivation behind the paper. While what this paper describes makes a lot of sense, I'm not sure how people can use it. Maybe I'm biased, but I think the purpose of scientific research should be helping with real world problems, and this paper is more like a theoratical tutorial instead of trying to solve problems. And I would more like to see a paper that introduces some visualization systems first and then the methodology behind them (for instance, introduce systems in section 7 first and then the other contents).<br />
+<br />
+## Implication<br />
+I think the idea of comparison is also reflected in Voyager. The recommendation of visualizations implements visual comparison between visualizing different fields.</p>
+
+<h2 id="paper-2">Paper 2</h2>
+
+<h3>2/18/20 0:11 Xupeng Li</h3>
+<p class="block">This paper provides an abstract framework to aid in designing solutions for scenarios involving comparison, including considerations about comparative elements/challenges/strategy/design. The comparative elements include the set of items being compared and the actions that are bing performed on the relationship among the targets. The challenges and strategies are mainly dealing with the complexity and scalability problems. The paper presents three general design for comparison: juxtaposition, superposition, and explicit encoding. This paper is a good survey for comparative visualization, presenting broad and deep thoughts and providing a series of potential solutions. However, this paper does not consider having human in the loop. It does not discuss challenges and strategies for interactive comparison.</p>
+<h5>Example Vis</h5>
+<p class="block">https://blogs.oracle.com/analyticscloud/customize-oracle-data-visualization-using-plugins<br />
+<br />
+This link shows a screenshot of Oracle data visualization plugins. It generally deploys a juxtaposition design for comparison, but using three different types of charts in visualization. The strategies used in this example includes scan sequentially: comparing curves along time, and summarize somehow: summing up and presenting by fan charts.</p>
+
+<h3>2/17/20 23:51 Deka Auliya Akbar</h3>
+<p class="block">The paper discusses the framework and abstractions for designing a comparison visualization. Comparison tasks are important in many data analysis tasks, however other prior works tend to discuss comparison in high-level, or if it was discussed in thorough usually it is very domain-specific rather than discussing the comparison task in general in more detail. This paper describes a framework for understanding and designing visualization for comparison tasks in four steps: identifying comparative elements involving targets and actions on relationships between targets; challenges especially in terms of scalability in comparisons; a strategy to address the scalability challenges; and design considerations for comparisons. <br />
+<br />
+I like the authors idea of using semi-automated literature search, which provides an idea on a new source of data in which we can leverage the large collection of scientific journals and current technologies such as NLP and Computer Vision techniques large collection of scientific journals to extract data either for literature search or for our research experiments.<br />
+<br />
+The paper is a bit abstract which serves true to its purpose being which attempts to abstract the commonalities between comparison tasks. I agree with some ideas mentioned in the paper, such as understanding comparison tasks and challenges and the scalability challenges that must be addressed. I think some information in the paper is somewhat redundant. For example, the author describes some terms or concepts repetitively (eg: targets, actions) which can be compacted better. In contrast, I think examining (or abstracting) relationships between targets would be an interesting topic to discuss as it can help us to better understand a comparison task, however, it is not discussed much in the paper. I also wonder why the author uses Lessons in the sections, as some of the information is important and can be combined into the overview or the conclusion of each section rather than separating it as a different subsection. There are some minor spelling errors.<br />
+<br />
+There are some concepts mentioned in the paper which I am a bit opposed to. For example, why does the strategy that the author proposed only consider scalability challenges? I think the comparative elements and the comparison task should also be considered in choosing the strategy for visualizing comparison. Next, is naming truly important? If we have enough data, can we infer a comparison task by for example extracting the common visualization encodings and tasks that a domain mostly uses to do a comparison? Moreover, I think data transformation and computational methods can also help in solving the comparison challenges, for example scaling or outlier removals. I appreciate that he included the possibility of combining computational techniques with visualizations.</p>
+<h5>Example Vis</h5>
+<p class="block">As mentioned in the paper, visualization that has scalability challenges would be data of huge number, large size, or complex relationships. Some data that has these characteristics include medical images (genetic data is mentioned, but large-scale multi-level view of tissues or cells common in pathology research are also a difficult task to compare but isn't discussed in the paper), spatial data, network data, volumetric, and user data in large-scale applications.<br />
+<br />
+Here are some interactive visualization which I found online:<br />
+- Volumetric: https://developer.nvidia.com/index<br />
+- Network: Gephi (https://github.com/gephi/gephi)<br />
+- OpenSlide: for interacting with large-scale multi-level view of tissues or cells (https://openslide.org/)<br />
+- Spatial Data: https://kepler.gl/, https://deck.gl/, https://www.omnisci.com/<br />
+- User Data Analytics: https://www.kinetica.com/</p>
+
+<h3>2/17/20 20:54 Celia Arsen</h3>
+<p class="block">Comparing objects is one of the most common analytical tasks we perform, but there is not a scalable and detailed framework for designing comparison tasks. There is a lot of historical precedent in creating visualizations for comparison. However, existing frameworks have not provided a more specific breakdown beyond comparison, when in reality the idea of comparison contains a large range of tasks. The hypothesis is that designers can more successfully understand and tackle data visualization design using the suggested framework that abstracts comparison challenges and the approaches to them. The author specifies four main considerations in this abstract framework: identifying comparative elements, challenges, strategies, and designs. He goes into detail for each of these and describes the more nuanced components of each of them. <br />
+I do believe that the author provided helpful language for thinking about the problems and solutions to data visualization tasks. My main confusion was that the author did not directly connect solution strategies and designs with the challenges. That is, I expected the author to say, this type of solution fits well for this type of problem, and that did not really happen. More, the author provided tools for identifying challenges and weighing the costs and benefits of solutions. He provided three examples for evaluation. I found the examples illustrative of the abstract framework in practice. In general, though, I am not sold on the idea of using a couple case studies like this to prove the validity of your work. Of course, using your own framework on your own project produces a result that makes sense. I would be more impressed if an independent designer could learn the framework and use it to inform their own design decisions.</p>
+<h5>Example Vis</h5>
+<p class="block">https://www.visualcapitalist.com/100-most-spoken-languages/<br />
+<br />
+Comparisons:<br />
+-between the number of people who speak each language<br />
+-between native and non-native speakers within a language<br />
+-between language families<br />
+-between the number of speakers in the same language family<br />
+-between the number of speakers in different language families<br />
+-between the number of languages in different language families<br />
+-between languages and their parent languages<br />
+-between languages and their child languages</p>
+
+<h3>2/17/20 19:46 Carmine Elvezio</h3>
+<p class="block">This paper presents an assessment of comparison with data visualization and analysis. This does it across a spectrum of 4 considerations: Comparative elements (with a major focus on the separation of the things being compared, the target, and the action performed in doing the comparison; with the authors focusing on the relationships between targets), comparative challenges (with the challenges of number of items, size of items, and complexity of those relationships), scalability strategies (and ultimately the three strategies for dealing with this, including: scanning, subsetting, and summarizing), and comparative design (with the approaches of juxtaposition, superposition, and explicit encoding). Compared to the literature (presenting intentionally or incidentally surveys of the space of comparison), this paper really focuses on an attempt to understand the comparison problem (and provide an abstract framework to define the range of visualizations over), vs only providing a survey of the comparison space, and in taking a top-down perspective of the visualizations as opposed to trying to build a typology up from the types of visualizations that are frequently used. Another example is the identification of a set of actions upon which can be taken with the general notion of comparison. This includes: identifying, measuring/summarizing/quantifying, dissecting, connecting, contextualizing, and communicating a single or set of relationships whereas much of the prior work limits itself to the first action of identifying the relationships. I believe this to be significant over prior work as the decomposition of comparison into a more descriptive representation (as described) above- with the individual approaches/challenges per new consideration allows for a more complete picture when approaching the design of a visualization (with the potential to include interaction) than is provided for by just the broad stroke of comparison. While the methodology here is sound and makes sense, there do seem to limitations in the various verticals an analyst might need to be aware of, beyond the considerations of scale, which might be impacted by the decisions made by following this framework. For example, what happens when dealing with higher-dimensionality data or summarizations? From an interactivity perspective, the user might pinpoint a sample that interests them, but then a new dimension can be exposed (that cannot be visualized in conjunction with the other axes/dimensions). I think a way to fix this is to discuss a meta perspective of the considerations to see whether it is possible to apply these outside of scale questions. As an extension to the paper, I would like to see if and how the authors framework can be applied to specification of data as opposed to only looking upward through increased scalability, as I believe data focus is a topic as important as scalability.</p>
+<h5>Example Vis</h5>
+<p class="block">https://www.nytimes.com/interactive/2015/02/23/business/economy/the-changing-nature-of-middle-class-jobs.html<br />
+<br />
+In 2015, the New York Times had fantastic article on the changing nature of middle class jobs. This was a visualization that tried to show how the jobs of the middle class changed between 1980 and 2012 (when considering jobs of a category per 1000 jobs). This is a complex visualization that considers multiple axes: category of job, exact job type, number of jobs, gender of job occupant, and differential of job changes. So the comparisons include: job category and the number of jobs added or lost per 1000, relative gender breakdown per job category, and total changes in job category (in the taxonomy used by the authors). This is in consideration of then entire US workforce, so there is an attempt to deal with scale by considering the job breakdown as part of a normalized unit out of 1000 jobs. Further, due to the complexity of showing the changes in job gender breakdowns, they convert the visualization to one of *relative* gender differentials. Further, the graph job category consideration is sorted, from left-to-right by total job changes, in an attempt to help reduce the complexity of understanding where the largest job category losses occurred.<br />
+</p>
+
+<h3>2/17/20 18:43 Haneen</h3>
+<p class="block">In this paper, Gleichers provides a framework that abstracts comparison tasks to help designing visualizations that involve comparison. The author dissects a comparison task into multiple elements: what is being compared (targets), the relationship between targets, and actions on those relationships. The complexity of a comparison design is tangent on three factors: the number of items to be compared, the complexity/size of the items and relationships.<br />
+Taking a step back and identifying common elements between comparison tasks is an important endeavor because it reduces the problem into elements and gives a common terminology on which these elements are referred. I liked how the paper moves from conceptual explanation to concrete use cases where they highlight the comparison elements presented earlier in the paper.<br />
+<br />
+</p>
+<h5>Example Vis</h5>
+<p class="block">NeuroLines introduces a visualization technique designed for scalable detailed analysis of neuronal connectivity at the nanoscale level. It abstracts the 3D structure into a line map that resembles subway lines. The main task is to compare different neuron substructures and their connectivity while preserving the spatial relations between them and their branching morphology. The authors identify the set of tasks in the paper that are mostly domain-driven and the scalability challenge the tasks expose (section 4). <br />
+<br />
+https://vcg.seas.harvard.edu/publications/neurolines-a-subway-map-metaphor-for-visualizing-nanoscale-neuronal-connectivity</p>
+
+<h3>2/17/20 12:06 Zachary Huang</h3>
+<p class="block"><br />
+This paper talks about how we should use visualizations to compare. The significant part is that it formalize different ideas in the prior works. I like how the paper dissects the problem into four considerations. I wish they can have more details in interaction.</p>
+<h5>Example Vis</h5>
+<p class="block">https://blog.rabimba.com/2018/11/visualizing-large-scale-uber-movement.html Identify the relationships between uber movement and month, weekday, hour, distance, duration... They use both Scan Sequentially and "Summarize Somehow".</p>
+
+<h3>2/17/20 2:32 Yiru</h3>
+<p class="block">The chapter is about visualization design. It also functions as a brief introduction about the next several chapters. It explains different aspects of visualization, including external representation, how much data should be in the chart, analysis task, validation, effectiveness, etc.<br />
+<br />
+I like the part of "why are most designs ineffectiveness?" This part is about the search space of visualization idiom. It mentions that the search space is huge. When thinking about design in terms of traversing a search space, it is not useful to optimize. A more appropriate goal is to satisfy. This argument is similar to the idea of Draco and voyager. In Draco, they use asp to model satisfaction. In voyager, they try to show more to the user instead of intermediately fixate on one solution without considering any alternatives. <br />
+<br />
+As an overview of the whole book, this chapter is good. It is comprehensive and it can arouse my interest to read the following part of the book.</p>
+<h5>Example Vis</h5>
+<p class="block">https://medium.com/nightingale/visualizing-the-movement-of-music-genres-527e194e1d42<br />
+<br />
+This data visualization tells a story about the Dutch music landscape over the past three years. It compares how different genres of music trends over the past three years. Also this visualization can be used to compare for one kind of genres, how it trends over time. Although it has 10000 points, it adopts scan and juxtaposition to visualize everything.</p>
+
+<h3>2/16/20 23:18 Yin Zhao</h3>
+<p class="block">This paper talks about a framework of supporting visualizing comparison, by dividing the problem into four considerations. The paper is different from other similar ones that talk about visualization problems in that it abstracts the comparison tasks and approaches that support them. It clearly defines targets and actions of comparison, explores implicit comparison, and categorizes comparisons. It helps understanding and defining comparison tasks, however, I still feel that after reading this paper, I cannot find a concrete way to do the comparison task myself.</p>
+<h5>Example Vis</h5>
+<p class="block">yelp search result in the map. https://www.yelp.com/search?find_desc=japanese&amp;find_loc=Manhattan%2C+NY&amp;ns=1</p>
+
+<h3>2/16/20 12:00 Adam Kravitz</h3>
+<p class="block">This paper talks about strategies for comparison and addresses specific scenarios and general cases of comparison, as well as using aid from designing tools for comparison tasks. Comparisons as a definition, as background, normally involves 2 element and connecting the outcomes. The paper argues that comparisons are more than finding differences, but it can also find patterns, and show predictions. <br />
+The significance of the paper show the challenges of dealing with comparisons, as well as contributing some solutions to some problems related to comparisons as well as ideas for comparative designs. The paper pitches ideas for comparative strategies related to scalability. It pitches scanning sequentially through the data, selecting a subset of data, and summarizing the data. The comparative designs it discuss are things like juxtaposition, superposition, and explicit encoding.<br />
+I like how the paper explains how to view aspects of comparisons for visualizations. Continuing on from the last paragraph focusing on the comparative scalability problem, understanding the terms scanning sequentially, selecting subset , and summarizing is important to comprehend how to compare. Scanning sequentially, a way to examine data, where a user exams the items in some order one at a time. Selecting subset, where a user samples the data, or subsets the data, so that the users can examine parts of the data quickly when the dataset is really large. Lastly to Summarize, where the user uses abstractions to describe the data. These aspects of comparing need visual design aspects like juxtaposition, superposition, and explicit encoding. Juxtaposition, is when items placed in same space (in other words placed next to each other). Superposition is when items placed in same space ( on top of each other). Lastly explicit encoding shows the relationship between different elements.<br />
+Some limitations are, for example, the number of items being compared, the size of complexity, and identifying challenging factors of comparative elements. These limitations are pretty intuitive, the more items there are to compare the more challenging and time it takes to compare all element. The more complex the elements being compared, the harder it is to find what to compare and how to compare the items. Lastly, finding challenging factors in comparativeness of the elements, obviously makes comparing the elements hard (since there are challenging factors).<br />
+The paper I think was lacking talking about some existing strategy to deal with problems with comparisons in depth, it talks about sampling and things like that but very briefly.<br />
+</p>
+<h5>Example Vis</h5>
+<p class="block">https://miro.medium.com/freeze/max/720/1*pjacFJ3V-j9rdKKbJ07qKg.gif, The comparisons used in this visualization is Juxtaposition, as well as I think explicit encoding using different parts of the circle showing relationship to time some how. I user uses summarizes as attributes for the graph, instead of going in depth into time, they write the general activity.</p>
+
+<h3>2/15/20 10:29 Qianrui Zhang</h3>
+<p class="block">This reading is a chapter(the first chapter) of a visualization textbook and it introduces some basic elements about visualization in the form of questions and answers. As far as I understand, those elements fall into following categories similar to the introduction part of a paper: 'What is visualization', 'Why is it important' and 'why is it difficult'. And I think it's a very solid textbook, having almost all elements a successful textbook should have: clear structure, informative figures and detailed explanation. After reading, I actually learned a lot of terms in visualization field.<br />
+<br />
+The discussion of 'why are most designs ineffective' interests me the most. Previously I've always been thinking design as an optimization, i.e. gradually get to the best one by changing, kind of like gradient descent. The idea of satisfaction and the search space metaphor give me a new way to consider this problem.<br />
+<br />
+Limitations: Some questions in the titles seem trivial and kind of discourage me from reading. For instance, the qeustions 'why have computer in the loop', 'why show the data in detail' and 'why focus on tasks' don't interest me at all at the first glance. And like most of textbooks talking about theory, it doesn't really excite me. <br />
+<br />
+And just personally, I prefer textbooks with more jokes.(e.g. Computer Network: a Top-Down Approach)</p>
+<h5>Example Vis</h5>
+<p class="block">Follows are example visualizations of scalable comparisons based on my understanding of the paper.<br />
+<br />
+### music timeline - increasing number of items being compared<br />
+[Music timeline](https://music-timeline.appspot.com/) visualizes how artists and genres have gained and dropped in popularity over the decades. It compares several different kinds of music by using different colors and thickness.<br />
+<br />
+### work time comparison - increasing complexity of items being compared<br />
+[When are people working](https://www.npr.org/sections/money/2014/08/27/343415569/whos-in-the-office-the-american-workday-in-one-graph?/) is a visualization comparing the work time of different types of job. The items that are being compared are the statistics of work time of a given type of job. And they use a line chart to compare the different trends.<br />
+<br />
+I don't really understand what is 'complexity of relationships' (and I think the paper should provide some examples for that) and I would love to discuss it during class.</p>
+
+<h2 id="paper-3">Paper 3</h2>
+
+<!--
+## Reviews
+
+-->
+
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>

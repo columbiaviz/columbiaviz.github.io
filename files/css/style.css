@@ -12,7 +12,8 @@ body {
   width: 100%;
   color: black;
   background-color: white;
-  font: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  font-size: normal;
 }
 
 
@@ -50,7 +51,7 @@ body.coursenotes .container {
 
 #contents {
   background: #f5eeee;
-  font-size: 80%;
+  /*font-size: 80%;*/
   margin-top: 30px;
   padding: 0px;
   max-width: 360px;
