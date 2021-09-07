@@ -73,7 +73,7 @@ Surveys
 
 Readings 
 
-* Required: Jeanette Wing [The Data Lifecycle](https://hdsr.mitpress.mit.edu/pub/577rq08d/release/3)
+* Optional: Jeanette Wing [The Data Lifecycle](https://hdsr.mitpress.mit.edu/pub/577rq08d/release/3)
 * Optional: JCR Licklider [Man-Computer Symbiosis](http://worrydream.com/refs/Licklider%20-%20Man-Computer%20Symbiosis.pdf)
 * Optional: Tamara Munzner [(Textbook) Visualization Analysis and Design](https://www-taylorfrancis-com.ezproxy.cul.columbia.edu/books/9780429088902)
 * Optional: Jeffrey Heer [Agency plus automation: Designing artificial intelligence into interactive systems](https://www.pnas.org/content/pnas/116/6/1844.full.pdf)

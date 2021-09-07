@@ -18,15 +18,9 @@ Students will submit reviews of the class readings before each session.  A sessi
 
 ## Recent Announcements
 
-<!--
-* Please note, the full list of all papers and their direct PDF links are below the schedule.  The schedule will link to the papers on nb2.mit.edu, which is a nice platform for the class to collaboratively discuss the readings.  You can subscribe using our class' [registration link](http://nb.mit.edu/subscribe?key=Ky57vnKHys8WXkwqSJIZvkdJaqLLVLm6JDCPA0ueYwKLKrqlb6) 
--->
-
-* 09/01/21: TODOs for first class
-  * [Submit reviews](https://forms.gle/NpGxPBCeMFvKsr4W9)
+* 09/13/21: TODOs for first class
   * [Submit assignment 1](./a1)
   * [Sign up for the class' slack workspace](https://join.slack.com/t/hdisystems/signup).
-  * [Register an account on nb2.mit.edu](http://nb.mit.edu/subscribe?key=Ky57vnKHys8WXkwqSJIZvkdJaqLLVLm6JDCPA0ueYwKLKrqlb6)
 
 
 ## Schedule (In Flux)
@@ -54,26 +48,6 @@ HDI
 * Ways to interact with and manipulate data/program
 * Differences based on the task, data type, and scalability/system concerns
 
-Connection between classic db and ui
-
-* vis = view
-* selection is lineage
-* interaction is querying
-* where the obvious connection fails: layout, nested organization, pure design
-
-
-Tasks: tamara, limitations of tamara's
-* How to articulate tasks?
-Languages: VizQL, Vegalite 
-* What properties of a language?  compositional, well defined
-Interaction Design: vegalite?
-* 
-Perception: Cleveland, more recent one
-* Discuss experiment design, metrics, user studies
-Cognition: Hullman
-Recommendation: apt/draco
-* language useful for prediction
-Recommendation: exploration??
 Data models: relational, nested, streaming, (meta)lineage
 DB-VIS connections
 * vis=view
@@ -88,44 +62,6 @@ DB-VIS connections
   * Approx: AQP, blinkdb
   * precompute: immens/indexes
   * PVD
-
-Modality: touch
-* gesturequery
-* dbtouch
-Modality: text/voice
-* Speakql
-* CiceroDB
-Modality: spreadsheet
-* Dataspread
-* Airtable
-
-Case Studies
-Tasks: extraction
-* azza's
-Tasks: cleaning
-* wrangler/profiler
-Tasks: exploration
-Tasks: Comparison: gleicher, VCA
-Tasks: debugging ML
-Tasks: debugging data analysis
-
-
-Concerns
-
-* Design for the task
-* Interactivity and Responsiveness
-* Scale
-* "Business logic"
-* Changing data (stream and updates)
-* Adhoc vs precanned dashboards (explore vs present/share)
-* 
-
-Properties of data systems
-
-* query
-* AI/prediction
-* lineage?
-* explanation?
 
 Examples throughout data pipeline
 
