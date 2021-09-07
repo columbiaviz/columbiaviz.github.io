@@ -11,17 +11,30 @@ This course takes the current Covid-19 pandemic seriously.  Masking and 6-feet s
 
 # Course Expectations
 
-### What you can expect from Me
+### What you can expect 
 
-The course is structured akin to a reading seminar, where the format is loosely as follows:
+This course will introduce you to the wonderful world of research, where few things are _really_ understood and there's a wide world to explore.
+You will be exposed to major aspects of conducting research, including learning the state of the art by reading and critically assessing recent papers,
+learning that there's a lot that is still not well-understood, and conducting a research project yourself.   
+As such, the course is structured akin to a reading seminar, where the format is loosely as follows:
 
 * General discussion about current events and relationship to recent readings
 * Small-group discussions about the session's reading(s)
 * A presentation to provide context of the session's topic, interspersed with Q&A
 
+Since the course topic is _Systems for Human Data Interaction_, which is an emerging area of research, we will read papers in adjacent research areas.
+You will gain exposure to the main topics in visualization research, database research that is related to visual analysis, and many data related tasks that
+inherently rely on interactive data interfaces.   The course is structured into 4 areas (see [reading list](./papers) for details)::
+
+1. Visualization,
+2. Data management systems,
+3. Input/output Modalities, and
+4. Data tasks
 
 
 ### What I expect from You
+
+It is hard to learn about research via lectures, thus I expect the following from you:
 
 * Students are expected to *actively participate* in class discussions; participation is mandatory.
 * Students should be comfortable reading research papers; you will read, answer questions, and comment on the readings before class.
