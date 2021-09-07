@@ -11,7 +11,7 @@ You can discuss questions and ask for clarifications with your colleagues and/or
 We may select a random review to read and discuss in class.  This serves to highlight important characteristics of reading papers and writing good reviews.
 
 
-### Submission
+#### Submission
 
 Overview
 
@@ -20,7 +20,7 @@ Overview
 * You may miss submissions for up to **4 lectures**.
 * To submit, [**go to the class wiki**](https://github.com/columbiaviz/2021f-systemshdi/wiki) and click on the appropriate topic
 
-### Reading Tips
+#### Reading Tips
 
 Ask the following questions while readings
 
@@ -49,7 +49,7 @@ How to review papers
 * [How NOT to review a paper](https://sigmodrecord.org/publications/sigmodRecord/0812/p100.open.cormode.pdf)
 * [Conference Reviewing Considered Harmful](https://homes.cs.washington.edu/~tom/support/confreview.pdf): A view on how reviewing works in practice.
 
-## Background
+#### Background
 
 Background you should be comfortable with
 
