@@ -3,14 +3,6 @@ layout: page_2021
 title: Research Project
 ---
 
-<style>
-.cool {
-  background-color: steelblue;
-  color: white;
-  text-weight: bold;
-}
-</style>
-
 ## Important Dates 
 
 Percentages are of your total class grade.

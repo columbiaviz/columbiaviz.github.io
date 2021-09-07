@@ -6,8 +6,8 @@
   Location: 401 Chandler
 * [Syllabus](./syllabus)
 * [Slack](https://join.slack.com/t/hdisystems/signup)
+* [Papers](./papers)
 * [Project](./projects)
-* [Resources](./resources)
 * [Submit Reviews](https://github.com/columbiaviz/2021f-systemshdi/wiki)
 
 
