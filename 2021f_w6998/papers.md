@@ -98,12 +98,16 @@ Readings
 Readings
 
 * Required: Chris Stolte et al. [Polaris](http://graphics.stanford.edu/papers/polaris_extended/polaris.pdf)
+  * Focus on the layout algebra
 * Required: VizQL algebra are in [Chapter 4 of Stolte's thesis](http://graphics.stanford.edu/papers/cstolte_thesis/thesis.pdf)
+* Optional: Pu and Kay [Probabilistic Grammar of Graphics](https://osf.io/dy8qv/)
+* Optional: Aidan Slingsby, Jason Dykes, Jo Wood [Configuring Hierarchical Layouts to Address Research Questions](https://openaccess.city.ac.uk/id/eprint/158/1/Configuring_Hierarchical_Layouts_to_Address_Research_Questions.pdf)
+  * Website with [syntax documentation](https://www.gicentre.net/hive)
+* Optional: Wickham and Hofmann [Product Plots](https://vita.had.co.nz/papers/prodplots.pdf)
 * Optional: Arvind Satyanarayan et al. [Vega-Lite: A Grammar of Interactive Graphics](http://idl.cs.washington.edu/papers/vega-lite)
 * Optional: Hadley Wickham [A Layered Grammar of Graphics](http://vita.had.co.nz/papers/layered-grammar.pdf) Sections 1-3. 
  [documentation](https://ggplot2.tidyverse.org/).
  [ggplot2 book](https://ggplot2-book.org/)
-* Optional: Arvind Satyanarayan et al. [Declarative Interaction Design for Data Visualization](http://idl.cs.washington.edu/papers/reactive-vega)
 
 <!--
 * Emanuel Zgraggen et al. [(s/q)ueries: Visual Regular Expressions for Querying and Exploring Event Sequences](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/chi2015-squeries.pdf)
@@ -114,7 +118,10 @@ Readings
 
 Readings
 
-* Required: Bahador Saket et al. [Investigating Direct Manipulation of Graphical Encodings as a Method for User Interaction](https://bahadorsaket.com/publication/infovis2019.pdf)
+* Required: Dimara and Perin.  [What is Interaction for Data Visualization?](https://hal.archives-ouvertes.fr/hal-02197062/document)
+* Required: Michel Beaudouin-Lafon.  [Instrumental Interaction](https://www.dropbox.com/s/bteajeub18durwe/michel%20-%20instrumental%20interaction.pdf?dl=0)
+* Required: Heer and Shneiderman. [Interaction Dynamics for Visual Analytics](https://queue.acm.org/detail.cfm?id=2146416)
+* Optional: Bahador Saket et al. [Investigating Direct Manipulation of Graphical Encodings as a Method for User Interaction](https://bahadorsaket.com/publication/infovis2019.pdf)
   * [Liger demo video](https://vimeo.com/327476247)
 * Optional: Ali Sarvghad et al. [Embedded Merge & Split: Visual Adjustment of Data Grouping](https://bahadorsaket.com/publication/EMS.pdf)
 * Optional: Miro Mannino and Azza Abouzied. [Expressive Time Series Querying with Hand-Drawn Scale-Free Sketches](http://doi.acm.org/10.1145/3173574.3173962)
@@ -252,6 +259,7 @@ Readings
   * [Sigma computing](https://www.sigmacomputing.com/free-trial/)
   * [Airtable](https://airtable.com/signup)
 * Optional: Bendre et al. [Dataspread: Unifying Databases and Spreadsheets](https://people.eecs.berkeley.edu/~adityagp/papers/data-spread-demo.pdf)
+* Optional: Lyn Bartram, Michael Correll, and Melanie Tory [Untidy Data: The Unreasonable Effectiveness of Tables](https://arxiv.org/pdf/2106.15005.pdf)
 
 #### Modalities: Additional Modalities
 

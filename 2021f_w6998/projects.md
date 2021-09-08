@@ -7,10 +7,11 @@ title: Research Project
 
 Percentages are of your total class grade.
 
-* Proposal    10-01   (5%)
-* Paper Draft   10-29  (5%)
-* Presentation  12-10  (5%)
-* Report        12-14   (35%)
+* Proposal    09/27   (5%)
+* Check In    10/06 (0%)
+* Paper Draft 11/03 (5%)
+* Showcase  12/06  (5%)
+* Report        12/13   (35%)
 
 
 
@@ -18,11 +19,14 @@ Percentages are of your total class grade.
 
 The major portion of your grade is based on the research project. Students will organize into teams of 1-2 students and work on a research project.  It should take about 3-4 weeks to complete.  Some possible ideas are [described below](#suggestions).
 
-Teams should consist of 1-2 people (we may adjust this depending on the size of the class). In addition, if you have a project in mind, please discuss it with Eugene well ahead of time. We have also included a list of possible projects at the end of this document although you are not required to choose from these.
+Teams should consist of 1-2 people (we may adjust this depending on the size of the class). Once you have a project in mind, discuss it with Eugene in OH well ahead of the proposal deadline. We have also included a list of possible projects at the end of this document (you are not required to choose from these).
 
-Good class projects can vary dramatically in complexity, scope, and topic. The only requirement is that they be related to something we have studied in this class and that they contain some element of research -- e.g., that you do more than simply engineer a piece of software that someone else has described or architected. To help you determine if your idea is of reasonable scope, we will arrange to meet with each group several times throughout the semester.
+The primary requirement is that the project is related to something we have studied in this class and that they contain some element of research -- e.g., that you do more than simply engineer a piece of software that someone else has described or architected. To help you determine if your idea is of reasonable scope, we will arrange to meet with each group several times throughout the semester.
 
-Choosing a research problem is very difficult, especially if you have not done so before.  You may end up thinking of, and discarding many possibilities before finding the project you ultimately work on.  Have a fuzzy idea?  Want some feedback or help brainstorming a project?  **Come to office hours and/or recitation.  The staff are all here to help!**
+Good class projects can vary dramatically in complexity, scope, and topic.  The goal of the class is for you to experience the process of conducting research.  Thus we care more about the "structural" parts of the research -- is the related work section thorough?  Is the project well-differentiated from prior work?  Is it based on testable hypotheses with well-reasoned metrics?  Does the evaluation actually answer the hypotheses? -- and less about the "interestingness" of the project.
+
+
+Choosing a research problem is very difficult, especially if you have not done so before.  You may end up thinking of, and discarding many possibilities before finding the project you ultimately work on.  Have a fuzzy idea?  Want some feedback or help brainstorming a project?  **Come to office hours.  We are here to help!**
 
 
 <a name="proposal" />
@@ -32,6 +36,8 @@ Your research proposal will contain an overview of the research problem, _your h
 
 
 We have setup a template for your proposal on overleaf.  Clone it into your team's account to edit it.  Make sure to change the title and author names, and include your team members' UNIs.
+
+The proposal will be evaluated based on the quality of the hypothesis -- is it testable?  Does it ask a question that is well motivated by user needs and/or related work?  Is it achievable?
 
 
 Submission
@@ -54,7 +60,8 @@ Slides should cover:
 
 Submission
 
-* [Click here to sign up for an appointment during week of 3/23 to 3/27](https://calendar.google.com/calendar/selfsched?sstoken=UUlmUlc5VDIwWDJwfGRlZmF1bHR8MTUwY2E3NDBiMDNhMTU4ZDIyODhlMjFlZTAzZGMyZTU)
+* [Click here to sign up for an appointment](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUlmUlc5VDIwWDJwfGRlZmF1bHR8MTUwY2E3NDBiMDNhMTU4ZDIyODhlMjFlZTAzZGMyZTU).  you may need to click "Look for appointment slots further ahead" and go to the appropriate week.
+
 
 
 
@@ -95,7 +102,7 @@ Your presentation should be polished.  Since there is still time until the final
 
 **Since you are presenting to your peers as well, make sure you give your colleagues enough context to understand your ideas.  In addition to _what_ you did, help your colleagues understand _why_ you made your specific choices, and provide examples.  It's better to make sure the audience learns a few specific ideas than try to say everything.**  Come to office hours or contact the staff if you would like feedback.
 
-Overall logitics
+Overall logistics
 
 * 2 person teams: 6 min presentation, 5 min feedback
 * 1 person teams: 5 min presentation, 4 min feedback
@@ -147,25 +154,34 @@ The following are examples of possible projects -- they are by no means a comple
 1. Research project: model an unsolved problem, propose or extend an algorithmic solution, evaluate and report findings.
 2. Design: identify an underserved data problem for which a sound, composable interface doesn't exist, propose an interface and interaction design, build and evaluate it.
 3. Fill a gap:  think about something useful that _should_ be easily doable, but is painful or impossible with current state of the art.  Fill that gap.
+4. Reproduce and enhance: there are many papers that describe an idea in theoretical terms, or that implemented their ideas in a different context (maybe they implemented in a language that few people now use, or made assumptions that don't hold anymore).  Thoroughly understand a paper (or collection of papers) and reproduce the ideas in a modern context.  
 
 
-<!--
-### Explanation and Debugging
+### SQL Debugging
 
-Scorpion/DIFF for SQLite
-
-Translate sql into data frame statements, maintain bidirectional mapping, allow stepwise debugging in data frame, translate fixes back to SQL
+Debugging SQL queries is very difficult [[1]](https://dl.acm.org/doi/pdf/10.1145/3313831.3376485)[[2]](https://dl.acm.org/doi/pdf/10.1145/1951365.1951441).  My hypothesis is because there is a mismatch between the declarative SQL language that the user writes in, and the underlying step-by-step execution plan.  In fact, users often say that they "serialize" the query into steps and debug each step at a time.   The idea of this project is to help SQL debugging by translating a SQL query into a sequence of data frame statements (perhaps, one per cell in a Jupyter notebook) and maintaining the bidirectional mapping.  In this way, the user can individually inspect each data frame statement, edit them to fix the bug, and automatically map those edits back to the SQL query.  It would also be good to identify the types of queries and edits that can be correctly supported by this approach.
 
 
 ### Lineage
 
+
+
+Lineage tracks the correspondence between individual database records  and the objects shown on the screen.  Our group has built the first database engine that tracks lineage with negligible overhead.  This makes it possible to use and operationalize lineage in interesting ways.  
+
+TBA
+
+<!--
 Develop and use lineage
 
 * sharing, B3++
 * UI-data interplay
+-->
 
 ### Interaction Design
 
+TBA
+
+<!--
 integrate VCA into a vis library
 Extend VCA to arbitrary workflows
 
@@ -173,13 +189,42 @@ Extend VCA to arbitrary workflows
   workflows can be compared?
   * more generally, when selecting marks in a vis, what representations 
     can it have?
+-->
 
 ### Interface Generation
 
-* extend PrecisionI (new languages, interaction)
+Precision Interfaces, or PI2, ([video here](https://youtu.be/1q8ZiPGv_z8?t=1737)) is a project to generate interactive visualizations from a small number of example SQL queries.   Below are a number of promising extensions to the project.  If interested, contact [yiru chen](mailto:yiru.chen@columbia.edu) directly.
+
+##### Jupyter Integration and User Study
+
+The goal of this project is to integrate PI2 into Jupyter notebook, explore the interaction designs for using PI2 in Jupyter, and conduct a user study to understand the pros and cons of an automatic interface generation tool as part of data analysis.
+
+##### User Customization of PI2's Interface Generation Algorithm
+
+PI2 uses a fixed cost model to generate interfaces. However, users may have preferences in terms of the interface design, visualization types, widgets, or layout.  For instance, they may like some views and widgets, but want to re-generate the rest; or they may like the layout but not the chosen interactions; or they may feel that PI2 over-generalized certain parts of the interface.   Explore the design space to help users specify these preferences, and extend the PI2 interface generation algorithm  to support this customization.  
+
+
+##### Support Non-SQL Inputs
+
+PI2 currently assumes SQL queries as input.  However, writing example SQL queries can be tedious if the user wants to quickly author a new interface.  Perhaps there is a concise SQL-like templating language that can be in lieu of the current input sequence of SQL queries. Alternatively, it would be good to support data frame programs, since they are very similar to SQL already.  
+
+##### Benchmark Generation
+
+Benchmarking interactive visualization systems is very hard, and the current benchmark called [IDEBench](https://dl.acm.org/doi/pdf/10.1145/3318464.3380574) is limited to 4 simple interactions and visualizations that they use to generate a workload.  In contrast, PI2 can generate an arbitrary number of visualization interfaces automatically!  Explore how we can use PI2 and its generated interfaces to create a new benchmark.
+
 
 ### Performance
 
-PVD frontend
+TBA
 
--->
+### What We Talk About When We Talk About Data
+
+How are data and analyses referred to and described in scientific work?  When data is presented as figures or tables, how is it referred to?  What are the verbs and nouns?  Is there a universal set of ways that figures are described (e.g., in terms of comparisons? in relative terms? ).  This can serve as the evidence for a new data analysis language.  
+
+[ArXiV](https://arxiv.org/help/bulk_data_s3) releases dumps of the submitted papers.  Identify the papers that include latex source files, parse the documents to find the charts, captions, and references to those charts in the text.
+
+
+Related Works
+
+* The [Kori paper](https://arxiv.org/pdf/2108.04203.pdf) analyzed chart and descriptions from a small number of news and scientific articles.
+
