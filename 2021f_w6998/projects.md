@@ -217,6 +217,10 @@ Extend VCA to arbitrary workflows
     can it have?
 -->
 
+### Design Differencing
+
+There are many ideas from the world of web design that we can bring to data interfaces.  As one example, there are many tools to [compare different versions of a web design](https://www.figmatic.com/pixelay/), however what would comparing versions of an interactive visualization look like?  [Willett's paper on design hand-offs](https://ieeexplore.ieee.org/abstract/document/8816695) discusses the challenges of comparing versions of a visualization due to potential changes in the data processing and/or visual design layers.    Given two versions of a visualization (along with the code and data), explore the design space to help user understand what changed.
+
 ### Metadata
 
 Datasets in the wild often come with a text or PDF file that describes the data.  For instance, [UCI data repository](https://archive.ics.uci.edu/ml/index.php), [Kaggle](https://www.kaggle.com/datasets), and [government data](https://www.data.gov/) often include a file that describes the schema and columns and codes.  Given a data file (say in a standardized format) and a metadata file (say in text), can you automatically attribute and annotate the data file with relevant metadata, and design a dataset exploration interface that better surfaces this information?
