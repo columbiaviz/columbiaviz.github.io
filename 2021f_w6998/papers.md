@@ -168,7 +168,7 @@ Readings
 * Optional: Manasi Vartak et al. [SeeDB: efficient data-driven visualization recommendations to support visual analysis.](http://www.vldb.org/pvldb/vol8/p2182-vartak.pdf)
 
 
-<a href="multiverse"/>
+<a name="multiverse"/>
 #### Multiverse Analysis
 
 Readings
