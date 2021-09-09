@@ -219,7 +219,7 @@ Extend VCA to arbitrary workflows
 
 ### Design Differencing
 
-There are many ideas from the world of web design that we can bring to data interfaces.  As one example, there are many tools to [compare different versions of a web design](https://www.figmatic.com/pixelay/), however what would comparing versions of an interactive visualization look like?  [Willett's paper on design hand-offs](https://ieeexplore.ieee.org/abstract/document/8816695) discusses the challenges of comparing versions of a visualization due to potential changes in the data processing and/or visual design layers.    Given two versions of a visualization (along with the code and data), explore the design space to help user understand what changed.
+There are many ideas from the world of web design that we can bring to data interfaces.  As one example, there are many tools to difference versions of a [web design](https://www.figmatic.com/pixelay/) or an [image](https://docs.github.com/en/github/managing-files-in-a-repository/working-with-non-code-files/rendering-and-diffing-images#viewing-differences), however what would differecing versions of an interactive visualization look like?  [Willett's paper on design hand-offs](https://ieeexplore.ieee.org/abstract/document/8816695) discusses the challenges due to potential changes in the data processing and/or visual design layers.    Given two versions of a visualization (along with the code and data), explore the design space to help the user understand what changed.
 
 ### Metadata
 
