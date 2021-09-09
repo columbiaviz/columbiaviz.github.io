@@ -20,9 +20,9 @@ Students will submit reviews of the class readings before each session.  A sessi
 
 ## Recent Announcements
 
-* 09/13/21: TODOs for first class
-  * [Submit assignment 1](./a1)
-  * [Sign up for the class' slack workspace](https://join.slack.com/t/hdisystems/signup).
+* 09/13/21
+  * [Start and submit assignment 1](./a1)
+  * Start reading wednesday's paper and submit a review by the night before
 
 
 ## Schedule (In Flux)
