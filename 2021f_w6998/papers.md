@@ -24,17 +24,16 @@ Overview
 
 Ask the following questions while readings
 
-* What is the context of this work?
+* Context 
+  * What are the actual hypotheses?
   * What was the unmet need or opportunity?  Does it make sense?
   * What were existing approaches and why do they work or not work?
   * What is the simplest example that highlights the problem that this approach works best for?
-  * Does the paper (and its contributions) matter?
-  * What are the actual hypotheses?
 * Approach
-  * How do they seek to validate their hypotheses? Do they make sense?
-  * Is the evaluation cursory or deep?
-  * Do you believe their results?
-  * Are the results presented well?
+  * When does the approach work?  Assess the underlying assumptions.
+  * How well does the evaluation validate the core hypotheses/claims?
+    * Do you believe their results?
+    * Are the results presented well?
 
 
 How to read papers
@@ -160,11 +159,24 @@ Readings
 
 * Required: Jock D. Mackinlay et al. [Show Me: Automatic Presentation for Visual Analysis](https://research.tableau.com/sites/default/files/200711-infovis-showme.pdf)
 * Optional: Dominik Moritz et al. [Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco](https://idl.cs.washington.edu/files/2019-Draco-InfoVis.pdf)
+* Optional: Lee et al. [Lux: Always-on Vis Recommendations](https://arxiv.org/pdf/2105.00121.pdf)
 * Optional: Kanit Wongsuphasawat et al. [Voyager: Exploratory analysis via faceted browsing of visualization recommendations](http://www.cs.tufts.edu/comp/250VIS/papers/2015-Voyager-InfoVis.pdf)
 * Optional: Bahador Saket et al. [Beyond Heuristics: Learning Visualization Design](https://arxiv.org/pdf/1807.06641.pdf)
 * Optional: Chenglong Wang et al. [Visualization By Example](https://arxiv.org/abs/1911.09668)
 * Optional: Manasi Vartak et al. [SeeDB: efficient data-driven visualization recommendations to support visual analysis.](http://www.vldb.org/pvldb/vol8/p2182-vartak.pdf)
 
+
+<a href="multiverse"/>
+#### Multiverse Analysis
+
+Readings
+
+* Jun et al. [Tea: Automated Statistical Analysis](http://tea-lang.org/index_files/tea_UIST2019.pdf)
+  * [Watch the talk](https://www.youtube.com/watch?v=BpYP7U7y77s&ab_channel=ACMSIGCHI)
+*  Liu et al. [Boba: Authoring and Visualizing Multiverse Analyses](https://arxiv.org/pdf/2007.05551.pdf)
+* Dragicevic et al. [Increasing the Transparency of Research Papers with Explorable Multiverse Analyses](https://dl.acm.org/doi/pdf/10.1145/3290605.3300295)
+  * [See their interactive demo](https://explorablemultiverse.github.io/)
+* Gelman and Loken [Garden of Forking Paths](http://www.stat.columbia.edu/~gelman/research/unpublished/forking.pdf)
 
 <a href="models"/>
 #### Data Models
@@ -190,26 +202,27 @@ Readings
 * Required: Leilani Battle and Carlos Scheidegger [A Structured Review of Data Management Technology for Interactive Visualization and Analysis](http://hdc.cs.arizona.edu/papers/infovis_2020_dbsurvey.pdf)
 * Optional: [C-Store: A Column-oriented DBMS](https://w6113.github.io/files/papers/cstore-vldb05.pdf)
 
-#### <a name="aqp"/>Performance: Approximation 
+#### <a name="aqp"/>Performance: Approximation and Precomputation
 
 Readings
 
 * Required: Sameer Agarwal et al. [BlinkDB: Queries with Bounded Errors and Bounded Response Times on Very Large Data](https://sameeragarwal.github.io/blinkdb_eurosys13.pdf)
-* Optional: Dominik Moritz, et al. [Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data](http://doi.acm.org/10.1145/3025453.3025456)
-* Optional: Bolin Ding et al. [Sample + Seek: Approximating Aggregates with Distribution Precision Guarantee](http://doi.acm.org/10.1145/2882903.2915249)
-* Optional: Alabi, Daniel and Eugene Wu. [PFunk-H: approximate query processing using perceptual models](http://sirrice.github.io/files/papers/pfunk-hilda16.pdf)
-* Optional: Feifei Li et al. [Wander Join: Online Aggregation via Random Walks](https://www.cse.ust.hk/~yike/sigmod16.pdf)
-* Optional: Edward Gan et al. [Moment-based Quantile Sketches for Efficient High Cardinality Aggregation Queries](http://www.vldb.org/pvldb/vol11/p1647-gan.pdf)
-
-
-
-#### <a name="precomp"/>Performance: Precomputation
-
-Readings
-
 * Required: Zhicheng Liu et al. [imMens: real-time visual querying of big data](http://vis.stanford.edu/files/2013-imMens-EuroVis.pdf)
-* Optional: Niranjan Kamat et al. [Distributed and interactive cube exploration](https://arnab.org/files/dice.nandi_.pdf)
-* Optional: Wenbo Tao et al. [Kyrix: Interactive Pan/Zoom Visualizations at Scale](http://hci.stanford.edu/~cagatay/projects/kyrix/Kyrix-EuroVis19.pdf)
+* Approximation
+  * Optional: Dominik Moritz, et al. [Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data](http://doi.acm.org/10.1145/3025453.3025456)
+  * Optional: Bolin Ding et al. [Sample + Seek: Approximating Aggregates with Distribution Precision Guarantee](http://doi.acm.org/10.1145/2882903.2915249)
+  * Optional: Alabi, Daniel and Eugene Wu. [PFunk-H: approximate query processing using perceptual models](http://sirrice.github.io/files/papers/pfunk-hilda16.pdf)
+  * Optional: Feifei Li et al. [Wander Join: Online Aggregation via Random Walks](https://www.cse.ust.hk/~yike/sigmod16.pdf)
+* Precomputation
+  * Optional: Niranjan Kamat et al. [Distributed and interactive cube exploration](https://arnab.org/files/dice.nandi_.pdf)
+  * Optional: Wenbo Tao et al. [Kyrix: Interactive Pan/Zoom Visualizations at Scale](http://hci.stanford.edu/~cagatay/projects/kyrix/Kyrix-EuroVis19.pdf)
+
+
+
+
+<!--
+#### <a name="precomp"/>Performance: Precomputation
+-->
 
 #### <a name="miscperf"/>Performance: Physical Design
 
@@ -233,6 +246,9 @@ Optional Readings
   * Richard Wesley et al.  [Leveraging Compression in the Tableau Data Engine](https://research.tableau.com/paper/leveraging-compression-tableau-data-engine)
 * Effects of poor performance
   * Kelly Mack et al. [Characterizing Scalability Issues in Spreadsheet Software Using Online Forums](https://arxiv.org/pdf/1801.03829.pdf)
+* Sampling
+  * Edward Gan et al. [Moment-based Quantile Sketches for Efficient High Cardinality Aggregation Queries](http://www.vldb.org/pvldb/vol11/p1647-gan.pdf)
+
 
 
 

@@ -13,7 +13,9 @@ Human Data Interaction is a nascent field, and we will study modern research in 
 The goal of the seminar is to learn about current research, and learn _how_ to conduct research.   
 Students will submit reviews of the class readings before each session.  A session will consist of a round table discussion of the week's readings to understand the context, the technical details, and to brain storm follow up research questions.  Course membership will be determined based on quality of reviews and active participation.  Students will also work in small teams on a semester-long research project that is within the scope of the course topic.  
 
-<small style="color: grey">Course capped at 15.</small>
+<!--
+<small style="color: grey">Enrollment based on .</small>
+-->
 
 
 ## Recent Announcements

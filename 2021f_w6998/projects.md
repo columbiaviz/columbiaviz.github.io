@@ -74,7 +74,17 @@ You will submit a draft of your paper that should be between 4 -- 6 pages. Pleas
 
 You will notice that the structure is different from the proposal, as there is more emphasis on the technical details and related work.  Since this is a draft, the submission is not expected to be fully complete.  However, you should have a fleshed out introduction, related work, and technical overview.  
 
-You should have a complete related works section, and have identified how the main relevant papers are similar and different from your project.  
+You should have a complete related works section, and have identified how the main relevant papers are similar and different from your project.  Section 3 in the [Battle and Scheidegger survey](http://hdc.cs.arizona.edu/papers/infovis_2020_dbsurvey.pdf) describes a way to systematically look for related work.  A quick summary is:
+
+    P = initial set of papers by    
+        keyword searching on google scholar/semantic scholar and 
+        asking people
+
+    for paper p in P:
+      Look at p's related work and references, add relevant papers to P
+      Look at papers that cite p 
+        Search on google scholar and click on "cited by"
+        Search on semantic scholar, click paper, and read Citations section
 
 You should have a clear description of the technical details and anticipated potential issues, but may have not started implementation.   You do not need to have run experiments yet, but should have a set of hypotheses as well as a potential experiment setup (which may change). If you have preliminary findings, that's great!  Please include those.
 
@@ -157,9 +167,14 @@ The following are examples of possible projects -- they are by no means a comple
 4. Reproduce and enhance: there are many papers that describe an idea in theoretical terms, or that implemented their ideas in a different context (maybe they implemented in a language that few people now use, or made assumptions that don't hold anymore).  Thoroughly understand a paper (or collection of papers) and reproduce the ideas in a modern context.  
 
 
+### Hypothesis-driven Data Analysis
+
+Data interfaces are designed for specific tasks in mind.    Yet, the multi-level typology paper shows that even characterizing a task can be very challenging, and we are not at the stage where tasks can be specified precisely enough to help with automated interface design.  One task that _is_ clear is hypothesis evaluation.  If we know the hypothesis that the user wants to test, can a system help guide the user towards answering the hypothesis using available data?  This project will help Professor Wu and Professor [Remco Chang](https://www.cs.tufts.edu/~remco/) design and evaluate an initial version of such a system.
+
+
 ### SQL Debugging
 
-Debugging SQL queries is very difficult [[1]](https://dl.acm.org/doi/pdf/10.1145/3313831.3376485)[[2]](https://dl.acm.org/doi/pdf/10.1145/1951365.1951441).  My hypothesis is because there is a mismatch between the declarative SQL language that the user writes in, and the underlying step-by-step execution plan.  In fact, users often say that they "serialize" the query into steps and debug each step at a time.   The idea of this project is to help SQL debugging by translating a SQL query into a sequence of data frame statements (perhaps, one per cell in a Jupyter notebook) and maintaining the bidirectional mapping.  In this way, the user can individually inspect each data frame statement, edit them to fix the bug, and automatically map those edits back to the SQL query.  It would also be good to identify the types of queries and edits that can be correctly supported by this approach.
+Debugging SQL queries is very difficult [[1]](https://dl.acm.org/doi/pdf/10.1145/3313831.3376485)[[2]](https://dl.acm.org/doi/pdf/10.1145/1951365.1951441).  A possible hypothesis is that there is a mismatch between the declarative SQL language that the user writes in, and the underlying step-by-step execution plan.  In fact, users often say that they "serialize" the query into steps and debug each step at a time.   The idea of this project is to help SQL debugging by translating a SQL query into a sequence of data frame statements (perhaps, one per cell in a Jupyter notebook) and maintaining the bidirectional mapping.  In this way, the user can individually inspect each data frame statement, edit them to fix the bug, and automatically map those edits back to the SQL query.  It would also be good to identify the types of queries and edits that can be correctly supported by this approach.
 
 
 ### Lineage
