@@ -176,11 +176,11 @@ Readings
 * Jun et al. [Tea: Automated Statistical Analysis](http://tea-lang.org/index_files/tea_UIST2019.pdf)
   * [Watch the talk](https://www.youtube.com/watch?v=BpYP7U7y77s&ab_channel=ACMSIGCHI)
 *  Liu et al. [Boba: Authoring and Visualizing Multiverse Analyses](https://arxiv.org/pdf/2007.05551.pdf)
+  * Builds on [Paths Explored, Paths Omitted](https://dl.acm.org/doi/pdf/10.1145/3313831.3376533)
 * Dragicevic et al. [Increasing the Transparency of Research Papers with Explorable Multiverse Analyses](https://dl.acm.org/doi/pdf/10.1145/3290605.3300295)
   * [See their interactive demo](https://explorablemultiverse.github.io/)
 * Gelman and Loken [Garden of Forking Paths](http://www.stat.columbia.edu/~gelman/research/unpublished/forking.pdf)
 * Sedlmair et al [Visual Parameter Space Analysis](http://eprints.cs.univie.ac.at/4162/2/Visual_Parameter_Space_Amalysis.pdf)
-* 
 
 <a href="models"/>
 #### Data Models
