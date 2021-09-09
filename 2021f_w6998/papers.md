@@ -179,6 +179,8 @@ Readings
 * Dragicevic et al. [Increasing the Transparency of Research Papers with Explorable Multiverse Analyses](https://dl.acm.org/doi/pdf/10.1145/3290605.3300295)
   * [See their interactive demo](https://explorablemultiverse.github.io/)
 * Gelman and Loken [Garden of Forking Paths](http://www.stat.columbia.edu/~gelman/research/unpublished/forking.pdf)
+* Sedlmair et al [Visual Parameter Space Analysis](http://eprints.cs.univie.ac.at/4162/2/Visual_Parameter_Space_Amalysis.pdf)
+* 
 
 <a href="models"/>
 #### Data Models
