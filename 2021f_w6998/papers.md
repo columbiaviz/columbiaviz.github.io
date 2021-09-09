@@ -175,7 +175,8 @@ Readings
 
 * Jun et al. [Tea: Automated Statistical Analysis](http://tea-lang.org/index_files/tea_UIST2019.pdf)
   * [Watch the talk](https://www.youtube.com/watch?v=BpYP7U7y77s&ab_channel=ACMSIGCHI)
-*  Liu et al. [Boba: Authoring and Visualizing Multiverse Analyses](https://arxiv.org/pdf/2007.05551.pdf)  (builds on [Paths Explored, Paths Omitted](https://dl.acm.org/doi/pdf/10.1145/3313831.3376533))
+*  Liu et al. [Boba: Authoring and Visualizing Multiverse Analyses](https://arxiv.org/pdf/2007.05551.pdf)  
+   (builds on [Paths Explored, Paths Omitted](https://dl.acm.org/doi/pdf/10.1145/3313831.3376533))
 * Dragicevic et al. [Increasing the Transparency of Research Papers with Explorable Multiverse Analyses](https://dl.acm.org/doi/pdf/10.1145/3290605.3300295)
   * [See their interactive demo](https://explorablemultiverse.github.io/)
 * Gelman and Loken [Garden of Forking Paths](http://www.stat.columbia.edu/~gelman/research/unpublished/forking.pdf)
@@ -186,7 +187,7 @@ Readings
 
 Readings
 
-* Mike Stonebraker, Joe Hellerstein [What Goes Around Comes Around](https://people.cs.umass.edu/~yanlei/courses/CS691LL-f06/papers/SH05.pdf)
+* Required: Mike Stonebraker, Joe Hellerstein [What Goes Around Comes Around](https://people.cs.umass.edu/~yanlei/courses/CS691LL-f06/papers/SH05.pdf)
 * Fotis Psallidas, Eugene Wu [Provenance for Interactive Visualizations](https://www.dropbox.com/s/fkp5hk1gp4lrg9h/smoke-hilda18.pdf?dl=0)
 
 <a name="dbvis"/>

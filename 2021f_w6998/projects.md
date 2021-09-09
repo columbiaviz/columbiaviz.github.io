@@ -172,7 +172,8 @@ The following are examples of possible projects -- they are by no means a comple
 1. Research project: model an unsolved problem, propose or extend an algorithmic solution, evaluate and report findings.
 2. Design: identify an underserved data problem for which a sound, composable interface doesn't exist, propose an interface and interaction design, build and evaluate it.
 3. Fill a gap:  think about something useful that _should_ be easily doable, but is painful or impossible with current state of the art.  Fill that gap.
-4. Reproduce and enhance: there are many papers that describe an idea in theoretical terms, or that implemented their ideas in a different context (maybe they implemented in a language that few people now use, or made assumptions that don't hold anymore).  Thoroughly understand a paper (or collection of papers) and reproduce the ideas in a modern context.  
+4. Conduct a study: identify a gap in our understanding of how users use data interfaces to achieve their data goals, and formulate it into a user study.   Learn how to conduct user studies, design and run your study.
+5. Reproduce and enhance: there are many papers that describe an idea in theoretical terms, or that implemented their ideas in a different context (maybe they implemented in a language that few people now use, or made assumptions that don't hold anymore).  Thoroughly understand a paper (or collection of papers) and reproduce the ideas in a modern context.  
 
 
 ### Hypothesis-driven Data Analysis
@@ -210,6 +211,11 @@ Extend VCA to arbitrary workflows
   * more generally, when selecting marks in a vis, what representations 
     can it have?
 -->
+
+### Metadata
+
+Datasets in the wild often come with a text or PDF file that describes the data.  For instance, [UCI data repository](https://archive.ics.uci.edu/ml/index.php), [Kaggle](https://www.kaggle.com/datasets), and [government data](https://www.data.gov/) often include a file that describes the schema and columns and codes.  Given a data file (say in a standardized format) and a metadata file (say in text), can you automatically attribute and annotate the data file with relevant metadata, and design a dataset exploration interface that better surfaces this information?
+
 
 ### Interface Generation
 
