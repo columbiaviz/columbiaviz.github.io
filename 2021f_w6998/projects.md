@@ -7,9 +7,9 @@ title: Research Project
 
 Percentages are of your total class grade.
 
-* Proposal    09/27   (5%)
-* Check In    10/06 (0%)
-* Paper Draft 11/03 (5%)
+* Proposal    10/06   (5%)
+* Check In    10/13 (0%)
+* Paper Draft 10/27 (5%)
 * Showcase  12/06  (5%)
 * Report        12/13   (35%)
 
@@ -47,7 +47,7 @@ Submission
 
 
 
-## <a name="checkin"/>Check in
+## <a name="checkin"/>Check in (mandatory)
 
 Your group will schedule 20 minutes to meet with Professor Wu to go over the project's progress and receive feedback.    The first 5 minutes will consist of a short 5 minute presentation with 4 slides (roughly 1 minute per slide).  The rest of the time will be an open discussion and fielding questions.
 
