@@ -21,6 +21,7 @@ Students will submit reviews of the class readings before each session.  A sessi
 ## Recent Announcements
 
 * 09/13/21
+  * Read our COVID policy in [the syllabus](./syllabus)
   * [Start and submit assignment 1](./a1)
   * Start reading wednesday's paper and submit a review by the night before
 
