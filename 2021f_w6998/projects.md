@@ -94,11 +94,19 @@ Tips:
 
 * [Tips for Writing Technical Papers - Jennifer Widom, Dean of Stanford Engineer](https://cs.stanford.edu/people/widom/paper-writing.html)
 
+
+Evaluation: your draft will primarily be evaluated by 
+
+* the quality of the related works section, whether the project is well-situated in prior work.
+* clarity of the hypotheses and how it can be evaluated
+
 Submission
 
 1. Use the [report template on Overleaf](https://www.overleaf.com/read/phmrptrtjrhz)
-1. [Click here to submit your **4 -- 6 page** draft](https://easychair.org/conferences/?conf=w611320)
+2. [Click here to submit your **4 -- 6 page** draft](https://easychair.org/conferences/?conf=w611320)
   * Please see [this draft from a previous class](https://www.dropbox.com/s/y460nkyi7pmnkre/example%20draft.pdf?dl=0) as an example.
+
+
 
 
 
@@ -181,16 +189,13 @@ Debugging SQL queries is very difficult [[1]](https://dl.acm.org/doi/pdf/10.1145
 
 
 
-Lineage tracks the correspondence between individual database records  and the objects shown on the screen.  Our group has built the first database engine that tracks lineage with negligible overhead.  This makes it possible to use and operationalize lineage in interesting ways.  
+Lineage tracks the correspondence between individual database records  and the objects shown on the screen.   There has been many many papers in the past that use lineage for all sorts of interesting applications, or propose ways to use lineage.  Unfortunately, actually capturing lineage has historically been very very expensive.
 
-TBA
+Our group has built the first database engine called SmokedDuck that tracks lineage with negligible overhead.  This makes it possible to use and operationalize lineage in interesting ways.  A potential project is to read a "lineage application" paper, distill their ideas down, and reproduce/"modernize" them on top of Smoked Duck.  Some example papers include:
 
-<!--
-Develop and use lineage
+* [B2: Bridging Code and Interactive Visualization in Computational Notebooks](https://dl.acm.org/doi/10.1145/3379337.3415851)
+* [Provenance in Interactive Visualizations](https://www.dropbox.com/s/fkp5hk1gp4lrg9h/smoke-hilda18.pdf?dl=0)
 
-* sharing, B3++
-* UI-data interplay
--->
 
 ### Interaction Design
 

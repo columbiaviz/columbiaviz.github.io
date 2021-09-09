@@ -85,6 +85,7 @@ Readings
 Readings
 
 * Required: Matthew Brehmer, Tamara Munzner [A Multi-Level Typology of Abstract Visualization Tasks](https://www.cs.ubc.ca/labs/imager/tr/2013/MultiLevelTaskTypology/brehmer_infovis13.pdf)
+  * Her talk [Problem-Driven Visualization Through Design Studies](https://www.cs.ubc.ca/~tmm/talks/chinavis20/vinci21.pdf) contains more examples that motivate the typology.
 * Optional: Heer, Shneiderman [Interactive Dynamics for Visual Analysis](https://queue.acm.org/detail.cfm?id=2146416)
 * Optional: Ben Shneiderman [The Eyes Have It](https://www.cs.umd.edu/~ben/papers/Shneiderman1996eyes.pdf)
 
@@ -158,9 +159,10 @@ Readings
 Readings
 
 * Required: Jock D. Mackinlay et al. [Show Me: Automatic Presentation for Visual Analysis](https://research.tableau.com/sites/default/files/200711-infovis-showme.pdf)
-* Optional: Dominik Moritz et al. [Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco](https://idl.cs.washington.edu/files/2019-Draco-InfoVis.pdf)
-* Optional: Lee et al. [Lux: Always-on Vis Recommendations](https://arxiv.org/pdf/2105.00121.pdf)
-* Optional: Kanit Wongsuphasawat et al. [Voyager: Exploratory analysis via faceted browsing of visualization recommendations](http://www.cs.tufts.edu/comp/250VIS/papers/2015-Voyager-InfoVis.pdf)
+* Optional: referenced in A2
+  * Dominik Moritz et al. [Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco](https://idl.cs.washington.edu/files/2019-Draco-InfoVis.pdf)
+  * Kanit Wongsuphasawat et al. [Voyager: Exploratory analysis via faceted browsing of visualization recommendations](http://www.cs.tufts.edu/comp/250VIS/papers/2015-Voyager-InfoVis.pdf)
+  * Lee et al. [Lux: Always-on Vis Recommendations](https://arxiv.org/pdf/2105.00121.pdf)
 * Optional: Bahador Saket et al. [Beyond Heuristics: Learning Visualization Design](https://arxiv.org/pdf/1807.06641.pdf)
 * Optional: Chenglong Wang et al. [Visualization By Example](https://arxiv.org/abs/1911.09668)
 * Optional: Manasi Vartak et al. [SeeDB: efficient data-driven visualization recommendations to support visual analysis.](http://www.vldb.org/pvldb/vol8/p2182-vartak.pdf)
