@@ -170,7 +170,7 @@ Because this report is the primary deliverable upon which you will be graded, **
 The following are examples of possible projects -- they are by no means a complete list and **you are free to select your own projects**.  In fact, a common source of ideas is to take your experience from another domain, and combine it with ideas from human data interaction.  Another approach is to take concepts from the papers we read, and apply them to another domain.  Projects often come in several flavors:
 
 1. Research project: model an unsolved problem, propose or extend an algorithmic solution, evaluate and report findings.
-2. Design: identify an underserved data problem for which a sound, composable interface doesn't exist, propose an interface and interaction design, build and evaluate it.
+2. Design: identify an underserved data problem for which a sound, composable interface doesn't exist, propose an interface and interaction design, build it, and evaluate it with the target users.
 3. Fill a gap:  think about something useful that _should_ be easily doable, but is painful or impossible with current state of the art.  Fill that gap.
 4. Conduct a study: identify a gap in our understanding of how users use data interfaces to achieve their data goals, and formulate it into a user study.   Learn how to conduct user studies, design and run your study.
 5. Reproduce and enhance: there are many papers that describe an idea in theoretical terms, or that implemented their ideas in a different context (maybe they implemented in a language that few people now use, or made assumptions that don't hold anymore).  Thoroughly understand a paper (or collection of papers) and reproduce the ideas in a modern context.  
@@ -185,6 +185,11 @@ Data interfaces are designed for specific tasks in mind.    Yet, the multi-level
 
 Debugging SQL queries is very difficult [[1]](https://dl.acm.org/doi/pdf/10.1145/3313831.3376485)[[2]](https://dl.acm.org/doi/pdf/10.1145/1951365.1951441).  A possible hypothesis is that there is a mismatch between the declarative SQL language that the user writes in, and the underlying step-by-step execution plan.  In fact, users often say that they "serialize" the query into steps and debug each step at a time.   The idea of this project is to help SQL debugging by translating a SQL query into a sequence of data frame statements (perhaps, one per cell in a Jupyter notebook) and maintaining the bidirectional mapping.  In this way, the user can individually inspect each data frame statement, edit them to fix the bug, and automatically map those edits back to the SQL query.  It would also be good to identify the types of queries and edits that can be correctly supported by this approach.
 
+
+
+### Fast Visualization using Research Advanced Analytics System
+
+Databases perform query optimization by leveraging the high level semantics of relational algebra/SQL.   However many data analytics code are written imperatively, contain user-defined functions, or simply as for-loops over arrays of objects.  [Recent work at Columbia](http://www.vldb.org/pvldb/vol14/p929-zhang.pdf) has extended the Graal compiler with database-style optimizations -- in this way you can write normal code and get database-like optimization benefits.     This project will help Professor Wu and Professor [Ken Ross](http://www.cs.columbia.edu/~kar/) design and develop an interactive visualization system on top of this compiler to showcase its performance benefits. 
 
 ### Lineage
 
