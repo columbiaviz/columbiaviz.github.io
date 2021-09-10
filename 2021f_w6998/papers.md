@@ -118,13 +118,16 @@ Readings
 
 Readings
 
-* Required: Dimara and Perin.  [What is Interaction for Data Visualization?](https://hal.archives-ouvertes.fr/hal-02197062/document)
 * Required: Michel Beaudouin-Lafon.  [Instrumental Interaction](https://www.dropbox.com/s/bteajeub18durwe/michel%20-%20instrumental%20interaction.pdf?dl=0)
 * Required: Heer and Shneiderman. [Interaction Dynamics for Visual Analytics](https://queue.acm.org/detail.cfm?id=2146416)
+* Optional: Dimara and Perin.  [What is Interaction for Data Visualization?](https://hal.archives-ouvertes.fr/hal-02197062/document)
 * Optional: Bahador Saket et al. [Investigating Direct Manipulation of Graphical Encodings as a Method for User Interaction](https://bahadorsaket.com/publication/infovis2019.pdf)
-  * [Liger demo video](https://vimeo.com/327476247)
+  ([Liger demo video](https://vimeo.com/327476247))
 * Optional: Ali Sarvghad et al. [Embedded Merge & Split: Visual Adjustment of Data Grouping](https://bahadorsaket.com/publication/EMS.pdf)
+
+<!--
 * Optional: Miro Mannino and Azza Abouzied. [Expressive Time Series Querying with Hand-Drawn Scale-Free Sketches](http://doi.acm.org/10.1145/3173574.3173962)
+-->
 
 
 
@@ -135,12 +138,15 @@ Readings
 
 Readings
 
-* Required: Zhicheng Liu and Jeffrey Heer. [The Effects of Interactive Latency on Exploratory Visual Analysis](http://idl.cs.washington.edu/papers/latency)
+* Required: Talbot et al. [Four Experiments on the Perception of Bar Charts](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6876021)
 * Optional: Jeff Heer et al.  [Crowdsourcing graphical perception: using mechanical turk to assess visualization design](http://vis.stanford.edu/files/2010-MTurk-CHI.pdf)
-* Optional: Ryan et al. [At a glance: pixel approximate entropy as a measure of line chart complexity](http://www.cs.tufts.edu/~remco/publications/2018/InfoVis2018-Entropy.pdf) 
-* Optional: Moritz et al. [Trust, but Verify: Optimistic Vis of Approx Queries in Exploring Big Data](https://www.domoritz.de/papers/2017-TrustButVerify-CHI.pdf)
-* Optional: Jardine et al. [Perceptual Proxies of Visual Comparison](https://osf.io/ykmt7/download?format=pdf)
+* Optional: Cleveland and Mcgill (the classic 1985 paper) [Graphical Perception and Graphical Methods for Analyzing Scientific Data](https://www.jstor.org/stable/pdf/1695272.pdf)
 * Optional: Gordon Kindlmann et al.  [An Algebraic Process for Visualization Design](http://algebraicvis.net/assets/paper.pdf)
+* Optional: McColeman et al. [Rethinking the Ranks of Visual Channels](https://arxiv.org/pdf/2107.11367.pdf)
+* Optional: Burns et al. [How to evaluate vis across different levels of understanding](https://visualthinking.psych.northwestern.edu/publications/BurnsLevels2020.pdf)
+* Optional: Zhicheng Liu and Jeffrey Heer. [The Effects of Interactive Latency on Exploratory Visual Analysis](http://idl.cs.washington.edu/papers/latency)
+* Optional: Ryan et al. [At a glance: pixel approximate entropy as a measure of line chart complexity](http://www.cs.tufts.edu/~remco/publications/2018/InfoVis2018-Entropy.pdf) 
+* Optional: Jardine et al. [Perceptual Proxies of Visual Comparison](https://osf.io/ykmt7/download?format=pdf)
 
 <a name="cognition"/>
 #### Vis: Cognition

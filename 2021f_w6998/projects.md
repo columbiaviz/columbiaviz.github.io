@@ -187,7 +187,7 @@ Debugging SQL queries is very difficult [[1]](https://dl.acm.org/doi/pdf/10.1145
 
 
 
-### Fast Visualization using Research Advanced Analytics System
+### Fast Vis using New Advanced Analytics System
 
 Databases perform query optimization by leveraging the high level semantics of relational algebra/SQL.   However many data analytics code are written imperatively, contain user-defined functions, or simply as for-loops over arrays of objects.  [Recent work at Columbia](http://www.vldb.org/pvldb/vol14/p929-zhang.pdf) has extended the Graal compiler with database-style optimizations -- in this way you can write normal code and get database-like optimization benefits.     This project will help Professor Wu and Professor [Ken Ross](http://www.cs.columbia.edu/~kar/) design and develop an interactive visualization system on top of this compiler to showcase its performance benefits. 
 

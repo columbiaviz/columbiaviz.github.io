@@ -28,63 +28,6 @@ Students will submit reviews of the class readings before each session.  A sessi
 
 ## Schedule (In Flux)
 
-<!--
-Goal: understand the challenges that sit in between scale/data and data interface design
-
-By the end of the course, students should be able to
-
-* understand how a given interaction design affects the system 
-* be able to take an interface and reframe it in terms of data flow and rendering
-* understand the trade-off between optimizations and interaction expressiveness
-* take an innotativation in the ssytem/alg side and see how it can change the interface design
-
-Themes
-
-* task defines design and goodness metrics
-  * Tamara's task modeling
-* language to describe task
-* mapping language to UI and to data processing
-
-HDI
-
-* Visual representation of processed data
-* Ways to interact with and manipulate data/program
-* Differences based on the task, data type, and scalability/system concerns
-
-Data models: relational, nested, streaming, (meta)lineage
-DB-VIS connections
-* vis=view
-* selection is lineage
-* interaction is query transforms
-* concurrency control and async 
-* failure modes: layout, nested orgs, pure design
-* Collaboration and coordination
-  * https://cs598.github.io/papers/collab-vis.pdf
-* performance/optimization
-  * Columnar: cstore, arrow, arquero, duckdb
-  * Approx: AQP, blinkdb
-  * precompute: immens/indexes
-  * PVD
-
-Examples throughout data pipeline
-
-* Data ingest, load
-* Data extraction (ML, etc)
-  * Wrangler
-* Data prep, transform, cleaning
-  * Constraints
-  * Data programming
-  * Complaints
-* Data augmentation/dataset search
-* Data exploration
-* Data modeling
-* Data presentation
-
-
-When making arguments (X sucks, X is slow), provide qualifying examples (e.g., Y is a setting where X is slow).
-
--->
-
 <style>
 .presenter { }
 </style>
