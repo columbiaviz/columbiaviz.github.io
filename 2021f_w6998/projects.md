@@ -9,7 +9,7 @@ Percentages are of your total class grade.
 
 * Proposal    10/06   (5%)
 * Check In    10/13 (0%)
-* Paper Draft 10/27 (5%)
+* Paper Draft 11/05 (5%)
 * Showcase  12/06  (5%)
 * Report        12/13   (35%)
 
