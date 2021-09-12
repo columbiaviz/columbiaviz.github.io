@@ -197,10 +197,13 @@ Databases perform query optimization by leveraging the high level semantics of r
 
 Lineage tracks the correspondence between individual database records  and the objects shown on the screen.   There has been many many papers in the past that use lineage for all sorts of interesting applications, or propose ways to use lineage.  Unfortunately, actually capturing lineage has historically been very very expensive.
 
-Our group has built the first database engine called SmokedDuck that tracks lineage with negligible overhead.  This makes it possible to use and operationalize lineage in interesting ways.  A potential project is to read a "lineage application" paper, distill their ideas down, and reproduce/"modernize" them on top of Smoked Duck.  Some example papers include:
+Our group has built the first database engine called SmokedDuck that tracks lineage with negligible overhead.  This makes it possible to use and operationalize lineage in interesting ways.  A potential project is to read a "lineage application" paper, distill their ideas down, and reproduce/"modernize" them on top of Smoked Duck.  This can mean making a previous work super fast and interactive or creating a re-usable library/system.  Some example papers include:
 
 * [B2: Bridging Code and Interactive Visualization in Computational Notebooks](https://dl.acm.org/doi/10.1145/3379337.3415851)
 * [Provenance in Interactive Visualizations](https://www.dropbox.com/s/fkp5hk1gp4lrg9h/smoke-hilda18.pdf?dl=0)
+* [QPlan: Query by Explanation](https://ieeexplore.ieee.org/document/7498344)
+* [Querying Data Provenance](https://dl.acm.org/doi/10.1145/1807167.1807269)
+* [Auditing Compliance with a Hippocratic Database](https://dl.acm.org/doi/pdf/10.5555/1316689.1316735)
 
 
 ### Interaction Design
