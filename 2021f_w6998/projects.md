@@ -28,6 +28,8 @@ Good class projects can vary dramatically in complexity, scope, and topic.  The 
 
 Choosing a research problem is very difficult, especially if you have not done so before.  You may end up thinking of, and discarding many possibilities before finding the project you ultimately work on.  Have a fuzzy idea?  Want some feedback or help brainstorming a project?  **Come to office hours.  We are here to help!**
 
+Finally, if you are a graduate student or have an existing research project, "reusing" or "adapting" it to this course's topics is encouraged.
+
 
 <a name="proposal" />
 ## Proposal
