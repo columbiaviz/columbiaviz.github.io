@@ -6,17 +6,17 @@ color,date,slug,link,notes,presenter,assigned,due
 #fdffe4,Mon 09-27,Vis: Perception,perception,,,,
 #fdffe4,Wed 09-29,Vis: Cognition,cognition,,,,"<a href=""./a2"">A2 (Friday)</a> "
 #fdffe4,Mon 10-04,Vis: Recommendation,recs,,,,
-white,Wed 10-06,Vis: Multiverse Analysis,multiverse,,,,"<a href=""./projects#proposal"">Proposal (Friday)</a>"
+#fdffe4,Wed 10-06,Vis: Multiverse Analysis,multiverse,,,,"<a href=""./projects#proposal"">Proposal (Friday)</a>"
 white,Mon 10-11,DB: Data models,models,,,,
 white,Wed 10-13,DB: Interfaces from a Data Perspective,dbvis,,,,"<a href=""./projects#checkin"">Check-in</a>"
 white,Mon 10-18,DB: Performance Overview and Columnar Engines,colstore,,,,
 white,Wed 10-20,DB: approximation and precomputation,aqp,,,,
 white,Mon 10-25,DB: physical design,pvd,,,,
-#fdffe4,Wed 10-27,Modality: touch,touch,,,,"<a href=""./projects#draft"">Paper Draft</a>"
+#fdffe4,Wed 10-27,Modality: touch,touch,,,,
 #fdffe4,Mon 11-01,Holiday,,,,,
-#fdffe4,Wed 11-03,Modality: voice/text,voice,,,,
+#fdffe4,Wed 11-03,Modality: voice/text,voice,,,,"<a href=""./projects#draft"">Paper Draft (Fri)</a>"
 #fdffe4,Mon 11-08,Modality: spreadsheet,spreadsheet,,,,
-#fdffe4,Wed 11-10,Tasks: comparison (tentative),compare,,,,
+white,Wed 11-10,Tasks: comparison (tentative),compare,,,,
 white,Mon 11-15,Tasks: extraction,extract,,,,
 white,Wed 11-17,Tasks: cleaning,clean,,,,
 white,Mon 11-22,Tasks: automation,automation,,,,
