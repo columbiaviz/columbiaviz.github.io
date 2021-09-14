@@ -172,6 +172,7 @@ Readings
 * Optional: Bahador Saket et al. [Beyond Heuristics: Learning Visualization Design](https://arxiv.org/pdf/1807.06641.pdf)
 * Optional: Chenglong Wang et al. [Visualization By Example](https://arxiv.org/abs/1911.09668)
 * Optional: Manasi Vartak et al. [SeeDB: efficient data-driven visualization recommendations to support visual analysis.](http://www.vldb.org/pvldb/vol8/p2182-vartak.pdf)
+* Optional: Qian et al. [Learning to Recommend Visualizations from Data](https://dl.acm.org/doi/pdf/10.1145/3447548.3467224)
 
 
 <a name="multiverse"/>
