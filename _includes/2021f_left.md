@@ -1,7 +1,7 @@
 ## Information 
 
 * [Eugene Wu](http://www.eugenewu.net) (Instructor)     
-  <small>OH: T 2-3PM, 421 Mudd</small>   
+  <small>OH: T 2-3PM, CS Courtyard</small>   
 * Class: MW 1-2:30PM   
   Location: 401 Chandler
 * [Syllabus](./syllabus)
