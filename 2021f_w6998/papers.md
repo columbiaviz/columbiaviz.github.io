@@ -15,9 +15,9 @@ We may select a random review to read and discuss in class.  This serves to high
 
 Overview
 
-* Reviews are due **10AM EST one day before lecture**.
+* Reviews are due **11:59PM EST the night before lecture**.
 * Late submissions are given a score of 0 without prior approval.  
-* You may miss submissions for up to **4 lectures**.
+* You may miss submissions for up to **3 classes**.
 * To submit, [**go to the class wiki**](https://github.com/columbiaviz/2021f-systemshdi/wiki) and click on the appropriate topic
 
 #### Reading Tips
