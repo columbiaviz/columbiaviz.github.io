@@ -20,6 +20,9 @@ Students will submit reviews of the class readings before each session.  A sessi
 
 ## Recent Announcements
 
+* 09/15/21
+  * [Link to PDF of notes taken in class](https://www.dropbox.com/s/z41ojralfc98p29/public%20notebook.pdf?dl=0)
+  * [Slides from first class](./sessions/01.pptx)
 * 09/13/21
   * Read our COVID policy in [the syllabus](./syllabus)
   * [Start and submit assignment 1](./a1)
