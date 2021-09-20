@@ -2,6 +2,13 @@
 layout: page_2020
 ---
 
+
+
+
+TA:
+
+* Respond to slack questions within 30 minutes during work hours
+
 Topics
 
 * To enroll in the class

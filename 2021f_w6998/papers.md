@@ -120,6 +120,7 @@ Readings
 
 * Required: Michel Beaudouin-Lafon.  [Instrumental Interaction](https://www.dropbox.com/s/bteajeub18durwe/michel%20-%20instrumental%20interaction.pdf?dl=0)
 * Required: Heer and Shneiderman. [Interaction Dynamics for Visual Analytics](https://queue.acm.org/detail.cfm?id=2146416)
+* Optional: Arvind Satyanarayan et al. [Vega-Lite: A Grammar of Interactive Graphics](http://idl.cs.washington.edu/papers/vega-lite)
 * Optional: Dimara and Perin.  [What is Interaction for Data Visualization?](https://hal.archives-ouvertes.fr/hal-02197062/document)
 * Optional: Bahador Saket et al. [Investigating Direct Manipulation of Graphical Encodings as a Method for User Interaction](https://bahadorsaket.com/publication/infovis2019.pdf)
   ([Liger demo video](https://vimeo.com/327476247))
@@ -169,6 +170,7 @@ Readings
   * Dominik Moritz et al. [Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco](https://idl.cs.washington.edu/files/2019-Draco-InfoVis.pdf)
   * Kanit Wongsuphasawat et al. [Voyager: Exploratory analysis via faceted browsing of visualization recommendations](http://www.cs.tufts.edu/comp/250VIS/papers/2015-Voyager-InfoVis.pdf)
   * Lee et al. [Lux: Always-on Vis Recommendations](https://arxiv.org/pdf/2105.00121.pdf)
+* Optional: Zong et al. [Lyra 2: Designing Interactive Visualizations by Demonstration](http://vis.csail.mit.edu/pubs/lyra2)
 * Optional: Bahador Saket et al. [Beyond Heuristics: Learning Visualization Design](https://arxiv.org/pdf/1807.06641.pdf)
 * Optional: Chenglong Wang et al. [Visualization By Example](https://arxiv.org/abs/1911.09668)
 * Optional: Manasi Vartak et al. [SeeDB: efficient data-driven visualization recommendations to support visual analysis.](http://www.vldb.org/pvldb/vol8/p2182-vartak.pdf)
