@@ -54,6 +54,9 @@ Background you should be comfortable with
 
 * [Relational algebra](https://en.m.wikipedia.org/wiki/Relational_algebra) and [SQL](https://www.postgresql.org/docs/9.5/static/sql-select.html)
 * [Cost-based optimization](http://web.stanford.edu/class/cs345d-01/rl/chaudhuri98.pdf)
+* A good video series is the [Stanford Database Lectures by Jennifer Widom](https://www.youtube.com/watch?v=D-k-h0GuFmE&list=PLroEs25KGvwzmvIxYHRhoGTz9w8LeXek0&ab_channel=StanfordDbclass)
+* All of the materials for Professor Wu's 4111 are on [https://w4111.github.io](https://w4111.github.io/)
+* An advanced video series is the [CMU Introduction to Databases by Andy Pavlo](https://www.youtube.com/watch?v=oeYBdghaIjc&list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi&ab_channel=CMUDatabaseGroup), it covers more of the systems side.
 
 Visualization Classics
 
