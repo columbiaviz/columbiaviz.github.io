@@ -207,6 +207,9 @@ Our group has built the first database engine called SmokedDuck that tracks line
 * [Querying Data Provenance](https://dl.acm.org/doi/10.1145/1807167.1807269)
 * [Auditing Compliance with a Hippocratic Database](https://dl.acm.org/doi/pdf/10.5555/1316689.1316735)
 
+Another project is to port SmokedDuck to Javascript via the WASM compilation tool-chain, and develop a visualization library/system based on 
+this functionality.  See Professor Wu for pointers to DuckDB WASM compilation guides.
+
 
 ### Interaction Design
 
