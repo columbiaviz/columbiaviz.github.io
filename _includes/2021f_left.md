@@ -34,6 +34,7 @@
 
 ## Invited Speakers
 
+* [Eirik Bakke](https://people.csail.mit.edu/ebakke/) <small>Founder, [Ultorg](http://www.ultorg.com/)</small>
 
 
 ## Related Venues
