@@ -20,6 +20,8 @@ Students will submit reviews of the class readings before each session.  A sessi
 
 ## Recent Announcements
 
+* 09/21/21
+  * [Slides used at the beginning of classes](./sessions/slides.pptx)
 * 09/15/21
   * [Link to PDF of notes taken in class](https://www.dropbox.com/s/z41ojralfc98p29/public%20notebook.pdf?dl=0)
   * [Slides from first class](./sessions/01.pptx)

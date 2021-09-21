@@ -210,7 +210,8 @@ Our group has built the first database engine called SmokedDuck that tracks line
 
 ### Interaction Design
 
-TBA
+Comparison is considered one of the three low level "Why" tasks in Munzner's task typology.
+Despite many [design guidelines](https://graphics.cs.wisc.edu/Papers/2018/Gle18/viscomp.pdf) for creating visualizations to aid comparison, it does not exist as an interaction (for instance, in Munzner's "How" classification).   Comparison is challenging because it is a function over the _outputs_ of a data transformation and visualization process, and thus requires understanding the semantics of those outputs.   Our lab has recently developed the first interactive comparison technique for Tableau-like visualizations, build on top of a novel language called View Composition Algebra (VCA).    Potential projects are to expand its functionality beyond simple group-aggregation queries, to support different design considerations, or explore how best to integrate the algebra into a visualization library.   See Professor Wu for details and a copy of the VCA paper.
 
 <!--
 integrate VCA into a vis library
