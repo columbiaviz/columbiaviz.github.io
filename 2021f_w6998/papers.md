@@ -142,7 +142,7 @@ Readings
 
 Readings
 
-* Required: Talbot et al. [Four Experiments on the Perception of Bar Charts](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6876021)
+* Required: Talbot et al. [Four Experiments on the Perception of Bar Charts](/files/papers/talbot - 4 experiments.pdf)
 * Optional: Jeff Heer et al.  [Crowdsourcing graphical perception: using mechanical turk to assess visualization design](http://vis.stanford.edu/files/2010-MTurk-CHI.pdf)
 * Optional: Cleveland and Mcgill (the classic 1985 paper) [Graphical Perception and Graphical Methods for Analyzing Scientific Data](https://www.jstor.org/stable/pdf/1695272.pdf)
 * Optional: Gordon Kindlmann et al.  [An Algebraic Process for Visualization Design](http://algebraicvis.net/assets/paper.pdf)
