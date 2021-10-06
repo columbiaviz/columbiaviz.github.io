@@ -277,6 +277,7 @@ Optional Readings
 
 * Required: Immanuel Trummer [Data Vocalization with CiceroDB](http://cidrdb.org/cidr2019/papers/p39-trummer-cidr19.pdf)
 * Optional: Vraj Shah et al. [SpeakQL: Towards Speech-driven Multimodal Querying of Structured Data](https://adalabucsd.github.io/papers/TR_2019_SpeakQL_v2.pdf)
+* Optional: Narechania et al [NL4DV: Toolkit for Generating Analytic Specs for Data Vis from Natural Language Queries](https://arxiv.org/pdf/2008.10723.pdf)
 * Optional: Christopher Baik et al.  [Bridging the Semantic Gap with SQL Query Logs in Natural Language Interfaces to Databases](https://arxiv.org/pdf/1902.00031.pdf)
 * Optional: Jimmy Lin [ICDE 21 Keynote: The Attack of the Muppets!](https://www.youtube.com/watch?v=8K1kCxz7Iro)
 
