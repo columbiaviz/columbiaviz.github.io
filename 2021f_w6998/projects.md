@@ -6,8 +6,9 @@ title: Research Project
 ## Important Dates 
 
 Percentages are of your total class grade.
+Note: All times are 11:59pm est.
 
-* Proposal    10/06   (5%)
+* Proposal    10/08 (Friday) (5%)
 * Check In    10/13 (0%)
 * Paper Draft 11/05 (5%)
 * Showcase  12/06  (5%)
