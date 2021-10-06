@@ -207,7 +207,7 @@ Readings
 
 Readings
 
-* TBA
+* Required: Wu et al [Case for Data Visualization Management System](http://sirrice.github.io/files/papers/ermac-vldb14.pdf)
 * Optional: Heer and Agrawala [Design considerations for collaborative visual analytics](https://cs598.github.io/papers/collab-vis.pdf)
 
 
