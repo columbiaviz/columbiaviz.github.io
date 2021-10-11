@@ -20,6 +20,8 @@ Students will submit reviews of the class readings before each session.  A sessi
 
 ## Recent Announcements
 
+* 10/10/21
+  * [Instructions for Reading Presentation](./sessions/presentation.pptx)
 * 10/2/21
   * No reviews for class on Wed 10-06.  We will use to review the Vis topics, instead of multiverse analysis.
 * 09/21/21
