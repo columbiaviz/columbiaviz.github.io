@@ -208,6 +208,9 @@ Readings
 Readings
 
 * Required: Wu et al [Case for Data Visualization Management System](http://sirrice.github.io/files/papers/ermac-vldb14.pdf)
+* Required: Moritz et al [Dynamic Client-Server Optimization for Scalable Interactive Visualization on the Web](https://www.domoritz.de/papers/2015-DynamicPartitioning-DSIA.pdf)
+* Optional: [Kyrix-S: Authoring Scalable Scatterplot Visualizations of Big Data](https://arxiv.org/pdf/2007.15904.pdf)
+* Optional: [Bin-Summarize-Smooth](https://vita.had.co.nz/papers/bigvis.pdf)
 * Optional: Heer and Agrawala [Design considerations for collaborative visual analytics](https://cs598.github.io/papers/collab-vis.pdf)
 
 
