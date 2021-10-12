@@ -36,6 +36,7 @@
 
 * [Eirik Bakke](https://people.csail.mit.edu/ebakke/) <small>Founder, [Ultorg](http://www.ultorg.com/)</small>
 * [Leo Meyerov](https://lmeyerov.github.io/) <small>Co-founder, [Graphistry](https://www.graphistry.com/)</small>
+* [Leo Zhicheng Liu](https://www.zcliu.org/) <small>Assistant Professor, UMD</small>
 
 
 ## Related Venues
