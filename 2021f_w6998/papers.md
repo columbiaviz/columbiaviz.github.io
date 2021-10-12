@@ -201,6 +201,7 @@ Readings
 
 * Required: Mike Stonebraker, Joe Hellerstein [What Goes Around Comes Around](https://people.cs.umass.edu/~yanlei/courses/CS691LL-f06/papers/SH05.pdf)
 * Fotis Psallidas, Eugene Wu [Provenance for Interactive Visualizations](https://www.dropbox.com/s/fkp5hk1gp4lrg9h/smoke-hilda18.pdf?dl=0)
+* [Cohort Query Processing](https://arxiv.org/pdf/1601.00182.pdf)
 
 <a name="dbvis"/>
 #### Data Interfaces from a Data Perspective
