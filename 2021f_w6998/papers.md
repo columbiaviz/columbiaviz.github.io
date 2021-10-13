@@ -330,6 +330,18 @@ Readings
 * Optional: Jeffrey Heer, et al. [Predictive Interaction for Data Transformation](https://idl.cs.washington.edu/files/2015-PredictiveInteraction-CIDR.pdf)
 
 
+#### <a name="events"/>Tasks: Event Analysis
+
+Readings
+
+* Required: Guo et al. [Survey on Visual Analysis of Event Sequence Data](https://arxiv.org/pdf/2006.14291.pdf)
+* Required (skim): [Frequent Pattern Mining](https://en.m.wikipedia.org/wiki/Frequent_pattern_discovery)
+* Optional: Kerr et al. [Core Flow](https://www.zcliu.org/coreflow/)
+* Optional: Wang et al. [Patterns and Sequences: Interactive Exploration of Clickstream Data](https://www.zcliu.org/vmsp/)
+* Optional: Wu et al. [High Performance Complex Event Processing Over Streams](http://sirrice.github.io/files/papers/sase-sigmod06.pdf)
+
+
+
 #### <a name="clean"/>Tasks: Data Cleaning
 
 Readings
