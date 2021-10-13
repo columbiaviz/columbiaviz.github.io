@@ -248,8 +248,8 @@ Readings
 
 Readings
 
-* Required: Physical Visualization Design
-* Optional: [Sanjay Agrawal, Nicolas Bruno, Surajit Chaudhuri, Vivek Narasayya](https://www.microsoft.com/en-us/research/wp-content/uploads/2006/01/deb.pdf)
+* Required: [Physical Visualization Design (short paper)](https://www.dropbox.com/s/i6dngaqr1xyo9fg/pvd-sigmod20demo-cr.pdf?dl=0)
+* Required: [Sanjay Agrawal, Nicolas Bruno, Surajit Chaudhuri, Vivek Narasayya](https://www.microsoft.com/en-us/research/wp-content/uploads/2006/01/deb.pdf)
 
 Optional Readings
 
