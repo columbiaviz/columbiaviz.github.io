@@ -9,19 +9,19 @@ color,date,slug,link,notes,presenter,assigned,due
 #fdffe4,Wed 10-06,Vis: Review of vis (no readings),,,,,"<a href=""./projects#proposal"">Proposal (Friday)</a>"
 white,Mon 10-11,DB: Data models,models,,,,
 white,Wed 10-13,DB: Interfaces from a Data Perspective,dbvis,,,,"<a href=""./projects#checkin"">Check-in</a>"
-white,Mon 10-18,DB: Performance Overview and Columnar Engines,colstore,,Jeffrey Tao,,
-white,Wed 10-20,DB: approximation and precomputation,aqp,,Haoran Pu,,
+white,Mon 10-18,DB: Performance Overview and Columnar Engines,colstore,,Presenter: Jeffrey Tao,,
+white,Wed 10-20,DB: approximation and precomputation,aqp,,Presenter: Haoran Pu,,
 white,Mon 10-25,DB: physical design,pvd,,,,
-#fdffe4,Wed 10-27,Modality: touch,touch,,YY Teng,,
+#fdffe4,Wed 10-27,Modality: touch,touch,,Presenter: YY Teng,,
 #fdffe4,Mon 11-01,Holiday,,,,,
-#fdffe4,Wed 11-03,Modality: voice/text,voice,,Carlos Eguiluz Rosas,,"<a href=""./projects#draft"">Paper Draft (Fri)</a>"
+#fdffe4,Wed 11-03,Modality: voice/text,voice,,Presenter: Carlos Eguiluz Rosas,,"<a href=""./projects#draft"">Paper Draft (Fri)</a>"
 #fdffe4,Mon 11-08,Modality: spreadsheet,spreadsheet,,Guest speaker: Eirik Bakke,,
 white,Wed 11-10,Tasks: comparison (tentative),compare,,,,
 white,Mon 11-15,Tasks: event analysis,events,,Guest speaker: Leo Zhicheng Liu,,
 white,Wed 11-17,Tasks: automation,automation,,,,
-white,Mon 11-22,Tasks: debugging ML,debugml,,Kevin Gao,,
+white,Mon 11-22,Tasks: debugging ML,debugml,,Presenter: Kevin Gao,,
 white,Wed 11-24,Holiday,,,,,
-white,Mon 11-29,Tasks: debugging analytics,debugquery,,Alex Yao,,
+white,Mon 11-29,Tasks: debugging analytics,debugquery,,Presenter: Alex Yao,,
 white,Wed 12-01,Tasks: graph analysis,,,Guest speaker: Leo Meyerov,,
 #fdffe4,Mon 12-06,Presentations,,,,,"<a href=""./projects#showcase"">Showcase</a>"
 #fdffe4,Wed 12-08,Break,,,,,

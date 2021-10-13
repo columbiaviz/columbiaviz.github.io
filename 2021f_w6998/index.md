@@ -66,7 +66,7 @@ Students will submit reviews of the class readings before each session.  A sessi
       {% endif %}
       {% if r.presenter %}
         <br/>
-        <span class='presenter'>Presenter: {{r.presenter}}</span>
+        <span class='presenter'>{{r.presenter}}</span>
       {% endif %}
       {% if r.notes %}
         <br/>
