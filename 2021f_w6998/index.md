@@ -19,7 +19,8 @@ Students will submit reviews of the class readings before each session.  A sessi
 
 
 ## Recent Announcements
-
+* 10/13/21
+  * Grades for Reviews have been added to Courseworks.
 * 10/10/21
   * [Instructions for Reading Presentation](./sessions/presentation.pptx)
 * 10/2/21
