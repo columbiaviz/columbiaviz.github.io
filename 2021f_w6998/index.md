@@ -19,6 +19,8 @@ Students will submit reviews of the class readings before each session.  A sessi
 
 
 ## Recent Announcements
+* 10/16/21
+  * Virtual Classes will be held until 3rd Nov, 2021, after which all classes will be held in-person for all students. 
 * 10/13/21
   * Grades for Reviews have been added to Courseworks.
 * 10/10/21
