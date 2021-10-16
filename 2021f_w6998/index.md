@@ -77,6 +77,7 @@ Students will submit reviews of the class readings before each session.  A sessi
       {% endif %}
       </td>
     <td class="notes">
+     {{r.notes}}
     </td>
     <td>{{r.assigned | safe}}</td>
     <td>{{r.due | safe}}</td>
