@@ -5,7 +5,7 @@ color,date,slug,link,notes,presenter,assigned,due
 #fdffe4,Wed 09-22,Vis: Interaction Design,interactions,,,,
 #fdffe4,Mon 09-27,Vis: Perception,perception,,,,
 #fdffe4,Wed 09-29,Vis: Cognition,cognition,,,,"<a href=""./a2"">A2 (Friday)</a> "
-#fdffe4,Mon 10-04,Vis: Recommendation,recs,,,,
+#fdffe4,Mon 10-04,Vis: Recommendation,design,,,,
 #fdffe4,Wed 10-06,Vis: Review of vis (no readings),,,,,"<a href=""./projects#proposal"">Proposal (Friday)</a>"
 white,Mon 10-11,DB: Data models,models,,,,
 white,Wed 10-13,DB: Interfaces from a Data Perspective,dbvis,,,,"<a href=""./projects#checkin"">Check-in</a>"
