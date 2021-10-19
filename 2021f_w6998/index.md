@@ -20,7 +20,7 @@ Students will submit reviews of the class readings before each session.  A sessi
 
 ## Recent Announcements
 * 10/18/21
-  * [Performance & Engine PPT by Jeffrey Tao](./sessions/HDI_Performance & Engines.pptx)
+  * [Performance & Engine PPT by Jeffrey Tao](./sessions/HDI_ Performance & Engines.pptx)
 * 10/16/21
   * Virtual Classes will be held until 3rd Nov, 2021, after which all classes will be held in-person for all students. 
 * 10/10/21
