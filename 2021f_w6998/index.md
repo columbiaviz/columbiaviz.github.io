@@ -19,7 +19,7 @@ Students will submit reviews of the class readings before each session.  A sessi
 
 
 ## Recent Announcements
-* 10/18/21
+* 10/20/21
   * [Performance & Engine PPT by Jeffrey Tao](./sessions/HDI_ Performance & Engines.pptx)
   * [Approximation & Precomputation PPT by Haoran Pu](./sessions/Approximation and Precomputation.pptx)
 * 10/16/21
