@@ -5,18 +5,18 @@ color,date,slug,link,notes,presenter,assigned,due
 #fdffe4,Wed 09-22,Vis: Interaction Design,interactions,,,,
 #fdffe4,Mon 09-27,Vis: Perception,perception,,,,
 #fdffe4,Wed 09-29,Vis: Cognition,cognition,,,,"<a href=""./a2"">A2 (Friday)</a> "
-#fdffe4,Mon 10-04,Vis: Recommendation,recs,,,,
+#fdffe4,Mon 10-04,Vis: Recommendation,design,,,,
 #fdffe4,Wed 10-06,Vis: Review of vis (no readings),,,,,"<a href=""./projects#proposal"">Proposal (Friday)</a>"
 white,Mon 10-11,DB: Data models,models,,,,
 white,Wed 10-13,DB: Interfaces from a Data Perspective,dbvis,,,,"<a href=""./projects#checkin"">Check-in</a>"
-white,Mon 10-18,DB: Performance Overview and Columnar Engines,colstore,,Presenter: Jeffrey Tao,,
+white,Mon 10-18,DB: Performance Overview and Columnar Engines,perf,,Presenter: Jeffrey Tao,,
 white,Wed 10-20,DB: approximation and precomputation,aqp,,Presenter: Haoran Pu,,
-white,Mon 10-25,DB: physical design,pvd,,,,
-#fdffe4,Wed 10-27,Modality: touch,touch,,Presenter: YY Teng,,
+white,Mon 10-25,DB: physical design,miscperf,,,,
+#fdffe4,Wed 10-27,Modality: touch,touch,,,,
 #fdffe4,Mon 11-01,Holiday,,,,,
-#fdffe4,Wed 11-03,Modality: voice/text,voice,,Presenter: Carlos Eguiluz Rosas,,"<a href=""./projects#draft"">Paper Draft (Fri)</a>"
+#fdffe4,Wed 11-03,Modality: voice/text,voice,In-Person Classes begin,Presenter: Carlos Eguiluz Rosas,,"<a href=""./projects#draft"">Paper Draft (Fri)</a>"
 #fdffe4,Mon 11-08,Modality: spreadsheet,spreadsheet,,Guest speaker: Eirik Bakke,,
-white,Wed 11-10,Tasks: comparison (tentative),compare,,,,
+white,Wed 11-10,Tasks: comparison (tentative),clean,,,,
 white,Mon 11-15,Tasks: event analysis,events,,Guest speaker: Leo Zhicheng Liu,,
 white,Wed 11-17,Tasks: automation,automation,,,,
 white,Mon 11-22,Tasks: debugging ML,debugml,,Presenter: Kevin Gao,,

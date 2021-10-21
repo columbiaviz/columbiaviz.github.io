@@ -19,7 +19,11 @@ Students will submit reviews of the class readings before each session.  A sessi
 
 
 ## Recent Announcements
-
+* 10/20/21
+  * [Performance & Engine PPT by Jeffrey Tao](./sessions/HDI_ Performance & Engines.pptx)
+  * [Approximation & Precomputation PPT by Haoran Pu](./sessions/Approximation and Precomputation.pptx)
+* 10/16/21
+  * Virtual Classes will be held until 3rd Nov, 2021, after which all classes will be held in-person for all students. 
 * 10/10/21
   * [Instructions for Reading Presentation](./sessions/presentation.pptx)
 * 10/2/21
@@ -74,6 +78,7 @@ Students will submit reviews of the class readings before each session.  A sessi
       {% endif %}
       </td>
     <td class="notes">
+     {{r.notes}}
     </td>
     <td>{{r.assigned | safe}}</td>
     <td>{{r.due | safe}}</td>
