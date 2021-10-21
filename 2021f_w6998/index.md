@@ -19,6 +19,9 @@ Students will submit reviews of the class readings before each session.  A sessi
 
 
 ## Recent Announcements
+* 10/21/21
+  * A3 has been released and is due by Nov 07 11:59PM (EST).
+  * Readings for 25th Nov (Monday) have been updated, kindly check and complete before the deadline.
 * 10/20/21
   * [Performance & Engine PPT by Jeffrey Tao](./sessions/HDI_ Performance & Engines.pptx)
   * [Approximation & Precomputation PPT by Haoran Pu](./sessions/Approximation and Precomputation.pptx)
