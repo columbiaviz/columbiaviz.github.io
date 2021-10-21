@@ -240,6 +240,15 @@ Readings
 
 
 
+#### <a name="colstore"/>Performance: Columnar Execution
+
+
+Readings
+
+* Required: [Column Store Survey](https://stratos.seas.harvard.edu/files/stratos/files/columnstoresfntdbs.pdf) Chapters 1, Sections 3.1-3.2, Sections 4.1, 4.2 (skip 4.2.1-5), Skim 4.4.
+* Optional: [C-Store: A Column-oriented DBMS](https://w6113.github.io/files/papers/cstore-vldb05.pdf)
+* Optional: Richard Wesley et al.  [Leveraging Compression in the Tableau Data Engine](https://research.tableau.com/paper/leveraging-compression-tableau-data-engine)
+
 
 <!--
 #### <a name="precomp"/>Performance: Precomputation
