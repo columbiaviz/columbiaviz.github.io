@@ -1,4 +1,4 @@
-color,date,slug,link,notes,presenter,assigned,due
+jk,date,slug,link,notes,presenter,assigned,due
 #fdffe4,Mon 09-13,Intro,intro,,,"<a href=""./a1"">A1</a> ",
 #fdffe4,Wed 09-15,Vis: Tasks and Goals,tasks,,,,"<a href=""https://github.com/columbiaviz/2021f-systemshdi/wiki"">Reviews</a> (11:59PM Tues)<br/><br/><a href=""./a1"">A1 (Sun)</a>"
 #fdffe4,Mon 09-20,Vis: Languages,grammars,,,"<a href=""./a2"">A2</a> ",
@@ -10,19 +10,20 @@ color,date,slug,link,notes,presenter,assigned,due
 white,Mon 10-11,DB: Data models,models,,,,
 white,Wed 10-13,DB: Interfaces from a Data Perspective,dbvis,,,,"<a href=""./projects#checkin"">Check-in</a>"
 white,Mon 10-18,DB: Performance Overview and Columnar Engines,perf,,Presenter: Jeffrey Tao,,
-white,Wed 10-20,DB: approximation and precomputation,aqp,,Presenter: Haoran Pu,,
-white,Mon 10-25,DB: physical design,miscperf,,,,
-#fdffe4,Wed 10-27,Modality: touch,touch,,,,
+white,Wed 10-20,DB: approximation and precomputation,aqp,,Presenter: Haoran Pu,"<a href=""./a3"">A3</a>",
+white,Mon 10-25,DB: columnar engines,colstore,,,,
+#fdffe4,Wed 10-27,DB: physical design,miscperf,,,,
 #fdffe4,Mon 11-01,Holiday,,,,,
 #fdffe4,Wed 11-03,Modality: voice/text,voice,In-Person Classes begin,Presenter: Carlos Eguiluz Rosas,,"<a href=""./projects#draft"">Paper Draft (Fri)</a>"
-#fdffe4,Mon 11-08,Modality: spreadsheet,spreadsheet,,Guest speaker: Eirik Bakke,,
-white,Wed 11-10,Tasks: comparison (tentative),clean,,,,
-white,Mon 11-15,Tasks: event analysis,events,,Guest speaker: Leo Zhicheng Liu,,
-white,Wed 11-17,Tasks: automation,automation,,,,
+#fdffe4,Sun 11-07,,,,,,"<a href=""./a3"">A3</a> (Sunday)"
+#fdffe4,Mon 11-08,Modality: spreadsheet,spreadsheet,,Guest speaker: Eirik Bakke,"<a href=""./a4"">A4</a>",
+white,Wed 11-10,Modaliy: touch,touch,,,,
+white,Mon 11-15,Tasks: event analysis,events,,Guest speaker: Leo Zhicheng Liu,,"<a href=""./a4"">A4</a>"
+white,Wed 11-17,Tasks: extraction,clean,,,,
 white,Mon 11-22,Tasks: debugging ML,debugml,,Presenter: Kevin Gao,,
 white,Wed 11-24,Holiday,,,,,
 white,Mon 11-29,Tasks: debugging analytics,debugquery,,Presenter: Alex Yao,,
-white,Wed 12-01,Tasks: graph analysis,,,Guest speaker: Leo Meyerov,,
+white,Wed 12-01,Tasks: graph analysis,graph,,Guest speaker: Leo Meyerov,,
 #fdffe4,Mon 12-06,Presentations,,,,,"<a href=""./projects#showcase"">Showcase</a>"
 #fdffe4,Wed 12-08,Break,,,,,
 #fdffe4,Mon 12-13,Final Drafts Due,,,,,"<a href=""./projects#report"">Report due</a>"
