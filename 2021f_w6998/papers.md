@@ -282,16 +282,12 @@ Optional Readings
 
 
 
-#### <a name="touch"/>Modalities: Touch and Gesture
-
-* Required: Arnab Nandi, Lilong Liang, Michael Mandel [Gestural Query Specification](https://scholar.google.com/scholar?q=gestural+query+specification)
-* Kenrick Kin, Björn Hartmann, Tony DeRose, Maneesh Agrawala [Proton: Multitouch Gestures as Regular Expressions](http://vis.berkeley.edu/papers/proton/)
-
 #### <a name="voice"/>Modalities: Voice and Natural Language
 
-* Required: Immanuel Trummer [Data Vocalization with CiceroDB](http://cidrdb.org/cidr2019/papers/p39-trummer-cidr19.pdf)
+* One of the following is required: 
+  * Immanuel Trummer [Data Vocalization with CiceroDB](http://cidrdb.org/cidr2019/papers/p39-trummer-cidr19.pdf)
+  * Narechania et al [NL4DV: Toolkit for Generating Analytic Specs for Data Vis from Natural Language Queries](https://arxiv.org/pdf/2008.10723.pdf)
 * Optional: Vraj Shah et al. [SpeakQL: Towards Speech-driven Multimodal Querying of Structured Data](https://adalabucsd.github.io/papers/TR_2019_SpeakQL_v2.pdf)
-* Optional: Narechania et al [NL4DV: Toolkit for Generating Analytic Specs for Data Vis from Natural Language Queries](https://arxiv.org/pdf/2008.10723.pdf)
 * Optional: Christopher Baik et al.  [Bridging the Semantic Gap with SQL Query Logs in Natural Language Interfaces to Databases](https://arxiv.org/pdf/1902.00031.pdf)
 * Optional: Jimmy Lin [ICDE 21 Keynote: The Attack of the Muppets!](https://www.youtube.com/watch?v=8K1kCxz7Iro)
 
@@ -311,6 +307,11 @@ Optional Reading
 * Codi Burley et al. [ARQuery: Hallucinating Analytics over Real-World Data using Augmented Reality](http://cidrdb.org/cidr2019/papers/p93-burley-cidr19.pdf)
 * Willett et al.  [Embedded Data Representations](https://hal.inria.fr/hal-01377901/file/embedded-data-representations.pdf)
 
+
+#### <a name="touch"/>Modalities: Touch and Gesture
+
+* Required: Arnab Nandi, Lilong Liang, Michael Mandel [Gestural Query Specification](https://scholar.google.com/scholar?q=gestural+query+specification)
+* Kenrick Kin, Björn Hartmann, Tony DeRose, Maneesh Agrawala [Proton: Multitouch Gestures as Regular Expressions](http://vis.berkeley.edu/papers/proton/)
 
 
 #### <a name="clean"/>Tasks: Comparison
