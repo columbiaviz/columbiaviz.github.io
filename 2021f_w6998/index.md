@@ -19,6 +19,8 @@ Students will submit reviews of the class readings before each session.  A sessi
 
 
 ## Recent Announcements
+* 10/26/21
+  * OH will take place on 4th Nov, Thursday (12-1 pm) in the upcoming week (11/01/21) (Temporary change due to Election day holiday)
 * 10/21/21
   * A3 has been released and is due by Nov 07 11:59PM (EST).
   * Readings for 25th Nov (Monday) have been updated, kindly check and complete before the deadline.
