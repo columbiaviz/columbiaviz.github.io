@@ -106,7 +106,7 @@ Evaluation: your draft will primarily be evaluated by
 Submission
 
 1. Use the [report template on Overleaf](https://www.overleaf.com/read/phmrptrtjrhz)
-2. [Click here to submit your **4 -- 6 page** draft](https://easychair.org/conferences/?conf=w611320)
+2. [Click here to submit your **4 -- 6 page** draft](https://www.dropbox.com/request/HaghgGPB1R2rsohLlTUB)
   * Please see [this draft from a previous class](https://www.dropbox.com/s/y460nkyi7pmnkre/example%20draft.pdf?dl=0) as an example.
 
 
