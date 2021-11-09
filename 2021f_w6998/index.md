@@ -23,7 +23,8 @@ Students will submit reviews of the class readings before each session.  A sessi
   * A4 has been released and is due by Nov 15, 11:59 PM (EST)
 * 10/21/21
   * Readings for 25th Nov (Monday) have been updated, kindly check and complete before the deadline.
-* 10/20/21
+* 11/09/21
+  * [Voice And Natural Language by Carlos Eguiluz Rosas](./sessions/Voice_Natural_Language.pptx)
   * [Performance & Engine PPT by Jeffrey Tao](./sessions/HDI_ Performance & Engines.pptx)
   * [Approximation & Precomputation PPT by Haoran Pu](./sessions/Approximation and Precomputation.pptx)
 * 10/16/21
