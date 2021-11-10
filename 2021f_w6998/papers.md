@@ -299,6 +299,7 @@ Readings
 * Required: Eirik Bakke et al. [Expressive Query Construction through Direct Manipulation of Nested Relational Results](https://people.csail.mit.edu/ebakke/research/sieuferd_sigmod2016.pdf) 
 * Optional: Bendre et al. [Dataspread: Unifying Databases and Spreadsheets](https://people.eecs.berkeley.edu/~adityagp/papers/data-spread-demo.pdf)
 * Optional: Lyn Bartram, Michael Correll, and Melanie Tory [Untidy Data: The Unreasonable Effectiveness of Tables](https://arxiv.org/pdf/2106.15005.pdf)
+* Optional: [Espalier/Object Spreadsheets](https://sdg.csail.mit.edu/projects/espalier/)
 
 #### Modalities: Additional Modalities
 
