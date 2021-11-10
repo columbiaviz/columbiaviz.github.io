@@ -312,7 +312,7 @@ Optional Reading
 #### <a name="touch"/>Modalities: Touch and Gesture
 
 * Required: Arnab Nandi, Lilong Liang, Michael Mandel [Gestural Query Specification](https://scholar.google.com/scholar?q=gestural+query+specification)
-* Kenrick Kin, Björn Hartmann, Tony DeRose, Maneesh Agrawala [Proton: Multitouch Gestures as Regular Expressions](http://vis.berkeley.edu/papers/proton/)
+* Optional: Kenrick Kin, Björn Hartmann, Tony DeRose, Maneesh Agrawala [Proton: Multitouch Gestures as Regular Expressions](http://vis.berkeley.edu/papers/proton/)
 * Optional: [Beyond Mouse and Keyboard: Expanding Design Considerations for Information Visualization Interactions](https://hal.inria.fr/hal-00717203/file/Lee_2012_BMA.pdf)
 * Optional: [VizDOM](http://www.vldb.org/pvldb/vol8/p2024-crotty.pdf)
 * Optional: [DBTouch](http://www-cs-students.stanford.edu/~adityagp/courses/cs598/papers/dbtouch.pdf)
@@ -322,7 +322,7 @@ Optional Reading
 
 Readings
 
-* Required: Wu et al. [VCA: View Composition Algebra](#)
+* Required: Wu et al. [VCA: View Composition Algebra](https://www.dropbox.com/s/bg5nggs681qttjf/compalgebra-vis22-revision-v4.pdf?dl=0)
 * Optional: Michael Gleicher [Considerations for Visualizing Comparison](https://graphics.cs.wisc.edu/Papers/2018/Gle18/viscomp.pdf)
 
 
