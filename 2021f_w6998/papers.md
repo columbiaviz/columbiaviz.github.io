@@ -313,6 +313,9 @@ Optional Reading
 
 * Required: Arnab Nandi, Lilong Liang, Michael Mandel [Gestural Query Specification](https://scholar.google.com/scholar?q=gestural+query+specification)
 * Kenrick Kin, Björn Hartmann, Tony DeRose, Maneesh Agrawala [Proton: Multitouch Gestures as Regular Expressions](http://vis.berkeley.edu/papers/proton/)
+* Optional: [Beyond Mouse and Keyboard: Expanding Design Considerations for Information Visualization Interactions](https://hal.inria.fr/hal-00717203/file/Lee_2012_BMA.pdf)
+* Optional: [VizDOM](http://www.vldb.org/pvldb/vol8/p2024-crotty.pdf)
+* Optional: [DBTouch](http://www-cs-students.stanford.edu/~adityagp/courses/cs598/papers/dbtouch.pdf)
 
 
 #### <a name="clean"/>Tasks: Comparison
