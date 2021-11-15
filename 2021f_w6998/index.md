@@ -19,8 +19,8 @@ Students will submit reviews of the class readings before each session.  A sessi
 
 
 ## Recent Announcements
-* 11/09/21
-  * A4 has been released and is due by Nov 15, 11:59 PM (EST)
+* 15/11/21
+  * Deadline for A4 has been extended and is now due by Nov 19 (Friday), 11:59 PM (EST)
 * 11/09/21
   * [Voice And Natural Language by Carlos Eguiluz Rosas](./sessions/Voice_Natural_Language.pptx)
   * [Performance & Engine PPT by Jeffrey Tao](./sessions/HDI_ Performance & Engines.pptx)
