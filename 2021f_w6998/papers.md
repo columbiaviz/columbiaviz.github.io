@@ -379,8 +379,8 @@ Readings
 
 Readings
 
-* Chris Olah et al. [The Building Blocks of Interpretability](https://distill.pub/2018/building-blocks)
-* Cynthia Rudin [Stop Explaining Black Box Machine Learning Models for High Stakes Decisions and Use Interpretable Models Instead](https://arxiv.org/pdf/1811.10154.pdf)
+* Required: (Skim) Chris Olah et al. [The Building Blocks of Interpretability](https://distill.pub/2018/building-blocks)
+* Required: Cynthia Rudin [Stop Explaining Black Box Machine Learning Models for High Stakes Decisions and Use Interpretable Models Instead](https://arxiv.org/pdf/1811.10154.pdf)
 
 #### <a name="debugquery"/>Tasks: Debugging Analytics
 
