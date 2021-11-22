@@ -125,8 +125,11 @@ Your presentation should be polished.  Since there is still time until the final
 
 Overall logistics
 
-* 2 person teams: 6 min presentation, 5 min feedback
-* 1 person teams: 5 min presentation, 4 min feedback
+<!--* 2 person teams: 6 min presentation, 5 min feedback
+* 1 person teams: 5 min presentation, 4 min feedback-->
+
+
+* 5 min presentation, 3 min feedback
 * Timing is strict since we have many groups.  *Practice ahead of time so your presentation is smooth!  Only takes 5/6 minutes per practice :)*
 * Each team member should speak
 * Make sure all demos are embedded as GIFs or videos in your slides.
