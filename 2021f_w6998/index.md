@@ -19,13 +19,14 @@ Students will submit reviews of the class readings before each session.  A sessi
 
 
 ## Recent Announcements
-* 15/11/21
-  * Deadline for A4 has been extended and is now due by Nov 19 (Friday), 11:59 PM (EST)
-* 11/09/21
+* 12/01/21
+  * [Query Explanations by Alex Yao](./sessions/Query_Explanations.pdf)
   * [Interpretable Machine Learning by Kevin Gao](./sessions/InterpretableMachineLearning.pptx)
   * [Voice And Natural Language by Carlos Eguiluz Rosas](./sessions/Voice_Natural_Language.pptx)
   * [Performance & Engine PPT by Jeffrey Tao](./sessions/HDI_ Performance & Engines.pptx)
   * [Approximation & Precomputation PPT by Haoran Pu](./sessions/Approximation and Precomputation.pptx)
+* 15/11/21
+  * Deadline for A4 has been extended and is now due by Nov 19 (Friday), 11:59 PM (EST)
 * 10/21/21
   * Readings for 25th Nov (Monday) have been updated, kindly check and complete before the deadline.
 * 10/16/21
