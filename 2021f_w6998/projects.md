@@ -149,12 +149,14 @@ Tips!
 
 * [Make it Clear](https://direct.mit.edu/books/book/4874/Make-It-ClearSpeak-and-Write-to-Persuade-and) by Patrick Winston is a good book on making effective presentations.   For this class, his chapter on [good presentation habits](https://watermark.silverchair.com/9780262360395_c001300.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAs8wggLLBgkqhkiG9w0BBwagggK8MIICuAIBADCCArEGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQM4YTeA68kWw8tDm2GAgEQgIICgsueqhzB1-7ztrFOQE_B6FyNx2GLtK5fj3aPUwulVC7rN8n9lTV1JvqK14G_47KhrFPOW44mQL1hQKiXVQo3G8wuBTdRZmx9Ot0qiLaCgfvhKnSMs9JzB7UBFhFjpVpHnDv6wmthqW9EFDdsS5UUiJfr1MticZwIX0v4aLYk1CGpnYCxrHIQ6ChTcQ8WFU0rofVIXsgeAZTSp0JsPtFAVF8iPPvcBmynnABxPvo6n_c9wTRf19NlwiAEYFEqYeDx72qHvhuBvOZyjerwTWEyueKFyWmSwRfdxV2TjZNKokyRpF0TiKv-qYgxO8ctEPhXcfJ6iye2_FWIZ4tzspKlgI9ggIBtI1BRCCLOgbo_0tbi_Sh-_w6u8tE1_6zq7LxAZQeFmldsZxyBQ_sBPPWZx1fz2M09v1EKFuPeoTZQd8ObljTClm5P5YaahVBqOHD7qMud0GUdAh0_N2BHsSXpbL4wdwRXmEcw3Q2vWNH2HOK4JhYOAwdgIt3FBnNfX8NFbJm0fvWpkApodOrjO5MGFkSxAHJJ5wOAtB5U3ZHK8Vk-EBP7gqNxIIfduLx0sDLAWHxBuMkSjpYCVP2iGKVAplr4hZR57eYHZ5ZQQFH0MGtYTDgmvZSIFIcm4aiFKHAzqXt-M0GMRZeuoMWPgz1qiBcnbvf0JD1A_Lc1ZUMcwN9H6XNe3S6e-hB13DChZAB7iJXDj7wrurus3le51X1P3ODNw-Si059dQ55MlWHQqel9JPwkDPJJ7h4USVs8IYRWFK21D83BVa30bo2WyYdkRTwK2qSPON5VpJopBYYMJIkgmy_IF5yI8bSlofFrgzxef-AQ2nr0bMUAwwx2PYHfp5R0QA) is relevant.
 
-**Submission**
-
-* Submit URL to your group's [PDF file or google slides](https://forms.gle/av9k4XUuaEeDC2dc6)
-
-
-
+**Submission Instructions**
+ * One [master slide](https://docs.google.com/presentation/d/1tQxrWHC2Bo-vPekm4b8qOn4A1yARUvTpTOx28zlaF4M/edit?usp=sharing) will be used by each team/student for adding their slides
+ * Every team/student must add their slides ONLY under their own project name’s slide. 
+ * Kindly verify your names, uni and project topic.
+ * Be very careful about not editing other team/student’s slides. 
+ * The ordering mentioned in the master slide is the order that will be followed on showcase day, so please be prepared accordingly.
+ * Slides can be edited only till Sunday (12/05/21) 11 PM EST, after which access will be disabled.
+  
 ## Report/Camera Ready
 
 You will revise your draft and submit a conference-style report on your project, with **maximum length** of 12 pages. 
