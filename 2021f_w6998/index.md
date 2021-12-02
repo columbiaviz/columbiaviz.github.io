@@ -22,6 +22,7 @@ Students will submit reviews of the class readings before each session.  A sessi
 * 12/02/21
   * Presentation showcase on Monday 12/06/21.
   * All students must add their respective slides under one [master slide](https://docs.google.com/presentation/d/1tQxrWHC2Bo-vPekm4b8qOn4A1yARUvTpTOx28zlaF4M/edit?usp=sharing)
+  * Detailed submission instructions can be found on the Project page and master slide link.
 * 12/01/21
   * [Query Explanations by Alex Yao](./sessions/Query_Explanations.pdf)
   * [Interpretable Machine Learning by Kevin Gao](./sessions/InterpretableMachineLearning.pptx)
