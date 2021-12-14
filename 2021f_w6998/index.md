@@ -19,6 +19,8 @@ Students will submit reviews of the class readings before each session.  A sessi
 
 
 ## Recent Announcements
+* 12/13/21
+  * Review and Assignment (A1-A4) Grades have been published on Courseworks. 
 * 12/02/21
   * Presentation showcase on Monday 12/06/21.
   * All students must add their respective slides to one [master slide](https://docs.google.com/presentation/d/1tQxrWHC2Bo-vPekm4b8qOn4A1yARUvTpTOx28zlaF4M/edit?usp=sharing)
