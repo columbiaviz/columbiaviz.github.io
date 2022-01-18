@@ -1,0 +1,194 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.2/chroma.min.js" integrity="sha512-8TVPS0EFkkmtT6yPb5K4csnSt3tjbKRrs0F8gvTNKv2OxOcwDO7+Klkz86gMVrzfqtZos5N2a+k+r9D+hlccmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/files/js/anim.js"></script>
+
+<style>
+  body {padding-top: 75px; }
+  #idv-banner{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #idv-banner canvas{
+    width: 200px;
+    height: 200px;
+  }
+
+@media (max-width: 840px){
+  #idv-banner canvas:nth-child(4){ display:none; }
+}
+
+@media (max-width: 640px){
+  #idv-banner canvas{ width: 150px; height: 150px; }
+}
+
+@media (max-width: 540px){
+  #idv-banner canvas{ width: 120px; height: 120px; }
+}
+
+@media (max-width: 400px){
+  #idv-banner canvas{ width: 100px; height: 100px; }
+}
+</style>
+
+<script>
+$(()=>{
+  const dpr = window.devicePixelRatio || 1,
+        w = 200, h = 200,
+        grey = chroma.scale(['#eee', 'black']),
+        palette = chroma.cubehelix().lightness([0.3,0.7]).rotations(0.85)
+
+  function reset(obj){
+    obj.canvas.width = obj.canvas.width
+    obj.ctx.fillStyle = 'black'
+    obj.ctx.scale(dpr, dpr)
+    return obj.ctx
+  }
+
+  function polar([cx, cy], angle, dist){
+    return [cx+Math.cos(angle/180*Math.PI) * dist, cy+Math.sin(angle/180*Math.PI) * dist]
+  }
+
+  let render = {
+    swatches: function(a, b, c, d){
+      let ctx = reset(this)
+      var [da, db, dc, dd] = [a, b, c, d].map(x => x*.48)
+      ctx.fillStyle = palette(a)
+      ctx.fillRect(0, 0, w*da, h*da)
+      ctx.fillStyle = palette(b)
+      ctx.fillRect(w/2, 0, w*db, h*db)
+      ctx.fillStyle = palette(c)
+      ctx.fillRect(0, h/2, w*dc, h*dc)
+      ctx.fillStyle = palette(d)
+      ctx.fillRect(w/2, h/2, w*dd, h*dd)
+    },
+    radial: function(a, b, c, d){
+      let ctx = reset(this)
+      ctx.lineWidth = 18
+
+      ctx.beginPath()
+      ctx.strokeStyle = palette(a)
+      ctx.ellipse(w/2, h/2, 20, 20, 0, 0, 2*Math.PI * a)
+      ctx.stroke()
+
+      ctx.beginPath()
+      ctx.strokeStyle = palette(b)
+      ctx.ellipse(w/2, h/2, 40, 40, 0, 0, 2*Math.PI * b)
+      ctx.stroke()
+
+      ctx.beginPath()
+      ctx.strokeStyle = palette(c)
+      ctx.ellipse(w/2, h/2, 60, 60, 0, 0, 2*Math.PI * c)
+      ctx.stroke()
+
+      ctx.beginPath()
+      ctx.strokeStyle = palette(d)
+      ctx.ellipse(w/2, h/2, 80, 80, 0, 0, 2*Math.PI * d)
+      ctx.stroke()
+
+    },
+    scatter: function(a, b, c, d){
+      let ctx = reset(this)
+      let origin = [w/2, h],
+          right = polar(origin, -30, 100),
+          top = polar(origin, -90, 100),
+          left = polar(origin, -150, 100)
+      ctx.beginPath()
+      ctx.moveTo(...origin)
+      ctx.lineTo(...right)
+      ctx.lineTo(...top)
+      ctx.lineTo(...left)
+      ctx.closePath()
+      ctx.fillStyle = 'f5f5f5'
+      ctx.fill()
+
+      ctx.lineWidth = 1
+      ctx.strokeStyle = 'rgba(0,0,0,.1)'
+      ctx.moveTo(...left)
+      ctx.lineTo(...polar(left, -90, 100))
+      ctx.lineTo(...polar(top, -90, 100))
+      ctx.lineTo(...polar(right, -90, 100))
+      ctx.lineTo(...right)
+      ctx.moveTo(...polar(left, -90, 100))
+      ctx.lineTo(...top)
+      ctx.lineTo(...polar(right, -90, 100))
+      ctx.moveTo(...top)
+      ctx.lineTo(...origin)
+      ctx.stroke()
+
+      ctx.lineWidth = 4
+      ctx.beginPath()
+      let src = polar(origin, -150, 100*a)
+      let dst = polar(src, -30, 100*b)
+      ctx.strokeStyle = palette(b)
+      ctx.moveTo(...src)
+      ctx.lineTo(...dst)
+      ctx.stroke()
+
+      ctx.beginPath()
+      src = polar(origin, -30, 100*b)
+      dst = polar(src, -150, 100*a)
+      ctx.strokeStyle = palette(a)
+      ctx.moveTo(...src)
+      ctx.lineTo(...dst)
+      ctx.stroke()
+
+      ctx.beginPath()
+      top = polar(dst, -90, 100*c)
+      ctx.strokeStyle = palette(c)
+      ctx.moveTo(...dst)
+      ctx.lineTo(...top)
+      ctx.stroke()
+
+      ctx.beginPath()
+      ctx.fillStyle = palette(d)
+      let r = 2 + 10*d
+      ctx.ellipse(...top, r, r, 0, 0, 2*Math.PI)
+      ctx.fill()
+      ctx.lineWidth = 1
+      ctx.strokeStyle = 'white'
+      ctx.stroke()
+    },
+    bars: function(a, b, c, d){
+      let ctx = reset(this)
+      ctx.fillStyle = palette(a)
+      ctx.fillRect(0, h, w*.2, -h*a)
+      ctx.fillStyle = palette(b)
+      ctx.fillRect(w*.25, h, w*.2, -h*b)
+      ctx.fillStyle = palette(c)
+      ctx.fillRect(w*.5, h, w*.2, -h*c)
+      ctx.fillStyle = palette(d)
+      ctx.fillRect(w*.75, h, w*.2, -h*d)
+    },
+
+  }
+
+  let demo = Object.fromEntries(Object.keys(render).map(mode => {
+    let canvas = $('<canvas>')
+      .attr('class', mode)
+      .attr('width',w*dpr)
+      .attr('height',h*dpr)
+      .appendTo('#idv-banner')
+      .get(0)
+    return [mode, render[mode].bind({canvas, ctx:canvas.getContext("2d")})]
+  }))
+
+  let last = _.range(4).map(() => Math.random())
+  let next = last
+  const redraw = (pct=0) => {
+    let [a, b, c, d] = _.zip(last, next).map(([src, dst]) => src + pct * (dst-src))
+    for (const mode in demo){
+      demo[mode](a, b, c, d)
+    }
+  }
+  redraw()
+
+  const update = () => {
+    last = next
+    next = _.range(4).map(_ => Math.random())
+    tween({ dur:10000, ease:"easeInOutSine", precision:15, step:redraw, complete:() => {setTimeout(update, 750)} })
+  }
+  update()
+
+})
+</script>
