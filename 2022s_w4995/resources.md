@@ -4,8 +4,6 @@ layout: 2022s_w4995
 
 # Resources
 
-<br>
-
 ### Visualization Toolkits
 
 A variety of useful toolkits have been designed to help support information visualization applications. Some include support for the full visualization pipeline from data to interactive graphics, while others focus only on a subset, typically graphics and interaction.

@@ -4,11 +4,9 @@ layout: 2022s_w4995
 
 # Syllabus
 
-<br>
-
 ## Overview
 
-This course is a hands-on introduction to design principles, theory, and software techniques for visualizing data. Classes will be a combination of lecture, design studio, and lab. Through readings, design critique, and code assignments, students will learn how visual representations can help in the understanding of complex data, and how to design and evaluate visualizations for the purpose of analysis or communication. Students will develop skills in processing data and building interactive visualizations using D3. Topics include visual perception, exploratory data analysis, task analysis, graphic design, narrative, etc.
+This course is a hands-on introduction to design principles, theory, and software techniques for visualizing data. Classes will be a combination of lecture, design studio, and lab. Through readings, design critique, and code assignments, students will learn how visual representations can help in the understanding of complex data, and how to design and evaluate visualizations for the purpose of analysis or communication. Students will develop skills in processing data and building interactive visualizations using D3. Topics include visual perception, exploratory data analysis, task analysis, graphic design, visual hierarchy, narrative, etc.
 
 Students should have experience in JavaScript programming and web development, as well as familiarity with databases and data formats. You should be comfortable picking up new programming tools on your own. Experience with Python or R for data processing is helpful but not required.
 
@@ -27,7 +25,7 @@ Students will learn to:
 ## Assignments
 
 0. **Clocks (0%)**: Apply for this class by completing a warm-up assignment designing an abstract clock.
-1. **Sparks Presentation (5%)**: Prepare a 7 min. slideshow presentation on a data visualization practitioner or team that is inspiring to you.
+1. **Sparks Presentation (5%)**: Prepare a 15 min. slideshow presentation on a data visualization practitioner or team that is inspiring to you.
 2. **Visualization Design (8%)**: Design 10 divergent representations for the US Census data set and provide a rigorous rationale for your design choices. Present for design critique in class.
 3.  **Exploratory Data Analysis (10%)**: Identify a dataset of interest and perform an exploratory analysis to understand the shape & structure of the data, investigate initial questions, and develop preliminary insights & hypotheses. Present a report on your findings.
 4.  **Interactive Visualization (20%)**: Build a visualization that enables interactive exploration along at least three dimensions using a dataset of your own choosing and publish it on the web.

@@ -3,7 +3,6 @@ layout: 2022s_w4995
 ---
 
 # Labs
-<br>
 
 We will be working in the Observable platform, which is like a web-hosted JavaScript version of Jupyter notebooks. The goal of these assignments is to get you started with coding with D3, the dominant JavaScript library for building interactive visualizations for the web.
 

@@ -3,7 +3,6 @@ layout: 2022s_w4995
 ---
 
 # Midterm Exam
-<br>
 
 The exam for Spring 2022 is a **take-home online exam** that will be open for 24 hours on [Courseworks]({{ layout.courseworks }}) as a “Timed Quiz” starting **Thursday 2/25 22:00 till Friday 2/26 22:00, Eastern Time.**
 

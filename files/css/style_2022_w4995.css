@@ -19,6 +19,12 @@ table{
   font-size: 18px;
 }
 
+table thead{
+  position: sticky;
+  top: 50px;
+  background: rgba(255,255,255,.92);
+}
+
 table th{
   font-family: 'Jost', sans-serif;
   font-weight: 500;
@@ -29,6 +35,10 @@ table.overview {
   overflow: scroll;
 }
 
+
+h1{
+  margin-bottom: 1.3em;
+}
 
 /***** Navbar ******/
 .navbar-inverse {
@@ -50,16 +60,6 @@ table.overview {
 .navbar .dropdown-menu{
   font-size: 16px;
 }
-.navbar a[href^="labs.html"]:before{
-  content: "▶︎ ";
-  font-style: normal;
-  color: #bbb;
-}
-.navbar a[href^="labs.html"]{
-  font-style: italic;
-}
-
-
 /* outdated notice */
 .navbar .container .alert-warning {
   margin-bottom: 0;
