@@ -5,6 +5,7 @@ links:
   wk01:
     - slides: https://docs.google.com/presentation/d/1XJG8jmlCGMre4eWO4jee2AjzSJjIcc_Ma0hMdsHyJh4/edit?usp=sharing
   wk02:
+    - draft: true
     - slides: https://docs.google.com/presentation/d/1RVt5L-_zMmX2vzvkPZNnJJ7U_EkqWBwgDzJhoIYKAOc/edit?usp=sharing
     - quiz: "#"
   wk03:
