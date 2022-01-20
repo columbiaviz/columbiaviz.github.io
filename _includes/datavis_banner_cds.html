@@ -4,13 +4,12 @@
 
 <style>
   body {padding-top: 105px; }
-  h1{ margin-bottom:0; }
+  h1{ margin-bottom: 1px; }
   #idv-banner{
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
   }
-
   #idv-banner canvas{
     width: 200px;
     height: 200px;
@@ -57,7 +56,7 @@ $(()=>{
 
       ctx.lineWidth = 2
       ctx.strokeStyle = 'rgba(0,0,0,.1)'
-      ctx.fillStyle = 'f5f5f5'
+      ctx.fillStyle = '#f5f5f5'
       ctx.beginPath()
       ctx.moveTo(...origin)
       ctx.lineTo(...right)
@@ -65,6 +64,12 @@ $(()=>{
       ctx.lineTo(...left)
       ctx.closePath()
       ctx.fill()
+      ctx.stroke()
+
+      ctx.strokeStyle = 'rgba(0,0,0,.03)'
+      ctx.beginPath()
+      ctx.moveTo(...top)
+      ctx.lineTo(...above(top))
       ctx.stroke()
 
       ctx.lineWidth = 4
@@ -95,7 +100,7 @@ $(()=>{
       ctx.lineWidth = 1
       ctx.strokeStyle = 'white'
       ctx.beginPath()
-      let r = 2 + 10*d
+      let r = 2 + 8*d
       ctx.ellipse(...apex, r, r, 0, 0, 2*Math.PI)
       ctx.fill()
       ctx.stroke()
@@ -213,7 +218,7 @@ $(()=>{
     // },
   }
 
-  let demo = Object.fromEntries(Object.keys(render).map(mode => {
+  const demo = Object.fromEntries(Object.keys(render).map(mode => {
     let canvas = $('<canvas>')
       .attr('class', mode)
       .attr('width',w*dpr)
