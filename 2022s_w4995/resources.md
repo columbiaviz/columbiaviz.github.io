@@ -12,25 +12,28 @@ A variety of useful toolkits have been designed to help support information visu
 -   [Vega](http://vega.github.io/vega) – A declarative language for representing visualizations. Vega will parse a visualization specification to produce a JavaScript-based visualization, using either HTML Canvas or SVG rendering. Vega is particularly useful for creating programs that produce visualizations as output.
 -   [Vega-Lite](http://vega.github.io/vega-lite) – A high-level visualization grammar that compiles concise specifications to full Vega specifications.
 -   [Processing](http://processing.org/) or [p5.js](http://p5js.org/) – A popular Java-like graphics and interaction language and IDE. Processing has a strong user community with many examples. p5.js is a sister project in JavaScript.
--   [OpenFrameworks](https://openframeworks.cc/) - an open-source C++ graphics library popular for video and media installations, similar approach to Processing.
+-   [OpenFrameworks](https://openframeworks.cc/) – an open-source C++ graphics library popular for video and media installations, similar approach to Processing.
 -   [Leaflet](http://leafletjs.com/) – a popular open-source mapping library
 -   [VTK](http://www.vtk.org/) – A scientific visualization library (C++ with wrappers for other languages)
--   [Plotly](https://plot.ly/) - built on top of D3, offers abstractions that enable building interactive visualizations very quickly with well-known charts.
--   [Bokeh](https://bokeh.pydata.org/en/latest/) - designed for high-performance interactivity over very large or streaming datasets in web browsers. By Anaconda team.
+-   [Plotly](https://plot.ly/) – built on top of D3, offers abstractions that enable building interactive visualizations very quickly with well-known charts.
+-   [Bokeh](https://bokeh.pydata.org/en/latest/) – designed for high-performance interactivity over very large or streaming datasets in web browsers. By Anaconda team.
+-   [Seaborn](https://seaborn.pydata.org) – A Python-based visualization library with visually defensible defaults that builds on [pandas](https://pandas.pydata.org) and [matplotlib](https://matplotlib.org).
+-   [Chroma.js](https://vis4.net/chromajs/) – A color-math library for JavaScript capable of generating perceptually uniform color mappings.
 
 ### Exploratory Visualization Tools
 
 -   [Tableau for Students](http://www.tableausoftware.com/student/) – get a free Tableau license as a student
 -   [Tableau Public](http://www.tableausoftware.com/public/) – a free version of Tableau which publishes to the web
 -   [GGplot2](http://had.co.nz/ggplot2/) – a graphics language for [R](http://www.r-project.org/)
--   [Voyager](http://vega.github.io/voyager2) –- web-based data exploration tools from UW's Interactive Data Lab
+-   [Voyager](http://vega.github.io/voyager2) – web-based data exploration tools from UW's Interactive Data Lab
 -   [GGobi](http://www.ggobi.org/) – classic system for visualizations of multivariate data
+-   [Observable Plot](https://github.com/observablehq/plot) – A concise JavaScript API for exploratory data visualization (from the authors of D3).
 
 {% include 2018f_tableauresources.md %}
 
 {% include 2018f_d3resources.md %}
 
-{% include 2018f_datapractitioners.md %}
+{% include 2022f_datapractitioners.md %}
 
 ### Visualization Newsletters
 
@@ -69,13 +72,13 @@ A variety of useful toolkits have been designed to help support information visu
 
 ### Online Color Tools
 
--   [0to255](http://www.0to255.com/) - get lighter or darker shade of any color
--   [ColorHexa](http://www.colorhexa.com/) - color conversion and detailed description
--   [Adobe Color CC](https://color.adobe.com/) - pick with color wheel
--   [Color Picker for Data](http://tristen.ca/hcl-picker/#/hlc/6/1/15534C/E2E062) - built off Gregor Aisch's [article](http://vis4.net/blog/posts/avoid-equidistant-hsv-colors)
--   [i want hue](http://tools.medialab.sciences-po.fr/iwanthue/) - color for data scientists, you can choose which algorithm to use
--   [ColorBrewer](http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3) - original choropleth color maker
--   [ColourLovers](http://www.colourlovers.com/) - use color palettes designed by others
--   [Canva Color palette generator](https://www.canva.com/color-palette/) - returns color palette of any photo you upload
+-   [0to255](http://www.0to255.com/) – get lighter or darker shade of any color
+-   [ColorHexa](http://www.colorhexa.com/) – color conversion and detailed description
+-   [Adobe Color CC](https://color.adobe.com/) – pick with color wheel
+-   [Color Picker for Data](http://tristen.ca/hcl-picker/#/hlc/6/1/15534C/E2E062) – built off Gregor Aisch's [article](http://vis4.net/blog/posts/avoid-equidistant-hsv-colors)
+-   [i want hue](http://tools.medialab.sciences-po.fr/iwanthue/) – color for data scientists, you can choose which algorithm to use
+-   [ColorBrewer](http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3) – original choropleth color maker
+-   [ColourLovers](http://www.colourlovers.com/) – use color palettes designed by others
+-   [Canva Color palette generator](https://www.canva.com/color-palette/) – returns color palette of any photo you upload
 
 {% include 2018f_datasources.md %}

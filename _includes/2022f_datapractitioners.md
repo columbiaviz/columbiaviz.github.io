@@ -3,7 +3,7 @@
 - [Jacques Bertin](https://karlsluis.medium.com/before-tufte-there-was-bertin-63af71ceaa62)
 - [Oliver Byrne](https://www.maa.org/press/periodicals/convergence/oliver-byrne-the-matisse-of-mathematics-byrnes-euclid-geometry-understood-via-color-coded-diagrams)
 - [W.E.B. Du Bois](https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/)
-- [Mark Lombardi](https://www.moma.org/artists/22980)
+- [Mark Lombardi](https://medium.com/@ben_fry/learning-from-lombardi-a28032a7eb5)
 - [Charles Joseph Minard](https://www.nationalgeographic.com/culture/article/charles-minard-cartography-infographics-history)
 - [Otto Neurath / Isotype](https://plato.stanford.edu/entries/neurath/)
 - [William Playfair](https://www.atlasobscura.com/articles/the-scottish-scoundrel-who-changed-how-we-see-data)

@@ -19,12 +19,6 @@ table{
   font-size: 18px;
 }
 
-table thead{
-  position: sticky;
-  top: 50px;
-  background: rgba(255,255,255,.92);
-}
-
 table th{
   font-family: 'Jost', sans-serif;
   font-weight: 500;
@@ -33,6 +27,15 @@ table th{
 table.overview {
   display: block;
   overflow: scroll;
+}
+
+table td{
+  position: relative;
+}
+
+table span.outdent{
+  position: absolute;
+  left: -2px;
 }
 
 
