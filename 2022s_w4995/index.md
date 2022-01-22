@@ -174,4 +174,4 @@ Students should have experience in JavaScript programming and web development, a
 - [Spring 2019](/2019s_w4995)
 - [Fall 2018](/2018f_w4995)
 
-{% include datavis_banner_cds.html %}
+{% include datavis_banner.html %}
