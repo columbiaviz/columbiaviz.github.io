@@ -24,7 +24,7 @@ table th{
   font-weight: 500;
 }
 
-table.overview {
+table.schedule {
   display: block;
   overflow: scroll;
 }
