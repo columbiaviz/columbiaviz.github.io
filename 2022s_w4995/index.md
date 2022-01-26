@@ -9,10 +9,7 @@ layout: 2022s_w4995
 <span style="font-family: Jost">COMS {{ layout.courseno }} (3 pts)</span>
 
 _Instructor:_ Christian Swinehart (cds2205), office hours by appt. <br>
-_IAs:_ TBD <br>
-{%- comment %}
-Rounak Bera (rnb2128; [Thu 2-4p](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UU1ha2JVLU9Gc2RMfGRlZmF1bHR8OGFmYmU2YWJlMjgxYmViOTAyYWNlODE0NzJlYWFmZWQ)), Aviva Weinbaum (aw3156; [Mon 12:30-2:30p](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UVBQVEgzaVU4Q2hyfGRlZmF1bHR8NjgyMGU2MzlkMGEyMGU5NTEwMDJlYWFmYTM4YWQ4YTI))
-{% endcomment %}
+_IAs:_ Natalia Dorogi (ngd2111; Mon 1–3pm), Charlotte Li (aw3156; Wed 9–11am)<br>
 _Class Time:_ Thurs. 4:10–6:40pm <br>
 [Courseworks (and Zoom Info)]({{ layout.courseworks }}) <br>
 [Class Slack](https://columbiaviz-sp22.slack.com) <br>
