@@ -9,12 +9,12 @@ wk01:
     grp:
       - "[A2.1 Viz Design: divergence](a2.html)"
 wk02:
-  draft: true
+  # draft: true
   date: "1/27"
   topic: "**Design**: form vs. function, generating ideas, iterating, and critique."
   links:
     - slides: https://docs.google.com/presentation/d/1RVt5L-_zMmX2vzvkPZNnJJ7U_EkqWBwgDzJhoIYKAOc/edit?usp=sharing
-    - quiz: "#"
+    - quiz: "https://docs.google.com/forms/d/e/1FAIpQLSeEHrRIHYuBgQO5fonS1pnwkdgA42x8waD7cvdxVcMBcKAWSg/viewform?usp=sf_link"
   readings:
     - "Visual Explanations, [Chp. 2 Excerpt](../files/readings/Tufte_VisualExplanations-Shuttle-Excerpt.pdf), by Tufte, E. 2007."
     - "[How to be creative](https://faculty.washington.edu/ajko/books/design-methods/creative) & [How to be critical](https://faculty.washington.edu/ajko/books/design-methods/critique), Ko, A. 2017."
