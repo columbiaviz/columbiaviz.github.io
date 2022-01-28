@@ -16,19 +16,19 @@ To submit, enable link sharing on your notebook (make sure to reshare if you've 
 
 Fork (remember to fork!🍴) from [Lab 1 template](https://observablehq.com/@columbiaviz-s22/lab-1-shapes-and-styles).
 
-Submit your [Observable notebook url]({{ layout.forms.submit }}) by **Monday 1/25, 11:59pm ET**.
+Submit your [Observable notebook url]({{ layout.forms.submit }}) by **Wednesday 2/2, 11:59pm ET**.
 
 ### Lab 2: Data Binding
 
 Fork from [Lab 2 template](https://observablehq.com/@columbiaviz-s22/lab-2-data-binding-scales-and-axes).
 
-Submit your [Observable notebook url]({{ layout.forms.submit }}) by **Monday 2/1, 11:59pm ET**.
+Submit your [Observable notebook url]({{ layout.forms.submit }}) by **Wednesday 2/9, 11:59pm ET**.
 
 ### Lab 3: Interactivity
 
 Fork from [Lab 3 template](https://observablehq.com/@columbiaviz-s22/lab-3-interactivity).
 
-Submit your [Observable notebook url]({{ layout.forms.submit }}) by **Monday 2/15, 11:59pm ET**.
+Submit your [Observable notebook url]({{ layout.forms.submit }}) by **Wednesday 2/24, 11:59pm ET**.
 
 ### Grading Criteria
 
