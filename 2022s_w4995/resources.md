@@ -1,8 +1,7 @@
 ---
+title: Resources
 layout: 2022s_w4995
 ---
-
-# Resources
 
 ### Visualization Toolkits
 

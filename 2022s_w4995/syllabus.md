@@ -1,8 +1,7 @@
 ---
+title: Syllabus
 layout: 2022s_w4995
 ---
-
-# Syllabus
 
 ## Overview
 

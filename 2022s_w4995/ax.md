@@ -1,8 +1,7 @@
 ---
+title: "Extra Credit Opportunities"
 layout: 2022s_w4995
 ---
-
-# Extra Credit Opportunities
 
 The purpose of extra credit (EC) is to reflect understanding of the course material more in-depth or from a different perspective. Viewed in another way, these are assignments that were not assigned this semester due to our limited class time, but are still lots of fun and worth your time.
 
