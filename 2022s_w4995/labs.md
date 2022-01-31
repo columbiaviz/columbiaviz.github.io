@@ -21,7 +21,7 @@ All lab assignments are done individually. You are expected to adhere to the [CS
 
 To start your lab homework, fork the assigned notebook under your personal Observable account, *not* as our team [@columbiaviz-s22]({{page.team}}) account. Make sure you "Publish" your lab notebook using the **Unlisted** visibility setting—your notebook should only be visible to someone with the link. Finally, I repeat: remember to fork!🍴 Otherwise you will be editing the template directly and won't have saving permissions. As a result you will _lose your work!_
 
-To submit, enable link sharing on your notebook (make sure to reshare if you've made changes after you first enabled link sharing), and submit your private [Observable notebook url]({{ layout.forms.submit }}) by **{{page.due}}** on the due date.
+To submit, publish your notebook and submit the ‘unlisted’ [Observable notebook url]({{ layout.forms.submit }}) by **{{page.due}}** on the due date.
 
 {% for lab in page.labs %}
 ### Lab {{forloop.index}}: {{lab.title}}
