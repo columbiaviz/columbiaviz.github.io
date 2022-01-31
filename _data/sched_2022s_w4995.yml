@@ -163,7 +163,7 @@ wk11:
     due:
       - "[A5.1 Proposals](a5.html)"
 wk12:
-  # draft: true
+  draft: true
   date: "4/7"
   topic: "_Final Project In-progress Critique._"
   links:
