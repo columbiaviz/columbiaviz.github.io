@@ -8,12 +8,12 @@ layout: 2022s_w4995
 
 <span style="font-family: Jost">COMS {{ layout.courseno }} (3 pts)</span>
 
-_Instructor:_ Christian Swinehart (cds2205), office hours by appt. <br>
+_Instructor:_ Christian Swinehart (cds2205; office hours by appt.)<br>
 _IAs:_ Natalia Dorogi (ngd2111; [Mon 1–3pm](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUJ4Z3ZLV2ZNX3Z4fGRlZmF1bHR8M2U1MmU2ODllZmFkMDI2NWYxNTM1ODU4ZTFjZDI4MzE)), Charlotte Li (aw3156; [Wed 9–11am](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUdKVWtGY0NIdXB6fGRlZmF1bHR8MTk5NDcwMGI3OTk2YWY2ZmFmOWVhNWM0ODA2ZjY3NWQ))<br>
 _Class Time:_ Thurs. 4:10–6:40pm<br>
-_Room:_ 644 Mudd
-[Courseworks (and Zoom Info)]({{ layout.courseworks }}) <br>
-[Class Slack](https://columbiaviz-sp22.slack.com) <br>
+_Room:_ 644 Mudd<br>
+[Courseworks (and Zoom Info)]({{ layout.courseworks }})<br>
+[Class Slack](https://columbiaviz-sp22.slack.com)<br>
 [Course Feedback Form]({{ layout.forms.feedback }})
 
 ## Overview
