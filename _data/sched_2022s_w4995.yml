@@ -14,7 +14,7 @@ wk02:
   topic: "**Design**: form vs. function, generating ideas, iterating, and critique."
   links:
     - slides: https://docs.google.com/presentation/d/1RVt5L-_zMmX2vzvkPZNnJJ7U_EkqWBwgDzJhoIYKAOc/edit?usp=sharing
-    - quiz: "https://docs.google.com/forms/d/e/1FAIpQLSeEHrRIHYuBgQO5fonS1pnwkdgA42x8waD7cvdxVcMBcKAWSg/viewform?usp=sf_link"
+    # - quiz: "https://docs.google.com/forms/d/e/1FAIpQLSeEHrRIHYuBgQO5fonS1pnwkdgA42x8waD7cvdxVcMBcKAWSg/viewform?usp=sf_link"
   readings:
     - "Visual Explanations, [Chp. 2 Excerpt](../files/readings/Tufte_VisualExplanations-Shuttle-Excerpt.pdf), by Tufte, E. 2007."
     - "[How to be creative](https://faculty.washington.edu/ajko/books/design-methods/creative) & [How to be critical](https://faculty.washington.edu/ajko/books/design-methods/critique), Ko, A. 2017."
@@ -46,12 +46,12 @@ wk03:
       - "[L1](labs.html)"
       - "[A2 Design](a2.html)"
 wk04:
-  draft: true
+  # draft: true
   date: "2/10"
   topic: "**Data Exploration**: EDA, data wrangling, and Tableau."
   links:
     - slides: https://docs.google.com/presentation/d/1416vyImAsjIGcvG0nd0qAXbKPaWy51fs3C8O0n7MGL8/edit?usp=sharing
-    - quiz: "#"
+    # - quiz: "https://docs.google.com/forms/d/e/1FAIpQLSeirbE6UHtqrqbATHc1D--oLQodL9uHRjxsdZdUq0hkUAWAAA/viewform?usp=sf_link"
   readings:
     - "[Chp. 6: Analytical Patterns](https://courseworks2.columbia.edu/files/13247224/download?download_frd=1) from Now You See It by Few, S. 2009."
     - "[Polaris: A System for Query, Analysis and. Visualization of Multi-dimensional Relational Databases](https://research.tableau.com/sites/default/files/Tableau-CACM-Nov-2008-Polaris-Article-by-Stolte-Tang-Hanrahan.pdf) by Stolte, C. et. al. ACM 2008."
@@ -67,7 +67,7 @@ wk05:
   topic: "**Visual Encoding**: marks, channels, expressiveness & effectiveness."
   links:
     - slides: https://docs.google.com/presentation/d/1ZsjoCHnl_k-HJTsp576wiYsydjmkpFObC2Q9HKWQ8HA/edit?usp=sharing
-    - quiz: "#"
+    # - quiz: "#"
   readings:
     - "[Understanding Comics, Chp. 5,7,8](https://courseworks2.columbia.edu/files/13247215/download?download_frd=1), by McCloud, S."
     - "[Chp. 3: The Power of Representation](https://courseworks2.columbia.edu/files/13247223/download?download_frd=1) in Things That Make Us Smart by Norman, D. 1993."
@@ -87,7 +87,7 @@ wk06:
   topic: "**Interaction:** overview vs. details, small multiples, brushing, etc."
   links:
     - slides: https://docs.google.com/presentation/d/1MzUdQcBiLNGQMYLtiv7ITtNeWUmGh0SQXUgXNVtiCPs/edit?usp=sharing
-    - quiz: "#"
+    # - quiz: "#"
   readings:
     - "[Interactive Dynamics for Visual Analysis.](http://portal.acm.org/ft_gateway.cfm?id=2146416&type=pdf) Heer & Shneiderman. 2012."
     - "[Ladder of Abstraction](http://worrydream.com/LadderOfAbstraction/) by Victor, B. 2011."
@@ -104,7 +104,7 @@ wk07:
   topic: "**Evaluation, Perception, Review**: a framework for analysis; how we see, color, and attention theory."
   links:
     - slides: https://docs.google.com/presentation/d/1tbHVgnUxw1Z9gffrweKQUNDjGZDaQeTnhp8N8BDNksk/edit?usp=sharing
-    - quiz: "#"
+    # - quiz: "#"
   readings:
     - "[Visualization Analysis and Design](https://clio.columbia.edu/catalog/14286801), Chp. 3.1–3.4, 4.1–4.6 by Munzner, T. 2014."
     - "[The Design of Everyday Things, Chp.1](https://courseworks2.columbia.edu/files/13247221/download?download_frd=1) by Norman, D. 1988."
@@ -129,7 +129,7 @@ wk10:
   topic: "**Animation:** motion perception, transitions, pros/cons."
   links:
     - slides: https://docs.google.com/presentation/d/1xveIU6ZM-yXQdUiqw4vmyhd6SRQ1aXAyIGqnGjOzZow/edit?usp=sharing
-    - quiz: "#"
+    # - quiz: "#"
     - label: final project inspiration
       url: https://docs.google.com/presentation/d/1x0_cR6_7IGnDqW7whyGFrl4xwN1QW2F7ANu-A4m0kUs/edit?usp=sharing
   readings:
@@ -148,7 +148,7 @@ wk11:
   topic: "**Maps & Narrative:** projections; typography, rhythm; why storytelling, techniques."
   links:
     - slides: https://docs.google.com/presentation/d/1NrvLK7RJ9m2hilwehgM09p9AZ1tKIxbxURAfNKx7BRM/edit?usp=sharing
-    - quiz: "#"
+    # - quiz: "#"
     - label: survey
       url: https://forms.gle/MPuHHiS7ovER6Gnk6
   readings:
@@ -186,7 +186,7 @@ wk13:
   topic: " **Networks, Text, Algorithms:** node-link diagrams, trees, force layout; visualizing words and algorithms."
   links:
     - slides: https://docs.google.com/presentation/d/12rI1X--0JNc4IJJx6aYktb7MoyOXXDO6qpcf-RS688s/edit?usp=sharing
-    - quiz: "#"
+    # - quiz: "#"
   readings:
     - "[Visualization Analysis and Design](https://clio.columbia.edu/catalog/14286801) Chp 9: Networks and Trees by Munzner, T. 2014."
     - "[Pictures of Arguments, Songs, and Ancient Texts](https://vimeo.com/69497902) (video, 1'30\"–32'46\") by Viegas and Wattenberg, at Eyeo 2013."
@@ -198,7 +198,7 @@ wk14:
   topic: "**Ethics, Dataviz in Industry vs. Research**: between persuasion and misrepresentation; jobs, and guest lecture by [Prof. Wu](http://www.cs.columbia.edu/~ewu/) on research."
   links:
     - slides: https://docs.google.com/presentation/d/1C4weQlkbboRoZOSGDZv9NPP_PWO8Oo-JpgDUhnOIv9o/edit?usp=sharing
-    - quiz: "#"
+    # - quiz: "#"
   readings:
     - "[Six Provocations for Big Data](https://courseworks2.columbia.edu/files/13247227/download?download_frd=1) by boyd & Crawford, 2011"
     - "[What Is Visualization Research?](https://medium.com/multiple-views-visualization-research-explained/what-is-visualization-research-what-should-it-be-8840a9ba658) by Hullman, J."
