@@ -51,7 +51,7 @@ wk04:
   topic: "**Data Exploration**: EDA, data wrangling, and Tableau."
   links:
     - slides: https://docs.google.com/presentation/d/1416vyImAsjIGcvG0nd0qAXbKPaWy51fs3C8O0n7MGL8/edit?usp=sharing
-    - quiz: "https://docs.google.com/forms/d/e/1FAIpQLSeirbE6UHtqrqbATHc1D--oLQodL9uHRjxsdZdUq0hkUAWAAA/viewform?usp=sf_link"
+    # - quiz: "https://docs.google.com/forms/d/e/1FAIpQLSeirbE6UHtqrqbATHc1D--oLQodL9uHRjxsdZdUq0hkUAWAAA/viewform?usp=sf_link"
   readings:
     - "[Chp. 6: Analytical Patterns](https://courseworks2.columbia.edu/files/13247224/download?download_frd=1) from Now You See It by Few, S. 2009."
     - "[Polaris: A System for Query, Analysis and. Visualization of Multi-dimensional Relational Databases](https://research.tableau.com/sites/default/files/Tableau-CACM-Nov-2008-Polaris-Article-by-Stolte-Tang-Hanrahan.pdf) by Stolte, C. et. al. ACM 2008."
