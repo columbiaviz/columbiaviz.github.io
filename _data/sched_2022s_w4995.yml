@@ -62,7 +62,7 @@ wk04:
     due:
       - "[L2](labs.html)"
 wk05:
-  draft: true
+  # draft: true
   date: "2/17"
   topic: "**Visual Encoding**: marks, channels, expressiveness & effectiveness."
   links:
