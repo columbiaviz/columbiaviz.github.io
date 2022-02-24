@@ -82,7 +82,7 @@ wk05:
     due:
       - "[A3 EDA](a3.html)"
 wk06:
-  draft: true
+  # draft: true
   date: "2/24"
   topic: "**Interaction:** overview vs. details, small multiples, brushing, etc."
   links:
