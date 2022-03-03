@@ -99,7 +99,7 @@ wk06:
     due:
       - "[L3](labs.html)"
 wk07:
-  draft: true
+  # draft: true
   date: "3/3"
   topic: "**Evaluation, Perception, Review**: a framework for analysis; how we see, color, and attention theory."
   links:
