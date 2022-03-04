@@ -163,18 +163,16 @@ wk11:
     due:
       - "[A5.1 Proposals](a5.html)"
 wk12:
-  draft: true
+  # draft: true
   date: "4/7"
   topic: "_Final Project In-progress Critique._"
   links:
-    - slides: https://docs.google.com/presentation/d/1vdYkedLECi2Au3uS2FvMu9mW00sX5L6dIMJniSuVKo8/edit?usp=sharing
+    # - slides: https://docs.google.com/presentation/d/1vdYkedLECi2Au3uS2FvMu9mW00sX5L6dIMJniSuVKo8/edit?usp=sharing
     - critics:
-      - name: Hannah Fresques
-        url: https://www.propublica.org/people/hannah-fresques
-      - name: Christian Swinehart
-        url: https://samizdat.co
-      - name: Erica Greene
-        url: https://www.linkedin.com/in/ericagreene
+      - name: Lisa Strausfeld
+        url: https://informationart.com
+      - name: Ryan Best
+        url: https://ryanabest.com
       - name: Eugene Wu
         url: http://www.eugenewu.net/
   work:
