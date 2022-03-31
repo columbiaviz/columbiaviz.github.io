@@ -143,14 +143,14 @@ wk10:
     due:
       - "[A4 Interactive](a4.html)"
 wk11:
-  draft: true
+  # draft: true
   date: "3/31"
   topic: "**Maps & Narrative:** projections; typography, rhythm; why storytelling, techniques."
   links:
     - slides: https://docs.google.com/presentation/d/1NrvLK7RJ9m2hilwehgM09p9AZ1tKIxbxURAfNKx7BRM/edit?usp=sharing
     # - quiz: "#"
     - label: survey
-      url: https://forms.gle/MPuHHiS7ovER6Gnk6
+      url: https://forms.gle/DyePCakyT7FtV9vKA
   readings:
     - "[The Making of R2D3](https://www.youtube.com/watch?v=tuPjPaEcUKI) (video) and [A Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/) (viz) by Chu, T. 2016."
     - "[Communicating with Interactive Articles](https://distill.pub/2020/communicating-with-interactive-articles/) by Hohman, Conlen, Heer, & Chau, 2020."
