@@ -167,7 +167,6 @@ wk12:
   date: "4/7"
   topic: "_Final Project In-progress Critique._"
   links:
-    - slides: https://docs.google.com/presentation/d/1vdYkedLECi2Au3uS2FvMu9mW00sX5L6dIMJniSuVKo8/edit?usp=sharing
     - critics:
       - name: Lisa Strausfeld
         url: https://informationart.com
@@ -175,6 +174,7 @@ wk12:
         url: https://ryanabest.com
       - name: Eugene Wu
         url: http://www.eugenewu.net/
+    - slides: https://docs.google.com/presentation/d/1vdYkedLECi2Au3uS2FvMu9mW00sX5L6dIMJniSuVKo8/edit?usp=sharing
   work:
     due:
       - "[A5.2 In-Progress Presentation ](a5.html)"
