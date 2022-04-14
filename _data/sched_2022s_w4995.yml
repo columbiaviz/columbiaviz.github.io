@@ -179,7 +179,7 @@ wk12:
     due:
       - "[A5.2 In-Progress Presentation ](a5.html)"
 wk13:
-  draft: true
+  # draft: true
   date: "4/14"
   topic: " **Networks, Text, Algorithms:** node-link diagrams, trees, force layout; visualizing words and algorithms."
   links:
