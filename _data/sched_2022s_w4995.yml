@@ -191,7 +191,7 @@ wk13:
     - "[Visualizing Algorithms. ](https://bost.ocks.org/mike/algorithms/) by Bostock, M. 2014."
     - "*Optional:* [Four Experiments in Handwriting with a Neural Network](https://distill.pub/2016/handwriting/). by Carter, S. et. al., 2016 "
 wk14:
-  draft: true
+  # draft: true
   date: "4/21"
   topic: "**Ethics, Dataviz in Industry vs. Research**: between persuasion and misrepresentation; jobs, and guest lecture by [Prof. Wu](http://www.cs.columbia.edu/~ewu/) on research."
   links:
