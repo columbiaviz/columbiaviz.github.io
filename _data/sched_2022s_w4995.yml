@@ -207,9 +207,11 @@ wk14:
     due:
       - "[Extra Credit](ax.html)"
 wk15:
-  draft: true
+  # draft: true
   date: "4/28"
   topic: "_Final Project Showcase_"
+  links:
+    - slides: https://docs.google.com/presentation/d/1S_NKlFOIOrvRZEIdFVChuvIFDHcokY7HqKr2P8-lodQ/edit?usp=sharing
   links:
     - slides: "#"
   work:
