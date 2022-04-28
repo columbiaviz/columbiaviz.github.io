@@ -212,8 +212,6 @@ wk15:
   topic: "_Final Project Showcase_"
   links:
     - slides: https://docs.google.com/presentation/d/1S_NKlFOIOrvRZEIdFVChuvIFDHcokY7HqKr2P8-lodQ/edit?usp=sharing
-  links:
-    - slides: "#"
   work:
     due:
       - "[A5.3 Lightning Talk](a5.html)"
