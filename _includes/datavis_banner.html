@@ -31,8 +31,10 @@
 $(()=>{
   const dpr = window.devicePixelRatio || 1,
         w = 200, h = 200,
-        grey = chroma.scale(['#eee', 'black']),
-        palette = chroma.cubehelix().lightness([0.3,0.7]).rotations(0.85)
+        outdated = !!document.querySelector("nav .alert"),
+        grey = chroma.scale(['#eee', '#444']),
+        cubehelix = chroma.cubehelix().lightness([0.3,0.7]).rotations(-0.4).start(220),
+        palette = outdated ? grey : cubehelix
 
   function reset(obj){
     obj.canvas.width = obj.canvas.width
@@ -216,6 +218,10 @@ $(()=>{
     //   ctx.fillStyle = palette(d)
     //   ctx.fillRect(w*.75, h, w*.2, -h*d)
     // },
+  }
+
+  if (outdated){
+    $("#idv-banner").css('marginTop', 60)
   }
 
   const demo = Object.fromEntries(Object.keys(render).map(mode => {
