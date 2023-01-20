@@ -1,9 +1,9 @@
 wk01:
-  draft: true
+  draft: false
   date: "1/19"
   topic: "**Introduction:** why visualize? schedule and expectations."
   links:
-    - slides: https://docs.google.com/presentation/d/1XJG8jmlCGMre4eWO4jee2AjzSJjIcc_Ma0hMdsHyJh4/edit?usp=sharing
+    - slides: https://docs.google.com/presentation/d/1LOn1tgF9phhwwrTF6OcyCkyYC44Dy9Vl80DEnPbBud8/edit?usp=sharing
   work:
     ind:
       - assign: "[**APPLY TO ENROLL by Monday**](a0.html)"
