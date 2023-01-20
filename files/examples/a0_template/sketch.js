@@ -1,6 +1,6 @@
 // setup() is called once at page-load
 function setup() {
-	createCanvas(800,600); // make an HTML canvas element width x height pixels
+    createCanvas(800,600); // make an HTML canvas element width x height pixels
 }
 
 // draw() is called 60 times per second
