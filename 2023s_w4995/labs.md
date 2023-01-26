@@ -6,13 +6,13 @@ due: "Wednesday 11:59pm ET"
 labs:
   - title: "Shapes and Styles"
     notebook: https://observablehq.com/@columbiaviz-s22/lab-1-shapes-and-styles
-    due: "Wednesday 2/2, 11:59pm ET"
+    due: "Wednesday 2/1, 11:59pm ET"
   - title: "Data Binding"
     notebook: https://observablehq.com/@columbiaviz-s22/lab-2-data-binding-scales-and-axes
-    due: "Wednesday 2/9, 11:59pm ET"
+    due: "Wednesday 2/8, 11:59pm ET"
   - title: "Interactivity"
     notebook: https://observablehq.com/@columbiaviz-s22/lab-3-interactivity
-    due: "Wednesday 2/24, 11:59pm ET"
+    due: "Wednesday 2/23, 11:59pm ET"
 ---
 
 We will be working in the Observable platform, which is like a web-hosted JavaScript version of Jupyter notebooks. The goal of these assignments is to get you started with coding with D3, the dominant JavaScript library for building interactive visualizations for the web.
