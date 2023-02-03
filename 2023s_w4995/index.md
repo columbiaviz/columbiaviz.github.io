@@ -9,7 +9,7 @@ layout: 2023s_w4995
 <span style="font-family: Jost">COMS {{ layout.courseno }} (3 pts)</span>
 
 _Instructor:_ Christian Swinehart (cds2205; office hours by appt.)<br>
-_IAs:_ Ruoyang ‘Kathy’ Liu (rl3323; [Wed 5–7pm](https://calendar.app.google/H6XnPXhhBRofjwUF9 )), Binny Naik (bn2341; [Tue 3–5am](#))<br>
+_IAs:_ Ruoyang ‘Kathy’ Liu (rl3323; [Wed 5–7pm](https://calendar.app.google/H6XnPXhhBRofjwUF9 )), Binny Naik (bn2341; [Tue 3–5am](https://calendar.app.google/qvDunmUjn9nBwXTU7))<br>
 _Class Time:_ Thurs. 4:10–6:40pm<br>
 _Room:_ 420 Pupin<br>
 [Courseworks (and Zoom Info)]({{ layout.courseworks }})<br>
