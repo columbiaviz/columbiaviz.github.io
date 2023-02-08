@@ -173,20 +173,9 @@ wk12:
   work:
     due:
       - "[A5.2 In-Progress Presentation ](a5.html)"
-wk13:
-  draft: true
-  date: "4/13"
-  topic: " **Networks, Text, Algorithms:** node-link diagrams, trees, force layout; visualizing words and algorithms."
-  links:
-    - slides: https://docs.google.com/presentation/d/12rI1X--0JNc4IJJx6aYktb7MoyOXXDO6qpcf-RS688s/edit?usp=sharing
-  readings:
-    - "[Visualization Analysis and Design](https://clio.columbia.edu/catalog/14286801) Chp 9: Networks and Trees by Munzner, T. 2014."
-    - "[Pictures of Arguments, Songs, and Ancient Texts](https://vimeo.com/69497902) (video, 1'30\"–32'46\") by Viegas and Wattenberg, at Eyeo 2013."
-    - "[Visualizing Algorithms. ](https://bost.ocks.org/mike/algorithms/) by Bostock, M. 2014."
-    - "*Optional:* [Four Experiments in Handwriting with a Neural Network](https://distill.pub/2016/handwriting/). by Carter, S. et. al., 2016 "
 wk14:
   draft: true
-  date: "4/20"
+  date: "4/13"
   topic: "**Ethics, Dataviz in Industry vs. Research**: between persuasion and misrepresentation; jobs, and guest lecture by [Prof. Wu](http://www.cs.columbia.edu/~ewu/) on research."
   links:
     - slides: https://docs.google.com/presentation/d/1C4weQlkbboRoZOSGDZv9NPP_PWO8Oo-JpgDUhnOIv9o/edit?usp=sharing
@@ -196,6 +185,17 @@ wk14:
     - "_Optional: [Applying Racial Equity Awareness in Data Visualization](https://urban-institute.medium.com/applying-racial-equity-awareness-in-data-visualization-bd359bf7a7ff) by Urban Institute. 2020._"
     - "_Optional: [Connecting with the Dots](https://source.opennews.org/articles/connecting-dots/) by Harris, J. 2015._"
     - "_Optional: [What is a Senior Data Visualization Engineer?](https://medium.com/@Elijah_Meeks/what-is-a-senior-data-visualization-engineer-eb032996297) by Meeks, E. 2018._"
+wk13:
+  draft: true
+  date: "4/20"
+  topic: " **Networks, Text, Algorithms:** node-link diagrams, trees, force layout; visualizing words and algorithms."
+  links:
+    - slides: https://docs.google.com/presentation/d/12rI1X--0JNc4IJJx6aYktb7MoyOXXDO6qpcf-RS688s/edit?usp=sharing
+  readings:
+    - "[Visualization Analysis and Design](https://clio.columbia.edu/catalog/14286801) Chp 9: Networks and Trees by Munzner, T. 2014."
+    - "[Pictures of Arguments, Songs, and Ancient Texts](https://vimeo.com/69497902) (video, 1'30\"–32'46\") by Viegas and Wattenberg, at Eyeo 2013."
+    - "[Visualizing Algorithms. ](https://bost.ocks.org/mike/algorithms/) by Bostock, M. 2014."
+    - "*Optional:* [Four Experiments in Handwriting with a Neural Network](https://distill.pub/2016/handwriting/). by Carter, S. et. al., 2016 "
   work:
     due:
       - "[Extra Credit](ax.html)"
