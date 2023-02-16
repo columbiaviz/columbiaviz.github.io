@@ -63,11 +63,12 @@ wk04:
     due:
       - "[L2](labs.html)"
 wk05:
-  draft: true
+  draft: false
   date: "2/16"
   topic: "**Visual Encoding**: marks, channels, expressiveness & effectiveness."
   links:
-    - slides: https://docs.google.com/presentation/d/1ZsjoCHnl_k-HJTsp576wiYsydjmkpFObC2Q9HKWQ8HA/edit?usp=sharing
+    - slides: https://docs.google.com/presentation/d/1bnrM-Ou2gdLvMTUOACvHhz9sLxCyrpzQ-koB8nOhKEo/edit?usp=sharing
+    - quiz: https://forms.gle/jVfYTsUfwAoo8CEh8
   readings:
     - "[Understanding Comics, Chp. 5,7,8](https://courseworks2.columbia.edu/files/16368875/download?download_frd=1), by McCloud, S."
     - "[Chp. 3: The Power of Representation](https://courseworks2.columbia.edu/files/16368869/download?download_frd=1) in Things That Make Us Smart by Norman, D. 1993."
