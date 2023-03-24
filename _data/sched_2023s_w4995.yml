@@ -163,18 +163,16 @@ wk11:
     due:
       - "[A5.1 Proposals](a5.html)"
 wk12:
-  draft: true
+  draft: false
   date: "4/6"
   topic: "_Final Project In-progress Critique._"
   links:
     - critics:
-      - name: Lisa Strausfeld
-        url: https://informationart.com
-      - name: Ryan Best
-        url: https://ryanabest.com
+      - name: Asad Pervaiz
+        url: https://oldthingsnewplaces.com
       - name: Eugene Wu
         url: http://www.eugenewu.net/
-    - slides: https://docs.google.com/presentation/d/1vdYkedLECi2Au3uS2FvMu9mW00sX5L6dIMJniSuVKo8/edit?usp=sharing
+    # - slides: https://docs.google.com/presentation/d/1vdYkedLECi2Au3uS2FvMu9mW00sX5L6dIMJniSuVKo8/edit?usp=sharing
   work:
     due:
       - "[A5.2 In-Progress Presentation ](a5.html)"
