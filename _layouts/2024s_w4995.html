@@ -1,0 +1,110 @@
+---
+title: Intro to Dataviz ⟩ Spring 2024
+courseno: W4995.0xx
+forms:
+  submit: https://forms.gle/YWKwkSYzSHCTAwq57
+  peer: https://forms.gle/ep5FKC6n7v3P8nmS9
+  clock: https://forms.gle/HxCoNiL5jSmUQjya9
+  feedback: https://forms.gle/u3YcakHLNPaXMkFaA
+courseworks: https://courseworks2.columbia.edu/courses/191085
+canvasfiles: https://courseworks2.columbia.edu/courses/191085/files/
+---
+
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if page.title %}
+    <title>{{ page.title }} ⟩ {{layout.title }}</title>
+    {% else %}
+    <title>{{ layout.title }}</title>
+    {% endif %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zilla+Slab:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ "../files/css/bootstrap.min.css" | relative_url }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "../files/css/style_2022_w4995.css" | relative_url }}" />
+		<script
+			src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous"></script>
+    <script src="{{ "../files/js/bootstrap.min.js" | relative_url }}"></script>
+  </head>
+<body>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="10">
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">{{ layout.title }}</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="syllabus.html">Syllabus</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Assignments <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="a0.html">🚀 A0: Apply To Enroll</a></li>
+              <li><a href="a1.html">🗂 A1: Sparks Presentation</a></li>
+              <li><a href="a2.html">🗂 A2: Visualization Design</a></li>
+              <li><a href="labs.html#lab-1-shapes-and-styles">🔬 L1: Shapes and Styles</a></li>
+              <li><a href="a3.html">🗂 A3: Exploratory Data Analysis</a></li>
+              <li><a href="labs.html#lab-2-data-binding">🔬 L2: Data Binding</a></li>
+              <li><a href="a4.html">🗂 A4: Interactive Visualization</a></li>
+              <li><a href="labs.html#lab-3-interactivity">🔬 L3: Interactivity</a></li>
+              <li><a href="a5.html">🗂 A5: Final Project</a></li>
+              <li><a href="ax.html">💯 EC: Extra Credit Opportunities</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Demos <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-1-data-select-scale">
+									2/16: Data, Select, Scale</a></li>
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-2-interactivity">
+									2/23: Update, Events, Brush, Drag</a></li>
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-mutable-variables-and-multi-input-cells">
+									3/1: Mutables, Multiple Inputs</a></li>
+      	      <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									3/3: Transition, Zoom</a></li> -->
+              <li><a href="../files/examples/demo_geo.html">
+									3/30: Scrolly, Path, Polygon, Geography</a></li>
+      	      <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									3/31: Bootstrap, Vega</a></li> -->
+              <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									4/14: Hierarchy, Chord, Forces</a></li> -->
+            </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+    <div class="container">
+      {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+			{{ content }}
+
+  		<footer class="page-footer font-small">
+  			<div class="footer-copyright py-3">
+  				{{ layout.courseno }} Columbia University Computer Science<br>
+  				🙌 <a href="http://agneschang.net/">Agnes Chang</a>, with thanks to
+  				<a href="http://people.ischool.berkeley.edu/~hearst/">Marti</a> +
+  				UW <a href="https://courses.cs.washington.edu/courses/cse512/18sp/">CSE512</a>.
+  			</div>
+  		</footer>
+    </div>
+</body>
