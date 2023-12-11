@@ -1,7 +1,7 @@
 ---
-layout: 2023s_w4995
+layout: 2024s_w4995
 title: "Extra Credit Opportunities"
-due: "Wednesday 4/19, 11:59pm ET."
+due: "Wednesday 4/18, 11:59pm ET."
 ---
 
 The purpose of extra credit (EC) is to reflect understanding of the course material more in-depth or from a different perspective. Viewed in another way, these are assignments that were not assigned this semester due to our limited class time, but are still lots of fun and worth your time.

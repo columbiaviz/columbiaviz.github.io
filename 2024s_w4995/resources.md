@@ -1,6 +1,6 @@
 ---
 title: Resources
-layout: 2023s_w4995
+layout: 2024s_w4995
 ---
 
 ### Visualization Toolkits
