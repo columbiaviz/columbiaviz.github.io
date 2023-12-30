@@ -101,7 +101,7 @@ wk06:
       - "[L3](labs.html)"
 wk07:
   draft: true
-  date: "3/1"
+  date: "2/29"
   topic: "**Evaluation, Perception, Review**: a framework for analysis; how we see, color, and attention theory."
   links:
     - slides: https://docs.google.com/presentation/d/1IwYjde4MBHkP_lXESoE3-wVw8Alr4ou91jYrpi5Erg4/edit?usp=sharing
@@ -116,17 +116,17 @@ wk07:
     ind:
       - assign: "Study for midterm"
 wk08:
-  date: "3/8"
+  date: "3/7"
   topic: "_Midterm Exam_"
   work:
     grp:
       - "[A4.3 Interactive: evaluation](a4.html)"
 wk09:
-  date: "3/15"
+  date: "3/14"
   topic: "_Spring Break, no class._"
 wk10:
   draft: true
-  date: "3/22"
+  date: "3/21"
   topic: "**Animation:** motion perception, transitions, pros/cons."
   links:
     - slides: https://docs.google.com/presentation/d/1FLMfwpuvij3UzZhDeSJ0hRMqVTjNOPWMAtkpMbcJVbc/edit?usp=sharing
@@ -145,7 +145,7 @@ wk10:
       - "[A4 Interactive](a4.html)"
 wk11:
   draft: true
-  date: "3/29"
+  date: "3/28"
   topic: "**Maps & Narrative:** projections; typography, rhythm; why storytelling, techniques."
   links:
     - slides: https://docs.google.com/presentation/d/1Ffo-P6F8hIJwJb6deYZ2CSY1ihGX6qFtc5dNsAodYRE/edit?usp=sharing
@@ -165,7 +165,7 @@ wk11:
       - "[A5.1 Proposals](a5.html)"
 wk12:
   draft: true
-  date: "4/5"
+  date: "4/4"
   topic: "_Final Project In-progress Critique._"
   links:
     - critics:
@@ -179,7 +179,7 @@ wk12:
       - "[A5.2 In-Progress Presentation ](a5.html)"
 wk13:
   draft: true
-  date: "4/12"
+  date: "4/11"
   topic: "**Ethics, Dataviz in Industry vs. Research**: between persuasion and misrepresentation; jobs, and guest lecture by [Prof. Wu](http://www.cs.columbia.edu/~ewu/) on research."
   links:
     - slides: https://docs.google.com/presentation/d/1C4weQlkbboRoZOSGDZv9NPP_PWO8Oo-JpgDUhnOIv9o/edit?usp=sharing
@@ -191,7 +191,7 @@ wk13:
     - "_Optional: [What is a Senior Data Visualization Engineer?](https://medium.com/@Elijah_Meeks/what-is-a-senior-data-visualization-engineer-eb032996297) by Meeks, E. 2018._"
 wk14:
   draft: true
-  date: "4/19"
+  date: "4/18"
   # topic: " **Networks, Text, Algorithms:** node-link diagrams, trees, force layout; visualizing words and algorithms."
   topic: "**Final Critique**"
   links:
@@ -206,7 +206,7 @@ wk14:
       - "[Extra Credit](ax.html)"
 wk15:
   draft: true
-  date: "4/26"
+  date: "4/25"
   topic: "_Final Project Showcase:_ Brown Institute, Pulitzer Hall 4–6pm"
   links:
     - slides: https://docs.google.com/presentation/d/1mfj_aH3clIM8LZcuj56YOYQYV9NnXwF-oS16yV_RO2g/edit?usp=sharing
@@ -215,7 +215,7 @@ wk15:
       - "[A5.3 Lightning Talk](a5.html)"
 wk16:
   draft: true
-  date: "5/7 MON"
+  date: "5/6 MON"
   work:
     due:
       - "[A5.4 Final Visualization](a5.html)"
