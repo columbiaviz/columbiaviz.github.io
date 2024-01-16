@@ -9,9 +9,9 @@ layout: 2024s_w4995
 <span style="font-family: Jost">COMS {{ layout.courseno }} (3 pts)</span>
 
 _Instructor:_ Christian Swinehart (cds2205; office hours by appt.)<br>
-_IAs:_ T.B.A.
+_IAs:_ Luna Dana (lad2215) & Dhruvi Shah (dms2338) [office hours T.B.A.]
 _Class Time:_ Thurs. 4:10–6:40pm<br>
-_Room:_ T.B.A.<br>
+_Room:_ 1127 Mudd<br>
 [Courseworks (and Zoom Info)]({{ layout.courseworks }})<br>
 [Class Slack](https://columbiaviz-sp24.slack.com)<br>
 [Course Feedback Form]({{ layout.forms.feedback }})
