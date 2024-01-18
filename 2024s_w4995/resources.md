@@ -7,7 +7,7 @@ layout: 2024s_w4995
 
 A variety of useful toolkits have been designed to help support information visualization applications. Some include support for the full visualization pipeline from data to interactive graphics, while others focus only on a subset, typically graphics and interaction.
 
--   [D3](http://mbostock.github.com/d3) – A JavaScript library for data-driven DOM manipulation, interaction and animation. Includes utilities for visualization techniques and SVG generation.
+-   [D3](https://d3js.org) – A JavaScript library for data-driven DOM manipulation, interaction and animation. Includes utilities for visualization techniques and SVG generation.
 -   [Vega](http://vega.github.io/vega) – A declarative language for representing visualizations. Vega will parse a visualization specification to produce a JavaScript-based visualization, using either HTML Canvas or SVG rendering. Vega is particularly useful for creating programs that produce visualizations as output.
 -   [Vega-Lite](http://vega.github.io/vega-lite) – A high-level visualization grammar that compiles concise specifications to full Vega specifications.
 -   [Processing](http://processing.org/) or [p5.js](http://p5js.org/) – A popular Java-like graphics and interaction language and IDE. Processing has a strong user community with many examples. p5.js is a sister project in JavaScript.
