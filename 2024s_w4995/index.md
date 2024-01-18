@@ -12,7 +12,7 @@ _Instructor:_ Christian Swinehart (cds2205; office hours by appt.)<br>
 _IAs:_ Luna Dana (lad2215) & Dhruvi Shah (dms2338) [office hours T.B.A.]
 _Class Time:_ Thurs. 4:10–6:40pm<br>
 _Room:_ 1127 Mudd<br>
-[Courseworks (and Zoom Info)]({{ layout.courseworks24 }})<br>
+[Courseworks (and Zoom Info)]({{ layout.canvas24 }})<br>
 [Class Slack](https://columbiaviz-sp24.slack.com)<br>
 [Course Feedback Form]({{ layout.forms.feedback }})
 
