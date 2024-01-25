@@ -23,6 +23,7 @@ A variety of useful toolkits have been designed to help support information visu
 
 -   [Tableau for Students](http://www.tableausoftware.com/student/) – get a free Tableau license as a student
 -   [Tableau Public](http://www.tableausoftware.com/public/) – a free version of Tableau which publishes to the web
+-   [Raw Graphs](https://www.rawgraphs.io/) – an interactive chart generator supporting many, many visualization types
 -   [GGplot2](http://had.co.nz/ggplot2/) – a graphics language for [R](http://www.r-project.org/)
 -   [Voyager](http://vega.github.io/voyager2) – web-based data exploration tools from UW's Interactive Data Lab
 -   [GGobi](http://www.ggobi.org/) – classic system for visualizations of multivariate data
