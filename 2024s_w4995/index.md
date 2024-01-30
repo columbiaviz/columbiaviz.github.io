@@ -9,7 +9,7 @@ layout: 2024s_w4995
 <span style="font-family: Jost">COMS {{ layout.courseno }} (3 pts)</span>
 
 _Instructor:_ Christian Swinehart (cds2205; office hours by appt.)<br>
-_IAs:_ Dhruvi Shah (dms2338; Mon [6:30–8:30pm](https://meet.google.com/qni-uihc-eyc)) & Sharmista Shastry (ss6950; Thu [9–11am](https://calendar.app.google/nenmLw5X38Uf2TSv9)<br>
+_IAs:_ Dhruvi Shah (dms2338; Mon [6:30–8:30pm](https://meet.google.com/qni-uihc-eyc)) & Sharmista Shastry (ss6950; Thu [9–11am](https://calendar.app.google/nenmLw5X38Uf2TSv9))<br>
 _Class Time:_ Thurs. 4:10–6:40pm<br>
 _Room:_ 1127 Mudd<br>
 [Courseworks (and Zoom Info)]({{ layout.canvas24 }})<br>
