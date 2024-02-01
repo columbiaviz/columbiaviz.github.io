@@ -27,12 +27,12 @@ wk02:
     grp:
       - "[A2.2 Viz Design: revisions](a2.html)"
 wk03:
-  draft: true
+  draft: false
   date: "2/1"
   topic: "**Data Models**: data types, task types, corresponding visualization formats."
   links:
-    - slides: https://docs.google.com/presentation/d/1uBuhhEQ1Ej1ljj_Nq07tfHrgV9QYnY9q2W4pr3OX5DI/edit?usp=sharing
-    - quiz: https://forms.gle/tNY6vagssATaEn6g9
+    - slides: https://docs.google.com/presentation/d/1Pn5-RweRWZ4LNcgAx85n3VF97yNIJfBMOHT_M0B-kvY/edit#slide=id.g13af6d4e7b_0_0
+    - quiz: https://forms.gle/HCPwYfF1iD2aht2f7
   readings:
     - "Semiology of Graphics, [Excerpt](../files/readings/bertin_semiologyofgraphics_excerpts.pdf), by Bertin, J. 1967."
     - "[A Tour through the Visualization Zoo](http://queue.acm.org/detail.cfm?id=1805128). Heer, Bostock & Ogievetsky. ACM. 2010."
