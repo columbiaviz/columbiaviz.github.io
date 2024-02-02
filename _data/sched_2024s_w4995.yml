@@ -27,7 +27,7 @@ wk02:
     grp:
       - "[A2.2 Viz Design: revisions](a2.html)"
 wk03:
-  draft: true
+  draft: false
   date: "2/1"
   topic: "**Data Models**: data types, task types, corresponding visualization formats."
   links:
