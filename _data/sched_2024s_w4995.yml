@@ -90,10 +90,10 @@ wk06:
     - slides: https://docs.google.com/presentation/d/1gx1Ct6ANImEoCL-x2kq8itmCkAKetiEzolHw_Ggcf5Y/edit?usp=sharing
     - quiz: https://forms.gle/xuLj9dw2Mny1pEoS7
   readings:
-    - "[Interactive Dynamics for Visual Analysis.](http://portal.acm.org/ft_gateway.cfm?id=2146416&type=pdf) Heer & Shneiderman. 2012."
+    - "[Interactive Dynamics for Visual Analysis.](https://dl.acm.org/doi/pdf/10.1145/2133416.2146416) Heer & Shneiderman. 2012."
     - "[Ladder of Abstraction](http://worrydream.com/LadderOfAbstraction/) by Victor, B. 2011."
-    - "[In Defense of Interactive Graphics](https://www.vis4.net/blog/2017/03/in-defense-of-interactive-graphics/), Aisch, G. 2017."
-    - "_Optional: [Mastering Hued Color Scales](https://www.vis4.net/blog/2013/09/mastering-multi-hued-color-scales/), Aisch, G. 2013._"
+    - "[In Defense of Interactive Graphics](https://web.archive.org/web/20230914201650/https://www.vis4.net/blog/2017/03/in-defense-of-interactive-graphics/), Aisch, G. 2017."
+    - "_Optional: [Mastering Hued Color Scales](https://web.archive.org/web/20230604084150/https://www.vis4.net/blog/2013/09/mastering-multi-hued-color-scales/), Aisch, G. 2013._"
   work:
     grp:
       - "[A4.2 Interactive: dynamic](a4.html)"
