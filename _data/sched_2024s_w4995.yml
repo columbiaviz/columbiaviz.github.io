@@ -164,19 +164,19 @@ wk11:
     due:
       - "[A5.1 Proposals](a5.html)"
 wk12:
-  draft: true
+  draft: false
   date: "4/4"
   topic: "_Final Project In-progress Critique._"
   links:
     - critics:
       - name: Asad Pervaiz
         url: https://oldthingsnewplaces.com
-      - name: Eugene Wu
-        url: http://www.eugenewu.net/
-    - slides: https://docs.google.com/presentation/d/12xYCvVDHB-V4EYiwB1J2XspGGZnGsW-Dl6Kg8g4AWQY/edit?usp=sharing
+      - name: Matthew Conlen
+        url: https://mathisonian.com
+    # - slides: https://docs.google.com/presentation/d/12xYCvVDHB-V4EYiwB1J2XspGGZnGsW-Dl6Kg8g4AWQY/edit?usp=sharing
   work:
     due:
-      - "[A5.2 In-Progress Presentation ](a5.html)"
+      - "[A5.2 In-Progress Presentation](a5.html)"
 wk13:
   draft: true
   date: "4/11"
