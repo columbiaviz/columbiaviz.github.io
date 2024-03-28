@@ -148,10 +148,10 @@ wk11:
   date: "3/28"
   topic: "**Maps & Narrative:** projections; typography, rhythm; why storytelling, techniques."
   links:
-    - slides: https://docs.google.com/presentation/d/1Ffo-P6F8hIJwJb6deYZ2CSY1ihGX6qFtc5dNsAodYRE/edit?usp=sharing
-    - quiz: https://forms.gle/GnuRbw4Lbw89zqmn6
+    - slides: https://docs.google.com/presentation/d/1MW6doWbDCH71Ei1dY2RQNzYisnsb00sYDyK9J8w61Rg/edit
+    - quiz: https://forms.gle/JT6Zu6m2QwDgPhYj7
     - label: survey
-      url: https://forms.gle/RUbpfwFF9PsUZoc17
+      url: https://forms.gle/hDRWzv3z8P585DnJ7
   readings:
     - "[The Making of R2D3](https://www.youtube.com/watch?v=tuPjPaEcUKI) (video) and [A Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/) (viz) by Chu, T. 2016."
     - "[Communicating with Interactive Articles](https://distill.pub/2020/communicating-with-interactive-articles/) by Hohman, Conlen, Heer, & Chau, 2020."
