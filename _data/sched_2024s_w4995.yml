@@ -175,7 +175,7 @@ wk12:
         url: https://mathisonian.com
       # - name: Klara Auerbach
       #   url: https://www.klaraauerbach.com
-    - slides: docs.google.com/presentation/d/1pF3_2PmEHPWSChWkvVA5e1sHphM9rd1ZMFgTr_rFf44/edit
+    - slides: https://docs.google.com/presentation/d/1pF3_2PmEHPWSChWkvVA5e1sHphM9rd1ZMFgTr_rFf44/edit
   work:
     due:
       - "[A5.2 In-Progress Presentation](a5.html)"
@@ -184,9 +184,6 @@ wk13:
   date: "4/11"
   topic: "**Final Project Workshop**: Group-by-group meetings and in-class working session"
   links:
-  - critic:
-    - name: Klara Auerbach
-      url: https://www.klaraauerbach.com
   # links:
   #   - slides: https://docs.google.com/presentation/d/1C4weQlkbboRoZOSGDZv9NPP_PWO8Oo-JpgDUhnOIv9o/edit?usp=sharing
   readings:
