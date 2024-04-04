@@ -169,12 +169,8 @@ wk12:
   topic: "_Final Project In-progress Critique._"
   links:
     - critics:
-      # - name: Asad Pervaiz
-      #   url: https://oldthingsnewplaces.com
       - name: Matthew Conlen
         url: https://mathisonian.com
-      # - name: Klara Auerbach
-      #   url: https://www.klaraauerbach.com
     - slides: https://docs.google.com/presentation/d/1pF3_2PmEHPWSChWkvVA5e1sHphM9rd1ZMFgTr_rFf44/edit
   work:
     due:
@@ -183,16 +179,12 @@ wk13:
   draft: false
   date: "4/11"
   topic: "**Final Project Workshop**: Group-by-group meetings and in-class working session"
+  # topic: "**Ethics, Dataviz in Industry vs. Research**: between persuasion and misrepresentation; jobs, and guest lecture by [Prof. Wu](http://www.cs.columbia.edu/~ewu/) on research."
   links:
-  - critics:
-    - name: Asad Pervaiz
-      url: https://oldthingsnewplaces.com
-    # - name: Matthew Conlen
-    #   url: https://mathisonian.com
-    # - name: Klara Auerbach
-    #   url: https://www.klaraauerbach.com
-  # links:
-  #   - slides: https://docs.google.com/presentation/d/1C4weQlkbboRoZOSGDZv9NPP_PWO8Oo-JpgDUhnOIv9o/edit?usp=sharing
+    - critics:
+      - name: Asad Pervaiz
+        url: https://oldthingsnewplaces.com
+    # - slides: https://docs.google.com/presentation/d/1C4weQlkbboRoZOSGDZv9NPP_PWO8Oo-JpgDUhnOIv9o/edit?usp=sharing
   readings:
     - "[Six Provocations for Big Data](https://courseworks2.columbia.edu/files/19361198/download?download_frd=1) by boyd & Crawford, 2011"
     - "[What Is Visualization Research?](https://medium.com/multiple-views-visualization-research-explained/what-is-visualization-research-what-should-it-be-8840a9ba658) by Hullman, J."
@@ -200,12 +192,15 @@ wk13:
     - "_Optional: [Connecting with the Dots](https://source.opennews.org/articles/connecting-dots/) by Harris, J. 2015._"
     - "_Optional: [What is a Senior Data Visualization Engineer?](https://medium.com/@Elijah_Meeks/what-is-a-senior-data-visualization-engineer-eb032996297) by Meeks, E. 2018._"
 wk14:
-  draft: true
+  draft: false
   date: "4/18"
   # topic: " **Networks, Text, Algorithms:** node-link diagrams, trees, force layout; visualizing words and algorithms."
   topic: "**Final Critique**"
   links:
-    - slides: https://docs.google.com/presentation/d/1bj4v0a6xeM8dD2QfT418J70eMmbe00nHWOWbKmVinS4/edit#slide=id.gca4e889203_0_4
+    - critics:
+      - name: Klara Auerbach
+        url: https://www.klaraauerbach.com
+    # - slides: https://docs.google.com/presentation/d/1bj4v0a6xeM8dD2QfT418J70eMmbe00nHWOWbKmVinS4/edit#slide=id.gca4e889203_0_4
   readings:
     - "[Visualization Analysis and Design](https://clio.columbia.edu/catalog/14286801) Chp 9: Networks and Trees by Munzner, T. 2014."
     - "[Pictures of Arguments, Songs, and Ancient Texts](https://vimeo.com/69497902) (video, 1'30\"–32'46\") by Viegas and Wattenberg, at Eyeo 2013."
