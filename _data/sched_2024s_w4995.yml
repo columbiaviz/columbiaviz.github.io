@@ -169,8 +169,8 @@ wk12:
   topic: "_Final Project In-progress Critique._"
   links:
     - critics:
-      - name: Asad Pervaiz
-        url: https://oldthingsnewplaces.com
+      # - name: Asad Pervaiz
+      #   url: https://oldthingsnewplaces.com
       - name: Matthew Conlen
         url: https://mathisonian.com
       # - name: Klara Auerbach
@@ -184,6 +184,13 @@ wk13:
   date: "4/11"
   topic: "**Final Project Workshop**: Group-by-group meetings and in-class working session"
   links:
+  - critics:
+    - name: Asad Pervaiz
+      url: https://oldthingsnewplaces.com
+    # - name: Matthew Conlen
+    #   url: https://mathisonian.com
+    # - name: Klara Auerbach
+    #   url: https://www.klaraauerbach.com
   # links:
   #   - slides: https://docs.google.com/presentation/d/1C4weQlkbboRoZOSGDZv9NPP_PWO8Oo-JpgDUhnOIv9o/edit?usp=sharing
   readings:
