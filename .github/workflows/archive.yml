@@ -11,5 +11,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Build
+    - name: Build site
       uses: actions/jekyll-build-pages@v1
+
+
+    - name: Archive _site dir
+      uses: actions/upload-artifact@v4
+      with:
+        name: columbiaviz-site
+        path: _site
