@@ -1,0 +1,17 @@
+name: Run tests
+on:
+  workflow_dispatch:
+
+jobs:
+  run-tests:
+    name: Rebuild & Test
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Build jekyll site
+      run: |
+        bundle install
+        JEKYLL_ENV=production bundle exec jekyll build
