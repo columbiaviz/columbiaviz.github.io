@@ -1,0 +1,488 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+	<div class="container">
+		<div class="deco">COLUMBIA UNIVERSITY COMS W4111.002</div>
+    <div class="title"><a href="/" style="color:black;">INTRODUCTION TO DATABASES</a></div>
+	</div>
+</div>
+
+
+
+
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-8 col-md-offset-2">
+		<p>-
+&lt;!–</p>
+<h2 id="instabase-text-extraction-from-pdfimages">Instabase: text extraction from PDF/images</h2>
+
+<p>This assignment will introduce you to another state of the art document extraction application called Refiner.<br />
+It provides a visual-programming interface for writing and debugging document extraction programs.</p>
+
+<p>As with the Draco assignment, the point is to get experience with another text extraction modality.
+Do you best to form an opinion about what you like, and what would be great for future tools to solve.</p>
+
+<p><strong>Refiner V5 is in beta.  So if you encounter a bug, click save and refresh the page.  Contact the staff if you hit issues that are hard to resolve</strong></p>
+
+<h4 id="setup">Setup</h4>
+
+<p>First create an account on the instabase website below (note that this URL is special for this class).
+The service is still in beta, so there are some weird hurdles, such as editing the url:</p>
+
+<ul>
+  <li>Go to <a href="https://www.instabase.com/account/register?use_token=true">https://www.instabase.com/account/register?use_token=true</a></li>
+  <li>USE THE FOLLOWING TOKEN IN ORDER TO REGISTER: <code class="language-plaintext highlighter-rouge">ewu-columbia-2020</code></li>
+  <li>Make sure you sign up with your <code class="language-plaintext highlighter-rouge">AB1235@columbia email</code>!!!</li>
+  <li>If you did not register using the token, you can still enter the token at this login page: https://www.instabase.com/account/login?use_token=true</li>
+</ul>
+
+<p>Create a workspace</p>
+
+<ul>
+  <li>Click on the icon in the upper left, and go to workspaces. Choose <em>public</em> workspace.</li>
+  <li>In the right, click New Workspace and name it whatever you want.</li>
+</ul>
+
+<p>The tool we will be using is called Refiner 5, which is in beta.  You need to enable beta apps as followings:</p>
+
+<ul>
+  <li>Once you are in your workspace, click on the icon in the upper left and then click “Apps”.
+The url should end with <code class="language-plaintext highlighter-rouge">&lt;your username&gt;/&lt;your workspace&gt;/apps</code></li>
+  <li>Change <code class="language-plaintext highlighter-rouge">apps</code> in the url into <code class="language-plaintext highlighter-rouge">beta-apps</code>.</li>
+  <li>Now you will be able to use Refiner 5.</li>
+</ul>
+
+<p>Now you will copy the assignment into your workspace</p>
+
+<ul>
+  <li>go to <a href="https://dogfood.instabase.com/ewu/hdi20seminar/fs/Instabase%20Drive/">https://dogfood.instabase.com/ewu/hdi20seminar/fs/Instabase%20Drive/</a></li>
+  <li>right click and copy <code class="language-plaintext highlighter-rouge">ADP assignment</code> and <code class="language-plaintext highlighter-rouge">Gusto assignment</code> into your account’s workspace</li>
+</ul>
+
+<h4 id="loading-refiner">Loading refiner</h4>
+
+<p>First, let’s open refiner and extract data from the ADP paystubs</p>
+
+<ul>
+  <li>Go to your account’s workspace</li>
+  <li>Click on <code class="language-plaintext highlighter-rouge">ADP assignment</code>.  The page should look like the following image
+    <ul>
+      <li><img src="../files/hdisys/refiner-screen-1.png" style="width: 400px;" /></li>
+    </ul>
+  </li>
+  <li><strong>THIS IS THE KEY STEP</strong>: edit the URL by replacing <code class="language-plaintext highlighter-rouge">www.instabase.com</code> with <code class="language-plaintext highlighter-rouge">dogfood.instabase.com</code>.
+This is needed to use the current version of Refiner.</li>
+  <li>Click on <code class="language-plaintext highlighter-rouge">Edit</code> under <code class="language-plaintext highlighter-rouge">Edit Refiner V5 Program</code>.   You should see something like the following:</li>
+</ul>
+
+<p><img src="../files/hdisys/refiner-screen-2.png" style="width: 100%;" /></p>
+
+<h4 id="the-refiner-interface">The Refiner Interface</h4>
+
+<p>Let’s walk through the interface!  There are 5 main parts</p>
+
+<ol>
+  <li>This lists the documens we’ve loaded.  You can click <code class="language-plaintext highlighter-rouge">Output Table</code> to see all of your extracted fields as columns, and each document as row.</li>
+  <li>This shows the current document you are extracting.
+    <ul>
+      <li>Refiner works by letting you define “anchors” which are fixed locations in the document that you can reference to extract nearby text.
+The blue and red boxes correspond to the “anchor” and the extracted text for the current field you are defining, respectively.</li>
+      <li>To the right of the red “2” circle, you can click on the “A” button to see the extracted OCR text.<br />
+ Notice that its spacing is consistent with the document image.<br />
+ This text is the variable <code class="language-plaintext highlighter-rouge">INPUT_COL</code> that you will write extraction programs from.</li>
+    </ul>
+  </li>
+  <li>This panel lists the fields that you wish to extract.  As examples, we have defined three already.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">thisperiodleft</code> defines a field that looks for the first instance of the string <code class="language-plaintext highlighter-rouge">this period</code> and finds the left position of its bounding box.</li>
+      <li><code class="language-plaintext highlighter-rouge">thisperiodright</code> finds the right position of the string’s bounding box.</li>
+      <li><code class="language-plaintext highlighter-rouge">Medicare</code> defines a field that looks for the string <code class="language-plaintext highlighter-rouge">Medicare Tax</code> as an anchor, and extracts all the text ot the right of the anchor
+that are between <code class="language-plaintext highlighter-rouge">thisperiodleft</code> and <code class="language-plaintext highlighter-rouge">thisperiodright</code>.  Thus it extracts <code class="language-plaintext highlighter-rouge">-25.88</code> rather than the entire row of text.</li>
+      <li>Note the “save” button in the right!  Refiner does NOT autosave, so you need to click it often :)</li>
+    </ul>
+  </li>
+  <li>This is where you define the extraction function for a field.  For this assignment you will primarily use the following functions:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">scan_right</code>, <code class="language-plaintext highlighter-rouge">scan_below</code>, <code class="language-plaintext highlighter-rouge">left_pos</code>, <code class="language-plaintext highlighter-rouge">right_pos</code></li>
+      <li>Functions can be nested within each other</li>
+    </ul>
+  </li>
+  <li>This shows the documentation for the functions you are currently writing.  There are 3 useful tabs
+    <ul>
+      <li>“Function” shows the function documentation</li>
+      <li>“Output” shows the result of running the function on the current document</li>
+      <li>“Run”: you need to click this before there is an output.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>There are two useful documentations to help you</p>
+
+<ul>
+  <li><a href="/files/hdisys/refiner-walkthrough.pdf">A walkthrough of refiner</a> provides a mental model of how refiner works.</li>
+  <li><a href="https://dogfood.instabase.com/docs/reference/refiner/parsing-functions/">API reference of refiner functions</a>.  There are a ton of refiner functions beyond the ones we mentioned above.</li>
+</ul>
+
+<h4 id="your-task">Your Task</h4>
+
+<p>Note: if you meet the issue that (XXX is not found in the table), click the arrow near <code class="language-plaintext highlighter-rouge">&lt;Run&gt;</code> button and use <code class="language-plaintext highlighter-rouge">&lt;Run all&gt;</code> instead.</p>
+
+<h5 id="adp-assignment">ADP Assignment:</h5>
+
+<p>Write additional fields to extract the year-to-date federal income tax, the social security tax, and the net pay for each document.</p>
+
+<h5 id="gusto-assignment">Gusto Assignment:</h5>
+
+<p>Write fields to extract the</p>
+
+<ul>
+  <li>The current gross earnings from employee earnings table.</li>
+  <li>The current guideline traditional 401(k) from employee deduction.</li>
+  <li>The remaining paid time off balance from the paid time off policy.</li>
+</ul>
+
+<h5 id="question">Question:</h5>
+
+<ul>
+  <li>
+    <p>How this tool differs from the paper’s? Any advantages or disadvantages?</p>
+  </li>
+  <li>
+    <p>What features and reserach problems do you think would be useful in the future?</p>
+  </li>
+</ul>
+
+<h4 id="how-to-submit-this-task">How to submit this task</h4>
+
+<p>For ADP and Gusto assignment, just paste your workspace link in your pdf file.  Also, write your answer to the questions in the pdf.</p>
+
+<p>Note: To find your workspace link, click on the icon in the upper left, then workspace. Choose your workspace containing the assignments and copy link from url bar. The link ends with <code class="language-plaintext highlighter-rouge">&lt;your username&gt;/&lt;your workspace&gt;</code> + “/fs/Instabase%20Drive/”.</p>
+
+<p>–&gt;</p>
+
+<!--
+
+## Programming by Example
+
+Synsh is a web application that synthesizes bash shell scripts that transform an input text file into an example output file.
+
+https://synsh.dev/
+
+Here is a reference page https://synsh.dev/about/. 
+
+#### Task
+
+1. Play with it and attach your example screenshot in your pdf file.
+
+2. Which is it great at? Which is it bad at? Any improvements? 
+-->
+
+<p>–
+layout: page_2020
+—</p>
+
+<h1 id="a3-play-with-extraction">A3: Play with Extraction</h1>
+
+<p>Updates:</p>
+
+<p>3/19: we extend the deadline to Apr 1 11:59PM</p>
+
+<p>Due: Apr 1 11:59PM (EST)</p>
+
+<p>In this assignment, you will try out interfaces for data and text extraction.</p>
+
+<h2 id="wrangler-text-extraction">Wrangler: text extraction</h2>
+
+<p>Trifacta Wrangler is an interface that employs a programming-by-example interaction modality.</p>
+
+<p>Datasets:</p>
+
+<p><a href="/files/hdisys/2013films.txt">2013films.txt</a>:  A dataset of all the movies in 2013 from January to March. It contains Movie name, Production house, Genre, Publisher and other details.</p>
+
+<p>Access <a href="https://www.trifacta.com/start-wrangling/">Trifacta for students from their website</a>.</p>
+
+<p>Some tips using Wrangler:</p>
+
+<ul>
+  <li>Check out the introduction <a href="https://vimeo.com/19185801">video</a> to get a feel of how wrangler works.</li>
+  <li>You may wanna start off by loading ~50 lines of data instead of the entire files and play around with the tool.</li>
+  <li>Wrangler responds to mouse highlights and clicks on the displayed table cells by suggesting operations on the left sidebar.</li>
+  <li>Hovering over each element shows the result in the table view.</li>
+  <li>Clicking adds the operation.</li>
+  <li>Clear the sidebar by clicking the colored row above the schema row.</li>
+</ul>
+
+<h4 id="your-task-1">Your Task</h4>
+
+<p>Load the 2013films dataset into Wrangler, and then use the tool to generate output as follows, i.e., Movie name, Production/Distribution house, Director, Genre and publisher.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A dark truth, Magnolia Pictures, Damian Lee, Action,ComingSoon.net
+Table No. 21, Eros International, Aditya Datt, Thriller, BoxOfficeMojo.com
+[...more rows...]
+</code></pre></div></div>
+
+<p>For the purpose of explanation columns are separated by <code class="language-plaintext highlighter-rouge">||</code>. You can choose any pattern to extract information.</p>
+
+<ol>
+  <li>Movie name can be identified as first column in every line formatted as <code class="language-plaintext highlighter-rouge">[[ &lt;movie name&gt; ]]</code></li>
+  <li>Production/Distribution house is the following column that is formatted as <code class="language-plaintext highlighter-rouge">[[&lt; Production house&gt;]]</code></li>
+  <li>Director name can be identified with <code class="language-plaintext highlighter-rouge">(director)</code> tag that follows the name. Just extracting one name near the tag would be enough.</li>
+  <li>Genre is present in the next column but make sure to extract only second part that is separated by the <code class="language-plaintext highlighter-rouge">|</code> operator. For eg. in <code class="language-plaintext highlighter-rouge">[Action film|Action]</code> relevant information is Action</li>
+  <li>Publisher name can be identified in the last column with format <code class="language-plaintext highlighter-rouge">publisher=&lt;publisher name&gt;</code></li>
+  <li>It may help to skip first few lines that contains html code, so that you process actual records.</li>
+</ol>
+
+<h4 id="questions">Questions</h4>
+
+<ul>
+  <li>Use wrangler to clean the data, then determine
+    <ul>
+      <li>Which Production/Distribution house produced maximum movies.</li>
+      <li>What is the most popular genre.</li>
+    </ul>
+  </li>
+  <li>Share your experience with Trifacta. Which part of the cleaning procedure does it make easier? Which part is hard? Any comments on Trifacta, pros or cons or further improvements.</li>
+</ul>
+
+<h4 id="notes">Notes</h4>
+
+<ul>
+  <li>Your wrangler script is not expected to be sophisticated enough to generate the results for the question asked. It just needs to clean/combine the data enough for you to observe the data and answer the question.</li>
+</ul>
+
+<h4 id="files-you-need-to-submit">Files you need to submit</h4>
+
+<ul>
+  <li><em>Recipe and Data</em> You need to download the wrangler “recipe” (script) and “sample data as csv” as follows: The recipe is simply a text file with a sequence of transformations. And the sample is your final table.
+    <ul>
+      <li><img src="../files/hdisys/wrangler-export.gif" style="width: 400px;" /></li>
+    </ul>
+  </li>
+  <li><em>Screenshot and Short Answers in One pdf file</em>  You need to create a screenshot of your dashboard like below. Make sure the picture/pictures includes ALL your recipe steps. Then, insert your sceenshot in your pdf file and answer the question above.
+    <ul>
+      <li><img src="../files/hdisys/wrangler.png" style="width: 400px;" /></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="instabase-text-extraction-from-pdfimages-1">Instabase: text extraction from PDF/images</h2>
+
+<p>This assignment will introduce you to another state of the art document extraction application called Refiner.<br />
+It provides a visual-programming interface for writing and debugging document extraction programs.</p>
+
+<p>As with the Draco assignment, the point is to get experience with another text extraction modality.
+Do you best to form an opinion about what you like, and what would be great for future tools to solve.</p>
+
+<p><strong>Refiner V5 is in beta.  So if you encounter a bug, click save and refresh the page.  Contact the staff if you hit issues that are hard to resolve</strong></p>
+
+<h4 id="setup-1">Setup</h4>
+
+<p>First create an account on the instabase website below (note that this URL is special for this class).
+The service is still in beta, so there are some weird hurdles, such as editing the url:</p>
+
+<ul>
+  <li>Go to <a href="https://www.instabase.com/account/register?use_token=true">https://www.instabase.com/account/register?use_token=true</a></li>
+  <li>USE THE FOLLOWING TOKEN IN ORDER TO REGISTER: <code class="language-plaintext highlighter-rouge">ewu-columbia-2020</code></li>
+  <li>Make sure you sign up with your <code class="language-plaintext highlighter-rouge">AB1235@columbia email</code>!!!</li>
+  <li>If you did not register using the token, you can still enter the token at this login page: https://www.instabase.com/account/login?use_token=true</li>
+</ul>
+
+<p>Create a workspace</p>
+
+<ul>
+  <li>Click on the icon in the upper left, and go to workspaces. Choose <em>public</em> workspace.</li>
+  <li>In the right, click New Workspace and name it whatever you want.</li>
+</ul>
+
+<p>The tool we will be using is called Refiner 5, which is in beta.  You need to enable beta apps as followings:</p>
+
+<ul>
+  <li>Once you are in your workspace, click on the icon in the upper left and then click “Apps”.
+The url should end with <code class="language-plaintext highlighter-rouge">&lt;your username&gt;/&lt;your workspace&gt;/apps</code></li>
+  <li>Change <code class="language-plaintext highlighter-rouge">apps</code> in the url into <code class="language-plaintext highlighter-rouge">beta-apps</code>.</li>
+  <li>Now you will be able to use Refiner 5.</li>
+</ul>
+
+<p>Now you will copy the assignment into your workspace</p>
+
+<ul>
+  <li>go to <a href="https://dogfood.instabase.com/ewu/hdi20seminar/fs/Instabase%20Drive/">https://dogfood.instabase.com/ewu/hdi20seminar/fs/Instabase%20Drive/</a></li>
+  <li>right click and copy <code class="language-plaintext highlighter-rouge">ADP assignment</code> and <code class="language-plaintext highlighter-rouge">Gusto assignment</code> into your account’s workspace</li>
+</ul>
+
+<h4 id="loading-refiner-1">Loading refiner</h4>
+
+<p>First, let’s open refiner and extract data from the ADP paystubs</p>
+
+<ul>
+  <li>Go to your account’s workspace</li>
+  <li>Click on <code class="language-plaintext highlighter-rouge">ADP assignment</code>.  The page should look like the following image
+    <ul>
+      <li><img src="../files/hdisys/refiner-screen-1.png" style="width: 400px;" /></li>
+    </ul>
+  </li>
+  <li><strong>THIS IS THE KEY STEP</strong>: edit the URL by replacing <code class="language-plaintext highlighter-rouge">www.instabase.com</code> with <code class="language-plaintext highlighter-rouge">dogfood.instabase.com</code>.
+This is needed to use the current version of Refiner.</li>
+  <li>Click on <code class="language-plaintext highlighter-rouge">Edit</code> under <code class="language-plaintext highlighter-rouge">Edit Refiner V5 Program</code>.   You should see something like the following:</li>
+</ul>
+
+<p><img src="../files/hdisys/refiner-screen-2.png" style="width: 100%;" /></p>
+
+<h4 id="the-refiner-interface-1">The Refiner Interface</h4>
+
+<p>Let’s walk through the interface!  There are 5 main parts</p>
+
+<ol>
+  <li>This lists the documens we’ve loaded.  You can click <code class="language-plaintext highlighter-rouge">Output Table</code> to see all of your extracted fields as columns, and each document as row.</li>
+  <li>This shows the current document you are extracting.
+    <ul>
+      <li>Refiner works by letting you define “anchors” which are fixed locations in the document that you can reference to extract nearby text.
+The blue and red boxes correspond to the “anchor” and the extracted text for the current field you are defining, respectively.</li>
+      <li>To the right of the red “2” circle, you can click on the “A” button to see the extracted OCR text.<br />
+ Notice that its spacing is consistent with the document image.<br />
+ This text is the variable <code class="language-plaintext highlighter-rouge">INPUT_COL</code> that you will write extraction programs from.</li>
+    </ul>
+  </li>
+  <li>This panel lists the fields that you wish to extract.  As examples, we have defined three already.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">thisperiodleft</code> defines a field that looks for the first instance of the string <code class="language-plaintext highlighter-rouge">this period</code> and finds the left position of its bounding box.</li>
+      <li><code class="language-plaintext highlighter-rouge">thisperiodright</code> finds the right position of the string’s bounding box.</li>
+      <li><code class="language-plaintext highlighter-rouge">Medicare</code> defines a field that looks for the string <code class="language-plaintext highlighter-rouge">Medicare Tax</code> as an anchor, and extracts all the text ot the right of the anchor
+that are between <code class="language-plaintext highlighter-rouge">thisperiodleft</code> and <code class="language-plaintext highlighter-rouge">thisperiodright</code>.  Thus it extracts <code class="language-plaintext highlighter-rouge">-25.88</code> rather than the entire row of text.</li>
+      <li>Note the “save” button in the right!  Refiner does NOT autosave, so you need to click it often :)</li>
+    </ul>
+  </li>
+  <li>This is where you define the extraction function for a field.  For this assignment you will primarily use the following functions:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">scan_right</code>, <code class="language-plaintext highlighter-rouge">scan_below</code>, <code class="language-plaintext highlighter-rouge">left_pos</code>, <code class="language-plaintext highlighter-rouge">right_pos</code></li>
+      <li>Functions can be nested within each other</li>
+    </ul>
+  </li>
+  <li>This shows the documentation for the functions you are currently writing.  There are 3 useful tabs
+    <ul>
+      <li>“Function” shows the function documentation</li>
+      <li>“Output” shows the result of running the function on the current document</li>
+      <li>“Run”: you need to click this before there is an output.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>There are two useful documentations to help you</p>
+
+<ul>
+  <li><a href="/files/hdisys/refiner-walkthrough.pdf">A walkthrough of refiner</a> provides a mental model of how refiner works.</li>
+  <li><a href="https://dogfood.instabase.com/docs/reference/refiner/parsing-functions/">API reference of refiner functions</a>.  There are a ton of refiner functions beyond the ones we mentioned above.</li>
+</ul>
+
+<h4 id="your-task-2">Your Task</h4>
+
+<p>Note: if you meet the issue that (XXX is not found in the table), click the arrow near <code class="language-plaintext highlighter-rouge">&lt;Run&gt;</code> button and use <code class="language-plaintext highlighter-rouge">&lt;Run all&gt;</code> instead.</p>
+
+<h5 id="adp-assignment-1">ADP Assignment:</h5>
+
+<p>Write additional fields to extract the year-to-date federal income tax, the social security tax, and the net pay for each document.</p>
+
+<h5 id="gusto-assignment-1">Gusto Assignment:</h5>
+
+<p>Write fields to extract the</p>
+
+<ul>
+  <li>The current gross earnings from employee earnings table.</li>
+  <li>The current guideline traditional 401(k) from employee deduction.</li>
+  <li>The remaining paid time off balance from the paid time off policy.</li>
+</ul>
+
+<h5 id="question-1">Question:</h5>
+
+<ul>
+  <li>
+    <p>How this tool differs from the paper’s? Any advantages or disadvantages?</p>
+  </li>
+  <li>
+    <p>What features and reserach problems do you think would be useful in the future?</p>
+  </li>
+</ul>
+
+<h4 id="how-to-submit-this-task-1">How to submit this task</h4>
+
+<p>For ADP and Gusto assignment, just paste your workspace link in your pdf file.  Also, write your answer to the questions in the pdf.</p>
+
+<p>Note: To find your workspace link, click on the icon in the upper left, then workspace. Choose your workspace containing the assignments and copy link from url bar. The link ends with <code class="language-plaintext highlighter-rouge">&lt;your username&gt;/&lt;your workspace&gt;</code> + “/fs/Instabase%20Drive/”.</p>
+
+<!--
+
+## Programming by Example
+
+Synsh is a web application that synthesizes bash shell scripts that transform an input text file into an example output file.
+
+https://synsh.dev/
+
+Here is a reference page https://synsh.dev/about/. 
+
+#### Task
+
+1. Play with it and attach your example screenshot in your pdf file.
+
+2. Which is it great at? Which is it bad at? Any improvements? 
+-->
+
+<h1 id="submission-instructions">Submission Instructions</h1>
+
+<h4 id="read-before-submitting">Read BEFORE Submitting</h4>
+
+<ul>
+  <li>You need to submit 3 files:
+    <ul>
+      <li>Recipe log(.wrangle)</li>
+      <li>Final data table(.csv)</li>
+      <li>Pdf File includes all question answers and url(.pdf)</li>
+    </ul>
+  </li>
+  <li>Zip these three files and name it “NAME_UNI_A3.zip”</li>
+</ul>
+
+<h4 id="submission-link">Submission Link</h4>
+
+<p><a href="https://www.dropbox.com/request/HerKJnYpm1satGNRyGz9">https://www.dropbox.com/request/HerKJnYpm1satGNRyGz9</a></p>
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>

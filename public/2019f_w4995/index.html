@@ -1,0 +1,307 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Vis 2019 Fall</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style_w4995.css" />
+		<script
+			src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="10">
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="alert alert-warning" style="margin-top:1em;" role="alert">
+  This is an outdated course page. View <a href="/2025s_w4995/">current semester here</a>.
+</div>
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Data Vis 2019 Fall</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="syllabus.html">Syllabus</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Assignments <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="a1.html">A1: Sparks Presentation</a></li>
+              <li><a href="a2.html">A2: Visualization Design</a></li>
+              <li><a href="a3.html">A3: Exploratory Data Analysis</a></li>
+              <li><a href="a4.html">A4: Interactive Visualization</a></li>
+              <li><a href="a5.html">A5: Final Project</a></li>
+              <li><a href="ax.html">EC: Extra Credit Opportunities</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Demos <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://beta.observablehq.com/@agness/introdv-f18-demo-1-data-select-scale">
+									10/1: Data, Select, Scale</a></li>
+              <li><a href="https://beta.observablehq.com/@agness/introdv-f18-demo-2-interactivity">
+									10/8: Update, Events, Brush, Drag</a></li>
+              <!-- <li><a href="https://beta.observablehq.com/@agness/tk">
+									10/29: Multiples, Transition, Transform, Zoom</a></li> -->
+              <li><a href="../files/examples/demo_geo.html">
+									11/12: Path, Polygon, Geography</a></li>
+              <li><a href="https://beta.observablehq.com/@agness/tk">
+									11/26: Hierarchy, Chord, Forces</a></li>
+            </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+    <div class="container outdated">
+
+			<svg id="d3banner"></svg>
+
+<h1 id="introduction-to-data-visualization">Introduction to Data Visualization</h1>
+
+<p><br />
+<em>COMS W 4995 014 (3 pts)</em> <br />
+<em>Instructor:</em> Agnes Chang (ac3882), office hours by appt. <br />
+<em>IAs:</em> Vasudha Rengarajan (vr2375; <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUxPX05HdExjeUR1fGRlZmF1bHR8Yzg4ZjdjN2QwOTdiNWFjMmZlNTc3MmZhMTZjMDRhOWU">Wed. 2:30-4:30p</a> @ TA room),
+Amal Alabdulkarim (aa4235; <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUo4T0xWODh5bjZPfGRlZmF1bHR8MmM2ZTViZjU2YzE5N2E1NTYyMzMwZTQxNTE1OTVmNjM">Thu. 11a-1p</a> @ TA room)<br />
+<em>Class Time:</em> Tues. 6:10-8pm <br />
+<em>Room:</em> 963 EXT Schermerhorn <br />
+<a href="https://columbiavis-fa19.slack.com/">Class Slack</a> <br />
+<a href="https://forms.gle/9fRdksoPAFdyNqgq5">Course Feedback Form</a></p>
+
+<h2 id="fall-2019-final-projects">Fall 2019 Final Projects</h2>
+
+<ul>
+  <li><a href="https://erickawu.github.io/scroll_narrative/">Intra-Metropolitan Migration in the United States</a></li>
+  <li><a href="https://observablehq.com/@williamshamma/untitled">LEGO: Toy or Collector’s Item?</a></li>
+  <li><a href="https://observablehq.com/@jasminflack/rough-taylor-swift-viz">Old Taylor vs. New Taylor</a></li>
+  <li><a href="https://medium.com/@al3750/e3ccf0b04a3b">Flames of Amazonia: Mapping fire impact on indigenous lands of the Amazon</a></li>
+  <li><a href="https://observablehq.com/@mattlawhon/missing-migrants/2">Missing Migrants</a></li>
+  <li><a href="https://teamalpha-skydata.github.io/">SkyData: Choose your ideal airline and date to fly</a></li>
+  <li><a href="https://oliviawyq.github.io/World-Happiness-Report/">World Happiness Report</a></li>
+</ul>
+
+<h2 id="overview">Overview</h2>
+
+<p>This course is a hands-on introduction to design principles, theory, and software techniques for visualizing data. Classes will be a combination of lecture, design studio, and lab. Through readings, design critique and code assignments, students will learn how visual representations can help in the understanding of complex data, and how to design and evaluate visualizations for the purpose of analysis or communication. Students will develop skills in processing data, and building interactive visualizations using D3. Topics include visual perception, exploratory data analysis, task analysis, graphic design, narrative, etc.</p>
+
+<p>Students should have experience in JavaScript programming and web development, as well as familiarity with databases and data formats. You should be comfortable picking up new programming tools on your own. Experience in Python or R for data processing is helpful but not required.</p>
+
+<h2 id="schedule">Schedule</h2>
+
+<table class="overview table table-striped">
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Class</th>
+      <th>Reading</th>
+      <th>Assigned</th>
+      <th>Due</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>9/4</td>
+      <td><strong>Introduction:</strong> why visualize? schedule and expectations. <br />(<a href="https://docs.google.com/presentation/d/1UJZyO0ivkadc9Umbq3Zmnaxss3lB2YXKHDc6gOIJDP4/edit?usp=sharing">slides</a>)<br />(<a href="a0.html">APPLY TO ENROLL</a>)</td>
+      <td>• Visual Explanations, <a href="/files/readings/Tufte_VisualExplanations-Shuttle-Excerpt.pdf">Chp. 2 Excerpt</a>, by Tufte, E. 2007.<br />• <a href="http://faculty.washington.edu/ajko/books/design-methods/how-to-be-creative.html">How to be creative</a> &amp; <a href="http://faculty.washington.edu/ajko/books/design-methods/how-to-be-critical.html">How to be critical</a>, Andrew Ko. 2017.<br />• Lateral Thinking, <a href="/files/readings/debono_excerpts.pdf">Excerpts</a>, Edward deBono, 1967.</td>
+      <td><a href="a2.html">A2.1 Vis Design: divergence</a> assigned</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>9/10</td>
+      <td><strong>Designing</strong>: form vs. function, generating ideas, iterating, and critique.<br />(<a href="https://docs.google.com/presentation/d/14-nJrNrEYaUU7t0UhOU0qfV5B6nLHt_JJuLigD3GqIo/edit?usp=sharing">slides</a>)<br />(<a href="https://forms.gle/1r1XwrRg971oUhZdA">quiz</a>)</td>
+      <td>• Semiology of Graphics, <a href="/files/readings/bertin_semiologyofgraphics_excerpts.pdf">Excerpt</a>, Jacques Bertin, 1967.<br />• <a href="http://queue.acm.org/detail.cfm?id=1805128">A Tour through the Visualization Zoo</a>. Jeffrey Heer, Michael Bostock, and Vadim Ogievetsky. ACM. 2010.<br />• <a href="https://clio.columbia.edu/catalog/13676720">Visualization Analysis and Design, Chp. 2.1–2.5</a> by Munzner, T. 2014.<br />• <em>Optional:</em> <a href="http://drum.lib.umd.edu/bitstream/handle/1903/466/CS-TR-3665.pdf?sequence=2">The Eyes Have It: A Task by Data Type Taxonomy for Information Visualizations</a>, Ben Shneiderman, 1996</td>
+      <td><a href="a2.html">A2.2 Vis Design: revisions</a> assigned</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>9/17</td>
+      <td><strong>Data Models</strong>: data types, task types, corresponding visualization formats.<br />(<a href="https://docs.google.com/presentation/d/11HicRJOEw2EUHC6ZRsVC5ETWh74AyaM1gnhOGks8BU0/edit?usp=sharing">slides</a>)<br />(<a href="https://forms.gle/sMZ1nyv6tnXFhcXY8">quiz</a>)</td>
+      <td>• <a href="https://courseworks2.columbia.edu/courses/89997/files?preview=5842202">Chp 6: Analytical Patterns</a> from Now You See It by Stephen Few, 2009.<br />• <a href="https://research.tableau.com/sites/default/files/Tableau-CACM-Nov-2008-Polaris-Article-by-Stolte-Tang-Hanrahan.pdf">Polaris: A System for Query, Analysis and. Visualization of Multi-dimensional Relational Databases</a> by Stolte, C. et. al. ACM 2008.<br />• <a href="https://courseworks2.columbia.edu/courses/89997/files?preview=5842199">Postmortem of an Example</a>, Jacques Bertin, 1981.<br />• <em>Optional:</em> <a href="http://vita.had.co.nz/papers/layered-grammar.html">A Layered Grammar of Graphics</a>, Wickham, H. 2010.<br />• <em>Optional:</em> <a href="https://github.com/Quartz/bad-data-guide">Bad Data Guide</a> by <a href="http://agneschang.net/gsapp-dataviz-archhum/qz.com">Quartz</a> data team</td>
+      <td><a href="a3.html">A3 Exploratory Data Analysis</a>: assigned</td>
+      <td><a href="a2.html">A2 Design</a> DUE</td>
+    </tr>
+    <tr>
+      <td>9/24</td>
+      <td><strong>Data Exploration</strong>: EDA, data wrangling and Tableau.<br />(<a href="https://docs.google.com/presentation/d/1og1YdV7vj7Ay-lzAV0VuLoxTqPWspV901R70hHDruqY/edit?usp=sharing">slides</a>)<br />(<a href="https://forms.gle/hHiztS2siatTs4NQ9">quiz</a>)</td>
+      <td>• <a href="https://courseworks2.columbia.edu/courses/89997/files?preview=5907634">Understanding Comics, Chp. 5,7,8</a>, by Scott McCloud<br />• <a href="https://courseworks2.columbia.edu/courses/89997/files?preview=5907465">Chp. 3: The Power of Representation</a> in Things That Make Us Smart by Norman, D. 1993.<br />• <a href="https://courseworks2.columbia.edu/courses/89997/files?preview=5907608">Visual Display of Quantitative Information, Chp. 2,4,5</a>, by Tufte, E. 2007<br />• <em>Optional:</em> <a href="http://vis.stanford.edu/files/2011-D3-InfoVis.pdf">D3: Data-Driven Documents</a>. Michael Bostock, Vadim Ogievetsky, Jeffrey Heer. InfoVis 2011.</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>10/1</td>
+      <td><strong>Visual Encoding</strong>: marks, channels, expressiveness &amp; effectiveness.<br />(<a href="https://docs.google.com/presentation/d/1QquY53bGCqL-3gqyEUGOJDQroKQn3krxtJzZuUXKUAY/edit?usp=sharing">slides</a>)<br />(<a href="https://forms.gle/dPGcatyr7k2Li2779">quiz</a>)</td>
+      <td>• <a href="http://portal.acm.org/ft_gateway.cfm?id=2146416&amp;type=pdf">Interactive Dynamics for Visual Analysis.</a> Jeffrey Heer &amp; Ben Shneiderman. 2012.<br />• <a href="http://worrydream.com/LadderOfAbstraction/">Ladder of Abstraction</a> by Bret Victor, 2011.<br />• <a href="https://www.vis4.net/blog/2017/03/in-defense-of-interactive-graphics/">In Defense of Interactive Graphics</a>, Gregor Aisch, 2017.<br />• <em>Optional:</em> <a href="https://www.vis4.net/blog/2013/09/mastering-multi-hued-color-scales/">Mastering Hued Color Scales</a>, Gregor Aisch, 2013.</td>
+      <td><a href="a4.html">A4.1 Interactive: static</a> assigned</td>
+      <td><a href="a3.html">A3 EDA</a> DUE</td>
+    </tr>
+    <tr>
+      <td>10/8</td>
+      <td><strong>Interaction:</strong> overview vs. details, small multiples, brushing, etc <br />(<a href="https://docs.google.com/presentation/d/1nph9AEAbmSyDaJoTB4zgofNvtc8gVFIm98CumjWwews/edit?usp=sharing">slides</a>)<br />(<a href="https://forms.gle/3h375dhgCzYHvjo16">quiz</a>)</td>
+      <td>• <a href="https://clio.columbia.edu/catalog/13676720">Visualization Analysis and Design</a>, Chp. 3.1–3.4, 4.1–4.6 by Munzner, T. 2014.<br />• <a href="https://courseworks2.columbia.edu/courses/89997/files?preview=5969474">The Design of Everyday Things, Chp.1</a> by Norman, D. 1988.<br />• <a href="https://courseworks2.columbia.edu/courses/89997/files?preview=5969472">Now You See It, Chp. 3</a> by Stephen Few, 2009.<br />• <a href="https://medium.com/@kennelliott/39-studies-about-human-perception-in-30-minutes-4728f9e31a73">39 Studies About Human Perception in 30 Minutes</a> by Kennedy Elliott.<br />• <em>Optional:</em> <a href="https://medium.com/@hint_fm/design-and-redesign-4ab77206cf9#.mha5ohu1t">Design and Redesign in Data Visualization</a> by Viegas &amp; Wattenberg, 2015.</td>
+      <td><a href="a4.html">A4.2 Interactive: dynamic</a> assigned</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>10/15</td>
+      <td><strong>Evaluation and Perception</strong>: a framework for analysis; how we see, color and attention theory.<br />(<a href="https://docs.google.com/presentation/d/197POIbJfOF5tnDOonU-G3Z54ewVD5ea4ttlWdVDnRoM/edit?usp=sharing">slides</a>)<br />(<a href="https://forms.gle/WPW74oZZdTLrK6xr7">quiz</a>)</td>
+      <td> </td>
+      <td>Study for midterm</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>10/22</td>
+      <td><em>Midterm Exam.</em><!---- <br>([final project inspiration](https://docs.google.com/presentation/d/1x0_cR6_7IGnDqW7whyGFrl4xwN1QW2F7ANu-A4m0kUs/edit?usp=sharing))----></td>
+      <td>• <a href="https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc">Creating Usability with Motion</a>, by Willenskomer, I. 2017<br />• <a href="https://courseworks2.columbia.edu/courses/89997/files?preview=5969471">Chp 5: Analytical Techniques</a> from Now You See It by Stephen Few, 2009.<br />• <a href="https://youtu.be/0fKBhvDjuy0">Powers of Ten</a>(video), Charles &amp; Ray Eames, 1977.<br />• <em>Optional:</em> <a href="http://vis.berkeley.edu/papers/animated_transitions/2007-AnimatedTransitions-InfoVis.pdf">Animated Transitions in Statistical Data Graphics</a> by Heer, 2007.</td>
+      <td><a href="a5.html">A5.1 Final Project: Proposals</a> assigned<br /><a href="a4.html">A4.3 Interactive: evaluation</a> assigned</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>10/29</td>
+      <td><strong>Animation:</strong> motion perception, transitions, pros/cons.<br />(<a href="https://docs.google.com/presentation/d/17qdxeLeyZG20LVAJqzUsK1wFH-Ektz-ckZFn9LxTt4k/edit?usp=sharing">slides</a>)<br />(<a href="https://forms.gle/J2m3ZfgQReSnwnyG7">quiz</a>)</td>
+      <td>• <a href="http://michaelnielsen.org/reinventing_explanation/">Reinventing Explanation. </a> Michael Nielsen, 2014.<br />• <a href="https://courseworks2.columbia.edu/courses/89997/files?preview=5969475">Narrative Visualization: Telling Stories with Data</a> in IEEE Vis by Segal and Heer, 2010.<br />• <a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/">A Visual Introduction to Machine Learning</a> by R2D3<br />• <a href="https://www.youtube.com/watch?v=tuPjPaEcUKI">The Making of R2D3</a>(video) by Chu, T. 2016.<br />• <em>Optional:</em> <a href="https://medium.com/accurat-studio/the-architecture-of-a-data-visualization-470b807799b4">The Architecture of a Data Visualization</a>, Accurat Studio.<br />• <em>Optional:</em> <a href="https://web.archive.org/web/20190430203133/http://lyzidiamond.com/posts/4326-vs-3857">EPSG:4326 vs. EPSG:3857 (archived)</a> by Diamond, L. 2017.<br />• <em>Optional:</em> <a href="https://magrawala.github.io/cs448b-fa17/assets/docs/Dent-Chap11.pdf">Chp. 11 Value-by-Area Mapping</a>, Cartography by Borden Dent.</td>
+      <td><a href="a5.html">A5.1</a> assigned</td>
+      <td><a href="a4.html">A4 Interactive</a> DUE</td>
+    </tr>
+    <tr>
+      <td>11/5</td>
+      <td><em>Election Day, no class.</em></td>
+      <td> </td>
+      <td><a href="a5.html">A5.2</a> assigned</td>
+      <td><a href="a5.html">A5.1 Proposals</a> DUE</td>
+    </tr>
+    <tr>
+      <td>11/12</td>
+      <td><strong>Maps, Graphic Design, Narrative:</strong> projections; typography, rhythm; why storytelling, techniques.<br />(<a href="https://docs.google.com/presentation/d/13TroFstC2bqP6B3QNwki-c12x8VDl8Lc2d16EynqyY0/edit?usp=sharing">slides</a>)<br />(<a href="https://forms.gle/KkK4oyJtNue171YEA">quiz</a>)<br />(<a href="https://forms.gle/37YMBJVR6F9dxPdF8">survey</a>)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>11/19</td>
+      <td><em>Final Project In-progress Critique.</em><br />(<a href="https://docs.google.com/presentation/d/1lFsRmdM-jLWHF1XVb4SSwZFYes5jF1uPAEIdmA1uplo/edit?usp=sharing">slides</a>)<br />Critics: <a href="https://dataminding.blog/">Jia Zhang</a>, <a href="https://www.newschool.edu/parsons/faculty/christian-swinehart/">Christian Swinehart</a>, <a href="https://www.linkedin.com/in/ericagreene/">Erica Greene</a>, and <a href="http://www.eugenewu.net/">Eugene Wu</a></td>
+      <td>•  <a href="https://clio.columbia.edu/catalog/13676720">Visualization Analysis and Design</a> Chp 9: Networks and Trees by Munzner, T. 2014.<br />• <a href="https://vimeo.com/69497902">Pictures of Arguments, Songs, and Ancient Texts</a> (video) by Viegas and Wattenberg, at Eyeo  conference 2013.<br />• <a href="https://medium.com/multiple-views-visualization-research-explained/what-is-visualization-research-what-should-it-be-8840a9ba658">What Is Visualization Research?</a> by Hullman, J.<br />• <em>Optional:</em> <a href="https://www.dropbox.com/s/yhwnsxfhau7pp1c/Ermac.pdf?dl=0">The Case for Data Visualization Management Systems</a> by Wu, et. al.</td>
+      <td> </td>
+      <td><a href="a5.html">A5.2 In-Progress Presentation </a> DUE</td>
+    </tr>
+    <tr>
+      <td>11/26</td>
+      <td><strong>Networks, Text, Viz Research:</strong> node-link diagrams, trees, force layout; text viz; guest lecture by <a href="http://www.cs.columbia.edu/~ewu/">Prof. Wu</a> on research. <br />(<a href="https://docs.google.com/presentation/d/1vILDepuNK3MV7k9usGjK3YUoPuaqQJItgWuEmEk_KKU/edit?usp=sharing">slides</a>)<br />(<a href="https://forms.gle/wJqez6EqecgomBjS8">quiz</a>)</td>
+      <td>• <a href="https://courseworks2.columbia.edu/courses/79575/files?preview=3722127">Six Provocations for Big Data</a> by boyd &amp; Crawford, 2011<br />• <a href="https://bost.ocks.org/mike/algorithms/">Visualizing Algorithms. </a> Mike Bostock. 2014.<br />• <em>Optional:</em> <a href="https://distill.pub/2016/handwriting/">Four Experiments in Handwriting with a Neural Network</a>. Shan Carter et. al., 2016</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>12/3</td>
+      <td><strong>Algorithms, Ethics, Vis in Industry</strong>: visualizing algorithms; between persuasion and misrepresentation; vis jobs!<br />(<a href="https://docs.google.com/presentation/d/1soBKNV4LLm4KWDepMw8AXkOOPndeJqhlvPT_JH1ckhk">slides</a>)<br />(<a href="https://forms.gle/7yhudCnDLhyESkqF9">quiz</a>)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>12/11 WED</td>
+      <td><em>Final Project Showcase 6–8pm<br />@ Brown Institute, Pulitzer Hall</em><br />(<a href="https://docs.google.com/presentation/d/1EgzqSZ2qFvdJEYSd5SVniElfcj6WPbjTOEiowcf3ntE/edit?usp=sharing">slides</a>)</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="a5.html">A5.3 Lightning Talk + A5.4 Project</a> DUE</td>
+    </tr>
+    <tr>
+      <td>12/16 MON</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><a href="a5.html">A5 Final Documentation</a> DUE</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="past-semesters">Past semesters</h2>
+
+<ul>
+  <li><a href="/2019s_w4995">Spring 2019</a></li>
+  <li><a href="/2018f_w4995">Fall 2018</a></li>
+</ul>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<script>
+  // ported from https://bl.ocks.org/mbostock/3231298
+
+  var width = document.getElementsByTagName("body")[0].offsetWidth;
+  var height = width > 500 ? 300 : 180;
+  var strength = width > 500 ? 0.05 : 0.15;
+
+  var nodes = d3.range(200).map(() => ({radius: Math.random() * 10 + 4})),
+      root = nodes[0],
+      color = d3.scaleOrdinal(d3.schemeBuPu[6]);
+
+  root.radius = 0;
+  root.fixed = true;
+
+  const svg = d3.select("#d3banner")
+      .attr("width", width)
+      .attr("height", height);
+
+  const simulation = d3.forceSimulation(nodes)
+      .force('charge', d3.forceManyBody().strength((d, i) => i ? 0 : -2000))
+      .force('x', d3.forceX(width / 2).strength(strength))
+      .force('y', d3.forceY(height / 2).strength(strength))
+      .force('collision', d3.forceCollide().radius(d => d.radius))
+      .on('tick', ticked);
+
+  svg.selectAll("circle")
+      .data(nodes.slice(1))
+      .enter().append("circle")
+      .attr("r", d => d.radius)
+      .attr("opacity", 0.7)
+      .style("fill", (d, i) => color(i % 4));
+
+  svg.on("mousemove", function() {
+      var p1 = d3.mouse(this);
+      root.fx = p1[0];
+      root.fy = p1[1];
+      simulation
+          .alphaTarget(0.3)
+          .restart();
+    });
+
+  function ticked() {
+      svg.selectAll("circle")
+          .attr("cx", d => d.x)
+          .attr("cy", d => d.y);
+  }
+
+</script>
+
+
+
+		</div>
+
+		<footer class="page-footer font-small">
+			<div class="footer-copyright text-center py-3">
+				W4995.014 Columbia University Computer Science<br>
+				🙌 <a href="http://agneschang.net/">Agnes Chang</a>, with thanks to
+				<a href="http://people.ischool.berkeley.edu/~hearst/">Marti</a> +
+				UW <a href="https://courses.cs.washington.edu/courses/cse512/18sp/">CSE512</a>.
+			</div>
+		</footer>
+
+</body>

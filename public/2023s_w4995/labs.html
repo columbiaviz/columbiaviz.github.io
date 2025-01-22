@@ -1,0 +1,128 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Labs ⟩ Intro to Dataviz ⟩ Spring 2023</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zilla+Slab:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style_2022_w4995.css" />
+		<script
+			src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="10">
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="alert alert-warning" style="margin-top:1em;" role="alert">
+  This is an outdated course page. View <a href="/2025s_w4995/">current semester here</a>.
+</div>
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Intro to Dataviz ⟩ Spring 2023</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="syllabus.html">Syllabus</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Assignments <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="a0.html">🚀 A0: Apply To Enroll</a></li>
+              <li><a href="a1.html">🗂 A1: Sparks Presentation</a></li>
+              <li><a href="a2.html">🗂 A2: Visualization Design</a></li>
+              <li><a href="labs.html#lab-1-shapes-and-styles">🔬 L1: Shapes and Styles</a></li>
+              <li><a href="a3.html">🗂 A3: Exploratory Data Analysis</a></li>
+              <li><a href="labs.html#lab-2-data-binding">🔬 L2: Data Binding</a></li>
+              <li><a href="a4.html">🗂 A4: Interactive Visualization</a></li>
+              <li><a href="labs.html#lab-3-interactivity">🔬 L3: Interactivity</a></li>
+              <li><a href="a5.html">🗂 A5: Final Project</a></li>
+              <li><a href="ax.html">💯 EC: Extra Credit Opportunities</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Demos <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-1-data-select-scale">
+									2/17: Data, Select, Scale</a></li>
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-2-interactivity">
+									2/24: Update, Events, Brush, Drag</a></li>
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-mutable-variables-and-multi-input-cells">
+									3/3: Mutables, Multiple Inputs</a></li>
+      	      <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									3/3: Transition, Zoom</a></li> -->
+              <li><a href="../files/examples/demo_geo.html">
+									3/31: Scrolly, Path, Polygon, Geography</a></li>
+      	      <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									3/31: Bootstrap, Vega</a></li> -->
+              <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									4/14: Hierarchy, Chord, Forces</a></li> -->
+            </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+    <div class="container">
+      <h1>Labs</h1>
+			<p>We will be working in the Observable platform, which is like a web-hosted JavaScript version of Jupyter notebooks. The goal of these assignments is to get you started with coding with D3, the dominant JavaScript library for building interactive visualizations for the web.</p>
+
+<p>All lab assignments are done individually. You are expected to adhere to the <a href="http://www.cs.columbia.edu/education/honesty">CS Department Honesty Policy</a> and submit your own work. You may not share your work for these assignments with your classmates. It is otherwise acceptable to google and lookup how to write commands.</p>
+
+<p>To start your lab homework, fork the assigned notebook under your personal Observable account, <em>not</em> as our team <a href="https://observablehq.com/@columbiaviz-s22">@columbiaviz-s22</a> account. Make sure you “Publish” your lab notebook using the <strong>Unlisted</strong> visibility setting—your notebook should only be visible to someone with the link. Finally, I repeat: remember to fork!🍴 Otherwise you will be editing the template directly and won’t have saving permissions. As a result you will <em>lose your work!</em></p>
+
+<p>To submit, be sure you’ve joined the ‘<a href="https://observablehq.com/@columbia-dataviz">Columbia Dataviz</a>’ team on Observable, then publish your notebook with <strong>Can view (unlisted)</strong> access for the public and with <strong>No Access</strong> for the team. Submit the ‘unlisted’ <a href="https://forms.gle/YWKwkSYzSHCTAwq57">Observable notebook url</a> by <strong>Wednesday 11:59pm ET</strong> on the due date.</p>
+
+<h3 id="lab-1-shapes-and-styles">Lab 1: Shapes and Styles</h3>
+<p>Fork (remember to fork!🍴) from <a href="https://observablehq.com/@columbiaviz-s22/lab-1-shapes-and-styles">Lab 1 template</a>.</p>
+
+<p>Submit your <a href="https://forms.gle/YWKwkSYzSHCTAwq57">Observable notebook url</a> by <strong>Wednesday 2/1, 11:59pm ET</strong>.</p>
+
+<h3 id="lab-2-data-binding">Lab 2: Data Binding</h3>
+<p>Fork (remember to fork!🍴) from <a href="https://observablehq.com/@columbiaviz-s22/lab-2-data-binding-scales-and-axes">Lab 2 template</a>.</p>
+
+<p>Submit your <a href="https://forms.gle/YWKwkSYzSHCTAwq57">Observable notebook url</a> by <strong>Wednesday 2/8, 11:59pm ET</strong>.</p>
+
+<h3 id="lab-3-interactivity">Lab 3: Interactivity</h3>
+<p>Fork (remember to fork!🍴) from <a href="https://observablehq.com/@columbiaviz-s22/lab-3-interactivity">Lab 3 template</a>.</p>
+
+<p>Submit your <a href="https://forms.gle/YWKwkSYzSHCTAwq57">Observable notebook url</a> by <strong>Wednesday 2/23, 11:59pm ET</strong>.</p>
+
+<h3 id="grading-criteria">Grading Criteria</h3>
+
+<ul>
+  <li>Completes notebook problems.</li>
+  <li>Each notebook is graded pass/fail.</li>
+</ul>
+
+
+  		<footer class="page-footer font-small">
+  			<div class="footer-copyright py-3">
+  				W4995.012 Columbia University Computer Science<br>
+  				🙌 <a href="http://agneschang.net/">Agnes Chang</a>, with thanks to
+  				<a href="http://people.ischool.berkeley.edu/~hearst/">Marti</a> +
+  				UW <a href="https://courses.cs.washington.edu/courses/cse512/18sp/">CSE512</a>.
+  			</div>
+  		</footer>
+    </div>
+</body>

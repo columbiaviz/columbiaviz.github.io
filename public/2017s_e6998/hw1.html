@@ -1,0 +1,196 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style_2017.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+
+<div class="row navbar">
+  <div class="col-md-1"></div>
+  <div class="col-md-10 nav">
+    <a href="./">6998.002 Interactive Data Exploration Systems</a>
+    <a href="./proposals" >Projects</a>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+    <h1 id="hw-1-three-ways-to-discover-a-dataset">HW 1: Three Ways to Discover a Dataset</h1>
+
+<p>Due: Tuesday 6PM 1/24</p>
+
+<p>During this assignment, you will discover a dataset through three different interaction methods:</p>
+
+<ol>
+  <li>Using a dabatase</li>
+  <li>Using Python, arguably the most popular method among data scientists those days</li>
+  <li>Using a visual data exploration tool called Tableau</li>
+</ol>
+
+<p>The aim is to compare and contrast the different options in terms of ease of use, power, expressiveness, etc.</p>
+
+<h2 id="the-data">The data</h2>
+
+<p>The data you will work with comes from the <a href="http://www.transtats.bts.gov/">US Bureau of Transportations</a>. It contains one large table, with 109 columns and about 520,000 rows. The database describes all the flights that occured on US territory in January 2015, along with delay information. You may find the dataset <a href="http://www.transtats.bts.gov/Download/On_Time_On_Time_Performance_2015_1.zip">HERE</a>.</p>
+
+<p>Here are some <em>examples</em> of questions that the database can answer:</p>
+
+<ol>
+  <li>What are the busiest cities in the US? What are the most frequent routes?</li>
+  <li>How early or late are US flights in general?</li>
+  <li>Which are the best/worst companies to fly with?</li>
+  <li>Is there a correlation between the length of a flight and the likelihood that it will be delayed?</li>
+  <li>What are the most common causes of delay? Are they the same for morning and evening flights? Long and short flights? Weekdays and weekeneds?</li>
+  <li>How likely is a flight to get canceled?</li>
+</ol>
+
+<h2 id="setup">Setup</h2>
+
+<p>For this part of the assignment, you will use a hosted data science service called Instabase and Jupyter.</p>
+
+<ol>
+  <li>
+    <p>Create an account on instabase using the following <a href="https://www.instabase.com/account/login?use_token=true">Special Registration URL</a>
+When Instabase prompts for a token, use <code class="language-plaintext highlighter-rouge">prof-wu-spring2017</code></p>
+  </li>
+  <li>
+    <p>Go to the <a href="https://www.instabase.com/tsellam/6998.002-viz/fs/Instabase%20Drive/">course instabase repository</a></p>
+  </li>
+  <li>
+    <p>Select the <code class="language-plaintext highlighter-rouge">HW1</code> folder, click on “more”, then “Copy”, then pick your repository, and copy to <code class="language-plaintext highlighter-rouge">Instabase Drive</code>.
+HW1 should now be in the <code class="language-plaintext highlighter-rouge">fs/Instabase Drive/</code> folder of your repository.</p>
+  </li>
+</ol>
+
+<h3 id="important">IMPORTANT!!!</h3>
+
+<p>For us to understand what you did, please enable logging in your notebook. To do so, go to:</p>
+
+<ul>
+  <li>Settings (top right corner in Instabase)</li>
+  <li>App Settings</li>
+  <li>Jupyter Notebook / Enable Logging</li>
+</ul>
+
+<p>This will log every execution in your notebook.  We will release this back to the class as an interesting dataset.</p>
+
+<h2 id="method-1-sql">Method 1: SQL</h2>
+
+<ol>
+  <li>Open the notebook <code class="language-plaintext highlighter-rouge">hw1.ipynb</code> and follow the instructions for the SQL section</li>
+</ol>
+
+<h2 id="method-2-python">Method 2: Python</h2>
+
+<ol>
+  <li>Open the notebook <code class="language-plaintext highlighter-rouge">hw1.ipynb</code> and follow the instructions for the Python section</li>
+</ol>
+
+<h2 id="method-3-tableau">Method 3: Tableau</h2>
+
+<p>Finally, you will perform data exploration with Tableau.</p>
+
+<ol>
+  <li>
+    <p>Go to the <a href="https://www.tableau.com/">Tableau Website</a>, and download a demo version of Tableau.</p>
+  </li>
+  <li>
+    <p>Connect Tableau to the the OnTime database, hosted on a postgreSQL server we set up for the course.
+To do so, create a new Tableau workbook based on the following server:</p>
+
+    <ul>
+      <li>Type: PostgreSQL (you may have to download an additional driver for postgreSQL, <a href="https://www.tableau.com/support/drivers">here</a>)</li>
+      <li>Hostname: pg-001.db.gcloud.instabase.com</li>
+      <li>Username: columbia</li>
+      <li>Password: B%38Mt5W@M*QU?Ar</li>
+      <li>Database: db_fea10998_f88d_4b6e_8f90_a6cd73bac65c</li>
+      <li>You should use the table called “Ontime”.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Explore the dataset using Tableau.  Come up with 3 visualizations that show new insights.  Upload their screenshots into your HW1 directory.</p>
+  </li>
+  <li>
+    <p><strong>IMPORTANT:</strong> Copy of your Tableau log file and send them with your results. The log file we are interested in is called “tabprotosrv.txt”.</p>
+
+    <ul>
+      <li>If you use Windows, you may find it in “My Documents/My Tableau Repository/Logs”.</li>
+      <li>On a Mac,it should be in “Documents/My Tableau Repository/Logs”.</li>
+      <li>You may find more info <a href="http://kb.tableau.com/articles/howto/viewing-underlying-sql-queries-desktop">here</a>.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Please make sure that the logging works before you start engaging in the exploration. To do so, issue a few dummy queries, open the “tabprotosrv.txt” file and make sure that it contains SQL statemements.</p>
+
+<h2 id="submit">Submit</h2>
+
+<p>You will submit your <code class="language-plaintext highlighter-rouge">HW1/</code> directory</p>
+
+<ol>
+  <li>Create your report as a text document named <code class="language-plaintext highlighter-rouge">&lt;youruni&gt;.txt</code>  in your <code class="language-plaintext highlighter-rouge">HW1/</code> directory
+    <ol>
+      <li>List your name and UNI at the top of the document</li>
+      <li>
+        <p>For each approach, list the insights that you identified from your analysis.  One insight per line:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> SQL: insight 1
+ SQL: insight 2
+ ...
+ Python: insight 1
+ Python: insight 2
+ ...
+ Tableau: insight 1
+ ...
+</code></pre></div>        </div>
+      </li>
+      <li>For each approach, reflect on its pros and cons in the report document.</li>
+    </ol>
+  </li>
+  <li>Upload your Tableau logs into your <code class="language-plaintext highlighter-rouge">HW1</code> directory.  Rename it to <code class="language-plaintext highlighter-rouge">&lt;youruni&gt;_tableau.txt</code>.   “Method 3” section of this document describes how to get the logs.</li>
+  <li>Upload your screenshots into your <code class="language-plaintext highlighter-rouge">HW1</code> directory.</li>
+</ol>
+
+<p>Submit your <code class="language-plaintext highlighter-rouge">HW1</code> directory using <a href="https://www.instabase.com/apps/file-submission/cmd/submit/0be40120-53de-4718-a18d-3e773da8c7b5">this submission link</a></p>
+
+<h3 id="what-now">What now?</h3>
+
+<p>Read the papers listed on <a href="http://columbiaviz.github.io">the course website</a>!</p>
+
+  </div>
+</div>
+
+<div class="row footer">
+  <div class="col-md-3"></div>
+  <div class="col-md-3"> <p>Graduate seminar to study research in interactive data exploration systems.
+</p></div>
+  <div class="col-md-3">
+    ewu@cs.columbia.edu<br/>
+    <a href="http://www.github.com/columbiaviz">GitHub</a>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+
+</body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87373541-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

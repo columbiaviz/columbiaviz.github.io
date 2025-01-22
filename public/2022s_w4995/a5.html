@@ -1,0 +1,236 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Assignment 5: Final Project ⟩ Intro to Dataviz ⟩ Spring 2022</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zilla+Slab:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style_2022_w4995.css" />
+		<script
+			src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="10">
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="alert alert-warning" style="margin-top:1em;" role="alert">
+  This is an outdated course page. View <a href="/2025s_w4995/">current semester here</a>.
+</div>
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Intro to Dataviz ⟩ Spring 2022</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="syllabus.html">Syllabus</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Assignments <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="a0.html">🚀 A0: Apply To Enroll</a></li>
+              <li><a href="a1.html">🗂 A1: Sparks Presentation</a></li>
+              <li><a href="a2.html">🗂 A2: Visualization Design</a></li>
+              <li><a href="labs.html#lab-1-shapes-and-styles">🔬 L1: Shapes and Styles</a></li>
+              <li><a href="a3.html">🗂 A3: Exploratory Data Analysis</a></li>
+              <li><a href="labs.html#lab-2-data-binding">🔬 L2: Data Binding</a></li>
+              <li><a href="a4.html">🗂 A4: Interactive Visualization</a></li>
+              <li><a href="labs.html#lab-3-interactivity">🔬 L3: Interactivity</a></li>
+              <li><a href="a5.html">🗂 A5: Final Project</a></li>
+              <li><a href="ax.html">💯 EC: Extra Credit Opportunities</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Demos <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-1-data-select-scale">
+									2/17: Data, Select, Scale</a></li>
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-2-interactivity">
+									2/24: Update, Events, Brush, Drag</a></li>
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-mutable-variables-and-multi-input-cells">
+									3/3: Mutables, Multiple Inputs</a></li>
+      	      <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									3/3: Transition, Zoom</a></li> -->
+              <li><a href="../files/examples/demo_geo.html">
+									3/31: Scrolly, Path, Polygon, Geography</a></li>
+      	      <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									3/31: Bootstrap, Vega</a></li> -->
+              <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									4/14: Hierarchy, Chord, Forces</a></li> -->
+            </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+    <div class="container">
+      <h1>Assignment 5: Final Project</h1>
+			<p>The purpose of the final project is to give you an opportunity to develop an original visualization design, method, algorithm, or tool. In teams of 3-4, your project should address a meaningful visualization problem and present a novel solution in the form of one interactive visualization (you’re welcome to include any number of supporting visualizations.) The final deliverable should be published on Observable accompanied by a significant written portion. You are encouraged but not required, to include an evaluation component (e.g. user testing) in your project.</p>
+
+<p>Unlike previous assignments, this assignment has <strong>multiple due dates</strong>. Your final assignment grade will be cumulative, as follows:</p>
+
+<ul>
+  <li>Proposal: 15%</li>
+  <li>In-progress Critique: 20%</li>
+  <li>Showcase Lightning Talk: 15%</li>
+  <li>Visualization(s): 35%</li>
+  <li>Documentation: 15%</li>
+</ul>
+
+<h3 id="51-project-proposal">5.1: Project Proposal</h3>
+
+<p>Find your team members, do research, make sketches, and do some exploratory analysis to decide on the visualization problem you want to tackle. Look at <a href="https://docs.google.com/presentation/d/1VXaKaKlAKHuUWCP9tgq6AIHe7yLyBdbDDsKcjkS5m9E/edit?usp=sharing">these slides for inspiration</a>.</p>
+
+<p>Write a 700-word* proposal describing your plan. Include screenshots and images as needed to communicate your ideas. Make sure your proposal covers:</p>
+
+<ul>
+  <li>Hypotheses and questions you intend to explore.</li>
+  <li>Why you think this topic is relevant or impactful beyond this class.</li>
+  <li>What will be your original contribution? (e.g. interactivity, visual design, algorithm, narrative, or a combination.) Is your visualization goal to enable exploration or presentation?</li>
+  <li>Description of how you plan to address the task (e.g. data processing, background topic research, advanced D3 techniques, interactivity or narrative approach, code performance, etc.) Be specific.</li>
+  <li>Description of at least two approaches (e.g. data joins, hypotheses, or visualization technique) that you consider <em>out of scope</em> for your project; that is, what are you purposely leaving out and why? One sentence each.</li>
+  <li>Links to specific data sources you intend to use.</li>
+  <li>Two initial exploratory charts to show that your hypotheses have promise.</li>
+  <li>Reference to at least three prior works (projects which you will build upon, or which inspired your ideas.)</li>
+  <li>A rough pen/paper sketch of what you want your final page to look like.</li>
+  <li>A week-by-week timeline with one sentence each describing how you will share the work.</li>
+</ul>
+
+<p>If for any reason, you foresee that Observable will pose a limitation to your final project concept and you plan to work outside it, make sure to describe this in your proposal.</p>
+
+<p>*Note: The 700-word limit includes section headers and any sentence fragments; it should apply to the entire document. URLs should be made hyperlinks.</p>
+
+<p>Submit your proposal in the form of a <a href="https://forms.gle/P1uvVsXe5wc6HA9h9">PDF file or Google Doc url</a> for A5.1, by <strong>Wednesday 3/30, 11:59pm ET</strong>.</p>
+
+<h3 id="52-in-progress-critique">5.2: In-Progress critique</h3>
+
+<p>Present your final project plan and any design and development work thus far for in-class critique on <strong>Thursday 4/7</strong>. A panel of 3-4 external guests active in the field will be invited to critique and help you improve your project. Prepare to present for 4 min., with 6 min. for critique and discussion (3 min./5 min. for one-person teams.) Every team member should speak. Timing is <strong>strict</strong> due to our limited class time, so practice your presentations: it should take only 4 min.</p>
+
+<p>Your presentation should be polished, but because this is a great (and possibly your best) opportunity for feedback, you are encouraged to discuss ideas or alternatives you are still considering, rather than decisions you’ve already made. Make sure you give your critics enough context (i.e. prior decisions and what you’re trying to achieve) to give you helpful input.</p>
+
+<p>By this stage in your project, you should know “what” you want to say about your data, and be exploring “how” you want to say it.</p>
+
+<p>Your presentation should contain (in substance, not necessarily with these titles):</p>
+<ul>
+  <li>motivation and hypotheses</li>
+  <li>relevant prior work</li>
+  <li>3 or more exploratory viz (e.g. Tableau, R, seaborn, Google Sheets, etc.) that visually communicate your analysis findings</li>
+  <li>1-sentence “data story” you’d like readers of your viz to take away (based on your analysis findings)</li>
+  <li>1 initial/static/rough viz in code (e.g. D3)</li>
+  <li>sketches/wireframes of how your final viz will interact (e.g. pen/paper, illustrator, iPad drawings, etc.)</li>
+  <li>feedback: 3 specific questions you’d like help with</li>
+</ul>
+
+<p>To facilitate time-efficiency, please ensure everything you want to show is in your slides (I will be sharing my screen for all presentations.) Specifically, if you have interactive portions to show (which is encouraged!), please make a gif or video.</p>
+
+<p>Submit your group’s <a href="https://forms.gle/P1uvVsXe5wc6HA9h9">PDF file or Google Slides url</a> for A5.2, and your individual <a href="https://forms.gle/V8LKGR85GjtxCxzHA">peer assessments</a> for A5.1–5.2, by <strong>Wednesday 4/6, 11:59pm ET</strong>.</p>
+
+<h3 id="53-showcase-lightning-talk">5.3: Showcase Lightning Talk</h3>
+
+<p><strong>Thursday April 28th</strong></p>
+
+<ul>
+  <li>4:10–5pm: Lightning talks</li>
+  <li>5–6pm: Science fair open house</li>
+</ul>
+
+<p>Invite your friends and professors! A broader group of viz critics from on- and off-campus to give you opportunity to show your work.</p>
+
+<p>Your responsibility is 1) a completed final visualization, and 2) a lightning talk in 9 slides.</p>
+
+<p>Each group will have <strong>20 seconds × 9 auto-advancing slides</strong>, for a total of 3 min. I repeat: slides will auto-advance. The goal of the lightning talk is to get the audience excited about your work so they come speak with you afterwards. This is a common format at tech conferences and is very engaging and effective. <a href="https://software.ac.uk/home/cw11/giving-good-lightning-talk">See</a> <a href="https://barriebyron.wordpress.com/2013/02/17/so-you-want-to-give-a-lightning-talk/">these</a> <a href="http://scottberkun.com/2009/how-to-give-a-great-ignite-talk/">resources</a> for ways to prepare a lightning talk.</p>
+
+<p>Link to your final visualization so we can pull it up after the talk; however, on auto-advance you will not be able to click on it so be sure to make screen-capture videos of any interactivity you want to show and put them on auto-play in your slides. Every group member should speak; this is not jarring if each person takes a section and it is well-rehearsed. You can practice with your Google Slides set to auto-advance by using <em>File &gt; Publish to the Web</em>. Write a script, and practice, practice, practice.</p>
+
+<p>Submit your group’s <a href="https://forms.gle/P1uvVsXe5wc6HA9h9">Google Slides url</a> for Lightning Talk by <strong>Wednesday 4/27, 11:59pm ET</strong>.</p>
+
+<h3 id="54-final-viz--55-final-documentation">5.4 Final Viz + 5.5 Final Documentation</h3>
+
+<p>Checklist:</p>
+
+<ol>
+  <li>1+ interactive visualization(s) at one URL</li>
+  <li>500-800 word writeup</li>
+</ol>
+
+<p>Consider any tweaks you might want to make based on Final Showcase feedback.</p>
+
+<p>In your final URL submission, lead with your visualization(s) presented in the best way for reading on the internet. Assume average visitors from the internet will not read your documentation, so include enough text and labels that visitors can understand.</p>
+
+<p>Below it or linked as a blogpost (e.g. <a href="http://medium.com">Medium.com</a>), your final write-up should be between 500-800 words and should include the following elements, with the bulk of words in Methodology and Discussion sections (you need not label or divide your sections exactly thus):</p>
+
+<ul>
+  <li><strong>Introduction</strong> – An explanation of the problem and the motivation for solving it.</li>
+  <li><strong>Related Work</strong> – A description of prior work or research related to your project.</li>
+  <li><strong>Methodology</strong> – An explanation of the data, analysis, techniques and algorithms you used. (<a href="https://pudding.cool/2017/04/beer/">Minimalist example</a>; and <a href="https://fivethirtyeight.com/methodology/how-fivethirtyeights-house-and-senate-models-work/">professional</a> <a href="http://projects.propublica.org/miseducation/methodology">examples</a> for inspiration.)</li>
+  <li><strong>Design</strong> – What were the primary considerations for the visual and interaction encodings you chose? Were there alternatives that you attempted but needed to abandon?</li>
+  <li><strong>Implementation</strong> – What libraries, tools and platforms did you use to build the final visualization? Did you use specific techniques for data loading? Did you need to address performance issues?</li>
+  <li><strong>Discussion</strong> – How successful was your final visual encoding and interaction design? Analyze audience reaction to your work (whether critics, classmates, or other people.) Were there points of user confusion? What new insights or practices has your system enabled, for the intended audience, general audience, or yourself?</li>
+  <li><strong>Future Work</strong> – Describe how you would extend or refine your project.</li>
+  <li><strong>Acknowledgements or References</strong></li>
+</ul>
+
+<p>Submit your work in three parts by <strong>Monday 5/9, 11:59pm ET</strong>:</p>
+<ol>
+  <li>your group’s <a href="https://forms.gle/P1uvVsXe5wc6HA9h9">final viz URL</a> as A5.4</li>
+  <li>your <a href="https://forms.gle/P1uvVsXe5wc6HA9h9">writeup URL</a>, which may be the same as your viz, as A5.5</li>
+  <li>individually submit your <a href="https://forms.gle/V8LKGR85GjtxCxzHA">peer assessments</a> for A5.3–5.4</li>
+</ol>
+
+<h3 id="grading-criteria">Grading Criteria</h3>
+
+<p>We’re looking for:</p>
+<ul>
+  <li>novelty of concept</li>
+  <li>engaging, relevant, or impactful data insights</li>
+  <li>interaction techniques fitting to the task</li>
+  <li>effective multi-view coordination</li>
+  <li>thoughtful and elegant graphic design</li>
+</ul>
+
+<p>We’d also love to see:</p>
+<ul>
+  <li>advanced interaction techniques</li>
+  <li>novel visualization elements</li>
+  <li>engaging narrative design</li>
+</ul>
+
+<p>Make sure you do not have:</p>
+<ul>
+  <li>errors or broken features</li>
+  <li>confusing or ineffective visual encodings</li>
+  <li>confusing interface design or unhelpful interactions (note that poor code performance can sometimes lead to confusing interactions)</li>
+  <li>incomplete or poor writing</li>
+</ul>
+
+
+  		<footer class="page-footer font-small">
+  			<div class="footer-copyright py-3">
+  				W4995.011 Columbia University Computer Science<br>
+  				🙌 <a href="http://agneschang.net/">Agnes Chang</a>, with thanks to
+  				<a href="http://people.ischool.berkeley.edu/~hearst/">Marti</a> +
+  				UW <a href="https://courses.cs.washington.edu/courses/cse512/18sp/">CSE512</a>.
+  			</div>
+  		</footer>
+    </div>
+</body>

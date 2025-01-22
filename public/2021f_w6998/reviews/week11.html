@@ -1,0 +1,285 @@
+
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+    <div class="deco">COLUMBIA UNIVERSITY COMS W6998</div>
+    <div class="title"><a href="/2020s_w6998" style="color:black;">SYSTEMS FOR HUMAN DATA INTERACTION</a></div>
+</div>
+
+
+
+
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-6 col-md-offset-3">
+    <style>
+p.review {
+  border-left: 2px solid grey;
+}
+
+div.block {
+  margin-bottom: 1em;
+}
+</style>
+
+<h2 id="discussion-points">Discussion Points</h2>
+
+<p class="block">I would like to see a discussion on how Texture could be expanded or utilized in the way the authors claim at the end of the paper. I think I understand the potential here, but am not sure how exactly it was intended to be utilized in larger one-off tasks.<br />
+</p>
+
+<h2 id="paper-1">Paper 1</h2>
+
+<h3>3/30/20 23:58 Richard Zhang</h3>
+<p class="block">The paper is about Wrangler, a system for interactive data transformation. The significance of Wrangler lies in its transformation inference, where it infers the most likely transforms for a dataset based on the type and specifics of the data as well as the user's highlight/selection of data. The technical strengths can mostly be found in the transformation inference, which relies on several constraints and a ranking system to infer a transformation. It seems limited by the number of roles that can be found in a dataset -- even though it supports niche roles such as zip codes, there can be an infinite amount of roles in a dataset (that Wrangler obviously cannot hardcode). Even though I have not done A3, I imagine that programming by example interface would be useful for exploratory tasks, and specifically design tasks such as outputting designs or visualizations for some data. An extension of Wrangler is to see whether the space of inferences can continuously be enlarged based on tracking user habits.</p>
+
+<h3>3/30/20 23:56 Haneen Mohammed</h3>
+<p class="block"><br />
+This paper aims to democratize data cleaning tasks by first modeling it as a data transformation problem and then introducing a framework that makes it easier to apply data transformations using minimal specifications by the user. The interface is backed by an inference engine that is based on user input, data type, and semantic rule. It then suggests possible data transformations and ranks them based on the most likely transformation the user intends to use and supports manual parameter edits from the user to the suggested transformations. <br />
+The authors then evaluate the interface using a user study that compares task completion between the introduced interface and Excel. The choice of using Excel as the baseline was justified in the paper as the most suitable tool that supports the type of transformations the interface offers, except I wish they included procedural programming language to compare against. The result of the user study suggests for common data cleaning tasks, users complete those tasks faster with Wrangler, but for unfamiliar data transformations (unfold), users can get stuck when using the interface.<br />
+I found the preview helpful, but it wasnt easy to extract the columns from the text. I think it would have been easier if I used Python to accomplish the task. For the evaluation, I found that part lacking in terms of how scalable the application is with respect to documents. How easy would it be to evaluate the output using previews for large data sets?</p>
+
+<h3>3/31/20 10:11 Deka Auliya</h3>
+<p class="block">Wrangler provides a mixed-initiative interface for interactive data transformations which maps user data transforms to automatic suggestions of applicable transforms as natural language descriptions and the visual transform previews as the side-effect of applying certain transforms. Wrangler allows users to iteratively explore the space of transforms and preview their effects. Taking into account the importance of Data Provenance, aside from outputting the transformed data, Wrangler also outputs an editable and auditable description of the applied data transformations.<br />
+<br />
+I think the major contribution of Wrangler would be 1) mapping user interactions to parameter sets which generate automatic suggested data transformations, 2) inference engine, 3) natural language descriptions, and 4) data provenance via transformation history viewer and transformation scripts. The inference engine, in particular, infer parameter sets from user interactions and match it to likely transforms based on usage statistics.<br />
+<br />
+Programming by example helps a lot in narrowing down my approach for selecting a solution for data cleaning and transformation. Moreover, it uses natural language descriptions and visual previews, which allows me to easily figure out what transformations are possible to achieve my objective and the direct effects of applying certain transformations. Depending on the complexity and the cleanliness of the data being transformed, it can lead to two things. If the data is rather simple to transform, Wrangler allows the users to easily transform data without having to know the underlying regex patterns or complex transformations. However, if data is complex, knowledge in regex became necessary. But the space of regex patterns and transformations are huge, so in this situation, Wrangler still helps especially in narrowing down the regex patterns or transformations that should be explored.</p>
+
+<h3>3/30/20 23:18 Carmine Elvezio</h3>
+<p class="block">This paper presents Wrangler, a system (including front end user interface) supporting data transformation, specifically with the goal of aiding in data wrangling tasks, which can involve cleaning, reformatting, and correcting erroneous or incomplete data. The system allows users to see histories of the actions already taken, a list of suggested actions (based on what the user is doing in the interface), and a visualization of the results of the actions (either represented overlapping the current table or presented side-by-side). Semantic data types are used to allow for validation and inference of what the user seeks to do, improving the quality of suggestions made. Wrangler uses the actions of the user (up until that moment, including the loading of the data and automatically occuring actions), semantic information about the data, and rank ordering of the computer suggestions to present a set of applicable transformations to the user. In addition, the authors present a user study and its results, showing that Wrangler is faster to use (for specifying the transforms a user might want to do, both across novices and experts), and preferred. Compared to prior work, Wrangler provides several advances. It integrates techniques for handling erroneous entries, extraction, resolution and inference of types and data, in an user interface, minimizing user need to manually edit parameters of queries. Some systems, such as Toped++ do aid in formatting and lookups but dont provide for filtering or aggregation. Notably, Wrangler also differs from programming-by-demonstration approaches, as it provides reshaping and aggregation of data, in addition to the handling of missing values. Additionally, compared to previous interactive systems for data cleaning, Wrangler provides an inference engine that creates, sorts, and presents actions a user can take. Further, with the ability to refine these actions based on actions with the data itself, I do believe this work to be quite significant. I really like the inference engine and suggested actions. I believe the combination of the two make for a great approach to making the process of data transformation much more user friendly. Starting from the top-down, and recommending (and allowing for iteration), vs asking the user to manually compose the actions is great. And as was shown by the user study, preferred by both novices and experts. Further, I also like that this programming language generated is visible. This would allow for expert users who understand how the language functions to provide for even greater control. While this is possible with declarative approaches significantly closer to the code (like Draco would be), I get the impression that the ease of use is of great benefit here. However, one of the largest limitations is that while the system is expressive for the six interactions it supports, it doesnt really allow for more complicated compound actions, to be acted upon simultaneously. It does allow for that when the data is initially loading up, which is then broken down into several smaller steps, but from that point forward, actions are generally single step. I think it would provide a great advantage if they could take some of what was done in Voyager, which in its recommendation system initially presents suggestions of compound actions (for display purposes) than the set of recommended actions would get better. Additionally, I think it would be great if the system also allowed for previews of what might break if a particular action in the history is undone.<br />
+<br />
+I think a programming by example interface is appropriate when trying to perform actions that are not exactly supported by the system, but possible within the set of actions (for example in the regular expression handling that Wrangler supports), or within the space of compound actions composable by the set of basic actions supported by the system. An example of this might be trying to sort the data. PBD might require the user actually begin to sort the data themselves. Based on my interaction with Wrangle, Im not sure the interface (or paradigm) might be conducive to this. Aggregation makes sense, but if you go for more complicated aggregation formats or joins, the system doesnt really have a method to do this. How a user might be able to demonstrate an aggregation to the system (that is not already supported) is also interesting.<br />
+</p>
+
+<h3>3/30/20 23:28 Zachary Huang</h3>
+<p class="block">This paper talks about an interactive system for creating data transformations.<br />
+The significant part of this paper is that it emphasizes user experience and incorporates multiple techniques together.<br />
+The technical strength of the paper is the inference engine which allows users to navigate the space of transformations, infers transformation through examples and infers parameter sets from user interactions.<br />
+The limitation is that there are many more data transformations that are popular but not supported in wrangler. For domain related transformations, it may be interesting to support UDF.<br />
+"Programming by example" interface should be appropriate when users know the end result of the transformations, but they are not familiar with the documentation, and are not technical enough to understand the terms. Although wrangler provides a natural language interface to understand the applied transformations, search the appropriate transformations for their demands might be challenging, where "programming by example" could help.</p>
+
+<h3>3/30/20 21:56 Celia Arsen</h3>
+<p class="block">This paper presents Wrangler, a tool for data transformation. While there are many existing languages and interfaces for data manipulation, Wrangler make notable contributions. For one, they put extra effort into building an inference engine that can rank suggested transforms in repose to manual manipulation. Furthermore, Wrangler automatically produces a script of the data transforms that are carried out. I think this is a very well-motivated problem and a smart solution. For me, there are many times when Excel would be the simplest, easiest tool for a task, but I choose not to use it because the process wont be reproducible, for myself, or for others. I really like the cases they provide in the usage scenario and the figures they include. The problems are very relatable and easy to follow along with. I wish that the evaluation asked the users to reuse the script they produced or something, because I think that is one of the main advantaged of Wrangler, but they dont address it in the evaluation. My next question would be, how scalable is this tool? <br />
+<br />
+Based on my experience in Assignment 3, I think programming by example makes sense when direct manipulation or user input is much easier to express than the code.</p>
+
+<h3>3/30/20 18:41 Yin Zhao</h3>
+<p class="block">Wrangler is an interactive visual specification system that takes user's action on certain data as input and automatically generates suggestions of similar actions across the whole dataset. It is a great tool in that it helps people with limited knowledge on data processing scripts to process data in a desired and painless way, while also provide functionalities to input descriptions to be precise and accurate. The paper has nice description and demonstration on the usage by example graphs. <br />
+The programming by example interface would be appropriate when the data to process have very consistent structure, and the dataset is large.</p>
+
+<h3>3/29/20 23:14 Adam Kravitz</h3>
+<p class="block">Wranger provides an engine that generates a ranked order suggestion list of. It is a system for interactive data transformation made to help analysts to show transformations while also simplifying any specifications and minimizing, as much as possible, any repetition. Wrangler does this by using a mixed-initiative user interface with an underlying declarative transformation language.<br />
+This paper is about Wrangler a tool trying to solve a problem where analysts spend a significant amount of time trying to manipulate data and assessing data quality issues. Wrangler does this by enabling analysts to iteratively explore the space of applicable operations and preview their effects. With this ability Wrangler is able to significantly reduces specification time allows the use of robust, auditable transforms.<br />
+The significance of Wrangler is that is significant reduces time for analyst to inspect the data set and mold the data set into a meaningful for that will allow easy analysis of the data. The reason this speed up is significant is because it is estimate that data cleaning is responsible for up to 80% of the development time and cost in data warehousing projects. From the techniques that Wrangler use it enables analysts to navigate the space of transforms using the means they find most convenient where it also suggests data transformations based on user inputs.<br />
+I like that Wrangler gives suggestions, and previews of different transformations that you can do to the data. While testing Wrangler I noticed, that especially for a beginner, it helps a lot to see and scan the data of a possible transformation effect to pick the best transformation to implement. Wrangler provides natural language descriptions and visual transform previews like regular expressions which also from experience I found very helpful not only to understand what the transformations where doing, but also to create my own transformations. From testing it was found that Wrangler was over twice as fast as Excel, that users completed the cleaning tasks significantly more quickly with Wrangler than with Excel, and the speed-up benefitted novice and expert Excel users.<br />
+Some limitations with Wrangler is that some of the suggested transforms and their results may be difficult to understand. As well as when the data sets get larger, the larger dataset might make assessing transform effects more complicated. Wrangler also does not allow users the same flexibility to layout data as in Excel. Lastly, Wrangler, at the time the paper was released, supports a limited set of common roles such as geographic locations, government codes, currencies, and dates.<br />
+I would like the paper to talk about if conceptual if this production could be an extension to excel. Excel is one of the most common dataset work environment that maybe this tool in an excel environment would work better overall. Also lastly can Wrangler accelerator discover of errors in the data set by find uncommon patterns in the data after a transformation. For example finding data that is in the form <name> but 1 rows column has the data in the form just name. It seems like something Wrangler could do but doesnt.<br />
+A programming by example interface would be appropriate when patterns appear consistently, I think Wrangler uses it perfectly, its just that the programming by example interface wrangler uses wasnt so robust, like names with hyphens would be excluded from the data selection out of selecting the rest of the names. Programming by example is really good with patterns so any recognition in data columns would be the perfect place to use an interface like that.<br />
+&lt;/p&gt;
+
+  <h3>3/24/20 16:39 Qianrui Zhang</h3>
+  <p class="block"># Review<br />
+This paper presents Wrangler, a system for interactive data transformation. As a tool for authoring expressive transformations over data, Wrangler provides a mixed-initiative interface, some natural language descriptions and visual transform previews to help analysts perform their jobs. Experiments show that Wrangler outperforms Excel across a set of data wrangling tasks.<br />
+<br />
+I very much like the interactive interface, natural language suggestions and visual previews that Wrangler provides. I think those features are user-friendly and will be the future direction of the development of hdi systems.<br />
+<br />
+Also the illustration of the system is very clear, with informative figures and detailed examples. <br />
+<br />
+I'm kind of curious about whether Wrangler can handle big data (or relatively big data). As is stated in introduction, data wrangling 'often requires writing idiosyncratic scripts in programming languages such as Python and Perl', and I believe one of the reasons is the scale of data. When the dataset gets large, it will be hard for analysts to do interactive transformations and they have to write some scripts to do batch-processing. Can Wrangler deal with this situation?<br />
+<br />
+I also feel the evaluation part of this paper is not very strong. There is only a user study with a relatively small sample(12) and there are also some vague settings. (e.g. is the 10 minute tutorial highly relevant to the tasks in experiment?)<br />
+<br />
+# Addition<br />
+I think the 'programming by example' interface is better for those who want to perform some common/quick tasks and want to save the time of reading documentations. Because I think it is a fast way to achieve some tasks. Just like when we use some new libraries in Python, we also want to see some practical examples first if we just want to sovle certain problems.</p>
+
+  <h3>3/19/20 19:08 Adam Kravitz</h3>
+  <p class="block">Wranger provides an engine that generates a ranked order suggestion list of. It is a system for interactive data transformation made to help analysts to show transformations while also simplifying any specifications and minimizing, as much as possible, any repetition. Wrangler does this by using a mixed-initiative user interface with an underlying declarative transformation language.<br />
+This paper is about Wrangler a tool trying to solve a problem where analysts spend a significant amount of time trying to manipulate data and assessing data quality issues. Wrangler does this by enabling analysts to iteratively explore the space of applicable operations and preview their effects. With this ability Wrangler is able to significantly reduces specification time allows the use of robust, auditable transforms.<br />
+The significance of Wrangler is that is significant reduces time for analyst to inspect the data set and mold the data set into a meaningful for that will allow easy analysis of the data. The reason this speed up is significant is because it is estimate that data cleaning is responsible for up to 80% of the development time and cost in data warehousing projects. From the techniques that Wrangler use it enables analysts to navigate the space of transforms using the means they find most convenient where it also suggests data transformations based on user inputs.<br />
+I like that Wrangler gives suggestions, and previews of different transformations that you can do to the data. While testing Wrangler I noticed, that especially for a beginner, it helps a lot to see and scan the data of a possible transformation effect to pick the best transformation to implement. Wrangler provides natural language descriptions and visual transform previews like regular expressions which also from experience I found very helpful not only to understand what the transformations where doing, but also to create my own transformations. From testing it was found that Wrangler was over twice as fast as Excel, that users completed the cleaning tasks significantly more quickly with Wrangler than with Excel, and the speed-up benefitted novice and expert Excel users.<br />
+Some limitations with Wrangler is that some of the suggested transforms and their results may be difficult to understand. As well as when the data sets get larger, the larger dataset might make assessing transform effects more complicated. Wrangler also does not allow users the same flexibility to layout data as in Excel. Lastly, Wrangler, at the time the paper was released, supports a limited set of common roles such as geographic locations, government codes, currencies, and dates.<br />
+I would like the paper to talk about if conceptual if this production could be an extension to excel. Excel is one of the most common dataset work environment that maybe this tool in an excel environment would work better overall. Also lastly can Wrangler accelerator discover of errors in the data set by find uncommon patterns in the data after a transformation. For example finding data that is in the form <name> but 1 rows column has the data in the form just name. It seems like something Wrangler could do but doesnt.<br />
+A programming by example interface would be appropriate when patterns appear consistently, I think Wrangler uses it perfectly, its just that the programming by example interface wrangler uses wasnt so robust, like names with hyphens would be excluded from the data selection out of selecting the rest of the names. Programming by example is really good with patterns so any recognition in data columns would be the perfect place to use an interface like that.&lt;/p&gt;
+
+  <h3>3/19/20 2:07 Yiru</h3>
+  <p class="block">Wrangler is an interactive system to help the user with data transformations. Wrangler would suggest transformation based on the current context of user interaction and try to reduce user repetition. <br />
+<br />
+The transformation suggestion part is really considerate. First, the interaction design is good. It offers natural language descriptions, and visual previews to help the user understand the suggested transformation and navigate the right one. I really appreciate this part. Second, the technique underlying the transformation suggestion part sounds good. It infers row, column, text selections from interaction and ranking them. <br />
+<br />
+The limitation I do not like is that it does not allow the user to directly manually edit the text. It is really annoying. Sometimes, I just want to manually edit one row. And some of the suggestion does not look good enough to accomplish my goal which would annoy the users too. <br />
+<br />
+I think programming by example interface is good only when the program it synthesizes is good enough to express the example. As we know, some of the examples are just too complicated to let the program synthesized. Then if the users try to give the example and the interface can not return a good one, the user effort is totally wasted. But I think the program by example is not totally useless in this case. It may always generate useful things to some extent. Thus, the Wrex tool(http://pgbovine.net/publications/Wrex-synthesizing-readable-data-science-code_CHI-2020.pdf) makes sense. <br />
+</p>
+
+
+
+## Paper 2
+
+  <h3>3/30/20 23:58 Richard Zhang</h3>
+  <p class="block">Texture is a system for extracting information from a corpus of print documents in ditigal form. Its contributions lie in its ability to search and apply user-written heuristics to search corpuses without having to crowdsource or create a ML classifier for the same task. Its technical strengths rely in the data model for the documents along with their allowance for users to define heuristics. It seems limited in the fact that for some of these tasks, where accuracy is key and imperative, Texture only can bring at best an approximation of the intended query. An extension would be if Texture could possibly be more accessible to an average user (who is not a developer) with the help of a well-designed GUI.</p>
+
+  <h3>3/30/20 23:56 Haneen Mohammed</h3>
+  <p class="block">This paper presents Texture, a framework for data extraction over print documents. The framework models parts of documents using a bounding box, and it associates different properties to them (label, heuristic to find different structures, etc.). The framework aims to simplify document annotations process that can be applied by generic end-users that can either be the user themselves or a crowd worker. The process includes structure annotations and task verification to measure the correctness of the annotations. The authors then evaluate the process of creating heuristics to extract structures from documents using five students to show the accessibility of the program for developers and then provide quality measures for extracted data. I found the paper easy to read, except I think it would have been better to walk through an example from start to the end on how for example, the cook can find stir-fry recipes using their approach and what are the resources he would need to set up to accomplish his task.</p>
+
+  <h3>3/31/20 10:11 Deka Auliya</h3>
+  <p class="block">Texture allows users to construct data extraction rules over inferred structural elements in documents while Refiner does not infer structural elements so users manipulate the original text directly.<br />
+<br />
+Texture will work well for documents that have a clear structure/bounding boxes or good heading formattings such as journals, newspapers, etc. while Refiner is rather flexible on the structure of the documents and depends on the actual text. This will be a tradeoff between ease of use (working on structured data is easier than none-structured data) and flexibility (requiring documents to have a structure or not, structure heuristics, etc.)<br />
+<br />
+For the automatic structure extraction, Texture requires annotations and inferring structural heuristics from automation. Therefore, there is a notion of structural abstraction across different documents. However, this could limit the expressiveness of document extraction and the ability of the tool to depend on the training data and annotators' capability. In contrast, Refiner requires users to infer themselves what the structure of the document will be, and users need to redefine how the bounding box of the text will be.<br />
+<br />
+In terms of language and syntax, Texture requires a bit of learning as it has a grammar or syntax for the rule language, SBEL for extracting texts. Refiner, on the other hand, provides a set of APIs, there is no grammar so rules are written in sequential order and the length and complexity of the rules will depend on the document and task. Writing rules for extracting documents will be rather easier on Texture as it has an abstraction for writing extraction queries.</p>
+
+  <h3>3/30/20 23:18 Carmine Elvezio</h3>
+  <p class="block">This paper presents Texture, a framework to facilitate the extraction of data from print documents, specifically allowing for collaboration on the identification of a documents structure and in the extraction of text. Provided with an interface for searching, and applying of structure identification heuristics, it is meant to support users in being able to extract information using multiple independent (and conditionally boosted) heuristics. The authors present a set of use cases and explore alternatives (training an ML model, crowdsourcing the task, hiring developers to create custom extraction code). The authors present the framework, which includes the HIT generation and delegation, the notion of a heuristic repository (such that it is weighable and usable by the aggregated system), the data model (focusing on the definition of bounding boxes within a document), and the heuristics interface, which in turn shows the execution time, precision and recall plots for comparison to ground truth, and a confusion matrix showing frequency of successful/mistaken heuristic labelling. In comparison to previous work, this paper really focuses on identification of the structure within a document. Where previous systems do facilitate geometric understanding of the document layout and structure, Texture is designed to allow for the insertion of existing and novel algorithms in the generation and utilization of the heuristics. Further previous crowdsourcing systems (Shreddr) limited the number of identification tasks (due to the domain in which the system was built), which Texture avoids. And other systems, like Snorkel, focus on text extraction only, making it difficult to understand more stylistic elements of the page. Texture helps avoid these issues and presents this in an integrated system. So I agree that it presents a significant contribution over the literature. However, I am wondering how close the works from Cattoni et al., and Mao Wusong et al., are to this as the authors indicate that the ideas are close, but do not provide sufficient detail to determine the degree of significance beyond that work. I really like the structure identification components utilization of the shared repository as a mechanism to empower the extraction capabilities because I think it is this component that allows for the integration of external heuristics and algorithms, which supports an expansion of said capabilities. One of the biggest limitations of the system as described in the paper comes from the interface. Either due to insufficient detail, or simply the presented system, it is difficult to understand how users actually use the system. I think the paper would benefit from a deeper description of how the UI actually functions. The user study is also a bit difficult to parse. The results are not really analyzed and I would have liked to see a more comprehensive discussion of what is going on. One thing that I think would be cool for future systems would be if the system could support convex and concave bounding structures (perhaps by freehand selection) since page elements are not always placed in a rectilinear layout. <br />
+<br />
+Texture and Refiner both approach a similar problem, but from different angles. Texture is meant to be a tool, used in conjunction with its UI to allow for the extraction of structure from a document. There are a set of 2 users here, but both can interact with the extraction tool. The intended users for Texture are not experts in data processing. And from the side of the crowdsourcing users, they are not intended to understand the core of the heuristics (as their role primarily pertains to defining and labelling bounding locations). The system would work well with print documents (such as articles, or documents with headings, bodies, etc.). In terms of the type of extraction intended, the authors sought to make the system handle structural extraction (i.e., understanding the layout and location of different parts of the document such as title, header, etc.). In contrast, Refiner seeks to go and take the information that is in the (potential print) document and turn it into understandable (and usable) digital information (e.g., a row (and the associated metadata of the columns) of a table. Here, business forms or invoices are the real target of the system as we can get meaningful data using it. User expertise would be closer to those people who understand databases and can think in terms of the schema that is being ultimately created. In contrasting Texture vs Refiner, I think the former is really meant for structure of non-numerically heavy documents, and the latter for numerical or ordinal-data heavy documents. In terms of ease of use, both hit their targets fairly well, considering the difference in domain.<br />
+</p>
+
+  <h3>3/30/20 23:28 Zachary Huang</h3>
+  <p class="block">This paper talks about a new type of text extraction system.<br />
+The significant part of this paper is that it combines both the extraction of the structure of the file and the mining of the structural elements. <br />
+The technical strength of this paper is the design to combine multiple frameworks including structure-based extraction, manual labeling (crowdsourcing) and heuristics functions together to boost the performance of text extraction. <br />
+For now, the system still requires users to write heuristics functions through programming. This is not friendly given that text extraction users are likely not technical. It may be interesting to support high-level language as heuristics.<br />
+For refiner, its intended types of documents should have more common patterns in the structural elements. For texture, its intended types of documents can have different layouts and styles, but each section has some conventions like text order, list bullets, or bounding boxes.<br />
+Refiner intends to extract text with a certain semantic meaning given the pattern of documents. Texture can extract text with certain semantic meaning similarly. It supports queries of text as an additional feature.<br />
+Refiner uses user expertise to identify the structure of texts. Texture supports expertise in multiple ways. Expertise could be translated into different heuristics functions, and their weights could be learned through evaluation.</p>
+
+  <h3>3/30/20 21:56 Celia Arsen</h3>
+  <p class="block">This paper is about Texture, a system for extracting structural information and text from PDFs. The system has two main parts. The first part is identifying structural elements (like titles, tables, figures, etc.) through heuristics that are written by individual developers. The second part is constructing extraction rules over the identified structures. The main contribution above prior work is that Texture is specifically a collaborative system. It allows end-users, developers, and crowd workers to all contribute to the same project. This is different than existing systems, but I do not think they have created a system yet that appropriately addresses the motivating examples they provide in the beginning of the paper. It would have been helpful if they had carried those examples throughout the paper and explained how each part of the system would fit into those examples. To me, it seems very unlikely that an HR administrator or a chef would have the skills to construct rules in Textures Structure-Based Extraction Language. At the same time, there was hardly any explanation of this SBEL language in the article, so its hard to know. Do end-users need to communicate directly with developers or crowd-workers, or is that somehow carried out by texture? Maybe these motivating problems were proposed as very hypothetical examples to eventually work towards. Overall, it seemed like the authors didnt have enough space to really explain all the work they had done. <br />
+<br />
+Texture and Refiner are similar because they are both OCR programs. They both are designed to be used for modern English-language documents. One difference is that Texture is a collaborative system, designed to incorporate work from crowd-workers, developers, and the end user(s). Based on the Texture paper, the end user did not need to have technical expertise. Refiner assumes the user has the time and ability to learn a new mental model and a simple language.</p>
+
+  <h3>3/30/20 18:41 Yin Zhao</h3>
+  <p class="block">This paper talks about Texture, a system for extracting structured information from large amount of printed documents and provide data via heuristics/rules provided by users or recommended by the system itself. I feel that I've already seen tools that could convert pictures to pdfs that are searchable, and the value added of this new tool might not be too much. The use cases (especially the chef one) does not make a lot of sense to me either.<br />
+Intended types of documents are printed documents, that contain structured content like tables and headers, etc. User does not have to know programming or data analytical knowledge, but needs to be able to learn very basic domain specific language.</p>
+
+  <h3>3/29/20 23:14 Adam Kravitz</h3>
+  <p class="block">The paper is about Texture which is a framework for data extraction for printed documents that lets the user to extract data from the document by using their own extraction rules, over what the paper calls an inferred document structure. Texture was made to handle scalability and the large variety and absence of a marked-up structure in print documents.<br />
+The significance of this work is that it can use student heuristics to identify and recall with precision structures across different document collections. Texture provides Multi-role support and division of labor, has tolerance for imperfections, independent and graphical structural annotations, and a flexible workflow system. This means in general that there are heuristics to identify some structures of documents, so crowding source to section off documents, heuristics that can tolerate noise, and a library that provide basic primitives. With all these tools this allows recognition and processing of documents. I think as an idea this is import to be ale to extract data from documents but im sure there are easier ways, at least now a days, then to ask people for a heuristic and crowd sourcing sections of documents. Why can you just get the user to section of the document and things that looks like column become columns in an excel sheet, or something like that.<br />
+What I like about texture is that since you need heuristics textures allows developers can contribute heuristics to the code repository as long as they stay within the rules of writing a heuristic, thus creating a standard for heuristics. The hardest part about needing the end-user to make a heuristic to extract data from a document, is learning how to make a heuristics which takes practice and time. Thus, premade heuristics made by develops helps simplify and improve the efficiency of extraction for some users.<br />
+A limitation with Texture is that trying to use crowd source to section off documents and thus sharing the document with a crowd may nor be possible for private and copyright reasons. Another limitation is that also using crowd sourcing does not scale well and is bottled by the crowd sourcing. This limitation increases the time and cost required to label a page.<br />
+An extension I would like the paper to talk about is on how much labeling for heuristics and for documents need to be done until it is adequately efficient. This seems like a important quantity, that effects how the program works but the paper doesnt talk about it.<br />
+Refiner uses data extraction without crowd sourcing. Refiner needs you to program to scan the document at certain places to grab and extract the data. Refiner while I was using had problems section off the paper since different sections can have similar labels where you can accidently extract the wrong data. Texture seems to be more crowd sourced and because of that it is better at section off parts of paper, but because of that extraction is slow since not only does a user need to make a heuristic to extract data it need documents to also go through a sectioning phase.<br />
+</p>
+
+  <h3>3/24/20 16:39 Qianrui Zhang</h3>
+  <p class="block"># Review<br />
+This paper presents Texture, a collaborative framework for data extraction over print documents. As the implementation of the first step in a two-staged approach for data extraction, the authors introduce techniques for identifying structural elements (titles, captions, footers etc.) with the help of heuristics and annotations in this work, and also provide an experiment evaluation to show the effectiveness of Texture.<br />
+<br />
+I think the whole platform of information extraction, if fully developed and well maintained (have a bunch of people collaborating on it), can have a lot of practical use. However, why people will want to use it remains a question.<br />
+<br />
+The figures in the paper make it easy to understand the system, which is another good thing about the paper.<br />
+<br />
+There are also some weak points (or things that confuse me) as follows:<br />
+<br />
+The thing that confuses me the most is the relationship between the motivating examples (e.g. the two-stage method of extracting information) and the contribution of the paper. The motivating examples are very cool, and the structure-based extraction language(SBEL) makes me think 'how will end users be able to construct such languages'. However, the question is not answered in this paper, and what is proposed is actually a framework for finding structural elements like titles, paragraphs or figures. This makes me feel like reading an unfinished work with the most important part missing.<br />
+<br />
+The evaluation sample seems small to me (5 undergraduate students), and the evaluation is only about the effectiveness of the heuristics, which seems insufficient. What's more, I notice that the crowdsourcing in experiment costs a lot($400+), will that part cost more in a real system?<br />
+<br />
+In general, the paper of Texture doesn't impress me much, but I look forward to seeing the second stage of the system.<br />
+<br />
+# Addition<br />
+<br />
+Texture is good for end users with less experience of CS/just want to use a simple software to perform the extraction. (given what is shown in the paper, I'm not sure what will happen to the SBEL) And what Texture does is providing a framework where those users can find something useful from developers or crowdsource workers. From my understanding, Texture is just like a 'magic extraction tool' for end users. The users can directly get what they want if there already exists certain heuristic rules and can do nothing if there doesn't exist such rules.<br />
+<br />
+Refiner, on the contrary, is a tool for more skilled users(or developers). It provides more control for users, and also requires more efforts.<br />
+</p>
+
+  <h3>3/19/20 19:08 Adam Kravitz</h3>
+  <p class="block">The paper is about Texture which is a framework for data extraction for printed documents that lets the user to extract data from the document by using their own extraction rules, over what the paper calls an inferred document structure. Texture was made to handle scalability and the large variety and absence of a marked-up structure in print documents.<br />
+The significance of this work is that it can use student heuristics to identify and recall with precision structures across different document collections. Texture provides Multi-role support and division of labor, has tolerance for imperfections, independent and graphical structural annotations, and a flexible workflow system. This means in general that there are heuristics to identify some structures of documents, so crowding source to section off documents, heuristics that can tolerate noise, and a librabray that provide basic primatives. With all these tools this allows recognization and processing of documents. I think as an idea this is import to be ale to extract data from documents but im sure there are easier ways, at least now a days, then to ask people for a heuristic and crowd sourcing sections of documents. Why can you just get the user to section of the document and things that looks like column become columns in an excel sheet, or something like that.<br />
+What I like about texture is that since you need heuristics textures allows developers can contribute heuristics to the code repository as long as they stay within the rules of writing a heuristic, thus creating a standard for heuristics. The hardest part about needing the end-user to make a heuristic to extract data from a document, is learning how to make a heuristics which takes practice and time. Thus, premade heuristics made by develops helps simplify and improve the efficiency of extraction for some users.<br />
+A limitation with Texture is that trying to use crowd source to section off documents and thus sharing the document with a crowd may nor be possible for private and copyright reasons. Another limitation is that also using crowd sourcing does not scale well and is bottled by the crowd sourcing. This limitation increases the time and cost required to label a page.<br />
+An extension I would like the paper to talk about is on how much labeling for heuristics and for documents need to be done until it is adequately efficient. This seems like a important quantity, that effects how the program works but the paper doesnt talk about it.<br />
+Refiner uses data extraction without crowd sourcing. Refiner needs you to program to scan the document at certain places to grab and extract the data. Refiner while I was using had problems section off the paper since different sections can have similar labels where you can accidently extract the wrong data. Texture seems to be more crowd sourced and because of that it is better at section off parts of paper, but because of that extraction is slow since not only does a user need to make a heuristic to extract data it need documents to also go through a sectioning phase.<br />
+</p>
+
+  <h3>3/19/20 2:07 Yiru</h3>
+  <p class="block">The texture paper proposes a collaborative framework to do document extraction. It leverages developers, end-users and crowd workers' effort to do the task. The developer could develop heuristics to identify different structures. The crowd worker could annotate the structure. The end-users could construct data extraction rules over the inferred document. <br />
+<br />
+Texture's input is English print documents with different structures, like title, subsection, paragraph. Refiner requires all the documents within one dataset to have the same layout. The only difference is the value of each attribute. Textures' extraction is to identify the different structures from the documents. The refiner is to let the end-users write rules to extract the values from a bunch of documents in a dataset. Before that refiner processes document using the OCR algorithm. They both could let end-users to do the finer extraction from the processed docs. <br />
+<br />
+From the user expertise aspect, the texture does not have a trial version yet. From their description, it is cool but the dashboard is a little messy. The refiner is still under development. In the latest one with image crop, the idea is really cool. Although it is not useable yet, I am excited about the functionality it is going to have. For the homework version, it is good and easy to use. It would be greater if it could offer more API to deal with multiple same names in the table. <br />
+</p>
+
+
+
+
+## Paper 3
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!--
+## Reviews
+
+-->
+
+
+
+</name></p></name></p>
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>

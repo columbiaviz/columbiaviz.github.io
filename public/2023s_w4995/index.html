@@ -1,0 +1,533 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Intro to Dataviz ⟩ Spring 2023</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zilla+Slab:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style_2022_w4995.css" />
+		<script
+			src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="10">
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="alert alert-warning" style="margin-top:1em;" role="alert">
+  This is an outdated course page. View <a href="/2025s_w4995/">current semester here</a>.
+</div>
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Intro to Dataviz ⟩ Spring 2023</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="syllabus.html">Syllabus</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Assignments <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="a0.html">🚀 A0: Apply To Enroll</a></li>
+              <li><a href="a1.html">🗂 A1: Sparks Presentation</a></li>
+              <li><a href="a2.html">🗂 A2: Visualization Design</a></li>
+              <li><a href="labs.html#lab-1-shapes-and-styles">🔬 L1: Shapes and Styles</a></li>
+              <li><a href="a3.html">🗂 A3: Exploratory Data Analysis</a></li>
+              <li><a href="labs.html#lab-2-data-binding">🔬 L2: Data Binding</a></li>
+              <li><a href="a4.html">🗂 A4: Interactive Visualization</a></li>
+              <li><a href="labs.html#lab-3-interactivity">🔬 L3: Interactivity</a></li>
+              <li><a href="a5.html">🗂 A5: Final Project</a></li>
+              <li><a href="ax.html">💯 EC: Extra Credit Opportunities</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Demos <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-1-data-select-scale">
+									2/17: Data, Select, Scale</a></li>
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-2-interactivity">
+									2/24: Update, Events, Brush, Drag</a></li>
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-mutable-variables-and-multi-input-cells">
+									3/3: Mutables, Multiple Inputs</a></li>
+      	      <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									3/3: Transition, Zoom</a></li> -->
+              <li><a href="../files/examples/demo_geo.html">
+									3/31: Scrolly, Path, Polygon, Geography</a></li>
+      	      <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									3/31: Bootstrap, Vega</a></li> -->
+              <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									4/14: Hierarchy, Chord, Forces</a></li> -->
+            </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+    <div class="container">
+
+			<div id="idv-banner"></div>
+
+<h1 id="introduction-to-data-visualization">Introduction to Data Visualization</h1>
+
+<p><span style="font-family: Jost">COMS W4995.003 (3 pts)</span></p>
+
+<p><em>Instructor:</em> Christian Swinehart (cds2205; office hours by appt.)<br />
+<em>IAs:</em> Ruoyang ‘Kathy’ Liu (rl3323; <a href="https://calendar.app.google/H6XnPXhhBRofjwUF9">Wed 5–7pm</a>), Binny Naik (bn2341; <a href="https://calendar.app.google/qvDunmUjn9nBwXTU7">Tue 3–5pm</a>)<br />
+<em>Class Time:</em> Thurs. 4:10–6:40pm<br />
+<em>Room:</em> 420 Pupin<br />
+<a href="https://courseworks2.columbia.edu/courses/171621">Courseworks (and Zoom Info)</a><br />
+<a href="https://columbiaviz-sp23.slack.com">Class Slack</a><br />
+<a href="https://forms.gle/u3YcakHLNPaXMkFaA">Course Feedback Form</a></p>
+
+<h2 id="overview">Overview</h2>
+
+<p>This course is a hands-on introduction to design principles, theory, and software techniques for visualizing data. Classes will be a combination of lecture, design studio, and lab. Through readings, design critique, and code assignments, students will learn how visual representations can help in the understanding of complex data, and how to design and evaluate visualizations for the purpose of analysis or communication. Students will develop skills in processing data and building interactive visualizations using D3. Topics include visual perception, exploratory data analysis, task analysis, graphic design, visual hierarchy, narrative, etc.</p>
+
+<p>Students should have experience in JavaScript programming and web development, as well as familiarity with databases and data formats. You should be comfortable picking up new programming tools on your own. Experience with Python or R for data processing is helpful but not required.</p>
+
+<h2 id="schedule">Schedule</h2>
+
+<table class="schedule table table-striped">
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Topic</th>
+      <th>Reading Due In Class</th>
+      <th>Assigned, Individual</th>
+      <th>Assigned, Group</th>
+      <th>Due Wed. Before Class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1/19</td>
+      <td><strong>Introduction:</strong> why visualize? schedule and expectations. <br />⟨<a href="https://docs.google.com/presentation/d/1LOn1tgF9phhwwrTF6OcyCkyYC44Dy9Vl80DEnPbBud8/edit?usp=sharing">slides</a>⟩</td>
+      <td> </td>
+      <td><a href="a0.html"><strong>APPLY TO ENROLL by Monday</strong></a></td>
+      <td><a href="a2.html">A2.1 Viz Design: divergence</a> assigned<br /></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1/26</td>
+      <td><strong>Design</strong>: form vs. function, generating ideas, iterating, and critique. <br />⟨<a href="https://docs.google.com/presentation/d/1NMM1Ea25rzqjkiOrKgE4lUYGe8eeEexB-NDf-4WjthY/edit?usp=sharing">slides</a>⟩ <br />⟨<a href="https://forms.gle/ZEVXZiiCSFk8fyVM9">quiz</a>⟩</td>
+      <td><span class="outdent">• </span>Visual Explanations, <a href="../files/readings/Tufte_VisualExplanations-Shuttle-Excerpt.pdf">Chp. 2 Excerpt</a>, by Tufte, E. 2007.<br /><span class="outdent">• </span><a href="https://faculty.washington.edu/ajko/books/design-methods/creative">How to be creative</a> &amp; <a href="https://faculty.washington.edu/ajko/books/design-methods/critique">How to be critical</a>, Ko, A. 2017.<br /><span class="outdent">• </span>Lateral Thinking, <a href="../files/readings/debono_excerpts.pdf">Excerpts</a>, deBono, E. 1967.<br /><span class="outdent">• </span><em>Optional: <a href="https://medium.com/accurat-studio/the-architecture-of-a-data-visualization-470b807799b4">The Architecture of a Data Visualization</a>, Accurat Studio.</em><br /></td>
+      <td><a href="labs.html">L1 Shapes and Styles</a> assigned<br /></td>
+      <td><a href="a2.html">A2.2 Viz Design: revisions</a> assigned<br /></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2/2</td>
+      <td><strong>Data Models</strong>: data types, task types, corresponding visualization formats. <br />⟨<a href="https://docs.google.com/presentation/d/1uBuhhEQ1Ej1ljj_Nq07tfHrgV9QYnY9q2W4pr3OX5DI/edit?usp=sharing">slides</a>⟩ <br />⟨<a href="https://forms.gle/tNY6vagssATaEn6g9">quiz</a>⟩</td>
+      <td><span class="outdent">• </span>Semiology of Graphics, <a href="../files/readings/bertin_semiologyofgraphics_excerpts.pdf">Excerpt</a>, by Bertin, J. 1967.<br /><span class="outdent">• </span><a href="http://queue.acm.org/detail.cfm?id=1805128">A Tour through the Visualization Zoo</a>. Heer, Bostock &amp; Ogievetsky. ACM. 2010.<br /><span class="outdent">• </span><a href="https://clio.columbia.edu/catalog/14286801">Visualization Analysis and Design, Chp. 2.1–2.5</a> by Munzner, T. 2014.<br /><span class="outdent">• </span><em>Optional:</em> <a href="http://drum.lib.umd.edu/bitstream/handle/1903/466/CS-TR-3665.pdf?sequence=2">The Eyes Have It: A Task by Data Type Taxonomy for Information Visualizations</a>, by Shneiderman, B. 1996<br /></td>
+      <td><a href="labs.html">L2 Data Binding</a> assigned<br /></td>
+      <td><a href="a3.html">A3 Exploratory Data Analysis</a> assigned<br /></td>
+      <td><a href="labs.html">L1</a> DUE<br /><a href="a2.html">A2 Design</a> DUE<br /></td>
+    </tr>
+    <tr>
+      <td>2/9</td>
+      <td><strong>Data Exploration</strong>: EDA, data wrangling, and Tableau. <br />⟨<a href="https://docs.google.com/presentation/d/1SRWbGM0voaI0pvGP2EO8GLCza0bVYUvMECv2RcSqvC4/edit?usp=sharing">slides</a>⟩ <br />⟨<a href="https://forms.gle/JjSfjPXfEm9NdwGa9">quiz</a>⟩</td>
+      <td><span class="outdent">• </span><a href="https://courseworks2.columbia.edu/files/16368868/download?download_frd=1">Chp. 6: Analytical Patterns</a> from Now You See It by Few, S. 2009.<br /><span class="outdent">• </span><a href="https://research.tableau.com/sites/default/files/Tableau-CACM-Nov-2008-Polaris-Article-by-Stolte-Tang-Hanrahan.pdf">Polaris: A System for Query, Analysis and. Visualization of Multi-dimensional Relational Databases</a> by Stolte, C. et. al. ACM 2008.<br /><span class="outdent">• </span><a href="https://courseworks2.columbia.edu/files/16368864/download?download_frd=1">Postmortem of an Example</a> by Bertin, J. 1981.<br /><span class="outdent">• </span><em>Optional:</em> <a href="http://vita.had.co.nz/papers/layered-grammar.html">A Layered Grammar of Graphics</a> by Wickham, H. 2010.<br /><span class="outdent">• </span><em>Optional:</em> <a href="https://github.com/Quartz/bad-data-guide">Bad Data Guide</a> by <a href="http://agneschang.net/gsapp-dataviz-archhum/qz.com">Quartz</a> data team<br /></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="labs.html">L2</a> DUE<br /></td>
+    </tr>
+    <tr>
+      <td>2/16</td>
+      <td><strong>Visual Encoding</strong>: marks, channels, expressiveness &amp; effectiveness. <br />⟨<a href="https://docs.google.com/presentation/d/1bnrM-Ou2gdLvMTUOACvHhz9sLxCyrpzQ-koB8nOhKEo/edit?usp=sharing">slides</a>⟩ <br />⟨<a href="https://forms.gle/jVfYTsUfwAoo8CEh8">quiz</a>⟩</td>
+      <td><span class="outdent">• </span><a href="https://courseworks2.columbia.edu/files/16368875/download?download_frd=1">Understanding Comics, Chp. 5,7,8</a>, by McCloud, S.<br /><span class="outdent">• </span><a href="https://courseworks2.columbia.edu/files/16368869/download?download_frd=1">Chp. 3: The Power of Representation</a> in Things That Make Us Smart by Norman, D. 1993.<br /><span class="outdent">• </span><a href="https://courseworks2.columbia.edu/files/16368874/download?download_frd=1">Visual Display of Quantitative Information, Chp. 2,4,5</a>, by Tufte, E. 2007<br /><span class="outdent">• </span><em>Optional: <a href="https://blog.datawrapper.de/choroplethmaps/">What to consider when creating choropleth maps</a> by Rost, L. C. 2017.</em><br /><span class="outdent">• </span><em>Optional: <a href="http://vis.stanford.edu/files/2011-D3-InfoVis.pdf">D3: Data-Driven Documents</a>. Bostock, Ogievetsky, Heer. InfoVis 2011.</em><br /></td>
+      <td><a href="labs.html">L3 Interactivity</a> assigned<br /></td>
+      <td><a href="a4.html">A4.1 Interactive: static</a> assigned<br /></td>
+      <td><a href="a3.html">A3 EDA</a> DUE<br /></td>
+    </tr>
+    <tr>
+      <td>2/23</td>
+      <td><strong>Interaction:</strong> overview vs. details, small multiples, brushing, etc. <br />⟨<a href="https://docs.google.com/presentation/d/1gx1Ct6ANImEoCL-x2kq8itmCkAKetiEzolHw_Ggcf5Y/edit?usp=sharing">slides</a>⟩ <br />⟨<a href="https://forms.gle/xuLj9dw2Mny1pEoS7">quiz</a>⟩</td>
+      <td><span class="outdent">• </span><a href="http://portal.acm.org/ft_gateway.cfm?id=2146416&amp;type=pdf">Interactive Dynamics for Visual Analysis.</a> Heer &amp; Shneiderman. 2012.<br /><span class="outdent">• </span><a href="http://worrydream.com/LadderOfAbstraction/">Ladder of Abstraction</a> by Victor, B. 2011.<br /><span class="outdent">• </span><a href="https://www.vis4.net/blog/2017/03/in-defense-of-interactive-graphics/">In Defense of Interactive Graphics</a>, Aisch, G. 2017.<br /><span class="outdent">• </span><em>Optional: <a href="https://www.vis4.net/blog/2013/09/mastering-multi-hued-color-scales/">Mastering Hued Color Scales</a>, Aisch, G. 2013.</em><br /></td>
+      <td> </td>
+      <td><a href="a4.html">A4.2 Interactive: dynamic</a> assigned<br /></td>
+      <td><a href="labs.html">L3</a> DUE<br /></td>
+    </tr>
+    <tr>
+      <td>3/2</td>
+      <td><strong>Evaluation, Perception, Review</strong>: a framework for analysis; how we see, color, and attention theory. <br />⟨<a href="https://docs.google.com/presentation/d/1IwYjde4MBHkP_lXESoE3-wVw8Alr4ou91jYrpi5Erg4/edit?usp=sharing">slides</a>⟩ <br />⟨<a href="https://forms.gle/sZMCX5dEiNBbeGsD7">quiz</a>⟩</td>
+      <td><span class="outdent">• </span><a href="https://clio.columbia.edu/catalog/14286801">Visualization Analysis and Design</a>, Chp. 3.1–3.4, 4.1–4.6 by Munzner, T. 2014.<br /><span class="outdent">• </span><a href="https://courseworks2.columbia.edu/files/16368870/download?download_frd=1">The Design of Everyday Things, Chp.1</a> by Norman, D. 1988.<br /><span class="outdent">• </span><a href="https://courseworks2.columbia.edu/files/16368866/download?download_frd=1">Now You See It, Chp. 3</a> by Few, S. 2009.<br /><span class="outdent">• </span><a href="https://medium.com/@kennelliott/39-studies-about-human-perception-in-30-minutes-4728f9e31a73">39 Studies About Human Perception in 30 Minutes</a> by Elliott, K.<br /><span class="outdent">• </span><em>Optional: <a href="https://medium.com/@hint_fm/design-and-redesign-4ab77206cf9#.mha5ohu1t">Design and Redesign in Data Visualization</a> by Viegas &amp; Wattenberg, 2015.</em><br /></td>
+      <td>Study for midterm</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>3/9</td>
+      <td><em>Midterm Exam</em></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="a4.html">A4.3 Interactive: evaluation</a> assigned<br /></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>3/16</td>
+      <td><em>Spring Break, no class.</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>3/23</td>
+      <td><strong>Animation:</strong> motion perception, transitions, pros/cons. <br />⟨<a href="https://docs.google.com/presentation/d/1FLMfwpuvij3UzZhDeSJ0hRMqVTjNOPWMAtkpMbcJVbc/edit?usp=sharing">slides</a>⟩ <br />⟨<a href="https://forms.gle/iepD5UhnvM7mZj3S6">quiz</a>⟩ <br />⟨<a href="https://docs.google.com/presentation/d/1x0_cR6_7IGnDqW7whyGFrl4xwN1QW2F7ANu-A4m0kUs/edit?usp=sharing">final project inspiration</a>⟩</td>
+      <td><span class="outdent">• </span><a href="https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc">Creating Usability with Motion</a>, by Willenskomer, I. 2017<br /><span class="outdent">• </span><a href="https://courseworks2.columbia.edu/files/16368867/download?download_frd=1">Chp. 5: Analytical Techniques</a> from Now You See It by Few, S. 2009.<br /><span class="outdent">• </span><a href="https://youtu.be/0fKBhvDjuy0">Powers of Ten</a> (video), Charles &amp; Ray Eames, 1977.<br /><span class="outdent">• </span><em>Optional: <a href="http://vis.berkeley.edu/papers/animated_transitions/2007-AnimatedTransitions-InfoVis.pdf">Animated Transitions in Statistical Data Graphics</a> by Heer, J. 2007.</em><br /></td>
+      <td> </td>
+      <td><a href="a5.html">A5.1 Final: Proposals</a> assigned<br /></td>
+      <td><a href="a4.html">A4 Interactive</a> DUE<br /></td>
+    </tr>
+    <tr>
+      <td>3/30</td>
+      <td><strong>Maps &amp; Narrative:</strong> projections; typography, rhythm; why storytelling, techniques. <br />⟨<a href="https://docs.google.com/presentation/d/1Ffo-P6F8hIJwJb6deYZ2CSY1ihGX6qFtc5dNsAodYRE/edit?usp=sharing">slides</a>⟩ <br />⟨<a href="https://forms.gle/GnuRbw4Lbw89zqmn6">quiz</a>⟩ <br />⟨<a href="https://forms.gle/RUbpfwFF9PsUZoc17">survey</a>⟩</td>
+      <td><span class="outdent">• </span><a href="https://www.youtube.com/watch?v=tuPjPaEcUKI">The Making of R2D3</a> (video) and <a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/">A Visual Introduction to Machine Learning</a> (viz) by Chu, T. 2016.<br /><span class="outdent">• </span><a href="https://distill.pub/2020/communicating-with-interactive-articles/">Communicating with Interactive Articles</a> by Hohman, Conlen, Heer, &amp; Chau, 2020.<br /><span class="outdent">• </span><a href="https://blog.datawrapper.de/choroplethmaps/">What to consider when creating choropleth maps</a> by Rost, L. C. 2017.<br /><span class="outdent">• </span><em>Optional: <a href="http://vis.stanford.edu/papers/narrative">Narrative Visualization: Telling Stories with Data</a> in IEEE Vis by Segal &amp; Heer, 2010.</em><br /><span class="outdent">• </span><em>Optional: <a href="http://michaelnielsen.org/reinventing_explanation/">Reinventing Explanation.</a> by Nielsen, M. 2014.</em><br /></td>
+      <td> </td>
+      <td><a href="a5.html">A5.2</a> assigned<br /></td>
+      <td><a href="a5.html">A5.1 Proposals</a> DUE<br /></td>
+    </tr>
+    <tr>
+      <td>4/6</td>
+      <td><em>Final Project In-progress Critique.</em> <br />Guest Critics: <a href="https://oldthingsnewplaces.com">Asad Pervaiz</a>, <a href="http://www.eugenewu.net/">Eugene Wu</a> <br />⟨<a href="https://docs.google.com/presentation/d/12xYCvVDHB-V4EYiwB1J2XspGGZnGsW-Dl6Kg8g4AWQY/edit?usp=sharing">slides</a>⟩</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><a href="a5.html">A5.2 In-Progress Presentation </a> DUE<br /></td>
+    </tr>
+    <tr>
+      <td>4/13</td>
+      <td><strong>Ethics, Dataviz in Industry vs. Research</strong>: between persuasion and misrepresentation; jobs, and guest lecture by <a href="http://www.cs.columbia.edu/~ewu/">Prof. Wu</a> on research.</td>
+      <td><span class="outdent">• </span><a href="https://courseworks2.columbia.edu/files/16368865/download?download_frd=1">Six Provocations for Big Data</a> by boyd &amp; Crawford, 2011<br /><span class="outdent">• </span><a href="https://medium.com/multiple-views-visualization-research-explained/what-is-visualization-research-what-should-it-be-8840a9ba658">What Is Visualization Research?</a> by Hullman, J.<br /><span class="outdent">• </span><em>Optional: <a href="https://urban-institute.medium.com/applying-racial-equity-awareness-in-data-visualization-bd359bf7a7ff">Applying Racial Equity Awareness in Data Visualization</a> by Urban Institute. 2020.</em><br /><span class="outdent">• </span><em>Optional: <a href="https://source.opennews.org/articles/connecting-dots/">Connecting with the Dots</a> by Harris, J. 2015.</em><br /><span class="outdent">• </span><em>Optional: <a href="https://medium.com/@Elijah_Meeks/what-is-a-senior-data-visualization-engineer-eb032996297">What is a Senior Data Visualization Engineer?</a> by Meeks, E. 2018.</em><br /></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4/20</td>
+      <td><strong>Final Critique</strong> <br />⟨<a href="https://docs.google.com/presentation/d/1bj4v0a6xeM8dD2QfT418J70eMmbe00nHWOWbKmVinS4/edit">slides</a>⟩</td>
+      <td><span class="outdent">• </span><a href="https://clio.columbia.edu/catalog/14286801">Visualization Analysis and Design</a> Chp 9: Networks and Trees by Munzner, T. 2014.<br /><span class="outdent">• </span><a href="https://vimeo.com/69497902">Pictures of Arguments, Songs, and Ancient Texts</a> (video, 1’30”–32’46”) by Viegas and Wattenberg, at Eyeo 2013.<br /><span class="outdent">• </span><a href="https://bost.ocks.org/mike/algorithms/">Visualizing Algorithms. </a> by Bostock, M. 2014.<br /><span class="outdent">• </span><em>Optional:</em> <a href="https://distill.pub/2016/handwriting/">Four Experiments in Handwriting with a Neural Network</a>. by Carter, S. et. al., 2016 <br /></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="ax.html">Extra Credit</a> DUE<br /></td>
+    </tr>
+    <tr>
+      <td>4/27</td>
+      <td><em>Final Project Showcase:</em> Brown Institute, Pulitzer Hall 4–6pm</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><a href="a5.html">A5.3 Lightning Talk</a> DUE<br /></td>
+    </tr>
+    <tr>
+      <td>5/8 MON</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><a href="a5.html">A5.4 Final Visualization</a> DUE<br /><a href="a5.html">A5.5 Final Documentation</a> DUE<br /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="past-semesters">Past semesters</h2>
+
+<ul>
+  <li><a href="/2022s_w4995/">Spring 2022</a></li>
+  <li><a href="/2021s_w4995/">Spring 2021</a></li>
+  <li><a href="/2020s_w4995/">Spring 2020</a></li>
+  <li><a href="/2019f_w4995/">Fall 2019</a></li>
+  <li><a href="/2019s_w4995">Spring 2019</a></li>
+  <li><a href="/2018f_w4995">Fall 2018</a></li>
+</ul>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.2/chroma.min.js" integrity="sha512-8TVPS0EFkkmtT6yPb5K4csnSt3tjbKRrs0F8gvTNKv2OxOcwDO7+Klkz86gMVrzfqtZos5N2a+k+r9D+hlccmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="/files/js/anim.js"></script>
+
+<style>
+  body {padding-top: 105px; }
+  h1{ margin-bottom: 1px; }
+  #idv-banner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  #idv-banner canvas{
+    width: 200px;
+    height: 200px;
+  }
+
+@media (max-width: 840px){
+  #idv-banner canvas:nth-child(4){ display:none; }
+}
+
+@media (max-width: 640px){
+  #idv-banner canvas{ width: 30vw; height: 30vw; }
+  body {padding-top: 75px; }
+  #idv-banner{margin-bottom: 15px; }
+}
+
+</style>
+
+<script>
+$(()=>{
+  const dpr = window.devicePixelRatio || 1,
+        w = 200, h = 200,
+        outdated = !!document.querySelector("nav .alert"),
+        grey = chroma.scale(['#eee', '#444']),
+        cubehelix = chroma.cubehelix().lightness([0.3,0.7]).rotations(-0.4).start(220),
+        palette = outdated ? grey : cubehelix
+
+  function reset(obj){
+    obj.canvas.width = obj.canvas.width
+    obj.ctx.fillStyle = 'black'
+    obj.ctx.scale(dpr, dpr)
+    return obj.ctx
+  }
+
+  function polar([cx, cy], angle, dist){
+    return [cx+Math.cos(angle/180*Math.PI) * dist, cy+Math.sin(angle/180*Math.PI) * dist]
+  }
+
+  let render = {
+    cube: function(a, b, c, d){
+      let ctx = reset(this)
+      let origin = [w/2, h],
+          right = polar(origin, -30, 100),
+          top = polar(origin, -90, 100),
+          left = polar(origin, -150, 100),
+          above = pt => polar(pt, -90, 100);
+
+      ctx.lineWidth = 2
+      ctx.strokeStyle = 'rgba(0,0,0,.1)'
+      ctx.fillStyle = '#f5f5f5'
+      ctx.beginPath()
+      ctx.moveTo(...origin)
+      ctx.lineTo(...right)
+      ctx.lineTo(...top)
+      ctx.lineTo(...left)
+      ctx.closePath()
+      ctx.fill()
+      ctx.stroke()
+
+      ctx.strokeStyle = 'rgba(0,0,0,.03)'
+      ctx.beginPath()
+      ctx.moveTo(...top)
+      ctx.lineTo(...above(top))
+      ctx.stroke()
+
+      ctx.lineWidth = 4
+      ctx.strokeStyle = palette(b)
+      ctx.beginPath()
+      let src = polar(origin, -150, 100*a)
+      let dst = polar(src, -30, 100*b)
+      ctx.moveTo(...src)
+      ctx.lineTo(...dst)
+      ctx.stroke()
+
+      ctx.strokeStyle = palette(a)
+      ctx.beginPath()
+      src = polar(origin, -30, 100*b)
+      dst = polar(src, -150, 100*a)
+      ctx.moveTo(...src)
+      ctx.lineTo(...dst)
+      ctx.stroke()
+
+      ctx.strokeStyle = palette(c)
+      ctx.beginPath()
+      let apex = polar(dst, -90, 100*c)
+      ctx.moveTo(...dst)
+      ctx.lineTo(...apex)
+      ctx.stroke()
+
+      ctx.fillStyle = palette(d)
+      ctx.lineWidth = 1
+      ctx.strokeStyle = 'white'
+      ctx.beginPath()
+      let r = 2 + 8*d
+      ctx.ellipse(...apex, r, r, 0, 0, 2*Math.PI)
+      ctx.fill()
+      ctx.stroke()
+
+      ctx.lineWidth = 2
+      ctx.strokeStyle = 'rgba(0,0,0,.1)'
+      ctx.beginPath()
+      ctx.moveTo(...left)
+      ctx.lineTo(...above(left))
+      ctx.lineTo(...above(top))
+      ctx.lineTo(...above(right))
+      ctx.lineTo(...right)
+      ctx.moveTo(...above(left))
+      ctx.lineTo(...top)
+      ctx.lineTo(...above(right))
+      ctx.moveTo(...top)
+      ctx.lineTo(...origin)
+      ctx.stroke()
+    },
+    treemap: function(a, b, c, d){
+      let ctx = reset(this),
+          upper = h * (a+b) / (a+b+c+d),
+          lower = h - upper,
+          umid = w * a / (a+b),
+          lmid = w * c / (c+d);
+
+      ctx.strokeStyle = 'white'
+      ctx.fillStyle = palette(a)
+      ctx.fillRect(0, 0, umid, upper)
+      ctx.strokeRect(0, 0, umid, upper)
+
+      ctx.fillStyle = palette(b)
+      ctx.fillRect(umid, 0, w-umid, upper)
+      ctx.strokeRect(umid, 0, w-umid, upper)
+
+      ctx.fillStyle = palette(c)
+      ctx.fillRect(0, upper, lmid, lower)
+      ctx.strokeRect(0, upper, lmid, lower)
+
+      ctx.fillStyle = palette(d)
+      ctx.fillRect(lmid, upper, w-lmid, lower)
+      ctx.strokeRect(lmid, upper, w-lmid, lower)
+    },
+    radial: function(a, b, c, d){
+      let ctx = reset(this)
+      ctx.lineWidth = 18
+
+      ctx.beginPath()
+      ctx.strokeStyle = palette(a)
+      ctx.ellipse(w/2, h/2, 30, 30, 0, 0, 2*Math.PI * a)
+      ctx.stroke()
+
+      ctx.beginPath()
+      ctx.strokeStyle = palette(b)
+      ctx.ellipse(w/2, h/2, 50, 50, 0, 0, 2*Math.PI * b)
+      ctx.stroke()
+
+      ctx.beginPath()
+      ctx.strokeStyle = palette(c)
+      ctx.ellipse(w/2, h/2, 70, 70, 0, 0, 2*Math.PI * c)
+      ctx.stroke()
+
+      ctx.beginPath()
+      ctx.strokeStyle = palette(d)
+      ctx.ellipse(w/2, h/2, 90, 90, 0, 0, 2*Math.PI * d)
+      ctx.stroke()
+
+    },
+    blots: function(a, b, c, d){
+      let ctx = reset(this)
+      var [sa, sb, sc, sd] = [a, b, c, d].map(x => x*.23*w)
+
+      ctx.fillStyle = palette(a)
+      ctx.beginPath()
+      ctx.ellipse(w*.25, h*.25, sa, sa, 0, 0, 2*Math.PI)
+      ctx.fill()
+
+      ctx.fillStyle = palette(b)
+      ctx.beginPath()
+      ctx.ellipse(w*.75, h*.25, sb, sb, 0, 0, 2*Math.PI)
+      ctx.fill()
+
+      ctx.fillStyle = palette(c)
+      ctx.beginPath()
+      ctx.ellipse(w*.25, h*.75, sc, sc, 0, 0, 2*Math.PI)
+      ctx.fill()
+
+      ctx.fillStyle = palette(d)
+      ctx.beginPath()
+      ctx.ellipse(w*.75, h*.75, sd, sd, 0, 0, 2*Math.PI)
+      ctx.fill()
+    },
+    // swatches: function(a, b, c, d){
+    //   let ctx = reset(this)
+    //   var [sa, sb, sc, sd] = [a, b, c, d].map(x => x*.48)
+    //   ctx.fillStyle = palette(a)
+    //   ctx.fillRect(0, 0, w*sa, h*sa)
+    //   ctx.fillStyle = palette(b)
+    //   ctx.fillRect(w/2, 0, w*sb, h*sb)
+    //   ctx.fillStyle = palette(c)
+    //   ctx.fillRect(0, h/2, w*sc, h*sc)
+    //   ctx.fillStyle = palette(d)
+    //   ctx.fillRect(w/2, h/2, w*sd, h*sd)
+    // },
+    // bars: function(a, b, c, d){
+    //   let ctx = reset(this)
+    //   ctx.fillStyle = palette(a)
+    //   ctx.fillRect(0, h, w*.2, -h*a)
+    //   ctx.fillStyle = palette(b)
+    //   ctx.fillRect(w*.25, h, w*.2, -h*b)
+    //   ctx.fillStyle = palette(c)
+    //   ctx.fillRect(w*.5, h, w*.2, -h*c)
+    //   ctx.fillStyle = palette(d)
+    //   ctx.fillRect(w*.75, h, w*.2, -h*d)
+    // },
+  }
+
+  if (outdated){
+    $("#idv-banner").css('marginTop', 60)
+  }
+
+  const demo = Object.fromEntries(Object.keys(render).map(mode => {
+    let canvas = $('<canvas>')
+      .attr('class', mode)
+      .attr('width',w*dpr)
+      .attr('height',h*dpr)
+      .appendTo('#idv-banner')
+      .get(0)
+    return [mode, render[mode].bind({canvas, ctx:canvas.getContext("2d")})]
+  }))
+
+  let last = _.range(4).map(() => Math.random())
+  let next = last
+  const redraw = (pct=0) => {
+    let [a, b, c, d] = _.zip(last, next).map(([src, dst]) => src + pct * (dst-src))
+    for (const mode in demo){
+      demo[mode](a, b, c, d)
+    }
+  }
+  redraw()
+
+  const update = () => {
+    last = next
+    next = _.range(4).map(_ => Math.random())
+    tween({ dur:10000, ease:"easeInOutSine", precision:15, step:redraw, complete:() => {setTimeout(update, 750)} })
+  }
+  update()
+
+})
+</script>
+
+
+
+  		<footer class="page-footer font-small">
+  			<div class="footer-copyright py-3">
+  				W4995.012 Columbia University Computer Science<br>
+  				🙌 <a href="http://agneschang.net/">Agnes Chang</a>, with thanks to
+  				<a href="http://people.ischool.berkeley.edu/~hearst/">Marti</a> +
+  				UW <a href="https://courses.cs.washington.edu/courses/cse512/18sp/">CSE512</a>.
+  			</div>
+  		</footer>
+    </div>
+</body>

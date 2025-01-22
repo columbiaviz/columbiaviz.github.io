@@ -1,0 +1,703 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body style="padding: 0px; margin: 0px; width:100%">
+
+
+
+<div class="largeheader centered splitafter">
+		<div class="deco">COLUMBIA UNIVERSITY COMS W6998</div>
+    <div class="title"><a href="./" style="color:black;">SYSTEMS FOR HUMAN DATA INTERACTION</a></div>
+</div>
+
+
+
+
+<div class="container container-fluid" >
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-8 col-md-offset-2">
+		<h1 id="readings">Readings</h1>
+
+<p>You are expected to write and submit a paper review of the readings before each class, and answer some questions about the readings.  The review should be akin to a conference paper review.  The purpose of the readings is to provide an illustrative example of the research area.  You are encouraged but not required to read the supplemental readings to better understand the materials.</p>
+
+<p>You can discuss questions and ask for clarifications with your colleagues and/or on piazza.  You are expected to formulate your own opinion of the reading(s) and write the review yourself.  See for a description of what we expect in paper reviews.</p>
+
+<p>We may select a random review to read and discuss in class.  This serves to highlight important characteristics of reading papers and writing good reviews.</p>
+
+<h4 id="submission">Submission</h4>
+
+<p>Overview</p>
+
+<ul>
+  <li>Reviews are due <strong>11:59PM EST the night before lecture</strong>.</li>
+  <li>Late submissions are given a score of 0 without prior approval.</li>
+  <li>You may miss submissions for up to <strong>3 classes</strong>.</li>
+  <li>To submit, <a href="https://github.com/columbiaviz/2021f-systemshdi/wiki"><strong>go to the class wiki</strong></a> and click on the appropriate topic</li>
+</ul>
+
+<h4 id="reading-tips">Reading Tips</h4>
+
+<p>Ask the following questions while readings</p>
+
+<ul>
+  <li>Context
+    <ul>
+      <li>What are the actual hypotheses?</li>
+      <li>What was the unmet need or opportunity?  Does it make sense?</li>
+      <li>What were existing approaches and why do they work or not work?</li>
+      <li>What is the simplest example that highlights the problem that this approach works best for?</li>
+    </ul>
+  </li>
+  <li>Approach
+    <ul>
+      <li>When does the approach work?  Assess the underlying assumptions.</li>
+      <li>How well does the evaluation validate the core hypotheses/claims?
+        <ul>
+          <li>Do you believe their results?</li>
+          <li>Are the results presented well?</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>How to read papers</p>
+
+<ul>
+  <li><a href="https://dl.acm.org/doi/pdf/10.1145/1273445.1273458">How to Read a Paper - S. Keshav</a></li>
+  <li><a href="https://arxiv.org/pdf/1806.09525.pdf">How to Read a Research Compendium - Nüst et al.</a></li>
+</ul>
+
+<p>How to review papers</p>
+
+<ul>
+  <li><a href="https://homes.cs.washington.edu/~mernst/advice/review-antipatterns-devanbu.txt">Review AntiPatterns (written for FSE 14 PC)</a></li>
+  <li><a href="https://ori.hhs.gov/sites/default/files/prethics.pdf">Ethics of Peer Review</a></li>
+  <li><a href="https://sigmodrecord.org/publications/sigmodRecord/0812/p100.open.cormode.pdf">How NOT to review a paper</a></li>
+  <li><a href="https://homes.cs.washington.edu/~tom/support/confreview.pdf">Conference Reviewing Considered Harmful</a>: A view on how reviewing works in practice.</li>
+</ul>
+
+<h4 id="background">Background</h4>
+
+<p>Background you should be comfortable with</p>
+
+<ul>
+  <li><a href="https://en.m.wikipedia.org/wiki/Relational_algebra">Relational algebra</a> and <a href="https://www.postgresql.org/docs/9.5/static/sql-select.html">SQL</a></li>
+  <li><a href="http://web.stanford.edu/class/cs345d-01/rl/chaudhuri98.pdf">Cost-based optimization</a></li>
+  <li>A good video series is the <a href="https://www.youtube.com/watch?v=D-k-h0GuFmE&amp;list=PLroEs25KGvwzmvIxYHRhoGTz9w8LeXek0&amp;ab_channel=StanfordDbclass">Stanford Database Lectures by Jennifer Widom</a></li>
+  <li>All of the materials for Professor Wu’s 4111 are on <a href="https://w4111.github.io/">https://w4111.github.io</a></li>
+  <li>An advanced video series is the <a href="https://www.youtube.com/watch?v=oeYBdghaIjc&amp;list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi&amp;ab_channel=CMUDatabaseGroup">CMU Introduction to Databases by Andy Pavlo</a>, it covers more of the systems side.</li>
+</ul>
+
+<p>Visualization Classics</p>
+
+<ul>
+  <li><a href="https://scholar.google.com/scholar?hl=en&amp;q=2.+Tukey%2C+John+W.+Exploratory+Data+Analysis.+1979">Tukey, John W. Exploratory Data Analysis. 1979</a></li>
+</ul>
+
+<p>Surveys</p>
+
+<ul>
+  <li><a href="https://scholar.google.com/scholar?q=Making+Database+Systems+Usable">Making Database Systems Usable</a></li>
+  <li><a href="http://stratos.seas.harvard.edu/files/stratos/files/exploration-tutorial.pdf">Overview of Data Exploration Techniques</a></li>
+</ul>
+
+<h1 id="the-papers">The Papers</h1>
+
+<h4 id="intro"><a name="general"></a>Intro</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Optional: Jeanette Wing <a href="https://hdsr.mitpress.mit.edu/pub/577rq08d/release/3">The Data Lifecycle</a></li>
+  <li>Optional: JCR Licklider <a href="http://worrydream.com/refs/Licklider%20-%20Man-Computer%20Symbiosis.pdf">Man-Computer Symbiosis</a></li>
+  <li>Optional: Tamara Munzner <a href="https://www-taylorfrancis-com.ezproxy.cul.columbia.edu/books/9780429088902">(Textbook) Visualization Analysis and Design</a></li>
+  <li>Optional: Jeffrey Heer <a href="https://www.pnas.org/content/pnas/116/6/1844.full.pdf">Agency plus automation: Designing artificial intelligence into interactive systems</a></li>
+  <li>Optional: Kristi Morton et al. <a href="http://www.vldb.org/pvldb/vol7/p453-morton.pdf">Support the Data Enthusiast: Challenges for Next-generation Data-analysis Systems</a></li>
+</ul>
+
+<p><a name="tasks"></a></p>
+<h4 id="vis-tasks">Vis: Tasks</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Required: Matthew Brehmer, Tamara Munzner <a href="https://www.cs.ubc.ca/labs/imager/tr/2013/MultiLevelTaskTypology/brehmer_infovis13.pdf">A Multi-Level Typology of Abstract Visualization Tasks</a>
+    <ul>
+      <li>Her talk <a href="https://www.cs.ubc.ca/~tmm/talks/chinavis20/vinci21.pdf">Problem-Driven Visualization Through Design Studies</a> contains more examples that motivate the typology.</li>
+    </ul>
+  </li>
+  <li>Optional: Heer, Shneiderman <a href="https://queue.acm.org/detail.cfm?id=2146416">Interactive Dynamics for Visual Analysis</a></li>
+  <li>Optional: Ben Shneiderman <a href="https://www.cs.umd.edu/~ben/papers/Shneiderman1996eyes.pdf">The Eyes Have It</a></li>
+</ul>
+
+<p><a name="grammars"></a></p>
+<h4 id="vis-languages">Vis: Languages</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Required: Chris Stolte et al. <a href="http://graphics.stanford.edu/papers/polaris_extended/polaris.pdf">Polaris</a>
+    <ul>
+      <li>Focus on the layout algebra</li>
+    </ul>
+  </li>
+  <li>Required: VizQL algebra are in <a href="http://graphics.stanford.edu/papers/cstolte_thesis/thesis.pdf">Chapter 4 of Stolte’s thesis</a></li>
+  <li>Optional: Pu and Kay <a href="https://osf.io/dy8qv/">Probabilistic Grammar of Graphics</a></li>
+  <li>Optional: Aidan Slingsby, Jason Dykes, Jo Wood <a href="https://openaccess.city.ac.uk/id/eprint/158/1/Configuring_Hierarchical_Layouts_to_Address_Research_Questions.pdf">Configuring Hierarchical Layouts to Address Research Questions</a>
+    <ul>
+      <li>Website with <a href="https://www.gicentre.net/hive">syntax documentation</a></li>
+    </ul>
+  </li>
+  <li>Optional: Wickham and Hofmann <a href="https://vita.had.co.nz/papers/prodplots.pdf">Product Plots</a></li>
+  <li>Optional: Arvind Satyanarayan et al. <a href="http://idl.cs.washington.edu/papers/vega-lite">Vega-Lite: A Grammar of Interactive Graphics</a></li>
+  <li>Optional: Hadley Wickham <a href="http://vita.had.co.nz/papers/layered-grammar.pdf">A Layered Grammar of Graphics</a> Sections 1-3. 
+ <a href="https://ggplot2.tidyverse.org/">documentation</a>.
+ <a href="https://ggplot2-book.org/">ggplot2 book</a></li>
+</ul>
+
+<!--
+* Emanuel Zgraggen et al. [(s/q)ueries: Visual Regular Expressions for Querying and Exploring Event Sequences](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/chi2015-squeries.pdf)
+-->
+
+<p><a name="interactions"></a></p>
+<h4 id="vis-interaction-design">Vis: Interaction Design</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Required: Michel Beaudouin-Lafon.  <a href="https://www.dropbox.com/s/bteajeub18durwe/michel%20-%20instrumental%20interaction.pdf?dl=0">Instrumental Interaction</a></li>
+  <li>Required: Heer and Shneiderman. <a href="https://queue.acm.org/detail.cfm?id=2146416">Interaction Dynamics for Visual Analytics</a></li>
+  <li>Optional: Arvind Satyanarayan et al. <a href="http://idl.cs.washington.edu/papers/vega-lite">Vega-Lite: A Grammar of Interactive Graphics</a></li>
+  <li>Optional: Dimara and Perin.  <a href="https://hal.archives-ouvertes.fr/hal-02197062/document">What is Interaction for Data Visualization?</a></li>
+  <li>Optional: Bahador Saket et al. <a href="https://bahadorsaket.com/publication/infovis2019.pdf">Investigating Direct Manipulation of Graphical Encodings as a Method for User Interaction</a>
+(<a href="https://vimeo.com/327476247">Liger demo video</a>)</li>
+  <li>Optional: Ali Sarvghad et al. <a href="https://bahadorsaket.com/publication/EMS.pdf">Embedded Merge &amp; Split: Visual Adjustment of Data Grouping</a></li>
+</ul>
+
+<!--
+* Optional: Miro Mannino and Azza Abouzied. [Expressive Time Series Querying with Hand-Drawn Scale-Free Sketches](http://doi.acm.org/10.1145/3173574.3173962)
+-->
+
+<p><a name="perception"></a></p>
+<h4 id="vis-perception">Vis: Perception</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Required: Talbot et al. <a href="/files/papers/talbot - 4 experiments.pdf">Four Experiments on the Perception of Bar Charts</a></li>
+  <li>Optional: Jeff Heer et al.  <a href="http://vis.stanford.edu/files/2010-MTurk-CHI.pdf">Crowdsourcing graphical perception: using mechanical turk to assess visualization design</a></li>
+  <li>Optional: Cleveland and Mcgill (the classic 1985 paper) <a href="https://www.jstor.org/stable/pdf/1695272.pdf">Graphical Perception and Graphical Methods for Analyzing Scientific Data</a></li>
+  <li>Optional: Gordon Kindlmann et al.  <a href="http://algebraicvis.net/assets/paper.pdf">An Algebraic Process for Visualization Design</a></li>
+  <li>Optional: McColeman et al. <a href="https://arxiv.org/pdf/2107.11367.pdf">Rethinking the Ranks of Visual Channels</a></li>
+  <li>Optional: Burns et al. <a href="https://visualthinking.psych.northwestern.edu/publications/BurnsLevels2020.pdf">How to evaluate vis across different levels of understanding</a></li>
+  <li>Optional: Zhicheng Liu and Jeffrey Heer. <a href="http://idl.cs.washington.edu/papers/latency">The Effects of Interactive Latency on Exploratory Visual Analysis</a></li>
+  <li>Optional: Ryan et al. <a href="http://www.cs.tufts.edu/~remco/publications/2018/InfoVis2018-Entropy.pdf">At a glance: pixel approximate entropy as a measure of line chart complexity</a></li>
+  <li>Optional: Jardine et al. <a href="https://osf.io/ykmt7/download?format=pdf">Perceptual Proxies of Visual Comparison</a></li>
+</ul>
+
+<p><a name="cognition"></a></p>
+<h4 id="vis-cognition">Vis: Cognition</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Required: Kim, YS., Walls, L., Krafft, P., and Hullman, J. <a href="https://mucollective.northwestern.edu/files/2019-BayesianVis-CHI.pdf">A Bayesian Cognition Approach to Improve Data Visualization</a></li>
+  <li>Optional: In Kwon Choi, Taylor Childers, Nirmal R., Swati Mishra, Kyle Harris, Khairi Reda.  <a href="https://khreda.com/papers/chi19-concept-driven-vis.pdf">Concept-driven visual analytics: Hypothesis Based Reasoning</a></li>
+  <li>Optional: Kale et al. <a href="http://users.eecs.northwestern.edu/~jhullman/hops_jobs_pfs.pdf">Hypothetical Outcome Plots Help Untrained Observers Judge Trends in Ambiguous Data</a></li>
+</ul>
+
+<p><a name="design"></a></p>
+<h4 id="vis-design-recommendation">Vis: Design Recommendation</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Required: Jock D. Mackinlay et al. <a href="https://research.tableau.com/sites/default/files/200711-infovis-showme.pdf">Show Me: Automatic Presentation for Visual Analysis</a></li>
+  <li>Optional: referenced in A2
+    <ul>
+      <li>Dominik Moritz et al. <a href="https://idl.cs.washington.edu/files/2019-Draco-InfoVis.pdf">Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco</a></li>
+      <li>Kanit Wongsuphasawat et al. <a href="http://www.cs.tufts.edu/comp/250VIS/papers/2015-Voyager-InfoVis.pdf">Voyager: Exploratory analysis via faceted browsing of visualization recommendations</a></li>
+      <li>Lee et al. <a href="https://arxiv.org/pdf/2105.00121.pdf">Lux: Always-on Vis Recommendations</a></li>
+    </ul>
+  </li>
+  <li>Optional: Zong et al. <a href="http://vis.csail.mit.edu/pubs/lyra2">Lyra 2: Designing Interactive Visualizations by Demonstration</a></li>
+  <li>Optional: Bahador Saket et al. <a href="https://arxiv.org/pdf/1807.06641.pdf">Beyond Heuristics: Learning Visualization Design</a></li>
+  <li>Optional: Chenglong Wang et al. <a href="https://arxiv.org/abs/1911.09668">Visualization By Example</a></li>
+  <li>Optional: Manasi Vartak et al. <a href="http://www.vldb.org/pvldb/vol8/p2182-vartak.pdf">SeeDB: efficient data-driven visualization recommendations to support visual analysis.</a></li>
+  <li>Optional: Qian et al. <a href="https://dl.acm.org/doi/pdf/10.1145/3447548.3467224">Learning to Recommend Visualizations from Data</a></li>
+</ul>
+
+<p><a name="multiverse"></a></p>
+<h4 id="multiverse-analysis">Multiverse Analysis</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Jun et al. <a href="http://tea-lang.org/index_files/tea_UIST2019.pdf">Tea: Automated Statistical Analysis</a>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=BpYP7U7y77s&amp;ab_channel=ACMSIGCHI">Watch the talk</a></li>
+    </ul>
+  </li>
+  <li>Liu et al. <a href="https://arxiv.org/pdf/2007.05551.pdf">Boba: Authoring and Visualizing Multiverse Analyses</a><br />
+(builds on <a href="https://dl.acm.org/doi/pdf/10.1145/3313831.3376533">Paths Explored, Paths Omitted</a>)</li>
+  <li>Dragicevic et al. <a href="https://dl.acm.org/doi/pdf/10.1145/3290605.3300295">Increasing the Transparency of Research Papers with Explorable Multiverse Analyses</a>
+    <ul>
+      <li><a href="https://explorablemultiverse.github.io/">See their interactive demo</a></li>
+    </ul>
+  </li>
+  <li>Gelman and Loken <a href="http://www.stat.columbia.edu/~gelman/research/unpublished/forking.pdf">Garden of Forking Paths</a></li>
+  <li>Sedlmair et al <a href="http://eprints.cs.univie.ac.at/4162/2/Visual_Parameter_Space_Amalysis.pdf">Visual Parameter Space Analysis</a></li>
+</ul>
+
+<p><a href="models"></a></p>
+<h4 id="data-models">Data Models</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Required: Mike Stonebraker, Joe Hellerstein <a href="https://people.cs.umass.edu/~yanlei/courses/CS691LL-f06/papers/SH05.pdf">What Goes Around Comes Around</a></li>
+  <li>Fotis Psallidas, Eugene Wu <a href="https://www.dropbox.com/s/fkp5hk1gp4lrg9h/smoke-hilda18.pdf?dl=0">Provenance for Interactive Visualizations</a></li>
+  <li><a href="https://arxiv.org/pdf/1601.00182.pdf">Cohort Query Processing</a></li>
+</ul>
+
+<p><a name="dbvis"></a></p>
+<h4 id="data-interfaces-from-a-data-perspective">Data Interfaces from a Data Perspective</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Required: Wu et al <a href="http://sirrice.github.io/files/papers/ermac-vldb14.pdf">Case for Data Visualization Management System</a></li>
+  <li>Required: Moritz et al <a href="https://www.domoritz.de/papers/2015-DynamicPartitioning-DSIA.pdf">Dynamic Client-Server Optimization for Scalable Interactive Visualization on the Web</a></li>
+  <li>Optional: <a href="https://arxiv.org/pdf/2007.15904.pdf">Kyrix-S: Authoring Scalable Scatterplot Visualizations of Big Data</a></li>
+  <li>Optional: <a href="https://vita.had.co.nz/papers/bigvis.pdf">Bin-Summarize-Smooth</a></li>
+  <li>Optional: Heer and Agrawala <a href="https://cs598.github.io/papers/collab-vis.pdf">Design considerations for collaborative visual analytics</a></li>
+</ul>
+
+<h4 id="performance-and-engines"><a name="perf"></a>Performance and Engines</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Required: Leilani Battle and Carlos Scheidegger <a href="http://hdc.cs.arizona.edu/papers/infovis_2020_dbsurvey.pdf">A Structured Review of Data Management Technology for Interactive Visualization and Analysis</a></li>
+  <li>Optional: <a href="https://w6113.github.io/files/papers/cstore-vldb05.pdf">C-Store: A Column-oriented DBMS</a></li>
+</ul>
+
+<h4 id="performance-approximation-and-precomputation"><a name="aqp"></a>Performance: Approximation and Precomputation</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Required: Sameer Agarwal et al. <a href="https://sameeragarwal.github.io/blinkdb_eurosys13.pdf">BlinkDB: Queries with Bounded Errors and Bounded Response Times on Very Large Data</a></li>
+  <li>Required: Zhicheng Liu et al. <a href="http://vis.stanford.edu/files/2013-imMens-EuroVis.pdf">imMens: real-time visual querying of big data</a></li>
+  <li>Approximation
+    <ul>
+      <li>Optional: Dominik Moritz, et al. <a href="http://doi.acm.org/10.1145/3025453.3025456">Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data</a></li>
+      <li>Optional: Bolin Ding et al. <a href="http://doi.acm.org/10.1145/2882903.2915249">Sample + Seek: Approximating Aggregates with Distribution Precision Guarantee</a></li>
+      <li>Optional: Alabi, Daniel and Eugene Wu. <a href="http://sirrice.github.io/files/papers/pfunk-hilda16.pdf">PFunk-H: approximate query processing using perceptual models</a></li>
+      <li>Optional: Feifei Li et al. <a href="https://www.cse.ust.hk/~yike/sigmod16.pdf">Wander Join: Online Aggregation via Random Walks</a></li>
+      <li>Optional: <a href="https://dl.acm.org/doi/pdf/10.1145/3183713.3196905">VerdictDB: Universalizing Approximate Query Processing</a></li>
+    </ul>
+  </li>
+  <li>Precomputation
+    <ul>
+      <li>Optional: Niranjan Kamat et al. <a href="https://arnab.org/files/dice.nandi_.pdf">Distributed and interactive cube exploration</a></li>
+      <li>Optional: Wenbo Tao et al. <a href="http://hci.stanford.edu/~cagatay/projects/kyrix/Kyrix-EuroVis19.pdf">Kyrix: Interactive Pan/Zoom Visualizations at Scale</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="performance-columnar-execution"><a name="colstore"></a>Performance: Columnar Execution</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Required: <a href="https://stratos.seas.harvard.edu/files/stratos/files/columnstoresfntdbs.pdf">Column Store Survey</a> Chapters 1, Sections 3.1-3.2, Sections 4.1, 4.2 (skip 4.2.1-5), Skim 4.4.</li>
+  <li>Optional: <a href="https://w6113.github.io/files/papers/cstore-vldb05.pdf">C-Store: A Column-oriented DBMS</a></li>
+  <li>Optional: Richard Wesley et al.  <a href="https://research.tableau.com/paper/leveraging-compression-tableau-data-engine">Leveraging Compression in the Tableau Data Engine</a></li>
+</ul>
+
+<!--
+#### <a name="precomp"/>Performance: Precomputation
+-->
+
+<h4 id="performance-physical-design"><a name="miscperf"></a>Performance: Physical Design</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Required: <a href="https://www.dropbox.com/s/i6dngaqr1xyo9fg/pvd-sigmod20demo-cr.pdf?dl=0">Physical Visualization Design (short paper)</a></li>
+  <li>Required: <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2006/01/deb.pdf">Sanjay Agrawal, Nicolas Bruno, Surajit Chaudhuri, Vivek Narasayya</a></li>
+</ul>
+
+<p>Optional Readings</p>
+
+<ul>
+  <li>Lineage
+    <ul>
+      <li>Fotis Psallidas et al. <a href="https://arxiv.org/abs/1801.07237">Smoke: Fine-grained Lineage at Interactive Speed</a></li>
+    </ul>
+  </li>
+  <li>Communication
+    <ul>
+      <li>Jugel, Uwe et al. <a href="http://www.vldb.org/pvldb/vol7/p797-jugel.pdf">M4: A Visualization-Oriented Time Series Data Aggregation</a></li>
+      <li>Haneen Mohammed, Ziyun Wei, Ravi Netravali, Eugene Wu <a href="https://arxiv.org/pdf/2007.07858.pdf">Continuous Prefetch for Interactive Data Applications</a></li>
+    </ul>
+  </li>
+  <li>Multi-query Optimization
+    <ul>
+      <li>Georgios Giannikis et al. <a href="http://www.vldb.org/pvldb/vol7/p429-giannikis.pdf">Shared Workload Optimization</a></li>
+      <li>Marcin Zukowski et al. <a href="http://www.vldb.org/conf/2007/papers/research/p723-zukowski.pdf">Cooperative Scans: Dynamic Bandwidth Sharing in a DBMS</a></li>
+      <li>Roee Ebenstein, et al. <a href="https://dl.acm.org/citation.cfm?id=2882945">FluxQuery: An Execution Framework for Highly Interactive Query Workloads</a></li>
+    </ul>
+  </li>
+  <li>Compression
+    <ul>
+      <li>Richard Wesley et al.  <a href="https://research.tableau.com/paper/leveraging-compression-tableau-data-engine">Leveraging Compression in the Tableau Data Engine</a></li>
+    </ul>
+  </li>
+  <li>Effects of poor performance
+    <ul>
+      <li>Kelly Mack et al. <a href="https://arxiv.org/pdf/1801.03829.pdf">Characterizing Scalability Issues in Spreadsheet Software Using Online Forums</a></li>
+    </ul>
+  </li>
+  <li>Sampling
+    <ul>
+      <li>Edward Gan et al. <a href="http://www.vldb.org/pvldb/vol11/p1647-gan.pdf">Moment-based Quantile Sketches for Efficient High Cardinality Aggregation Queries</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="modalities-voice-and-natural-language"><a name="voice"></a>Modalities: Voice and Natural Language</h4>
+
+<ul>
+  <li>One of the following is required:
+    <ul>
+      <li>Immanuel Trummer <a href="http://cidrdb.org/cidr2019/papers/p39-trummer-cidr19.pdf">Data Vocalization with CiceroDB</a></li>
+      <li>Narechania et al <a href="https://arxiv.org/pdf/2008.10723.pdf">NL4DV: Toolkit for Generating Analytic Specs for Data Vis from Natural Language Queries</a></li>
+    </ul>
+  </li>
+  <li>Optional: Vraj Shah et al. <a href="https://adalabucsd.github.io/papers/TR_2019_SpeakQL_v2.pdf">SpeakQL: Towards Speech-driven Multimodal Querying of Structured Data</a></li>
+  <li>Optional: Christopher Baik et al.  <a href="https://arxiv.org/pdf/1902.00031.pdf">Bridging the Semantic Gap with SQL Query Logs in Natural Language Interfaces to Databases</a></li>
+  <li>Optional: Jimmy Lin <a href="https://www.youtube.com/watch?v=8K1kCxz7Iro">ICDE 21 Keynote: The Attack of the Muppets!</a></li>
+</ul>
+
+<h4 id="modalities-spreadsheets"><a name="spreadsheet"></a>Modalities: Spreadsheets</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Required: Eirik Bakke et al. <a href="https://people.csail.mit.edu/ebakke/research/sieuferd_sigmod2016.pdf">Expressive Query Construction through Direct Manipulation of Nested Relational Results</a></li>
+  <li>Optional: Bendre et al. <a href="https://people.eecs.berkeley.edu/~adityagp/papers/data-spread-demo.pdf">Dataspread: Unifying Databases and Spreadsheets</a></li>
+  <li>Optional: Lyn Bartram, Michael Correll, and Melanie Tory <a href="https://arxiv.org/pdf/2106.15005.pdf">Untidy Data: The Unreasonable Effectiveness of Tables</a></li>
+  <li>Optional: <a href="https://sdg.csail.mit.edu/projects/espalier/">Espalier/Object Spreadsheets</a></li>
+</ul>
+
+<h4 id="modalities-additional-modalities">Modalities: Additional Modalities</h4>
+
+<p>Optional Reading</p>
+
+<ul>
+  <li>Codi Burley et al. <a href="http://cidrdb.org/cidr2019/papers/p93-burley-cidr19.pdf">ARQuery: Hallucinating Analytics over Real-World Data using Augmented Reality</a></li>
+  <li>Willett et al.  <a href="https://hal.inria.fr/hal-01377901/file/embedded-data-representations.pdf">Embedded Data Representations</a></li>
+</ul>
+
+<h4 id="modalities-touch-and-gesture"><a name="touch"></a>Modalities: Touch and Gesture</h4>
+
+<ul>
+  <li>Required: Arnab Nandi, Lilong Liang, Michael Mandel <a href="https://scholar.google.com/scholar?q=gestural+query+specification">Gestural Query Specification</a></li>
+  <li>Optional: Kenrick Kin, Björn Hartmann, Tony DeRose, Maneesh Agrawala <a href="http://vis.berkeley.edu/papers/proton/">Proton: Multitouch Gestures as Regular Expressions</a></li>
+  <li>Optional: <a href="https://hal.inria.fr/hal-00717203/file/Lee_2012_BMA.pdf">Beyond Mouse and Keyboard: Expanding Design Considerations for Information Visualization Interactions</a></li>
+  <li>Optional: <a href="http://www.vldb.org/pvldb/vol8/p2024-crotty.pdf">VizDOM</a></li>
+  <li>Optional: <a href="http://www-cs-students.stanford.edu/~adityagp/courses/cs598/papers/dbtouch.pdf">DBTouch</a></li>
+</ul>
+
+<h4 id="tasks-comparison"><a name="clean"></a>Tasks: Comparison</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Required: Wu et al. <a href="https://www.dropbox.com/s/bg5nggs681qttjf/compalgebra-vis22-revision-v4.pdf?dl=0">VCA: View Composition Algebra</a></li>
+  <li>Optional: Michael Gleicher <a href="https://graphics.cs.wisc.edu/Papers/2018/Gle18/viscomp.pdf">Considerations for Visualizing Comparison</a></li>
+</ul>
+
+<h4 id="tasks-data-extraction"><a name="clean"></a>Tasks: Data Extraction</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Required: Sean Kandel et al. <a href="http://doi.acm.org/10.1145/1978942.1979444">Wrangler: Interactive Visual Specification of Data Transformation Scripts</a></li>
+  <li>Required: Maeda Hanafi et al. <a href="https://hilda.io/2019/proceedings/HILDA2019_paper_8.pdf">Texture: A Collaborative Framework for Structure Identification over Print Documents</a></li>
+  <li>Optional: Sumit Gulwani. <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/12/popl11-synthesis.pdf">Automating String Processing in Spreadsheets Using Input-output Examples</a></li>
+  <li>Optional: Maeda F. Hanafi et al. <a href="https://dl.acm.org/doi/pdf/10.1145/3025453.3025540?download=true">SEER: Auto-Generating Information Extraction Rules from User-Specified Examples</a></li>
+  <li>Optional: Mikael Mayer et al. <a href="http://doi.acm.org/10.1145/2807442.2807459">User Interaction Models for Disambiguation in Programming by Example</a></li>
+  <li>Optional: Eric Horvitz. <a href="http://doi.acm.org/10.1145/302979.303030">Principles of Mixed-initiative User Interfaces</a></li>
+  <li>Optional: Jeffrey Heer, et al. <a href="https://idl.cs.washington.edu/files/2015-PredictiveInteraction-CIDR.pdf">Predictive Interaction for Data Transformation</a></li>
+</ul>
+
+<h4 id="tasks-event-analysis"><a name="events"></a>Tasks: Event Analysis</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Required: Guo et al. <a href="https://arxiv.org/pdf/2006.14291.pdf">Survey on Visual Analysis of Event Sequence Data</a></li>
+  <li>Required (skim): <a href="https://en.m.wikipedia.org/wiki/Frequent_pattern_discovery">Frequent Pattern Mining</a></li>
+  <li>Optional: Kerr et al. <a href="https://www.zcliu.org/coreflow/">Core Flow</a></li>
+  <li>Optional: Wang et al. <a href="https://www.zcliu.org/vmsp/">Patterns and Sequences: Interactive Exploration of Clickstream Data</a></li>
+  <li>Optional: Wu et al. <a href="http://sirrice.github.io/files/papers/sase-sigmod06.pdf">High Performance Complex Event Processing Over Streams</a></li>
+</ul>
+
+<h4 id="tasks-data-cleaning"><a name="clean"></a>Tasks: Data Cleaning</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Optional: Sean Kandel et al. <a href="http://vis.stanford.edu/files/2012-Profiler-AVI.pdf">Profiler: Integrated Statistical Analysis and Visualization for Data Quality Assessment</a></li>
+  <li>Optional: Jie Song et al. <a href="https://dl.acm.org/doi/pdf/10.1145/3183713.3193546">GeoFlux: Hands-Off  Data IntegrationLeveraging Join Key Knowledge</a></li>
+  <li>Optional: Sanjay Krishnan et al. <a href="http://www.vldb.org/pvldb/vol9/p948-krishnan.pdf">ActiveClean: Interactive Data Cleaning For Statistical Modeling</a></li>
+</ul>
+
+<!--* Archana Ganapathi, Yanpei Chen [Data Quality: Experiences and Lessons from Operationalizing Big Data](http://yanpeichen.com/professional/IEEE_Big_Data_2016_Data_Quality.pdf)-->
+
+<h4 id="tasks-automation"><a name="automation"></a>Tasks: Automation</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Pablo Estevez et al. <a href="https://blog.acolyer.org/2019/10/07/150-successful-machine-learning-models/">150 successful machine learning models: 6 lessons learned at Booking.com</a></li>
+  <li>Shan Carter, Michael Nielsen <a href="https://distill.pub/2017/aia/">Using Artificial Intelligence to Augment Human Intelligence</a></li>
+</ul>
+
+<h4 id="-tasks-debugging-and-interpretable-ml"><a name="debugml"></a> Tasks: Debugging and Interpretable ML</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Required: (Skim) Chris Olah et al. <a href="https://distill.pub/2018/building-blocks">The Building Blocks of Interpretability</a></li>
+  <li>Required: Cynthia Rudin <a href="https://arxiv.org/pdf/1811.10154.pdf">Stop Explaining Black Box Machine Learning Models for High Stakes Decisions and Use Interpretable Models Instead</a></li>
+</ul>
+
+<h4 id="tasks-debugging-analytics"><a name="debugquery"></a>Tasks: Debugging Analytics</h4>
+
+<p>Readings</p>
+
+<ul>
+  <li>Required: Eugene Wu, Sam Madden <a href="http://www.vldb.org/pvldb/vol6/p553-wu.pdf">Scorpion: Explaining Away Outliers in Aggregate Queries</a></li>
+  <li>Required: Tableau <a href="https://www.youtube.com/watch?v=0z3wQCXY8OE&amp;feature=youtu.be&amp;t=3224">Explain Data demo video</a></li>
+  <li>Optional: Firas Abuzaid et al. <a href="http://www.vldb.org/pvldb/vol12/p419-abuzaid.pdf">DIFF: A Relational Interface for Large-Scale Data Explanation</a></li>
+  <li>Optional: Wu et al. <a href="https://arxiv.org/pdf/2004.05722.pdf">Complaint-driven Training Data Debugging for Query 2.0</a></li>
+</ul>
+
+<h4 id="misc-papers">Misc Papers</h4>
+
+<ul>
+  <li>Qianrui Zhang et al. <a href="https://arxiv.org/abs/1904.02344">Precision Interfaces</a></li>
+  <li>Xiong Zhang and Philip J. Guo. <a href="http://www.pgbovine.net/dsjs-paper.htm">DS.Js: Turn Any Webpage into an Example-Centric Live Programming Environment for Learning Data Science</a></li>
+  <li>Kuang Chen et al. <a href="http://doi.acm.org/10.1145/2160601.2160605">Shreddr: Pipelined Paper Digitization for Low-resource Organizations</a></li>
+  <li>Kuang Chen, Harr Chen, et al. <a href="http://dx.doi.org/10.1109/TKDE.2011.31">Usher: Improving Data Quality with Dynamic Forms</a></li>
+  <li>Yuze Lou et al. <a href="https://hilda.io/2019/proceedings/HILDA2019_paper_9.pdf">Knowledge Graph Programming with a Human-in-the-Loop: Preliminary Results</a></li>
+  <li>Leo Meyerovich et al. <a href="https://lmeyerov.github.io/projects/socioplt/papers/oopsla2013.pdf">Empirical Analysis of Programming Language Adoption</a></li>
+  <li>Christian Bors et al. <a href="http://www.cs.umd.edu/~leilani/static/papers/bors2019provenance.pdf">A Provenance Task Abstraction Framework</a></li>
+  <li>Eric Ragan et al. <a href="https://www.cc.gatech.edu/~aendert3/resources/ragan-vast-2015.pdf">Characterizing Provenance in Visualization and Data Analysis: An Organizational Framework of Provenance Types and Purposes</a></li>
+</ul>
+
+<!--
+# Topics
+
+
+Related topics
+
+* Intelligent agents and conversational agents
+* sensemaking
+
+#### Specifying Visualizations and Exploration
+
+Declarative Visualization Languages
+
+* [A layered grammar of graphics](http://vita.had.co.nz/papers/layered-grammar.html)
+* [D³ Data-Driven Documents](https://scholar.google.com/scholar?q=D%C2%B3+Data-Driven+Documents)
+* [Vega-Lite: A Grammar of Interactive Graphics](https://idl.cs.washington.edu/files/2017-VegaLite-InfoVis.pdf)
+* [Combining Design and Performance in aData Visualization Management System](/files/papers/dvmscidr.pdf)
+* Assignment
+  * Play with [SandDance](https://sanddance.azurewebsites.net/BeachPartyApp/BeachPartyApp.html)
+
+Interaction Modalities
+
+* Touch
+  * [Gestural Query Specification](https://scholar.google.com/scholar?q=gestural+query+specification)
+* NLP
+  * [Constructing an Interactive Natural Language Interface for Relational Databases](/files/papers/nlpdb.pdf)
+  * [Analyza: Exploring Data with Conversation](https://static.googleusercontent.com/media/research.google.com/fr//pubs/archive/45791.pdf)
+* Spreadsheets
+  * [Expressive Query Construction through Direct Manipulation of Nested Relational Results](https://scholar.google.com/scholar?q=Expressive+Query+Construction+through+Direct+Manipulation+of+Nested+Relational+Results)
+* Other
+  * [Visualization-by-Sketching: An Artist’s Interface for Creating Multivariate Time-Varying Data Visualizations](http://www.cs.tufts.edu/comp/250VIS/papers/Visualization-by-Sketching.pdf)
+  * [(s/q)ueries: Visual Regular Expressions for Querying and Exploring Event Sequences](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/chi2015-squeries.pdf)
+  * Characterizing provenance in visualization and data analysis: an organizational framework of provenance types and purposes.
+
+#### Augmenting User Exploration
+
+Recommendation
+
+* [Voyager: Exploratory analysis via faceted browsing of visualization recommendations](http://www.cs.tufts.edu/comp/250VIS/papers/2015-Voyager-InfoVis.pdf)
+* [Towards A General-Purpose Query Language for Visualization Recommendation](https://idl.cs.washington.edu/files/2016-CompassQL-HILDA.pdf)
+* [Effortless Data Exploration with zenvisage: An Expressive and Interactive Visual Analytics System](http://web.engr.illinois.edu/~adityagp/zenvisage.pdf)
+* [SeeDB: efficient data-driven visualization recommendations to support visual analysis.](/files/papers/seedb.pdf)
+* [Data Polygamy: The Many-Many Relationships among Urban Spatio-Temporal Data Sets](https://arxiv.org/pdf/1610.06978.pdf)
+* Optional: Characterizing provenance in visualization and data analysis: an organizational framework of provenance types and purposes.
+* Optional: Adaptive recommendation-based modeling support for data analysis workflows.
+
+Autocomplete and refinement
+
+* [Snipsuggest: Context-aware autocompletion for sql]()
+* Query By Output
+* DataPlay: Interactive Tweaking and Example-driven Correction of Graphical Database Queries
+* Machine learning for online query relaxation
+
+Explanation
+
+* [Scorpion: Explaining away outliers in aggregate queries](http://sirrice.github.io/files/papers/scorpion-vldb13.pdf)
+* [QFix: Diagnosing errors through query histories](/files/papers/qfix.pdf)
+* [Visual discovery and model-driven explanation of time series patterns](https://www.cl.cam.ac.uk/~as2006/files/sarkar_2016_gatherminer.pdf)
+* [Interpretable and Informative Explanations of Outcomes](http://www.vldb.org/pvldb/vol8/p61-elgebaly.pdf)
+* [The Lumiere Pro ject: Bayesian User Modeling for Inferring the Goals and Needs of Software Users](/files/papers/lum.pdf)
+
+#### Garbage in Garbage out
+
+Data Cleaning
+
+* Wrangler: interactive visual specification of data transformation scripts
+* Profiler: Integrated Statistical Analysis and Visualization for Data Quality Assessment
+* BoostClean: Automated Error Detection and Repair forMachine Learning
+* [Data Quality: Experiences and Lessons from Operationalizing Big Data](http://yanpeichen.com/professional/IEEE_Big_Data_2016_Data_Quality.pdf)
+
+#### Scaling Visual Exploration Systems
+
+End-to-end fast data visualization systems
+
+* [Polaris: A system for query, analysis, and visualization of multidimensional relational databases](/files/papers/polaris.pdf)
+* [imMens: real-time visual querying of big data](/files/papers/immens.pdf)
+* [Superconductor: a language for big data visualization.](/files/papers/superconductor.pdf)
+* [Profiler: Integrated Statistical Analysis and Visualization for Data Quality Assessment]()
+* [Combining Design and Performance in aData Visualization Management System](/files/papers/dvmscidr.pdf)
+
+Data Processing Systems
+
+* [MacroBase: Analytic Monitoring for the Internet of Things](/files/papers/macrobase.pdf)
+* [Dremel: Interactive Analysis Of Web-Scale Datasets](/files/papers/dremel.pdf)
+* [Spark SQL: Relational Data Processing in Spark](https://amplab.cs.berkeley.edu/wp-content/uploads/2015/03/SparkSQLSigmod2015.pdf)
+* [BlinkDB: Queries with Bounded Errors and Bounded Response Times on Very Large Data](/files/papers/blinkdb.pdf)
+* [Data cube: A relational aggregation operator generalizing group-by, cross-tab, and sub-totals.](/files/papers/olap.pdf)
+
+Prefetching
+
+* [Dynamic prefetching of data tiles for interactive visualization.](/files/papers/forecache.pdf)
+* [Query Steering for Interactive Data Exploration](/files/papers/steering.pdf)
+
+Sampling
+
+* [PFunk-H: Approximate Query Processing using Perceptual Models](/files/papers/pfunk.pdf)
+* [Wander Join: Online Aggregation via Random Walks](/files/papers/wanderjoin.pdf)
+* [Sample + Seek: Approximating Aggregates with Distribution Precision Guarantee](/files/papers/sigmod16sampleseek.pdf)
+* [Rapid Sampling for Visualizations with Ordering Guarantees](/files/papers/rapidsampling.pdf)
+
+
+Network
+
+* [M4: A Visualization-Oriented Time Series Data Aggregation](/files/papers/m4.pdf)
+
+
+Some interactions with AI papers
+
+1.     Shortliffe EH, Axline SG, Buchanan BG, Merigan TC, Cohen SN. An Artificial Intelligence program to advise physicians regarding antimicrobial therapy. Computers and Biomedical Research. 1973 Dec 1;6(6):544–60.
+2.     Shu-Hsien Liao. Expert system methodologies and applications—a decade review from 1995 to 2004. Expert Systems with Applications. 2005 Jan 1;28(1):93–103.
+3.     Sørmo F, Cassens J, Aamodt A. Explanation in Case-Based Reasoning–Perspectives and Goals. Artif Intell Rev. 2005 Oct 1;24(2):109–43.
+4.     Shneiderman B. The eyes have it: a task by data type taxonomy for information visualizations. In: , IEEE Symposium on Visual Languages, 1996 Proceedings. 1996. p. 336–43.
+5.     Plaisant C, Milash B, Rose A, Widoff S, Shneiderman B. LifeLines: visualizing personal histories. In New York, NY, USA: ACM; 1996 [cited 2011 Nov 16]. p. 221–227. (CHI ’96). Available from: http://doi.acm.org/10.1145/238386.238493
+6.     Heer J, Shneiderman B. Interactive Dynamics for Visual Analysis. Commun ACM. 2012 Apr;55(4):45–54.
+7.     Goren-Bar D, Shahar Y, Galperin-Aizenberg M, Boaz D, Tahan G. KNAVE II: The Definition and Implementation of an Intelligent Tool for Visualization and Exploration of Time-oriented Clinical Data. In: Proceedings of the Working Conference on Advanced Visual Interfaces [Internet]. New York, NY, USA: ACM; 2004 [cited 2019 Oct 7]. p. 171–174. (AVI ’04). Available from: http://doi.acm.org/10.1145/989863.989889
+8.     Shneiderman B, Maes P. Direct Manipulation vs. Interface Agents. interactions. 1997 Nov;4(6):42–61.
+9.     Weick KE, Sutcliffe KM, Obstfeld D. Organizing and the Process of Sensemaking. ORGANIZATION SCIENCE. 2005 Jul 1;16(4):409–21.
+10.     Billman D, Bier EA. Medical sensemaking with entity workspace. In: Proceedings of the SIGCHI conference on Human factors in computing systems [Internet]. New York, NY, USA: ACM; 2007 [cited 2012 Oct 9]. p. 229–232. (CHI ’07). Available from: http://doi.acm.org/10.1145/1240624.1240662
+11.     Russell DM, Stefik MJ, Pirolli P, Card SK. The cost structure of sensemaking. In: Proceedings of the INTERACT ’93 and CHI ’93 conference on Human factors in computing systems [Internet]. New York, NY, USA: ACM; 1993 [cited 2012 Oct 9]. p. 269–276. (CHI ’93). Available from: http://doi.acm.org/10.1145/169059.169209
+12.     Pirolli P, Card SK. Sensemaking processes of intelligence analysts and possible leverage points as identified though cognitive task analysis. In: Proceedings of the 2005 International Conference Intelligence Analysis. 2005. p. 6–12.
+13.     Manojlovich M. Nurse/physician communication through a sensemaking lens: shifting the paradigm to improve patient safety. Med Care. 2010 Nov;48(11):941–6.
+14.     Weick KE. The Collapse of Sensemaking in Organizations: The Mann Gulch Disaster. Administrative Science Quarterly. 1993 Dec;38(4):628–52.
+15.     Sittig DF, Wright A, Osheroff JA, Middleton B, Teich JM, Ash JS, et al. Grand challenges in clinical decision support. J Biomed Inform. 2008 Apr;41(2):387–92.
+16.     Middleton B, Sittig DF, Wright A. Clinical Decision Support: a 25 Year Retrospective and a 25 Year Vision. Yearb Med Inform. 2016 May 20;(Suppl 1):S103–16.
+17.     Richardson JE, Ash JS, Sittig DF, Bunce A, Carpenter J, Dykstra RH, et al. Multiple perspectives on the meaning of clinical decision support. AMIA Annu Symp Proc. 2010 Nov 13;2010:1427–31.
+18.     Yu HW, Hussain M, Afzal M, Ali T, Choi JY, Han H-S, et al. Use of mind maps and iterative decision trees to develop a guideline-based clinical decision support system for routine surgical practice: case study in thyroid nodules. J Am Med Inform Assoc. 2019 Jun 1;26(6):524–36.
+19.     Shelov E, Muthu N, Wolfe H, Traynor D, Craig N, Bonafide C, et al. Design and Implementation of a Pediatric ICU Acuity Scoring Tool as Clinical Decision Support. Appl Clin Inform. 2018;9(3):576–87.
+20.     Murray T. Authoring Intelligent Tutoring Systems: An analysis of the state of the art. 1999 [cited 2019 Jun 24]; Available from: https://telearn.archives-ouvertes.fr/hal-00197339
+21.     Crowley RS, Tseytlin E, Jukic D. ReportTutor - an intelligent tutoring system that uses a natural language interface. AMIA Annu Symp Proc. 2005;171–5.
+22.     Graesser AC, Conley MW, Olney A. Intelligent tutoring systems. In: In MG Helander, TK Landauer, & PV Prabhu (Eds), Handbook of human-computer interaction. 2012. p. 849–74.
+23.     Jennings NR, Sycara K, Wooldridge M. A Roadmap of Agent Research and Development. Autonomous Agents and Multi-Agent Systems. 1998 Jan;1(1):7–38.
+24.     Bickmore T, Gruber A, Picard R. Establishing the computer–patient working alliance in automated health behavior change interventions. Patient Education and Counseling. 2005 Oct 1;59(1):21–30.
+25.     Montenegro JLZ, da Costa CA, da Rosa Righi R. Survey of conversational agents in health. Expert Systems with Applications. 2019 Sep 1;129:56–67.
+26.     Bott N, Wexler S, Drury L, Pollak C, Wang V, Scher K, et al. A Protocol-Driven, Bedside Digital Conversational Agent to Support Nurse Teams and Mitigate Risks of Hospitalization in Older Adults: Case Control Pre-Post Study. J Med Internet Res. 2019 Oct 17;21(10):e13440.
+27.     Iqbal S, Altaf W, Aslam M, Mahmood W, Khan MUG. Application of intelligent agents in health-care: review. Artif Intell Rev. 2016 Jun 1;46(1):83–112.
+28.     Allen J, Ferguson G, Blaylock N, Byron D, Chambers N, Dzikovska M, et al. Chester: towards a personal medication advisor. J Biomed Inform. 2006 Oct;39(5):500–13.
+29.     Laranjo L, Dunn AG, Tong HL, Kocaballi AB, Chen J, Bashir R, et al. Conversational agents in healthcare: a systematic review. J Am Med Inform Assoc. 2018 01;25(9):1248–58.
+30.     Ricci F, Rokach L, Shapira B. Recommender Systems: Introduction and Challenges. In: Ricci F, Rokach L, Shapira B, editors. Recommender Systems Handbook [Internet]. Boston, MA: Springer US; 2015 [cited 2019 Nov 18]. p. 1–34. Available from: https://doi.org/10.1007/978-1-4899-7637-6_1
+31.     Park DH, Kim HK, Choi IY, Kim JK. A literature review and classification of recommender systems research. Expert Systems with Applications. 2012 Sep 1;39(11):10059–72.
+32.     Gomez-Uribe CA, Hunt N. The Netflix Recommender System: Algorithms, Business Value, and Innovation. ACM Trans Manage Inf Syst. 2015 Dec 28;6(4):1–19.
+33.     Du F, Plaisant C, Spring N, Crowley K, Shneiderman B. EventAction: A Visual Analytics Approach to Explainable Recommendation for Event Sequences. ACM Trans Interact Intell Syst. 2019 Aug;9(4):21:1–21:31.
+34.     Portugal I, Alencar P, Cowan D. The use of machine learning algorithms in recommender systems: A systematic review. Expert Systems with Applications. 2018 May 1;97:205–27.
+35.     Hollis V, Konrad A, Springer A, Antoun M, Antoun C, Martin R, et al. What Does All This Data Mean for My Future Mood? Actionable Analytics and Targeted Reflection for Emotional Well-Being. Hum-Comput Interact. 2017 Nov;32(5–6):208–267.
+36.     Kipfer P, Westermann R. Realistic and Interactive Simulation of Rivers. In: Proceedings of Graphics Interface 2006 [Internet]. Toronto, Ont., Canada, Canada: Canadian Information Processing Society; 2006 [cited 2019 Jun 24]. p. 41–48. (GI ’06). Available from: http://dl.acm.org/citation.cfm?id=1143079.1143087
+
+-->
+
+<!--
+* Visualization-aware sampling for very large datasets
+* Visage: A user interface environment for exploring information.
+* [Online Dynamic Reordering for Interactive Data Processing](/files/paper/juggle.pdf)
+* Dynamic client-server optimization for scalable interactive visualization on the web.
+* Queriosity: Automated Data Exploration, IEEE 2015
+* An Analytic Data Engine for Visualization in Tableau, SIGMOD, 2011
+* Multiscale Visualization Using Data Cubes, 2002
+* G-OLA: Generalized On-Line Aggregation for Interactive Analysis on Big Data, SIGMOD, 2015
+-->
+
+<p>Neat applications</p>
+
+<ul>
+  <li>https://www.remix.com/</li>
+</ul>
+
+  </div>
+  <div class="joiner"></div>
+</div>
+</div>
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>

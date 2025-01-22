@@ -1,0 +1,320 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+	<div class="container">
+		<div class="deco">COLUMBIA UNIVERSITY COMS W4111.002</div>
+    <div class="title"><a href="/" style="color:black;">INTRODUCTION TO DATABASES</a></div>
+	</div>
+</div>
+
+
+
+
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-8 col-md-offset-2">
+		
+<h1 id="polaris">Polaris</h1>
+
+<ul>
+  <li>Confusion between marks and chart types</li>
+  <li>Comparison with Visual Insights:
+    <ul>
+      <li>tied to cubes (and its limitations)</li>
+      <li>manual layout vs a layout algebra</li>
+      <li>VI focuses on 3D navigation and visualization</li>
+    </ul>
+  </li>
+  <li>What makes spotfire/xgobi etc, whose views are augmented with interaction techniques, limiting?
+    <ul>
+      <li>the interaction are prescriptive, and cannot be changed/composed.</li>
+      <li>polaris basically gives handles to core rel alg transforms</li>
+    </ul>
+  </li>
+  <li>What does user-facing flexibility and succinctness mean?
+    <ul>
+      <li>How to achieve the example views without vizql?</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="background-algebra">Background: Algebra</h3>
+
+<p>What makes an algebra?  Set + operations over the set that satisfy properties e.g., commutivity, etc.</p>
+
+<ul>
+  <li>p-entry: an atom.  (tag:value) pair where
+    <ul>
+      <li>tag may be “field”, “constant”, <name of="" field=""></name></li>
+      <li>value is a base value for first two tags, or value in the fields domain for latter</li>
+    </ul>
+  </li>
+  <li>p-tuple: finite sequence of p-entries.
+    <ul>
+      <li>A p-tuple defines a single pane axis values.</li>
+      <li>Sequence because it needs to be rendered in order</li>
+    </ul>
+  </li>
+  <li>An operand is a finite sequence of p-tuples.  Each tuple is a row/col/layer in the layout</li>
+</ul>
+
+<p>Operators</p>
+
+<ul>
+  <li>Add (+): concat two sequences</li>
+  <li>Cross (x): cartesian product</li>
+  <li>Nest (/): Tricky definition.</li>
+  <li>Dot (.): Hierarchy aware nesting.  (dont use nest because it needs to read values in table, Dot uses provided hierarchy info)</li>
+</ul>
+
+<p>Layers restrictied to expressions over only ordinal operands</p>
+
+<ul>
+  <li>Would need to ordinalize any numerical operands</li>
+</ul>
+
+<h1 id="vega-lite">Vega-Lite</h1>
+
+<p>Quite a bit lower level than VizQL.</p>
+
+<ul>
+  <li>User needs to think about data xforms, data flow (repeat, facet, etc), nuances regarding axes (resolve), and visual encodings.</li>
+  <li>leaky abstractions: restrictions that seem arbitrary unless understand how vega-lite works
+    <ul>
+      <li>layer only supports unit views and not nested views</li>
+    </ul>
+  </li>
+  <li>Why is all the complexity around resolve needed?</li>
+  <li>Counter argument: Intended as a target language</li>
+</ul>
+
+<p>What is delta above ggplot2?</p>
+
+<ul>
+  <li>integration into JS</li>
+  <li>more design flexibility e.g., different axes across layers</li>
+  <li>interaction</li>
+</ul>
+
+<p>What is the intended use cases for vega-lite?</p>
+
+<ul>
+  <li>analysis?  design?  intermediate language for a tool?
+    <ul>
+      <li>if you compute some results and just want to plot something sensible?</li>
+      <li>if you want to perform visual analysis?</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<ul>
+  <li>extensions to vanilla vega for layers, facets, and repeated subplots
+    <ul>
+      <li>Tricky part is how to specific reconciliation policies (“resolve” keyword)
+of components (axes) shared across subplots (layers, small multiples)</li>
+    </ul>
+  </li>
+  <li>extensions for interation – specifically how to deal with selections in a single view and multiple views</li>
+</ul>
+
+<h3 id="static-exetnsions">Static Exetnsions</h3>
+
+<ul>
+  <li>
+    <p>Unit: single cartesian plot</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  unit = (data, transforms, mark-type, encodings)
+  transforms run before plotting
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Encoding is</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  encoding = (channel, field, datatype, val, functions, scale, guide)
+  channel: x, y, color, shape, size, text, 
+           order (for stacking/layering order), 
+           path (for  sequences of points in a line)
+           detail (grouping field but don't map to a visual prop.
+                  in lieu of [color: field], which would agg by 
+                  field but also map to color.  same as "group" in
+                  ggplot2)
+  val:     fixed value (if don't use field)
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="static-multi-view-specifications">Static Multi-view Specifications</h3>
+
+<p>Layers</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    layer([unit1,...], resolve)
+    resolve = (channel, scale/guide, resolution)
+    resolution: independent or union
+</code></pre></div></div>
+
+<ul>
+  <li>resolve a specific channel (encoding) across the layers by adding a separate scale (space partition) or unioning them (merge function)</li>
+</ul>
+
+<p>Concatenation for Layout</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    hconcat/vconcat([view1,...], resolve)
+</code></pre></div></div>
+
+<p>Facet: partition dataset, show small multiples</p>
+
+<ul>
+  <li>use <code class="language-plaintext highlighter-rouge">resolve</code> if want to explicitly control axis behavior</li>
+</ul>
+
+<p>Repeat: replicate all of the dataset for each subplot – for SPLOMS</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    repeat: { column: {'col1', 'col2', ... } }
+</code></pre></div></div>
+
+<h3 id="interaction">Interaction</h3>
+
+<ul>
+  <li>
+    <p>Primarily for selections</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  selection: (name, type, predicate, domain|range, event, init, transforms, resolve)
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>selections backed by values or predicates</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  type: point    -- copy the selected record explicitly
+  type: list     -- predicate over the dataset using (IN) operator
+  type: interval -- range predicate over dataset
+
+  select: { id: { type: "point" } }
+  ...
+  color: {
+    { if: id, field: Origin, Type: N } -- use the value in record.Origin if in the selection as defined by id
+    { value: 'grey' }                  -- default gray
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">toggle</code> config means interacting with a mark toggles its value instead of explicitly selecting ONLY that value</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  id: { type: list, toggle: true }               -- clicking (default event) toggles selection for that mark and adds to list
+  id: { type: list, on: click, toggle: true }    -- same as above
+  id: { type: point, toggle:true }               -- unclear its semantics
+  id: { type: list, on: mouseover, toggle: true} -- select via hovering over
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>“Transforms” can apply on top of predicate results to further transform selected data</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  project(fields, channels)      -- database projection
+  toggle(event)                  -- modifies contest of a list type
+  translate(events, by)          -- offset values of backed records via the events (details unclear)
+  zoom(event, factor):           -- either determined by event (e.g., mouse wheel) or by factor function
+  nearest()                      -- voronoi decomposition and find nearest mark
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Selection Ambiguities</p>
+    <ul>
+      <li>
+        <p>multiple subplots, with selections defined in each subplot individually</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>repeat
+  row: displacement, mpg    -- rows in splom
+  col: horsepower, mpg      -- columns in splom
+spec: ...
+  select:
+    region:                 -- specific to a single subplot
+      type: interval,
+      ...
+      on: [mousedown[shift], mouseup] &gt; mousemove
+      resolve: single
+
+resolve: single      -- only one subplot can be selected at any time, the rest cleared
+resolve: indep       -- selections happen independently (can happen in multiple subplots, but independent)
+resolve: union       -- selections across subplots are unioned (OR operator)
+resolve: intersect   -- selections across subplots intersected (AND)
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Confusing points</p>
+
+<ul>
+  <li>
+    <p>Specification Conflicts Manually handled</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  select: {
+    region:
+      ...
+      on: [mousedown[event.shiftKey], mouseup] &gt; mousemove
+    grid: 
+      type: interval, ...
+      translate: [mousedown[!event.shiftKey], mouseup] &gt; mousemove
+
+  -- shiftKey statements must be carefully designed to avoid ambiguity with non-shiftkey interactions
+</code></pre></div>    </div>
+
+    <ul>
+      <li>This is probably a core issue in interaction design.
+        <ul>
+          <li>user inputs are streams of events.  interaction responds to patterns matched to those evens.</li>
+          <li>multiple interactions compose in weird ways (at the same time, with potentially conflicting effects)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Focus is on selections</p>
+    <ul>
+      <li>argument is that pointing to what you want to muck with is the hard part?  Do the effects not matter as much?</li>
+    </ul>
+  </li>
+</ul>
+
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>

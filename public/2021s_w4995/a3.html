@@ -1,0 +1,209 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Vis 2021 Spring</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style_w4995.css" />
+		<script
+			src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="10">
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+
+    <div class="alert alert-warning" style="margin-top:1em;" role="alert">
+  This is an outdated course page. View <a href="/2025s_w4995/">current semester here</a>.
+</div>
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Data Vis 2021 Spring</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="syllabus.html">Syllabus</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Assignments <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="a0.html">A0: Apply To Enroll</a></li>
+              <li><a href="a1.html">A1: Sparks Presentation</a></li>
+              <li><a href="a2.html">A2: Visualization Design</a></li>
+              <li><a href="labs.html#lab-1-shapes-and-styles">- L1: Shapes and Styles</a></li>
+              <li><a href="a3.html">A3: Exploratory Data Analysis</a></li>
+              <li><a href="labs.html#lab-2-data-binding">- L2: Data Binding</a></li>
+              <li><a href="a4.html">A4: Interactive Visualization</a></li>
+              <li><a href="labs.html#lab-3-interactivity">- L3: Interactivity</a></li>
+              <li><a href="midterm.html">Online Midterm</a></li>
+              <li><a href="a5.html">A5: Final Project</a></li>
+              <li><a href="ax.html">EC: Extra Credit Opportunities</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Demos <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://observablehq.com/@agness/introdv-f18-demo-1-data-select-scale">
+									2/9: Data, Select, Scale</a></li>
+              <li><a href="https://observablehq.com/@agness/introdv-f18-demo-2-interactivity">
+									2/16: Update, Events, Brush, Drag</a></li>
+              <li><a href="https://observablehq.com/@agness/demo-mutable-variables-and-multi-input-cells">
+									2/23: Mutables, Multiple Inputs</a></li>
+	      <!-- <li><a href="https://beta.observablehq.com/@agness/tk">
+									3/3: Transition, Zoom</a></li> -->
+              <li><a href="../files/examples/demo_geo.html">
+									3/16: Scrolly, Path, Polygon, Geography</a></li>
+	      <!-- <li><a href="https://beta.observablehq.com/@agness/tk">
+									3/31: Bootstrap, Vega</a></li> -->
+              <!-- <li><a href="https://beta.observablehq.com/@agness/tk">
+									4/14: Hierarchy, Chord, Forces</a></li> -->
+            </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+    <div class="container">
+
+			<h1 id="assignment-3-exploratory-data-analysis">Assignment 3: Exploratory Data Analysis</h1>
+<p><br /></p>
+
+<p>In groups of 3-4, identify a dataset of interest and perform exploratory analysis in Tableau to understand the structure of the data, investigate hypotheses, and develop preliminary insights. Prepare a PDF or Google Slides report using <a href="https://gist.github.com/agness/2809bd8e7b99b047091998f837736349">this template outline</a>: include a set of 10 or more visualizations that illustrate your findings, one summary “dashboard” visualization, as well as a write-up of your process and what you learned. Choose your own teams or <a href="https://forms.gle/ukQjgqCmvrskU6gn7">signup here by 1/29 Friday</a> to be placed in a randomized team for A3.</p>
+
+<p>Submit your group’s <a href="https://forms.gle/NEqkDH5cbnFhzWMx9">report url</a> and individually, your <a href="https://forms.gle/Bw74fCt9eDfgZRgt9">peer assessments</a> for A3 by <strong>Monday 2/8, 11:59pm ET</strong>.</p>
+
+<h3 id="week-1-data-selection">Week 1: Data Selection</h3>
+
+<p>First, choose a topic of interest to you and find a dataset that can provide insights into that topic. See below for recommended datasets to help you get started.</p>
+
+<p>After selecting a topic and dataset – but prior to analysis – you should write down an initial set of at least three questions you’d like to investigate. Prepare the data (i.e. do any cleaning you need), make 1 chart in Tableau, and post it to class #participation Slack by Monday 2/1 11:59pm.</p>
+
+<h3 id="week-2-exploratory-visual-analysis">Week 2: Exploratory Visual Analysis</h3>
+
+<p>Next, perform an exploratory analysis of your dataset using Tableau. You should consider two different phases of exploration.</p>
+
+<p>In the first phase, you should seek to gain an overview of the shape &amp; stucture of your dataset. What variables does the dataset contain? How are they distributed? Are there any notable data quality issues? Are there any surprising relationships among the variables? Be sure to also perform “sanity checks” for patterns you expect to see!</p>
+
+<p>In the second phase, you should investigate your initial questions, as well as any new questions that arise during your exploration. For each question, start by creating a visualization that might provide a useful answer. Then refine the visualization (by adding additional variables, changing sorting or axis scales, filtering or subsetting data, etc.) to develop better perspectives, explore unexpected observations, or sanity check your assumptions. You should repeat this process for each of your questions, but feel free to revise your questions or branch off to explore new questions if the data warrants.</p>
+
+<h3 id="final-deliverable">Final Deliverable</h3>
+
+<p>Your final submission will be a written report, 10 or more captioned “quick and dirty” Tableau visualizations outlining your most important insights, and either a live link or a screen-capture video of one summary Tableau dashboard that answers one (or more) of your chosen hypotheses. The dashboard should have multiple charts to communicate your findings on an ongoing basis, assuming you’ll continue to collect data over time: imagine you are a data analyst preparing a dashboard for the CEO of your company who can look at key metrics (regarding your hypothesis) every month. In your written sections, focus on the answers to your initial questions, but also describe surprises as well as challenges encountered along the way, e.g. data quality issues.</p>
+
+<p>Each visualization image should accompanied with a title and short caption (&lt;2 sentences). Provide sufficient detail for each caption such that anyone could read through your report and understand your findings. Feel free to annotate your images to draw attention to specific features of the data, keeping in mind the visual principles we’re learned so far.</p>
+
+<p>To easily export images from Tableau, use the <em>Worksheet &gt; Export &gt; Image…</em> menu item.</p>
+
+<h3 id="grading-criteria">Grading Criteria</h3>
+
+<ul>
+  <li>Poses clear questions applicable to the chosen dataset.</li>
+  <li>Appropriate data quality assessment and transformations.</li>
+  <li>Breadth of analysis, exploring multiple questions.</li>
+  <li>Depth of analysis, with appropriate follow-up questions.</li>
+  <li>Expressive &amp; effective visualizations appropriate to analysis questions.</li>
+  <li>Clearly written, understandable captions that communicate primary insights.</li>
+</ul>
+
+<h3 id="data-sources">Data Sources</h3>
+
+<ul>
+  <li><a href="https://opendata.cityofnewyork.us/">NYC Open Data</a>: data on NYC trees, taxis, subway, citibike, 311 calls, land lot use, etc.</li>
+  <li><a href="https://www.data.gov/">data.gov</a>: everything from hourly precipitation, fruit &amp; vegetable prices, crime reports, to electricity usage.</li>
+  <li><a href="https://datasetsearch.research.google.com/">Dataset Search by Google Research</a>: indexes public open datasets.</li>
+  <li><a href="https://openpolicing.stanford.edu/data/">Stanford Open Policing Dataset</a></li>
+  <li><a href="https://data.medicare.gov/data/archives/physician-compare">Physician Medicare Data</a></li>
+  <li><a href="https://ocrdata.ed.gov/">Civil Rights Data Collection</a></li>
+  <li><a href="https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0">Data Is Plural newsletter’s Structured Archive</a>: spreadsheet of  public datasets ranging from curious to wide-reaching, e.g. “How often do Wikipedia editors edit?”, “Four years of rejected vanity license plate requests”</li>
+  <li><a href="https://www.yelp.com/dataset">Yelp Open Dataset</a></li>
+  <li><a href="https://www.census.gov/data.html">U.S. Census Bureau</a>: use their Discovery Tool</li>
+  <li><a href="https://data.cdc.gov/">US Health Data</a>: central searchable repository of US health data (Center for Disease Control and National Center for Health Statistics), e.g. surveys on pregnancy, cause of death, health care access, obesity, etc.</li>
+  <li><a href="http://www.imf.org/en/Data">International Monetary Fund</a></li>
+  <li><a href="https://data.worldbank.org/">World Bank</a></li>
+  <li><a href="https://www.ipums.org/">IPUMS.org</a>:  Integrated Census &amp; Survey Data from around the World</li>
+  <li><a href="http://www.fec.gov/finance/disclosure/ftpdet.shtml">Federal Elections Commission</a>: Campaign Finance &amp; Expenditures</li>
+  <li><a href="https://library.stanford.edu/projects/mass-shootings-america">Stanford Mass Shootings in America Project</a>: data up to 2016, with pointers to alternatives</li>
+  <li><a href="https://earthquake.usgs.gov/data/data.php">USGS Earthquake Catalog</a></li>
+  <li><a href="https://www.faa.gov/data_research/">Federal Aviation Administration</a></li>
+  <li><a href="https://github.com/fivethirtyeight/data/">FiveThirtyEight Data</a>: Datasets and code behind fivethirtyeight.com</li>
+  <li><a href="https://www.propublica.org/datastore/">ProPublica Data Store</a>: datasets collected by ProPublica or obtained via FOIA requests, e.g. <a href="https://www.propublica.org/datastore/dataset/chicago-parking-ticket-data">Chicago parking ticket data</a></li>
+  <li><a href="http://archive.ics.uci.edu/ml/">Machine Learning Repository</a> - large variety of maintained data sets</li>
+  <li><a href="https://opendata.socrata.com/">Socrata Open Data</a></li>
+  <li><a href="https://www.dataquest.io/blog/free-datasets-for-projects/">17 places to find datasets for data science projects</a></li>
+  <li><a href="https://github.com/awesomedata/awesome-public-datasets">Awesome Public Datasets</a> (github): topic-centric list of high-quality open datasets in public domains</li>
+  <li><a href="https://opensyllabus.org/">Open Syllabus</a>: 6,059,459 syllabi</li>
+</ul>
+
+<h3 id="tableau-resources">Tableau Resources</h3>
+
+<ul>
+  <li>
+    <p><a href="https://www.tableau.com/learn/training">Tableau Training</a>: Specifically the <em>Getting Started</em> video and <em>Visual Analytics</em> section. Most helpful when first getting off the ground.</p>
+  </li>
+  <li>
+    <p><a href="https://onlinehelp.tableau.com/current/pro/desktop/en-us/help.html#dataview_examples.html">Build-It-Yourself Exercises</a>: Specifically, sections <em>Build Charts and Analyze Data</em> &gt; <em>Build Common / Advanced Chart Types</em>, and <em>Build Data Views From Scratch &gt; Analyze Data</em> are a good documentation resource.</p>
+  </li>
+  <li>
+    <p><a href="http://rawingwithnumbers.artisart.org/">Drawing With Numbers</a>: blog with example walkthroughs in the <em>Visualizations</em> section, and <em>Tableau Wiki</em> has a bunch of useful links for the most common advanced exploratory / visualization Tableau techniques.</p>
+  </li>
+</ul>
+
+<h3 id="additional-tools">Additional Tools</h3>
+
+<p>Your dataset almost certainly will require reformatting, restructuring, or cleaning before visualization. Here are some tools for data preparation:</p>
+
+<ul>
+  <li>Graphical Tools
+    <ul>
+      <li><a href="https://www.tableau.com/academic/students">Tableau</a> includes basic functionality for data import, transformation &amp; blending.</li>
+      <li><a href="https://www.r-project.org/">R</a> with <a href="http://ggplot2.org/">ggplot2</a> library</li>
+      <li>Python <a href="http://jupyter.org/">Jupyter notebooks</a> with libraries eg. <a href="https://altair-viz.github.io/">Altair</a> or <a href="http://matplotlib.org/">Matplotlib</a></li>
+      <li><a href="https://www.trifacta.com/start-wrangling/">Trifacta Wrangler</a> interactive tool for data transformation &amp; visual profiling.</li>
+      <li><a href="http://openrefine.org/">OpenRefine</a> free, open source tool for working with messy data.</li>
+    </ul>
+  </li>
+  <li>Programming Tools
+    <ul>
+      <li>JavaScript <a href="https://bocoup.com/work/learn-js-data">data utilities</a> or <a href="https://github.com/vega/datalib">Datalib</a> JS library via Vega.</li>
+      <li><a href="http://pandas.pydata.org/">Pandas</a> data table and manipulation utilites for Python.</li>
+      <li><a href="https://cran.r-project.org/web/packages/dplyr/vignettes/introduction.html">dplyr</a> an R library for data manipulation.
+        <ul>
+          <li>Or, the programming language and tools of your choice.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+		</div>
+
+		<footer class="page-footer font-small">
+			<div class="footer-copyright text-center py-3">
+				W4995.009 Columbia University Computer Science<br>
+				🙌 <a href="http://agneschang.net/">Agnes Chang</a>, with thanks to
+				<a href="http://people.ischool.berkeley.edu/~hearst/">Marti</a> +
+				UW <a href="https://courses.cs.washington.edu/courses/cse512/18sp/">CSE512</a>.
+			</div>
+		</footer>
+
+</body>

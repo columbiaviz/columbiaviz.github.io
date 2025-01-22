@@ -1,0 +1,234 @@
+
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+		<div class="deco">COLUMBIA UNIVERSITY COMS W6998</div>
+    <div class="title"><a href="/2020s_w6998" style="color:black;">SYSTEMS FOR HUMAN DATA INTERACTION</a></div>
+</div>
+
+
+
+
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-6 col-md-offset-3">
+		<style>
+p.review {
+  border-left: 2px solid grey;
+}
+
+div.block {
+  margin-bottom: 1em;
+}
+</style>
+
+<h2 id="discussion-points">Discussion Points</h2>
+
+<p class="block">I would love it if we could discuss why Kyrix's spatial indexing scheme wouldn't eventually introduce memory problems on the database's side. It seems as though with extremely large data sets, the data base would become a bottleneck (which I understand the authors offload responsibility for that to).</p>
+
+<h2 id="paper-1">Paper 1</h2>
+
+<h3>2/24/20 23:57 Richard Zhang</h3>
+<p class="block">This paper is about imMens, a system for real-time querying and visualization of big data. It is significant for its method of utilizing binned aggregation of the order of one or two dimensions for data reduction, and it is further significant for its design of methodology of decomposing large data cubes into multivariate data tiles for visualization, which greatly reduces the number of records that are kept in memory. Its technical strengths involve deriving these new methods, specifically for me that it is able to solve the problem of reducing full-sized data cubes through the decomposition of complete data cubes into cubes of smaller dimensions, such as in the example of reducing total record count from 312.5M records to 0.5M records. I wish they had also gone into how the user inputs the number of bins, which seems to be an unintuitive task and limiting in usability. Also, it seems limited in its constraint of focusing on 2-dimensional plots. <br />
+As for extensions, I think it would be interesting to see how imMens can be extended to work with on-the-fly visualizations without the constrain of preset visualization configurations (i.e., how can they make this more user friendly and flexible to user preference?). The types of visualizations and interactions imMens does not work well for seem to be anything regarding visualizations that involve more than 4 dimensions, filtering, and dynamic queries.</p>
+
+<h3>2/24/20 23:57 Yiru</h3>
+<p class="block">This paper presents imMens, a browser-based system for real-time interaction with scalable visual summaries of big data. To achieve scalable interaction, it introduces the use of multivariate data tiles for pre-processing and dynamic loading of data. ImMens focuses on binned aggregation and its performance is limited by the chosen resolution of the visualized data, not the number of records. <br />
+<br />
+The technical strengths of this paper includes decomposing a full data cube into a collection of smaller 3-or 4-dimensional projections, and further segmenting small cubes into multivariate data tiles for data reduction. Different data tiles can choose different storage strategies, e.g. dense vs. sparse. It also stores data tiles as images and accelerates computation by parallel processing and GPU.<br />
+<br />
+However, the limit of 4-D cubes disallows users doing ad-hoc compound brushing of more than four dimensions. The paper already gave a real example to illustrate this limitation. Besides, imMens targets to binned plots but fails to support other normal ones like scatter plots with regression.</p>
+
+<h3>2/25/20 0:41 Deka Auliya Akbar</h3>
+<p class="block">imMens provides a method for large-scale interactive visualization following the perceptual and interactive scalability based on the chosen resolution of data. It addresses this scalability issues by 1) describing the design space of scalable visual summaries using binned aggregation, 2) providing methods for interactive real-time visual queries, and 3) parallel data processing and rendering with WebGL and GPU.<br />
+<br />
+Most prior works have potential issues with large data sets due to query latency and perceptual scalability issues, especially if in the case of interactive systems. Moreover, prior works handle visual encoding scalability by performing aggregation in image space rather than in data space. imMens attempts to solve this problem by data reduction using binned plots and introduced the concepts of data cube and multivariate data tiles to easily manage datasets as needed. Therefore, during interaction, imMens can compute aggregations across multiple dimensions effectively. In 2013, imMens was the first system that was able to perform real-time interactive brushing of datasets of thousands to billion records and sustain near 50 frames-per-second.<br />
+<br />
+I like the idea of using data tiles with data cubes to allow data to fit into memory and computational constraints, which leads to support for large-scale interaction. The data tiles support parallel query (roll-up or cumulative computation across different bins) processing and rendering. Moreover, the idea of packing data tiles into image format to allow for efficient storage and parallel processing on GPU is clever. <br />
+<br />
+I agree with imMens that binning helps with data reduction. However, binning can suffer from the problems of 1) having to choose the binning size or 2) choosing the number of elements inside the bins. Moreover, the large and variations of data might require extra care in choosing the binning range or choosing what values go inside the bin. I think combining hybrid reduction methods with aggregation can help improve with the data reduction and complex dimensional data problems. Referring to Tamara's book of Visual Analysis, visualization is constrained by three factors: human (perceptual and cognitive), computational and display capabilities. I think considering these factors is important and might help in reducing the design space or data reduction process.<br />
+<br />
+The choice of using data tiles and 2-dimensional binned plots of data limits the number of dimensions that imMens can display. For data with high dimensionality, imMens will not work well (eg: network or graph data or sequential or parallel coordinates). I think employing different hybrid data reduction techniques combined with additional support for interaction for different data types and zoom levels might help extend imMens to support more high dimensional and complex data.</p>
+
+<h3>2/24/20 23:23 Haneen</h3>
+<p class="block">This paper introduces techniques to scale-out interactions on visualization over large-scale data. The authors use binned aggregation as the data reduction method and materialize data views using data cubes to support linking &amp; brushing interactions. The main core contribution is recognizing a way to avoid computing combinations that wouldnt be expressed if brushing is limited over a single view. By decomposing data cubes into 3-4 data cubes and further, by taking advantage of zoom/pan interactions and creating smaller tiles from data cube, the size of the materialized data cube would be reduced significantly. In addition, prefetching and caching techniques can be utilized over data tiles to retrieve a subset of data the user is interacting with. As an additional optimization technique, the authors take advantage of GPU processing to speedup roll-up operations and rendering. The authors choose frame-rate during brushing &amp; linking as the main metric to emphasize on the systems performance. They compare their system with another that they claim to be the existing state-of-the-art at the time of the publications and run benchmarks over different data set sizes up to a Billion. They show that their technique outperforms the system they compare against and can maintain a consistent frame rate regarding the increase in data size. I liked the future work part as it doesnt shy away from the systems limitations. <br />
+An interaction that imMens doesnt support is brushing over more than a single view.</p>
+
+<h3>2/24/20 20:08 Yin Zhao</h3>
+<p class="block">imMens is a browser-based system for real-time interacrion with scalable visual summaries of big data. Its core contributions are 1)<br />
+to use multivariate data tiles for preprocessing and 2) scheme to enable parallel query processing, to speed aggregation. From the Performance Benchmarks section, the comparison between imMns and Profiler shows great improvement of imMens system in terms of speed. However, there is no clear demonstration of how well the visualizations are for actual use.<br />
+In binning, it mentions that bin count bounded by screen pixels allocated to a plot and available resources. Does this mean the scalability is still limited by records?</p>
+
+<h3>2/24/20 19:43 Carmine Elvezio</h3>
+<p class="block">Immens presents a system allowing for interactive visualization of large-scale data sets by utilizing a multivariate data tiling system on top of a parallel processing infrastructure. This is in addition to a survey and analysis done over the state of the art in the design space of scalable visualizations (as it pertains to both summarized and detailed views). This comes from the desire to facilitate interaction at the large scale, while still allowing for the conveyance of meaningful data. One of the major innovations here is in how the system utilizes data-tiles, built using data-cubes (where projections correspond to database views). An additional contribution is in how Immens approaches facilitation of the creation/execution of *interactive* visualizations (through a binned aggregation approach, with support for parallel processing). (Noting how previous systems often focus on summarization through methods where the data may be reduced or compressed/lost or attempt to aggregate the data to support scaling.) Considering previous literature on binned plots (as is done in Profiler, which utilizes a single in-memory data cube), and reduction of data to allow for interactivity and readability, Immens goes beyond these particular approaches by utilizing a server/client architecture, taking advantage of scalable databases, which are used to create the multivariate data tiles, and the uses the GPU on board to allow for real-time rendering of these datasets. The combination of the data tiling solution (which allows for dynamic data visualization, which image-tile variants do not) to handle the larger datasets, with the usage of binning and GPU acceleration, most definitely make a for a significant contribution as the hybrid approach to massive parallelization would allow for a multi-faceted performance improvement. I agree that it is significant over previous work, as the other approaches each use sub-components of this overall approach, but at the cost of the advantages of the the combined advantages of tiling (which can speed up the querying/acquisition process on scalable databases) and GPU processing (which is ideal for handling parallel-ized data sets). Further, I like that the work attempts to survey, breakdown (such that a small taxonomy is formed), and utilize binned plots; it is the principle method here for how data reduction occurs and it is critical to convey to the reader how and why it is used. Thirdly, I believe the approach to multivariate data cube decomposition to be particularly novel, in its usage with the aforementioned binning, as it allows for more optimal processing of these large datasets, which already benefit (even if not tiled) from the data cube representation in the first place. However, a number of limitations are present. The authors chose to store the data tiles as image files. This makes sense for a number of reasons including GPU processing. However, this does limit the way in which data can be stored/processed. I wish the authors would explore some alternative encoding formats for more efficient transmission and storage (with eventual conversion to images still for the benefits of GPU processing, though this conversion might introduce new issues). Additionally, while the authors discuss the future work involving client-side optimizations, I wonder if there are additional optimizations that can be developed, if a pre-caching scheme (with prediction of user movement or alternative measures anticipation user action, possibly with machine learning) are used. <br />
+<br />
+Immens works well for binned plots, as that is what it was designed for. However, there are alternative visualizations that wont really work well with Immens. For example, a non-binned scatter chart that simply shows the positions of data values in 2D. This doesnt work particularly well if the values are meant to be defined purely analogously (without the placement into a bin). It is possible to define the values to a high level of granularity, but what occurs if the values become floating or double precision point? Ultimately a certain level of detail would be lost, especially if it were possible to zoom to a level where the charts extents would be a step in the highest level of granularity. Both points would have binned to the same location, and detail would have been lost. Interestingly, this becomes a larger problem when the number of samples is smaller, as the issue then becomes more obvious. This also applies to a line-chart where the individual samples used to plot the line are of greater granularity (or fit between) than the bins chosen for a particular axis. A gantt chart with continuous values on its horizontal axis would also not always work.<br />
+</p>
+
+<h3>2/24/20 14:08 Celia Arsen</h3>
+<p class="block">The authors claim that their main contributions are the use of multivariate data tiles for processing and loading data and implementing a binned aggregation method for visualizing big data with interaction. I would agree that they showed how these methods could seriously enhance scalable data interaction. I thought they did a really good job clearly and concisely summarizing the relevant related work, and identifying the gap that they were trying to fill. I found the evaluation straightforward, clear, and convincing. I think it is easier to design a convincing evaluation section for a project like this because it is objectively performance-based. Their section on future work also nicely laid out the obvious next steps from this project. However, I do wish that they had made it clear from the beginning of the paper that imMens didnt have an interface for visualization construction. I think I assumed that it did because they said it was browser-based in the beginning, and I was a little confused throughout the paper trying to understand how the user would interact with the system.<br />
+<br />
+This version of imMens does not address scalability concerns for more than 2-dimensional binned plots for multi-dimensional data. Also, it does not support ad-hoc compound brushing for over four dimensions. There are plenty of practical examples where brushing over more than four dimensions would be useful. For example, in medical studies, information like the patients genetic predispositions, blood tests, tobacco use, current and past prescriptions, could all be essential in exploratory visual analysis. Perhaps one method for supporting higher-dimensional brushing would be to force filtering.</p>
+
+<h3>2/24/20 1:08 Zachary Huang</h3>
+<p class="block">Immens talks about a way to support high performance interactive query for big data. The significant part is to visualize big data with high performance through exploiting data structure. It further exploits the parallelism inside data structure, which could boost performance running on GPU. Limitation is that it only supports basic 4-dimension query. Types of interactions or visualizations Immens does not work well for include queries with more than four dimensions and visualization that is not totally based on aggregation (scatter plot with brushing and linking, may use data lineage).</p>
+
+<h3>2/23/20 12:48 Adam Kravitz</h3>
+<p class="block">The Immens paper focuses on interactive visualizations of big data, a browser based visual analysis system that uses webGL for data processing and rendering on a GPU. The paper also talks about how to address perceptual and interactive scalability. <br />
+The significance of immense is that the paper introduces the concepts of multivariable data tiles for preprocessing and how to dynamically look at data to allow scale interactions. Another contributions are 2 new synthesis of binned aggregation, data representation, and parallel processing to support interactive visualizations of big data. Based in the techniques the paper presents, for example, explaining how to decompose data cubes that are too big to in memory into 4D cubes, data that can be browsed through and linked.<br />
+The technical strength of the paper and of immense is understanding the principles of interactive visualizations. The principles that are mentioned in the paper are that perceptual and interactive scalability should be limited by the chosen resolution of visualized data not by number of records using filtering and sampling, bin aggregation, Model based Abstractions Hybrid Reduction Methods. In other words visualizations should be made easy to see and interpret not necessarily be a graph plotting all the possible data that one would be able to see in the final graph. Also I like how the paper specifically specifies on binning aggregation as the main reduction strategy for looking at the data and at the advantages of using binning. It states that binning conveys both global patterns (density) and local features, while allowing change in resolutions using binning size. <br />
+I wish I had like more explanation of the comparisons of the different methods of reductions, possible pros and cons in different situations. Besides the lost of accuracy and the details of all data points during, there seems to be also limited in packing schemes of data cubes, which I think maybe another paper as an extension would need to include a topic like that. <br />
+Immens does not work well for ad-hoc compound brushing of more than four dimensions. Since there is a huge increase in size since calculating that will go to 5 dimensions. Some of the data could be brushed done on the fly buy sampling some data into pieces and showing the pieces to the user as the rest is generated. They could also filter using size, filtering first that cuts the data size the fastest.<br />
+</p>
+
+<h3>2/21/20 16:47 Qianrui Zhang</h3>
+<p class="block"># Review<br />
+This paper presents imMens, a browser-based visual analysis system for visualizing big data. The system consists of two main parts: data reduction (binned aggregation) and a way to interactively query among binned plots. And I think the major contribution of this paper is the way it supports interaction, i.e. the data cube technique in section 5. It provides a novel attempt in enabling real-time interactive brushing of big data.<br />
+<br />
+One limitation is there don't seem to be many use cases. The example heatmap in the paper is very impressive, and the time performance over data with 4-5 dimensions is also great. But in real-world data analysis, do people often perform analysis over 4-5 dimensions? It's mentioned in section 8 that the system doesn't support analysing with more than 5 dimensions. And there is no experiment result supporting the performance improvement over data less than 3 dimensions (noted that in figure 9 there is only result for data with 4 and 5 dimensions).<br />
+<br />
+Another thing that is not clear to me is: how do they actually determine the counts and ranges of the bins in numeric cases? In section 4.2, the authors write "in imMens, we treat bin count as an adjustable parameter, bounded by the screen pixels allocated to a plot and available resources', however, what exactly is the strategy? Do users need to specify bin count they want to see? And what will the system do when there are outliers in numeric data? (e.g. some random large numbers that affect the range of data)<br />
+<br />
+In spite of those limitations, I still think it's a cool paper acting as a pioneer of big data interactive visualization. I'll consider using it if I need a symbol map/temporal heatmap/geographic heatmap in the future.<br />
+<br />
+# Addition<br />
+<br />
+- As is mentioned in the paper, imMens doesn't work well for visualizing data with more than 4 dimensions. In other words, imMens can work for data with many rows but not many columns. I think the problem is very difficult to solve with the cube model.<br />
+<br />
+- The authors mentioned in section 5.2 'for interactions like panning and zooming, we dynamically fetch data tiles precomputed at different levels...', but I'm still confused about how much precomputing need to be done to support random panning and zooming. And I'm not sure if imMens can support those interactions well.</p>
+
+<h2 id="paper-2">Paper 2</h2>
+
+<h3>2/24/20 23:57 Richard Zhang</h3>
+<p class="block">This paper is about Kyrix, an inferface for panning and zooming for large datasets. It is significant as it makes strides to solve the limitations of ZUI's on large datasets, i.e. network congestion with accessing large data and the lack of data-driven primitives that map data to visual properties. Their work on data-driven primitives forgoes the old approach of the user specifying a bounding box, and instead utilize a data-driven function to compute a bounding box for the user. To solve the problem of network congestion, they utilize the novel method of building and searching spatial indices instead of and image tiling framework, which "strikes a balance between database accesses and the amount of data fetched" as well as utilizing caching. I like that they prove their usage of spatial indices leads to their goal of achieiving 500ms interactions, as seen in 8.1. As for limitations and extensions, I would like to see the problem of dynamic data being solved, as rebuilding spatial indices (as they propose) seems to be intuitively costly. They also face the problems of performance hygeine, and debugging, as well as the difficulty of writing canvases and rendering functions. Their single core contribution is without a doubt their usage of spatial indices, as it is a significant difference from previous work and allows for Kyrix to achieve manageable response times for their visualizations of large datasets.</p>
+<h5>Example Vis</h5>
+<p class="block"></p>
+
+<h3>2/24/20 23:57 Yiru</h3>
+<p class="block"><br />
+Kyrixs main goal is to democratize panning and zooming visualization at scale. The significant part it that Kyrix not only provides the expressive language to implement the zoomable vis, but also provides database support to optimize the performance for large scale dataset. <br />
+<br />
+Its single core contribution from my eye is that it supports database backend performance optimization for general purpose visualization. While there are some visualization systems, like google map, Deepzoom, with already optimized for backend performance, the general ZUI toolkits is still hard to handle large datasets. Kyrix defines a declarative model to formalize the zoom / pan problem. The canvas is a shared Cartesiian coordinate system and layers are the same as existing grammar specs. And zoom could be viewed as transition from one canvas to another. The layer has a placement function that is used by the backend to perform fast data fetching. Since it models the canvas as coordinate system, it can use R tree to index the database content on the disk. Compared to the tile framework where image size is hard to determine, it claims it can enable point-click based system better.<br />
+<br />
+I like that it can consider the backend optimization when implementing a visualization. However, the declarative language does not look easy to develop. <br />
+</p>
+<h5>Example Vis</h5>
+<p class="block"></p>
+
+<h3>2/25/20 0:41 Deka Auliya Akbar</h3>
+<p class="block">Kyrix provides a declarative model of a unified system that integrates visual specification, data management pipeline, and performance optimization for interactive visualization of large datasets. No prior works have attempted to generalize pan/zoom visualizations of large data, because other SOTA tech was either 1) unable to cater for large dataviz, 2) tools which able to handle interactive large data viz is usually very domain-specific and not generalizable, and existing 3) generic-purpose spec suffers from the verbosity of event-driven handling. <br />
+<br />
+I appreciate their design considerations of generalization, ease of development and scalability when designing for Kyrix. I like how the overall paper is written, it is very easy to understand the concepts and all the figures are really helpful illuminating the concepts being discussed. I really like the concepts being discussed in their Declarative Model, especially in modeling canvases as nodes and zooms as edges (so zoom actions are basically moving across different canvases), and also the idea of having static and dynamic layer (the latter which allows for user interaction and have an effect on data fetching). <br />
+<br />
+I very much agree with the use of the widely popular Standardised Query languages for data transformations such as SQL / PostgreSQL / BigQuery. Personally, I think they are the best language for performing data selection and data transformation because they have expressiveness (cover almost all data transformations especially if combined with user-defined queries), validity, and ambiguity, and have a rather low learning curve. Moreover in Kyrix, the additional Selector, Viewport Location, Predicate, Preprocess, Rendering, and Placement configurations and functions offer flexibility and support for expressive design space.<br />
+<br />
+In my opinion, the core contribution of Kyrix is its attempts to provide scalable but generic performance optimization for interactive visualization systems by utilizing the existing tools that we already have (JS rendering, DBMS etc.). First, it defines several primitives and components of the systems, such as layer, canvas, zoom, viewports, data transform, etc. These primitives are realized in the form of expressive and flexible declarative language. Next, it observes that only one data subset is displayed on viewport and thus it attempts to optimize data fetching when there is a viewport change. It makes use of R-tree spatial database indexes for efficient expanded bounding box viewport queries and made use of bounding box caching and incremental view maintenance.<br />
+<br />
+This innovation sets Kyrix apart from other works because most of them focus on solving the problems in one dimensional way (either solving scalability but too specific, generic but too limiting or verbose, or does not solve scalability issues). Rather than using data tiling or images (as with Immens) which could potentially lose spatial information of objects and having to decide the optimal tile size, Kyrix uses R-tree spatial database. However, this use of R-tree spatial database has a drawback as well as it might take long to precompute and extra care must be taken to handle dynamic data.</p>
+<h5>Example Vis</h5>
+<p class="block"></p>
+
+<h3>2/24/20 23:23 Haneen</h3>
+<p class="block">This paper introduces a framework that facilitates the construction of web-based pan/zoom visualizations for large-scale data over client-server architecture. Through declarative specification and for applications that are constrained by pan and zoom interactions, developers can utilize this framework to construct frontend and backend components over versatile data types. The framework supports a range of automatic optimization techniques to increase the applications responsiveness, such as building database indexes, prefetching, and caching. The authors claim that the system is expressive, yet all the examples provided perform query lookup and projection; I wonder how an application that supports interactive aggregation queries would be constructed using this system and whether optimizing it using spatial indexes is enough. <br />
+I think the core contribution of the paper is the end-to-end construction for applications that support pan/zoom interactions and decoupling backend optimization from the applications visualization specification.</p>
+<h5>Example Vis</h5>
+<p class="block"></p>
+
+<h3>2/24/20 20:08 Yin Zhao</h3>
+<p class="block">Kyrix is an integrated system for developing scalable visualizations with pan/zoom. It achieves generality (supports general purpose visualization, instead of for specific dataset such as google map), scalability (enables using datasets not necessarily fit into the memory). I like that it models the canvas (level of detail) and zoom as nodes and edges in a connected directed graph. The paper also provides brief implementation overview, very high level architecture graph and detailed performance optimizations. I think the core contribution is its generality as it could be applied to any data type.<br />
+There is the backend server to handle potentially very large database. Who provides that?</p>
+<h5>Example Vis</h5>
+<p class="block"></p>
+
+<h3>2/24/20 19:43 Carmine Elvezio</h3>
+<p class="block">The paper on Kyrix presents an integrated system that facilitates the creation of zoomable UIs (ZUIs), combining an expressive declarative language and the server-side support necessary to support large-scale interactive data visualizations (when considering panning and zooming actions), with support for interactions occurring with with responses under 50ms. In addition, the authors present a user study assessing the feasibility and advantages of programming with Kyrix and its general performance. The authors set out to create a language that would allow for generality, ease of use, and scalability. Over the previous literature, Kyrix aims to provide the pan/zoom capabilities (that Pad++ and ZVTM provide), with ability to scale to large datasets, with support for data primitives (thus supporting a wide range of visualizations without the need to hardcode support in, which interrupts the developers data-level reasoning), while supporting database spatial queries that execute not just in memory but over disk-based storage, which enable the goal of creating large-scaled visualizations. I agree that this particular point is significant over prior work as other systems did indeed have limitations on the scale of datasets that can be used, and the lack of primitives would indeed require considerably more domain specific low-level code. However, one consideration here is the support for data-transformations as was seen by systems like Vega-Lite. I think it would be better to have explored why systems such as Vega-Lite would actually struggle with these larger datasets as that is currently unclear. Considering the authors stated limitation in multidimensional data cube approaches due to aggressive memory limitations, I agree that the contribution of the utilization of a databases own spatial index (allowing use on on-disk approaches instead - with an R-tree indexing scheme being utilized on-disk) is indeed significant. However, I believe that this claim in particular is somewhat weakened by contributions by systems such as Immens, which claim to offload some of this limitation to databases as well, but not necessarily scaling with them (as still being reliant on data cube modalities). Kyrixs approach would scale with the databases where Immens wouldnt, but I believe this particular distinction should have been further clarified in the paper. But I do like the authors distinction between data-tile approaches and the spatial indexing utilization that they prefer. I also really appreciate the attention to the importance of ease of development, even though a number of papers have claimed this as well. Indeed, the program snippets do indeed make this look like a fairly approachable language. Although the user study comments do indicate some difficulty in data transform and zoom, which are critical elements of the system (and arguable the principal thing the authors tried to help with). Also, I think the presence of a proper case study is fantastic and really appreciate the authors conductance of a proper user study. Although the lack of a control condition does limit the impact of the study somewhat. One thing that I would have liked to see clarified was the notion of a zoom where additional data would not have been required to be loaded. While simple, I wasnt actually sure if a canvas swap was always needed. However, the zoom and pan capabilities do seem very powerful, especially when combined with the caching scheme described by the authors. One of the limitations that I see is that Kyrix is limited in the transformations that it does. For example, is data rotation possible? Additionally, what would occur with multi-item selection (as was demonstrated by Vega-Lite for example) in Kyrix. Considering generality was one of the goals here, I think it would be great to see a meta-analysis of how the interactions/underlying optimizations could have been extended to support these additional data types. Further, I would have liked to see an assessment of how well Kyrix would perform with different client-side capabilities (more powerful CPU/GPU combinations and PC/Tablet) as different devices can provide different interaction capabilities (thus extending support beyond pan/zoom and 2D in general). Again this principally speaks to the question of generality.<br />
+<br />
+I think Kyrixs single core contribution is the capability to do panning and zooming interactions on a large (not infinite, but only bound by a databases own capability) datasets. This comes from a combination of how Kyrix indexes. Kyrix uses a special spatial indexing scheme that is stored as an auxiliary table (per layer) storing data representation after a data transform and bounding box of the visual object. The bounding box item then becomes a R-tree spatial index. This particular detail I think forms the foundation for what makes Kyrix work with such large datasets, as modern databases would already support indexing along this spatial index anyway (any why Kyrix can then claim to scale up with the database itself). Compared to prior work, this does not necessarily involve some of the reduction schemes seen there (such as binning in Immens) and can go beyond the limitations present in tiling schemes (which can involve significant memory usage) when trying to execute pan/zoom operation which involves heavier querying of the database.<br />
+</p>
+<h5>Example Vis</h5>
+<p class="block"></p>
+
+<h3>2/24/20 14:08 Celia Arsen</h3>
+<p class="block">This paper presents a system to help developers build scalable data visualizations with pan and zoom interactivity. I enjoyed the evaluation in this paper because they really try to isolate each of their claims and test them separately. I also really like that they put their tool in the hands of developers and collected both quantitative and qualitative feedback about its usability. One thing I wonder is if it is really worthwhile to have general solutions to data visualization scalability issues (as opposed to purpose-built solutions). Are there lots of people (analysts) who need to work with very disparate data types? In section 6, the example visualizations were interesting, but many other existing tools can support much more complex geographic data visualization than their example USMap. The authors mention GoogleMaps. ArcGIS and even Social Explorer have preferable capabilities, including pan and zoom, of course. Most likely, a geographer or cartographer will not use Kyrix over a tool designed specifically for their challenges. As the authors expand Kyrix as detailed in the future work section, who do they envision as their target audience? <br />
+<br />
+I find the most important contribution of Kyrix is that they designed a system for big data visualization that does not presume that the data can fit in memory. Anyone who has worked on a visualization task using big data knows this is a major pitfall of current tools.</p>
+<h5>Example Vis</h5>
+<p class="block"></p>
+
+<h3>2/24/20 1:08 Zachary Huang</h3>
+<p class="block"><br />
+Kyrix talks about a system to help build pan and zoom. Its significant part is to design a declarative language for authoring pan and zoom. It further optimize performance by building disk-based R-tree as well as front-end caching. Limitation includes not avoid over plotting. Kyrix's single core contribution is that it builds a general system that deal with both front-end and back-end. Previous research only restricts to a certain domain or only front end. These systems can't process huge volume data, and make developer feel challenging to embed pan and zoom into their website.</p>
+<h5>Example Vis</h5>
+<p class="block"></p>
+
+<h3>2/23/20 12:48 Adam Kravitz</h3>
+<p class="block">Kyrix was created for the purpose of creating general and large scale web based pan/zoom visualizations more easily. The paper explains that pan and zoom are powerful interactive tools, but what exists doesn't have backend support for large scale visualizations. Kyrix gives a declarative language and back end support for large datasets performance optimization to achieve generality (support datatypes and visualizations ), ease of development, and scalability. <br />
+The significance is that more and more data is being collected and being able to interact with that data in an efficient way will allow exploration and discovery, but there needs to be better interactive tools for all this influx of large data. Kyrix will be that better tool, which I agree is a necessary need since data seems to be collected at a faster and faster without any signs of slowing down. Kyrix solves and makes easy the interactions with large amounts of data with customizable zooms, zoom selector, and selection functions where visual objects can trigger a zoom.<br />
+The technical strengths that I like comes form Kyrixs contributions which are visual and data pipline to make large scale pan and zoom easier, a declarative method for authoring pan and zoom for large scale data visualizations, and lastly performance optimization integrated with data management systems. The zoom works with canvas layers models, which allows several encoding of data and zooming in and out allows switching between canvas (at least from what I understand).<br />
+A limitation or what I think is a limitation is that to save memory kyrix fetches visual object using trees on desk to save memory, however with this large amounts of data would the tree structure still not matter. They still have to story all the zoom and pan payer and encodings that they need. The tree should allow quicker access of those encoding but dont all encoding have to be generated first then searched?<br />
+Kyrix contribution sets it apart from other work we read since it focused not on a platform for ease of search and discover but more of a tool to use to get more insight on data. Balancing design and the visual limitations of large data and trying to allow deepen understanding of graphs without more suggestions of different graphs<br />
+</p>
+<h5>Example Vis</h5>
+<p class="block"></p>
+
+<h3>2/21/20 16:47 Qianrui Zhang</h3>
+<p class="block"># Review<br />
+This paper presents Kyrix, a system for developing scalable visualizations driven by pan and zoom interactions. The system offers a declarative model for specification of pan/zoom visualizations and developers can create visualizations by writing JS. The authors also show that the model is both efficient and easy for developers to learn.<br />
+<br />
+I think using declarative model to build visualization is an exciting direction. While Kyrix only handles pan/zoom visualizations, the technique is solid and it is possible that future work can extend the model to other interactions, resulting in something like an interactive visualization framework for big data. So I believe Kyrix is a promising exploration in this field.<br />
+<br />
+One limitation is the system requires (at least) knowledge of javascript programming and SQL writing, which makes it only suitable for some developers rather than ordinary people. And I wonder how long people will spend on the system if they are not familiar with javascript/SQL before, which is not explicitly shown in the experiment. And based on the code snippets in figure 4-7, I feel it's not that easy to write program in Kyrix.<br />
+<br />
+# Addition<br />
+I think the single core contribution Kyrix makes is the scalable model that supports pan/zoom interactions on big data(data with backend database support). As is stated in the paper, prior work only focuses on data that can fit in memory while Kyrix provides a method to deal with on-disk data.</p>
+<h5>Example Vis</h5>
+<p class="block"></p>
+
+<h2 id="paper-3">Paper 3</h2>
+
+<!--
+## Reviews
+
+-->
+
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>

@@ -1,0 +1,208 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+	<div class="container">
+		<div class="deco">COLUMBIA UNIVERSITY COMS W4111.002</div>
+    <div class="title"><a href="/" style="color:black;">INTRODUCTION TO DATABASES</a></div>
+	</div>
+</div>
+
+
+
+
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-8 col-md-offset-2">
+		<h1 id="draco">Draco</h1>
+
+<p>Intro</p>
+
+<ul>
+  <li>Challenge: perceptual studies and design knowledge keep changing
+    <ul>
+      <li>how to continuously incorporate into vis design tools?</li>
+      <li>current systems are adhoc rules + search</li>
+    </ul>
+  </li>
+  <li>Want a common representation of the knowledge 
+(a “knowledge base”) + system that can use it
+    <ul>
+      <li>The knowledge is ASP statements.</li>
+      <li>System to use it is the clingo solver.</li>
+    </ul>
+  </li>
+  <li>seek to make formal models of design knowledge a shared resources
+    <ul>
+      <li>implies that design knowledge is a matter of 
+running comparison experiments between vega-lite statements</li>
+      <li>studies == partial rankings</li>
+    </ul>
+  </li>
+  <li>Borrows a lot from APT’s formalisms, extended to
+    <ul>
+      <li>use a constraint solver</li>
+      <li>support vega-lite</li>
+      <li>and soft constraints</li>
+    </ul>
+  </li>
+</ul>
+
+<p>ASP primer and defining the search space</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    A :- L1 .. Ln           // A is atom, L1...Ln is body
+                            // if body is true, then derives "record(s)" A
+    A :- not L              // derivation stops if L is true
+    A.                      // defines a base "record"
+      :- L                  // constraint.  should derive to False
+      :~ L [n]              // soft constraint with penalty n
+    l { A0 .. An } k        // l - k atoms in set should be true
+                            // e.g., between 1 to 5 encodings
+</code></pre></div></div>
+
+<p>Defining vega-lite search space as rules</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    marktype(point; line; ...)      // defines "base" records that defines design space
+    mark(M) :- marktype(M)          // user specifies "mark(E0)" or "mark(bar)"
+                                    // says mark M must be valid mark type
+
+    obj_id(1..max_extra_encs).      // up to 5 object ids allocatable
+    { encoding(E): obj_id(E) }.     // alloc unique object id for each encoding
+    { channel(E,C): channel(C) } = 1 :- encoding(E).   // num encodings for a 
+                                                       // given channel should be 1
+
+
+    :- log(E), zero(E)              // log scale should not contain zero.
+    0 { zero(E) } 1 :- encoding(E). // program can tell spec that encoding is zero
+    0 { log(E) } 1 :- encoding(E).  // 
+
+    // rules to define zero(), log(), discrete/contiuous channels, transforms, stacking, overlap, statistics, etc etc
+    // anything that can affect a design decision
+</code></pre></div></div>
+
+<p>What about rules such as: for Quant, pos &gt; len &gt; angle &gt; slope &gt; area …</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    :~ channel(E,y), type(E,quant). [0]
+    :~ channel(E,x), type(E,quant). [0]
+    :~ channel(E,xlen), type(E,quant). [1]
+    :~ channel(E,ylen), type(E,quant). [1]
+    ...
+</code></pre></div></div>
+
+<ul>
+  <li>data schema as numrows, fieldtype, cardinality, extent, entropy, etc.
+    <ul>
+      <li>what about compositional statistics?</li>
+      <li>if data transform can be a pipeline of A, B, C, then need to enumerate one atom for every combo</li>
+    </ul>
+  </li>
+  <li>task as a multi-class variable (summary, value).
+    <ul>
+      <li>What about more complex/compositional tasks?</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Vega-lite is hierarchical, grammar needs to be flattened to use in ASP.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    "mark": "bar",
+    "encoding": 
+      "x": 
+        "field": "?"
+        "type": "ordinal"
+      "y":
+        "field": "Horsepower", 
+        "type": "quantitative",
+        "aggregate": "mean"
+
+
+    mark(bar)
+    encoding(e0)    -- nesting == variable
+    channel(e0, x)
+    type(e0, ord)
+    field(e0,_)
+    ...
+</code></pre></div></div>
+
+<p>Eval shows</p>
+
+<ul>
+  <li>Expressiveness
+    <ul>
+      <li>reconstruct APT/voyager preferences</li>
+      <li>show competitive perf to hand-coded search</li>
+    </ul>
+  </li>
+  <li>Show that rankSVM works, in the sense that the visualization is different than non-learned weights</li>
+</ul>
+
+<p>How is Draco supposed to be used?</p>
+
+<ul>
+  <li>Given a partial spec, fill in the rest
+    <ul>
+      <li>Where does partial spec come from?</li>
+      <li>Primarily for seeded recommendations</li>
+    </ul>
+  </li>
+  <li>Need to know what statistics will be useful for makin design decisions up front</li>
+  <li>Need to know how many encodings are needed</li>
+</ul>
+
+<p>Markov Logic Networks</p>
+
+<ul>
+  <li>applies markov network to first-order logic for uncertainty inference</li>
+  <li>unsatisfiable statements have prob 0, all tautologies have prob 1</li>
+  <li>atomic formulas don’t have truth value unless they are grounded</li>
+  <li>sentence in MLN corresponds to a visualization (encodings, channels, etc) in draco</li>
+  <li>P(v) = e^{-Cost(v)}</li>
+  <li>MLN is similar to datalog + constraints</li>
+</ul>
+
+<p>Questions</p>
+
+<ul>
+  <li>How to verify that the hundreds of constraint rules are correct?
+(general problem with declarative programs, SQL included)</li>
+</ul>
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>

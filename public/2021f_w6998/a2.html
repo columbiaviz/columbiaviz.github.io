@@ -1,0 +1,110 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+		<div class="deco">COLUMBIA UNIVERSITY COMS W6998</div>
+    <div class="title"><a href="/2020s_w6998" style="color:black;">SYSTEMS FOR HUMAN DATA INTERACTION</a></div>
+</div>
+
+
+
+
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-6 col-md-offset-3">
+		<h1 id="a2-play-with-rec-systems">A2: Play with Rec Systems</h1>
+
+<p>You are going to have experience with a few visualization design recommendation techniques.  These are listed as the first three “optional” <a href="./papers#design">readings under Design Recommendation</a>.</p>
+
+<p>Due: Friday 10/1 11:59PM EST..</p>
+
+<h2 id="draco">Draco</h2>
+
+<p><a href="https://idl.cs.washington.edu/files/2019-Draco-InfoVis.pdf">Draco</a> is a system that models visualization design as a constraint problem based on <a href="https://en.m.wikipedia.org/wiki/Answer_set_programming">Answer Set Programming</a>.  It is meant to be used as a recommendation engine within an exploration or recommendation tool such as Voyager.  In this assignment, you will try your hand at writing Draco specifications, XYZ, and comment on the experience.</p>
+
+<p>Go to this <a href="https://observablehq.com/@sirrice/auto-visualization-with-draco">Observable notebook</a> and</p>
+
+<ol>
+  <li>Create an account and fork the notebook</li>
+  <li>implement the <code class="language-plaintext highlighter-rouge">createDracoProgram()</code> function.</li>
+  <li>Click “publish” in your notebook and remember the URL</li>
+</ol>
+
+<h2 id="voyager">Voyager</h2>
+
+<p>You will use Voyager for data exploration and report your thoughts</p>
+
+<ul>
+  <li>Go to <a href="https://vega.github.io/voyager/">the voyager website</a> and load the “Birdstrikes” dataset.  This is a dataset from the Federal Aviation Agency which collects instances of birds that strike planes, as self-reported by airlines, pilots, and airports.</li>
+  <li>Use the tool to identify two interesting facts from the dataset.</li>
+  <li>Reflect on the ways that Voyager assisted your analysis, as well as ways where it was not useful or negatively impacted your analysis process.</li>
+  <li>Optional: Submit the vega-lite specs of the views you generated in the assignment form.</li>
+</ul>
+
+<p>The following are instructions to generate the vega-lite specs.</p>
+
+<ol>
+  <li>Each view has a small bookmark icon, if you click it twice it will ask if you want to remove or keep the book mark.</li>
+  <li>On the top left, there is a “Bookmarks (x)” link that will list your bookmarks.  Click on it.</li>
+  <li>Click the “Export” on the upper left of the overlay to download the vega-lite specs of the bookmarked views.</li>
+</ol>
+
+<p><img src="/files/hdisys/voyager export.gif" style="width: 400px;" /></p>
+
+<h2 id="lux">Lux</h2>
+
+<p><a href="https://arxiv.org/pdf/2105.00121.pdf">Lux is an intent-based visualization recommendation system</a>, where you specify attributes of interest and it recommends visualizations based on them.    You will <a href="https://mybinder.org/v2/gh/lux-org/lux-binder/master?urlpath=lab/tree/demo/hpi_covid_demo.ipynb">load the example Jupyter Notebook</a> and go through the tutorial.    At the end of the notebook use their intent and visualization mechanisms to identify a new interesting fact in the COVID data (or another dataset).</p>
+
+<ul>
+  <li><a href="https://github.com/lux-org/lux">Lux github</a></li>
+  <li><a href="https://mybinder.org/v2/gh/lux-org/lux-binder/master?urlpath=lab/tree/demo/hpi_covid_demo.ipynb">Live Jupyter Notebook</a></li>
+</ul>
+
+<h1 id="submission-instructions">Submission Instructions</h1>
+
+<p>Submission</p>
+
+<ul>
+  <li>Use <a href="https://forms.gle/QbVfT9Vtb1AeJQz9A">this submission form</a> and answer the reflection questions.</li>
+  <li>Start thinking about projects you want to propose!</li>
+</ul>
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>

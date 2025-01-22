@@ -1,0 +1,757 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+		<div class="deco">COLUMBIA UNIVERSITY COMS W6998</div>
+    <div class="title"><a href="./" style="color:black;">SYSTEMS FOR HUMAN DATA INTERACTION</a></div>
+</div>
+
+
+
+<div class="row content" style="margin-top: 2em;">
+  <div class="col-sm-2 col-sm-offset-1">
+		
+		<h2 id="information">Information</h2>
+
+<ul>
+  <li><a href="http://www.eugenewu.net">Eugene Wu</a> (Instructor)   <br />
+<small>OH: T 2-3PM, CS Courtyard</small></li>
+  <li>Class: MW 1-2:30PM <br />
+Location: 401 Chandler</li>
+  <li><a href="./syllabus">Syllabus</a></li>
+  <li><a href="https://join.slack.com/t/hdisystems/signup">Slack</a></li>
+  <li><a href="./papers">Papers</a></li>
+  <li><a href="./projects">Project</a></li>
+  <li><a href="https://github.com/columbiaviz/2021f-systemshdi/wiki">Submit Reviews</a></li>
+</ul>
+
+<h2 id="prereqs">Prereqs</h2>
+
+<ul>
+  <li>Req: W4111 Intro to DB</li>
+  <li>Pref: W4112 DB Impl</li>
+  <li>Pref: Intro to Data Vis</li>
+  <li>Ugrads OK; see Prof Wu</li>
+</ul>
+
+<h2 id="grading">Grading</h2>
+
+<p>(Tentative)</p>
+
+<ul>
+  <li><a href="./projects">Project</a> <small>50%</small>
+    <ul>
+      <li>Proposal <small>5%</small></li>
+      <li>Draft <small>5%</small></li>
+      <li>Demo/Poster <small>5%</small></li>
+      <li>Paper <small>35%</small></li>
+    </ul>
+  </li>
+  <li><a href="./syllabus#participation">Participation</a>  <small>20%</small></li>
+  <li><a href="./syllabus#reading">Paper reviews</a> <small>20%</small></li>
+  <li>Assignments <small>15%</small></li>
+</ul>
+
+<h2 id="invited-speakers">Invited Speakers</h2>
+
+<ul>
+  <li><a href="https://people.csail.mit.edu/ebakke/">Eirik Bakke</a> <small>Founder, <a href="http://www.ultorg.com/">Ultorg</a></small></li>
+  <li><a href="https://lmeyerov.github.io/">Leo Meyerov</a> <small>Co-founder, <a href="https://www.graphistry.com/">Graphistry</a></small></li>
+  <li><a href="https://www.zcliu.org/">Leo Zhicheng Liu</a> <small>Assistant Professor, UMD</small></li>
+</ul>
+
+<h2 id="related-venues">Related Venues</h2>
+
+<p>HDI combines many different research areas.  The following are venues most related to the topics in this course:</p>
+
+<p><strong>VIS</strong>: <a href="http://ieeevis.org">VIS</a>, <a href="https://www.eurovis.org/egev20/">EuroVIS</a>, <a href="http://research.cbs.chula.ac.th/pvis2019/home.aspx">PacificVIS</a>  <br />
+<strong>HCI</strong>: CHI, UIST, AVI, INTERACT, IUI  <br />
+<strong>DB</strong>:  <a href="https://sigmod.org/">SIGMOD</a>, <a href="http://www.vldb.org/">VLDB</a>, <a href="http://cidrdb.org/">CIDR</a>, ICDE <br />
+<strong>ML</strong>: <a href="https://mlsys.org/">MLSys</a>, NeurIPS, ICML, KDD <br />
+<strong>Human in the Loop</strong>: <a href="https://hilda.io/2020/">HILDA</a>, <a href="https://www.interactive-analysis.org/">DSIA</a> <br />
+<strong>Other</strong>: <a href="http://cscw.acm.org">CSCW</a></p>
+
+
+  </div>
+  <div class="col-sm-8">
+		<h2 id="overview">Overview</h2>
+
+<p>Human Data Interaction studies the interface between humans and data that help users achieve data-oriented tasks. Further, creating human data interfaces is extremely challenging because the responsiveness of the interface directly depends on the system architecture as well as the interface design.  What system innovations are needed to simplify how effective human data interfaces can be created and used?</p>
+
+<p>Human Data Interaction is a nascent field, and we will study modern research in data visualization, HCI, data analysis, and data management systems.   We will first survey research in visualization interfaces and data management, then deep dive into the interplay between the two fields, and finally explore how the ideas apply in different application domains.</p>
+
+<p>The goal of the seminar is to learn about current research, and learn <em>how</em> to conduct research. <br />
+Students will submit reviews of the class readings before each session.  A session will consist of a round table discussion of the week’s readings to understand the context, the technical details, and to brain storm follow up research questions.  Course membership will be determined based on quality of reviews and active participation.  Students will also work in small teams on a semester-long research project that is within the scope of the course topic.</p>
+
+<!--
+<small style="color: grey">Enrollment based on .</small>
+-->
+
+<h2 id="recent-announcements">Recent Announcements</h2>
+<ul>
+  <li>12/13/21
+    <ul>
+      <li>Review and Assignment (A1-A4) Grades have been published on Courseworks.</li>
+    </ul>
+  </li>
+  <li>12/02/21
+    <ul>
+      <li>Presentation showcase on Monday 12/06/21.</li>
+      <li>All students must add their respective slides to one <a href="https://docs.google.com/presentation/d/1tQxrWHC2Bo-vPekm4b8qOn4A1yARUvTpTOx28zlaF4M/edit?usp=sharing">master slide</a></li>
+      <li>Detailed submission instructions can be found on the Project page and master slide link.</li>
+    </ul>
+  </li>
+  <li>12/01/21
+    <ul>
+      <li><a href="./sessions/Query_Explanations.pdf">Query Explanations by Alex Yao</a></li>
+      <li><a href="./sessions/InterpretableMachineLearning.pptx">Interpretable Machine Learning by Kevin Gao</a></li>
+      <li><a href="./sessions/Voice_Natural_Language.pptx">Voice And Natural Language by Carlos Eguiluz Rosas</a></li>
+      <li><a href="./sessions/HDI_ Performance &amp; Engines.pptx">Performance &amp; Engine PPT by Jeffrey Tao</a></li>
+      <li><a href="./sessions/Approximation and Precomputation.pptx">Approximation &amp; Precomputation PPT by Haoran Pu</a></li>
+    </ul>
+  </li>
+  <li>15/11/21
+    <ul>
+      <li>Deadline for A4 has been extended and is now due by Nov 19 (Friday), 11:59 PM (EST)</li>
+    </ul>
+  </li>
+  <li>10/21/21
+    <ul>
+      <li>Readings for 25th Nov (Monday) have been updated, kindly check and complete before the deadline.</li>
+    </ul>
+  </li>
+  <li>10/16/21
+    <ul>
+      <li>Virtual Classes will be held until 3rd Nov, 2021, after which all classes will be held in-person for all students.</li>
+    </ul>
+  </li>
+  <li>10/10/21
+    <ul>
+      <li><a href="./sessions/presentation.pptx">Instructions for Reading Presentation</a></li>
+    </ul>
+  </li>
+  <li>10/2/21
+    <ul>
+      <li>No reviews for class on Wed 10-06.  We will use to review the Vis topics, instead of multiverse analysis.</li>
+    </ul>
+  </li>
+  <li>09/21/21
+    <ul>
+      <li><a href="./sessions/slides.pptx">Slides used at the beginning of classes</a></li>
+    </ul>
+  </li>
+  <li>09/15/21
+    <ul>
+      <li><a href="https://www.dropbox.com/s/z41ojralfc98p29/public%20notebook.pdf?dl=0">Link to PDF of notes taken in class</a></li>
+      <li><a href="./sessions/01.pptx">Slides from first class</a></li>
+    </ul>
+  </li>
+  <li>09/13/21
+    <ul>
+      <li>Read our COVID policy in <a href="./syllabus">the syllabus</a></li>
+      <li><a href="./a1">Start and submit assignment 1</a></li>
+      <li>Start reading wednesday’s paper and submit a review by the night before</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="schedule-in-flux">Schedule (In Flux)</h2>
+
+<style>
+.presenter { }
+</style>
+
+<table class="table table-striped schedule">
+  <thead>
+  <tr>
+    <th class="date" style="max-width: 15em; text-align: left;"> <p> <span>Date </span> </p> </th>
+    <th style="min-width: 15%;"> <p> <span>Topic </span> </p> </th>
+    <th style="width: 10%"> <p> <span>Notes </span> </p> </th>
+    <th style="width: 5%;"> <p> <span>Assigned</span> </p> </th>
+    <th style="width: 15%;"> <p> <span>Due</span> </p> </th>
+  </tr>
+  </thead>
+
+
+
+  
+  <tr style="background-color: #fdffe4; ">
+    <!--<td class="idx">C1</td>-->
+    <td class="date" style="text-align: left">C1: Mon 09-13</td>
+    <td class="slug">
+      
+        <a href="./papers#intro"><b>Intro</b></a>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td><a href="./a1">A1</a> </td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: #fdffe4; ">
+    <!--<td class="idx">C2</td>-->
+    <td class="date" style="text-align: left">C2: Wed 09-15</td>
+    <td class="slug">
+      
+        <a href="./papers#tasks"><b>Vis: Tasks and Goals</b></a>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td><a href="https://github.com/columbiaviz/2021f-systemshdi/wiki">Reviews</a> (11:59PM Tues)<br /><br /><a href="./a1">A1 (Sun)</a></td>
+  </tr>
+
+  
+  <tr style="background-color: #fdffe4; ">
+    <!--<td class="idx">C3</td>-->
+    <td class="date" style="text-align: left">C3: Mon 09-20</td>
+    <td class="slug">
+      
+        <a href="./papers#grammars"><b>Vis: Languages</b></a>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td><a href="./a2">A2</a> </td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: #fdffe4; ">
+    <!--<td class="idx">C4</td>-->
+    <td class="date" style="text-align: left">C4: Wed 09-22</td>
+    <td class="slug">
+      
+        <a href="./papers#interactions"><b>Vis: Interaction Design</b></a>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: #fdffe4; ">
+    <!--<td class="idx">C5</td>-->
+    <td class="date" style="text-align: left">C5: Mon 09-27</td>
+    <td class="slug">
+      
+        <a href="./papers#perception"><b>Vis: Perception</b></a>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: #fdffe4; ">
+    <!--<td class="idx">C6</td>-->
+    <td class="date" style="text-align: left">C6: Wed 09-29</td>
+    <td class="slug">
+      
+        <a href="./papers#cognition"><b>Vis: Cognition</b></a>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td><a href="./a2">A2 (Friday)</a> </td>
+  </tr>
+
+  
+  <tr style="background-color: #fdffe4; ">
+    <!--<td class="idx">C7</td>-->
+    <td class="date" style="text-align: left">C7: Mon 10-04</td>
+    <td class="slug">
+      
+        <a href="./papers#design"><b>Vis: Recommendation</b></a>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: #fdffe4; ">
+    <!--<td class="idx">C8</td>-->
+    <td class="date" style="text-align: left">C8: Wed 10-06</td>
+    <td class="slug">
+      
+        <b>Vis: Review of vis (no readings)</b>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td><a href="./projects#proposal">Proposal (Friday)</a></td>
+  </tr>
+
+  
+  <tr style="background-color: white; ">
+    <!--<td class="idx">C9</td>-->
+    <td class="date" style="text-align: left">C9: Mon 10-11</td>
+    <td class="slug">
+      
+        <a href="./papers#models"><b>DB: Data models</b></a>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: white; ">
+    <!--<td class="idx">C10</td>-->
+    <td class="date" style="text-align: left">C10: Wed 10-13</td>
+    <td class="slug">
+      
+        <a href="./papers#dbvis"><b>DB: Interfaces from a Data Perspective</b></a>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td><a href="./projects#checkin">Check-in</a></td>
+  </tr>
+
+  
+  <tr style="background-color: white; ">
+    <!--<td class="idx">C11</td>-->
+    <td class="date" style="text-align: left">C11: Mon 10-18</td>
+    <td class="slug">
+      
+        <a href="./papers#perf"><b>DB: Performance Overview and Columnar Engines</b></a>
+      
+      
+        <br />
+        <span class="presenter">Presenter: Jeffrey Tao</span>
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: white; ">
+    <!--<td class="idx">C12</td>-->
+    <td class="date" style="text-align: left">C12: Wed 10-20</td>
+    <td class="slug">
+      
+        <a href="./papers#aqp"><b>DB: approximation and precomputation</b></a>
+      
+      
+        <br />
+        <span class="presenter">Presenter: Haoran Pu</span>
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td><a href="./a3">A3</a></td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: white; ">
+    <!--<td class="idx">C13</td>-->
+    <td class="date" style="text-align: left">C13: Mon 10-25</td>
+    <td class="slug">
+      
+        <a href="./papers#colstore"><b>DB: columnar engines</b></a>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: #fdffe4; ">
+    <!--<td class="idx">C14</td>-->
+    <td class="date" style="text-align: left">C14: Wed 10-27</td>
+    <td class="slug">
+      
+        <a href="./papers#miscperf"><b>DB: physical design</b></a>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: #fdffe4; ">
+    <!--<td class="idx">C15</td>-->
+    <td class="date" style="text-align: left">C15: Mon 11-01</td>
+    <td class="slug">
+      
+        <b>Holiday</b>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: #fdffe4; ">
+    <!--<td class="idx">C16</td>-->
+    <td class="date" style="text-align: left">C16: Wed 11-03</td>
+    <td class="slug">
+      
+        <a href="./papers#voice"><b>Modality: voice/text</b></a>
+      
+      
+        <br />
+        <span class="presenter">Presenter: Carlos Eguiluz Rosas</span>
+      
+      
+        <br />
+        In-Person Classes begin
+      
+      </td>
+    <td class="notes">
+     In-Person Classes begin
+    </td>
+    <td></td>
+    <td><a href="./projects#draft">Paper Draft (Fri)</a></td>
+  </tr>
+
+  
+  <tr style="background-color: #fdffe4; ">
+    <!--<td class="idx">C17</td>-->
+    <td class="date" style="text-align: left">C17: Sun 11-07</td>
+    <td class="slug">
+      
+        <b>-</b>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td><a href="./a3">A3</a> (Sunday)</td>
+  </tr>
+
+  
+  <tr style="background-color: #fdffe4; ">
+    <!--<td class="idx">C18</td>-->
+    <td class="date" style="text-align: left">C18: Mon 11-08</td>
+    <td class="slug">
+      
+        <a href="./papers#spreadsheet"><b>Modality: spreadsheet</b></a>
+      
+      
+        <br />
+        <span class="presenter">Guest speaker: Eirik Bakke</span>
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td><a href="./a4">A4</a></td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: white; ">
+    <!--<td class="idx">C19</td>-->
+    <td class="date" style="text-align: left">C19: Wed 11-10</td>
+    <td class="slug">
+      
+        <a href="./papers#touch"><b>Modaliy: touch</b></a>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: white; ">
+    <!--<td class="idx">C20</td>-->
+    <td class="date" style="text-align: left">C20: Mon 11-15</td>
+    <td class="slug">
+      
+        <a href="./papers#events"><b>Tasks: event analysis</b></a>
+      
+      
+        <br />
+        <span class="presenter">Guest speaker: Leo Zhicheng Liu</span>
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td><a href="./a4">A4</a></td>
+  </tr>
+
+  
+  <tr style="background-color: white; ">
+    <!--<td class="idx">C21</td>-->
+    <td class="date" style="text-align: left">C21: Wed 11-17</td>
+    <td class="slug">
+      
+        <a href="./papers#clean"><b>Tasks: extraction</b></a>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: white; ">
+    <!--<td class="idx">C22</td>-->
+    <td class="date" style="text-align: left">C22: Mon 11-22</td>
+    <td class="slug">
+      
+        <a href="./papers#debugml"><b>Tasks: debugging ML</b></a>
+      
+      
+        <br />
+        <span class="presenter">Presenter: Kevin Gao</span>
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: white; ">
+    <!--<td class="idx">C23</td>-->
+    <td class="date" style="text-align: left">C23: Wed 11-24</td>
+    <td class="slug">
+      
+        <b>Holiday</b>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: white; ">
+    <!--<td class="idx">C24</td>-->
+    <td class="date" style="text-align: left">C24: Mon 11-29</td>
+    <td class="slug">
+      
+        <a href="./papers#debugquery"><b>Tasks: debugging analytics</b></a>
+      
+      
+        <br />
+        <span class="presenter">Presenter: Alex Yao</span>
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: white; ">
+    <!--<td class="idx">C25</td>-->
+    <td class="date" style="text-align: left">C25: Wed 12-01</td>
+    <td class="slug">
+      
+        <a href="./papers#graph"><b>Tasks: graph analysis</b></a>
+      
+      
+        <br />
+        <span class="presenter">Guest speaker: Leo Meyerov</span>
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: #fdffe4; ">
+    <!--<td class="idx">C26</td>-->
+    <td class="date" style="text-align: left">C26: Mon 12-06</td>
+    <td class="slug">
+      
+        <b>Presentations</b>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td><a href="./projects#showcase">Showcase</a></td>
+  </tr>
+
+  
+  <tr style="background-color: #fdffe4; ">
+    <!--<td class="idx">C27</td>-->
+    <td class="date" style="text-align: left">C27: Wed 12-08</td>
+    <td class="slug">
+      
+        <b>Break</b>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  
+  <tr style="background-color: #fdffe4; ">
+    <!--<td class="idx">C28</td>-->
+    <td class="date" style="text-align: left">C28: Mon 12-13</td>
+    <td class="slug">
+      
+        <b>Final Drafts Due</b>
+      
+      
+      
+      </td>
+    <td class="notes">
+     
+    </td>
+    <td></td>
+    <td><a href="./projects#report">Report due</a></td>
+  </tr>
+
+</table>
+
+<h3 id="acknowledgements">Acknowledgements</h3>
+
+<ul>
+  <li><a href="http://azza.azurewebsites.net/">Azza Abouzied</a>: <a href="https://github.com/huda-lab/huda-lab.github.io/blob/master/syllabi/Capstone-InteractiveSystems-SyllabusSpring2019.pdf">Capstone course</a></li>
+  <li><a href="http://www.cs.umd.edu/~leilani/">Leilani Battle</a>: <a href="https://umd.instructure.com/courses/1265679/assignments/syllabus">CMSC828D</a></li>
+  <li><a href="http://agneschang.net/">Agnes Chang</a>: <a href="https://columbiaviz.github.io/2020s_w4995/">COMS 4995 Intro to Data Vis</a></li>
+  <li><a href="http://people.ischool.berkeley.edu/~adityagp/">Aditya P.</a>: <a href="https://cs598.github.io/index.html#papers">CS598</a></li>
+</ul>
+
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+</body>

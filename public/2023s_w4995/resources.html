@@ -1,0 +1,277 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Resources ⟩ Intro to Dataviz ⟩ Spring 2023</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zilla+Slab:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style_2022_w4995.css" />
+		<script
+			src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="10">
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="alert alert-warning" style="margin-top:1em;" role="alert">
+  This is an outdated course page. View <a href="/2025s_w4995/">current semester here</a>.
+</div>
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Intro to Dataviz ⟩ Spring 2023</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="syllabus.html">Syllabus</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Assignments <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="a0.html">🚀 A0: Apply To Enroll</a></li>
+              <li><a href="a1.html">🗂 A1: Sparks Presentation</a></li>
+              <li><a href="a2.html">🗂 A2: Visualization Design</a></li>
+              <li><a href="labs.html#lab-1-shapes-and-styles">🔬 L1: Shapes and Styles</a></li>
+              <li><a href="a3.html">🗂 A3: Exploratory Data Analysis</a></li>
+              <li><a href="labs.html#lab-2-data-binding">🔬 L2: Data Binding</a></li>
+              <li><a href="a4.html">🗂 A4: Interactive Visualization</a></li>
+              <li><a href="labs.html#lab-3-interactivity">🔬 L3: Interactivity</a></li>
+              <li><a href="a5.html">🗂 A5: Final Project</a></li>
+              <li><a href="ax.html">💯 EC: Extra Credit Opportunities</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Demos <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-1-data-select-scale">
+									2/17: Data, Select, Scale</a></li>
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-2-interactivity">
+									2/24: Update, Events, Brush, Drag</a></li>
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-mutable-variables-and-multi-input-cells">
+									3/3: Mutables, Multiple Inputs</a></li>
+      	      <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									3/3: Transition, Zoom</a></li> -->
+              <li><a href="../files/examples/demo_geo.html">
+									3/31: Scrolly, Path, Polygon, Geography</a></li>
+      	      <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									3/31: Bootstrap, Vega</a></li> -->
+              <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									4/14: Hierarchy, Chord, Forces</a></li> -->
+            </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+    <div class="container">
+      <h1>Resources</h1>
+			<h3 id="visualization-toolkits">Visualization Toolkits</h3>
+
+<p>A variety of useful toolkits have been designed to help support information visualization applications. Some include support for the full visualization pipeline from data to interactive graphics, while others focus only on a subset, typically graphics and interaction.</p>
+
+<ul>
+  <li><a href="http://mbostock.github.com/d3">D3</a> – A JavaScript library for data-driven DOM manipulation, interaction and animation. Includes utilities for visualization techniques and SVG generation.</li>
+  <li><a href="http://vega.github.io/vega">Vega</a> – A declarative language for representing visualizations. Vega will parse a visualization specification to produce a JavaScript-based visualization, using either HTML Canvas or SVG rendering. Vega is particularly useful for creating programs that produce visualizations as output.</li>
+  <li><a href="http://vega.github.io/vega-lite">Vega-Lite</a> – A high-level visualization grammar that compiles concise specifications to full Vega specifications.</li>
+  <li><a href="http://processing.org/">Processing</a> or <a href="http://p5js.org/">p5.js</a> – A popular Java-like graphics and interaction language and IDE. Processing has a strong user community with many examples. p5.js is a sister project in JavaScript.</li>
+  <li><a href="https://openframeworks.cc/">OpenFrameworks</a> – an open-source C++ graphics library popular for video and media installations, similar approach to Processing.</li>
+  <li><a href="http://leafletjs.com/">Leaflet</a> – a popular open-source mapping library</li>
+  <li><a href="http://www.vtk.org/">VTK</a> – A scientific visualization library (C++ with wrappers for other languages)</li>
+  <li><a href="https://plot.ly/">Plotly</a> – built on top of D3, offers abstractions that enable building interactive visualizations very quickly with well-known charts.</li>
+  <li><a href="https://bokeh.pydata.org/en/latest/">Bokeh</a> – designed for high-performance interactivity over very large or streaming datasets in web browsers. By Anaconda team.</li>
+  <li><a href="https://seaborn.pydata.org">Seaborn</a> – A Python-based visualization library with visually defensible defaults that builds on <a href="https://pandas.pydata.org">pandas</a> and <a href="https://matplotlib.org">matplotlib</a>.</li>
+  <li><a href="https://vis4.net/chromajs/">Chroma.js</a> – A color-math library for JavaScript capable of generating perceptually uniform color mappings.</li>
+</ul>
+
+<h3 id="exploratory-visualization-tools">Exploratory Visualization Tools</h3>
+
+<ul>
+  <li><a href="http://www.tableausoftware.com/student/">Tableau for Students</a> – get a free Tableau license as a student</li>
+  <li><a href="http://www.tableausoftware.com/public/">Tableau Public</a> – a free version of Tableau which publishes to the web</li>
+  <li><a href="http://had.co.nz/ggplot2/">GGplot2</a> – a graphics language for <a href="http://www.r-project.org/">R</a></li>
+  <li><a href="http://vega.github.io/voyager2">Voyager</a> – web-based data exploration tools from UW’s Interactive Data Lab</li>
+  <li><a href="http://www.ggobi.org/">GGobi</a> – classic system for visualizations of multivariate data</li>
+  <li><a href="https://github.com/observablehq/plot">Observable Plot</a> – A concise JavaScript API for exploratory data visualization (from the authors of D3).</li>
+</ul>
+
+<h3 id="tableau-resources">Tableau Resources</h3>
+
+<ul>
+  <li>
+    <p><a href="https://www.tableau.com/learn/training">Tableau Training</a>: Specifically the <em>Getting Started</em> video and <em>Visual Analytics</em> section. Most helpful when first getting off the ground.</p>
+  </li>
+  <li>
+    <p><a href="https://onlinehelp.tableau.com/current/pro/desktop/en-us/help.html#dataview_examples.html">Build-It-Yourself Exercises</a>: Specifically, sections <em>Build Charts and Analyze Data</em> &gt; <em>Build Common / Advanced Chart Types</em>, and <em>Build Data Views From Scratch &gt; Analyze Data</em> are a good documentation resource.</p>
+  </li>
+  <li>
+    <p><a href="http://rawingwithnumbers.artisart.org/">Drawing With Numbers</a>: blog with example walkthroughs in the <em>Visualizations</em> section, and <em>Tableau Wiki</em> has a bunch of useful links for the most common advanced exploratory / visualization Tableau techniques.</p>
+  </li>
+</ul>
+
+<h3 id="d3-resources">D3 Resources</h3>
+
+<ul>
+  <li><a href="https://d3indepth.com/">D3 In Depth</a>: Code notebook/textbook-like blog that aims to bridge intro textbooks and D3 official documentation.</li>
+  <li><a href="https://clio.columbia.edu/catalog/13137514">D3: Interactive Data Visualization for the Web</a>: O’Reilly book available online through CU libraries.</li>
+  <li><a href="https://bl.ocks.org/">Bl.ocks</a>: Bostock’s code-sharing platform that is the predecessor of Observable; it is the most thorough repository of D3 examples by virtue of having been around since the beginning, but note that most examples are built on D3@V4 or older.</li>
+  <li><a href="https://observablehq.com/@d3/gallery">Observable D3 Gallery</a>: D3 templates and examples organized by type, mostly authored by Bostock, e.g. <a href="https://observablehq.com/@mbostock/methods-of-comparison-compared">Methods of Comparison Compared</a></li>
+  <li><a href="https://observablehq.com/collection/@observablehq/visualization">Observable Visualization Collection</a>: D3@V5 showcase from Bostock as well as many others.</li>
+  <li><a href="https://talk.observablehq.com/">Observable Forums</a>: includes tips specific to Observable platform, e.g. <a href="https://talk.observablehq.com/t/how-to-load-css-files/101/2">How to load css files</a></li>
+</ul>
+
+<h3 id="historical-innovators">Historical Innovators</h3>
+
+<ul>
+  <li><a href="https://karlsluis.medium.com/before-tufte-there-was-bertin-63af71ceaa62">Jacques Bertin</a></li>
+  <li><a href="https://www.maa.org/press/periodicals/convergence/oliver-byrne-the-matisse-of-mathematics-byrnes-euclid-geometry-understood-via-color-coded-diagrams">Oliver Byrne</a></li>
+  <li><a href="https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/">W.E.B. Du Bois</a></li>
+  <li><a href="https://medium.com/@ben_fry/learning-from-lombardi-a28032a7eb5">Mark Lombardi</a></li>
+  <li><a href="https://www.nationalgeographic.com/culture/article/charles-minard-cartography-infographics-history">Charles Joseph Minard</a></li>
+  <li><a href="https://plato.stanford.edu/entries/neurath/">Otto Neurath / Isotype</a></li>
+  <li><a href="https://www.atlasobscura.com/articles/the-scottish-scoundrel-who-changed-how-we-see-data">William Playfair</a></li>
+</ul>
+
+<h3 id="contemporary-practitionersteams">Contemporary Practitioners/Teams</h3>
+
+<ul>
+  <li><a href="https://www.accurat.it/">Accurat Studio</a></li>
+  <li><a href="https://roadtolarissa.com/">Adam Pearce / Chart Diary, NYT, Google</a></li>
+  <li><a href="https://www.nytimes.com/section/upshot">Amanda Cox / NYTimes Upshot</a></li>
+  <li><a href="https://www.catalogtree.net/">Catalogtree</a></li>
+  <li><a href="https://distill.pub/">Distill.pub</a></li>
+  <li><a href="https://fathom.info/">Fathom Information Design</a></li>
+  <li><a href="https://fivethirtyeight.com/">FiveThiryEight</a></li>
+  <li><a href="https://forensic-architecture.org/">Forensic Architecture</a></li>
+  <li><a href="https://experiments.withgoogle.com/collection/arts-culture">Google Arts &amp; Culture team</a></li>
+  <li><a href="https://research.google.com/bigpicture/">Google Big Picture group</a></li>
+  <li><a href="http://lab.softwarestudies.com/p/research_14.html">Lev Manovich / Software Studies Lab</a></li>
+  <li><a href="http://senseable.mit.edu/">MIT Senseable City Lab</a></li>
+  <li><a href="http://truth-and-beauty.net/">Moritz Stefaner</a></li>
+  <li><a href="https://www.visualcinnamon.com/">Nadieh Bremer / Visual Cinnamon</a>, <a href="https://vimeo.com/354276689">talk at Eyeo Festival</a></li>
+  <li><a href="https://flowingdata.com/">Nathan Yau / Flowing Data</a>, <a href="https://vimeo.com/354276730">talk at Eyeo Festival</a></li>
+  <li><a href="https://www.omnisci.com/demos">OmniSci</a></li>
+  <li><a href="http://periscopic.com/">Periscopic</a></li>
+  <li><a href="https://pitchinteractive.com/">Pitch Interactive</a></li>
+  <li><a href="http://www.r2d3.us/">R2D3</a></li>
+  <li><a href="https://www.sosolimited.com/">Sosolimited</a></li>
+  <li><a href="https://stamen.com/">Stamen Studio</a></li>
+  <li><a href="https://pudding.cool/">The Pudding</a></li>
+  <li><a href="http://idl.cs.washington.edu/">UW Interactive Data Lab</a></li>
+  <li><a href="http://flowingmedia.com/">Wattenberg and Viégas / Flowing Media</a></li>
+</ul>
+
+<h3 id="visualization-newsletters">Visualization Newsletters</h3>
+
+<ul>
+  <li><a href="https://tinyletter.com/data-is-plural/">Data Is Plural</a> weekly round up of interesting projects on the internet by BuzzFeed Data Editor-in-Chief</li>
+</ul>
+
+<h3 id="visualization-podcasts">Visualization Podcasts</h3>
+
+<ul>
+  <li><a href="http://datastori.es/">Data Stories</a></li>
+</ul>
+
+<h3 id="visualization-blogs-and-publishers">Visualization Blogs and Publishers</h3>
+
+<ul>
+  <li><a href="http://flowingdata.com/">Flowing Data</a></li>
+  <li><a href="http://infosthetics.com/">Information Aesthetics</a></li>
+  <li><a href="http://www.visualcomplexity.com/vc/">Visual Complexity</a></li>
+  <li><a href="https://www.informationisbeautifulawards.com/">Information is Beautiful Awards</a></li>
+  <li><a href="http://blog.visual.ly/">Visual.ly</a></li>
+  <li><a href="http://www.visualisingdata.com/">Visualizing Data</a></li>
+  <li><a href="http://visualcomplexity.com/">Visualcomplexity</a></li>
+  <li><a href="https://www.reddit.com/r/dataisbeautiful/">The r/dataisbeautiful subreddit</a></li>
+  <li><a href="http://www.economist.com/blogs/graphicdetail">The Economist - Graphic Detail</a></li>
+  <li><a href="https://www.nytimes.com/interactive/2016/12/28/us/year-in-interactive-graphics.html">The New York Times’ interactives</a></li>
+  <li><a href="http://www.nytimes.com/upshot/">New York Times - The Upshot</a></li>
+  <li><a href="http://visualoop.com/">Visualoop</a></li>
+  <li><a href="https://fivethirtyeight.com/features/the-52-best-and-weirdest-charts-we-made-in-2016/">FiveThirtyEight</a></li>
+  <li><a href="http://www.latimes.com/visuals/graphics/">LA Times</a></li>
+  <li><a href="http://graphics.wsj.com/wsj-interactives-2014/">Wall Street Journal</a></li>
+  <li><a href="https://twitter.com/PostGraphics">Washington Post</a></li>
+  <li><a href="http://qz.com/318339/all-of-the-charts-we-made-in-2014/">Quartz</a></li>
+  <li><a href="https://www.theguardian.com/interactive">The Guardian’s interactives</a></li>
+  <li><a href="http://map.datacanvas.org/#">Data Canvas</a></li>
+  <li><a href="http://www.laphamsquarterly.org/archive/charts-graphs">Lapham’s Quaterly Charts and Graphs</a></li>
+  <li><a href="http://www.maartenlambrechts.com/2017/12/28/the-list-of-2017-visualization-lists.html">The list of 2017 visualization lists</a></li>
+  <li><a href="http://www.edwardtufte.com/bboard/q-and-a?topic_id=1">Edward Tufte: Ask E.T. Forum</a></li>
+  <li><a href="http://www.perceptualedge.com/blog/">Visual Business Intelligence by Stephen Few</a></li>
+  <li><a href="http://andrewgelman.com/">Statistical Modeling, Causal Inference, and Social Science</a> by Andrew Gelman</li>
+</ul>
+
+<h3 id="online-color-tools">Online Color Tools</h3>
+
+<ul>
+  <li><a href="http://www.0to255.com/">0to255</a> – get lighter or darker shade of any color</li>
+  <li><a href="http://www.colorhexa.com/">ColorHexa</a> – color conversion and detailed description</li>
+  <li><a href="https://color.adobe.com/">Adobe Color CC</a> – pick with color wheel</li>
+  <li><a href="http://tristen.ca/hcl-picker/#/hlc/6/1/15534C/E2E062">Color Picker for Data</a> – built off Gregor Aisch’s <a href="http://vis4.net/blog/posts/avoid-equidistant-hsv-colors">article</a></li>
+  <li><a href="http://tools.medialab.sciences-po.fr/iwanthue/">i want hue</a> – color for data scientists, you can choose which algorithm to use</li>
+  <li><a href="http://colorbrewer2.org/#type=sequential&amp;scheme=BuGn&amp;n=3">ColorBrewer</a> – original choropleth color maker</li>
+  <li><a href="http://www.colourlovers.com/">ColourLovers</a> – use color palettes designed by others</li>
+  <li><a href="https://www.canva.com/color-palette/">Canva Color palette generator</a> – returns color palette of any photo you upload</li>
+</ul>
+
+<h3 id="data-sources">Data Sources</h3>
+
+<ul>
+  <li><a href="https://opendata.cityofnewyork.us/">NYC Open Data</a>: data on NYC trees, taxis, subway, citibike, 311 calls, land lot use, etc.</li>
+  <li><a href="https://www.data.gov/">data.gov</a>: everything from hourly precipitation, fruit &amp; vegetable prices, crime reports, to electricity usage.</li>
+  <li><a href="https://datasetsearch.research.google.com/">Dataset Search by Google Research</a>: indexes public open datasets.</li>
+  <li><a href="https://openpolicing.stanford.edu/data/">Stanford Open Policing Dataset</a></li>
+  <li><a href="https://data.medicare.gov/data/archives/physician-compare">Physician Medicare Data</a></li>
+  <li><a href="https://ocrdata.ed.gov/">Civil Rights Data Collection</a></li>
+  <li><a href="https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0">Data Is Plural newsletter’s Structured Archive</a>: spreadsheet of  public datasets ranging from curious to wide-reaching, e.g. “How often do Wikipedia editors edit?”, “Four years of rejected vanity license plate requests”</li>
+  <li><a href="https://www.yelp.com/dataset">Yelp Open Dataset</a></li>
+  <li><a href="https://www.census.gov/data.html">U.S. Census Bureau</a>: use their Discovery Tool</li>
+  <li><a href="https://data.cdc.gov/">US Health Data</a>: central searchable repository of US health data (Center for Disease Control and National Center for Health Statistics), e.g. surveys on pregnancy, cause of death, health care access, obesity, etc.</li>
+  <li><a href="http://www.imf.org/en/Data">International Monetary Fund</a></li>
+  <li><a href="https://data.worldbank.org/">World Bank</a></li>
+  <li><a href="https://www.ipums.org/">IPUMS.org</a>:  Integrated Census &amp; Survey Data from around the World</li>
+  <li><a href="http://www.fec.gov/finance/disclosure/ftpdet.shtml">Federal Elections Commission</a>: Campaign Finance &amp; Expenditures</li>
+  <li><a href="https://library.stanford.edu/projects/mass-shootings-america">Stanford Mass Shootings in America Project</a>: data up to 2016, with pointers to alternatives</li>
+  <li><a href="https://earthquake.usgs.gov/data/data.php">USGS Earthquake Catalog</a></li>
+  <li><a href="https://www.faa.gov/data_research/">Federal Aviation Administration</a></li>
+  <li><a href="https://github.com/fivethirtyeight/data/">FiveThirtyEight Data</a>: Datasets and code behind fivethirtyeight.com</li>
+  <li><a href="https://www.propublica.org/datastore/">ProPublica Data Store</a>: datasets collected by ProPublica or obtained via FOIA requests, e.g. <a href="https://www.propublica.org/datastore/dataset/chicago-parking-ticket-data">Chicago parking ticket data</a></li>
+  <li><a href="http://archive.ics.uci.edu/ml/">Machine Learning Repository</a> - large variety of maintained data sets</li>
+  <li><a href="https://opendata.socrata.com/">Socrata Open Data</a></li>
+  <li><a href="https://www.dataquest.io/blog/free-datasets-for-projects/">17 places to find datasets for data science projects</a></li>
+  <li><a href="https://github.com/awesomedata/awesome-public-datasets">Awesome Public Datasets</a> (github): topic-centric list of high-quality open datasets in public domains</li>
+  <li><a href="https://opensyllabus.org/">Open Syllabus</a>: 6,059,459 syllabi</li>
+</ul>
+
+
+
+  		<footer class="page-footer font-small">
+  			<div class="footer-copyright py-3">
+  				W4995.012 Columbia University Computer Science<br>
+  				🙌 <a href="http://agneschang.net/">Agnes Chang</a>, with thanks to
+  				<a href="http://people.ischool.berkeley.edu/~hearst/">Marti</a> +
+  				UW <a href="https://courses.cs.washington.edu/courses/cse512/18sp/">CSE512</a>.
+  			</div>
+  		</footer>
+    </div>
+</body>
