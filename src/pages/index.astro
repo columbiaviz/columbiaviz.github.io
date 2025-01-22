@@ -1,0 +1,156 @@
+---
+const HOMEPAGES:Record<string, string> = {
+    "Agnes Chang": "https://www.linkedin.com/in/agneshchang",
+    "Eugene Wu": "https://www.cs.columbia.edu/~ewu/",
+    "Christian Swinehart": "https://samizdat.co",
+}
+
+const COURSES = [
+    {year:2025, semester:"Spring", page:"/2025s_w4995", course:"Introduction to Data Visualization", prof:"Christian Swinehart"},
+    {year:2024, semester:"Spring", page:"/2024s_w4995", course:"Introduction to Data Visualization", prof:"Christian Swinehart"},
+    {year:2023, semester:"Spring", page:"/2023s_w4995", course:"Introduction to Data Visualization", prof:"Christian Swinehart"},
+    {year:2022, semester:"Spring", page:"/2022s_w4995", course:"Introduction to Data Visualization", prof:"Christian Swinehart"},
+    {year:2021, semester:"Fall",   page:"/2021f_w6998", course:"Systems for Human Data Interaction", prof:"Eugene Wu"},
+    {year:2021, semester:"Spring", page:"/2021s_w4995", course:"Introduction to Data Visualization", prof:"Agnes Chang"},
+    {year:2020, semester:"Spring", page:"/2020s_w6998", course:"Systems for Human Data Interaction", prof:"Eugene Wu"},
+    {year:2020, semester:"Spring", page:"/2020s_w4995", course:"Introduction to Data Visualization", prof:"Agnes Chang"},
+    {year:2019, semester:"Fall",   page:"/2019f_w4995", course:"Introduction to Data Visualization", prof:"Agnes Chang"},
+    {year:2019, semester:"Spring", page:"/2019s_w4995", course:"Introduction to Data Visualization", prof:"Agnes Chang"},
+    {year:2018, semester:"Fall",   page:"/2018f_w4995", course:"Introduction to Data Visualization", prof:"Agnes Chang"},
+    {year:2017, semester:"Spring", page:"/2017s_e6998", course:"Interactive Data Exploration Systems", prof:"Eugene Wu"},
+]
+
+const currentYear = 2025,
+      currentSemester = "Spring"
+---
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Data Visualization Courses at Columbia</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zilla+Slab:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- (ancient) bootstrap dependencies -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <script is:inline src="/files/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="masthead">
+        <h2>Columbia University Computer Science</h2>
+        <h1>Data Visualization Courses</h1>
+    </div>
+
+    <div id="course-list">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Semester</th>
+                    <th>Year</th>
+                    <th>Instructor</th>
+                </tr>
+            </thead>
+            <tbody>{
+                COURSES.map(({year, semester, page, course, prof}) =>
+                    <tr class={year==currentYear && semester==currentSemester ? "current" : "past"}>
+                        <td>
+                            <span class="course-code">{page.split('_').at(-1)}</span>:
+                            <a href={`${page}/`}>{course}</a>
+                        </td>
+                        <td>{semester}</td>
+                        <td>{year}</td>
+                        <td><a href={HOMEPAGES[prof]}>{prof}</a></td>
+                    </tr>
+                )
+            }</tbody>
+    </div>
+</body>
+</html>
+
+
+<style>
+    body{
+        font: 16px/1.3 "Zilla Slab", sans-serif;
+        padding:0 20px;
+    }
+
+    .course-code{
+        font-family: "Jost", sans-serif;
+        font-weight:500;
+        font-size:85%;
+        text-transform: uppercase;
+    }
+
+    h1,h2,h3,table{
+        margin:0 auto;
+        max-width:800px;
+    }
+
+    #masthead{
+        background: url("/assets/logo.svg") 4px center no-repeat;
+        background-size: 70px 70px;
+
+        margin: 0 auto;
+        max-width: 800px;
+
+        margin-top:50px;
+        padding:20px 0 20px 90px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    #masthead h2{
+        line-height:1;
+        font-variant-caps: all-small-caps;
+        letter-spacing: 0.06em;
+    }
+
+    table{
+        margin-top:2em;
+        border-collapse: collapse;
+    }
+
+    table th{
+        border:0;
+    }
+
+    table tr.past{
+        opacity:.666;
+        transition: opacity .333s;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+    #course-list tr.current:first-child td,
+    #course-list tr.current + tr.past td{
+        border-top:1px solid #aaa;
+    }
+
+    @media (max-width: 660px) {
+        h2{ font-size:22px; }
+        h1{ font-size:28px}
+        #masthead{
+            padding: 12px 0 12px 60px;
+            background-size: 50px 50px;
+        }
+    }
+
+
+    @media (max-width: 475px) {
+        h2{ font-size:18px; }
+        h1{ font-size:24px}
+        #masthead{
+            padding: 12px 0 12px 60px;
+            background-size: 50px 50px;
+        }
+    }
+
+</style>

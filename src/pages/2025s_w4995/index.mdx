@@ -1,0 +1,39 @@
+---
+layout: "./_layout.astro"
+---
+import {course, links} from "./_details.yml"
+import {schedule} from "./_schedule.yml"
+import Schedule from "../../components/Schedule.astro"
+import CourseHeader from "../../components/CourseHeader.astro"
+
+<CourseHeader title="Introduction to Data Visualization" subtitle={`COMS ${course.section} (3 pts)`}>
+    _Instructor:_ Christian Swinehart (cds2205; office hours by appt.)<br />
+    _IAs:_ Emily Xia (ex2135; Tue [3–5pm](https://calendar.app.google/)) & Nipun Agarwal (nna2132; Wed [12–2pm](https://calendar.app.google/))<br />
+    _Class Time:_ Thurs. 4:10–6:40pm<br />
+    _Room:_ 829 Mudd<br />
+    <a href={links.canvas}>Courseworks (and Zoom Info)</a><br />
+    <a href={links.forms.feedback}>Feedback Form</a><br />
+    <a href={links.slack}>Slack</a>
+</CourseHeader>
+
+## Overview
+
+This course is a hands-on introduction to design principles, theory, and software techniques for visualizing data. Classes will be a combination of lecture, design studio, and lab. Through readings, design critique, and code assignments, students will learn how visual representations can help in the understanding of complex data, and how to design and evaluate visualizations for the purpose of analysis or communication. Students will develop skills in processing data and building interactive visualizations using D3. Topics include visual perception, exploratory data analysis, task analysis, graphic design, visual hierarchy, narrative, etc.
+
+Students should have experience in JavaScript programming and web development, as well as familiarity with databases and data formats. You should be comfortable picking up new programming tools on your own. Experience with Python or R for data processing is helpful but not required.
+
+## Schedule
+
+<Schedule data={schedule} due="Wed." />
+
+## Past semesters
+
+- [Spring 2024](/2024s_w4995/)
+- [Spring 2023](/2023s_w4995/)
+- [Spring 2022](/2022s_w4995/)
+- [Spring 2021](/2021s_w4995/)
+- [Spring 2020](/2020s_w4995/)
+- [Fall 2019](/2019f_w4995/)
+- [Spring 2019](/2019s_w4995)
+- [Fall 2018](/2018f_w4995)
+
