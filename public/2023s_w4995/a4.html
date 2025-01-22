@@ -1,0 +1,173 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Assignment 4: Interactive Visualization ⟩ Intro to Dataviz ⟩ Spring 2023</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zilla+Slab:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style_2022_w4995.css" />
+		<script
+			src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="10">
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="alert alert-warning" style="margin-top:1em;" role="alert">
+  This is an outdated course page. View <a href="/2025s_w4995/">current semester here</a>.
+</div>
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Intro to Dataviz ⟩ Spring 2023</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="syllabus.html">Syllabus</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Assignments <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="a0.html">🚀 A0: Apply To Enroll</a></li>
+              <li><a href="a1.html">🗂 A1: Sparks Presentation</a></li>
+              <li><a href="a2.html">🗂 A2: Visualization Design</a></li>
+              <li><a href="labs.html#lab-1-shapes-and-styles">🔬 L1: Shapes and Styles</a></li>
+              <li><a href="a3.html">🗂 A3: Exploratory Data Analysis</a></li>
+              <li><a href="labs.html#lab-2-data-binding">🔬 L2: Data Binding</a></li>
+              <li><a href="a4.html">🗂 A4: Interactive Visualization</a></li>
+              <li><a href="labs.html#lab-3-interactivity">🔬 L3: Interactivity</a></li>
+              <li><a href="a5.html">🗂 A5: Final Project</a></li>
+              <li><a href="ax.html">💯 EC: Extra Credit Opportunities</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Demos <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-1-data-select-scale">
+									2/17: Data, Select, Scale</a></li>
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-2-interactivity">
+									2/24: Update, Events, Brush, Drag</a></li>
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-mutable-variables-and-multi-input-cells">
+									3/3: Mutables, Multiple Inputs</a></li>
+      	      <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									3/3: Transition, Zoom</a></li> -->
+              <li><a href="../files/examples/demo_geo.html">
+									3/31: Scrolly, Path, Polygon, Geography</a></li>
+      	      <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									3/31: Bootstrap, Vega</a></li> -->
+              <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									4/14: Hierarchy, Chord, Forces</a></li> -->
+            </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+    <div class="container">
+      <h1>Assignment 4: Interactive Visualization</h1>
+			<p>Working in groups of 3-4, build a visualization in D3 that enables interactive exploration of a dataset of your own choosing.</p>
+
+<p>As you choose your topic, remember that you’ll need to complete the assignment over three weeks, with midterms and spring break in between. Focus on designing one limited yet compelling visualization along the most interesting, rather than all, dimensions. It is also good practice to ensure that as you work, you also have an idea of what parts of the project you might cut if you run out of time. You should finish with a tightly-focused, well-implemented project rather than an ambitious but sprawling, incomplete design.</p>
+
+<p>Week 1 check-in: have your static Observable URL handy and each team member should be ready individually to discuss their project in class on 2/23.</p>
+
+<p>Week 2 check-in: have your dynamic Observable URL handy and ready to discuss in class on 3/2.</p>
+
+<p>Final submission: <a href="https://forms.gle/YWKwkSYzSHCTAwq57">Submit</a> your group’s Observable url and individually, your <a href="https://forms.gle/ep5FKC6n7v3P8nmS9">peer assessments</a> for A4, by <strong>Wednesday 3/22, 11:59pm ET</strong>.</p>
+
+<h3 id="week-1-static">Week 1: Static</h3>
+
+<p>Design an interactive graphic to communicate a compelling insight in a dataset of your choice. Consider starting by performing exploratory analysis on datasets of interest, then making divergent and then refined sketches. Create user flow sketches to help you think through the stages of interactivity you will build.</p>
+
+<p>By the end of the first week you should have a static D3 visualization in Observable, loading a near-final version of your dataset for this assignment. Have this ready for in-class critique on 2/23.</p>
+
+<p>You may find it helpful to make a project plan for how you will divide up the rest of the work and complete it within the timeframe.</p>
+
+<h3 id="week-2-dynamic">Week 2: Dynamic</h3>
+
+<p>Add interactivity to your project. Techniques we’ve covered in class include panning, zooming, brushing, details-on-demand (e.g., tooltips), query filters, and selecting different measures to display. Also consider highlights, annotations, and other narrative features to draw focus to particular items or provide additional context.</p>
+
+<p>Your final deliverable should be one interactive visual that captures your main data finding. If you built supplementary visualizations, include them as part of your writeup in the 3rd week, but if you’re deciding between showing a different view of the data through interactivity vs. through making a separate visual, choose interactivity.</p>
+
+<h3 id="week-3-evaluation-and-discussion">Week 3: Evaluation and Discussion</h3>
+
+<p>Conduct <a href="https://faculty.washington.edu/ajko/books/design-methods/how-to-evaluate-empirically.html">usability tests</a> for your dynamic visualization. Choose 4 “users” who are not in this class (can be friends or family; doesn’t have to be experts.) Your goal is to observe how someone who might come across your project on the internet might react to it. Plan for 20min. per session with one user at a time, and without giving them background about your project or what your intentions were, ask them to talk out loud as they navigate your visualization on their own. You should take notes: What did they notice first? Did they use it the way you intended? What was confusing? After they’re finished, then guide them through anything they might have been missed. User feedback may be inconsistent—some users might like one feature that others dislike. Find out why.</p>
+
+<p>In your Observable notebook, lead with your interactive visualization, including any narrative elements that may be part of its presentation. Then, include a 400-word write-up of your design decisions and process:</p>
+<ul>
+  <li>Describe any abandoned alternative designs and describe how work was split amongst team members.</li>
+  <li>Include specific technical or design challenges you encountered.</li>
+  <li>Describe what you learned in user testing and how you might improve your visualization if you had another week.</li>
+  <li>Finally, list resources that helped you along the way (this list doesn’t count against your word limit.)</li>
+</ul>
+
+<p>Make sure also to include process images (e.g. of abandoned alternatives) in your writeup. To upload images so they can be <em>embedded</em> in Observable, see this example <a href="https://observablehq.com/@observablehq/file-attachments">File Attachments notebook</a>.</p>
+
+<h3 id="grading-criteria">Grading Criteria</h3>
+
+<p>You should have:</p>
+<ul>
+  <li>presentation that allows for insightful exploration</li>
+  <li>interaction techniques fitting to the task</li>
+  <li>effective multi-view coordination</li>
+  <li>thoughtful and elegant graphic choices</li>
+</ul>
+
+<p>We’d also love to see:</p>
+<ul>
+  <li>advanced interaction techniques</li>
+  <li>novel visualization elements</li>
+  <li>engaging narrative design</li>
+</ul>
+
+<p>Make sure you do not have:</p>
+<ul>
+  <li>errors or broken features</li>
+  <li>confusing or ineffective visual encodings</li>
+  <li>confusing interface design or unhelpful interactions (note that poor code performance can sometimes lead to confusing interactions)</li>
+  <li>incomplete or poor writing</li>
+</ul>
+
+<h3 id="d3-resources">D3 Resources</h3>
+
+<ul>
+  <li><a href="https://d3indepth.com/">D3 In Depth</a>: Code notebook/textbook-like blog that aims to bridge intro textbooks and D3 official documentation.</li>
+  <li><a href="https://clio.columbia.edu/catalog/13137514">D3: Interactive Data Visualization for the Web</a>: O’Reilly book available online through CU libraries.</li>
+  <li><a href="https://bl.ocks.org/">Bl.ocks</a>: Bostock’s code-sharing platform that is the predecessor of Observable; it is the most thorough repository of D3 examples by virtue of having been around since the beginning, but note that most examples are built on D3@V4 or older.</li>
+  <li><a href="https://observablehq.com/@d3/gallery">Observable D3 Gallery</a>: D3 templates and examples organized by type, mostly authored by Bostock, e.g. <a href="https://observablehq.com/@mbostock/methods-of-comparison-compared">Methods of Comparison Compared</a></li>
+  <li><a href="https://observablehq.com/collection/@observablehq/visualization">Observable Visualization Collection</a>: D3@V5 showcase from Bostock as well as many others.</li>
+  <li><a href="https://talk.observablehq.com/">Observable Forums</a>: includes tips specific to Observable platform, e.g. <a href="https://talk.observablehq.com/t/how-to-load-css-files/101/2">How to load css files</a></li>
+</ul>
+
+
+
+  		<footer class="page-footer font-small">
+  			<div class="footer-copyright py-3">
+  				W4995.012 Columbia University Computer Science<br>
+  				🙌 <a href="http://agneschang.net/">Agnes Chang</a>, with thanks to
+  				<a href="http://people.ischool.berkeley.edu/~hearst/">Marti</a> +
+  				UW <a href="https://courses.cs.washington.edu/courses/cse512/18sp/">CSE512</a>.
+  			</div>
+  		</footer>
+    </div>
+</body>

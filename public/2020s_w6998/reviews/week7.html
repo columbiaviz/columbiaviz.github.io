@@ -1,0 +1,245 @@
+
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+		<div class="deco">COLUMBIA UNIVERSITY COMS W6998</div>
+    <div class="title"><a href="/2020s_w6998" style="color:black;">SYSTEMS FOR HUMAN DATA INTERACTION</a></div>
+</div>
+
+
+
+
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-6 col-md-offset-3">
+		<style>
+p.review {
+  border-left: 2px solid grey;
+}
+
+div.block {
+  margin-bottom: 1em;
+}
+</style>
+
+<h2 id="discussion-points">Discussion Points</h2>
+
+<p class="block">I would actually really like to discuss how Pangloss might deal with other types of visualizations (which are not as conducive to aggregation). Would it even work?</p>
+
+<p class="block">We have read several papers that build systems for optimizing very specific aspects or different stages of EDA, but I really feel that analysts need a system that can integrate all of these capabilities. Especially in an age where reproducibility is so important, moving between systems makes documentation for researchers and analysts more difficult. See this one data vis / cartographer try to explain her data-vis process: https://medium.com/nightingale/how-i-go-from-zero-to-map-6b3398ea1f07 Its not easy to follow or reproduce. I want some system that allows me to move from broad-stroke data exploration to more expressive data visualization within the same platform, even if it I am not writing in the same language or using the same tool.</p>
+
+<h2 id="paper-1">Paper 1</h2>
+
+<h3>3/3/20 0:13 Xupeng Li</h3>
+<p class="block">This paper proposes a new concept "optimistic visualization" which means producing approximate visualization quickly, and computing precise results in the backend. Users can double check the precise results later to confirm or correct his/her conclusions. The authors implement the idea of optimistic visualization in a system named Pangloss. Some interesting design decisions of Pangloss include remembering views and history so that users can "go back to" previous tasks and do correction, as well as highlighting new groups that are not shown by approximate visualization. Those design make users feel "safer" about the conclusion they made. However, Pangloss is still not flexible enough for data exploration. Users complained that they have to follow a path when using Pangloss to explore data. <br />
+<br />
+An approximated bar chart may lead incorrect conclusions like (1) incorrect order of categories; (2) missing categories; (3) wrongly min/max value obtained from a chart.</p>
+
+<h3>3/2/20 23:59 Yiru</h3>
+<p class="block">Pangloss proposes a new concept  optimistic visualization. This system comes out from understanding the constraints and needs of both the database and visualization areas. The database can have huge amounts of data, while visualization systems cares a lot about user experience. When visualizing the data in the database, it could be super slow which hurts user experience. So this system optimistically visualizes the data via sampling techniques and allow users to discover the errors later. <br />
+<br />
+The significant part is the concept of optimistic visualization and system design. The Pangloss system is built on SAMPLE + SEEK which enables quick visualization with some acceptable error bars. The system design also allows the users to remember visualization and run the precision visualization in the background to not disrupt user exploration. Going back refers to checking with the precise visualization later to discover the error. <br />
+<br />
+Here is a scenario where the users can use going back naturally. When the user draws some conclusions from approximating visualization and the precise visualization is running in the background, the users can compare the approximated vis with the precise one to verify the conclusion. Pangloss makes the difference easy to observe by using different colors for each.</p>
+
+<h3>3/3/20 4:47 Deka Auliya Akbar</h3>
+<p class="block">Pangloss presents a system that implements optimistic visualizations to support interactive speedy exploratory data analysis using approximate query processing. Pangloss is an excellent example of the tradeoffs between accuracy and performance, as the exploration phase usually precise results are not deemed as important as speed and interactivity. These two features are extremely important especially in big data exploration systems as they enable exploratory iterations and empower analysts in generating observations and validating their hypotheses.<br />
+<br />
+The crux of Pangloss relies on Optimistic Data Visualization using 1) approximate queries with Sample+Seek, a measure-biased sampling; and 2) quality measures in terms of error bounds and distribution uncertainty. Prior works include progressive analytics, however, the dynamic changes that occur in these systems on the foreground might hamper users from exploring the data interactively. Thus, Pangloss uses Optimistic Visualization (OV) which allows users to explore data fast using approximate queries on the foreground, and let users decide whether to compute the precise results for the approximate queries as needed using Remembering the View and history features. If a user opts to remember the view, the precise query for that view will be run on the background instead, so it avoids tampering with the interactivity of the system. The authors also acknowledge some difficulties that occur in OV, including functions and transformations with samples, filters/selections, and zooms. Note that binning and heatmaps are used to display the aggregated results (similar to Voyager) instead of individual data points.<br />
+<br />
+In the user studies, seems like Pangloss is satisfactory to the users and successfully enables rapid interactions with the data, although it seems like Remember the View feature is unintuitive to the users. I think this is due to the UI design or the design choice of the system (manual vs automation) considerations. Moreover, Pangloss only provides a subset of full data transformations, which might be inadequate for large-scale analysis tasks.<br />
+<br />
+In terms of incorrect conclusions in approximate results, I think it really depends on Sampling techniques, which depends on whether the sample data is representative of the true data distribution or not. For example, it could undersample or sample from data that has outliers, which will display the approximations that far from the true result. Also, I am unsure if this is possible with the Pangloss system, but possibly incorrect results can also occur due to the Anscombe's quartet effects i.e. data having the same statistical measures might have different data distributions when properly visualized.<br />
+<br />
+In terms of automation, I think it depends on the domain, task, and design considerations. The manual "go back to" feature was implemented to optimize the queries which require precise results. We can certainly make this process automated, however, this incurs some performance issues and might hinder the backend process. An automatic version of the "go back to" feature might incorporate the error bounds to filter which data viz the precise results will be useful for. Maybe formulating and incorporating some sort of custom hypothesis and hypothesis testing into the system can be considered in order to make the system better.</p>
+
+<h3>3/2/20 23:28 Haneen</h3>
+<p class="block">This paper addresses issues faced with approximate query visualizations from the user perspective. It proposes a visual exploration framework coined optimistic visualization that enables interactive exploration over approximate results and provides means for users to assess the quality of the results, bookmark it and review it later when the full resolution data completes execution. The authors reason about different design decisions about how to communicate uncertainty to users and how to update a visualization from approximate to precise results. The authors point out challenges such as the appearance of additional groups as more data are sampled, change in uncertainty levels in aggregate values, shifting axes, and changing color schemes. The paper performs two user studies, one that tests the framework on a generic input data and another that uses real-world datasets that are actively used by the user. I wonder why users were resistant to record observations and whether it was because they trusted the results or simply forgot about that functionality as they had to be reminded of it. <br />
+<br />
+As there are different kinds of conclusions that users can make from a bar visualization (such as simply relative order between bars, or an actual number such as how many records fall within a range) if the user can classify on which kind their conclusion was based off, a way to automate the process of going back to a previous instance with precise result would be simplified such as a simple test that checks if the relative order has changed or if the quantity the user read deviate a lot from the final result.</p>
+
+<h3>3/2/20 23:12 Richard Zhang</h3>
+<p class="block"><br />
+This paper is about Pangloss, a viz tool to perform optimistic visualization, which is the process of producing approximate results quickly while computing the precise results in the background, called Pangloss using Approximate Query Processing (AQP).<br />
+The reason the paper is significant is that it allows for exploratory data analysis of large datasets (though approximate) without having to wait for the entire query cost. Its technical strengths lie in its ability to visualize large dataasets instanteously,<br />
+as several of the users stated. Limitations wise, it only allows for the visualization of heatmaps and bar charts, and this could be expanded in the future. Also, being able to automatically rollback, such as in the follow-up discussion, would be useful where<br />
+it is obvious that one chart's data is affected by a previous viz's (though this is hard to determine). The classes of incorrect conclusions that could be very detrimental are those of rank -- if a bar chart shows that one column with the largest quantity of something, <br />
+it may become your focus and your other EDA's can be centered on this. However, if that changes it means all the work must be done again for another column.</p>
+
+<h3>3/2/20 23:10 Carmine Elvezio</h3>
+<p class="block">This paper presents a modality for data visualization, called optimistic visualization, which shows results fairly quickly upon user request, where there is some expectation that the approximation will be fairly close to the precise result. The authors present the concept of optimistic visualization which is itself a variant of the notion of Approximate Query Processing (AQP), where samples are generated from particular database queries. In this paper, the authors focused on the UI of the experience an analyst might have as they are doing exploratory data analysis. In addition, the authors present a system Pangloss, which is implemented on the notions of AQP. Pangloss is a web-based interactive application that allows analysts to see and manipulate views in a way not unlike Polaris (and Tableau). This papers major contribution is in the notion of optimistic visualization, and its implementation in Pangloss, and how it allows analysts to more quickly get overviews of the data with which they are working, but also eventually verify that the assumptions made with the sampled data, are in some degree correct (or incorrect if the sampling wasnt accurate enough). Where other systems (like Polaris) might be comprehensive in the points that are sampled on query, the delay in processing has significant effects on analysts ability to do their work. The solutions to getting to more rapid query responses, including data cubes (which require designers to optimize) and online analytical processing systems, (where network latency can be severe) have certain limitations which can make it difficult to do the rapid exploration iteration process the authors claim they target. In that particular respect, I agree that this is significant over prior work. In particular, one of the advantages that Pangloss presents over previous systems, from a technical perspective, is in its display of the in-progress results after the user has indicated that they are interested in a particular visualization. Additionally, the support for zooming and filtering (in addition to other functions) over the dataset is exciting as this type of query can turn out to be extremely expensive on datasets on the size of (sometimes &gt;10GB). If an analyst is just interested in moving about a visualization to understand the rough shape, this is a great way of facilitating that goal. The juxtaposition and superpositioning of the approximate and precise results actually looks to be very useful. Also, the combination of user study and case studies was very informative. One of the major limitations here however is in how this is fairly limited to data in the aggregate form. Users are not really going to see individual samples, or micro-level distribution details, without a priori filter adjustment. It might be really cool if the authors allowed for a windowing system that would allow users to extract more, micro-level details, on command, perhaps using a more precise filtering. There is also the notion, as the authors discussed, of better understanding what things the users might want to look at, and going more of the Voyager route as they drill down into the details. <br />
+<br />
+Considering Pangloss focuses on bar charts and heat maps, the question of incorrect conclusions can be seen in those types of charts in particular. If a particular data set is non-monotonically increasing, the aggregation solution and subsequent might lead an analyst to conclude incorrectly that a trend exists where the truth is more subtle. For example, if analyzing trends of incidents of e coli from a particular farm, if only looking at the data in aggregate, year on year, it might be assumed that throughout the year, the chance of e coli might have gone up. But, it might be the case that it really only increased in November/December, as a consequence of pollution of the water system during those months from cows that graze during that particular period. Which might then indicate that it actually was safer throughout the year, except for that month. Another class of incorrect conclusion comes from the possibility of looking for global maxima of particular values. If only analyzing a heat map (that aggregates on average of values in a bin), the global maxima could hypothetically be hidden by being surrounded by lower values or global minima, for example. I think it would be possible to automate the process of going back to previous approximate charts by looking at the data sets which the user is currently exploring and then having a panel which shows the previous charts the user has visited, which might still be in the process of becoming more precise, and focusing on those charts with the greatest overlap with data, so that the user might be able to get a new perspective of the chart they are looking at, or instead of the chart that was already visited, given the new perspective they currently have.<br />
+</p>
+
+<h3>3/2/20 21:45 Zachary Huang</h3>
+<p class="block">This paper talks about the application of sampling in visualization, and design a new concepts called optimistic visualization to help analysts understand data. The significant part about this paper is the way they improve user experience by presenting approximate results with error bound to users in the first place, and calculate the exact result in the background. The error approximation could be caused including over or under esimate the result, and some bar chart with low cardinality may simply be ignored because of low sampling chance. The "Going back" functionality could be used in cases when analysts have drawn some conclusions based on approximations, and when the accurate visualizations are ready, they want to compare the changes and nullify part of the conclusions.</p>
+
+<h3>3/2/20 16:51 Yin Zhao</h3>
+<p class="block">This paper talks about Pangloss, which is an optimistic visualization tool that enables fast approximation of data visualization as well as the opportunity for the users to redo the query and correct the approximation if incorrect approximation was generated. It uses an existing AQP system (Sample+Seek) underlying, and the strength of the new system is focused on UI design. I don't see much technical strength over existing systems, but the UI design makes it easy for analysts to visualize big data quickily and compare approximation with actual view.</p>
+
+<h3>3/2/20 0:00 Adam Kravitz</h3>
+<p class="block">The paper is about optimistic visualizations, which is where you analyze and explore and interact with approximate results. The reason for optimistic visualizations is that the scale of data is getting too large for visualizations since its hard to get insight from the visualizations. Since data is getting too large, sampling data can help approximate the data for optimistic visualizations.<br />
+The significance is that since scale of data getting too large for regular visualizations, optimistic visualization can quickly computes precise results in the background. This quick computation of an approximate visualization, as well as zooming, allows quick exploration. I think this is also significant since it is shown that visualizations are not be as effective when they are slow to be shown, which is not a problem with optimistic visualizations since by nature they are approximate and fast. This is also significant since it is a in-between step, waiting for the visualization to load based on all the data in the background, this allows users to get a general idea about the data as they wait from the true data.<br />
+I like that it uses sample and seek, where it is sampling, which saves memory and speed, while also supporting large datasets. Also I like that it allows and promotes looking back at past views so that analysist can verify their observations. As well as, I like how they use heatmaps to show confidence intervals to show uncertainty of the data. They also use color encoding of orange and blue to show approximate data vs. the precise data (however is that enough to stop mistakes from mixing them up from happening?).<br />
+Pangloss (the implementation of trust and verify), limits showing tailed distribution data since there are fewer samples to sample from. Another interesting problem is since it does sampling, that makes nothing certain, so you cant compute distribution uncertainty. Also, as expected, since there is sampling that means that approximate and precise view can have differences (possible important artifacts could be missing in the approximate view). In this case an analyst could just show the analysis based on the approximate view and not wait for the precise view. I also an unsure if this is a limitation or if it is because pangloss is a prototype but pangloss only supports bar charts and heatmaps.<br />
+What if pangloss showed how samples were taken and are allowed to use lower level data to show approximates for the user . Also what about an equation that measures and highlight differences between precise and approximate that are significant, so the user can display or show the approximate data correctly (assuming it is easier to understand) to others while specifying the differences.<br />
+So incorrect conclusions from approximate charts would be classes of data that have quick spikes in data where on average as average the data grows, shrinks, or stays the same at a consistent rate. Artifacts would be shown to the same extent that the reality is in the approximation, since an approximation ends up averaging the points overall. Some previous approximate charts could be automated in a way like how voyager laid the data out, the real result is on top with a list of all the approximate of that chart in a browser section of the website<br />
+</p>
+
+<h3>3/1/20 21:42 Celia Arsen</h3>
+<p class="block">This paper is about Pangloss, a system for EDA for big datasets that utilizes Approximate Query Processing. The authors present the idea of optimistic visualization  a method of AQP that attempts to emphasize the user experience. Pangloss implements optimistic visualization by sampling datasets instead of querying the entire the dataset. If the user finds a certain view of interest, Pangloss can remember it, and the user can return to the view to see the precise (and complete) results of the query and compare them to the approximate results. The authors argue that the main contribution of this paper is the first implementation of optimistic visualizationand effort that combines the problems and efforts of both database and visualization researchers. I agree that this is a novel approach to EDA that prioritizes instantaneous interactions for analysts, even when using massive datasets. <br />
+In terms of the paper, I like the definition of the problem and enjoyed the related work section. I felt that the background they provided was the exact amount of information that was needed to understand the context and goal of their current work. The main limitation that I found (and so did the users) was the inability to drill-down to the record level. It is really frustrating to need to navigate between different systems during exploratory data analysis, especially when the analyst still doesnt know if there will be anything useful/interesting on the record level. <br />
+As figure 1 in the paper illustrates, there are a couple ways the approximate results could inaccurately represent the real data within the confidence intervals and the distribution uncertainty. One way is if one group is drastically inaccurate, and the others are accurate, or, many groups are slightly inaccurate. I think that the first case is most likely a more worrisome miss for most analysts (?) so an automated system could detect this type of mis-approximation and automatically render the true results.</p>
+
+<h3>2/28/20 20:51 Qianrui Zhang</h3>
+<p class="block"># Review<br />
+This paper presents Pangloss, a tool working for approximate query processing. Pangloss utilizes the method called optimistic visualization and can let analysts explore large multi-dimensional datasets quickly with approximate results. At the same time, it also computes precise results in the background and provides a way to detect and recover from errors.<br />
+<br />
+The concept of approximate query processing is new to me and I feel it's pretty interesting. It provides me a new way of thinking in visualizing big data which I feel is of great importance in real-time explorations. And the extremely specific case studies also convince me that Pangloss is useful (at least in some cases) for data scientists.<br />
+<br />
+I have a question about Pangloss's way of solving this problem though: as is stated in the paper, the response time of Pangloss is about 100ms and the running time of precise queries is upto a few minutes, which means there is a relatively long time interval between running approximate query q and precise query q'. And in that interval people may have done a bunch of other analysing work w. Then if the approximate query q is not correct, 1) if w is not relevant to q, will people be able to (or willing to) switch back to q and think about what the error means? 2) if w is based on the result of q, does it mean all effort in w is in vain?<br />
+<br />
+Another thing that interests me is all evaluations in this paper are user studies. While I do admit those user studies are concrete and support the system well and are more interesting to read, I still feel like more 'real experiment' like measurements or comparisons in evaluation part. Because I feel user studies are highly related to the ways people narrate them and are not very objective.<br />
+<br />
+# Addition<br />
+The inaccuracy in sampling can easily influent people's judgement. For instance, if I'm working on the flight delay database and querying about the relationship between delay time and locations of airports, I may find airports in Southern Hemisphere having longer delay time due to inaccurate sampling (when there is actually no such relationship) and then start to analyse the reason. And all conclusions drawn from that would be wrong.<br />
+<br />
+I don't think it can be fully automated based on my case. Since it would be late after getting the precise result.</p>
+
+<h2 id="paper-2">Paper 2</h2>
+
+<h3>3/3/20 0:13 Xupeng Li</h3>
+<p class="block">This paper presents a new online aggregation algorithm, Wander Join. Wander Join is a sampling based algorithm. Considering a graph in which nodes are rows of all tables and edges connect rows that can be joined together, sampling a row from the final joint table can be achieved by randomly walking in the graph to visit one row for each table. This paper deeply compares wander join with ripple join and shows wander join out-performs theoretically and experimentally. <br />
+<br />
+Since wander join also takes user defined confidence level as input, systems like pangloss should provides interface for users to set up those parameters.</p>
+
+<h3>3/2/20 23:59 Yiru</h3>
+<p class="block">Wander join is a method to do the online aggregation for multiple table join. Ripple join is expensive and assumes that the table records are randomly distributed which is not always true. So this paper propose wander join which is a guided join method via random walk. This method does not need to assume any priori of the dataset and although theoretical analysis is tricky, the experiments demonstrate that wander join is better than ripple join in most cases. <br />
+<br />
+The method is that 1, generate a join order, 2. Random walk from one node, 3. Compute the probability of the walking path and estimate the aggregation score. Since the path probability may be biased, it balances it using Horvitz-Thompson estimator. <br />
+<br />
+Wander join is for multiple tables join, while Pangloss is based on sample seek which is designed for aggregate queries on one table. So the difference would be extended from one table visualization to multiple table join visualization. The searching UI will be different by show attributes from multiple tables. The interface needs to specify the join query.</p>
+
+<h3>3/3/20 4:47 Deka Auliya Akbar</h3>
+<p class="block">The paper discusses Wander Join, an online aggregation technique that uses random walks over the underlying join graph. I believe the paper has two major contributions: 1) the Wander Join Algorithm and 2) the Optimizer that chooses the optimal walk plan. The WJ algorithm solves the issues that occur the prior works on Online Aggregation; Ripple Join, as the former incurs repetitive passes over data, require data to be stored randomly and need to collect statistical information a priori.<br />
+<br />
+In general, I think WJ is a really excellent project. It draws from multiple interdisciplinary concepts from DBMS (Hash and B-Tree Indexes for equality and range selection conditions), Graph (MST, Connected Components) and Statistical Theory. I found the idea of mapping Relations and Join Conditions as Graph so that they can exploit graph properties to find a set of walk plans and use variance to choose the optimal walk plan ie. guided graph exploration very clever. Random Walk initially reminds me of PageRank in which it performs a random walk with some associated probability jumping to different pages to compute page importance. Interestingly, Wander Join uses the probability p(__) to penalize paths in computing the unbiased estimator for SUM, AVG, and VAR. <br />
+<br />
+WJs experiment results show that it performs really well across the TPC-H benchmark, and outperforms the commercial DBMS, PostgreSQL (PSQL) or Ripple Joins in terms of time to reach confidence interval and relatively robust against different data sizes. Care must be taken when comparing with PSQL though, as PSQL should compute the true result instead of the approximate result. I also wonder how it would compare against SparkSQL, as it is one of the fastest query engines currently which uses a distributed in-memory framework. If I remember correctly, Spark also used some approximation techniques upon some of its operations beyond join aggregation. <br />
+<br />
+In terms of writing, there are lots of technical jargon and concepts involved. I think the authors assumed readers have an adequate level of knowledge on the topics discussed. I wish they have the related work in the earlier section though, as I need to go back and forth to find relevant papers to elucidate the concepts being discussed<br />
+<br />
+WJ can definitely be used to improve on interactive large-scale optimistic visualization systems similar to Pangloss or others. In Pangloss for example, there are two query processes involved, approximate and precise results. WJ can be used to power the query engine for computing approximate results, the AQP in a fast manner so that it doesnt hinder users flow in EDA. Although, research must be done first to assert that WJ is better performing than Sample + Seek used in Pangloss for this to be useful. I think the idea of integrating WJ + Spark will be compelling especially in large-scale data processing or interactive visualization systems as Spark is one of the fastest data processing engines currently.</p>
+
+<h3>3/2/20 23:28 Haneen</h3>
+<p class="block">This paper introduces a new algorithm to online aggregation over joins that systematically sample from tables with the help of join indexes. The algorithm samples a tuple randomly from one of the tables and then performs random walk over join data graph starting from that tuple. The algorithm penalizes the paths that are sampled with higher probability proportionally to ensure unbiased samples. The paper goes in detail, comparing its approach with the ripple join approach and how Wander Join has lower computational costs for computing confidence intervals and estimators as well as lower memory overheads. Since the order of which random walks performed affects performance, the authors add an optimizer module to choose the best walk plan. I liked the detailed evaluation the authors carried and how they demonstrated how Wander Join could be incorporated into existing DBMS engines.<br />
+</p>
+
+<h3>3/2/20 23:12 Richard Zhang</h3>
+<p class="block">This paper is about the optimizing online aggregation for joins, with a new approach called "wander join" that shows improvement over a previous attempt in ripple join. Also, they implement it in PostgreSQL, so it's actually usable.<br />
+* What is significant (above prior work) and why? Do you agree?<br />
+It is significant for its fast estimation of queries, which show a huge improvement over standard SQL queries over the TPC-H benchmark. This is the achievement of wander join.<br />
+* Technical strengths beyond prior work: I like .<br />
+I like how they show clearly how random walks work over acyclic queries and cyclic queries, amd the specific types of queries. Also, they are able to achieve a uniform distribution over the random walks. Further, they prove that it is computationally and practically<br />
+much faster than ripple joins, and prove the differences in sampling efficiency to show it.<br />
+* Limitations: I wish .<br />
+Though there must be limitations, it seems like the paper is very very comprehensive about what it can do, and its capabilities. For extensions, they state possibilities in parallelization, possible approaches using wander join for query plan selection, and investigation into stratified sampling.<br />
+* Extensions: What if .?<br />
+For this to be the query engine for Pangloss, there must be an error defined by the user or by the system, and then "remembering" would also have to be an extension where some full query runs in the background and is not reliant on random walks, as unless the query fully finishes it will be error prone to some degree.</p>
+
+<h3>3/2/20 23:10 Carmine Elvezio</h3>
+<p class="block">This paper presents Wander Join, an approach to handling a database join query (which tend to be the most expensive time wise and computationally) approached from a online aggregation modality, which utilizes random walks (over an implicitly defined join graph defined by the collection of tables in a database) and an optimization scheme and system that chooses walking paths over that underlying graph. This builds on the notion of online aggregation, where results are progressively defined. In addition to the contributions above, the authors also ran a number of studies, across Wander Join (implemented in PostgreSQL) vs DBO (utilizing ripple join) and PostgreSQL proper, tested against the TPC-H benchmark. Compared to previous work on online aggregation for joins (where the most important work results in ripple join), the major contribution is in how the system samples across different tables. Where ripple join will sample randomly across the different tables in a round robin fashion, Wander Join will do a random walk across the different tables by visiting neighbors (in the context of the tables respective indices) after starting at a random sample in one of the tables. Due to the nature of the sampling, there is a critical difference in how the two approaches take samples: Ripple is uniform and non-independent, where Wander is non-uniform and independent. The authors present a detailed mathematical breakdown of how Wander functions on datasets (considering a natural join), showing how paths are randomly sampled and how the average of the estimators used (in calculation of the aggregate SUM) remains unbiased (which is a difference between the above approaches in uniform-ness). Combining the heuristics used in dealing with edge cases, and this above observation, I do believe that this present a major advancement over the previous work. Secondly, the performance of Wander is not dependent on the number of tuples - as the authors show by explaining that the efficiency is dependent on the expectation of getting a certain number of samples after a number of random walks, making it dependent on table size and not the number of tuples (which is the case for Ripple). Further, by the fact that the return of Wander are independent samples (which Ripple does not claim), there is a significantly lower cost in computing confidence intervals on the aggregators. From a technical (and quantitative perspective) I found the above to be really intriguing advancements over previous work. Also, I like the authors perspective of allowing the query to run to completion by terminating when full join completes anyway. I believe a hybrid approach here makes a lot of sense. Also, the path optimizer is very impressive from a logical perspective (in terms of the decomposition into spanning trees and then the walk generation from that). I was concerned with the element of enumerating all of the paths, but understand the authors claim with the advantages of the a priori computation and the mitigation of statistical data collection (and the practical limitations in the real number of tables that would reasonably be considered). However one of the limitations here is that the nature of the approach is inherently dependent on the memory available. And when the memory is not, the cost of executing these queries becomes prohibitively non-interactive. I wonder what binning/summarizing might do for some of these extremely large queries - perhaps a hybrid approach using solutions from other literature might show that it is possible to use those visualization to help shorten the interaction gap. Further, there seems to be a dependence on the presence of particular indices across the different tables. I would have liked to see a deeper dive of the statistical and technical limitations of the system when exploring join graphs that are highly disjoint, as I have encountered data sets with that property.<br />
+<br />
+Since Pangloss is aiding in verifying decisions made earlier, the ability to revisit the the results of large joins necessitates those systems running to completion or thereabouts. However, on middle sized and smaller datasets it actually might return significantly faster than how Pangloss was intended to operate, which means it might be possible to adapt Pangloss to do a preview system of sorts (of the more precise results). More specifically, users might be able to expect faster, precise results, thus the need to always remember something (for the wait on the more precise results) might not be as critical, but users still benefit from remembering older visualizations, so a breadcrumb trail sorts would still be beneficial (so an automated process might help in remedying this). Alternatively, it might need to do a form of parallelization to deal with the fact that with larger datasets (where Pangloss provides the largest advantage) take a large memory footprint, or that queries would otherwise start to take significantly longer. A process where Pangloss might treat a backend server (or servers) where multiple queries were being executed as a service of sorts would aid in this. <br />
+</p>
+
+<h3>3/2/20 21:45 Zachary Huang</h3>
+<p class="block">Wander join talks about a way to approximate the join results through sampling "random walks" between relations. Instead of blindly taking random samples from each table in a round-robin way (ripple join), this paper proposes a new way to guide the sampling process. To avoid bias caused by the probability of choosing paths, wander join penalize the high probability paths using Horvitz-Thompson estimator, whose effectiveness has been verified in experiments. To adapt wander join as query execution engine, pangloss should also considered the impact of relations and path choice towards the measure when conducting measure based sampling.</p>
+
+<h3>3/2/20 16:51 Yin Zhao</h3>
+<p class="block">This paper describes wander join, which is an online aggregation algorithm with guided exploration of neighbors. The key contributions of this work compared to prior works are that it leads to unbiased estimators than random sampled joins, and designs an optimizer that chooses the optimal walk plan without existing knowledge of the data. The algorithm outperforms existing online aggregation algorithms and seems to have wider practical usage.</p>
+
+<h3>3/2/20 0:00 Adam Kravitz</h3>
+<p class="block">Wander Join is a new way to do table joins, and a way to approach the online aggregation problem. It tries to out preform the other major approximate table joining algorithm, ripple join. Wander join tries to be better than ripple join be being less expensive to use, quicker, and without the need to make unrealistic assumptions. Wander join tries to not blindly take samples all the tables and hope that theyll join, instead Wander join tries to make a more focused process. The paper also creates an optimizer without having to collect any statistics for Wander join since Wander join does a random walking process.<br />
+The significance of Wander join is that since such analytical queries do not need a 100% accurate answer, wander join can return approximate answers in return for speed. Wander join gets 1% error with 95% confidence for most queries in a few seconds, while PostgreSQL stake minutes to return the exact results for the same queries, being tested with the TPC-H benchmark with tens of GBs of data. Another thing significant about Wander join is that it is better than ripple join. Wander join is efficient for equality joins involving multiple tables, compared to ripple join, and it avoids the critical flaws of ripple join. Ripple joins flaws are that the performance depends on the fraction of the selected tuples that could join, and that the tuples in each table has to be stored in a random order. Wander join avoids both these flaws<br />
+The real technical strength of wonder join is the speed, the fat that it can take less than a second to calculate a query while it could take other programs more than a few minutes or longer. Another technical strength is the fact that its efficiency works at any scale of data (in theory). I also like how, with the optimizer you can conduct random walks without having to collect any statistics. This makes Wander join very powerful since there is not need for statistics it becomes more algorithmic and easier to follow.<br />
+The limitation with Wander join is that with big enough data it will never be 100% accurate. There is a trade off with speed and accuracy. Another limitation is that Wander join random walking performance depends on the structure of the join data graph. The paper explains that for 1 random walk order you can get 100% success probability or 2/7 success probability.<br />
+The paper explains that for queries on single tables you can use stratified sampling, but there are problem on how to expand that technique for joins. It would be interesting if they explained more on way that is a difficult problem, or to have a paper attempting to solve that problem.<br />
+I think pangloss would have minimal change to adapt to wonder join, pangloss would just have to change there approximation algorithm to instead use wander join to query for a graph and then wait for the backend for the precise answer to appear. Wander join would just need to map its queries to a corresponding graph but once that done it sees that wander join could be substituted easily in place of panglosss approximation algorithm.<br />
+</p>
+
+<h3>3/1/20 21:42 Celia Arsen</h3>
+<p class="block">This paper is about wander join, an algorithm that improves response time for aggregate functions on joins between multiple large tables. I think the underlying idea of representing the tables as a graph and then performing random walks over the graph is clever. They clearly show in the implementation portion how it is an improvement over ripple join. I understand that the main contribution of the paper was the algorithm, but I wish that they had been able to get to the experiments earlier in the paper because I was less interested in some of the optimization minutiae and more interested in the performance difference.<br />
+<br />
+Unless I misunderstand the question or the papers, I don't really see why Pangloss would use wander join as its query execution engine. From my understanding, Pangloss allows for exploratory data analysis over a single table at a time. The power of wander join is its improvement over ripple join for approximate query processing over multiple tables. If Pangloss wanted to utilize wander join to its full extent, it would need to extend the user interface to support interaction with multiple tables, and more complex queries, specifically of the format:<br />
+SELECT g, AGG(expression) <br />
+FROM R1, R2, . . . , Rk <br />
+WHERE join conditions AND selection predicates <br />
+GROUP BY g</p>
+
+<h3>2/28/20 20:51 Qianrui Zhang</h3>
+<p class="block"># Review<br />
+This paper presents wander join, a solution to online aggregation problem by performing random walks over the underlying join graph, as well as some techniques to optimize it. Compared with previous technique, Ripple Join, it is much more efficient with similar accuracy.<br />
+<br />
+Overall I think the idea is exciting and is a significant improvement over existing techniques. And there are several strengths:<br />
+- The concept (wander join) itself is creative and also easy to understand. And it also has a solid math theory as support.<br />
+- The condition(index) is common in real cases, which makes it easy to implement.<br />
+- The performance is pretty good over datasets, especially huge datasets.<br />
+<br />
+Possible limitation: I don't really understand the walk plan optimization part except for the fact that it works well. And I sometimes feel that I'm lost in math while reading, probably stressing or seperating those math proofs (like in separate mini-sections) will help.<br />
+<br />
+Also I've seen that the authors have developed an approximate DB using wander join algorithm and its optimization.(https://initialdlab.github.io/XDB/) And I would be interested in discussing if someone has the experience of using it.<br />
+<br />
+# Addition<br />
+Since wander join itself is already a technique of sampling, I feel it will be hard to combine it with another approximate system like Pangloss. And I don't think there is a good reason for doing this combination since as we read in Pangloss paper, the performance of approximate query is already great and the performance of precise query doesn't matter.</p>
+
+<h2 id="paper-3">Paper 3</h2>
+
+<!--
+## Reviews
+
+-->
+
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>
+

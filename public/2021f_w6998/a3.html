@@ -1,0 +1,179 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+		<div class="deco">COLUMBIA UNIVERSITY COMS W6998</div>
+    <div class="title"><a href="/2020s_w6998" style="color:black;">SYSTEMS FOR HUMAN DATA INTERACTION</a></div>
+</div>
+
+
+
+
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-6 col-md-offset-3">
+		<h1 id="a3-play-with-spreadsheets">A3: Play with Spreadsheets</h1>
+
+<ul>
+  <li>Due: Nov 07 11:59PM (EST)</li>
+  <li>Groups of 1 or 2 students</li>
+</ul>
+
+<p>In this assignment, you will use two spreadsheet interfaces.  The first is Ultorg (production version of SIEUFERD), and the second will be a commercial spreadsheet-based visual analysis system of your choosing.</p>
+
+<p>Similar to previous assignments, the purpose is to gain exposure to a novel HDI system.  Try your best to learn how to use the system through the paper and videos, and ask questions on slack!</p>
+
+<p>Thanks to Eirik Bakke for sharing Ultorg and helping put together this assignment.</p>
+
+<h1 id="ultorg">Ultorg</h1>
+
+<p>You will try out Ultorg, a visual query interface for relational databases. Ultorg is the commercial successor to the SIEUFERD project at MIT, as described in the SIGMOD ‘16 paper: <a href="https://people.csail.mit.edu/ebakke/research/sieuferd_sigmod2016.pdf">Expressive Query Construction through Direct Manipulation of Nested Relational Results</a></p>
+
+<p>Watch the query system demo from the SIGMOD paper:</p>
+
+<iframe src="https://player.vimeo.com/video/173726371" width="640" height="400" frameborder="1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<h2 id="installation">Installation</h2>
+
+<p>The Ultorg software is a desktop application which runs on Windows, MacOS, or Linux. It is currently under development; you will be playing with a beta version.</p>
+
+<p>By October 25, you should have received an email with a link to download a beta version of the Ultorg software. If not, you can email Eirik Bakke (<a href="mailto:ebakke@ultorg.com">ebakke@ultorg.com</a>).</p>
+
+<p>The email will include instructions for starting the application and opening the demo database, which is an academic course catalog containing several semesters’ worth of data from Princeton University.</p>
+
+<p>We will ask you to take screenshots of queries that you produce for this exercise.</p>
+
+<h2 id="background">Background</h2>
+
+<p>Ultorg is a <a href="https://www.cs.umd.edu/users/ben/papers/Shneiderman1983Direct.pdf">direct manipulation interface</a> for creating queries and visualizations over an arbitrary relational database. Relational databases tend to have many tables of data, representing business entities and the relationships between them. In typical business scenarios, it becomes necessary to visualize these relationships from a number of different “perspectives”, depending on the business task at hand. Ultorg lets users create such perspectives without custom coding.</p>
+
+<p>In Ultorg, a perspective is a single concept that defines both a database query and its visualization (formatting). Possible perspectives include the visual equivalent of any SQL-92 query, visualizations such as crosstabs, calendars, bar charts, and kanban boards, as well as non-tabular multi-query visualizations such as forms, dashboards, and hierarchical reports. This covers every kind of data display that is seen in traditional tailor-made database applications.</p>
+
+<h2 id="your-task">Your Task</h2>
+<p>Your task is to produce the following perspectives in Ultorg, based on the “course catalog” demo database. For each of the perspectives, take a screenshot to paste into a PDF that you will submit as your report. The cool part of Ultorg is that the layout is the query, thus a screenshot is sufficient!</p>
+
+<p>To get started, open Ultorg and click “Add Data Source”, then “Connect to Demo Database”. Expand the “Course Catalog (demo database)” icon to see the tables in the database. Right-click a table and click “Create Perspective” to create a new query:</p>
+
+<ul>
+  <li><img src="/files/hdisys/a3_img/hint_newpersp_v103.png" width="50%" /></li>
+</ul>
+
+<h4 id="perspective-1">Perspective 1</h4>
+
+<p>Show a list of courses, including all available information for each course, including meeting times, instructors assigned to each meeting, and assigned readings. Filter to include the term “S06-07” only. Show the results using a multi-column form-style layout:</p>
+
+<ul>
+  <li><img src="/files/hdisys/a3_img/hint_toolbar.png" width="50%" /></li>
+</ul>
+
+<h4 id="perspective-2">Perspective 2</h4>
+
+<p>Show a list of instructors, ordered descending by total time assigned to non-canceled meetings (“status” not equal to “X”), along with the courses taught by each instructor, laid out in a tabular fashion. Show the total teaching time for each instructor as a separate table column, with a bar chart visualization. Filter to include the term “S06-07” only.</p>
+
+<p>For finding the length of a section in hours, use the formula diffDayFract([End Time], [Beg Time]) * 24.</p>
+
+<h4 id="perspective-3-optional-and-encouraged">Perspective 3 (optional and encouraged!)</h4>
+
+<p>Show a list of professors (instructors) who tend to assign their own textbooks as reading materials for their classes. (You can match author names exactly, or try to be more clever.)</p>
+
+<h3 id="hints">Hints</h3>
+
+<ul>
+  <li>
+    <p>You can right-click on any column of data in the output pane to open the context menu. All query-related actions are initiated from this menu.</p>
+
+    <ul>
+      <li><img src="/files/hdisys/a3_img/hint_menu_v103.png" width="50%" /></li>
+    </ul>
+  </li>
+  <li>
+    <p>The “Fields” popup (opened via “Fields and Joins…” in the context menu) is frequently used.</p>
+
+    <ul>
+      <li><img src="/files/hdisys/a3_img/hint_fields_v103.png" width="50%" /></li>
+    </ul>
+  </li>
+  <li>
+    <p>In the “Fields” popup, you can hold down shift or to select multiple fields, and press space to check/uncheck them all.</p>
+  </li>
+  <li>
+    <p>While editing a formula, you can click around to insert new references, like in a spreadsheet.</p>
+
+    <ul>
+      <li><img src="/files/hdisys/a3_img/hint_formula.png" width="50%" /></li>
+    </ul>
+  </li>
+  <li>
+    <p>You will also need the SUM function</p>
+  </li>
+</ul>
+
+<h1 id="play-with-another-tool">Play With Another Tool</h1>
+
+<p>You will now try out another spreadsheet interface. Install/register and use one of the following tools</p>
+
+<ul>
+  <li><a href="http://dataspread.github.io/">Dataspread</a> (kind of complicated)</li>
+  <li><a href="https://www.sigmacomputing.com/free-trial/">Sigma computing</a></li>
+  <li><a href="https://airtable.com/signup">Airtable</a></li>
+  <li>You can propose another interface. Message Professor Wu on Slack with your proposal at least a week before the deadline.</li>
+</ul>
+
+<p>Your task is to</p>
+
+<ol>
+  <li>Load some data into the interface.  You can pick your own data, or use <a href="https://covidtracking.com/data/download">data from the COVID tracking project</a></li>
+  <li>Explore the data using the interface and make two observations about the data.  Following <a href="https://visualthinking.psych.northwestern.edu/publications/BurnsLevels2020.pdf">the paper based on Bloom’s taxonomy of understanding</a>, make one observation at the <em>Evaluation</em> level, and one observation at the <em>Synthesis</em> level.</li>
+</ol>
+
+<h1 id="submision-instructions">Submision Instructions</h1>
+
+<ol>
+  <li>Create a single PDF containing screenshots of your Ultorg perspectives
+    <ul>
+      <li>Rename your pdf to <code class="language-plaintext highlighter-rouge">a3_&lt;UNI&gt;.pdf</code></li>
+    </ul>
+  </li>
+  <li><a href="https://forms.gle/Rbnk4sRvURfY3LCVA">Fill out this Google Form</a></li>
+</ol>
+
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>

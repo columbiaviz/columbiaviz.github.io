@@ -1,0 +1,95 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+	<div class="container">
+		<div class="deco">COLUMBIA UNIVERSITY COMS W4111.002</div>
+    <div class="title"><a href="/" style="color:black;">INTRODUCTION TO DATABASES</a></div>
+	</div>
+</div>
+
+
+
+
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-8 col-md-offset-2">
+		<h1 id="zach-notes">Zach notes</h1>
+
+<ul>
+  <li>RSExplain: Causal paths is essentially provenance (defined directly by the query plan)</li>
+  <li>Give 20 seconds when asking for questions</li>
+  <li>identified the nuanced differeces from data xray and scorpion.  nice</li>
+  <li>FD pruning only is useful if you DIFF on state and country</li>
+</ul>
+
+<h1 id="diff">DIFF</h1>
+
+<p>Several reviews mentioned that DIFF supports more metrics, which Scorpion cannot do,
+or that DIFF’s metrics “are similar” to Scorpion’s.  These descriptions are fairly high
+level, and leads to some natural questions:</p>
+
+<ul>
+  <li>what types of metrics?</li>
+  <li>are Diff’s supported metrics a superset of scorpion or simply different?</li>
+  <li>does the formulation of the metrics affect the types of solutions?</li>
+  <li>why are these metrics chosen?  for algorithmic convenience?  Or because it’s useful to a real problem?</li>
+</ul>
+
+<p>If the answers to these questions are not obvious, then it signals a good observation to START a deeper investigation of the technical differences.</p>
+
+<p>Is embedding DIFF as an operator extension in SQL a technical contribution, or a good usability idea?</p>
+
+<h1 id="vs-last-weeks-papers">Vs last week’s papers</h1>
+
+<p>Adam made a good observation.  Both weeks are studying the problem of understanding</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>f(Data) --&gt; Output
+</code></pre></div></div>
+
+<ul>
+  <li>Last week is focused on understanding f() and its process of generating O</li>
+  <li>This week is focused on parts of Data that cause O to take certain values</li>
+</ul>
+
+<p>Ultimately, what makes a good “explanation”?  Discuss</p>
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>

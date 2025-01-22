@@ -1,0 +1,155 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Assignment 2: Visualization Design ⟩ Intro to Dataviz ⟩ Spring 2024</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zilla+Slab:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style_2022_w4995.css" />
+		<script
+			src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="10">
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="alert alert-warning" style="margin-top:1em;" role="alert">
+        This is an outdated course page. View <a href="/2025s_w4995/">current semester here</a>.
+      </div>
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Intro to Dataviz ⟩ Spring 2024</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="syllabus.html">Syllabus</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Assignments <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="a0.html">🚀 A0: Apply To Enroll</a></li>
+              <li><a href="a1.html">🗂 A1: Sparks Presentation</a></li>
+              <li><a href="a2.html">🗂 A2: Visualization Design</a></li>
+              <li><a href="labs.html#lab-1-shapes-and-styles">🔬 L1: Shapes and Styles</a></li>
+              <li><a href="a3.html">🗂 A3: Exploratory Data Analysis</a></li>
+              <li><a href="labs.html#lab-2-data-binding">🔬 L2: Data Binding</a></li>
+              <li><a href="a4.html">🗂 A4: Interactive Visualization</a></li>
+              <li><a href="labs.html#lab-3-interactivity">🔬 L3: Interactivity</a></li>
+              <li><a href="a5.html">🗂 A5: Final Project</a></li>
+              <li><a href="ax.html">💯 EC: Extra Credit Opportunities</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Demos <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-1-data-select-scale">
+									2/16: Data, Select, Scale</a></li>
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-2-interactivity">
+									2/23: Update, Events, Brush, Drag</a></li>
+              <li><a href="https://observablehq.com/@columbiaviz-s22/demo-mutable-variables-and-multi-input-cells">
+									3/1: Mutables, Multiple Inputs</a></li>
+      	      <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									3/3: Transition, Zoom</a></li> -->
+              <li><a href="../files/examples/demo_geo.html">
+									3/30: Scrolly, Path, Polygon, Geography</a></li>
+      	      <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									3/31: Bootstrap, Vega</a></li> -->
+              <!-- <li><a href="https://observablehq.com/@columbiaviz-s22/tk">
+									4/14: Hierarchy, Chord, Forces</a></li> -->
+            </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+    <div class="container">
+      <h1>Assignment 2: Visualization Design</h1>
+			<p>The goal of this assignment is to practice a collaborative and generative design process. You will be using a small dataset about NYC households. In the first week you will work individually to generate divergent visualization concepts. In the second week, in randomly assigned groups of 3–4, you will select from or combine your different concepts to arrive at a refined final visualization.</p>
+
+<p>Compile one report per group, as a pdf or google slides, ordered like so:</p>
+<ul>
+  <li>page 1: final visualization</li>
+  <li>pages 2-4: iterations to final refined visualization</li>
+  <li>page 5: writeup</li>
+  <li>pages 6-15: person1 sketches</li>
+  <li>pages 16-25: person2 sketches</li>
+  <li>… person3, person4, etc.</li>
+</ul>
+
+<p>Pick one representative team member to submit your <a href="https://forms.gle/YWKwkSYzSHCTAwq57">group report</a>, and then each person submit your <a href="https://forms.gle/ep5FKC6n7v3P8nmS9">individual peer assessments</a> for A2, by <strong>Wednesday 1/31, 11:59pm ET</strong>.</p>
+
+<h3 id="dataset-nyc-households-by-borough">Dataset: NYC Households by Borough</h3>
+
+<p>You will be using a subset of the U.S. Census from 2000 and 2010, specific to New York City. The U.S. Census is taken every ten years and influences decisions ranging from voting districts and social services to building codes. NYC comprises five boroughs: Bronx, Brooklyn, Manhattan, Queens, Staten Island. This CSV (comma-separated value) file contains the following statistics for each borough. There are 16 data points per borough, half from 2000 and half from 2010.</p>
+<ul>
+  <li>Total Population</li>
+  <li>Total Population 18 Years and Older</li>
+  <li>Total Households</li>
+  <li>Total Family Households</li>
+  <li>Average Persons Per Family</li>
+  <li>Total Housing Units</li>
+  <li>Occupied Housing Units</li>
+  <li>Owner Occupied Housing Units</li>
+</ul>
+
+<p>Dataset: <a href="/files/data/nyc_census_by_boro_2000-2010.csv">CSV</a></p>
+
+<p>Source: NYC Department of City Planning, <a href="https://www1.nyc.gov/site/planning/data-maps/nyc-population/census-2010.page">Demographic Profile, 2000-2010</a></p>
+
+<h3 id="week-1-divergent-ideas">Week 1: Divergent ideas</h3>
+
+<p>Begin by considering what questions you’d like your visualization to answer. Once you’ve familiarized yourself with the dataset, using pen and paper, brainstorm and sketch at least 10 visualization concepts per person.</p>
+
+<p>Use one letter-sized sheet of paper per idea (or use an iPad, use the full screen area.) The level of detail simply needs to be readable: as a sketch it need not represent every data point, but we should be able to see that the concept is different from your other ideas. You may find it helpful to set yourself a 3–5 min. timer per sheet. Generate as many as you like, but choose 10 per person to include in your final submission.</p>
+
+<p>You must use the dataset given, however you’re free to transform the data as you see fit. Such transforms may include (but are not limited to) log transformation, computing percentages or averages, grouping elements into new categories, or removing irrelevant data points.</p>
+
+<h3 id="week-2-revisions">Week 2: Revisions</h3>
+
+<p>In your assigned (randomized) groups, design three additional sketches as candidates for your final visualization. These three intermediate sketches should be an extension or a combination of the earlier ideas you generated, and should contain more details than your initial sketches although you’re not expected to represent every data point. As you discuss your ideas, consider the question that each visualization answers as well as the corresponding visual concept.</p>
+
+<p>Next, choose one of the three and create a static, high-fidelity visualization in a drawing or charting program of your choice (feel free to use multiple tools, e.g. draw in one and annotate with another.) I suggest using <a href="https://www.figma.com">Figma</a> (free, browser-based), Adobe Illustrator, <a href="https://affinity.serif.com/en-us/designer">Affinity Designer</a> (Mac, Windows, iOS), <a href="https://www.sketch.com/">Sketch</a> (Mac only, 30-day free trial), or <a href="https://inkscape.org/en/">Inkscape</a> (open source.)</p>
+
+<p>Finally, in 300 words, describe your design decisions and your process.</p>
+
+<h3 id="grading-criteria">Grading Criteria</h3>
+
+<ul>
+  <li>Divergent and original ideas (here we’re looking for conceptually divergent vs. superficially divergent ideas such as “fill with blue instead of green.”) Celebrate the fact you are in groups and bounce ideas off each other; usually this part is more challenging as an individual assignment.</li>
+  <li>Final visualization clearly communicates <em>at least</em> one insight from the data.</li>
+  <li>Quality of execution on final visualization: includes title, labels, annotations as needed, and has no missing or unnecessary/distracting graphical elements.</li>
+  <li>Originality in visual concept (e.g. your visualization should not be from a template.)</li>
+</ul>
+
+
+  		<footer class="page-footer font-small">
+  			<div class="footer-copyright py-3">
+  				W4995.003 Columbia University Computer Science<br>
+  				🙌 <a href="http://agneschang.net/">Agnes Chang</a>, with thanks to
+  				<a href="http://people.ischool.berkeley.edu/~hearst/">Marti</a> +
+  				UW <a href="https://courses.cs.washington.edu/courses/cse512/18sp/">CSE512</a>.
+  			</div>
+  		</footer>
+    </div>
+</body>

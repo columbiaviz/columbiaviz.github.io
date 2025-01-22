@@ -1,0 +1,211 @@
+/* Page structure */
+/* Page structure */
+html {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  color: black;
+  background-color: white;
+  font-family: Arial, sans-serif;
+  font-size: normal;
+}
+
+
+.container {
+}
+
+
+.largeheader {
+  background-color: #fdffe4;
+  color: black;
+  padding: 1em 1em 0.25em 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px solid #efea4e;
+}
+
+
+.footer {
+  background-color: #fdffe4;
+  border-top: 3px solid #efea4e;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 2em;
+  padding: 0.75em 1em;
+  font-size: .8em;
+  font-style: italic;
+  text-align: center;
+  clear: both;
+}
+
+body.coursenotes {
+  background-color: white;
+}
+
+body.coursenotes .container {
+  border: none;
+}
+
+#contents {
+  background: #f5eeee;
+  /*font-size: 80%;*/
+  margin-top: 30px;
+  padding: 0px;
+  max-width: 360px;
+}
+
+#contents div:first-child {
+  font-size: 120%;
+  font-weight: bold;
+  margin: 0;
+  padding: 3px 10px;
+  background-color: #baa;
+  color: white;
+  text-shadow: 1px 1px 0 #766;
+}
+
+#contents div:nth-child(0n+2) {
+  padding: 5px 10px;
+}
+
+.presenter {
+  font-size: small;
+  color: gray;
+  margin-right: 1em;
+}
+
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: .02ex;
+  line-height: 100%;
+  text-align: left;
+}
+
+h1 {
+  color: #113;
+  padding: 0 0 0.1em 0;
+  font-size: 30px;
+}
+
+h2 {
+  padding: 28px 0 0.12px 0;
+  margin-top: 0.5em;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+h3 {
+  padding: 0.3em 0 0.15em 0;
+  margin-top: 0.2em;
+  font-size: 22px;
+  font-weight: bold;
+  color: #825;
+  color: #6a7f00;
+  color: grey;
+}
+
+h4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 1.25em;
+	font-size: 12pt;
+	font-weight: bold;
+    text-transform: uppercase;
+    color: #444;
+
+}
+
+
+ol, ul {
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.schedule th.date, .schedule td.date {
+  text-align: right;
+}
+
+.abstract, header {
+  border-top: 2px solid #b46;
+  border-bottom: 2px solid #b46;
+  padding: 12px 0;
+  font-style: italic;
+  color: #666;
+}
+
+.title {
+  font-family: Arial, sans-serif;
+  line-height: 1em;
+  font-size: 200%;
+  font-weight: bold;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+.subtitle {
+  font-family: Arial, sans-serif;
+  font-size: 150%;
+  padding-bottom: 0.6em;
+  letter-spacing: .2ex;
+}
+
+.deco {
+  font-family: Verdana, Arial, sans-serif;
+  letter-spacing: 1.2ex;
+}
+
+
+p.centered, div.centered {
+  text-align: center;
+}
+
+
+
+div.joiner {
+  clear: both;
+}
+
+
+@media (max-width: 768px) { 
+  . {
+    font-size: larger;
+  }
+  h1, h2, h3, h4, h5 {
+    align: center;
+  }
+  h1 {
+    font-size: 22pt;
+  }
+
+  h2 {
+    font-size: 20pt;
+  }
+
+  h3 {
+    font-size: 18pt;
+  }
+
+  h4 {
+      font-size: 15pt;
+  }
+
+
+  body, p {
+    font-size: 16pt;
+  }
+  .container {
+    width: 60%;
+  }
+  .content {
+    margin: none;
+    padding: 1em;
+  }
+
+}

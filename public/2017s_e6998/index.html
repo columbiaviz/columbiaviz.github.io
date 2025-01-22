@@ -1,0 +1,472 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style_2017.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+
+<div class="row navbar">
+  <div class="col-md-1"></div>
+  <div class="col-md-10 nav">
+    <a href="./">6998.002 Interactive Data Exploration Systems</a>
+    <a href="./proposals" >Projects</a>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+    <h1 id="overview">Overview</h1>
+
+<p>Human beings rely on summarizing and visualizing data to make informed decisions.  The number and volume of data continues to increase at exponential rates, and new user-facing systems and modalities are needed to handle the scale and heterogeneity of future data.
+This course surveys the landscape interactive data exploration systems along several axes.</p>
+
+<ul>
+  <li>What interaction modalities do modern systems provide?</li>
+  <li>How are such systems developed and optimized to ensure interactivity?</li>
+  <li>What novel functionality can drastically enhance the user’s understanding of the dataset?</li>
+  <li>Can we take advantage of domain-specific data and needs?</li>
+</ul>
+
+<p><br /></p>
+
+<table class="overview table table-striped">
+  <tbody>
+    <tr>
+      <td>Staff+OH</td>
+      <td><a href="http://www.eugenewu.net">Eugene Wu</a> (Instructor)</td>
+      <td>Weds 4-5PM</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="http://homepages.cwi.nl/~sellam/">Thibault Sellam</a></td>
+      <td>By Appt</td>
+    </tr>
+    <tr>
+      <td>Meetings</td>
+      <td>Weds 2-4PM 503 Hamilton Hall</td>
+      <td>First 1.5 hours paper discussion<br />Last 30 minutes open discussion.</td>
+    </tr>
+    <tr>
+      <td>Units</td>
+      <td>3</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Grading</td>
+      <td>Questions</td>
+      <td>10%</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Participation</td>
+      <td>15%</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Assignments</td>
+      <td>15%</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Project</td>
+      <td>60%</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Presentation</td>
+      <td>0-10% extra credit</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>If publishable quality</td>
+      <td>&gt;10-20% extra credit</td>
+    </tr>
+    <tr>
+      <td>Communication</td>
+      <td><a href="https://piazza.com/class/ivpqa35byxu4o">Piazza</a></td>
+      <td>Aside from personal questions, use Piazza instead of email.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="https://github.com/columbiaviz/">Course Github</a></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="course-expectations">Course Expectations</h4>
+
+<p>What This Class is <strong>NOT</strong></p>
+
+<ul>
+  <li>Our goal is <em>not</em> to learn how to design effective or beautiful visualizations.  Our goal is to understand how modern systems are engineered, and explore the research opportunities in visual data exploration.</li>
+</ul>
+
+<p>What I expect from You</p>
+
+<ul>
+  <li>Students should be comfortable reading research papers; you will read, answer questions, and comment on the readings before class.</li>
+  <li>Students should be comfortable coding data processing systems;  familiarity with database query execution, some machine learning, and algorithms is expected.</li>
+  <li>Students are expected to active participate in discussion in class; participation is a large part of the grade.</li>
+  <li>Students should be comfortable conducting a research project and writing up the results in a research paper format.</li>
+</ul>
+
+<h4 id="assignments">Assignments</h4>
+
+<ul>
+  <li><a href="./hw1">Homework 1</a></li>
+  <li><a href="https://github.com/cudbg/stream/blob/master/src/prototype/README.md">Homework 2</a></li>
+  <li><a href="https://github.com/cudbg/stream/blob/master/src/chrome/README.md">Homework 3</a></li>
+  <li><a href="https://github.com/cudbg/stream/tree/master/src/prototype#assignment-4">Homework 4</a></li>
+  <li><a href="https://github.com/cudbg/stream/tree/master/src/prototype#assignment-5-final-assignment">Homework 5</a></li>
+</ul>
+
+<p>For assignments, you allowed 5 penalty free late days to use throughout the semester. One late day equals one 24 hour period after the due date of the assignment. Once you have used your late days, there will be a 20% penalty for each day an assignment is late. You do not need to explictly declare the use of late days; we will assign them to you in a way that is optimal for your grade when different assignments are worth different numbers of points. Late days may not be used for the final project.</p>
+
+<h4 id="project-semester-long">Project (semester long)</h4>
+
+<p>You will pursue a <a href="./proposals">semester long research project</a> related to this course.
+The project is a significant part of the course grade.</p>
+
+<h4 id="paper-questions-every-class">Paper Questions (every class)</h4>
+
+<p>You are expected to answer the short questions associated with the readings every course.
+The class reviews must be submitted by <strong>9PM the day before class</strong>.</p>
+
+<p class="btn"><a href="https://github.com/columbiaviz/columbiaviz.github.io/wiki">Add your answers to the appropriate lecture’s wiki page</a></p>
+
+<h4 id="paper-presentations">Paper Presentations</h4>
+
+<p>You have the <em>option</em> to present as a group (1-2 people) for one lecture on a topic/paper of your choice (within reason).  The paper(s) you select can be from the list given below.  You are also free to list a paper of your choice as long as it matches the themes of the class.
+<strong>This list must be submitted by midnight Feb 1.</strong></p>
+
+<p>You will be asked to complete three milestones for the presentation. Their purpose is to ensure high presentation quality—it is also a good excuse to practice your presentation skills and get feedback:</p>
+
+<ol>
+  <li><strong>2 weeks before your presentation</strong>: present to Professor Wu</li>
+  <li><strong>1 week before your presentation</strong>: present to two or more classmates and get feedback.  The classmates should send me their notes from the presentation.</li>
+  <li><strong>Day of class</strong>: give awesome presentation</li>
+</ol>
+
+<p class="btn"><a href="https://goo.gl/forms/4ymov5u7dFo2k7Ft1">Submit the teammates and papers to present</a></p>
+
+<h1 id="schedule">Schedule</h1>
+
+<table class="schedule table">
+  <thead>
+    <tr>
+      <th>Day</th>
+      <th>Presenter</th>
+      <th>Papers</th>
+      <th>Notes/Due</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1/18</td>
+      <td>Eugene</td>
+      <td>Introduction</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1/25</td>
+      <td>Eugene</td>
+      <td>Specification.</td>
+      <td><a href="https://github.com/columbiaviz/columbiaviz.github.io/wiki/Visualization-Specifications">Readings + Qs</a> <br /> <a href="./hw1">HW 1</a></td>
+    </tr>
+    <tr>
+      <td>2/01</td>
+      <td>Eugene</td>
+      <td>Performance overview, end-to-end systems</td>
+      <td><a href="https://github.com/columbiaviz/columbiaviz.github.io/wiki/End-to-End-Visualization-Systems">Readings + Qs</a> <br /> <a href="https://goo.gl/forms/4ymov5u7dFo2k7Ft1">Submit presentation requests</a> <br /> Turn in project teams in class!</td>
+    </tr>
+    <tr>
+      <td>2/08</td>
+      <td>Eugene</td>
+      <td>Sampling</td>
+      <td><a href="https://github.com/columbiaviz/columbiaviz.github.io/wiki/Sampling">Readings + Qs</a><br /><a href="./proposals">Project Prospectus Due</a> <br /><a href="https://github.com/cudbg/stream/blob/master/src/prototype/README.md">Stream HW 1 released</a></td>
+    </tr>
+    <tr>
+      <td>2/15</td>
+      <td>Eugene</td>
+      <td>Prefetching/Network</td>
+      <td><a href="https://piazza.com/class/ivpqa35byxu4o?cid=25">Readings + Qs</a><br /><a href="https://github.com/cudbg/stream/blob/master/src/prototype/README.md">Stream HW1 due</a> <br /><a href="https://github.com/cudbg/stream/blob/master/src/chrome/README.md">Stream HW 2 released</a></td>
+    </tr>
+    <tr>
+      <td>2/22</td>
+      <td>Gabriel/Daniel</td>
+      <td>Specialized Systems: Macrobase (and BlinkDB?)</td>
+      <td><a href="https://piazza.com/class/ivpqa35byxu4o?cid=36">Readings + Qs</a> <br /> Evaluation functions for Stream HW2 due.</td>
+    </tr>
+    <tr>
+      <td>3/01</td>
+      <td>Alireza/Luren</td>
+      <td>Dremel</td>
+      <td><a href="https://piazza.com/class/ivpqa35byxu4o?cid=50">Readings + Qs</a> <br /> Prediction functions for Stream HW2 due 3/5.</td>
+    </tr>
+    <tr>
+      <td>3/08</td>
+      <td>Eugene</td>
+      <td>Explanation + <a href="./proposals#midpoint">Midpoint Review</a></td>
+      <td><a href="https://piazza.com/class/ivpqa35byxu4o?cid=52">Readings + Qs</a><br /><a href="https://github.com/cudbg/stream/tree/master/src/prototype#assignment-4">HW 4 is out</a></td>
+    </tr>
+    <tr>
+      <td>3/15</td>
+      <td> </td>
+      <td>NO CLASS.  Spring Break!</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>3/22</td>
+      <td>Thibault</td>
+      <td>Modalities</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>3/29</td>
+      <td>Brennan/Drashko</td>
+      <td>Recommendation + Summarization</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4/05</td>
+      <td><a href="http://shaftolab.com/">Patrick Shafto</a> (guest lecture)</td>
+      <td>TBA</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4/12</td>
+      <td>Eugene</td>
+      <td>Work on projects in class.  Thibault+Wu will help.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4/19</td>
+      <td>Thibault</td>
+      <td>Web Tables.  Wu (may) be away at <a href="http://icde2017.sdsc.edu/">ICDE</a></td>
+      <td><a href="https://piazza.com/class/ivpqa35byxu4o?cid=79">Readings + Qs</a><br /><a href="https://github.com/cudbg/stream/tree/master/src/prototype#assignment-5-final-assignment">HW 5 is out</a></td>
+    </tr>
+    <tr>
+      <td>4/26</td>
+      <td>Eugene/Thibault</td>
+      <td>Cleaning?</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>5/03</td>
+      <td> </td>
+      <td>Poster Presentation + <a href="./proposals">submit writeups by 5/5</a></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="topics">Topics</h1>
+
+<p>Background you should be comfortable with</p>
+
+<ul>
+  <li><a href="https://en.m.wikipedia.org/wiki/Relational_algebra">Relational algebra</a> and <a href="https://www.postgresql.org/docs/9.5/static/sql-select.html">SQL</a></li>
+  <li><a href="http://web.stanford.edu/class/cs345d-01/rl/chaudhuri98.pdf">Cost-based optimization</a></li>
+</ul>
+
+<p>Classics</p>
+
+<ul>
+  <li><a href="https://scholar.google.com/scholar?hl=en&amp;q=2.+Tukey%2C+John+W.+Exploratory+Data+Analysis.+1979">Tukey, John W. Exploratory Data Analysis. 1979</a></li>
+</ul>
+
+<p>Surveys</p>
+
+<ul>
+  <li><a href="https://scholar.google.com/scholar?q=Making+Database+Systems+Usable">Making Database Systems Usable</a></li>
+  <li><a href="http://stratos.seas.harvard.edu/files/stratos/files/exploration-tutorial.pdf">Overview of Data Exploration Techniques</a></li>
+  <li>Optional: Associating the visual representation of user interfaces with their internal structures and metadata.</li>
+</ul>
+
+<h4 id="specifying-visualizations-and-exploration">Specifying Visualizations and Exploration</h4>
+
+<p>Declarative Visualization Languages</p>
+
+<ul>
+  <li><a href="http://vita.had.co.nz/papers/layered-grammar.html">A layered grammar of graphics</a></li>
+  <li><a href="https://scholar.google.com/scholar?q=D%C2%B3+Data-Driven+Documents">D³ Data-Driven Documents</a></li>
+  <li><a href="https://idl.cs.washington.edu/files/2017-VegaLite-InfoVis.pdf">Vega-Lite: A Grammar of Interactive Graphics</a></li>
+  <li><a href="/files/papers/dvmscidr.pdf">Combining Design and Performance in aData Visualization Management System</a></li>
+  <li>Assignment
+    <ul>
+      <li>Play with <a href="https://sanddance.azurewebsites.net/BeachPartyApp/BeachPartyApp.html">SandDance</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Interaction Modalities</p>
+
+<ul>
+  <li>Touch
+    <ul>
+      <li><a href="https://scholar.google.com/scholar?q=gestural+query+specification">Gestural Query Specification</a></li>
+    </ul>
+  </li>
+  <li>NLP
+    <ul>
+      <li><a href="/files/papers/nlpdb.pdf">Constructing an Interactive Natural Language Interface for Relational Databases</a></li>
+      <li><a href="https://static.googleusercontent.com/media/research.google.com/fr//pubs/archive/45791.pdf">Analyza: Exploring Data with Conversation</a></li>
+    </ul>
+  </li>
+  <li>Spreadsheets
+    <ul>
+      <li><a href="https://scholar.google.com/scholar?q=Expressive+Query+Construction+through+Direct+Manipulation+of+Nested+Relational+Results">Expressive Query Construction through Direct Manipulation of Nested Relational Results</a></li>
+    </ul>
+  </li>
+  <li>Other
+    <ul>
+      <li><a href="http://www.cs.tufts.edu/comp/250VIS/papers/Visualization-by-Sketching.pdf">Visualization-by-Sketching: An Artist’s Interface for Creating Multivariate Time-Varying Data Visualizations</a></li>
+      <li><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/chi2015-squeries.pdf">(s/q)ueries: Visual Regular Expressions for Querying and Exploring Event Sequences</a></li>
+      <li>Characterizing provenance in visualization and data analysis: an organizational framework of provenance types and purposes.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="augmenting-user-exploration">Augmenting User Exploration</h4>
+
+<p>Recommendation</p>
+
+<ul>
+  <li><a href="http://www.cs.tufts.edu/comp/250VIS/papers/2015-Voyager-InfoVis.pdf">Voyager: Exploratory analysis via faceted browsing of visualization recommendations</a></li>
+  <li><a href="https://idl.cs.washington.edu/files/2016-CompassQL-HILDA.pdf">Towards A General-Purpose Query Language for Visualization Recommendation</a></li>
+  <li><a href="http://web.engr.illinois.edu/~adityagp/zenvisage.pdf">Effortless Data Exploration with zenvisage: An Expressive and Interactive Visual Analytics System</a></li>
+  <li><a href="/files/papers/seedb.pdf">SeeDB: efficient data-driven visualization recommendations to support visual analysis.</a></li>
+  <li><a href="https://arxiv.org/pdf/1610.06978.pdf">Data Polygamy: The Many-Many Relationships among Urban Spatio-Temporal Data Sets</a></li>
+  <li>Optional: Characterizing provenance in visualization and data analysis: an organizational framework of provenance types and purposes.</li>
+  <li>Optional: Adaptive recommendation-based modeling support for data analysis workflows.</li>
+</ul>
+
+<p>Autocomplete and refinement</p>
+
+<ul>
+  <li><a href="">Snipsuggest: Context-aware autocompletion for sql</a></li>
+  <li>Query By Output</li>
+  <li>DataPlay: Interactive Tweaking and Example-driven Correction of Graphical Database Queries</li>
+  <li>Machine learning for online query relaxation</li>
+</ul>
+
+<p>Explanation</p>
+
+<ul>
+  <li><a href="http://sirrice.github.io/files/papers/scorpion-vldb13.pdf">Scorpion: Explaining away outliers in aggregate queries</a></li>
+  <li><a href="/files/papers/qfix.pdf">QFix: Diagnosing errors through query histories</a></li>
+  <li><a href="https://www.cl.cam.ac.uk/~as2006/files/sarkar_2016_gatherminer.pdf">Visual discovery and model-driven explanation of time series patterns</a></li>
+  <li><a href="http://www.vldb.org/pvldb/vol8/p61-elgebaly.pdf">Interpretable and Informative Explanations of Outcomes</a></li>
+  <li><a href="/files/papers/lum.pdf">The Lumiere Pro ject: Bayesian User Modeling for Inferring the Goals and Needs of Software Users</a></li>
+</ul>
+
+<h4 id="garbage-in-garbage-out">Garbage in Garbage out</h4>
+
+<p>Data Cleaning</p>
+
+<ul>
+  <li>Wrangler: interactive visual specification of data transformation scripts</li>
+  <li>Profiler: Integrated Statistical Analysis and Visualization for Data Quality Assessment</li>
+  <li>BoostClean: Automated Error Detection and Repair forMachine Learning</li>
+  <li><a href="http://yanpeichen.com/professional/IEEE_Big_Data_2016_Data_Quality.pdf">Data Quality: Experiences and Lessons from Operationalizing Big Data</a></li>
+</ul>
+
+<h4 id="scaling-visual-exploration-systems">Scaling Visual Exploration Systems</h4>
+
+<p>End-to-end fast data visualization systems</p>
+
+<ul>
+  <li><a href="/files/papers/polaris.pdf">Polaris: A system for query, analysis, and visualization of multidimensional relational databases</a></li>
+  <li><a href="/files/papers/immens.pdf">imMens: real-time visual querying of big data</a></li>
+  <li><a href="/files/papers/superconductor.pdf">Superconductor: a language for big data visualization.</a></li>
+  <li><a href="">Profiler: Integrated Statistical Analysis and Visualization for Data Quality Assessment</a></li>
+  <li><a href="/files/papers/dvmscidr.pdf">Combining Design and Performance in aData Visualization Management System</a></li>
+</ul>
+
+<p>Data Processing Systems</p>
+
+<ul>
+  <li><a href="/files/papers/macrobase.pdf">MacroBase: Analytic Monitoring for the Internet of Things</a></li>
+  <li><a href="/files/papers/dremel.pdf">Dremel: Interactive Analysis Of Web-Scale Datasets</a></li>
+  <li><a href="https://amplab.cs.berkeley.edu/wp-content/uploads/2015/03/SparkSQLSigmod2015.pdf">Spark SQL: Relational Data Processing in Spark</a></li>
+  <li><a href="/files/papers/blinkdb.pdf">BlinkDB: Queries with Bounded Errors and Bounded Response Times on Very Large Data</a></li>
+  <li><a href="/files/papers/olap.pdf">Data cube: A relational aggregation operator generalizing group-by, cross-tab, and sub-totals.</a></li>
+</ul>
+
+<p>Prefetching</p>
+
+<ul>
+  <li><a href="/files/papers/forecache.pdf">Dynamic prefetching of data tiles for interactive visualization.</a></li>
+  <li><a href="/files/papers/steering.pdf">Query Steering for Interactive Data Exploration</a></li>
+</ul>
+
+<p>Sampling</p>
+
+<ul>
+  <li><a href="/files/papers/pfunk.pdf">PFunk-H: Approximate Query Processing using Perceptual Models</a></li>
+  <li><a href="/files/papers/wanderjoin.pdf">Wander Join: Online Aggregation via Random Walks</a></li>
+  <li><a href="/files/papers/sigmod16sampleseek.pdf">Sample + Seek: Approximating Aggregates with Distribution Precision Guarantee</a></li>
+  <li><a href="/files/papers/rapidsampling.pdf">Rapid Sampling for Visualizations with Ordering Guarantees</a></li>
+</ul>
+
+<p>Network</p>
+
+<ul>
+  <li><a href="/files/papers/m4.pdf">M4: A Visualization-Oriented Time Series Data Aggregation</a></li>
+</ul>
+
+<!--
+* Visualization-aware sampling for very large datasets
+* Visage: A user interface environment for exploring information.
+* [Online Dynamic Reordering for Interactive Data Processing](/files/paper/juggle.pdf)
+* Dynamic client-server optimization for scalable interactive visualization on the web.
+* Queriosity: Automated Data Exploration, IEEE 2015
+* An Analytic Data Engine for Visualization in Tableau, SIGMOD, 2011
+* Multiscale Visualization Using Data Cubes, 2002
+* G-OLA: Generalized On-Line Aggregation for Interactive Analysis on Big Data, SIGMOD, 2015
+-->
+
+<p>Neat applications</p>
+
+<ul>
+  <li>https://www.remix.com/</li>
+</ul>
+
+  </div>
+</div>
+
+<div class="row footer">
+  <div class="col-md-3"></div>
+  <div class="col-md-3"> <p>Graduate seminar to study research in interactive data exploration systems.
+</p></div>
+  <div class="col-md-3">
+    ewu@cs.columbia.edu<br/>
+    <a href="http://www.github.com/columbiaviz">GitHub</a>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+
+</body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87373541-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

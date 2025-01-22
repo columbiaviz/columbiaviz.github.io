@@ -1,0 +1,228 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+		<div class="deco">COLUMBIA UNIVERSITY COMS W6998</div>
+    <div class="title"><a href="/2020s_w6998" style="color:black;">SYSTEMS FOR HUMAN DATA INTERACTION</a></div>
+</div>
+
+
+
+
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-6 col-md-offset-3">
+		<h1 id="a4-play-with-wranglingextraction">A4: Play with Wrangling/Extraction</h1>
+
+<ul>
+  <li>Due: Nov 19 11:59PM (EST)</li>
+  <li>Teams of 1 - 2</li>
+</ul>
+
+<p>Edits</p>
+
+<ul>
+  <li>11/13:
+    <ul>
+      <li>included the google form questions into this document.</li>
+      <li>pushed deadline back from 15th to 16th</li>
+    </ul>
+  </li>
+</ul>
+
+<p>In this assignment, you will try out interfaces for data and text extraction.</p>
+
+<h2 id="wrangler-data-prep">Wrangler: data prep</h2>
+
+<p>Trifacta Wrangler is an interface that employs a programming-by-example interaction modality.</p>
+
+<p>Datasets:</p>
+
+<p><a href="/files/hdisys/2013films.txt">2013films.txt</a>:  A dataset of all the movies in 2013 from January to March. It contains Movie name, Production house, Genre, Publisher and other details.</p>
+
+<p>Access <a href="https://www.trifacta.com/start-wrangling/">Trifacta for students from their website</a>.</p>
+
+<p>Some tips using Wrangler:</p>
+
+<ul>
+  <li>Check out the introduction <a href="https://vimeo.com/19185801">video</a> to get a feel of how wrangler works.</li>
+  <li>You may wanna start off by loading ~50 lines of data instead of the entire files and play around with the tool.</li>
+  <li>Wrangler responds to mouse highlights and clicks on the displayed table cells by suggesting operations on the left sidebar.</li>
+  <li>Hovering over each element shows the result in the table view.</li>
+  <li>Clicking adds the operation.</li>
+  <li>Clear the sidebar by clicking the colored row above the schema row.</li>
+</ul>
+
+<h4 id="your-task">Your Task</h4>
+
+<p>Load the 2013films dataset into Wrangler, and then use the tool to generate output as follows, i.e., Movie name, Production/Distribution house, Director, Genre and publisher.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A dark truth, Magnolia Pictures, Damian Lee, Action,ComingSoon.net
+Table No. 21, Eros International, Aditya Datt, Thriller, BoxOfficeMojo.com
+[...more rows...]
+</code></pre></div></div>
+
+<p>For the purpose of explanation columns are separated by <code class="language-plaintext highlighter-rouge">||</code>. You can choose any pattern to extract information.</p>
+
+<ol>
+  <li>Movie name can be identified as first column in every line formatted as <code class="language-plaintext highlighter-rouge">[[ &lt;movie name&gt; ]]</code></li>
+  <li>Production/Distribution house is the following column that is formatted as <code class="language-plaintext highlighter-rouge">[[&lt; Production house&gt;]]</code></li>
+  <li>Director name can be identified with <code class="language-plaintext highlighter-rouge">(director)</code> tag that follows the name. Just extracting one name near the tag would be enough.</li>
+  <li>Genre is present in the next column but make sure to extract only second part that is separated by the <code class="language-plaintext highlighter-rouge">|</code> operator. For eg. in <code class="language-plaintext highlighter-rouge">[Action film|Action]</code> relevant information is Action</li>
+  <li>Publisher name can be identified in the last column with format <code class="language-plaintext highlighter-rouge">publisher=&lt;publisher name&gt;</code></li>
+  <li>It may help to skip first few lines that contains html code, so that you process actual records.</li>
+</ol>
+
+<p>Questions you will submit in the google form</p>
+
+<ol>
+  <li>Which production/distribution house produced the maximum movies?</li>
+  <li>What is the most popular genre?</li>
+  <li>Share your experience with Trifacta. Which part of the cleaning procedure does it make easier? Which part is hard? Any comments on Trifacta, pros or cons or further improvements.</li>
+</ol>
+
+<h4 id="notes">Notes</h4>
+
+<ul>
+  <li>Your wrangler script is not expected to be sophisticated enough to generate the results for the question asked. It just needs to clean/combine the data enough for you to observe the data and answer the question.</li>
+</ul>
+
+<h4 id="files-you-need-to-submit">Files you need to submit</h4>
+
+<ul>
+  <li><em>Recipe and Data</em> You need to download the wrangler “recipe” (script) and “sample data as csv” as follows: The recipe is simply a text file with a sequence of transformations. And the sample is your final table.
+    <ul>
+      <li><img src="../files/hdisys/wrangler-export.gif" style="width: 400px;" /></li>
+    </ul>
+  </li>
+  <li><em>Screenshot and Short Answers in One pdf file</em>  You need to create a screenshot of your dashboard like below. Make sure the picture/pictures includes ALL your recipe steps. Then, insert your sceenshot in your pdf file and answer the question above.
+    <ul>
+      <li><img src="../files/hdisys/wrangler.png" style="width: 400px;" /></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="dbt-extract-load-transform-using-sql">DBT: Extract-Load-Transform using SQL</h2>
+
+<p>We will be using the <a href="https://github.com/vera-institute/incarceration-trends">Incarceration Trends</a> dataset collected by the Vera Institute.   We will be using the <a href="https://github.com/vera-institute/incarceration_trends/blob/master/incarceration_trends.csv?raw=true">county-level data file</a>. Open the <a href="https://github.com/vera-institute/incarceration_trends/blob/master/incarceration_trends-Codebook.pdf?raw=true">Codebook</a>. Starting from page 11, it describes the attributes in the dataset.  Notice how a lot of attributes are actually encoded in the attribute names.  For instance, aapi_pop_15to64 is a numeric value that stores the population count for Asian American/Pacific Islanders aged 15 to 64.  This should clearly be three separate attributes <code class="language-plaintext highlighter-rouge">population</code>, <code class="language-plaintext highlighter-rouge">ethnicity</code>, <code class="language-plaintext highlighter-rouge">age</code>.  The same is true for almost all of the measures.</p>
+
+<p>You will use DBT to turn this dataset into a well-formed table.</p>
+
+<ul>
+  <li><a href="https://docs.getdbt.com/dbt-cli/installation">Install dbt</a> or use their dbt cloud (you’re on your own!)</li>
+  <li><a href="https://courses.getdbt.com/courses/fundamentals">DBT Tutorial</a> (You will need to create an account for dbt)</li>
+  <li><a href="https://signup.snowflake.com/">Link for Snowflake</a></li>
+  <li><a href="./sessions/Steps to connect Snowflake to DBT.pdf">Instructions on loading data to Snowflake and creating a connection to dbt</a></li>
+  <li><a href="https://github.com/columbiaviz/dbt-assignment">Instructions to run dbt locally</a></li>
+</ul>
+
+<h6 id="note">Note:</h6>
+<ul>
+  <li>You can use any other DBT supported datawarehouse also like Redshift, BigQuery, Apache Spark, Databricks, etc. as per your preference.</li>
+  <li>You can use either DBT-Cloud or DBT locally on your computer to perform this assignment. There is no need to do both.</li>
+  <li>You can refer to the submission section on instructions of what needs to be submitted.</li>
+  <li>There are two submission options for DBT, feel free to submit any of the two.</li>
+</ul>
+
+<p>This type of data, where lots of metadata is encoded in the attributes and described in a codebook, is incredibly common in public data repositories.  It’s an open problem how to automatically/best transform these types of data into well-formed tables.</p>
+
+<p>Questions you will answer in the google form:</p>
+
+<ol>
+  <li>What does DBT do well in solving this problem?  What limitations does it have?</li>
+  <li>What would Wrangler do well in solving this problem?    What limitations would it have?</li>
+  <li>What might be a human data interface design to aid this task?    Consider the language, the interface design, the interactions, the tasks.</li>
+</ol>
+
+<h4 id="notes-1">Notes</h4>
+
+<ul>
+  <li>Note that the transformations you performed are called “second-order”, because you are manipulating/querying the schema definitions as if they are data.   There’s an awesome paper called <a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.46.9541&amp;rep=rep1&amp;type=pdf">SchemaSQL</a> that defined a second order language for this type of stuff!</li>
+</ul>
+
+<h1 id="submission-instructions">Submission Instructions</h1>
+
+<h4 id="read-before-submitting">Read BEFORE Submitting</h4>
+
+<h5 id="section-1-wrangler">Section-1: Wrangler</h5>
+<ul>
+  <li>You need to submit the following files:
+    <ul>
+      <li>Recipe log(.wrangle)</li>
+      <li>Final data table(.csv)</li>
+      <li>Pdf File containing url and screenshots(.pdf)</li>
+    </ul>
+  </li>
+  <li>Zip all three files together with PROPER names to distinguish them and name the zipped file as <code class="language-plaintext highlighter-rouge">NAME_UNI_Wrangler_A4.zip</code></li>
+</ul>
+
+<h5 id="section-2-dbt">Section-2: DBT</h5>
+<ul>
+  <li>You need to submit the following files:
+    <ul>
+      <li>dbt files (The <a href="https://github.com/columbiaviz/dbt-assignment/tree/main/models/">models</a> folder files used to transform the table + schema.yml)</li>
+      <li>Final data table(.csv)</li>
+    </ul>
+  </li>
+  <li>Zip all the files together with PROPER names to distinguish them and name the zipped file as <code class="language-plaintext highlighter-rouge">NAME_UNI_DBT_A4.zip</code>
+    <h6 id="alternate-submission-for-dbt">Alternate Submission for DBT:</h6>
+  </li>
+  <li>If you find yourself spending more than 3 hours on just loading data to DBT, you can stop!</li>
+  <li>
+    <p>For ONLY DBT part of this assignment, you are allowed to instead submit an example table (3 rows) of what the transformed table would look like had you used DBT for cleaning it.
+<img src="../files/hdisys/table2.PNG" style="width: 350px; height:90px" /></p>
+  </li>
+  <li>Image shown above is only an example, you need to submit the table (in csv format) that you believe should be the answer to the DBT question.</li>
+  <li>You can upload this in the first upload field of <code class="language-plaintext highlighter-rouge">DBT: Extract-Load-Transform using SQL</code> section given in A4 submission google form.</li>
+  <li>Kindly name it as <code class="language-plaintext highlighter-rouge">NAME_UNI_DBT_table.csv</code></li>
+</ul>
+
+<h6 id="note-1">Note:</h6>
+
+<ul>
+  <li>Points will be deducted if the files are not named as per the instructions given in submission section.</li>
+</ul>
+
+<h4 id="submission-link">Submission Link</h4>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLScrivDyDWqH0Tmy_-JAP7_Y0fqp7RItP6f70V4gzCf64TwPdg/viewform?usp=sf_link">Submit your responses here!</a></p>
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>

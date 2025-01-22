@@ -1,0 +1,257 @@
+
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+		<div class="deco">COLUMBIA UNIVERSITY COMS W6998</div>
+    <div class="title"><a href="/2020s_w6998" style="color:black;">SYSTEMS FOR HUMAN DATA INTERACTION</a></div>
+</div>
+
+
+
+
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-6 col-md-offset-3">
+		<style>
+p.review {
+  border-left: 2px solid grey;
+}
+
+div.block {
+  margin-bottom: 1em;
+}
+</style>
+
+<h2 id="discussion-points">Discussion Points</h2>
+
+<p class="block">I would like to see a discussion on the various gestures that Gesture Query starts with. The authors claim that it is intuitive. I wonder if the rest of the class agrees.</p>
+
+<h2 id="paper-1">Paper 1</h2>
+
+<h3>3/9/20 23:58 Richard Zhang</h3>
+<p class="block"><br />
+This paper is about gesturedb, a gesture based interface for interactive queries. It is significant for its improvements in usability over previous interactive query interfaces built for relational databases, in the sense that users completed queries quicker and had a more intuitive interface. <br />
+Its technical strenghts rely in its gesture recognition, i.e. recognizing what the user's gesture is intended to do and treating it as a classification problem and mapping these to queries. Some limitations are that it seems that the system seems limited in scale as well as having limited use cases. I think this system may be useful for general table modification if it had a more expansive interface and allowed for greater user input (beyond gestures).<br />
+I think gesturedb does well in letting the user find the results of the query quickly and intuitively on limited datasets. However, on larger datasets and the need for more complex queries may be difficult to perform on gesturedb.</p>
+
+<h3>3/9/20 23:49 Zachary Huang</h3>
+<p class="block">This paper talks about using geasture to query database. The significant part is how it achieves fluidity and direct manipulability. Technical strengths is how they design their query specification. For example, this paper studies how people are likely to join or union the tables together through direct manipulation by modeling the problem as a classification. However, gestures for the other queries are still hard-coded. This paper also doesn't talk about nesting. Whether this operation will be hard to achieved through gestures? How can users better understand the tables they have previously joined?<br />
+I think gesturedb has achieved the goal of fluidity so that it is easier for non-technical users. Their gestures in query language seem expressive and intuitive for beginners. However, they reject the approach to provide users with a modal interface to pick the parameters of query. I think this may be some limitations. While using tableau, it allows me to drag fields directly or specify parameters by coding. For some parameters that are somewhat complex, dragging fields are error prone and hard to manipulate. Whether combining both techniques will achieve a better user experience?</p>
+
+<h3>3/10/20 1:09 Deka Auliya Akbar</h3>
+<p class="block">The paper proposed Gestural Query Specification, to interact with data on devices that use gestures as an exclusive/primary mode of interaction. The gestural queries itself is still an infant area of research. Some prior works were done on database interaction with non-traditional keyboard mouse input/outputs usually map direct manipulation actions to query algebra, however, they often impractical as they don't consider the query paradigm in terms of fluidity and direct manipulability desiderata, state of the database, query algebra, and compatibility. This motivates the design of GestureQL which considers the rethinking of traditional query -&gt; result database paradigm.<br />
+<br />
+I think their major contribution involves the 1) direct data manipulation and querying framework with series of gestures, and 2) new database query paradigm, where they provide continuous interaction and constant feedback from database during query specification, and 3) gesture recognition system that uses both the interaction (proximity) and database state (compatibility). <br />
+<br />
+GestureQL will be most useful primarily in devices that use gestures as an exclusive/primary mode of interaction, for example, in smartphones, tablets or immersive systems. However, I think the current work of GestureQL will only work well on a simple and small set of data. First, since they require rapid interactivity/feedback and produce new relations on each gesture, the current implementation might incur huge performance issues on large databases. Some optimizations such as summarizations and approximate query processing can be utilized to still support rapid approximate feedback for large databases. <br />
+<br />
+I think selecting attribute values of large data can also be an issue during filter / join operations (or large number of features for aggregation). Having some sort of intermediary interface/visualization which can summarise unique values or features will be useful for large databases. Some other limitations of the system also include the expressiveness of join and aggregate queries. I think for now join is limited to EQUALITY JOIN of one feature instead of multiple, complex join conditions (which is fine most of the time because adding these capabilities might be overkill if the features arent used). Similarly, with aggregations, I think the aggregation is limited to one grouping and aggregate attribute where in reality AGGREGATION might involve multiple attributes.<br />
+<br />
+Additional improvements on the system, maybe having some sort of reusable, saveable, editable data lineage operations of varying level query specifications (eg: dataiku but for GestureQL), copy and edit operations on current or subset of query specification might be useful.</p>
+
+<h3>3/9/20 23:46 Yiru</h3>
+<p class="block">This paper proposes a novel query specification that enables queries via a series of gestures. It represents a gesture as a series of points: p = &lt;t,l,m&gt;. And different gestures represent different operations in the database. <br />
+<br />
+I am convinced that these gestures could express those queries.<br />
+<br />
+I think the gestural specification is still limited in dealing with large data. In their filter definition, if the dataset is large, how could they show the records one by one and let users choose from them?<br />
+<br />
+Also, the gestures are hard to remember. It does not look very easy for me. I watched the teaching video online, and I find the teaching video is a little dizzy for the watcher.<br />
+<br />
+This also requires the users to know the SQL grammar, like join, filter, and union.<br />
+</p>
+
+<h3>3/9/20 23:24 Haneen</h3>
+<p class="block">This paper introduces a system that enables users to query relational databases using multitouch gestures. The system designed in such a way that it would enable users to perform exploratory data analysis. The main premise is that given relational input, it allows users to explore the datasets available, their schemas, and a preview of their content using touch gestures. In addition, the system provides feedback to the user while they are in the process of constructing queries by giving previews over possible queries.<br />
+To enable users to construct queries, the paper design a Gestural Query Language that maps a set of gestures to relational queries. The mapping is done with the help of the Gesture Classification module, which takes multitouch coordinates and database state (schema, data statistics) to ensure a correct query specification. <br />
+The authors then evaluate the system using extensive user study recording different measures about the system in comparison with a console-based input. The measures include useability, learnability, as well as the systems performance. The results showed that the feedback varies to some extent based on the users experience with querying systems, which ultimately gives them feedback on where the system is good and where it needs improvements.</p>
+
+<h3>3/9/20 23:22 Celia Arsen</h3>
+<p class="block">In this paper the authors design a gestural interface for querying database systems. They have a few contributions that go beyond existing work. First, they define the problem of gestural query specification, second, they design a novel gestural querying framework, third, they implement a gestural query specification system called GestureQuery, and lastly, they evaluate the effectiveness of that system. To me, the most notable contribution besides the system itself is the classifier they use for narrowing the space of possible queries. In this paper they put the lit review at the end, and I wish they had not. As someone who has no academic background in multitouch or gestural interfaces, I would have liked to see a stronger motivation for the problem from the beginning besides this is the trend. In the related work section they talk about other studies that have shown that gestural interaction is superior to other paradigms, but all they say in the introduction is that it is a well motivated problem and expect us to believe them for the entire paper. Users had an easier time figuring out the aggregation operation than the join operation, and the authors claim that these are similarly complex operations, but I would definitely disagree. Conceptually, joins are a much more difficult concept to grasp for first-time users, and so it says something about the system that it doesnt make that concept easier for users to understand. I also am curious to see how the completion time study would go if they gave the users the target query in plain English. If the purpose is to take the database query language out of the equation, why are they starting with it? One of the things that I really liked about this article was that they used very clear figures to illustrate concepts that are inherently visual.<br />
+While some of the findings in the evaluation were promising for GestureQuery, there were definitely a few limitations when it comes to accessibility for non-technical users. First, they users were all college students, most of which I would assume have a better technical proficiency than the average user. Just because of their age they probably have more comfort with gestural interfaces. Users did not find joins easier to use or learn in GestureQuery. When they drilled down to nave users, only two more found GestureQuery easier to use and 3 more found it easier to learn than Visual Query Builder. This doesnt seem significant evidence to draw the claim that GestureQuery is superior for nave users.</p>
+
+<h3>3/9/20 22:36 Xupeng Li</h3>
+<p class="block">This paper is trying to design a new database interaction method that is based on gestures and can work without keyboard. The paper proposes a novel query specification system and a gesture recognition system. They try to support continuous interaction by sampling touch gestures at a rate of 30Hz. Each set of gestures can be mapped to one or many parameterized queries, with a "likelihood score". When the score goes above a fixed threshold, the system will try to construct a query based on the gestures. The system defines a series of gesture vocabulary to support, including UNDO, FILTER, JOIN, etc. They train a maximum entropy classifier to recognize gestures and anticipate queries. User study shows that gesture query system indeed facilitate building queries. Users completed tasks using gesture query quicker than other systems. However, some users feel gesture query does not support JOIN well, partially because the anticipation for JOIN is not accurate enough.<br />
+<br />
+I believe the set of gestures defined by GestureQuery and shown in Figure 2 is clear and easy to use for simple tasks and naive users. The gestures are intuitive so that even an untrained user can start using the system. However, when tables become more and schemas grow larger, I'm afraid the system will turn hard to use because the screen can only show a small fraction of content. Besides, I think a keyboard (or a virtual keyboard on screen) is always helpful for inserting predicates/projection targets. Without keyboard one can hardly define complicated tasks.</p>
+
+<h3>3/9/20 21:32 Carmine Elvezio</h3>
+<p class="block">This paper presents a gesture recognition system, for use in the querying of databases. It takes advantage of the gestures performed by users and the actual state of the database itself in order to translate gestures into relational database queries. The authors put forth the notion that as new user natural interfaces continue to develop, there exists an opportunity to take advantage of natural modalities that people are intuitively able to utilize. This paper presents a number of contributions: the introduction and definition of Gestural Query Specification which focuses on how gestures can be articulated to query a database, a novel querying framework (which takes as input the gesture and tries to calculate and utilize query intent, context to generate the database queries), the details of an architecture and implementation of GestureQuery (their implementation of the above ideas, combined with a classification system to discern query intent while utilizing user feedback, on top of a classification system to discern said intent), and a user study evaluating GestureQuery showing that it was generally more effective and preferred to the Visual Query Builder system and textual input. I do believe the contributions in this work to be significant over previous work. The utilization of a gestural system (combined with novel and intuitive interfaces for interaction) to allow for direct manipulation of data, but taking into account the context of the database itself is highly novel. I really like this as a unique contribution as it allows for actions to have direct meaning and contextualization. The use of a classification system on top of this to improve the nature of the suggestions, building upon prior work for suggestions is also great as it allows for a great possibility of making the correct recommendation of gesture intent. I believe the combination of the above is quite powerful and unique, as prior systems either focus on the nature of gesture improvement, or pseudo-gestures (like Tableau) which require much more explicit intent consideration and handling by the user and the system does not include it. A few limitations here include the fact that the joins are designed to be geared towards dyads of tables - but since more complicated multi-table queries are possible, multi-table considerations would not necessarily be ideally suited. Additionally, the study made fairly clear that users more acclimated with data processes did not see as many advantages of Visual Query Builder. Since those people would be the ones to more frequently try to execute complicated multi-table queries, there is a question as to what could be improved in order to facilitate more complicated queries and improve more advanced user interaction. In the future I think it would also be great to see an expansion of the classification system to handle anticipation of using gesture direction without necessarily having things be in certain positions a priori. <br />
+<br />
+Considering the two classes of users the authors targeted in building the system, novices and advanced users, they had two levels of success. With novice users, they found the system fairly easy to use, and thus rated it higher for learnability and usability for the JOIN gesture. Advanced users found Visual Query Builder to be a better system generally. This brings up an interesting observation. With the intent of helping novice users in composing queries, the most certainly seemed to have helped when doing a JOIN action, which can be thought of as being a fairly complicated action to try to complete. Adding to that the fact that in the discoverability study, users generally preferred and did better with Gesture Query, it does lend credence to that claim. If considering users who are novice at a particular dataset but able to understand and parse data sets in general, there were cases as described above, where Gesture Query did not do as well. This is likely due to the fact that the systems initial intent interpretation might actually require tweaking and adjustment, especially at the per-attribute level, which might cause frustration and delay. I think an improvement here would be to allow the users to ease off of the intent if they really desired that. Of course, that would disrupt the follow of specification and intent, as described in the paper. There might be a few ways of handling this, which could make for good future work too.<br />
+</p>
+
+<h3>3/9/20 11:29 Yin Zhao</h3>
+<p class="block">This paper discusses a system that facilitates gestural query specification in databases. The contribution is to support ad-hoc database interaction without having to learn about the database structure and query language, and to implement GestureQuery, which provides feedback to the user during query. Since gestural specification has been studied extensively since the prevalence of tablets and smartphones, and I don't feel that this system provides too much innovation in terms of design and technical specs, although the evaluation part shows good performance.</p>
+
+<h3>3/8/20 11:35 Qianrui Zhang</h3>
+<p class="block"># Review<br />
+This paper presents a query specification system that allows users to query databases using a series of gestures. It proposes a set of gestural query language grammar and use classification techniques to recognize those gestures. Experiments show that GestureDB can satisfy the criterias from both user perspective and system perspective.<br />
+<br />
+The idea of using gestures to perform queries is very novel, and I think the techniques will provide inspirations for future systems in this field. And similar to SpeakQL, I appreciate its creativity.<br />
+<br />
+As for the limitations, I have similar concerns about Gesturedb as SpeakQL: will there finally be many real use cases? Because based on my understanding of the paper, most of the functions that Gesturedb provides can be realized via interactive interfaces. And there are also interactive interfaces that can be operated by touching on phones or tablets. So what are the advantages of using Gesturedb than developing some interfaces to modify queries? I don't think this paper answers this question well.<br />
+<br />
+And as is said in section 7, scaling can be a big issue. Since if users are operating the system by touching, it will be really discouraging if the results are not returned interactively.<br />
+<br />
+# Addition<br />
+I'm convinced that Gesturedb works well for datasets that are relatively small, where we can perform all the operations including join in interactive speed. And users with database experience will feel it not difficult to use the system.<br />
+<br />
+On the other hand, I think users without database experience will feel it hard to use Gesturedb. And large datasets will also not be suitable for Gesturedb to query.</p>
+
+<h3>3/7/20 13:22 Adam Kravitz</h3>
+<p class="block">Gestury Query is a way to query using a multitouch interface that allows users to more directly interact with data than they would be able to in other devices. Gesture Query proposes a new database architecture called GestureDB.<br />
+This not only allows better interaction, but also is designed for the growing popularity of touch screen devices where most querying today is/was designed more a computer with a trackpad or a mouse. Also since more complex commands can be done with a touch screen labor intensive commands can be done more intuitively, like dragging two tables to equijoin together, or any feature like drag and dropping, or copying tables.<br />
+The technical strengths of Gesture Query are that it is faster since all the queries commands are gestures and not written commands, this then allows it allows instantaneous feedback, as well as being very visual (which is a positive since visual interfaces tend to be more intuitive to use versus written interfaces). Another powerful technical strength of Gesture Query is that it can infer gesture queries when in the middle of the gesture which could allow so preprocessing of the data or could generate the query if the user messes up and doesnt finish the gesture completely.<br />
+Memorizing gestures is hard, hard to tell what action was done without knowing the gestures. There can also be errors with mis-clicking or doing the wrong gestures (could have an undo button but the paper didnt mention it) . The last limitation that I found in the paper was that it never really described if these program is .<br />
+Since models can be predicted in the middle of a gesture, I wonder if the paper could generate the predicted query from the gesture without doing the actual gesture (like a tool to see what would appear if a command was done without actual committing to do the gestures). Also can gesture commands be mixed with typing SQL commands. I think so gesture commands can be more intuitive like joining or union-ing, but more complex queries could be hard to do with gestures so those queries that need more thought to be executed could be written down as SQL code.<br />
+I think gestured succeeds in doing gestures like join and union where relatively simples gestures can do a query command more easily and even quicker, which seems like good traits for users who never done a batabase query before. Another success is the speed of the results being generated allowing for live interaction with the data. Some limitations of gesturedb is that it doesnt allow a mouse or keyboard to make queries which most people who query are used to, and it is still limited on the number of commands people can remember. Also I am unsure if it can do this but can it filter to generate a blank table? Or does what you can filter by have to be already on the table? Also it doesnt say, but filtering seems to be limited to only the equals to case and not to the greater than or less than cases.<br />
+</p>
+
+<h2 id="paper-2">Paper 2</h2>
+
+<h3>3/9/20 23:58 Richard Zhang</h3>
+<p class="block">This paper is about SpeakQL, an ASR system for queries. It is significant for applying ASR technology to querying interfaces, which seem to have some (albeit limited) usecase for people in certain fields and industries. Its technical strengths beyond prior work are its adaptaion of existing ASR techniques but identifying the select cases that are exclusive to querying, i.e. breaking down queries into literals and structures,<br />
+which helped them solve the unbounded vocabulary problem. It seems to have a lot of limitations though -- firstly, the user studies were not incredibly compelling, but they also did show that the tool works on a base level. Especially for long queries, this seems to be limited and its users must have a very strong idea of the database that they're quering. For extensions, it seems that it would really benefit from some visual interface as well that helps<br />
+users create queries (as it is hard for them to visualize queries in their heads, as seen in the paper). I think it's suited for small queries, and for larger queries most other interfaces would work better (i'm thinking of something like mysql workbench).</p>
+
+<h3>3/9/20 23:49 Zachary Huang</h3>
+<p class="block">This paper talks about how to support speech driven SQL query. The significant part is the idea that, instead of typing or structural interactions, it is also possible and useful to input SQL though speech. Its technical strength is how it parses the the speech. The separation of literal and SQL structure is one interesting choice. Parsing SQL structure has already been very challenging. Picking liters out not only reduce the search space, but also provide heuristics for the system about how to differentiate different parts. Limitation includes how to support long sql? Is it possible for users to speak SQL queries in parts? <br />
+The part that makes spoken natural language querying difficult is that, we are not only translating speech into words, but also words into SQL query. The goal of SQL query may provide some heuristics. However, it also adds demands that final SQL query should be valid. Therefore, while the tradition process of parsing is from sentence to AST, this process is from AST to sentence. They use dynamic programming and bidirectional bounds to aggressively find the best AST. SpeakQL may be suited for short SQL queries, because speaking a long sentence poses the challenge to human. Maybe an augmented programming interface with guidance is better.</p>
+
+<h3>3/10/20 1:09 Deka Auliya Akbar</h3>
+<p class="block">SpeakQL allows users to make structured data querying with speech. It improves ASR by exploiting SQL's properties, grammar, and database characteristics combined with NLP. I think their major contribution is the separation of structural and literal determinations, as structural is finite and grammar is more unambiguous compared to literals, which are infinite and suffer from unbounded vocabulary problems. <br />
+<br />
+Some problems in the system involve ambiguity and homophones (eg: sum vs some), Out of Vocab words between ASR and SQL keywords. They used prior knowledge on SQL's DML, an efficient data structure (Trie), weighted edit distance, dp, bidirectional search, and tree pruning for the structural determination component. As for literal determination, personally I think it's better to leave them as placeholders due to the unbounded vocab problem, especially if the literals comprise of difficult values. Or, as an alternative, we can make the literals bounded by for example by allowing users to custom prerecord the commonly used tables, columns, and values; spelling or number enumeration modes for difficult and uncommon words / continuous numbers; or provide multimodalities to drag and drop with gesture/touch of attributes/table names.<br />
+<br />
+The author mentioned a false dichotomy. Personally, rather than mentioning the dichotomy, I think they can go straight to the real motivation, in which SpeakQL is more useful for devices that preclude keyboard/mouse as its exclusive/primary mode of interaction (mobile devices, smartphones, tablets, AR/VR systems) similar to GestureQL and as what they have illustrated in their case studies. Also, I wonder if direct SpeakQL - SQL mapping is the best way to go about for speech structural query interface? Since it is designed for ubiquitous access to the database on mobile or immersive platforms, I think it should reconsider its design options. Maybe it can combine the strengths of SQL, direct manipulations, and rapid feedbacks by composing complex queries with multiple smaller queries and provide users to explore data, schema and tuples rather than exact queries (cos it's difficult/impossible for humans to remember tables/features on devices without keyboard/mouse/monitor, especially since literals are infinite and may not use natural language namings).<br />
+<br />
+I think SpeakQL will work well for simple DML queries. I have worked with Analysts before, and they might have thousands of lines of SQL queries involving complex tables, column namings, complex aggregation (up to 60+) and join operations for a single analysis. I don't think SpeakQL will be practical in these situations where you have complex data and complex analysis. I think SpeakQL can be improved better by exploiting the rapid input specification of speech, for example by 1) first creating templated queries and call them using speech; 2) access to use pre-recorded terms for frequently accessed literals (tables, columns, etc.), and 3) spelling/number enumeration mode with speech.</p>
+
+<h3>3/9/20 23:46 Yiru</h3>
+<p class="block">This paper proposes speakql which is the first speech-driven system for making sql query. <br />
+<br />
+It is divided into four steps: first ASR detection, second, structure detection, third literal determination and interactive correction. <br />
+<br />
+The motivation is that for tablets, phones, it may be difficult to use the keyboard( which is not the case for tablets now, but still very useful for phone). So using speech to do the query would be handy for users. The audience is the kind of person who know some of sql. I like the structure determination part which uses the syntactically correct ground truth to compute the edit distance.<br />
+<br />
+There also exist some limitations:<br />
+<br />
+1. The speakql can only be used when the users express short queries, Otherwise, it is out of user perceptive capacity.<br />
+<br />
+2. The speakql hurts user privacy, When speaking it out, it may leak the information. At this time, the precision interface could be more helpful. <br />
+<br />
+3. This application is based on nlp research. It is restricted by the recognition level. But since there is some exciting research in nlp, recently, it could be improved in the future.</p>
+
+<h3>3/9/20 23:24 Haneen</h3>
+<p class="block"><br />
+This paper proposes techniques to enable a speech-driven query system over structured data. The proposed system takes advantage of existing Automatic Speech Recognition (ASR) and introduces algorithms based on common SQL queries characteristics to mitigate the error-prone output of ASR. Moreover, as the output is not guaranteed 100% to be the intended user query, the authors involve the user to help correct the output. <br />
+The author identifies three types of tokens used in a SQL query: Keywords, Special characters, and Literals From that, they take advantage of the fact that both keywords and special characters have finite domain space and use it to decompose the problem of correcting ASR output into two tasks: structure determination and literal determination. <br />
+<br />
+User Study: I liked the preliminary user study as it showed possible ways to improve a spoken query input system and how accessible the system is for users without a strong knowledge of SQL.<br />
+<br />
+The user study involved two things: the user translating English description of a query to SQL query and then use either SpeakQL or type the query using regular keyboard input. <br />
+<br />
+If I know the query I want to run, wouldn't it be easier to type the query?<br />
+Does the speedup come from the autocomplete feature the system provides? <br />
+Maybe the main benefit to the user is that it makes it easier to explore the database content and give feedback on how to correct the query, but for that, other systems do this better (for example, the GestureSQL does a better job at that).<br />
+Also, in my opinion, a touch-based correction interface shouldn't be assumed available for speech-driven applications.<br />
+</p>
+
+<h3>3/9/20 23:22 Celia Arsen</h3>
+<p class="block">They find that their system is better suited for some tasks than others. For example, they find that recognition of table names and attribute names is quite accurate, but (not surprisingly) it is not very accurate for data values. It is more accurate for data of string type than date or number type. This system may be best suited for querying databases where most of the values are strings. <br />
+The authors made a good observation in their conclusion that users dont tend to think in complete SQL statements, but rather in SQL clauses. Id also add that I dont always think of those clauses conceptually in the order that we write SQL. If I have to write a query thats going to have several complex clauses or joins, I write it down on a piece of paper first in shorthand, not necessarily approaching the clauses in sequential order. It would be great if a system could automatically translate that type of input into structured SQL. I imagine an interface where the user writes with a stylus and the system automatically translates that handwriting into what it thinks the query should be, based on the database schema. Users could edit, cut, and drag pieces of the query to different parts of the page and the query would automatically try to update based on the input. To me, this would be an equally quick and easy way to access a database on the go and avoid the massive technical challenges of ASR. Plus, its already how I approach querying to begin with, and I imagine other SQL users in their target audience do as well.</p>
+
+<h3>3/9/20 22:36 Xupeng Li</h3>
+<p class="block">This paper presents SpeakQL, a speech-driven system for spoken SQL querying. The paper focus on techniques of correcting Automatic Speech Recognition (ASR) errors using domain knowledge of SQL. It decomposes error correction as two steps: structure determination and literal determination. The former takes ASR results as input and outputs syntactically correct SQL with numbered placeholders for literals. The latter determines literals based on the context of database content. After automatic error correction, the system also supports user-in-the-loop interactive query correction. All these efforts make the system accurately recognize the spoken queries and save users' time.<br />
+<br />
+One reason of why spoken natural language querying is that SQL query is likely to use a lot of uncommon literals in table names and columns which is hard to recognize from speech. Besides, recognizing complicated expressions used in a query is also difficult, for example, distinguishing "(a+b)/c" from "a+b/c" is not easy. Indeed, I think it is a limitation of spoken SQL itself. It is better to type with keyboard for these cases. SpeakQL well suited for tasks that requires manually executing a large number of simple queries.</p>
+
+<h3>3/9/20 21:32 Carmine Elvezio</h3>
+<p class="block">This paper presents SpeakQL, a speech-based querying system allowing users to speak aloud database queries. This system built upon an infrastructure that t<br />
+The paper presents a number of contributions including utilization of SQLs context-free-grammar to generate the set of possible queries that a user may have spoken, the utilization of Automatic Speech Recognition (ASR) technology and modalities to help in defining the literals in queries, and in the creation of an interactive system that allows users to correct mistakes made by the system. Further, the authors present a detailed explanation of the motivations of the paper, including several use cases ranging from hospitals to business cases, which combined with the in-depth exploration of the limitations of standard ASR (as applied to both the usage in creating queries and in general). Lastly, the authors present the details and results of a large pilot study (comparing success of SpeakQL vs standard ASR) and subsequent user study (looking at the comparison with a break down between simple and complex queries - that is queries with more than 20 tokens). In comparison to previous work, which have explored some notions in data querying, this work allows for interaction with structured data by utilizing the 2-stage method for literal extraction, working with a ASR modality in the second stage. Combined with the allowance for the continued use of SQL (which is expressive and used by a number of people) I believe this does provide a valuable contribution over previous work. However, I do question the notion the complete benefit over the other prior work (like Polaris, focusing on alternative interfaces) through the focus on SQL, as 2D interfaces have shown to be very intuitive and provide a number of benefits over textual (and possible by extension) voice based systems - of course, not downplaying the clear use cases demonstrated by the authors. I really like the emphasis on the splitting of the synthesis by structure determination and then literal extraction. It provides for an increased level of flexibility when trying to minimize error, and allows for the ASR system to run classification on a simpler problem set. Also, I think the provision of a dataset of spoken queries provides a valuable contribution to the research and industrial community as well. I think one of the limitations here is associated with the cognitive load issues discussed by the authors. Since SQL queries can be complex (different terminology than that used by the authors) I think people of different cognitive comfort (and different experience with databases) might have wildly different reactions to complex queries. I think in a future system, it might be worthwhile to explore how additional feedback visualization (in addition to the adjustable set demonstrated here) to assist in recollection and auto-completion of the queries.<br />
+<br />
+As discussed above, I think the difficulty in spoken language querying comes from the notion of having to compose the query in ones head. Since a structured CFG is great when written and a person can spend some time thinking about it, there is a question of translation into natural intuitive queries. I think this is best suited for when a person is interacting with the system in a way in which they can structure their thoughts in a way conducive to the expression in a query. Aggregation attempts over known datasets are probably fairly easy to do here. Joins over known attributes in just two tables as well. However, my suspicion is that once we start considering more exploratory actions where the datasets are not known, interfaces like Polaris or Voyager will probably fare better. But of course, adaptive, suggesting, and auto-complete additions to SpeakQL might mitigate some of those issues.<br />
+</p>
+
+<h3>3/9/20 11:29 Yin Zhao</h3>
+<p class="block">This paper is about SpeakQL, a system that supports speech-driven query of structured data, and connects the ASR tasks with the structured data query tasks. This proposes the idea that there exist users who are in between the database experts and users who know nothing about databses, and the system specifically targets these users. The interface leverages existing ASR technologies and could potentially supports any query language, and implements algorithm for structure determination and literal determination. This interface does propose interesting and useful concepts and algorithms, and has great potential to be improved in such a direction.</p>
+
+<h3>3/8/20 11:35 Qianrui Zhang</h3>
+<p class="block"># Review<br />
+This paper presents SpeakQL, an end-to-end multimodal system for speech-driven querying of structured data using SQL. As the first system of this kind, it also proposes several relevant techniques, such as search algorithm, interface and the first public dataset of spoken SQL queries.<br />
+<br />
+The idea of speech-driven multimodal querying of structured data is novel and creative. And the potential to let people 'speak to query database' is truely exciting. Besides, the techniques proposed are also pretty solid. All of these make me appreciate this paper. However, even after reading the paper, I still have some doubts on the real use cases of the system. Followings are some of the reasons:<br />
+<br />
+1. The users of SpeakQL are still supposed to know SQL. That prevents ordinary users from using SpeakQL.<br />
+<br />
+2. Because of the property of speech, the queries supported will not be complexed. Then in most of the use cases proposed in introduction, it seems easier to simply use interactive interfaces that fit mobiles/tablets, Since interfaces are better for users to operate and will be more accurate.<br />
+<br />
+3. The advance in techniques about speech recognition will probably make SpeakQL less useful. While the experiment results show SpeakQL outperforms ASR a lot, the gap would probably be filled by new techniques in the field of speech recognition. Since the input of SparkQL is basically the spoken version of SQL language, people will be less motivated to use SparkQL if ASR itself is accurate.<br />
+<br />
+Therefore, I'm really interested to know the future development or usage of SpeakQL.<br />
+<br />
+# Addition<br />
+I think what makes spoken language querying difficult is the ambiguity of NL (so are most of NLP tasks).<br />
+<br />
+I think the tasks SpeakQL suits for are simple SPJA queries, and the 'join' part is what makes it outstand among interactive interfaces.<br />
+<br />
+As I can image, SpeakQL will not suit very well for 'long' queries: queries with several filters / queries that select several attributes... Checkboxes or dropdown lists may work better for those queries.</p>
+
+<h3>3/7/20 13:22 Adam Kravitz</h3>
+<p class="block">The SpeakQL paper is about a speech driven system that is capable of querying structured data. In other words using speech instead of SQL commands to access a database.<br />
+The significance of SpeakQL is that a user can get data with only using their voice, which is already popular interactive interface with smartphones, however, speech is very limited. SpeakQL is capable of expressing a subset of SQL with touch and speech human in the loop correction mechanism ( which the paper argues is faster and takes less effort to do). The benefit and the solution is trying to solve is based on the premise that SQL is really slow and painful  when using some tools, as well as having a lack of ambiguity, so SpeakQL is just trying to increase the ease of use, well also not losing the sophisticated SQL interactions and commands that SQL has already. Lastly an extra bonus of SPeakQL is that is uses ASR for speech recognition, which would also work over any database schema, and support multi-modal interactive query connection (like touch, click, and speech ) . I do think these traits are significant since speech is a more natural way for people to communicate thus increasing ease of use, and transition of a very strict set of rules and commands of SQL to a more fluid form of communication is very powerful.<br />
+A technical strength of SpeakQL is that it can correct large amounts of ASR script error (lift to 130% ). It does this by instead of finding the distance of the closes word that is generated from ASR, they instead try to find the closes word Phonetically to what is said. This allows SpeakQL achieve real-time latency, becoming 2.7x faster compared to typing. This can apply to any database system, and reduces effort to correct a query .<br />
+The limitations of SpeakQL is that it only handles a subset of SQL which is CFG (which uses DML - data manipulation lanuage), in other words it does handle all of SQL. Other problems relate to words that sound the same like some and sum which comes from using ASR as the speech recognition system. Another problem also comes from SpeakQL where if you say a special character like star for *, ASR will actual write out star and not the symbol. SpeakQL is also balancing accuracy and latency, which they state is a limitation (however dont most computation tasks have to balance that as well? Is that a unique problem to just SpeakQL?). The implementation of SpeakQL as restrict use of 50 tokens (but they said it could be infinite, but then why the limit?).<br />
+Some extensions for future research or extensions for the paper are a pause and continue feature for the speech query, where the user can stop and try to remember their query (if they are trying to state a long query that is hard to say or remember). Another extension I would like to know is why did they limit the special tokens to just 50? Was it just a proof of concept? What limitations factors does limited tokens cause? Etc.<br />
+Natural Language Querying is difficult since a lot of speech comprehension comes from context. As well as natural speech is far more casual and less formal, and thus 2 people can try to query for the same thing while saying different things. SpeakQL is useful for quicker querying since speaking is quicker than typing, also SpeakQL is only good for short queries since longer queries might be harder for a user to remember or to even say. A better interface for tasks SpeakQL is not suitable for would be tools like SQL code, tableu or even Gesture Query, since long, hard to remember queries can just be written down or can be down by dragging with simple gestures.<br />
+</p>
+
+<h2 id="paper-3">Paper 3</h2>
+
+<!--
+## Reviews
+
+-->
+
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>

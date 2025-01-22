@@ -1,0 +1,749 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+
+
+<div class="largeheader centered splitafter">
+		<div class="deco">COLUMBIA UNIVERSITY COMS W6998</div>
+    <div class="title"><a href="/2020s_w6998" style="color:black;">SYSTEMS FOR HUMAN DATA INTERACTION</a></div>
+</div>
+
+
+
+
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-6 col-md-offset-3">
+		<h1 id="intro-hdi-systems-overview">Intro: HDI systems overview</h1>
+
+<p>Eugene Wu</p>
+
+<ul>
+  <li>PhD MIT, 2015</li>
+  <li>Systems for Human Data Interaction
+    <ul>
+      <li>Database systems, data cleaning, explanation, visualization</li>
+    </ul>
+  </li>
+  <li>OH: 421 Mudd</li>
+  <li>ewu@cs.columbia.edu</li>
+</ul>
+
+<p>Administrative</p>
+
+<ul>
+  <li>TA: Yiru Chen (yiru.chen@columbia.edu)
+    <ul>
+      <li>OH: Thurs 3:30-4:30 PM, 406 Mudd</li>
+    </ul>
+  </li>
+  <li>Slack, nb.csail.mit.edu</li>
+  <li>Weds 2-4.  Break in the middle</li>
+  <li>$300 Google credits</li>
+  <li>Cap: 15</li>
+</ul>
+
+<p>Prereqs</p>
+
+<ul>
+  <li>Useful
+    <ul>
+      <li>4111: intro to DB</li>
+      <li>4995: intro to data vis</li>
+      <li>4170: user interface design</li>
+    </ul>
+  </li>
+  <li>See Ramakrishnan for basics</li>
+  <li>Talk to me if unsure</li>
+</ul>
+
+<p>Waitlist</p>
+
+<ul>
+  <li>Submit first review by Friday midnight</li>
+  <li>I will decide course admission based on reviews by Sunday night</li>
+</ul>
+
+<p>Course Philosophy</p>
+
+<ul>
+  <li>Started off as a reading group, but want to open it up
+    <ul>
+      <li>Reading is arguably the most important for conducting research</li>
+      <li>Formulate hypotheses/extrapolations and assess them</li>
+    </ul>
+  </li>
+  <li>Very much a “take what you want”
+    <ul>
+      <li>You will not be tested or taught (lectures) traditionally: not my job!</li>
+      <li>Very minor assignments, no exams</li>
+      <li>Instead, you will engage in research</li>
+      <li>Read, comment on, and discuss papers</li>
+    </ul>
+  </li>
+  <li>I won’t be teaching: we will discuss together</li>
+  <li>Pursue a research project
+    <ul>
+      <li>That said: this is not an easy course!</li>
+      <li>The research project requires dedication and ingenuity + dealing with unpredictable outcomes</li>
+      <li>If you haven’t done research at all before, talk to me!</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Course Goal</p>
+
+<ul>
+  <li>Study a research area: Data Management
+    <ul>
+      <li>Subarea: Systems for HDI</li>
+      <li>Important in world of data science</li>
+      <li>97% of world are not programmers</li>
+      <li>~100% of world revolves around data</li>
+      <li>Not just interface design, not just systems</li>
+    </ul>
+  </li>
+  <li>Critically evaluate papers</li>
+  <li>Present research</li>
+  <li>Conduct novel, publishable research</li>
+</ul>
+
+<p>Grading</p>
+
+<ul>
+  <li>Project 50%</li>
+  <li>Participation 45%
+    <ul>
+      <li>Inc. paper reviews</li>
+    </ul>
+  </li>
+  <li>Assignments 5%</li>
+  <li>No curve.  Everyone can get an A</li>
+  <li>
+    <p>If project is amazing, automatic A</p>
+  </li>
+  <li>Systems: trade-offs, abstractions</li>
+  <li>Interaction: tasks, usability</li>
+  <li>Systems for HDI: Systems trade-offs/features to enable new tasks
+    <ul>
+      <li>Being able to identify trade-offs: systems usually != proofs</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Class Format</p>
+
+<ul>
+  <li>Discussion group</li>
+  <li>Submit paper reviews by Monday night
+    <ul>
+      <li>What is significant and why?</li>
+      <li>Technical strengths: I like …?</li>
+      <li>Limitations:  I wish …?</li>
+      <li>What if ….?</li>
+    </ul>
+  </li>
+  <li>Read and discuss 2+ papers per session
+    <ul>
+      <li>(student) 15-20 min presentation of key elements of the paper
+        <ul>
+          <li>find + read related work to provide context</li>
+          <li>Illustrative examples</li>
+        </ul>
+      </li>
+      <li>Deep dive into a specific section of the paper
+        <ul>
+          <li>Why was it written that way?  Argument structure.</li>
+          <li>sentence by sentence</li>
+        </ul>
+      </li>
+      <li>Open ended discussion/debate
+        <ul>
+          <li>What is great about the work?</li>
+          <li>What could have been better?</li>
+        </ul>
+      </li>
+      <li>Everyone reads and prepares observations, things they like, and Qs about the papers</li>
+    </ul>
+  </li>
+  <li>Scribe takes notes during discussion</li>
+  <li>Sign up to lead presentations</li>
+</ul>
+
+<p>Paper Reviews</p>
+
+<ul>
+  <li>shared with class</li>
+  <li>can skip 3 paper reviews (each class has &gt;=1 papers!)</li>
+  <li>no late submissions accepted</li>
+</ul>
+
+<p>Presentation</p>
+
+<ul>
+  <li>15% of grade</li>
+  <li>Next week, choose what papers you want to present</li>
+  <li>15-20 minutes (1 slide/minute)</li>
+  <li>Expect to read paper AND related works</li>
+  <li>Cover key aspects of paper (see prospectus)
+    <ul>
+      <li>Intuition » formulae</li>
+      <li>Create your own examples, don’t download the authors’ slides</li>
+    </ul>
+  </li>
+  <li>Slides emailed by Monday midnight.</li>
+</ul>
+
+<p>Research projects</p>
+
+<ul>
+  <li>50% of grade</li>
+  <li>Goal
+    <ul>
+      <li>Build/design/evaluate something new and cool</li>
+      <li>Project that is ~publishable in an HDI conference/workshop</li>
+    </ul>
+  </li>
+  <li>A few types of projects
+    <ul>
+      <li>Perceptual/user study
+        <ul>
+          <li>shows: new understanding of users</li>
+        </ul>
+      </li>
+      <li>System/tool/component/interaction design
+        <ul>
+          <li>show: novelty, performance, ease of use</li>
+        </ul>
+      </li>
+      <li>Algorithm
+        <ul>
+          <li>show: novel, correctness, scalability</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Format
+    <ul>
+      <li>Teams of 1-2
+        <ul>
+          <li>work proportional to team size</li>
+        </ul>
+      </li>
+      <li>Pick hypotheses answerable in 3-4 weeks</li>
+      <li>BUILD something, &amp; evaluate to answer the hypothesis</li>
+      <li>Get feedback, and learn to give feedback</li>
+      <li>Write a research paper 8-10 pages, ACM format</li>
+    </ul>
+  </li>
+  <li>Steps
+    <ul>
+      <li>Initial prospectus: Feb 12 5%</li>
+      <li>Related Works: Mar 1 5%</li>
+      <li>Prototype Check-in: Mar 12  5%</li>
+      <li>Showcase: Apr 30  10%</li>
+      <li>Final Paper: May 10 25%</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The most important aspect of research: clear hypothesis</p>
+
+<ul>
+  <li>Worth asking?  Based on existing work, user needs</li>
+  <li>Can be answered?  Based on specificity and scope of hypothesis question.</li>
+  <li>Answered correctly? Based on methodology</li>
+</ul>
+
+<h1 id="review">Review</h1>
+
+<p>Submit paper reviews for required papers in class 2.  In addition:</p>
+
+<ul>
+  <li>what you would LIKE this class to teach</li>
+  <li>go through paper list (skim titles/abstracts) and pick topic areas and papers that are of interest to you.</li>
+</ul>
+
+<h1 id="course-overview">Course Overview</h1>
+
+<p>Why HDI?</p>
+
+<ul>
+  <li>(discussion)</li>
+  <li>Why not computer science?
+    <ul>
+      <li>Automation, abstraction, computability</li>
+    </ul>
+  </li>
+  <li>Why not databases?
+    <ul>
+      <li>Great HDI innovation wrt declarativity and optimization but…</li>
+      <li>user and their goals matter</li>
+      <li>DBs hard to use.</li>
+      <li>Many <em>don’t</em> use databases! (scripts, excel, etc)</li>
+      <li>(why?) hard to..
+        <ul>
+          <li>interactively use</li>
+          <li>learn</li>
+          <li>scale</li>
+          <li>quick n dirty/one off analysis</li>
+          <li>noisy, ill-formatted, unstructured data</li>
+          <li>versioning/copies</li>
+          <li>schema/load up front</li>
+          <li>ML, analysis</li>
+        </ul>
+      </li>
+      <li>bottom line: gap between what user wants and what DB gives</li>
+    </ul>
+  </li>
+  <li>Why not HCI?
+    <ul>
+      <li>Emphasis: computing!</li>
+      <li>deals with design, presentation, usability, consistency, expectation, user control, error prevention, design</li>
+      <li>hard to
+        <ul>
+          <li>develop the system</li>
+          <li>scale the system</li>
+          <li>manage the data</li>
+          <li>implement features</li>
+        </ul>
+      </li>
+      <li>Bottom line: gap between design and building the actual system</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Licklider</p>
+
+<ul>
+  <li>Most important figure in CS and computing history
+    <ul>
+      <li>“computing’s Johnny Appleseed”</li>
+      <li>ideas and political/funding effort</li>
+    </ul>
+  </li>
+  <li>At the time, computers were batch processing
+    <ul>
+      <li>you write a program, wait for it to be scheduled,
+it provides a printout that doesn’t answer the actual problem</li>
+      <li>10 yrs before personal computers</li>
+      <li>30 yrs before internet</li>
+    </ul>
+  </li>
+  <li>Head of ARPA.  Funded…
+    <ul>
+      <li>Engelbart’s work
+        <ul>
+          <li>UI/UX interactive computing</li>
+        </ul>
+      </li>
+      <li>ARPANet: networking, internet</li>
+      <li>Project MAC for time sharing</li>
+    </ul>
+  </li>
+  <li>Many alternative models
+    <ul>
+      <li>Machine as tool
+        <ul>
+          <li>user supplies the goal and the how 
+(initiative, directon, integration, criterion)</li>
+          <li>machine simply performs the task</li>
+          <li>user is the only organism</li>
+        </ul>
+      </li>
+      <li>semi-automatic systems
+        <ul>
+          <li>systems that tried to be automatic, but failed.</li>
+          <li>human operators responsible for functions that are infeasible to automate</li>
+          <li>mturk</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Man-Computer Symbiosis
+    <ul>
+      <li>AI as part of symbiosis
+        <ul>
+          <li>dissimilar organisms cooperative living together</li>
+        </ul>
+      </li>
+      <li>spring + summer of 1957, a “user study” to track how he spent his working time
+        <ul>
+          <li>from his psychoacoustics background</li>
+          <li>85% spent geting into a position to think/make a decision/learn what’s needed
+            <ul>
+              <li>more time finding info than digesting</li>
+              <li>hours plotting and munging and translating data (from one unit to another)</li>
+            </ul>
+          </li>
+          <li>analogous to “85%” time on data cleaning/wrangling during analysis</li>
+        </ul>
+      </li>
+      <li>computing machines can do readily, well, and rapidly 
+many things that are difficult or impossible for man, 
+and men can do readily and well, though not rapidly, 
+many things that are difficult or impossible for computers.</li>
+    </ul>
+  </li>
+  <li>Human will
+    <ul>
+      <li>set goals,</li>
+      <li>provide fallible but leading contributions,</li>
+      <li>define criteria and serve as evaluators.</li>
+      <li>Handle very-low-prob situations – sum of low prob events is 
+too large to ignore</li>
+    </ul>
+  </li>
+  <li>Machine will
+    <ul>
+      <li>convert hypotheses into testable models</li>
+      <li>test models against data</li>
+      <li>interpolate, extrapolate, transform</li>
+      <li>convert static/logical statements into dynamic models to explore</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Other examples of Systems for HDI (progression in complexity)</p>
+
+<ul>
+  <li>static tabular visualization</li>
+  <li>Interactive visualization</li>
+  <li>Database</li>
+  <li>Tableau</li>
+  <li>Google infra</li>
+  <li>Uses of HDI systems
+    <ul>
+      <li>data extraction, cleaning</li>
+      <li>exploration</li>
+      <li>visual analysis</li>
+      <li>query/search</li>
+      <li>understanding/explanation</li>
+      <li>programing/data debugging</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Architecture of a new user-facing application (case study)</p>
+
+<ul>
+  <li>Three parts: user (task), interface, execution engine
+    <ul>
+      <li>Think UID: JS+HTML, Flask, DB</li>
+    </ul>
+  </li>
+  <li>Existing tools
+    <ul>
+      <li>Design: powerpoint, figma, photoshop, etc</li>
+      <li>Interaction: JS, Widget toolkits</li>
+      <li>Processing: PL</li>
+      <li>Data management: RDBMS, noSQL engine etc</li>
+    </ul>
+  </li>
+  <li>Challenging when combining them end-to-end
+    <ul>
+      <li>Changes in design may be isolated to pixel-level prototype (if no new information)</li>
+      <li>Changes in interaction require changes in processing/DB</li>
+      <li>Changes in processing require changes in DB, interface between UI and backend</li>
+      <li>Changes in DB require changes everywhere</li>
+      <li>Changes in data types require changes everywhere</li>
+      <li>Performance + functionality affects everything</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Architecture for HDI systems</p>
+
+<ul>
+  <li>User(s): functionalities, tasks, perceptual/cognitive limitations</li>
+  <li>Interface: expressiveness of language/API, DSL, interactions+UI <em>to</em> express</li>
+  <li>Data analysis/logic: programs/queries, execution, management</li>
+</ul>
+
+<p>Themes of this course</p>
+
+<ul>
+  <li>Interplay between interface and system
+    <ul>
+      <li>How task/interface affects system design</li>
+      <li>How system designs affect interface</li>
+    </ul>
+  </li>
+  <li>Examine examples throughout the HDI “stack”
+    <ul>
+      <li>Lot of time on data visualization as exemplar domain</li>
+      <li>Different data types</li>
+      <li>Different modalities</li>
+      <li>Functionality and features</li>
+    </ul>
+  </li>
+</ul>
+
+<p>We do NOT focus on</p>
+
+<ul>
+  <li>Core database topics
+    <ul>
+      <li>xacts, distributed db, cloud</li>
+      <li>in-depth query optimization</li>
+    </ul>
+  </li>
+  <li>Deep HCI concerns</li>
+</ul>
+
+<h1 id="overview-of-the-themes">Overview of the themes</h1>
+
+<p>We will focus the first portion of the class using Interactive Visualizations as an example application domain to illustrate different concerns for HDI systems.  We will then branch out to discuss each concern in general.</p>
+
+<h3 id="vis-as-an-hdi-application">Vis as an HDI application</h3>
+
+<ul>
+  <li>Grammar, expressiveness</li>
+  <li>Tasks, Users, Goals</li>
+  <li>Design</li>
+  <li>Scalability and Responsiveness</li>
+</ul>
+
+<h3 id="novel-interfaces-and-interactions-for-different-data-types">Novel interfaces and interactions for different data types</h3>
+
+<p>Although the core analysis task is typically querying and summarizing relational data, raw data needs to be transformed and cleaned before it is suitable for relational data analytics.  We will study data tasks for different data types such as text, image, video, and relational records.  For these tasks, we will examine interface and interaction designs for those tasks.</p>
+
+<p>Data types</p>
+
+<ul>
+  <li>Text</li>
+  <li>Image</li>
+  <li>Video</li>
+  <li>Relational Records:</li>
+</ul>
+
+<p>Interaction Modalities</p>
+
+<ul>
+  <li>Direct Manipulation
+    <ul>
+      <li>GestureQuery + touch</li>
+    </ul>
+  </li>
+  <li>Programmatic/language design
+    <ul>
+      <li>Modin/Spreadsheets/Spark</li>
+      <li>KBP</li>
+    </ul>
+  </li>
+  <li>Example-driven
+    <ul>
+      <li>Wrangler/DataPlay/PBE</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="performance-and-systems">Performance and Systems</h3>
+
+<p>Performance and responsiveness is a crucial aspect to maintaining interactivity. We will survey performance techniques used specifically to improve the interactivity or expressiveness of HDIs.</p>
+
+<ul>
+  <li>Query optimization and planning</li>
+</ul>
+
+<h3 id="explanation-and-interpretation">Explanation and interpretation</h3>
+
+<p>Interfaces present the results of data analyses to users.  However, what if they are incorrect or suspicious?  We will survey work in interpreting analysis results and explaining anomalies in those results.</p>
+
+<h1 id="agency--automation-designing-ai-into-interactive-systems">Agency + Automation: Designing AI into interactive systems</h1>
+
+<p>Jeff Heer</p>
+
+<p>Intro</p>
+
+<ul>
+  <li>AI focuses on full automation.
+    <ul>
+      <li>can mislead due to inappropriate assumptions/iased training</li>
+      <li>optimize fixed but wrong/outdated objectives</li>
+      <li>users may be overly reliant on faulty systems</li>
+    </ul>
+  </li>
+  <li>famous AI researchers call for “well-thought-out interactions of humans and computers”.</li>
+  <li>HCI has exactly studied this.  many ways to combine user + AI
+    <ul>
+      <li>direct manipulation vs interface agents (Clippy)</li>
+      <li>consensus: increased automation to amplify user productivy and capabilities
+for their tasks, while preserving sense of control and responsibility</li>
+    </ul>
+  </li>
+  <li>Big question: how best to combine user-facing interfaces and automation?
+    <ul>
+      <li>argument: shared representations of possible actions (DSL)</li>
+      <li>user review, selects, edits, ignores automated suggestions</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Classic example: spelling checker, search autocompletion</p>
+
+<p>Illustrates core principles</p>
+
+<ol>
+  <li>positive value.  promotes efficiency, correctness, alternatives</li>
+  <li>low overhead: augment, not replace, user interaction</li>
+  <li>doesn’t decrease value: useful for TASK even if imperfect</li>
+  <li>user and AI learns over time via user-ai interactions</li>
+</ol>
+
+<h4 id="examples-of-shared-representations">Examples of shared representations</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   user
+ ---DSL--- 
+  system
+</code></pre></div></div>
+
+<p>Data Wrangler</p>
+
+<ul>
+  <li>go from unstructured lines of text to records, via extraction functions</li>
+  <li>wrangler DSL</li>
+  <li>user selects what they want, synthesize program in DSL</li>
+  <li>
+    <p>predictive interaction methodology</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  interactions --&gt; (many options) --&gt; choose option
+       ^                                   |
+       |                                   v
+  code/DSL  --- can write code too ---&gt;  new code
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>Data Vis (Voyager)</p>
+
+<ul>
+  <li>vega-lite DSL</li>
+  <li>given current chart, suggest next chart one “action” away</li>
+  <li>
+    <p>changes user behaviors (good or bad?  not totally clear)</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  w/out related views, users had more 'depth-first" search patterns.
+  with voyager, biased users to "increased consideration of alternative
+  charts and additional data field combos"
+</code></pre></div>    </div>
+  </li>
+  <li>can remove agency!  “..but also spoiling that I start thinking less…”</li>
+</ul>
+
+<h4 id="comments">Comments</h4>
+
+<p>Why the need?</p>
+
+<ul>
+  <li>many data tasks are ill-formed and user iteratively identifies what the task is
+    <ul>
+      <li>data-science</li>
+      <li>data cleaning</li>
+      <li>exploration and analysis</li>
+      <li>creative tasks</li>
+    </ul>
+  </li>
+  <li>big design+action space</li>
+  <li>AI imperfect
+    <ul>
+      <li>worse – not sure HOW and when it’s imperfect
+        <ul>
+          <li>ideally, perfect in known subspace, and 0 everywhere else</li>
+        </ul>
+      </li>
+      <li>user needs to judge (note: takes effort)</li>
+    </ul>
+  </li>
+  <li>task space big and unknown</li>
+  <li>using AI is NOT user’s goal.  the task is!
+    <ul>
+      <li>is task always clear?  maybe not…</li>
+    </ul>
+  </li>
+</ul>
+
+<p>AI + USER (HDI) means</p>
+
+<ul>
+  <li>AI augments</li>
+  <li>gets out of the way</li>
+  <li>things that it does are correct</li>
+</ul>
+
+<p>Can we model if it’s worth it?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  P(c):  probability of correct rec
+  P(f):  probability of identifying incorrect rec
+  U(c):  utility if task correctly done
+  U(e):  utility if task incorrectly done
+  W(ai): work if AI correct
+  W(v):  work to verify rec correctness
+  W(u):  work for user to do task
+
+  Original Utility and Work:
+    U(c)
+    W(u)
+
+  Utility:
+    P(c)U(c) + 
+    (1-P(c)) (P(f)U(c) - (1-P(f))U(e))
+
+  Work:
+    W(v) + P(c)W(ai) + (1-P(c)) W(u)
+</code></pre></div></div>
+
+<h1 id="resources">Resources</h1>
+
+<p>Advice on how to read papers</p>
+
+<ul>
+  <li>S Keshav <a href="http://blizzard.cs.uwaterloo.ca/keshav/home/Papers/data/07/paper-reading.pdf">How to Read a Paper</a></li>
+  <li>M Mitzenmacher <a href="http://www.eecs.harvard.edu/~michaelm/postscripts/ReadPaper.pdf">How to read a research paper.</a></li>
+</ul>
+
+<p>Thoughts on approaching research</p>
+
+<ul>
+  <li>Richard Hamming <a href="http://www.cs.virginia.edu/~robins/YouAndYourResearch.html">You and Your Research</a></li>
+  <li>Eugene Wu <a href="https://researchsetup.github.io/researchmodel">Research as Optimization</a></li>
+</ul>
+
+
+  </div>
+  <div class="joiner"></div>
+</div>
+
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>

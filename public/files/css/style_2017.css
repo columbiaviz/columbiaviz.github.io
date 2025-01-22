@@ -1,0 +1,285 @@
+
+html{
+background: white;
+font-family: open sans, georgia, helvetica, arial;
+}
+
+body{
+	min-width: 850px;
+  width: 90%;
+  max-width: 1500px;
+	margin: 10px;
+	margin-left: auto;
+	margin-right: auto;
+  font-size: 11pt;
+  color: #727272;
+}
+
+
+table {
+  font-size: 12pt;
+}
+small {
+  color: grey;
+}
+
+
+i {
+  color: #666;
+  background:#f3fafa;
+}
+
+a, a:visited {
+  font-weight: 700;
+  font-size: bigger;
+	color: #357097;
+  text-decoration: none;
+}
+a:hover {
+  color: whitesmoke;
+  background: rgb(12, 94, 148);
+}
+
+h1{
+	font-size: 2.2em;
+  color: rgb(50, 50, 50);
+}
+
+h2{
+	font-size: 1.5em;
+	font-weight: 600;
+  margin-top: 1.9em;
+  color: rgb(70, 70, 70)  ;
+}
+
+h3{
+	font-size: 1.2em;
+	font-weight: 600;
+  margin-top: 1.6em;
+  color: rgb(100, 100, 100)  ;
+  text-transform: uppercase;
+}
+
+h4{
+	font-size: 1em;
+	font-weight: 600;
+  margin-top: 1.5em;
+  color: rgb(100, 100, 100)  ;
+  text-transform: uppercase;
+}
+
+
+
+table.grading {
+  width: 500px;
+  margin-left: 2em;
+}
+
+.descr tr td:first-child, 
+.overview tr td:first-child {
+  width: 15%;
+}
+.overview tr td:nth-child(2) {
+  width: 25%;
+}
+.schedule tr td:first-child {
+  width: 5%;
+}
+.schedule tr td:nth-child(2) {
+  width: 15%;
+}
+.schedule tr td:nth-child(3) {
+  width: 40%;
+}
+
+
+
+
+
+.navbar {
+  font-family: "Lato", serif;
+  font-size: 15pt;
+	background: #f3f3f3;
+	background: #E8EEF9;
+	background: #a5abc6;
+  background: rgb(84, 131, 182);
+  background: white;
+	padding: 5px;
+  padding-bottom: 0px;
+  color: bluesteel;
+}
+
+.nav a {
+	margin-right: 2em;
+  color: rgb(127, 173, 241);  
+  text-decoration: none;
+}
+
+.nav a:first {
+  color: #357097;
+}
+
+.footer {
+	margin-top: 5em;
+	margin-bottom: 5em;
+  padding-top: 20px;
+	font-size: 9pt;
+	color: rgb(53, 49, 49);
+	text-align: center;
+	padding: 3px;
+	background: white;
+}
+
+.hidden {
+  position: absolute;
+  left: -100000;
+  top: -100000;
+}
+
+ code {
+  border: 1px solid whitesmoke;
+  background: #fafafa;;
+  font-family: 'Source Code Pro', consolas, console, courier;
+}
+
+p {
+  margin-bottom: 1em;
+}
+ p a {
+  font-weight: normal;
+  color: rgb(20, 108, 219);
+}
+ p a:hover {
+  background: rgb(20,108, 219);
+  color: white;
+}
+
+
+
+ ol li i {
+  display: block;
+  font-weight: bold;
+}
+
+img {
+  padding: 5px;
+  border: 1px solid #efefef;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+ img.screenshot {
+  /*width: 400px;*/
+  height: 100px;
+  padding: 10px;
+}
+ img.logo {
+  height: 100px;
+  border: none;
+  box-shadow: none;
+}
+
+#cudbg {
+  position:absolute; top:0px; left:0px; padding:0px; border: none; box-shadow: none; width: 100px;
+}
+
+ .btn {
+  background: #308dec;
+  border-radius: 4px;
+  text-align: center;
+  padding: .5em;
+  cursor: pointer;
+}
+ .btn a {
+  color: white;
+}
+ .btn:hover {
+  background: rgb(40, 103, 156);
+  cursor: pointer;
+}
+
+ .important {
+  font-weight: bold;
+  color: rgb(201, 27, 77);
+  background: white;
+  text-align: center;
+  margin-left: auto;
+  margin-rigt: auto;
+  display: block;
+  font-size: 15pt;
+  border: 1px solid rgb(201, 27, 77);
+  padding: 1em;
+}
+ .important a,  .important p a, .apply{
+  color: rgb(201, 27, 77);
+}
+ .important:hover {
+  background: rgb(201, 27, 77);
+  color: white;
+}
+ .important:hover a,  .important:hover a:hover{
+  background: rgb(201, 27, 77);
+  color: white;
+}
+
+.pill {
+  font-weight: bold;
+  color: rgb(201, 27, 77);
+  background: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15pt;
+  border: 1px solid rgb(201, 27, 77);
+  padding: 1em;
+  box-shadow: none;
+  margin-top: 1.5em;
+
+  font-size: 15pt;
+  color: rgb(201, 27, 77);
+  background: white;
+}
+
+.pill:hover {
+  background: rgb(201, 27, 77);
+  color: white;
+}
+
+
+
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Magra';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Magra'), url(http://themes.googleusercontent.com/static/fonts/magra/v1/9Un71ABfeNOHeQITcqWzew.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Serif'), local('NotoSerif'), url(http://themes.googleusercontent.com/static/fonts/notoserif/v1/eCpfeMZI7q4jLksXVRWPQy3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Computer Modern";
+    src: url('./fonts/computermodern/cmunrm.otf');
+  }
+

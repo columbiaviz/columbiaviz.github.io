@@ -1,0 +1,156 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Vis 2019 Spring</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style_w4995.css" />
+		<script
+			src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="10">
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="alert alert-warning" style="margin-top:1em;" role="alert">
+  This is an outdated course page. View <a href="/2025s_w4995/">current semester here</a>.
+</div>
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Data Vis 2019 Spring</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="syllabus.html">Syllabus</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Assignments <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="a1.html">A1: Sparks Presentation</a></li>
+              <li><a href="a2.html">A2: Visualization Design</a></li>
+              <li><a href="a3.html">A3: Exploratory Data Analysis</a></li>
+              <li><a href="a4.html">A4: Interactive Visualization</a></li>
+              <li><a href="a5.html">A5: Final Project</a></li>
+              <li><a href="ax.html">EC: Extra Credit Opportunities</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							 role="button" aria-haspopup="true" aria-expanded="false">
+							Demos <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://beta.observablehq.com/@agness/introdv-f18-demo-1-data-select-scale">
+									2/19: Data, Select, Scale</a></li>
+              <li><a href="https://beta.observablehq.com/@agness/introdv-f18-demo-2-interactivity">
+									2/26: Update, Events, Brush, Drag</a></li>
+              <!-- <li><a href="https://beta.observablehq.com/@agness/tk">
+									3/26: Multiples, Transition, Transform, Zoom</a></li> -->
+              <li><a href="../files/examples/demo_geo.html">
+									4/2: Path, Polygon, Geography</a></li>
+              <li><a href="https://beta.observablehq.com/@agness/tk">
+									4/16: Hierarchy, Chord, Forces</a></li>
+            </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+    <div class="container outdated">
+
+			<h1 id="syllabus">Syllabus</h1>
+
+<h2 id="course-objectives">Course Objectives</h2>
+
+<p>Students will learn to</p>
+
+<ul>
+  <li>Apply a structured design process to create effective and ethical visualizations</li>
+  <li>Conceptualize ideas and interaction techniques using sketching and prototyping</li>
+  <li>Apply principles of color, typography, and layout as well as principles of human perception and cognition in visual design; avoid misrepresentation</li>
+  <li>Process and analyze a variety of data types: quantitative, text, geospatial, qualitative</li>
+  <li>Create web-based interactive visualizations using D3 and Observable</li>
+  <li>Critically evaluate visualizations and suggest improvements and refinements</li>
+  <li>Work constructively as a member of a team to carry out a complex project</li>
+</ul>
+
+<h2 id="assignments">Assignments</h2>
+
+<ol>
+  <li><strong>Clocks (0%)</strong>: Apply for this class by completing <a href="a0.html">A0</a>.</li>
+  <li><strong>Sparks Presentation (5%)</strong>: prepare a 7min. slideshow presentation on a data visualization practitioner or team that is inspiring to you.</li>
+  <li><strong>Visualization Design (10%)</strong>: design 10 divergent representations for the US Census data set and provide a rigorous rationale for your design choices. Present for design critique in class.</li>
+  <li><strong>Exploratory Data Analysis (10%)</strong>: identify a dataset of interest and perform an exploratory analysis to understand the shape &amp; structure of the data, investigate initial questions, and develop preliminary insights &amp; hypotheses. Present a report on your findings.</li>
+  <li><strong>Interactive Visualization (20%)</strong>: build a visualization that enables interactive exploration along at least three dimensions using a dataset of your own choosing and publish it on the web.</li>
+  <li><strong>Midterm Exam (10%):</strong> individual closed book exam, for 90 min. during class session. Comprises multiple-choice and written essay questions.</li>
+  <li><strong>Final Project (30%)</strong>: build a web-based interactive visualization that allows you to answer questions about a topic of your own choosing. You will acquire the data, design your visualization, implement it using D3, and evaluate the results.</li>
+  <li><strong>Reading Quizzes (7.5%)</strong>: expect a quiz at beginning of class most weeks; 2~4 multiple-choice questions, each covering one of the central concepts in a required reading.</li>
+  <li><strong>Class Participation (7.5%)</strong>: actively engages in class and online (Slack) in critique, analysis, and assisting peers.</li>
+</ol>
+
+<h2 id="expectations">Expectations</h2>
+
+<ul>
+  <li><strong>Pre-requisites</strong>: You should already know web development. We won’t be covering any HTML, CSS, or JS concepts. You should know what DOM manipulation means. Also, I’m going to assume you know what is a callback, what is method chaining is, and what is a function generator. If you don’t, it isn’t impossible, but this class will be difficult.</li>
+  <li><strong>Group Work</strong>: All assignments will be in groups of 3~4 unless otherwise noted. In general, I do not anticipate that the grades for individual group members will be different. However, we reserve the right to assign different grades to each group member based on <a href="https://goo.gl/forms/RJIIRFlBHWS9nNkx2">peer assessments</a>. Your assignments should all be submitted <a href="https://goo.gl/forms/8PWeUCxNT3dHDmrn2">online</a> at 11:59pm on the due date (usually the Monday before class.)</li>
+  <li><strong>Quizzes</strong>: Expect a 5min. pop quiz at beginning of each class on reading from the previous week. It’s not meant to trip anyone over; it’s merely to help make sure you did the reading, which helps all of us cover more ground in class. If you expect to miss class, meet IAs at office hours the week <em>before</em>, or work on extra credit.</li>
+  <li><strong>Readings</strong>: You will be assigned to read diverse writing styles spanning academic publications, textbooks, as well as design essays. This is by intention. If it is your first time reading a particular style of writing, you will find it difficult and obtuse (hint: allocate your time accordingly); however, my goal is that by the end of this class you will be comfortable reading and summarizing key points across disciplines.</li>
+  <li><strong>Copying</strong>: You are encouraged to copy code, as long as you have the original author’s permission and you note your source. Similarly, note any sources of inspiration. Your assignments will be graded primarily on original concept and design, rather than novel implementation. That said, your code should always yield a great user experience—it should work correctly without specific instructions for your users (eg. graders), and should be performant on major platforms (Chrome, Edge, Firefox and Safari.) Meanwhile, everything in <a href="http://www.cs.columbia.edu/education/honesty">CS Department Honesty Policy</a> still holds.</li>
+  <li><strong>Lateness</strong>: -25% missing writeup/submission; -20% incomplete submission/late submission (including missing submission resubmitted); -15% incomplete submission resubmitted. No exceptions unless you have a medical note.</li>
+  <li><strong>Extra Credit</strong>: There will be extra credit opportunities during the semester as a way for students to demonstrate their mastery of course material in ways beyond the assignments and exams. Extra credit is added after the final curve if there is one (so it does not affect other students’ final grades, and strictly benefits the student doing the extra work.)</li>
+</ul>
+
+<h2 id="caveat-emptor">Caveat Emptor</h2>
+
+<ul>
+  <li>This class will emphasize <strong>the practice of design</strong>: significant class time will be spent on design activities, presentations, discussion, giving and receiving feedback to your peers.</li>
+  <li><strong>Design evaluation is subjective.</strong> Assignments and test questions that have one correct answer will be very rare. I and your TAs will grade; our goal in grading is to reward quality and real effort, and punish laziness and insincerity.</li>
+  <li>I will provide grading guidelines for assignments beforehand, but <strong>we will not publish exact scoring criteria</strong> and I do not expect rubrics to cover the entire space of possible submissions. I intend to keep the definition of  “A+: Exceed expectations” meaningful. I also reserve the right to curve final course grades. My expectation for the class is a normal distribution centered on B.</li>
+  <li>I encourage you to <strong>focus on feedback</strong>: solicit reactions from your classmates, ask me and your IAs, solicit from friends and your other instructors. If any feedback is unclear, ask. Your grades won’t make much difference in your career after this class, but my reaction and the reactions of your classmates to what you made, will. Your manner, attitude, and participation in these activities, online or in class, counts towards your grade, so be proactive.</li>
+  <li><strong>This is newish class</strong>. Last semester was the alpha version and this semester is the beta version. Our main coding platform <a href="https://beta.observablehq.com/">Observable</a> itself is in beta. Feedback for last semester was generally good and we’re making improvements but nonetheless expect some kinks, expect hotfixes, and expect that you’ll be asked for your feedback repeatedly, but know also that your input will be shaping this class for future iterations.</li>
+</ul>
+
+<h2 id="auditors">Auditors</h2>
+
+<p>Auditors are welcome in class, and encouraged to form their own homework groups; the teaching team simply won’t be able to provide grading or feedback due to time constraints.</p>
+
+<h2 id="optional-textbooks">Optional Textbooks</h2>
+
+<ul>
+  <li><a href="https://www.edwardtufte.com/tufte/books_vdqi">The Visual Display of Quantitative Information</a>, Edward Tufte  (2001)</li>
+  <li><a href="https://www.edwardtufte.com/tufte/books_ei">Envisioning Information</a>, Edward Tufte  (1990)</li>
+  <li><a href="https://clio.columbia.edu/catalog/11255731">Visualization Analysis and Design</a>, Tamara Munzner  (2014)</li>
+  <li><a href="https://dl.acm.org/citation.cfm?id=1611401">Now You See It</a>, Stephen Few  (2009)</li>
+  <li><a href="https://clio.columbia.edu/catalog/13626017">D3: Interactive Data Visualization for the Web</a> 2nd ed., Scott Murray, O’Reilly  (2017)</li>
+  <li><a href="https://proquest-safaribooksonline-com.ezproxy.cul.columbia.edu/9780133440492">The Truthful Art</a>, Alberto Cairo  (2016)</li>
+  <li><a href="https://www.sciencedirect.com/science/book/9780123708960">Visual Thinking for Design</a>, Colin Ware, Morgan Kaufman  (2008)</li>
+</ul>
+
+
+		</div>
+
+		<footer class="page-footer font-small">
+			<div class="footer-copyright text-center py-3">
+				W4995.006 Columbia University Computer Science<br>
+				🙌 <a href="http://agneschang.net/">Agnes Chang</a>, with thanks to
+				<a href="http://people.ischool.berkeley.edu/~hearst/">Marti</a> +
+				UW <a href="https://courses.cs.washington.edu/courses/cse512/18sp/">CSE512</a>.
+			</div>
+		</footer>
+
+</body>

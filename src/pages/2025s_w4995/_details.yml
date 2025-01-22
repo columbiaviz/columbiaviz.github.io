@@ -1,0 +1,16 @@
+course:
+  title: "Intro to Dataviz ⟩ Spring 2025"
+  section: w4995.003
+  # outdated: 2026s_w4995
+
+links:
+  canvas: "https://courseworks2.columbia.edu/courses/191085"
+  canvasfiles: "https://courseworks2.columbia.edu/courses/191085/files/"
+  slack: https://columbiaviz-sp25.slack.com
+  slack_invite: https://join.slack.com/t/introtodataviz2025/shared_invite/zt-2y5ozm21z-W5XE8c9MX9e82XpLBeTlog
+  forms:
+    clock: "https://forms.gle/mniuTDvXra5aZpN96" # https://docs.google.com/forms/d/1fDSgrL_-QN5AZ6zxtvaBF8AVv-YEYrnmbvHpgy5-KrI/edit
+    eda: https://forms.gle/UcAutzkc276nK71HA # https://docs.google.com/forms/d/1HgtLaKcDby6csa2IwYC9zSqmoO5C-XakTS9_2ELbs10/edit
+    submit: "https://forms.gle/qiqSpCMUYTuw6gvg6" # https://docs.google.com/forms/d/1J0RIc14IkSnjD2qSlPk8VWGIcFQXVl7Jk5eZbAhH0Gc/edit
+    peer: "https://forms.gle/cj2exxkVhdreD3FZ7" # https://docs.google.com/forms/d/1Kh-b8PEpCGEEMgC_oEIXFQfTSwcXpOreqMZNjkd4S4Y/edit
+    feedback: "https://forms.gle/ZvtfG2LJ5mcztuMU6" # https://docs.google.com/forms/d/18-wyffQyD46_owY3-sSw74yaP1OOpxjODmGI4ECVS6M/edit

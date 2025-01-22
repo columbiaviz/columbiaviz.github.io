@@ -1,0 +1,156 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/files/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+    <script src="/files/js/jquery.js"></script>
+    <script src="/files/js/handlebars.js"></script>
+    <script src="/files/js/underscore.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+  </head>
+<body style="padding: 0px; margin: 0px; width:100%">
+
+
+
+<div class="largeheader centered splitafter">
+		<div class="deco">COLUMBIA UNIVERSITY COMS W6998</div>
+    <div class="title"><a href="./" style="color:black;">SYSTEMS FOR HUMAN DATA INTERACTION</a></div>
+</div>
+
+
+
+
+<div class="container container-fluid" >
+<div class="row" style="margin-top: 2em;">
+  <div class="col-md-8 col-md-offset-2">
+		<h1 id="a1-play-with-vis-systems">A1: Play with vis systems</h1>
+
+<p>Due: Sun 9/19 11:59PM EST.</p>
+
+<p>Edits:</p>
+
+<ul>
+  <li>9/18 Updated tableau log file name to include “jprotocolserver.log”</li>
+</ul>
+
+<p>In this assignment, you will use three interactive visualization systems to perform visual analysis, and report on the experience.  The systems are:</p>
+
+<ul>
+  <li><a href="https://www.tableau.com/">Tableau</a></li>
+  <li><a href="https://vega.github.io/editor/#/custom/vega-lite">vega-lite</a></li>
+</ul>
+
+<!--
+* [ggplot2](https://ggplot2.tidyverse.org/)
+-->
+
+<p>The dataset you will be using is <a href="https://www.kaggle.com/datasnaek/youtube-new">a daily record of the top trending YouTube videos</a>. We select those from US, GB, DE, CA, FR and IN (USA, Great Britain, Germany, Canada, France, and India, respectively) for our assignments.</p>
+
+<h2 id="tableau">Tableau</h2>
+
+<h4 id="setup">Setup</h4>
+
+<ol>
+  <li>
+    <p>Download Tableau from <a href="https://www.tableau.com/">their website</a>.</p>
+  </li>
+  <li>
+    <p>Connect Tableau to the hosted PostgreSQL databasethat we have set up for the course.
+To do so, create a new Tableau workbook based on the following server:</p>
+    <ul>
+      <li>Type: PostgreSQL (you may have to download an additional driver for postgreSQL, <a href="https://www.tableau.com/support/drivers">here</a>)</li>
+      <li>Hostname: <code class="language-plaintext highlighter-rouge">pg-001.db.gcloud.instabase.com</code></li>
+      <li>Username: <code class="language-plaintext highlighter-rouge">columbia</code></li>
+      <li>Password: <code class="language-plaintext highlighter-rouge">B%38Mt5W@M*QU?Ar</code></li>
+      <li>Database: <code class="language-plaintext highlighter-rouge">db_fea10998_f88d_4b6e_8f90_a6cd73bac65c</code></li>
+      <li>You should use the table called <code class="language-plaintext highlighter-rouge">youtube_full</code></li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="task-1">Task 1</h4>
+
+<p>Explore the dataset using only Tableau.  Create visualizations to answer the following analysis questions.  Copy and paste screenshots of the visualizations into your report:</p>
+
+<ul>
+  <li>Q1: For each country, how many days on average does a video trend?</li>
+  <li>Q2: Is there any relationship between the hour of the day that a video was published and the category of the video?</li>
+</ul>
+
+<p><strong>IMPORTANT</strong></p>
+
+<ul>
+  <li>Copy of your Tableau log file and send them with your results. The log file we are interested in is called “tabprotosrv.txt” (or “jprotocolserver.log”).  It is the one containing the SQL queries that the client issues.
+    <ul>
+      <li>On Windows, you may find it in “My Documents/My Tableau Repository/Logs”.</li>
+      <li>On MacOS, it should be in “Documents/My Tableau Repository/Logs”.</li>
+      <li>You may find more info <a href="http://kb.tableau.com/articles/howto/viewing-underlying-sql-queries-desktop">here</a>.</li>
+    </ul>
+  </li>
+  <li><strong>Make sure that the logging works before you start engaging in the exploration.</strong> To do so, issue a few dummy queries, open the “tabprotosrv.txt” file and make sure that it contains SQL statemements.</li>
+</ul>
+
+<h4 id="task-2">Task 2</h4>
+
+<p>Analyze and characterize the part of Tableau that you used based on the Multi-level Task Typology paper.   Try to follow their terminology.  You can also draw the task diagram (computer or hand drawn) and upload a picture in the submission form.</p>
+
+<h2 id="vega-lite">Vega-lite</h2>
+
+<h4 id="setup-1">Setup</h4>
+
+<p>Go to <a href="https://vega.github.io/editor/#/examples/vega-lite/">the vega-lite editor</a></p>
+
+<h4 id="task">Task</h4>
+
+<p>Your task is to use <a href="https://vega.github.io/editor/#/examples/vega-lite/">vega-lite</a> to create visualizations that can be used to perform the following analysis tasks.  You will submit a sharable link that you can access by clicking on “Share” and then “Copy Link to Clipboard” in the vega-lite editor</p>
+
+<p><strong>Vega-lite is browser-based, so you will use a small dataset here.</strong>  To do so, insert the following into your vega-lite spec to load the dataset as a vega-lite data source:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"data": {
+  "url": "https://raw.githubusercontent.com/columbiaviz/columbiaviz.github.io/master/_data/youtube_2020s_w6998.csv"
+},
+</code></pre></div></div>
+
+<ol>
+  <li>V1: Create a visualization that shows the maximum number of Likes in each category.</li>
+  <li>V2: Create a visualization that compares the ratio of Likes-Dislikes in different categories.
+    <ul>
+      <li>Hint: You’ll want to <a href="https://vega.github.io/vega-lite/docs/transform.html">use data transforms</a> to compute the ratios.  Watch out for divide by zeros!</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="submission-instructions">Submission Instructions</h2>
+
+<p><a href="https://forms.gle/Mn1kf4cjbpnZZK5WA">Fill out the google form</a></p>
+
+
+  </div>
+  <div class="joiner"></div>
+</div>
+</div>
+<div class="row footer">
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+  Layout borrowed from <a href="http://cs.lmu.edu/~ray/">ray toal</a>
+</div>
+</div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109213291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109213291-1');
+</script>
+
+
+
+
+
+</body>

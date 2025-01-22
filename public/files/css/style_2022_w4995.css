@@ -1,0 +1,78 @@
+body {
+  font-size: 18px;
+  font-family: 'Zilla Slab', serif;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+nav {
+  font-family: 'Jost', sans-serif;
+}
+
+footer {
+  padding-top: 10px;
+  border-top: 2px solid #ddd;
+  margin-top: 30px;
+}
+
+table{
+  font-size: 18px;
+}
+
+table th{
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+}
+
+table.schedule {
+  display: block;
+  overflow: scroll;
+}
+
+table td{
+  position: relative;
+}
+
+table span.outdent{
+  position: absolute;
+  left: -2px;
+}
+
+
+h1{
+  margin-bottom: 1.3em;
+}
+
+/***** Navbar ******/
+.navbar-inverse {
+  background: rgba(0,0,0,.85);
+}
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+.navbar-inverse .navbar-brand:hover {
+  text-decoration: underline;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #ddd;
+  font-weight: 300;
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+  text-decoration: underline;
+}
+.navbar .dropdown-menu{
+  font-size: 16px;
+}
+/* outdated notice */
+.navbar .container .alert-warning {
+  margin-bottom: 0;
+}
+.container.outdated {
+  margin-top: 5.5em;
+}
+
+.container p,
+.container ul,
+.container ol{
+  max-width: 700px;
+}

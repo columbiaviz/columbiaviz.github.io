@@ -1,0 +1,123 @@
+---
+import { marked } from 'marked'
+const {parseInline:render} = marked
+const {data, due} = Astro.props
+---
+
+<table class="schedule table">
+    <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th>Topic</th>
+            <th>Reading Due In Class</th>
+            <th>Assigned, Individual</th>
+            <th>Assigned,<br/>Group</th>
+            <th>Due {due} Before Class</th>
+        </tr>
+    </thead>
+    <tbody>
+        {Object.entries(data).map(([_, {draft, date, topic, links, readings, work}]:[string, any]) => <tr>
+            <td class="date">{date}</td>
+            <td class="topic">
+                {topic && <p set:html={render(topic)}/>}
+                <ul class="links">
+                {links && links.map((link:any) =>
+                    !draft && link.quiz ? <li class="quiz"><a href={link.quiz}>quiz</a></li> :
+                    !draft && link.slides ? <li class="slides"><a href={link.slides}>slides</a></li> :
+                    !draft && link.label ? <li class="link"><a href={link.url}>{link.label}</a></li> :
+                    link.critics ? <li class="critics">Guest critic{link.critics.length==1 ? '' : 's' }: {
+                        link.critics.map( (critic:any) => <a href={critic.url}>{critic.name}</a> )
+                    }</li> :
+                    null
+                )}
+                </ul>
+            </td>
+            <td class="readings">{
+                readings && <ul>{
+                    readings.map((item:any) => <li set:html={render(item)}/>)
+                }</ul>
+            }</td>
+
+            <td><ul>{
+                work?.study ? <li set:html={render(work.study)} /> :
+                work?.ind ? work.ind.map((item:any) => <li class="assigned" set:html={render(item)} />) :
+                null
+            }</ul></td>
+            <td><ul>{work?.grp && work.grp.map((item:any) => <li class="assigned" set:html={render(item)} />)}</ul></td>
+            <td><ul>{work?.due && work.due.map((item:any) => <li class="due" set:html={render(item)} />)}</ul></td>
+        </tr>)}
+    </tbody>
+</table>
+
+<style>
+
+    table.schedule{
+        font-size: 18px;
+        display: block;
+        overflow: scroll;
+
+        th{
+            font-family: 'Jost', sans-serif;
+            font-weight: 500;
+        }
+
+        tr th,
+        tr td{
+            border:0; /* undo bootstrap */
+        }
+
+        thead tr{ border-bottom: 1px solid #666; }
+        tbody tr{ border-bottom: 1px solid #ddd; }
+        tbody tr:nth-of-type(odd){ background-color:#f9f9f9; }
+
+        /* @media (prefers-color-scheme: dark) {
+            thead tr{ border-bottom: 1px solid #999; }
+            tbody tr{ border-bottom: 1px solid #666; }
+            tbody tr:nth-of-type(odd){ background-color: rgba(255,255,255,.04); }
+        } */
+
+        td{
+            position: relative;
+            padding-right:.5em;
+        }
+
+        td.topic p{
+            padding-right:2em;
+            margin:0;
+        }
+
+        td:not(.readings) ul{
+            list-style-type: none;
+        }
+
+        ul{
+            padding:0;
+            margin:0;
+        }
+
+        ul li::marker{
+            color:#999;
+        }
+
+        ul li.assigned::after{
+            content:" assigned";
+            font-style:italic;
+        }
+        ul li.due::after{
+            content:" DUE";
+            font-size: 80%;
+            font-weight:bold;
+            letter-spacing: 0.05em;
+        }
+
+        ul.links li:not(.critics)::before{
+            content:"⟨";
+        }
+
+        ul.links li:not(.critics)::after{
+            content:"⟩";
+        }
+    }
+
+
+</style>
