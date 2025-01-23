@@ -4,7 +4,7 @@ schedule:
     date: "1/23"
     topic: "**Introduction:** why visualize? schedule and expectations."
     links:
-      - slides: docs.google.com/presentation/d/1f31Ze9JTOohWTBsUvoKUMWepyG_9XKTuA7h3vi-ytek/edit
+      - slides: https://docs.google.com/presentation/d/1f31Ze9JTOohWTBsUvoKUMWepyG_9XKTuA7h3vi-ytek/edit
     work:
       # study: "[**APPLY TO ENROLL by Monday**](a0.html)"
       grp:
