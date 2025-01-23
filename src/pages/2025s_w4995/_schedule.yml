@@ -1,6 +1,6 @@
 schedule:
   wk01:
-    draft: true
+    draft: false
     date: "1/23"
     topic: "**Introduction:** why visualize? schedule and expectations."
     links:
