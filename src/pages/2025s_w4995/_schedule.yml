@@ -10,7 +10,7 @@ schedule:
       grp:
         - "[A2.1 Viz Design: divergence](a2.html)"
   wk02:
-    draft: true
+    draft: false
     date: "1/30"
     topic: "**Design**: form vs. function, generating ideas, iterating, and critique."
     links:
