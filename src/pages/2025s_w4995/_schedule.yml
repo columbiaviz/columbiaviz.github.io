@@ -31,7 +31,7 @@ schedule:
     date: "2/6"
     topic: "**Data Models**: data types, task types, corresponding visualization formats."
     links:
-      - slides: https://docs.google.com/presentation/d/1Pn5-RweRWZ4LNcgAx85n3VF97yNIJfBMOHT_M0B-kvY/edit
+      - slides: https://docs.google.com/presentation/d/1xPGK5M0vmxZonA2CEPagpPzYiGkXVJc13CxJqOLF8GM/edit
       # - quiz: https://forms.gle/TDe6D7eKneLoWZNz9
     readings:
       - "Semiology of Graphics, [Excerpt](../files/readings/bertin_semiologyofgraphics_excerpts.pdf), by Bertin, J. 1967."
