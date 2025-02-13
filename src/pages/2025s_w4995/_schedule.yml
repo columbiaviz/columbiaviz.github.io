@@ -51,7 +51,7 @@ schedule:
     date: "2/13"
     topic: "**Data Exploration**: EDA, data wrangling, and Tableau."
     links:
-      - slides: https://docs.google.com/presentation/d/1W2VQeyUQ0qauERjXIpQkHZm_HAmHVZCWKWsJGUHZtoM/edit?usp=sharing
+      - slides: https://docs.google.com/presentation/d/1FbYmiCK7fi8MJEZHAH9CZo0AIvZ8XVUm5kaNKCjm8Aw/edit
       # - quiz: https://forms.gle/U5zVAMivT6ugoocL9
     readings:
       - "[Chp. 6: Analytical Patterns](https://courseworks2.columbia.edu/files/22850051/download?download_frd=1) from Now You See It by Few, S. 2009."
