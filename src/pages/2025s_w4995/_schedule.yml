@@ -47,7 +47,7 @@ schedule:
         - "[L1](labs.html)"
         - "[A2 Design](a2.html)"
   wk04:
-    draft: true
+    draft: false
     date: "2/13"
     topic: "**Data Exploration**: EDA, data wrangling, and Tableau."
     links:
