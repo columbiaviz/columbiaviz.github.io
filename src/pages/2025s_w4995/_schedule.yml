@@ -63,11 +63,11 @@ schedule:
       due:
         - "[L2](labs.html)"
   wk05:
-    draft: true
+    draft: false
     date: "2/20"
     topic: "**Visual Encoding**: marks, channels, expressiveness & effectiveness."
     links:
-      - slides: https://docs.google.com/presentation/d/12u_lmxGohnXX0qX7R49Nz2i5T3Bd5qI3wRNVUv-uTTI/edit
+      - slides: https://docs.google.com/presentation/d/1H8akk3qYCdckl9BxyfEkLXymwKIVO5KDPmQA1TTEkW4/edit
       # - quiz: https://forms.gle/q8Rhz4ouBomSDVCL6
     readings:
       - "[Understanding Comics, Chp. 5,7,8](https://courseworks2.columbia.edu/files/22850048/download?download_frd=1), by McCloud, S."
