@@ -168,9 +168,9 @@ schedule:
     date: "4/10"
     topic: "**Final Project In-progress Critique**"
     links:
-      # - critics:
-      #   - name: Matthew Conlen
-      #     url: https://mathisonian.com
+      - critics:
+        - name: Matthew Conlen
+          url: https://mathisonian.com
       - slides: https://docs.google.com/presentation/d/1pF3_2PmEHPWSChWkvVA5e1sHphM9rd1ZMFgTr_rFf44/edit
     work:
       due:
@@ -181,9 +181,9 @@ schedule:
     topic: "**Final Project Workshop**: Group-by-group meetings and in-class working session"
     # topic: "**Ethics, Dataviz in Industry vs. Research**: between persuasion and misrepresentation; jobs, and guest lecture by [Prof. Wu](http://www.cs.columbia.edu/~ewu/) on research."
     links:
-      # - critics:
-      #   - name: Asad Pervaiz
-      #     url: https://oldthingsnewplaces.com
+      - critics:
+        - name: Asad Pervaiz
+          url: https://www.workbyindex.com/
       - slides: https://docs.google.com/presentation/d/1e4hFuML7PUim4Fw_ugR5cbhv0XRRnSyuzEGyPmfV9ro/edit
     readings:
       - "[Six Provocations for Big Data](https://courseworks2.columbia.edu/files/22850049/download?download_frd=1) by boyd & Crawford, 2011"
@@ -197,9 +197,9 @@ schedule:
     # topic: " **Networks, Text, Algorithms:** node-link diagrams, trees, force layout; visualizing words and algorithms."
     topic: "**Final Critique**"
     links:
-      # - critics:
-      #   - name: Klara Auerbach
-      #     url: https://www.klaraauerbach.com
+      - critics:
+        - name: Klara Auerbach
+          url: https://www.klaraauerbach.com
       # - slides: https://docs.google.com/presentation/d/1bj4v0a6xeM8dD2QfT418J70eMmbe00nHWOWbKmVinS4/edit#slide=id.gca4e889203_0_4
     readings:
       - "[Visualization Analysis and Design](https://www-taylorfrancis-com.ezproxy.cul.columbia.edu/books/mono/10.1201/b17511/visualization-analysis-design-tamara-munzner) Chp 9: Networks and Trees by Munzner, T. 2014."
