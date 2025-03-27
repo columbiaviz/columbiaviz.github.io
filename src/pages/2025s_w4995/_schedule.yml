@@ -125,7 +125,7 @@ schedule:
     topic: "_Spring Break, no class._"
 
   wk10:
-    draft: true
+    draft: false
     date: "3/27"
     topic: "**Animation:** motion perception, transitions, pros/cons."
     links:
