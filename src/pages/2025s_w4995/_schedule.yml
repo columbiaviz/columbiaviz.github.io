@@ -164,14 +164,14 @@ schedule:
       due:
         - "[A5.1 Proposals](a5.html)"
   wk12:
-    draft: true
+    draft: false
     date: "4/10"
     topic: "**Final Project In-progress Critique**"
     links:
       - critics:
         - name: Matthew Conlen
           url: https://mathisonian.com
-      - slides: https://docs.google.com/presentation/d/1pF3_2PmEHPWSChWkvVA5e1sHphM9rd1ZMFgTr_rFf44/edit
+      - slides: https://docs.google.com/presentation/d/14SBRoH0W-Nauc1dFHfqtElWWJl1esjSFBDtvr2pxD00/edit
     work:
       due:
         - "[A5.2 In-Progress Presentation](a5.html)"
