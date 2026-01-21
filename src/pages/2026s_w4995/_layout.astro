@@ -39,21 +39,22 @@ const { frontmatter } = Astro.props
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="syllabus.html">Syllabus</a></li>
-
+          <li><a href={`/${course.slug}/syllabus.html`}>Syllabus</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"
 							 role="button" aria-haspopup="true" aria-expanded="false">
 							Assignments <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="../2025s_w4995/a1.html">🗂 A1: Sparks Presentation</a></li>
-              <li><a href="../2025s_w4995/a2.html">🗂 A2: Visualization Design</a></li>
-              <li><a href="../2025s_w4995/labs.html#lab-1-shapes-and-styles">🔬 L1: Shapes and Styles</a></li>
-              <li><a href="../2025s_w4995/a3.html">🗂 A3: Exploratory Data Analysis</a></li>
-              <li><a href="../2025s_w4995/labs.html#lab-2-data-binding">🔬 L2: Data Binding</a></li>
-              <li><a href="../2025s_w4995/a4.html">🗂 A4: Interactive Visualization</a></li>
-              <li><a href="../2025s_w4995/labs.html#lab-3-interactivity">🔬 L3: Interactivity</a></li>
-              <li><a href="../2025s_w4995/a5.html">🗂 A5: Final Project</a></li>
+              <li><a href={`/${course.slug}/a0.html`}>🚀 A0: Apply To Enroll</a></li>
+              <li><a href={`/${course.slug}/a1.html`}>🗂 A1: Sparks Presentation</a></li>
+              <li><a href={`/${course.slug}/a2.html`}>🗂 A2: Visualization Design</a></li>
+              <li><a href={`/${course.slug}/labs.html#lab-1-shapes-and-styles`}>🔬 L1: Shapes and Styles</a></li>
+              <li><a href={`/${course.slug}/a3.html`}>🗂 A3: Exploratory Data Analysis</a></li>
+              <li><a href={`/${course.slug}/labs.html#lab-2-data-binding`}>🔬 L2: Data Binding</a></li>
+              <li><a href={`/${course.slug}/a4.html`}>🗂 A4: Interactive Visualization</a></li>
+              <li><a href={`/${course.slug}/labs.html#lab-3-interactivity`}>🔬 L3: Interactivity</a></li>
+              <li><a href={`/${course.slug}/a5.html`}>🗂 A5: Final Project</a></li>
+              {/* <li><a href={`/${course.slug}/ax.html`}>💯 EC: Extra Credit Opportunities</a></li> */}
             </ul>
           </li>
           <li class="dropdown">
@@ -77,7 +78,7 @@ const { frontmatter } = Astro.props
 									4/14: Hierarchy, Chord, Forces</a></li> -->
             </ul>
           </li>
-          <li><a href="resources.html">Resources</a></li>
+          <li><a href={`/${course.slug}/resources.html`}>Resources</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>

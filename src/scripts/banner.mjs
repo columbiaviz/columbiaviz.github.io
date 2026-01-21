@@ -198,7 +198,7 @@ export default function(selector){
     }
 
     if (outdated){
-      $(selector).css('marginTop', 60)
+      $(selector).css('marginTop', 100)
     }
 
     const demo = Object.fromEntries(Object.keys(render).map((mode, idx) => {

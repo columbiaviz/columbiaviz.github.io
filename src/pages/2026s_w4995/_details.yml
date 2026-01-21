@@ -1,7 +1,8 @@
 course:
   title: "Intro to Dataviz ⟩ Spring 2026"
+  slug: 2026s_w4995
   section: w4995.006
-  # outdated: 2026s_w4995
+  # outdated: 2027s_w4995
 
 links:
   canvas: "https://courseworks2.columbia.edu/courses/237833"

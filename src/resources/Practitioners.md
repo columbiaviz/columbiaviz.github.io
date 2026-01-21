@@ -16,7 +16,7 @@
 - [Catalogtree](https://www.catalogtree.net/)
 - [Distill.pub](https://distill.pub/)
 - [Fathom Information Design](https://fathom.info/)
-- [FiveThiryEight](https://fivethirtyeight.com/)
+-   FiveThirtyEight [[R.I.P.](https://en.wikipedia.org/wiki/FiveThirtyEight)] – Best charts of [2016](https://fivethirtyeight.com/features/the-52-best-and-weirdest-charts-we-made-in-2016/), [2019](https://fivethirtyeight.com/features/the-56-best-and-weirdest-charts-we-made-in-2019/), [2020](https://fivethirtyeight.com/features/the-40-weirdest-and-best-charts-we-made-in-2020/), [2021](https://fivethirtyeight.com/features/our-51-best-and-weirdest-charts-of-2021/), [2022](https://fivethirtyeight.com/features/best-charts-2022/)
 - [Forensic Architecture](https://forensic-architecture.org/)
 - [Google Arts & Culture team](https://experiments.withgoogle.com/collection/arts-culture)
 - [Google Big Picture group](https://research.google.com/bigpicture/)
@@ -34,4 +34,3 @@
 - [The Pudding](https://pudding.cool/)
 - [UW Interactive Data Lab](http://idl.cs.washington.edu/)
 - [Wattenberg and Viégas / Flowing Media](http://flowingmedia.com/)
-
