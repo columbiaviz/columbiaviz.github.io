@@ -35,7 +35,7 @@ schedule:
       # - quiz: https://forms.gle/TDe6D7eKneLoWZNz9
     readings:
       - "Semiology of Graphics, [Excerpt](../files/readings/bertin_semiologyofgraphics_excerpts.pdf), by Bertin, J. 1967."
-      - "[A Tour through the Visualization Zoo](http://queue.acm.org/detail.cfm?id=1805128). Heer, Bostock & Ogievetsky. ACM. 2010."
+      - "[A Tour through the Visualization Zoo](https://spawn-queue.acm.org/doi/10.1145/1794514.1805128). Heer, Bostock & Ogievetsky. ACM. 2010."
       - "[Visualization Analysis and Design, Chp. 2.1–2.5](https://www-taylorfrancis-com.ezproxy.cul.columbia.edu/books/mono/10.1201/b17511/visualization-analysis-design-tamara-munzner) by Munzner, T. 2014."
       - "*Optional:* [The Eyes Have It: A Task by Data Type Taxonomy for Information Visualizations](http://drum.lib.umd.edu/bitstream/handle/1903/466/CS-TR-3665.pdf?sequence=2), by Shneiderman, B. 1996"
     work:
