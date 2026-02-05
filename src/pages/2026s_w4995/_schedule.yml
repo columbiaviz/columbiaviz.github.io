@@ -15,7 +15,6 @@ schedule:
     topic: "**Design**: form vs. function, generating ideas, iterating, and critique."
     links:
       - slides: https://docs.google.com/presentation/d/177W-XOFgGY5VDKVivsgWSmUCdt5lMTsWAfxn7-kwjsA/edit
-      # - quiz: https://forms.gle/Uesjzn7thJcvqJFh8
     readings:
       - "Visual Explanations, [Chp. 2 Excerpt](../files/readings/Tufte_VisualExplanations-Shuttle-Excerpt.pdf), by Tufte, E. 2007."
       - "[How to be creative](https://faculty.washington.edu/ajko/books/design-methods/creative) & [How to be critical](https://faculty.washington.edu/ajko/books/design-methods/critique), Ko, A. 2017."
@@ -32,7 +31,6 @@ schedule:
     topic: "**Data Models**: data types, task types, corresponding visualization formats."
     links:
       - slides: https://docs.google.com/presentation/d/1xPGK5M0vmxZonA2CEPagpPzYiGkXVJc13CxJqOLF8GM/edit
-      # - quiz: https://forms.gle/TDe6D7eKneLoWZNz9
     readings:
       - "Semiology of Graphics, [Excerpt](../files/readings/bertin_semiologyofgraphics_excerpts.pdf), by Bertin, J. 1967."
       - "[A Tour through the Visualization Zoo](https://spawn-queue.acm.org/doi/10.1145/1794514.1805128). Heer, Bostock & Ogievetsky. ACM. 2010."
@@ -52,7 +50,6 @@ schedule:
     topic: "**Data Exploration**: EDA, data wrangling, and Tableau."
     links:
       - slides: https://docs.google.com/presentation/d/1FbYmiCK7fi8MJEZHAH9CZo0AIvZ8XVUm5kaNKCjm8Aw/edit
-      # - quiz: https://forms.gle/U5zVAMivT6ugoocL9
     readings:
       - "[Chp. 6: Analytical Patterns](https://courseworks2.columbia.edu/files/22850051/download?download_frd=1) from Now You See It by Few, S. 2009."
       - "[Polaris: A System for Query, Analysis and. Visualization of Multi-dimensional Relational Databases](https://courseworks2.columbia.edu/files/22850055/download?download_frd=1) by Stolte, C. et. al. ACM 2008."
@@ -68,7 +65,6 @@ schedule:
     topic: "**Visual Encoding**: marks, channels, expressiveness & effectiveness."
     links:
       - slides: https://docs.google.com/presentation/d/1H8akk3qYCdckl9BxyfEkLXymwKIVO5KDPmQA1TTEkW4/edit
-      # - quiz: https://forms.gle/q8Rhz4ouBomSDVCL6
     readings:
       - "[Understanding Comics, Chp. 5,7,8](https://courseworks2.columbia.edu/files/22850048/download?download_frd=1), by McCloud, S."
       - "[Chp. 3: The Power of Representation](https://courseworks2.columbia.edu/files/22850047/download?download_frd=1) in Things That Make Us Smart by Norman, D. 1993."
@@ -88,7 +84,6 @@ schedule:
     topic: "**Interaction:** overview vs. details, small multiples, brushing, etc."
     links:
       - slides: https://docs.google.com/presentation/d/1cDWlnwX4a9o4L5WBbeeta8Zuea-D5Dxqkhoi1_wHrVA/edit
-      # - quiz: https://forms.gle/aKo6Vf9y3ugc8EvWA
     readings:
       - "[Interactive Dynamics for Visual Analysis.](https://dl.acm.org/doi/pdf/10.1145/2133416.2146416) Heer & Shneiderman. 2012."
       - "[Ladder of Abstraction](http://worrydream.com/LadderOfAbstraction/) by Victor, B. 2011."
@@ -105,7 +100,6 @@ schedule:
     topic: "**Evaluation, Perception, Review**: a framework for analysis; how we see, color, and attention theory."
     links:
       - slides: https://docs.google.com/presentation/d/1G4aQK24TVUdp42D-UiJ7UzsuL-lQdIwVP0qtj_izLr4/edit
-      # - quiz: https://forms.gle/wsws4h4sLKXGob7f6
     readings:
       - "[Visualization Analysis and Design](https://www-taylorfrancis-com.ezproxy.cul.columbia.edu/books/mono/10.1201/b17511/visualization-analysis-design-tamara-munzner), Chp. 3.1–3.4, 4.1–4.6 by Munzner, T. 2014."
       - "[The Design of Everyday Things, Chp.1](https://courseworks2.columbia.edu/files/22850043/download?download_frd=1) by Norman, D. 1988."
@@ -130,7 +124,6 @@ schedule:
     topic: "**Animation:** motion perception, transitions, pros/cons."
     links:
       - slides: https://docs.google.com/presentation/d/1bz_Lq35utc22wWBpS-bPR4xuQM_aZn2mrYzdI9glHko/edit
-      # - quiz: https://forms.gle/BbeniRpfnMAxzqiK6
       - label: final project inspiration
         url: https://docs.google.com/presentation/d/1x0_cR6_7IGnDqW7whyGFrl4xwN1QW2F7ANu-A4m0kUs/edit?usp=sharing
     readings:
@@ -149,7 +142,6 @@ schedule:
     topic: "**Maps & Narrative:** projections; typography, rhythm; why storytelling, techniques."
     links:
       - slides: https://docs.google.com/presentation/d/1g1FHLHZUb1MxJiLxTmSJ1YjdyacPW77nR8_NbEzIYts/edit
-      # - quiz: https://forms.gle/JT6Zu6m2QwDgPhYj7
       - label: survey
         url: https://forms.gle/hDRWzv3z8P585DnJ7
     readings:
