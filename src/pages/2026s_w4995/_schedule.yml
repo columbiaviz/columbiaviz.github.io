@@ -45,11 +45,11 @@ schedule:
         - "[L1](labs.html)"
         - "[A2 Design](a2.html)"
   wk04:
-    draft: true
+    draft: false
     date: "2/12"
     topic: "**Data Exploration**: EDA, data wrangling, and Tableau."
     links:
-      - slides: https://docs.google.com/presentation/d/1FbYmiCK7fi8MJEZHAH9CZo0AIvZ8XVUm5kaNKCjm8Aw/edit
+      - slides: https://docs.google.com/presentation/d/156pG2ynQJuOwBEBk89J94acAWJ_ismMIGWwI0G9ts_Y/edit
     readings:
       - "[Chp. 6: Analytical Patterns](https://courseworks2.columbia.edu/files/22850051/download?download_frd=1) from Now You See It by Few, S. 2009."
       - "[Polaris: A System for Query, Analysis and. Visualization of Multi-dimensional Relational Databases](https://courseworks2.columbia.edu/files/22850055/download?download_frd=1) by Stolte, C. et. al. ACM 2008."
