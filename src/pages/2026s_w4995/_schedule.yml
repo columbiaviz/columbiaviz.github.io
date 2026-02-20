@@ -60,7 +60,7 @@ schedule:
       due:
         - "[L2](labs.html)"
   wk05:
-    draft: true
+    draft: false
     date: "2/19"
     topic: "**Visual Encoding**: marks, channels, expressiveness & effectiveness."
     links:
