@@ -79,11 +79,11 @@ schedule:
       due:
         - "[A3 EDA](a3.html)"
   wk06:
-    draft: true
+    draft: false
     date: "2/26"
     topic: "**Interaction:** overview vs. details, small multiples, brushing, etc."
     links:
-      - slides: https://docs.google.com/presentation/d/1cDWlnwX4a9o4L5WBbeeta8Zuea-D5Dxqkhoi1_wHrVA/edit
+      - slides: https://docs.google.com/presentation/d/15UjS49sUoE3Lot-Xyx4oJ090bOvkgpO3Mk82IccljJw/edit
     readings:
       - "[Interactive Dynamics for Visual Analysis.](https://dl.acm.org/doi/pdf/10.1145/2133416.2146416) Heer & Shneiderman. 2012."
       - "[Ladder of Abstraction](http://worrydream.com/LadderOfAbstraction/) by Victor, B. 2011."
