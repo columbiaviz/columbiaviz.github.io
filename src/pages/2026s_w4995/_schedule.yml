@@ -95,11 +95,11 @@ schedule:
       due:
         - "[L3](labs.html)"
   wk07:
-    draft: true
+    draft: false
     date: "3/5"
     topic: "**Evaluation, Perception, Review**: a framework for analysis; how we see, color, and attention theory."
     links:
-      - slides: https://docs.google.com/presentation/d/1G4aQK24TVUdp42D-UiJ7UzsuL-lQdIwVP0qtj_izLr4/edit
+      - slides: https://docs.google.com/presentation/d/1OiONCmSlxdpVQkTcNP3QNH3ON-KRTAuDN8EGYJJrlLA/edit?usp=sharing
     readings:
       - "[Visualization Analysis and Design](https://www-taylorfrancis-com.ezproxy.cul.columbia.edu/books/mono/10.1201/b17511/visualization-analysis-design-tamara-munzner), Chp. 3.1–3.4, 4.1–4.6 by Munzner, T. 2014."
       - "[The Design of Everyday Things, Chp.1](https://courseworks2.columbia.edu/files/22850043/download?download_frd=1) by Norman, D. 1988."
