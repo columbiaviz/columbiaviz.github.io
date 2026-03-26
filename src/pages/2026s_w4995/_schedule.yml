@@ -119,11 +119,12 @@ schedule:
     topic: "_Spring Break, no class._"
 
   wk10:
-    draft: true
+    draft: false
     date: "3/26"
     topic: "**Animation:** motion perception, transitions, pros/cons."
     links:
-      - slides: https://docs.google.com/presentation/d/1bz_Lq35utc22wWBpS-bPR4xuQM_aZn2mrYzdI9glHko/edit
+      # - slides: https://docs.google.com/presentation/d/1fLz2b5X7vtAmVAm4MvRbxWmKhdoBhL0QZR5KtGUBfKc/edit
+      - slides: https://docs.google.com/presentation/d/1t2Skwb8j2cxDSeAZUbfxOYj1nHRpwz8pMgwDnr06ZDs/edit?usp=sharing # class participation
       - label: final project inspiration
         url: https://docs.google.com/presentation/d/1x0_cR6_7IGnDqW7whyGFrl4xwN1QW2F7ANu-A4m0kUs/edit?usp=sharing
     readings:
@@ -160,9 +161,9 @@ schedule:
     date: "4/9"
     topic: "**Final Project In-progress Critique**"
     links:
-      # - critics:
-      #   - name: Matthew Conlen
-      #     url: https://mathisonian.com
+      - critics:
+        - name: Ryan Best
+          url: https://ryanabest.com
       - slides: https://docs.google.com/presentation/d/14SBRoH0W-Nauc1dFHfqtElWWJl1esjSFBDtvr2pxD00/edit
     work:
       due:
@@ -170,12 +171,9 @@ schedule:
   wk13:
     draft: true
     date: "4/16"
-    topic: "**Final Project Workshop**: Group-by-group meetings and in-class working session"
-    # topic: "**Ethics, Dataviz in Industry vs. Research**: between persuasion and misrepresentation; jobs, and guest lecture by [Prof. Wu](http://www.cs.columbia.edu/~ewu/) on research."
+    # topic: "**Final Project Workshop**: Group-by-group meetings and in-class working session"
+    topic: "**Ethics, Dataviz in Industry vs. Research**: between persuasion and misrepresentation; jobs, and guest lecture by [Prof. Wu](https://www.cs.columbia.edu/~ewu/) on research."
     links:
-      # - critics:
-      #   - name: Asad Pervaiz
-      #     url: https://www.workbyindex.com/
       - slides: https://docs.google.com/presentation/d/1e4hFuML7PUim4Fw_ugR5cbhv0XRRnSyuzEGyPmfV9ro/edit
     readings:
       - "[Six Provocations for Big Data](https://courseworks2.columbia.edu/files/22850049/download?download_frd=1) by boyd & Crawford, 2011"
@@ -204,7 +202,7 @@ schedule:
   wk15:
     draft: true
     date: "4/30"
-    topic: "_Final Project Showcase:_ 4–6pm"
+    topic: "_Final Project Showcase:_ 5–7pm"
     links:
       - slides: https://docs.google.com/presentation/d/1mfj_aH3clIM8LZcuj56YOYQYV9NnXwF-oS16yV_RO2g/edit?usp=sharing
     work:
