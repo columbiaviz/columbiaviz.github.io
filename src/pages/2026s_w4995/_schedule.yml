@@ -123,9 +123,9 @@ schedule:
     date: "3/26"
     topic: "**Animation:** motion perception, transitions, pros/cons."
     links:
-      # - slides: https://docs.google.com/presentation/d/1fLz2b5X7vtAmVAm4MvRbxWmKhdoBhL0QZR5KtGUBfKc/edit
-      - label: participation
-        url: https://docs.google.com/presentation/d/1t2Skwb8j2cxDSeAZUbfxOYj1nHRpwz8pMgwDnr06ZDs/edit?usp=sharing
+      - slides: https://docs.google.com/presentation/d/1fLz2b5X7vtAmVAm4MvRbxWmKhdoBhL0QZR5KtGUBfKc/edit
+      # - label: participation
+      #   url: https://docs.google.com/presentation/d/1t2Skwb8j2cxDSeAZUbfxOYj1nHRpwz8pMgwDnr06ZDs/edit?usp=sharing
       - label: final project inspiration
         url: https://docs.google.com/presentation/d/1x0_cR6_7IGnDqW7whyGFrl4xwN1QW2F7ANu-A4m0kUs/edit?usp=sharing
     readings:
