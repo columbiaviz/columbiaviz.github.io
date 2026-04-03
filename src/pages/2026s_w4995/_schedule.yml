@@ -139,11 +139,11 @@ schedule:
       due:
         - "[A4 Interactive](a4.html)"
   wk11:
-    draft: true
+    draft: false
     date: "4/2"
     topic: "**Maps & Narrative:** projections; typography, rhythm; why storytelling, techniques."
     links:
-      - slides: https://docs.google.com/presentation/d/1g1FHLHZUb1MxJiLxTmSJ1YjdyacPW77nR8_NbEzIYts/edit
+      - slides: https://docs.google.com/presentation/d/1fEzoIY06_0HPcoPMpHOUoV42utNGnT5UWFWD5TnqM_Q/edit?usp=sharing
       - label: survey
         url: https://forms.gle/hDRWzv3z8P585DnJ7
     readings:
