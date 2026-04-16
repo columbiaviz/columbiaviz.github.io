@@ -170,12 +170,14 @@ schedule:
       due:
         - "[A5.2 In-Progress Presentation](a5.html)"
   wk13:
-    draft: true
+    draft: false
     date: "4/16"
     # topic: "**Final Project Workshop**: Group-by-group meetings and in-class working session"
     topic: "**Ethics, Dataviz in Industry vs. Research**: between persuasion and misrepresentation; jobs, and guest lecture by [Prof. Wu](https://www.cs.columbia.edu/~ewu/) on research."
     links:
-      - slides: https://docs.google.com/presentation/d/1e4hFuML7PUim4Fw_ugR5cbhv0XRRnSyuzEGyPmfV9ro/edit
+      # - slides: https://docs.google.com/presentation/d/1e4hFuML7PUim4Fw_ugR5cbhv0XRRnSyuzEGyPmfV9ro/edit
+      - label: workshop
+        url: https://gist.github.com/samizdatco/4c17ecaeae8642f069580588d6334056
     readings:
       - "[Six Provocations for Big Data](https://courseworks2.columbia.edu/files/22850049/download?download_frd=1) by boyd & Crawford, 2011"
       - "[What Is Visualization Research?](https://medium.com/multiple-views-visualization-research-explained/what-is-visualization-research-what-should-it-be-8840a9ba658) by Hullman, J."
