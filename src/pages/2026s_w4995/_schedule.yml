@@ -185,14 +185,14 @@ schedule:
       - "_Optional: [Connecting with the Dots](https://source.opennews.org/articles/connecting-dots/) by Harris, J. 2015._"
       - "_Optional: [What is a Senior Data Visualization Engineer?](https://medium.com/@Elijah_Meeks/what-is-a-senior-data-visualization-engineer-eb032996297) by Meeks, E. 2018._"
   wk14:
-    draft: true
+    draft: false
     date: "4/23"
     # topic: " **Networks, Text, Algorithms:** node-link diagrams, trees, force layout; visualizing words and algorithms."
     topic: "**Final Critique**"
     links:
-      # - critics:
-      #   - name: Klara Auerbach
-      #     url: https://www.klaraauerbach.com
+      - critics:
+        - name: Matthew Conlen
+          url: https://mathisonian.com
       # - slides: https://docs.google.com/presentation/d/1bj4v0a6xeM8dD2QfT418J70eMmbe00nHWOWbKmVinS4/edit#slide=id.gca4e889203_0_4
     readings:
       - "[Visualization Analysis and Design](https://www-taylorfrancis-com.ezproxy.cul.columbia.edu/books/mono/10.1201/b17511/visualization-analysis-design-tamara-munzner) Chp 9: Networks and Trees by Munzner, T. 2014."
