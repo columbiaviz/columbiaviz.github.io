@@ -102,3 +102,4 @@ ENV/
 
 # Zed editor
 .zed
+node_modules/
